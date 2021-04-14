@@ -11,7 +11,6 @@ namespace API_FoodBook
 {
     public class Program
     {
-        //Code de Benoit
         /// <summary>
         /// Entrée de l'API
         /// </summary>
