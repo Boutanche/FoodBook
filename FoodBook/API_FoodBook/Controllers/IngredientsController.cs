@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace API_FoodBook.Controllers
 {
-    //Code de Benoit
+
     [ApiController]
     [Route("/api_foodbook/[controller]")]
     [Produces(MediaTypeNames.Application.Json)]
