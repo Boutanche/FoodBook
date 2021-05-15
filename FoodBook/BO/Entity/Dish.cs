@@ -11,7 +11,6 @@ namespace BO.Entity
     /// </summary>
     public class Dish
     {
-
         /// <summary>
         /// int : Id Dish
         /// </summary>
