@@ -23,9 +23,9 @@ namespace UnitTest
         {
             //Arange
             IRestaurantService restaurantService = new FakeRestaurantService();
-            IngredientsController ingredientsController = new IngredientsController(restaurantService);
+            IngredientsController ingredientsController = new (restaurantService);
 
-            Ingredients salt = new Ingredients();
+            Ingredients salt = new();
             {
                 salt.Name = "Salt";
                 salt.Price = 1.5m;
@@ -44,28 +44,27 @@ namespace UnitTest
             //Assert.Contains("Salt", IngredientActionResult.ToString) ;
         }
 
-        //TODO : Test Modify Ingredients :
         [Fact]
         public async void TestModifyIngredient()
         {
             //Arrange
             IRestaurantService restaurantService = new FakeRestaurantService();
-            IngredientsController ingredientsController = new IngredientsController(restaurantService);
+            IngredientsController ingredientsController = new (restaurantService);
             
-            Ingredients salt = new Ingredients();
+            Ingredients salt = new ();
             {
                 salt.Name = "Salt";
                 salt.Price = 1.5m;
             }
 
-            Ingredients salt2 = new Ingredients()
+            Ingredients salt2 = new ()
             {
                 Id_ingredient = 105,
                 Name = "Salt",
                 Price = 1.5m
             };
 
-            Ingredients saltGood = new Ingredients()
+            Ingredients saltGood = new ()
             {
                 Id_ingredient = 1,
                 Name = "Salt",
@@ -86,7 +85,6 @@ namespace UnitTest
             Assert.NotNull(IngredientActionResultOkCase);
 
         }
-        //TODO : Test Get All Ingredients : 
         /// <summary>
         /// Test Unitaire sur Get All
         /// </summary>
@@ -95,7 +93,7 @@ namespace UnitTest
         {
             //Arrange
             IRestaurantService restaurantService = new FakeRestaurantService();
-            IngredientsController ingredientController = new IngredientsController(restaurantService);
+            IngredientsController ingredientController = new (restaurantService);
             //Act
             ActionResult<List<Ingredients>> IngredientsActionResult = await ingredientController.GetAll();
              //Assert
@@ -110,7 +108,7 @@ namespace UnitTest
         {
             //Arrange
             IRestaurantService restaurantService = new FakeRestaurantService();
-            IngredientsController ingredientsController = new IngredientsController(restaurantService);
+            IngredientsController ingredientsController = new (restaurantService);
 
             //Act
             //Test sur id = 1 
@@ -133,7 +131,7 @@ namespace UnitTest
         {
             //Arrange
             IRestaurantService restaurantService = new FakeRestaurantService();
-            IngredientsController ingredientsController = new IngredientsController(restaurantService);
+            IngredientsController ingredientsController = new (restaurantService);
 
             //Act
             var noContentExpected = await ingredientsController.DeleteIngredient(1) as NoContentResult;

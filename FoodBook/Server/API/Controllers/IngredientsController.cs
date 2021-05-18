@@ -28,7 +28,8 @@ namespace API.Controllers
         {
             _restaurantService = restaurantService;
         }
-        //TODO : Rajoute FromQuery + DTO filtre
+        //TODO : Rajoute FromQuery + DTO : filtre
+        //Pour effectuer les recherches avec les filtres.
 
         /// <summary>
         /// Récupérer la liste des Ingrédients
@@ -74,7 +75,7 @@ namespace API.Controllers
             Ingredients newIngredient = await _restaurantService.CreateIngredient(ingredient);
             if (newIngredient != null)
             {
-                //Créer une redirection vers GetIngredientById(NewIngredient.IngredientId)
+                //Créer une redirection vers GetIngredientById(NewIngredient.Id_ingredient)
                 return CreatedAtAction(nameof(GetIngredientById), new { id = newIngredient.Id_ingredient }, newIngredient);
             }
             else

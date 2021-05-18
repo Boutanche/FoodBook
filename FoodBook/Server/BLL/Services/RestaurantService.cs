@@ -111,12 +111,72 @@ namespace BLL.Services
             List<Dish> dishes = (await _dish.GetAllAsync()).ToList();
             return dishes;
         }
+        /// <summary>
+        /// Get a Dish By an ID
+        /// </summary>
+        /// <param name="id">Int</param>
+        /// <returns>Dish</returns>
         public async Task<Dish> GetDishById(int id)
         {
 
             IDishRepository _dish = _db.GetRepository<IDishRepository>();
 
             return await _dish.GetAsync(id);
+        }
+        /// <summary>
+        /// Create a Dish
+        /// </summary>
+        /// <param name="dish">Dish</param>
+        /// <returns>A new Dish</returns>
+        public async Task<Dish> CreateDish(Dish dish)
+        {
+            _db.BeginTransaction();
+            IDishRepository _dish = _db.GetRepository<IDishRepository>();
+            Dish newDish = await _dish.InsertAsync(dish);
+            _db.Commit();
+            return newDish;
+        }
+        /// <summary>
+        /// Modifier un plat
+        /// </summary>
+        /// <param name="dish">Dish</param>
+        /// <returns>Un plat modifié</returns>
+        public async Task<Dish> ModifyDish(Dish dish)
+        {
+            _db.BeginTransaction();
+            IDishRepository _dish = _db.GetRepository<IDishRepository>();
+            try
+            {
+                await _dish.UpdateAsync(dish);
+                _db.Commit();
+                return dish;
+            }
+            catch (Exception e)
+            {
+                _db.Rollback();
+                return null;
+            }
+        }
+        /// <summary>
+        /// Supprimer un plat
+        /// </summary>
+        /// <param name="id">Int</param>
+        /// <returns>Code No Content : 204</returns>
+        public async Task<bool> RemoveDishById(int id)
+        {
+            _db.BeginTransaction();
+            IDishRepository _dish = _db.GetRepository<IDishRepository>();
+            try
+            {
+                var count = await _dish.DeleteAsync(id);
+                _db.Commit();
+                return count > 0;
+            }
+            catch (Exception e)
+            {
+                _db.Rollback();
+                return false;
+            }
         }
         #endregion
 

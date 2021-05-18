@@ -35,6 +35,20 @@
             </summary>
             <returns>List od Dish</returns>
         </member>
+        <member name="M:API.Controllers.DishController.GetDishById(System.Int32)">
+            <summary>
+            Get Dish By Id
+            </summary>
+            <param name="id">int</param>
+            <returns>Dish </returns>
+        </member>
+        <member name="M:API.Controllers.DishController.CreateDish(BO.Entity.Dish)">
+            <summary>
+            Créer un plat et l'ajouter à la BDD
+            </summary>
+            <param name="dish">Dish</param>
+            <returns>Le plat avec un identifiant généré</returns>
+        </member>
         <member name="T:API.Controllers.IngredientsController">
             <summary>
             Controller Ingredient

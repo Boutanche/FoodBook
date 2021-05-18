@@ -40,7 +40,6 @@ namespace BLL.Services
         /// </summary>
         /// <returns></returns>
         Task<List<Ingredients>> GetAllIngredients();
-        Task<Dish> GetDishById(int id);
         #endregion
         #region Dish
         /// <summary>
@@ -48,6 +47,30 @@ namespace BLL.Services
         /// </summary>
         /// <returns></returns>
         Task<List<Dish>> GetAllDish();
+        /// <summary>
+        /// Récupérer un plat par son Id.
+        /// </summary>
+        /// <param name="id">int</param>
+        /// <returns>Dish</returns>
+        Task<Dish> GetDishById(int id);
+        /// <summary>
+        /// Créer un plat
+        /// </summary>
+        /// <param name="dish">Dish</param>
+        /// <returns>Dish</returns>
+        Task<Dish> CreateDish(Dish dish);
+        /// <summary>
+        /// Modifé un plat
+        /// </summary>
+        /// <param name="dish">Dish</param>
+        /// <returns>Dish</returns>
+        Task<Dish> ModifyIngredient(Dish dish);
+        /// <summary>
+        /// Supprimer un plat
+        /// </summary>
+        /// <param name="id">Int</param>
+        /// <returns>Code No Content : 204</returns>
+        Task<bool> RemoveDishById(int id);
         #endregion
     }
 }

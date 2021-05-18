@@ -15,7 +15,7 @@ namespace UnitTest.Services
         /// <summary>
         /// Create Fake List Of Fake Ingredients
         /// </summary>
-        public List<Ingredients> ingredientsFakeDB = new List<Ingredients>()
+        public List<Ingredients> ingredientsFakeDB = new()
         {
             new Ingredients(1, "Fake_Apple", 10.02m),
             new Ingredients(2, "Fake_Banana", 10.02m),
@@ -88,18 +88,15 @@ namespace UnitTest.Services
         #endregion
 
         #region Dish
-        //Todo : Make a list of False Dish :
         /// <summary>
         /// Create Fake List Of Fake Dish
         /// </summary>
-        public List<Dish> dishFakeDB = new List<Dish>()
+        public List<Dish> dishFakeDB = new()
         {
             new Dish(1, "Apple Pie", 0),
             new Dish(2, "Banana Bread", 1),
             new Dish(3, "Carrot Cake", 0),
             new Dish(4, "Pancake", 2),
-
-
         };
         /// <summary>
         /// Fake Get All Dish

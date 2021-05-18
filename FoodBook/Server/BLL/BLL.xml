@@ -100,6 +100,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BLL.Services.IRestaurantService.GetDishById(System.Int32)">
+            <summary>
+            Récupérer un plat par son Id.
+            </summary>
+            <param name="id">int</param>
+            <returns>Dish</returns>
+        </member>
         <member name="T:BLL.Services.RestaurantService">
             <summary>
             All concern about restauration service
@@ -144,6 +151,20 @@
             Get A list of all dishes on the FoodBook data base.
             </summary>
             <returns>A List of Dish</returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.GetDishById(System.Int32)">
+            <summary>
+            Get a Dish By an ID
+            </summary>
+            <param name="id">Int</param>
+            <returns>Dish</returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.CreateDish(BO.Entity.Dish)">
+            <summary>
+            Create a Dish
+            </summary>
+            <param name="dish">Dish</param>
+            <returns>A new Dish</returns>
         </member>
     </members>
 </doc>

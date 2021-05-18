@@ -23,11 +23,28 @@ namespace UnitTest
         {
             //Arrange
             IRestaurantService restaurantService = new FakeRestaurantService();
-            DishController dishController = new DishController(restaurantService);
+            DishController dishController = new(restaurantService);
             //Act
             ActionResult<List<Dish>> DishActionResult = await dishController.GetAll();
             //Assert
             Assert.NotNull(DishActionResult);    
+        }
+        [Fact]
+        public async void TestCreateDish()
+        {
+            //Arrange
+            IRestaurantService restaurantService = new FakeRestaurantService();
+            DishController dishController = new(restaurantService);
+            Dish tabbouleh = new();
+            {   
+                tabbouleh.Name = "Tabbouleh";
+                tabbouleh.Popularity = 0;
+            }
+            //Act
+            var tabboulehDishActionResult = await dishController.CreateDish(tabbouleh);
+            //Assert
+            Assert.NotNull(tabboulehDishActionResult);
+            Assert.Equal("Tabbouleh", tabbouleh.Name);
         }
     }
 }
