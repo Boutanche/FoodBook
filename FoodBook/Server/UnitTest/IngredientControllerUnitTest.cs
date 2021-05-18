@@ -32,10 +32,16 @@ namespace UnitTest
             }
 
             //Act
-            var IngredientActionResult = await ingredientsController.CreateIngredient(salt);
+            var saltIngredientActionResult = await ingredientsController.CreateIngredient(salt);
+            //OkObjectResult IngredientActionResult = await ingredientsController.CreateIngredient(salt) as OkObjectResult;
+            
 
             //Assert
-            Assert.NotNull(IngredientActionResult);
+            Assert.NotNull(saltIngredientActionResult);
+            Assert.Equal("Salt", salt.Name);
+            //Assert.Equal(200, IngredientActionResult.StatusCode);
+
+            //Assert.Contains("Salt", IngredientActionResult.ToString) ;
         }
 
         //TODO : Test Modify Ingredients :
@@ -52,13 +58,32 @@ namespace UnitTest
                 salt.Price = 1.5m;
             }
 
+            Ingredients salt2 = new Ingredients()
+            {
+                Id_ingredient = 105,
+                Name = "Salt",
+                Price = 1.5m
+            };
+
+            Ingredients saltGood = new Ingredients()
+            {
+                Id_ingredient = 1,
+                Name = "Salt",
+                Price = 1.5m
+            };
             //Act
-            var IngredientActionResult = await ingredientsController.ModifyIngredient(1, salt);
+            var IngredientActionResult = await ingredientsController.ModifyIngredient(1, salt) as BadRequestResult;
+            var IngredientActionResultNull = await ingredientsController.ModifyIngredient(1, null) as BadRequestResult;
+            var IngredientActionResultNotFoundCase = await ingredientsController.ModifyIngredient(105, salt2) as NotFoundResult;
+            var IngredientActionResultOkCase = await ingredientsController.ModifyIngredient(1, saltGood) as OkObjectResult;
+
+            // Il faut un OKObject. // donc 4 act et 4 Assert.
 
             //Assert
             Assert.NotNull(IngredientActionResult);
-
-
+            Assert.NotNull(IngredientActionResultNull);
+            Assert.NotNull(IngredientActionResultNotFoundCase);
+            Assert.NotNull(IngredientActionResultOkCase);
 
         }
         //TODO : Test Get All Ingredients : 
@@ -71,10 +96,8 @@ namespace UnitTest
             //Arrange
             IRestaurantService restaurantService = new FakeRestaurantService();
             IngredientsController ingredientController = new IngredientsController(restaurantService);
-
             //Act
             ActionResult<List<Ingredients>> IngredientsActionResult = await ingredientController.GetAll();
-            
              //Assert
             Assert.NotNull(IngredientsActionResult);
         }
@@ -92,8 +115,6 @@ namespace UnitTest
             //Act
             //Test sur id = 1 
             OkObjectResult ingredientActionResult1 = await ingredientsController.GetIngredientById(1) as OkObjectResult;
-            //Test sur id = 2 
-            OkObjectResult ingredientActionResult2 = await ingredientsController.GetIngredientById(2) as OkObjectResult;
             //Test sur Résultat n'existe pas :
             NotFoundResult notFoundingredientActionResult = await ingredientsController.GetIngredientById(9999) as NotFoundResult;
 
@@ -101,7 +122,6 @@ namespace UnitTest
             //Assert
             Assert.NotNull(ingredientActionResult1);
             Assert.Equal(200, ingredientActionResult1.StatusCode);
-            Assert.Equal(200, ingredientActionResult2.StatusCode);
             Assert.NotNull(notFoundingredientActionResult);
             Assert.Equal(404, notFoundingredientActionResult.StatusCode);
         }
