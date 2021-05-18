@@ -40,6 +40,7 @@ namespace BLL.Services
         /// </summary>
         /// <returns></returns>
         Task<List<Ingredients>> GetAllIngredients();
+        Task<Dish> GetDishById(int id);
         #endregion
         #region Dish
         /// <summary>

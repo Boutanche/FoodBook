@@ -100,6 +100,7 @@
             </summary>
             <returns></returns>
         </member>
+<<<<<<< HEAD
         <member name="M:BLL.Services.IRestaurantService.GetDishById(System.Int32)">
             <summary>
             Récupérer un plat par son Id.
@@ -107,6 +108,8 @@
             <param name="id">int</param>
             <returns>Dish</returns>
         </member>
+=======
+>>>>>>> b69de690618d3ff8f6d1116185a82f6e5cb8927d
         <member name="T:BLL.Services.RestaurantService">
             <summary>
             All concern about restauration service
@@ -152,6 +155,7 @@
             </summary>
             <returns>A List of Dish</returns>
         </member>
+<<<<<<< HEAD
         <member name="M:BLL.Services.RestaurantService.GetDishById(System.Int32)">
             <summary>
             Get a Dish By an ID
@@ -166,5 +170,7 @@
             <param name="dish">Dish</param>
             <returns>A new Dish</returns>
         </member>
+=======
+>>>>>>> b69de690618d3ff8f6d1116185a82f6e5cb8927d
     </members>
 </doc>
