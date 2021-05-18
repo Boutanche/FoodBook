@@ -37,6 +37,20 @@ namespace API.Controllers
             return Ok(await _restaurantService.GetAllDish());
         }
         //TODO : Get Dish By ID
+        /// <summary>
+        /// Get Dish By Id
+        /// </summary>
+        /// <param name="id">int</param>
+        /// <returns>Dish </returns>
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Dish))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetDishById([FromRoute] int id)
+        {
+            Dish dish = await _restaurantService.GetDishById(id);
+            return Ok(dish);
+
+        } 
 
         //TODO : Create Dish
         

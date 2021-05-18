@@ -100,5 +100,50 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BLL.Services.RestaurantService">
+            <summary>
+            All concern about restauration service
+            </summary>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.CreateIngredient(BO.Entity.Ingredients)">
+            <summary>
+            Create an ingredient !
+            </summary>
+            <param name="ingredient">Ingredients</param>
+            <returns>Ingredients</returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.ModifyIngredient(BO.Entity.Ingredients)">
+            <summary>
+            Modify an ingredient
+            </summary>
+            <param name="ingredient">Ingredients</param>
+            <returns>Ingredients</returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.RemoveIngredientById(System.Int32)">
+            <summary>
+            Remove one ingredient with its Id
+            </summary>
+            <param name="id">Int</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.GetAllIngredients">
+            <summary>
+            Get all ingredients
+            </summary>
+            <returns>List of Ingredients ></returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.GetIngredientById(System.Int32)">
+            <summary>
+            Get Ingredient By IF
+            </summary>
+            <param name="id"></param>
+            <returns>Ingredients </returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.GetAllDish">
+            <summary>
+            Get A list of all dishes on the FoodBook data base.
+            </summary>
+            <returns>A List of Dish</returns>
+        </member>
     </members>
 </doc>

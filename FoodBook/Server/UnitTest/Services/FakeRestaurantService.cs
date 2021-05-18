@@ -60,6 +60,10 @@ namespace UnitTest.Services
         /// <returns>Ingredients</returns>
         public Task<Ingredients> ModifyIngredient(Ingredients ingredient)
         {
+            if(ingredient.Id_ingredient > 100)
+            {
+                return Task.FromResult<Ingredients>(null);
+            }
             if (ingredient.Id_ingredient == null)
             {
                 return null;
@@ -97,11 +101,32 @@ namespace UnitTest.Services
 
 
         };
+        /// <summary>
+        /// Fake Get All Dish
+        /// </summary>
+        /// <returns></returns>
         public Task<List<Dish>> GetAllDish()
         {
             return Task.FromResult(dishFakeDB);
         }
-
+        /// <summary>
+        /// Fake Create Dish
+        /// </summary>
+        /// <param name="dish"></param>
+        /// <returns></returns>
+        public Task<Dish> CreateDish(Dish dish)
+        {
+            return Task.FromResult(dish);
+        }
+        /// <summary>
+        /// Fake Get Dish By Id 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Task<Dish> GetDishById(int id)
+        {
+            return Task.FromResult(dishFakeDB.Find(i => i.Id_dish == id));
+        }
         #endregion
     }
 }

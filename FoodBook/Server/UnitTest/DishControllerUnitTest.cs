@@ -15,7 +15,6 @@ namespace UnitTest
     /// </summary>
     public class DishControllerUnitTest
     {
-        //TODO : Get All Dish : 
         /// <summary>
         /// Unit Test on Fake Get All Dish
         /// </summary>
@@ -25,13 +24,10 @@ namespace UnitTest
             //Arrange
             IRestaurantService restaurantService = new FakeRestaurantService();
             DishController dishController = new DishController(restaurantService);
-
             //Act
             ActionResult<List<Dish>> DishActionResult = await dishController.GetAll();
-
             //Assert
-            Assert.NotNull(DishActionResult);
-            
+            Assert.NotNull(DishActionResult);    
         }
     }
 }
