@@ -101,6 +101,7 @@
             <returns></returns>
         </member>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <member name="M:BLL.Services.IRestaurantService.GetDishById(System.Int32)">
             <summary>
             Récupérer un plat par son Id.
@@ -110,6 +111,8 @@
         </member>
 =======
 >>>>>>> b69de690618d3ff8f6d1116185a82f6e5cb8927d
+=======
+>>>>>>> parent of 0283a21 (DishControler)
         <member name="T:BLL.Services.RestaurantService">
             <summary>
             All concern about restauration service
@@ -156,6 +159,7 @@
             <returns>A List of Dish</returns>
         </member>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <member name="M:BLL.Services.RestaurantService.GetDishById(System.Int32)">
             <summary>
             Get a Dish By an ID
@@ -172,5 +176,7 @@
         </member>
 =======
 >>>>>>> b69de690618d3ff8f6d1116185a82f6e5cb8927d
+=======
+>>>>>>> parent of 0283a21 (DishControler)
     </members>
 </doc>

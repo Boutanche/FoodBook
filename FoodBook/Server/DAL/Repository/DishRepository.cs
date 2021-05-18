@@ -22,7 +22,6 @@ namespace DAL.Repository
             var stmt = @"delete from dishes where id_dish = @id";
             return await _session.Connection.ExecuteAsync(stmt, new { Id = id }, _session.Transaction);
         }
-        //TODO : Toute la DAL -> DishRepository.cs
 
         public Task<IEnumerable<Dish>> GetAllAsync()
         {

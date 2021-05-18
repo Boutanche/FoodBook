@@ -22,7 +22,7 @@ namespace UnitTest
         {
             //Arrange
             ILibrairiService librairiService = new FakeLibrairiService();
-            BooksController booksController = new BooksController(librairiService);
+            BooksController booksController = new(librairiService);
             //End Arrange
             
             //Act

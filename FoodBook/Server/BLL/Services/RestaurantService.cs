@@ -111,14 +111,13 @@ namespace BLL.Services
             List<Dish> dishes = (await _dish.GetAllAsync()).ToList();
             return dishes;
         }
-<<<<<<< HEAD
+
         /// <summary>
         /// Get a Dish By an ID
         /// </summary>
         /// <param name="id">Int</param>
         /// <returns>Dish</returns>
-=======
->>>>>>> b69de690618d3ff8f6d1116185a82f6e5cb8927d
+
         public async Task<Dish> GetDishById(int id)
         {
 
@@ -126,7 +125,7 @@ namespace BLL.Services
 
             return await _dish.GetAsync(id);
         }
-<<<<<<< HEAD
+
         /// <summary>
         /// Create a Dish
         /// </summary>
@@ -182,8 +181,7 @@ namespace BLL.Services
                 return false;
             }
         }
-=======
->>>>>>> b69de690618d3ff8f6d1116185a82f6e5cb8927d
+
         #endregion
 
 

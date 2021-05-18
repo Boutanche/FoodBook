@@ -41,7 +41,7 @@ namespace UnitTest.Services
         public Task<List<Ingredients>> GetAllIngredients()
         {
             return Task.FromResult(ingredientsFakeDB);
-            
+
         }
         /// <summary>
         /// Get Ingredient By Id
@@ -60,7 +60,7 @@ namespace UnitTest.Services
         /// <returns>Ingredients</returns>
         public Task<Ingredients> ModifyIngredient(Ingredients ingredient)
         {
-            if(ingredient.Id_ingredient > 100)
+            if (ingredient.Id_ingredient > 100)
             {
                 return Task.FromResult<Ingredients>(null);
             }
@@ -68,7 +68,7 @@ namespace UnitTest.Services
             {
                 return null;
             }
-            
+
             var _ingredient = ingredientsFakeDB.Find(i => i.Id_ingredient == ingredient.Id_ingredient);
             _ingredient.Name = ingredient.Name;
             _ingredient.Price = ingredient.Price;
@@ -123,6 +123,16 @@ namespace UnitTest.Services
         public Task<Dish> GetDishById(int id)
         {
             return Task.FromResult(dishFakeDB.Find(i => i.Id_dish == id));
+        }
+        //TODO : Test on Dish
+        public Task<Dish> ModifyDish(Dish dish)
+        {
+            throw new NotImplementedException();
+        }
+        //TODO : Test on Dish
+        public Task<bool> RemoveDishById(int id)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }

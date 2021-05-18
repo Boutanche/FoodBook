@@ -40,7 +40,6 @@ namespace BLL.Services
         /// </summary>
         /// <returns></returns>
         Task<List<Ingredients>> GetAllIngredients();
-        Task<Dish> GetDishById(int id);
         #endregion
         #region Dish
         /// <summary>
@@ -65,7 +64,7 @@ namespace BLL.Services
         /// </summary>
         /// <param name="dish">Dish</param>
         /// <returns>Dish</returns>
-        Task<Dish> ModifyIngredient(Dish dish);
+        Task<Dish> ModifyDish(Dish dish);
         /// <summary>
         /// Supprimer un plat
         /// </summary>
