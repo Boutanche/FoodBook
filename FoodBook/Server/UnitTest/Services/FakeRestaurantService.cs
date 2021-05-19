@@ -93,10 +93,10 @@ namespace UnitTest.Services
         /// </summary>
         public List<Dish> dishFakeDB = new()
         {
-            new Dish(1, "Apple Pie", 0),
-            new Dish(2, "Banana Bread", 1),
-            new Dish(3, "Carrot Cake", 0),
-            new Dish(4, "Pancake", 2),
+            new Dish(1, "Apple Pie", 0, 3),
+            new Dish(2, "Banana Bread", 1, 3),
+            new Dish(3, "Carrot Cake", 0, 3),
+            new Dish(4, "Pancake", 2, 3),
         };
         /// <summary>
         /// Fake Get All Dish

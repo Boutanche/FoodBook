@@ -23,24 +23,31 @@ namespace DAL.Repository
             return await _session.Connection.ExecuteAsync(stmt, new { Id = id }, _session.Transaction);
         }
 
-        public Task<IEnumerable<Dish>> GetAllAsync()
+        public async Task<IEnumerable<Dish>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var stmt = @"select * from dishes";
+            return await _session.Connection.QueryAsync<Dish>(stmt, null, _session.Transaction);
         }
 
-        public Task<Dish> GetAsync(int id)
+        public async Task<Dish> GetAsync(int id)
         {
-            throw new NotImplementedException();
+            //Eviter l'injection sql avec des reqêtes paramétrées
+            var stmt = @"select * from dishes where id_dish = @id";
+            return await _session.Connection.QueryFirstOrDefaultAsync<Dish>(stmt, new { Id = id }, _session.Transaction);
         }
 
-        public Task<Dish> InsertAsync(Dish entity)
+        public async Task<Dish> InsertAsync(Dish entity)
         {
-            throw new NotImplementedException();
+            var stmt = @"insert into dishes(Name, Popularity) output INSERTED.ID
+            values (@Name, @Popularity)";
+            int i = await _session.Connection.QuerySingleAsync<int>(stmt, entity, _session.Transaction);
+            return await GetAsync(i);
         }
 
-        public Task UpdateAsync(Dish entity)
+        public async Task UpdateAsync(Dish entity)
         {
-            throw new NotImplementedException();
+            var stmt = @"UPDATE  dishes SET Name = @Name, Popularity= @Popularity WHERE id_dish = @id";
+            await _session.Connection.QueryAsync<Ingredients>(stmt, entity, _session.Transaction);
         }
     }
 }

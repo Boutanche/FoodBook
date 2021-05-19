@@ -17,6 +17,7 @@ namespace DAL
             //Repositories
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddTransient<IIngredientRepository, IngredientRepository>();
+            services.AddTransient<IDishRepository, DishRepository>();
 
             return services;
         }

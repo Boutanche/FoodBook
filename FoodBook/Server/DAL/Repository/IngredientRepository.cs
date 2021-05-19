@@ -31,7 +31,7 @@ namespace DAL.Repository
 
         public async Task<Ingredients> GetAsync(int id)
         {
-            //Evité l'injection sql avec des reqêtes paramétrées
+            //Eviter l'injection sql avec des reqêtes paramétrées
             var stmt = @"select * from ingredients where id_ingredient = @id";
             return await _session.Connection.QueryFirstOrDefaultAsync<Ingredients>(stmt, new { Id = id }, _session.Transaction);
         }

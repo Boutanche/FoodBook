@@ -155,18 +155,24 @@
             int : Popularity of a dish
             </summary>
         </member>
+        <member name="P:BO.Entity.Dish.Id_type_Fk_dish">
+            <summary>
+            int : Foreign key of type of dish
+            </summary>
+        </member>
         <member name="M:BO.Entity.Dish.#ctor">
             <summary>
             Default constructor for API serialisation
             </summary>
         </member>
-        <member name="M:BO.Entity.Dish.#ctor(System.Nullable{System.Int32},System.String,System.Int32)">
+        <member name="M:BO.Entity.Dish.#ctor(System.Nullable{System.Int32},System.String,System.Int32,System.Int32)">
             <summary>
             Utilitaru constructor ful properties
             </summary>
             <param name="id_dish">Id of dish</param>
             <param name="name">Name of this dish</param>
             <param name="popularity">Number how many times this dish is selected by clients</param>
+            <param name="fk_typeOfDish">Foreign Key</param>
         </member>
         <member name="M:BO.Entity.Dish.Equals(System.Object)">
             <summary>
