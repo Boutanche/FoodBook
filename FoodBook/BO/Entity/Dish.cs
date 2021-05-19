@@ -26,7 +26,7 @@ namespace BO.Entity
         /// <summary>
         /// int : Foreign key of type of dish
         /// </summary>
-        public int Id_type_Fk_dish { get; set; }
+        public int Id_type { get; set; }
 
         /// <summary>
         /// Default constructor for API serialisation
@@ -45,7 +45,7 @@ namespace BO.Entity
             Id_dish = id_dish;
             Name = name;
             Popularity = popularity;
-            Id_type_Fk_dish = fk_typeOfDish;
+            Id_type = fk_typeOfDish;
         }
 
         //Générer automatiquement Equals() and GetHashCocde()
@@ -60,7 +60,7 @@ namespace BO.Entity
                 Id_dish == dish.Id_dish &&
                 Name == dish.Name &&
                 Popularity == dish.Popularity &&
-                Id_type_Fk_dish == dish.Id_type_Fk_dish;
+                Id_type == dish.Id_type;
         }
         /// <summary>
         /// Override GetHashCode for dish
@@ -68,7 +68,7 @@ namespace BO.Entity
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id_dish, Name, Popularity, Id_type_Fk_dish);
+            return HashCode.Combine(Id_dish, Name, Popularity, Id_type);
         }
     }
 }

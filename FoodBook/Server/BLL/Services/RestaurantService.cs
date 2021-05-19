@@ -181,9 +181,79 @@ namespace BLL.Services
                 return false;
             }
         }
-
         #endregion
+        #region TypeOfDish
+        /// <summary>
+        /// Get a list of TypeOfDish
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<TypeOfDish>> GetAllTypeOfDish()
+        {
+            ITypeOfDishRepository _typeOfDish = _db.GetRepository<ITypeOfDishRepository>();
+            List<TypeOfDish> typeOfDishes = (await _typeOfDish.GetAllAsync()).ToList();
+            return typeOfDishes;
+        }
+        /// <summary>
+        /// Get a TypeOfDish
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<TypeOfDish> GetTypeOfDishById(int id)
+        {
+            ITypeOfDishRepository _dish = _db.GetRepository<ITypeOfDishRepository>();
 
+            return await _dish.GetAsync(id);
+        }
+        #endregion
+        #region Service
 
+        public Task<Service> GetServiceById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Service>> GetServicesByIdMenu(int idMenu)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Service> CreateService(Service service)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> AddDishForThisService(Dish dish, Service service)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> RemoveDishForThisService(Dish dish, Service service)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+        #region Menu
+        public Task<DateTime> NextMenu(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<DateTime> PreviousMenu(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> GetIdMenuByDate(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Menu> GetMenuById(int id)
+        {
+            throw new NotImplementedException();
     }
+    #endregion
+
+
+}
 }

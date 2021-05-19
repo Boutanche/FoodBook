@@ -104,5 +104,23 @@
             <param name="id"></param>
             <returns>No Content Code 204.</returns>
         </member>
+        <member name="T:API.Controllers.TypeOfDishController">
+            <summary>
+            Controller Type Of Dish
+            </summary>
+        </member>
+        <member name="M:API.Controllers.TypeOfDishController.GetAll">
+            <summary>
+            Récupérer la liste de tous les Type Of Dish
+            </summary>
+            <returns>Une liste de TypeOdDish</returns>
+        </member>
+        <member name="M:API.Controllers.TypeOfDishController.GetTypeOfDishById(System.Int32)">
+            <summary>
+            Récupérer un Type Of Dish par son id
+            </summary>
+            <param name="id">int</param>
+            <returns>TypeOfDish</returns>
+        </member>
     </members>
 </doc>

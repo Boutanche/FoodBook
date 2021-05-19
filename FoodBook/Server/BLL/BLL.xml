@@ -128,6 +128,77 @@
             <param name="id">Int</param>
             <returns>Code No Content : 204</returns>
         </member>
+        <member name="M:BLL.Services.IRestaurantService.GetAllTypeOfDish">
+            <summary>
+            Récupérer tous les Type Of Dish
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.GetTypeOfDishById(System.Int32)">
+            <summary>
+            Récupérer un Type Of Dish par son id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.GetServiceById(System.Int32)">
+            <summary>
+            Trouver un service par son Id
+            </summary>
+            <param name="id"></param>
+            <returns>Service</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.GetServiceByIdMenu(System.Int32)">
+            <summary>
+            Trouver les services qui composent un menu de la semaine
+            </summary>
+            <param name="idMenu">int</param>
+            <returns>List des services du menu de la semaine</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.CreateService(BO.Entity.Service)">
+            <summary>
+            Créer un service
+            </summary>
+            <param name="service"></param>
+            <returns>Service</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)">
+            <summary>
+            Ajouter un plat au service
+            </summary>
+            <param name="dish"></param>
+            <param name="service"></param>
+            <returns>Bool</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)">
+            <summary>
+            Supprimer un plat du Service
+            </summary>
+            <param name="dish"></param>
+            <param name="service"></param>
+            <returns>Bool</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.NextMenu(System.DateTime)">
+            <summary>
+            Menu Suivant
+            </summary>
+            <param name="date"></param>
+            <returns>Menu</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.PreviousMenu(System.DateTime)">
+            <summary>
+            Menu Précédent
+            </summary>
+            <param name="date"></param>
+            <returns>Menu</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.GetIdMenuByDate(System.DateTime)">
+            <summary>
+            Trouver l'id d'un menu par sa date
+            </summary>
+            <param name="date"></param>
+            <returns>Int</returns>
+        </member>
         <member name="T:BLL.Services.RestaurantService">
             <summary>
             All concern about restauration service
@@ -200,6 +271,19 @@
             </summary>
             <param name="id">Int</param>
             <returns>Code No Content : 204</returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.GetAllTypeOfDish">
+            <summary>
+            Get a list of TypeOfDish
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.GetTypeOfDishById(System.Int32)">
+            <summary>
+            Get a TypeOfDish
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

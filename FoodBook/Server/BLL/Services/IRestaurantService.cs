@@ -1,4 +1,5 @@
 ﻿using BO.Entity;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -9,8 +10,7 @@ namespace BLL.Services
     /// </summary>
     public interface IRestaurantService
     {
-        #region ingredients
-
+        #region Ingredients
         /// <summary>
         /// Récupérer un ingrédient par son identifiant
         /// </summary>
@@ -72,5 +72,79 @@ namespace BLL.Services
         /// <returns>Code No Content : 204</returns>
         Task<bool> RemoveDishById(int id);
         #endregion
+        #region TypeOfDish
+        /// <summary>
+        /// Récupérer tous les Type Of Dish
+        /// </summary>
+        /// <returns></returns>
+        Task<List<TypeOfDish>> GetAllTypeOfDish();
+        /// <summary>
+        /// Récupérer un Type Of Dish par son id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task<TypeOfDish> GetTypeOfDishById(int id);
+        #endregion
+        #region Service
+        /// <summary>
+        /// Trouver un service par son Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Service</returns>
+        Task<Service> GetServiceById(int id);
+        /// <summary>
+        /// Trouver les services qui composent un menu de la semaine
+        /// </summary>
+        /// <param name="idMenu">int</param>
+        /// <returns>List des services du menu de la semaine</returns>
+        Task<List<Service>> GetServicesByIdMenu(int idMenu);
+        /// <summary>
+        /// Créer un service
+        /// </summary>
+        /// <param name="service"></param>
+        /// <returns>Service</returns>
+        Task<Service> CreateService(Service service);
+        /// <summary>
+        /// Ajouter un plat au service
+        /// </summary>
+        /// <param name="dish"></param>
+        /// <param name="service"></param>
+        /// <returns>Bool</returns>
+        Task<bool> AddDishForThisService(Dish dish, Service service);
+        /// <summary>
+        /// Supprimer un plat du Service
+        /// </summary>
+        /// <param name="dish"></param>
+        /// <param name="service"></param>
+        /// <returns>Bool</returns>
+        Task<bool> RemoveDishForThisService(Dish dish, Service service);
+        #endregion
+        #region Menu
+        /// <summary>
+        /// Menu Suivant
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns>Menu</returns>
+        Task<DateTime> NextMenu(DateTime date);
+        /// <summary>
+        /// Menu Précédent
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns>Menu</returns>
+        Task<DateTime> PreviousMenu(DateTime date);
+        /// <summary>
+        /// Trouver l'id d'un menu par sa date
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns>Int</returns>
+        Task<int> GetIdMenuByDate(DateTime date);
+        /// <summary>
+        /// Trouver un menu par son Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Menu</returns>
+        Task<Menu> GetMenuById(int id);
+        #endregion
+        //TODO : Est-ce qu'il ne manque pas une entitée "IsComposed" qui permet de faire la table de liaison "un service est composé des trois plats suivants..."
     }
 }

@@ -155,7 +155,7 @@
             int : Popularity of a dish
             </summary>
         </member>
-        <member name="P:BO.Entity.Dish.Id_type_Fk_dish">
+        <member name="P:BO.Entity.Dish.Id_type">
             <summary>
             int : Foreign key of type of dish
             </summary>
@@ -230,6 +230,70 @@
         <member name="M:BO.Entity.Ingredients.GetHashCode">
             <summary>
             Hash Code
+            </summary>
+            <returns>HashCode</returns>
+        </member>
+        <member name="T:BO.Entity.Service">
+            <summary>
+            Représente un service : 
+            Un service est composé de un ou plusieurs plats.
+            14, (7 jours * 2 par jours) services composent un menu dit "menu de la semaine".
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Service.Id_service">
+            <summary>
+            Identifiant unique du service
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Service.ServiceNumber">
+            <summary>
+            Numéro de service : 
+            1 = Midi , 2 = Soir
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Service.DayNumber">
+            <summary>
+            Numéro du jour de la semaine,
+            1 = Lundi ..., 7 = Dimanche
+            </summary>
+        </member>
+        <member name="T:BO.Entity.TypeOfDish">
+            <summary>
+            Représente un objet Type Of Dish
+            </summary>
+        </member>
+        <member name="P:BO.Entity.TypeOfDish.Id_type">
+            <summary>
+            Identifiant unique du Type Of Dish
+            </summary>
+        </member>
+        <member name="P:BO.Entity.TypeOfDish.Wording">
+            <summary>
+            Label du Type Of Dish
+            </summary>
+        </member>
+        <member name="M:BO.Entity.TypeOfDish.#ctor">
+            <summary>
+            Default Constructor for API serialisation
+            </summary>
+        </member>
+        <member name="M:BO.Entity.TypeOfDish.#ctor(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Utilitary constructor for properties
+            </summary>
+            <param name="id_typeOfDish"></param>
+            <param name="wording"></param>
+        </member>
+        <member name="M:BO.Entity.TypeOfDish.Equals(System.Object)">
+            <summary>
+            Générer automatiquement Equals()
+            </summary>
+            <param name="obj"></param>
+            <returns>TypeOfDish</returns>
+        </member>
+        <member name="M:BO.Entity.TypeOfDish.GetHashCode">
+            <summary>
+            Générer automatiquement Get Hash Code
             </summary>
             <returns>HashCode</returns>
         </member>
