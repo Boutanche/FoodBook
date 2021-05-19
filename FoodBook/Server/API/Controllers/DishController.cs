@@ -36,7 +36,6 @@ namespace API.Controllers
         {
             return Ok(await _restaurantService.GetAllDish());
         }
-
         /// <summary>
         /// Get Dish By Id
         /// </summary>
@@ -48,7 +47,14 @@ namespace API.Controllers
         public async Task<IActionResult> GetDishById([FromRoute] int id)
         {
             Dish dish = await _restaurantService.GetDishById(id);
-            return Ok(dish);
+            if (dish == null)
+            {
+                return NotFound();        // StatusCode = 404
+            }
+            else
+            {
+                return Ok(dish);   // StatusCode = 200
+            }
 
         }
         /// <summary>
@@ -74,7 +80,6 @@ namespace API.Controllers
                 return BadRequest();
             }
         }
-
         /// <summary>
         /// Modifier un plat donné en le trouvant par son id.
         /// </summary>

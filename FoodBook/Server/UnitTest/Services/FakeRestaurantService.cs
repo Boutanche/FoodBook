@@ -124,15 +124,27 @@ namespace UnitTest.Services
         {
             return Task.FromResult(dishFakeDB.Find(i => i.Id_dish == id));
         }
-        //TODO : Test on Dish
         public Task<Dish> ModifyDish(Dish dish)
         {
-            throw new NotImplementedException();
+            if (dish.Id_dish > 100)
+            {
+                return Task.FromResult<Dish>(null);
+            }
+            if (dish.Id_dish == null)
+            {
+                return null;
+            }
+
+            var _dish = dishFakeDB.Find(i => i.Id_dish == dish.Id_dish);
+            _dish.Name = dish.Name;
+            _dish.Popularity = dish.Popularity;
+
+            return Task.FromResult(_dish);
         }
-        //TODO : Test on Dish
         public Task<bool> RemoveDishById(int id)
         {
-            throw new NotImplementedException();
+            dishFakeDB.RemoveAll(i => i.Id_dish == id);
+            return Task.FromResult(id > 0);
         }
         #endregion
     }

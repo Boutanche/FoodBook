@@ -35,6 +35,35 @@
             </summary>
             <returns>List od Dish</returns>
         </member>
+        <member name="M:API.Controllers.DishController.GetDishById(System.Int32)">
+            <summary>
+            Get Dish By Id
+            </summary>
+            <param name="id">int</param>
+            <returns>Dish </returns>
+        </member>
+        <member name="M:API.Controllers.DishController.CreateDish(BO.Entity.Dish)">
+            <summary>
+            Créer un plat et l'ajouter à la BDD
+            </summary>
+            <param name="dish">Dish</param>
+            <returns>Le plat avec un identifiant généré</returns>
+        </member>
+        <member name="M:API.Controllers.DishController.ModifyDish(System.Int32,BO.Entity.Dish)">
+            <summary>
+            Modifier un plat donné en le trouvant par son id.
+            </summary>
+            <param name="id">int</param>
+            <param name="dish">dish</param>
+            <returns>Un plat modifé</returns>
+        </member>
+        <member name="M:API.Controllers.DishController.DeleteDish(System.Int32)">
+            <summary>
+            Suppression d'un plat donné
+            </summary>
+            <param name="id">Int</param>
+            <returns>No Content Code 204</returns>
+        </member>
         <member name="T:API.Controllers.IngredientsController">
             <summary>
             Controller Ingredient

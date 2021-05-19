@@ -100,8 +100,6 @@
             </summary>
             <returns></returns>
         </member>
-<<<<<<< HEAD
-<<<<<<< HEAD
         <member name="M:BLL.Services.IRestaurantService.GetDishById(System.Int32)">
             <summary>
             Récupérer un plat par son Id.
@@ -109,10 +107,27 @@
             <param name="id">int</param>
             <returns>Dish</returns>
         </member>
-=======
->>>>>>> b69de690618d3ff8f6d1116185a82f6e5cb8927d
-=======
->>>>>>> parent of 0283a21 (DishControler)
+        <member name="M:BLL.Services.IRestaurantService.CreateDish(BO.Entity.Dish)">
+            <summary>
+            Créer un plat
+            </summary>
+            <param name="dish">Dish</param>
+            <returns>Dish</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.ModifyDish(BO.Entity.Dish)">
+            <summary>
+            Modifé un plat
+            </summary>
+            <param name="dish">Dish</param>
+            <returns>Dish</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.RemoveDishById(System.Int32)">
+            <summary>
+            Supprimer un plat
+            </summary>
+            <param name="id">Int</param>
+            <returns>Code No Content : 204</returns>
+        </member>
         <member name="T:BLL.Services.RestaurantService">
             <summary>
             All concern about restauration service
@@ -158,8 +173,6 @@
             </summary>
             <returns>A List of Dish</returns>
         </member>
-<<<<<<< HEAD
-<<<<<<< HEAD
         <member name="M:BLL.Services.RestaurantService.GetDishById(System.Int32)">
             <summary>
             Get a Dish By an ID
@@ -174,9 +187,19 @@
             <param name="dish">Dish</param>
             <returns>A new Dish</returns>
         </member>
-=======
->>>>>>> b69de690618d3ff8f6d1116185a82f6e5cb8927d
-=======
->>>>>>> parent of 0283a21 (DishControler)
+        <member name="M:BLL.Services.RestaurantService.ModifyDish(BO.Entity.Dish)">
+            <summary>
+            Modifier un plat
+            </summary>
+            <param name="dish">Dish</param>
+            <returns>Un plat modifié</returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.RemoveDishById(System.Int32)">
+            <summary>
+            Supprimer un plat
+            </summary>
+            <param name="id">Int</param>
+            <returns>Code No Content : 204</returns>
+        </member>
     </members>
 </doc>

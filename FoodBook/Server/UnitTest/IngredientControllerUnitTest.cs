@@ -16,7 +16,7 @@ namespace UnitTest
     public class IngredientControllerUnitTest
     {
         /// <summary>
-        /// Test Unitaire sur CreateIngredient
+        /// Test Unitaire sur Create un Ingredient
         /// </summary>
         [Fact]
         public async void TestCreateIngredient()
@@ -24,27 +24,19 @@ namespace UnitTest
             //Arange
             IRestaurantService restaurantService = new FakeRestaurantService();
             IngredientsController ingredientsController = new(restaurantService);
-
             Ingredients salt = new();
             {
                 salt.Name = "Salt";
                 salt.Price = 1.5m;
             }
-
             //Act
             var saltIngredientActionResult = await ingredientsController.CreateIngredient(salt);
-            //OkObjectResult IngredientActionResult = await ingredientsController.CreateIngredient(salt) as OkObjectResult;
-            
-
             //Assert
             Assert.NotNull(saltIngredientActionResult);
-            Assert.Equal("Salt", salt.Name);
-            //Assert.Equal(200, IngredientActionResult.StatusCode);
-
-            //Assert.Contains("Salt", IngredientActionResult.ToString) ;
         }
-
-        //TODO : Test Modify Ingredients :
+        /// <summary>
+        /// Test unitaire sur Modifier un Ingrédient
+        /// </summary>
         [Fact]
         public async void TestModifyIngredient()
         {
@@ -77,8 +69,6 @@ namespace UnitTest
             var IngredientActionResultNotFoundCase = await ingredientsController.ModifyIngredient(105, salt2) as NotFoundResult;
             var IngredientActionResultOkCase = await ingredientsController.ModifyIngredient(1, saltGood) as OkObjectResult;
 
-            // Il faut un OKObject. // donc 4 act et 4 Assert.
-
             //Assert
             Assert.NotNull(IngredientActionResult);
             Assert.NotNull(IngredientActionResultNull);
@@ -86,7 +76,6 @@ namespace UnitTest
             Assert.NotNull(IngredientActionResultOkCase);
 
         }
-        //TODO : Test Get All Ingredients : 
         /// <summary>
         /// Test Unitaire sur Get All
         /// </summary>
@@ -101,14 +90,14 @@ namespace UnitTest
 
             //Act
             ActionResult<List<Ingredients>> IngredientsActionResult = await ingredientController.GetAll();
-             //Assert
+            //Assert
             Assert.NotNull(IngredientsActionResult);
         }
 
-            /// <summary>
-            /// Test Unitaire sur GetIngredientById
-            /// </summary>
-            [Fact]
+        /// <summary>
+        /// Test Unitaire sur GetIngredientById
+        /// </summary>
+        [Fact]
         public async void TestGetIngredientById()
         {
             //Arrange

@@ -29,6 +29,29 @@ namespace UnitTest
             //Assert
             Assert.NotNull(DishActionResult);
         }
+        /// <summary>
+        /// Test Unitaire sur GetDishById
+        /// </summary>
+        [Fact]
+        public async void TestGetDishById()
+        {
+            //Arrange
+            IRestaurantService restaurantService = new FakeRestaurantService();
+            DishController dishController = new(restaurantService);
+
+            //Act
+            //Test sur id = 1 
+            OkObjectResult dishActionResult1 = await dishController.GetDishById(1) as OkObjectResult;
+            //Test sur Résultat n'existe pas :
+            NotFoundResult notFounddishActionResult = await dishController.GetDishById(9999) as NotFoundResult;
+
+
+            //Assert
+            Assert.NotNull(dishActionResult1);
+            Assert.Equal(200, dishActionResult1.StatusCode);
+            Assert.NotNull(notFounddishActionResult);
+            Assert.Equal(404, notFounddishActionResult.StatusCode);
+        }
         [Fact]
         public async void TestCreateDish()
         {
@@ -44,7 +67,65 @@ namespace UnitTest
             var tabboulehDishActionResult = await dishController.CreateDish(tabbouleh);
             //Assert
             Assert.NotNull(tabboulehDishActionResult);
-            Assert.Equal("Tabbouleh", tabbouleh.Name);
+        }
+        /// <summary>
+        /// Suppression d'un plat
+        /// </summary>
+        [Fact]
+        public async void TestRemoveDishById()
+        {
+            //Arrange
+            IRestaurantService restaurantService = new FakeRestaurantService();
+            DishController dishController = new(restaurantService);
+
+            //Act
+            var noContentExpected = await dishController.DeleteDish(1) as NoContentResult;
+
+            //Assert
+            Assert.NotNull(noContentExpected);
+            Assert.Equal(204, noContentExpected.StatusCode);
+        }
+        /// <summary>
+        /// Test unitaire sur Modifier un plat
+        /// </summary>
+        [Fact]
+        public async void TestModifyDish()
+        {
+            //Arrange
+            IRestaurantService restaurantService = new FakeRestaurantService();
+            DishController dishController = new(restaurantService);
+
+            Dish tabbouleh = new();
+            {
+                tabbouleh.Name = "Tabbouleh";
+                tabbouleh.Popularity = 0;
+            }
+
+            Dish couscous = new()
+
+            {
+                Id_dish = 105,
+                Name = "Couscous",
+                Popularity = 1
+            };
+            Dish couscousGood = new()
+            {
+                Id_dish = 1,
+                Name = "Couscous",
+                Popularity = 1
+            };
+            //Act
+            var DishActionResult = await dishController.ModifyDish(1, tabbouleh) as BadRequestResult;
+            var DishActionResultNull = await dishController.ModifyDish(1, null) as BadRequestResult;
+            var DishActionResultNotFoundCase = await dishController.ModifyDish(105, couscous) as NotFoundResult;
+            var DishActionResultOkCase = await dishController.ModifyDish(1, couscousGood) as OkObjectResult;
+
+            //Assert
+            Assert.NotNull(DishActionResult);
+            Assert.NotNull(DishActionResultNull);
+            Assert.NotNull(DishActionResultNotFoundCase);
+            Assert.NotNull(DishActionResultOkCase);
+
         }
     }
 }
