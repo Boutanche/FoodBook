@@ -42,11 +42,33 @@ namespace API.Controllers
                 return Ok(menu);   // StatusCode = 200
             }
         }
-        //TODO : Next Menu
-        
-        //TODO : Previous Menu
-        
-        //TODO : IdMenuById 
 
-    }
+        /// <summary>
+        /// Récupère les services du menu.
+        /// </summary>
+        /// <param name="id">Identifiant du menu </param>
+        /// <returns>Liste des services du menu</returns>
+        [HttpGet("{id}/services")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Menu))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetServicesOfMenuById([FromRoute] int id)
+        {
+
+            Menu menu = await _restaurantService.GetMenuById(id);
+            if (menu == null)
+            {
+                return NotFound();  // StatusCode = 404
+            }
+            else
+            {
+                return Ok(menu);   // StatusCode = 200
+            }
+        }
+            //TODO : Next Menu (à faire par le client)
+
+            //TODO : Previous Menu (à faire par le client)
+
+            //TODO : IdMenuById 
+
+        }
 }

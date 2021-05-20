@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocFX", "DocFX\DocFX.csproj", "{843255A3-7555-4E5E-B970-D178A6DB8090}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{2D124DD5-BE51-4FBE-A062-6152184C5F6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "UnitTest\UnitTest.csproj", "{2D124DD5-BE51-4FBE-A062-6152184C5F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTest", "IntegrationTest\IntegrationTest.csproj", "{93477A79-72D1-471F-A58D-2B900A99C15A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,14 @@ Global
 		{2D124DD5-BE51-4FBE-A062-6152184C5F6C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D124DD5-BE51-4FBE-A062-6152184C5F6C}.Release|x86.ActiveCfg = Release|Any CPU
 		{2D124DD5-BE51-4FBE-A062-6152184C5F6C}.Release|x86.Build.0 = Release|Any CPU
+		{93477A79-72D1-471F-A58D-2B900A99C15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93477A79-72D1-471F-A58D-2B900A99C15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93477A79-72D1-471F-A58D-2B900A99C15A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{93477A79-72D1-471F-A58D-2B900A99C15A}.Debug|x86.Build.0 = Debug|Any CPU
+		{93477A79-72D1-471F-A58D-2B900A99C15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93477A79-72D1-471F-A58D-2B900A99C15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93477A79-72D1-471F-A58D-2B900A99C15A}.Release|x86.ActiveCfg = Release|Any CPU
+		{93477A79-72D1-471F-A58D-2B900A99C15A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

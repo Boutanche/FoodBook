@@ -109,9 +109,16 @@
             Controller sur Menu
             </summary>
         </member>
-        <member name="M:API.Controllers.ServiceController.GetServicesByIdMenu(System.Int32)">
+        <member name="M:API.Controllers.MenuController.GetServicesOfMenuById(System.Int32)">
             <summary>
-            Récupérer la liste des service du menu : 
+            Récupère les services du menu.
+            </summary>
+            <param name="id">Identifiant du menu </param>
+            <returns>Liste des services du menu</returns>
+        </member>
+        <member name="M:API.Controllers.ServiceController.GetServicesByIdMenu(System.Nullable{System.Int32})">
+            <summary>
+            Récupérer la liste des service du menu :   API/V1/service?menu=4
             </summary>
             <param name=""></param>
             <param name="id_Menu"></param>
