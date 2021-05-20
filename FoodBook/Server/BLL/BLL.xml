@@ -148,7 +148,7 @@
             <param name="id"></param>
             <returns>Service</returns>
         </member>
-        <member name="M:BLL.Services.IRestaurantService.GetServiceByIdMenu(System.Int32)">
+        <member name="M:BLL.Services.IRestaurantService.GetServicesByIdMenu(System.Int32)">
             <summary>
             Trouver les services qui composent un menu de la semaine
             </summary>
@@ -198,6 +198,13 @@
             </summary>
             <param name="date"></param>
             <returns>Int</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.GetMenuById(System.Int32)">
+            <summary>
+            Trouver un menu par son Id
+            </summary>
+            <param name="id"></param>
+            <returns>Menu</returns>
         </member>
         <member name="T:BLL.Services.RestaurantService">
             <summary>

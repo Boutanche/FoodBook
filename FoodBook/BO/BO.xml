@@ -233,6 +233,52 @@
             </summary>
             <returns>HashCode</returns>
         </member>
+        <member name="T:BO.Entity.Menu">
+            <summary>
+            Le menu de la semaine
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Menu.Id_menu">
+            <summary>
+            Identifiant unique du menu
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Menu.Year">
+            <summary>
+            Année concernée par ce menu
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Menu.WeekNumber">
+            <summary>
+            Il y a 52 semaines dans une année
+            </summary>
+        </member>
+        <member name="M:BO.Entity.Menu.#ctor">
+            <summary>
+            Default Constructor for API serialisation
+            </summary>
+        </member>
+        <member name="M:BO.Entity.Menu.#ctor(System.Nullable{System.Int32},System.DateTime,System.Int32)">
+            <summary>
+            Utilitary constructor full properties
+            </summary>
+            <param name="id_menu"></param>
+            <param name="year"></param>
+            <param name="weekNumber"></param>
+        </member>
+        <member name="M:BO.Entity.Menu.Equals(System.Object)">
+            <summary>
+            Equals()
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BO.Entity.Menu.GetHashCode">
+            <summary>
+            GetHashCode()
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BO.Entity.Service">
             <summary>
             Représente un service : 
@@ -256,6 +302,38 @@
             Numéro du jour de la semaine,
             1 = Lundi ..., 7 = Dimanche
             </summary>
+        </member>
+        <member name="P:BO.Entity.Service.Id_Menu">
+            <summary>
+            Clé étrangère sur le Menu de la semaine qui contient ce service
+            </summary>
+        </member>
+        <member name="M:BO.Entity.Service.#ctor">
+            <summary>
+            Default constructor for API serialisation
+            </summary>
+        </member>
+        <member name="M:BO.Entity.Service.#ctor(System.Nullable{System.Int32},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Utilitary constructor full properties
+            </summary>
+            <param name="id_service"></param>
+            <param name="serviceNumber"></param>
+            <param name="dayNumber"></param>
+            <param name="id_menu"></param>
+        </member>
+        <member name="M:BO.Entity.Service.Equals(System.Object)">
+            <summary>
+            Equals() 
+            </summary>
+            <param name="obj"></param>
+            <returns>Ingredients</returns>
+        </member>
+        <member name="M:BO.Entity.Service.GetHashCode">
+            <summary>
+            Get Hash Code ()
+            </summary>
+            <returns>HashCode</returns>
         </member>
         <member name="T:BO.Entity.TypeOfDish">
             <summary>

@@ -35,7 +35,7 @@ namespace API.Controllers
             Menu menu = await _restaurantService.GetMenuById(id);
             if (menu == null)
             {
-                return NotFound();        // StatusCode = 404
+                return NotFound();  // StatusCode = 404
             }
             else
             {

@@ -146,6 +146,61 @@ namespace UnitTest.Services
             dishFakeDB.RemoveAll(i => i.Id_dish == id);
             return Task.FromResult(id > 0);
         }
+
+        public Task<List<TypeOfDish>> GetAllTypeOfDish()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<TypeOfDish> GetTypeOfDishById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Service> GetServiceById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Service>> GetServicesByIdMenu(int idMenu)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Service> CreateService(Service service)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> AddDishForThisService(Dish dish, Service service)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> RemoveDishForThisService(Dish dish, Service service)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<DateTime> NextMenu(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<DateTime> PreviousMenu(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> GetIdMenuByDate(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Menu> GetMenuById(int id)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }

@@ -104,6 +104,33 @@
             <param name="id"></param>
             <returns>No Content Code 204.</returns>
         </member>
+        <member name="T:API.Controllers.MenuController">
+            <summary>
+            Controller sur Menu
+            </summary>
+        </member>
+        <member name="M:API.Controllers.ServiceController.GetServicesByIdMenu(System.Int32)">
+            <summary>
+            Récupérer la liste des service du menu : 
+            </summary>
+            <param name=""></param>
+            <param name="id_Menu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ServiceController.GetServiceById(System.Int32)">
+            <summary>
+            Récupèrer un service par son Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ServiceController.CreateService(BO.Entity.Service)">
+            <summary>
+            Créer un nouveau service
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
         <member name="T:API.Controllers.TypeOfDishController">
             <summary>
             Controller Type Of Dish
