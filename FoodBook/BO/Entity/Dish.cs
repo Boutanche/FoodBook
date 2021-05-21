@@ -34,7 +34,7 @@ namespace BO.Entity
         public Dish() { }
 
         /// <summary>
-        /// Utilitaru constructor ful properties
+        /// Utilitari constructor ful properties
         /// </summary>
         /// <param name="id_dish">Id of dish</param>
         /// <param name="name">Name of this dish</param>
