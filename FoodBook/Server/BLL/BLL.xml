@@ -128,6 +128,13 @@
             <param name="id">Int</param>
             <returns>Code No Content : 204</returns>
         </member>
+        <member name="M:BLL.Services.IRestaurantService.GetIngredientsOfDishById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:BLL.Services.IRestaurantService.GetAllTypeOfDish">
             <summary>
             Récupérer tous les Type Of Dish
@@ -199,7 +206,7 @@
             <param name="date"></param>
             <returns>Int</returns>
         </member>
-        <member name="M:BLL.Services.IRestaurantService.GetMenuById(System.Int32)">
+        <member name="M:BLL.Services.IRestaurantService.GetServicesOfMenuById(System.Int32)">
             <summary>
             Trouver un menu par son Id
             </summary>

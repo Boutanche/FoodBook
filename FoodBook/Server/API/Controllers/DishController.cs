@@ -32,7 +32,7 @@ namespace API.Controllers
         /// </summary>
         /// <returns>List od Dish</returns>
         [HttpGet]
-        public async Task<ActionResult<List<Dish>>> GetAll()
+        public async Task<ActionResult<List<Dish>>> GetAllDish()
         {
             return Ok(await _restaurantService.GetAllDish());
         }
@@ -55,7 +55,6 @@ namespace API.Controllers
             {
                 return Ok(dish);   // StatusCode = 200
             }
-
         }
         /// <summary>
         /// Créer un plat et l'ajouter à la BDD
@@ -133,6 +132,20 @@ namespace API.Controllers
                 return NotFound();
             }
         }
-
+        [HttpGet("{id}/ingredients")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Dish))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetIngredientsOfDishById([FromRoute] int id)
+        {
+            Dish dish = await _restaurantService.GetIngredientsOfDishById(id);
+            if (dish == null)
+            {
+                return NotFound();  // StatusCode = 404
+            }
+            else
+            {
+                return Ok(dish);   // StatusCode = 200
+            }
+        }
     }
 }

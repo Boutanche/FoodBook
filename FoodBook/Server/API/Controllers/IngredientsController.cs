@@ -75,7 +75,7 @@ namespace API.Controllers
             if (newIngredient != null)
             {
                 //Créer une redirection vers GetIngredientById(NewIngredient.IngredientId)
-                return CreatedAtAction(nameof(GetIngredientById), new { id = newIngredient.Id_ingredient }, newIngredient);
+                return CreatedAtAction(nameof(GetIngredientById), new { id = newIngredient.Id }, newIngredient);
             }
             else
             {
@@ -95,7 +95,7 @@ namespace API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> ModifyIngredient([FromRoute] int id, [FromBody] Ingredients ingredient)
         {
-            if (ingredient == null || id != ingredient.Id_ingredient)
+            if (ingredient == null || id != ingredient.Id)
             {
                 // Retourne un code 400  Bad Request
                 return BadRequest();

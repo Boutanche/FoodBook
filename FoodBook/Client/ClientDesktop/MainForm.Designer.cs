@@ -30,410 +30,613 @@ namespace ClientDesktop
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.tableLayoutPanel_Background = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel_hearder = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel_title = new System.Windows.Forms.TableLayoutPanel();
-            this.label_mainTitle = new System.Windows.Forms.Label();
-            this.tableLayoutPanel_week = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Main = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel_Title = new System.Windows.Forms.TableLayoutPanel();
+            this.label_WeekNumber = new System.Windows.Forms.Label();
+            this.label_Title = new System.Windows.Forms.Label();
+            this.textBox_week = new System.Windows.Forms.TextBox();
             this.button_previous = new System.Windows.Forms.Button();
             this.button_next = new System.Windows.Forms.Button();
-            this.tableLayoutPanel_weekLabel = new System.Windows.Forms.TableLayoutPanel();
-            this.Label_week = new System.Windows.Forms.Label();
-            this.textBox_week = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel_btnMenu = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_btnMenuHeader = new System.Windows.Forms.TableLayoutPanel();
+            this.button_status = new System.Windows.Forms.Button();
             this.button_createDish = new System.Windows.Forms.Button();
-            this.button_info = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label_monday = new System.Windows.Forms.Label();
-            this.label_thuesday = new System.Windows.Forms.Label();
-            this.label_wenesday = new System.Windows.Forms.Label();
-            this.label_thursday = new System.Windows.Forms.Label();
-            this.label_friday = new System.Windows.Forms.Label();
-            this.label_satursday = new System.Windows.Forms.Label();
-            this.label_sunday = new System.Windows.Forms.Label();
+            this.tableLayoutPanel_MainBody = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Row2 = new System.Windows.Forms.TableLayoutPanel();
             this.label_service1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel_S1Formule = new System.Windows.Forms.TableLayoutPanel();
+            this.label_S1Starter = new System.Windows.Forms.Label();
+            this.label_S1Meal = new System.Windows.Forms.Label();
+            this.label_S1Dessert = new System.Windows.Forms.Label();
+            this.tableLayoutPanel_Row3 = new System.Windows.Forms.TableLayoutPanel();
             this.label_service2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel_Background.SuspendLayout();
-            this.tableLayoutPanel_hearder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel_title.SuspendLayout();
-            this.tableLayoutPanel_week.SuspendLayout();
-            this.tableLayoutPanel_weekLabel.SuspendLayout();
-            this.tableLayoutPanel_btnMenu.SuspendLayout();
+            this.tableLayoutPanel_S2Formule = new System.Windows.Forms.TableLayoutPanel();
+            this.label_S2Starter = new System.Windows.Forms.Label();
+            this.label_S2Meal = new System.Windows.Forms.Label();
+            this.label_S2Dessert = new System.Windows.Forms.Label();
+            this.tableLayoutPanel_DaysHeader = new System.Windows.Forms.TableLayoutPanel();
+            this.label_day5 = new System.Windows.Forms.Label();
+            this.label_day6 = new System.Windows.Forms.Label();
+            this.label_day7 = new System.Windows.Forms.Label();
+            this.label_day4 = new System.Windows.Forms.Label();
+            this.label_day1 = new System.Windows.Forms.Label();
+            this.label_day2 = new System.Windows.Forms.Label();
+            this.label_day3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel_S1Body = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S2Body = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Main.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
+            this.tableLayoutPanel_Title.SuspendLayout();
+            this.tableLayoutPanel_btnMenuHeader.SuspendLayout();
+            this.tableLayoutPanel_MainBody.SuspendLayout();
+            this.tableLayoutPanel_Row2.SuspendLayout();
+            this.tableLayoutPanel_S1Formule.SuspendLayout();
+            this.tableLayoutPanel_Row3.SuspendLayout();
+            this.tableLayoutPanel_S2Formule.SuspendLayout();
+            this.tableLayoutPanel_DaysHeader.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel_Background
+            // tableLayoutPanel_Main
             // 
-            this.tableLayoutPanel_Background.ColumnCount = 1;
-            this.tableLayoutPanel_Background.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Background.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Background.Controls.Add(this.tableLayoutPanel_hearder, 0, 0);
-            this.tableLayoutPanel_Background.Controls.Add(this.tableLayoutPanel1, 0, 1);
-            this.tableLayoutPanel_Background.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_Background.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel_Background.Name = "tableLayoutPanel_Background";
-            this.tableLayoutPanel_Background.RowCount = 2;
-            this.tableLayoutPanel_Background.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.66667F));
-            this.tableLayoutPanel_Background.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.33334F));
-            this.tableLayoutPanel_Background.Size = new System.Drawing.Size(800, 450);
-            this.tableLayoutPanel_Background.TabIndex = 0;
+            this.tableLayoutPanel_Main.ColumnCount = 1;
+            this.tableLayoutPanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Main.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel_Main.Controls.Add(this.tableLayoutPanel_MainBody, 0, 1);
+            this.tableLayoutPanel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Main.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel_Main.Name = "tableLayoutPanel_Main";
+            this.tableLayoutPanel_Main.RowCount = 2;
+            this.tableLayoutPanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Main.Size = new System.Drawing.Size(1299, 641);
+            this.tableLayoutPanel_Main.TabIndex = 0;
             // 
-            // tableLayoutPanel_hearder
+            // tableLayoutPanel1
             // 
-            this.tableLayoutPanel_hearder.ColumnCount = 3;
-            this.tableLayoutPanel_hearder.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.84043F));
-            this.tableLayoutPanel_hearder.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.15958F));
-            this.tableLayoutPanel_hearder.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 294F));
-            this.tableLayoutPanel_hearder.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel_hearder.Controls.Add(this.tableLayoutPanel_title, 1, 0);
-            this.tableLayoutPanel_hearder.Controls.Add(this.tableLayoutPanel_btnMenu, 2, 0);
-            this.tableLayoutPanel_hearder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_hearder.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel_hearder.Name = "tableLayoutPanel_hearder";
-            this.tableLayoutPanel_hearder.RowCount = 1;
-            this.tableLayoutPanel_hearder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_hearder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_hearder.Size = new System.Drawing.Size(794, 96);
-            this.tableLayoutPanel_hearder.TabIndex = 0;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox_Logo, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel_Title, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel_btnMenuHeader, 2, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1293, 74);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // pictureBox_Logo
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::ClientDesktop.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(168, 90);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox_Logo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_Logo.Image = global::ClientDesktop.Properties.Resources.logo;
+            this.pictureBox_Logo.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox_Logo.Name = "pictureBox_Logo";
+            this.pictureBox_Logo.Size = new System.Drawing.Size(74, 68);
+            this.pictureBox_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Logo.TabIndex = 0;
+            this.pictureBox_Logo.TabStop = false;
             // 
-            // tableLayoutPanel_title
+            // tableLayoutPanel_Title
             // 
-            this.tableLayoutPanel_title.ColumnCount = 1;
-            this.tableLayoutPanel_title.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_title.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_title.Controls.Add(this.label_mainTitle, 0, 0);
-            this.tableLayoutPanel_title.Controls.Add(this.tableLayoutPanel_week, 0, 1);
-            this.tableLayoutPanel_title.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_title.Location = new System.Drawing.Point(177, 3);
-            this.tableLayoutPanel_title.Name = "tableLayoutPanel_title";
-            this.tableLayoutPanel_title.RowCount = 2;
-            this.tableLayoutPanel_title.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.77778F));
-            this.tableLayoutPanel_title.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.22222F));
-            this.tableLayoutPanel_title.Size = new System.Drawing.Size(319, 90);
-            this.tableLayoutPanel_title.TabIndex = 1;
+            this.tableLayoutPanel_Title.ColumnCount = 3;
+            this.tableLayoutPanel_Title.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Title.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Title.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Title.Controls.Add(this.label_WeekNumber, 1, 0);
+            this.tableLayoutPanel_Title.Controls.Add(this.label_Title, 0, 0);
+            this.tableLayoutPanel_Title.Controls.Add(this.textBox_week, 1, 1);
+            this.tableLayoutPanel_Title.Controls.Add(this.button_previous, 0, 1);
+            this.tableLayoutPanel_Title.Controls.Add(this.button_next, 2, 1);
+            this.tableLayoutPanel_Title.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Title.Location = new System.Drawing.Point(83, 3);
+            this.tableLayoutPanel_Title.Name = "tableLayoutPanel_Title";
+            this.tableLayoutPanel_Title.RowCount = 2;
+            this.tableLayoutPanel_Title.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Title.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Title.Size = new System.Drawing.Size(1047, 68);
+            this.tableLayoutPanel_Title.TabIndex = 1;
             // 
-            // label_mainTitle
+            // label_WeekNumber
             // 
-            this.label_mainTitle.AutoSize = true;
-            this.label_mainTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_mainTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label_mainTitle.ForeColor = System.Drawing.Color.Orange;
-            this.label_mainTitle.Location = new System.Drawing.Point(3, 0);
-            this.label_mainTitle.Name = "label_mainTitle";
-            this.label_mainTitle.Size = new System.Drawing.Size(313, 34);
-            this.label_mainTitle.TabIndex = 0;
-            this.label_mainTitle.Text = "Composition des menus";
-            this.label_mainTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_WeekNumber.AutoSize = true;
+            this.label_WeekNumber.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_WeekNumber.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_WeekNumber.ForeColor = System.Drawing.Color.Orange;
+            this.label_WeekNumber.Location = new System.Drawing.Point(352, 0);
+            this.label_WeekNumber.Name = "label_WeekNumber";
+            this.label_WeekNumber.Size = new System.Drawing.Size(343, 34);
+            this.label_WeekNumber.TabIndex = 1;
+            this.label_WeekNumber.Text = "Semaine numéro :";
+            this.label_WeekNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel_week
+            // label_Title
             // 
-            this.tableLayoutPanel_week.ColumnCount = 4;
-            this.tableLayoutPanel_week.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.433481F));
-            this.tableLayoutPanel_week.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel_week.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.56652F));
-            this.tableLayoutPanel_week.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel_week.Controls.Add(this.button_previous, 1, 0);
-            this.tableLayoutPanel_week.Controls.Add(this.button_next, 3, 0);
-            this.tableLayoutPanel_week.Controls.Add(this.tableLayoutPanel_weekLabel, 2, 0);
-            this.tableLayoutPanel_week.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_week.Location = new System.Drawing.Point(3, 37);
-            this.tableLayoutPanel_week.Name = "tableLayoutPanel_week";
-            this.tableLayoutPanel_week.RowCount = 1;
-            this.tableLayoutPanel_week.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_week.Size = new System.Drawing.Size(313, 50);
-            this.tableLayoutPanel_week.TabIndex = 1;
-            // 
-            // button_previous
-            // 
-            this.button_previous.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_previous.Location = new System.Drawing.Point(11, 3);
-            this.button_previous.Name = "button_previous";
-            this.button_previous.Size = new System.Drawing.Size(34, 44);
-            this.button_previous.TabIndex = 0;
-            this.button_previous.Text = "<";
-            this.button_previous.UseVisualStyleBackColor = true;
-            // 
-            // button_next
-            // 
-            this.button_next.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_next.Location = new System.Drawing.Point(276, 3);
-            this.button_next.Name = "button_next";
-            this.button_next.Size = new System.Drawing.Size(34, 44);
-            this.button_next.TabIndex = 1;
-            this.button_next.Text = ">";
-            this.button_next.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel_weekLabel
-            // 
-            this.tableLayoutPanel_weekLabel.ColumnCount = 2;
-            this.tableLayoutPanel_weekLabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.53416F));
-            this.tableLayoutPanel_weekLabel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.46584F));
-            this.tableLayoutPanel_weekLabel.Controls.Add(this.Label_week, 0, 0);
-            this.tableLayoutPanel_weekLabel.Controls.Add(this.textBox_week, 1, 0);
-            this.tableLayoutPanel_weekLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_weekLabel.Location = new System.Drawing.Point(51, 3);
-            this.tableLayoutPanel_weekLabel.Name = "tableLayoutPanel_weekLabel";
-            this.tableLayoutPanel_weekLabel.RowCount = 1;
-            this.tableLayoutPanel_weekLabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_weekLabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_weekLabel.Size = new System.Drawing.Size(219, 44);
-            this.tableLayoutPanel_weekLabel.TabIndex = 2;
-            // 
-            // Label_week
-            // 
-            this.Label_week.AutoSize = true;
-            this.Label_week.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Label_week.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Label_week.ForeColor = System.Drawing.Color.Orange;
-            this.Label_week.Location = new System.Drawing.Point(3, 0);
-            this.Label_week.Name = "Label_week";
-            this.Label_week.Size = new System.Drawing.Size(157, 44);
-            this.Label_week.TabIndex = 1;
-            this.Label_week.Text = "Semaine";
-            this.Label_week.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_Title.AutoSize = true;
+            this.label_Title.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_Title.Font = new System.Drawing.Font("Gotham Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_Title.ForeColor = System.Drawing.Color.Orange;
+            this.label_Title.Location = new System.Drawing.Point(3, 0);
+            this.label_Title.Name = "label_Title";
+            this.label_Title.Size = new System.Drawing.Size(343, 34);
+            this.label_Title.TabIndex = 0;
+            this.label_Title.Text = "Composer vos menu :";
+            this.label_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox_week
             // 
             this.textBox_week.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox_week.Location = new System.Drawing.Point(173, 10);
+            this.textBox_week.Enabled = false;
+            this.textBox_week.Location = new System.Drawing.Point(473, 39);
             this.textBox_week.Name = "textBox_week";
-            this.textBox_week.Size = new System.Drawing.Size(35, 23);
-            this.textBox_week.TabIndex = 3;
+            this.textBox_week.PlaceholderText = "xx";
+            this.textBox_week.Size = new System.Drawing.Size(100, 23);
+            this.textBox_week.TabIndex = 2;
             this.textBox_week.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tableLayoutPanel_btnMenu
+            // button_previous
             // 
-            this.tableLayoutPanel_btnMenu.ColumnCount = 2;
-            this.tableLayoutPanel_btnMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_btnMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_btnMenu.Controls.Add(this.button_createDish, 1, 0);
-            this.tableLayoutPanel_btnMenu.Controls.Add(this.button_info, 1, 1);
-            this.tableLayoutPanel_btnMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_btnMenu.Location = new System.Drawing.Point(502, 3);
-            this.tableLayoutPanel_btnMenu.Name = "tableLayoutPanel_btnMenu";
-            this.tableLayoutPanel_btnMenu.RowCount = 2;
-            this.tableLayoutPanel_btnMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_btnMenu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_btnMenu.Size = new System.Drawing.Size(289, 90);
-            this.tableLayoutPanel_btnMenu.TabIndex = 2;
+            this.button_previous.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button_previous.Location = new System.Drawing.Point(271, 39);
+            this.button_previous.Name = "button_previous";
+            this.button_previous.Size = new System.Drawing.Size(75, 23);
+            this.button_previous.TabIndex = 3;
+            this.button_previous.Text = "<";
+            this.button_previous.UseVisualStyleBackColor = true;
+            this.button_previous.Click += new System.EventHandler(this.button_previous_Click);
+            // 
+            // button_next
+            // 
+            this.button_next.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button_next.Location = new System.Drawing.Point(701, 39);
+            this.button_next.Name = "button_next";
+            this.button_next.Size = new System.Drawing.Size(75, 23);
+            this.button_next.TabIndex = 4;
+            this.button_next.Text = ">";
+            this.button_next.UseVisualStyleBackColor = true;
+            this.button_next.Click += new System.EventHandler(this.button_next_Click);
+            // 
+            // tableLayoutPanel_btnMenuHeader
+            // 
+            this.tableLayoutPanel_btnMenuHeader.ColumnCount = 1;
+            this.tableLayoutPanel_btnMenuHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_btnMenuHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_btnMenuHeader.Controls.Add(this.button_status, 0, 1);
+            this.tableLayoutPanel_btnMenuHeader.Controls.Add(this.button_createDish, 0, 0);
+            this.tableLayoutPanel_btnMenuHeader.Location = new System.Drawing.Point(1136, 3);
+            this.tableLayoutPanel_btnMenuHeader.Name = "tableLayoutPanel_btnMenuHeader";
+            this.tableLayoutPanel_btnMenuHeader.RowCount = 2;
+            this.tableLayoutPanel_btnMenuHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_btnMenuHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_btnMenuHeader.Size = new System.Drawing.Size(154, 68);
+            this.tableLayoutPanel_btnMenuHeader.TabIndex = 2;
+            // 
+            // button_status
+            // 
+            this.button_status.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_status.Location = new System.Drawing.Point(3, 37);
+            this.button_status.Name = "button_status";
+            this.button_status.Size = new System.Drawing.Size(148, 28);
+            this.button_status.TabIndex = 1;
+            this.button_status.Text = "Statistiques";
+            this.button_status.UseVisualStyleBackColor = true;
             // 
             // button_createDish
             // 
+            this.button_createDish.BackColor = System.Drawing.Color.PaleGreen;
             this.button_createDish.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_createDish.Location = new System.Drawing.Point(147, 3);
+            this.button_createDish.Location = new System.Drawing.Point(3, 3);
             this.button_createDish.Name = "button_createDish";
-            this.button_createDish.Size = new System.Drawing.Size(139, 39);
+            this.button_createDish.Size = new System.Drawing.Size(148, 28);
             this.button_createDish.TabIndex = 0;
-            this.button_createDish.Text = "Créer nouveau Plat";
-            this.button_createDish.UseVisualStyleBackColor = true;
+            this.button_createDish.Text = "Créer un plat";
+            this.button_createDish.UseVisualStyleBackColor = false;
             this.button_createDish.Click += new System.EventHandler(this.button_createDish_Click);
             // 
-            // button_info
+            // tableLayoutPanel_MainBody
             // 
-            this.button_info.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_info.Location = new System.Drawing.Point(147, 48);
-            this.button_info.Name = "button_info";
-            this.button_info.Size = new System.Drawing.Size(139, 39);
-            this.button_info.TabIndex = 1;
-            this.button_info.Text = "Voir Statistiques";
-            this.button_info.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel_MainBody.ColumnCount = 2;
+            this.tableLayoutPanel_MainBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.tableLayoutPanel_MainBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_Row2, 0, 1);
+            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_Row3, 0, 2);
+            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_DaysHeader, 1, 0);
+            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_S1Body, 1, 1);
+            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_S2Body, 1, 2);
+            this.tableLayoutPanel_MainBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_MainBody.Location = new System.Drawing.Point(3, 83);
+            this.tableLayoutPanel_MainBody.Name = "tableLayoutPanel_MainBody";
+            this.tableLayoutPanel_MainBody.RowCount = 3;
+            this.tableLayoutPanel_MainBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel_MainBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_MainBody.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_MainBody.Size = new System.Drawing.Size(1293, 555);
+            this.tableLayoutPanel_MainBody.TabIndex = 1;
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanel_Row2
             // 
-            this.tableLayoutPanel1.ColumnCount = 9;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.911839F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.25441F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.Controls.Add(this.label_sunday, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_friday, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_wenesday, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_monday, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_thuesday, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_thursday, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_satursday, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label_service1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label_service2, 0, 5);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 105);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 7;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(794, 342);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // label_monday
-            // 
-            this.label_monday.AutoSize = true;
-            this.label_monday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_monday.Location = new System.Drawing.Point(179, 0);
-            this.label_monday.Name = "label_monday";
-            this.label_monday.Size = new System.Drawing.Size(82, 48);
-            this.label_monday.TabIndex = 0;
-            this.label_monday.Text = "Lundi";
-            this.label_monday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_thuesday
-            // 
-            this.label_thuesday.AutoSize = true;
-            this.label_thuesday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_thuesday.Location = new System.Drawing.Point(355, 0);
-            this.label_thuesday.Name = "label_thuesday";
-            this.label_thuesday.Size = new System.Drawing.Size(82, 48);
-            this.label_thuesday.TabIndex = 1;
-            this.label_thuesday.Text = "Mardi";
-            this.label_thuesday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_wenesday
-            // 
-            this.label_wenesday.AutoSize = true;
-            this.label_wenesday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_wenesday.Location = new System.Drawing.Point(267, 0);
-            this.label_wenesday.Name = "label_wenesday";
-            this.label_wenesday.Size = new System.Drawing.Size(82, 48);
-            this.label_wenesday.TabIndex = 2;
-            this.label_wenesday.Text = "Mercredi";
-            this.label_wenesday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_thursday
-            // 
-            this.label_thursday.AutoSize = true;
-            this.label_thursday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_thursday.Location = new System.Drawing.Point(443, 0);
-            this.label_thursday.Name = "label_thursday";
-            this.label_thursday.Size = new System.Drawing.Size(82, 48);
-            this.label_thursday.TabIndex = 3;
-            this.label_thursday.Text = "Jeudi";
-            this.label_thursday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_friday
-            // 
-            this.label_friday.AutoSize = true;
-            this.label_friday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_friday.Location = new System.Drawing.Point(531, 0);
-            this.label_friday.Name = "label_friday";
-            this.label_friday.Size = new System.Drawing.Size(82, 48);
-            this.label_friday.TabIndex = 4;
-            this.label_friday.Text = "Vendredi";
-            this.label_friday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_satursday
-            // 
-            this.label_satursday.AutoSize = true;
-            this.label_satursday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_satursday.Location = new System.Drawing.Point(619, 0);
-            this.label_satursday.Name = "label_satursday";
-            this.label_satursday.Size = new System.Drawing.Size(82, 48);
-            this.label_satursday.TabIndex = 5;
-            this.label_satursday.Text = "Samedi";
-            this.label_satursday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_sunday
-            // 
-            this.label_sunday.AutoSize = true;
-            this.label_sunday.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_sunday.Location = new System.Drawing.Point(707, 0);
-            this.label_sunday.Name = "label_sunday";
-            this.label_sunday.Size = new System.Drawing.Size(84, 48);
-            this.label_sunday.TabIndex = 6;
-            this.label_sunday.Text = "Dimanche";
-            this.label_sunday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tableLayoutPanel_Row2.ColumnCount = 2;
+            this.tableLayoutPanel_Row2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Row2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Row2.Controls.Add(this.label_service1, 0, 0);
+            this.tableLayoutPanel_Row2.Controls.Add(this.tableLayoutPanel_S1Formule, 1, 0);
+            this.tableLayoutPanel_Row2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Row2.Location = new System.Drawing.Point(3, 43);
+            this.tableLayoutPanel_Row2.Name = "tableLayoutPanel_Row2";
+            this.tableLayoutPanel_Row2.RowCount = 1;
+            this.tableLayoutPanel_Row2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Row2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Row2.Size = new System.Drawing.Size(104, 251);
+            this.tableLayoutPanel_Row2.TabIndex = 0;
             // 
             // label_service1
             // 
             this.label_service1.AutoSize = true;
-            this.label_service1.Location = new System.Drawing.Point(3, 96);
+            this.label_service1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_service1.Font = new System.Drawing.Font("Gotham Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_service1.ForeColor = System.Drawing.Color.Orange;
+            this.label_service1.Location = new System.Drawing.Point(3, 0);
             this.label_service1.Name = "label_service1";
-            this.label_service1.Size = new System.Drawing.Size(31, 15);
-            this.label_service1.TabIndex = 7;
+            this.label_service1.Size = new System.Drawing.Size(46, 251);
+            this.label_service1.TabIndex = 1;
             this.label_service1.Text = "Midi";
-            this.label_service1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label_service1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel_S1Formule
+            // 
+            this.tableLayoutPanel_S1Formule.ColumnCount = 1;
+            this.tableLayoutPanel_S1Formule.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_S1Formule.Controls.Add(this.label_S1Starter, 0, 0);
+            this.tableLayoutPanel_S1Formule.Controls.Add(this.label_S1Meal, 0, 1);
+            this.tableLayoutPanel_S1Formule.Controls.Add(this.label_S1Dessert, 0, 2);
+            this.tableLayoutPanel_S1Formule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1Formule.Location = new System.Drawing.Point(55, 3);
+            this.tableLayoutPanel_S1Formule.Name = "tableLayoutPanel_S1Formule";
+            this.tableLayoutPanel_S1Formule.RowCount = 3;
+            this.tableLayoutPanel_S1Formule.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S1Formule.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S1Formule.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S1Formule.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_S1Formule.Size = new System.Drawing.Size(46, 245);
+            this.tableLayoutPanel_S1Formule.TabIndex = 2;
+            // 
+            // label_S1Starter
+            // 
+            this.label_S1Starter.AutoSize = true;
+            this.label_S1Starter.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_S1Starter.Location = new System.Drawing.Point(3, 0);
+            this.label_S1Starter.Name = "label_S1Starter";
+            this.label_S1Starter.Size = new System.Drawing.Size(32, 12);
+            this.label_S1Starter.TabIndex = 0;
+            this.label_S1Starter.Text = "Entrée";
+            // 
+            // label_S1Meal
+            // 
+            this.label_S1Meal.AutoSize = true;
+            this.label_S1Meal.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_S1Meal.Location = new System.Drawing.Point(3, 81);
+            this.label_S1Meal.Name = "label_S1Meal";
+            this.label_S1Meal.Size = new System.Drawing.Size(21, 12);
+            this.label_S1Meal.TabIndex = 1;
+            this.label_S1Meal.Text = "Plat";
+            // 
+            // label_S1Dessert
+            // 
+            this.label_S1Dessert.AutoSize = true;
+            this.label_S1Dessert.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_S1Dessert.Location = new System.Drawing.Point(3, 162);
+            this.label_S1Dessert.Name = "label_S1Dessert";
+            this.label_S1Dessert.Size = new System.Drawing.Size(36, 12);
+            this.label_S1Dessert.TabIndex = 2;
+            this.label_S1Dessert.Text = "Dessert";
+            // 
+            // tableLayoutPanel_Row3
+            // 
+            this.tableLayoutPanel_Row3.ColumnCount = 2;
+            this.tableLayoutPanel_Row3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Row3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Row3.Controls.Add(this.label_service2, 0, 0);
+            this.tableLayoutPanel_Row3.Controls.Add(this.tableLayoutPanel_S2Formule, 1, 0);
+            this.tableLayoutPanel_Row3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Row3.Location = new System.Drawing.Point(3, 300);
+            this.tableLayoutPanel_Row3.Name = "tableLayoutPanel_Row3";
+            this.tableLayoutPanel_Row3.RowCount = 1;
+            this.tableLayoutPanel_Row3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Row3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 252F));
+            this.tableLayoutPanel_Row3.Size = new System.Drawing.Size(104, 252);
+            this.tableLayoutPanel_Row3.TabIndex = 1;
             // 
             // label_service2
             // 
             this.label_service2.AutoSize = true;
-            this.label_service2.Location = new System.Drawing.Point(3, 240);
+            this.label_service2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_service2.Font = new System.Drawing.Font("Gotham Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_service2.ForeColor = System.Drawing.Color.Orange;
+            this.label_service2.Location = new System.Drawing.Point(3, 0);
             this.label_service2.Name = "label_service2";
-            this.label_service2.Size = new System.Drawing.Size(27, 15);
-            this.label_service2.TabIndex = 8;
+            this.label_service2.Size = new System.Drawing.Size(46, 252);
+            this.label_service2.TabIndex = 1;
             this.label_service2.Text = "Soir";
-            this.label_service2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label_service2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel_S2Formule
+            // 
+            this.tableLayoutPanel_S2Formule.ColumnCount = 1;
+            this.tableLayoutPanel_S2Formule.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_S2Formule.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel_S2Formule.Controls.Add(this.label_S2Starter, 0, 0);
+            this.tableLayoutPanel_S2Formule.Controls.Add(this.label_S2Meal, 0, 1);
+            this.tableLayoutPanel_S2Formule.Controls.Add(this.label_S2Dessert, 0, 2);
+            this.tableLayoutPanel_S2Formule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S2Formule.Location = new System.Drawing.Point(55, 3);
+            this.tableLayoutPanel_S2Formule.Name = "tableLayoutPanel_S2Formule";
+            this.tableLayoutPanel_S2Formule.RowCount = 3;
+            this.tableLayoutPanel_S2Formule.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S2Formule.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S2Formule.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S2Formule.Size = new System.Drawing.Size(46, 246);
+            this.tableLayoutPanel_S2Formule.TabIndex = 2;
+            // 
+            // label_S2Starter
+            // 
+            this.label_S2Starter.AutoSize = true;
+            this.label_S2Starter.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_S2Starter.Location = new System.Drawing.Point(3, 0);
+            this.label_S2Starter.Name = "label_S2Starter";
+            this.label_S2Starter.Size = new System.Drawing.Size(32, 12);
+            this.label_S2Starter.TabIndex = 0;
+            this.label_S2Starter.Text = "Entrée";
+            // 
+            // label_S2Meal
+            // 
+            this.label_S2Meal.AutoSize = true;
+            this.label_S2Meal.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_S2Meal.Location = new System.Drawing.Point(3, 82);
+            this.label_S2Meal.Name = "label_S2Meal";
+            this.label_S2Meal.Size = new System.Drawing.Size(21, 12);
+            this.label_S2Meal.TabIndex = 1;
+            this.label_S2Meal.Text = "Plat";
+            // 
+            // label_S2Dessert
+            // 
+            this.label_S2Dessert.AutoSize = true;
+            this.label_S2Dessert.Font = new System.Drawing.Font("Segoe UI", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_S2Dessert.Location = new System.Drawing.Point(3, 164);
+            this.label_S2Dessert.Name = "label_S2Dessert";
+            this.label_S2Dessert.Size = new System.Drawing.Size(36, 12);
+            this.label_S2Dessert.TabIndex = 2;
+            this.label_S2Dessert.Text = "Dessert";
+            // 
+            // tableLayoutPanel_DaysHeader
+            // 
+            this.tableLayoutPanel_DaysHeader.ColumnCount = 7;
+            this.tableLayoutPanel_DaysHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_DaysHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_DaysHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_DaysHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_DaysHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_DaysHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_DaysHeader.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_DaysHeader.Controls.Add(this.label_day5, 0, 0);
+            this.tableLayoutPanel_DaysHeader.Controls.Add(this.label_day6, 0, 0);
+            this.tableLayoutPanel_DaysHeader.Controls.Add(this.label_day7, 0, 0);
+            this.tableLayoutPanel_DaysHeader.Controls.Add(this.label_day4, 0, 0);
+            this.tableLayoutPanel_DaysHeader.Controls.Add(this.label_day1, 0, 0);
+            this.tableLayoutPanel_DaysHeader.Controls.Add(this.label_day2, 0, 0);
+            this.tableLayoutPanel_DaysHeader.Controls.Add(this.label_day3, 0, 0);
+            this.tableLayoutPanel_DaysHeader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_DaysHeader.Location = new System.Drawing.Point(113, 3);
+            this.tableLayoutPanel_DaysHeader.Name = "tableLayoutPanel_DaysHeader";
+            this.tableLayoutPanel_DaysHeader.RowCount = 1;
+            this.tableLayoutPanel_DaysHeader.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_DaysHeader.Size = new System.Drawing.Size(1177, 34);
+            this.tableLayoutPanel_DaysHeader.TabIndex = 2;
+            // 
+            // label_day5
+            // 
+            this.label_day5.AutoSize = true;
+            this.label_day5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_day5.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_day5.ForeColor = System.Drawing.Color.Orange;
+            this.label_day5.Location = new System.Drawing.Point(675, 0);
+            this.label_day5.Name = "label_day5";
+            this.label_day5.Size = new System.Drawing.Size(162, 34);
+            this.label_day5.TabIndex = 8;
+            this.label_day5.Text = "Vendredi";
+            this.label_day5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_day6
+            // 
+            this.label_day6.AutoSize = true;
+            this.label_day6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_day6.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_day6.ForeColor = System.Drawing.Color.Orange;
+            this.label_day6.Location = new System.Drawing.Point(843, 0);
+            this.label_day6.Name = "label_day6";
+            this.label_day6.Size = new System.Drawing.Size(162, 34);
+            this.label_day6.TabIndex = 7;
+            this.label_day6.Text = "Samedi";
+            this.label_day6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_day7
+            // 
+            this.label_day7.AutoSize = true;
+            this.label_day7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_day7.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_day7.ForeColor = System.Drawing.Color.Orange;
+            this.label_day7.Location = new System.Drawing.Point(1011, 0);
+            this.label_day7.Name = "label_day7";
+            this.label_day7.Size = new System.Drawing.Size(163, 34);
+            this.label_day7.TabIndex = 6;
+            this.label_day7.Text = "Dimanche";
+            this.label_day7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_day4
+            // 
+            this.label_day4.AutoSize = true;
+            this.label_day4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_day4.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_day4.ForeColor = System.Drawing.Color.Orange;
+            this.label_day4.Location = new System.Drawing.Point(507, 0);
+            this.label_day4.Name = "label_day4";
+            this.label_day4.Size = new System.Drawing.Size(162, 34);
+            this.label_day4.TabIndex = 5;
+            this.label_day4.Text = "Jeudi";
+            this.label_day4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_day1
+            // 
+            this.label_day1.AutoSize = true;
+            this.label_day1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_day1.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_day1.ForeColor = System.Drawing.Color.Orange;
+            this.label_day1.Location = new System.Drawing.Point(3, 0);
+            this.label_day1.Name = "label_day1";
+            this.label_day1.Size = new System.Drawing.Size(162, 34);
+            this.label_day1.TabIndex = 4;
+            this.label_day1.Text = "Lundi";
+            this.label_day1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_day2
+            // 
+            this.label_day2.AutoSize = true;
+            this.label_day2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_day2.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_day2.ForeColor = System.Drawing.Color.Orange;
+            this.label_day2.Location = new System.Drawing.Point(171, 0);
+            this.label_day2.Name = "label_day2";
+            this.label_day2.Size = new System.Drawing.Size(162, 34);
+            this.label_day2.TabIndex = 3;
+            this.label_day2.Text = "Mardi";
+            this.label_day2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_day3
+            // 
+            this.label_day3.AutoSize = true;
+            this.label_day3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_day3.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label_day3.ForeColor = System.Drawing.Color.Orange;
+            this.label_day3.Location = new System.Drawing.Point(339, 0);
+            this.label_day3.Name = "label_day3";
+            this.label_day3.Size = new System.Drawing.Size(162, 34);
+            this.label_day3.TabIndex = 2;
+            this.label_day3.Text = "Mercredi";
+            this.label_day3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel_S1Body
+            // 
+            this.tableLayoutPanel_S1Body.ColumnCount = 7;
+            this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S1Body.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1Body.Location = new System.Drawing.Point(113, 43);
+            this.tableLayoutPanel_S1Body.Name = "tableLayoutPanel_S1Body";
+            this.tableLayoutPanel_S1Body.RowCount = 3;
+            this.tableLayoutPanel_S1Body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S1Body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S1Body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S1Body.Size = new System.Drawing.Size(1177, 251);
+            this.tableLayoutPanel_S1Body.TabIndex = 3;
+            // 
+            // tableLayoutPanel_S2Body
+            // 
+            this.tableLayoutPanel_S2Body.ColumnCount = 7;
+            this.tableLayoutPanel_S2Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S2Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S2Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S2Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S2Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S2Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S2Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel_S2Body.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S2Body.Location = new System.Drawing.Point(113, 300);
+            this.tableLayoutPanel_S2Body.Name = "tableLayoutPanel_S2Body";
+            this.tableLayoutPanel_S2Body.RowCount = 3;
+            this.tableLayoutPanel_S2Body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S2Body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S2Body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_S2Body.Size = new System.Drawing.Size(1177, 252);
+            this.tableLayoutPanel_S2Body.TabIndex = 4;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel_Background);
+            this.ClientSize = new System.Drawing.Size(1299, 641);
+            this.Controls.Add(this.tableLayoutPanel_Main);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "FoodBook Desktop";
-            this.tableLayoutPanel_Background.ResumeLayout(false);
-            this.tableLayoutPanel_hearder.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel_title.ResumeLayout(false);
-            this.tableLayoutPanel_title.PerformLayout();
-            this.tableLayoutPanel_week.ResumeLayout(false);
-            this.tableLayoutPanel_weekLabel.ResumeLayout(false);
-            this.tableLayoutPanel_weekLabel.PerformLayout();
-            this.tableLayoutPanel_btnMenu.ResumeLayout(false);
+            this.tableLayoutPanel_Main.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
+            this.tableLayoutPanel_Title.ResumeLayout(false);
+            this.tableLayoutPanel_Title.PerformLayout();
+            this.tableLayoutPanel_btnMenuHeader.ResumeLayout(false);
+            this.tableLayoutPanel_MainBody.ResumeLayout(false);
+            this.tableLayoutPanel_Row2.ResumeLayout(false);
+            this.tableLayoutPanel_Row2.PerformLayout();
+            this.tableLayoutPanel_S1Formule.ResumeLayout(false);
+            this.tableLayoutPanel_S1Formule.PerformLayout();
+            this.tableLayoutPanel_Row3.ResumeLayout(false);
+            this.tableLayoutPanel_Row3.PerformLayout();
+            this.tableLayoutPanel_S2Formule.ResumeLayout(false);
+            this.tableLayoutPanel_S2Formule.PerformLayout();
+            this.tableLayoutPanel_DaysHeader.ResumeLayout(false);
+            this.tableLayoutPanel_DaysHeader.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Background;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_hearder;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_title;
-        private System.Windows.Forms.Label label_mainTitle;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_week;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_MainForm;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Main;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox_Logo;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Title;
+        private System.Windows.Forms.Label label_WeekNumber;
+        private System.Windows.Forms.Label label_Title;
+        private System.Windows.Forms.TextBox textBox_week;
         private System.Windows.Forms.Button button_previous;
         private System.Windows.Forms.Button button_next;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_weekLabel;
-        private System.Windows.Forms.Label Label_week;
-        private System.Windows.Forms.TextBox textBox_week;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_btnMenu;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_btnMenuHeader;
         private System.Windows.Forms.Button button_createDish;
-        private System.Windows.Forms.Button button_info;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label_sunday;
-        private System.Windows.Forms.Label label_friday;
-        private System.Windows.Forms.Label label_wenesday;
-        private System.Windows.Forms.Label label_monday;
-        private System.Windows.Forms.Label label_thuesday;
-        private System.Windows.Forms.Label label_thursday;
-        private System.Windows.Forms.Label label_satursday;
+        private System.Windows.Forms.Button button_status;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_MainBody;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Row2;
         private System.Windows.Forms.Label label_service1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Row3;
         private System.Windows.Forms.Label label_service2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1Formule;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S2Formule;
+        private System.Windows.Forms.Label label_S1Starter;
+        private System.Windows.Forms.Label label_S1Meal;
+        private System.Windows.Forms.Label label_S1Dessert;
+        private System.Windows.Forms.Label label_S2Starter;
+        private System.Windows.Forms.Label label_S2Meal;
+        private System.Windows.Forms.Label label_S2Dessert;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_DaysHeader;
+        private System.Windows.Forms.Label label_day5;
+        private System.Windows.Forms.Label label_day6;
+        private System.Windows.Forms.Label label_day7;
+        private System.Windows.Forms.Label label_day4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label _day2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_day1;
+        private System.Windows.Forms.Label label_day2;
+        private System.Windows.Forms.Label label_day3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1Body;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S2Body;
     }
 }
 

@@ -32,7 +32,7 @@ namespace API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetMenuById([FromRoute] int id)
         {
-            Menu menu = await _restaurantService.GetMenuById(id);
+            Menu menu = await _restaurantService.GetServicesOfMenuById(id);
             if (menu == null)
             {
                 return NotFound();  // StatusCode = 404
@@ -54,7 +54,7 @@ namespace API.Controllers
         public async Task<IActionResult> GetServicesOfMenuById([FromRoute] int id)
         {
 
-            Menu menu = await _restaurantService.GetMenuById(id);
+            Menu menu = await _restaurantService.GetServicesOfMenuById(id);
             if (menu == null)
             {
                 return NotFound();  // StatusCode = 404

@@ -25,7 +25,7 @@ namespace UnitTest
             IRestaurantService restaurantService = new FakeRestaurantService();
             DishController dishController = new(restaurantService);
             //Act
-            ActionResult<List<Dish>> DishActionResult = await dishController.GetAll();
+            ActionResult<List<Dish>> DishActionResult = await dishController.GetAllDish();
             //Assert
             Assert.NotNull(DishActionResult);
         }

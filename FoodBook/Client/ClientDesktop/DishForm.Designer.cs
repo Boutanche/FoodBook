@@ -36,8 +36,11 @@ namespace ClientDesktop
             this.tableLayoutPanel_background = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView_ingredients = new System.Windows.Forms.DataGridView();
             this.AddIngredients = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tableLayoutPanel_IngredientPannel = new System.Windows.Forms.TableLayoutPanel();
+            this.button_createIngredient = new System.Windows.Forms.Button();
             this.tableLayoutPanel_background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ingredients)).BeginInit();
+            this.tableLayoutPanel_IngredientPannel.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel_background
@@ -46,6 +49,7 @@ namespace ClientDesktop
             this.tableLayoutPanel_background.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel_background.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel_background.Controls.Add(this.dataGridView_ingredients, 1, 1);
+            this.tableLayoutPanel_background.Controls.Add(this.tableLayoutPanel_IngredientPannel, 1, 0);
             this.tableLayoutPanel_background.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel_background.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel_background.Name = "tableLayoutPanel_background";
@@ -81,6 +85,33 @@ namespace ClientDesktop
             this.AddIngredients.ToolTipText = "Ici pour ajouter";
             this.AddIngredients.UseColumnTextForButtonValue = true;
             // 
+            // tableLayoutPanel_IngredientPannel
+            // 
+            this.tableLayoutPanel_IngredientPannel.ColumnCount = 2;
+            this.tableLayoutPanel_IngredientPannel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_IngredientPannel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_IngredientPannel.Controls.Add(this.button_createIngredient, 0, 1);
+            this.tableLayoutPanel_IngredientPannel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_IngredientPannel.Location = new System.Drawing.Point(403, 3);
+            this.tableLayoutPanel_IngredientPannel.Name = "tableLayoutPanel_IngredientPannel";
+            this.tableLayoutPanel_IngredientPannel.RowCount = 2;
+            this.tableLayoutPanel_IngredientPannel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.62162F));
+            this.tableLayoutPanel_IngredientPannel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.37838F));
+            this.tableLayoutPanel_IngredientPannel.Size = new System.Drawing.Size(394, 37);
+            this.tableLayoutPanel_IngredientPannel.TabIndex = 1;
+            // 
+            // button_createIngredient
+            // 
+            this.button_createIngredient.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_createIngredient.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_createIngredient.Location = new System.Drawing.Point(3, 11);
+            this.button_createIngredient.Name = "button_createIngredient";
+            this.button_createIngredient.Size = new System.Drawing.Size(191, 23);
+            this.button_createIngredient.TabIndex = 0;
+            this.button_createIngredient.Text = "Ajouter un ingrédient à la liste";
+            this.button_createIngredient.UseVisualStyleBackColor = false;
+            this.button_createIngredient.Click += new System.EventHandler(this.button_createIngredient_Click);
+            // 
             // DishForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -92,6 +123,7 @@ namespace ClientDesktop
             this.Text = "Créer une recette";
             this.tableLayoutPanel_background.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ingredients)).EndInit();
+            this.tableLayoutPanel_IngredientPannel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -101,5 +133,7 @@ namespace ClientDesktop
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_background;
         private System.Windows.Forms.DataGridView dataGridView_ingredients;
         private DataGridViewButtonColumn AddIngredients;
+        private TableLayoutPanel tableLayoutPanel_IngredientPannel;
+        private Button button_createIngredient;
     }
 }

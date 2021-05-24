@@ -39,7 +39,7 @@ namespace ClientDesktop
             //bindingSource.DataSource = ToDataTable(ingredients);
 
             dataGridView_ingredients.DataSource = bindingSource;
-            dataGridView_ingredients.Columns["id_ingredient"].Visible = false;
+            dataGridView_ingredients.Columns["id"].Visible = false;
 
         }
         //Ne sert à rien au final.
@@ -74,6 +74,12 @@ namespace ClientDesktop
             }
             //put a breakpoint here and check datatable
             return dataTable;
+        }
+
+        private void button_createIngredient_Click(object sender, EventArgs e)
+        {
+            CreateIngredientForm createIngredientForm = new CreateIngredientForm();
+            createIngredientForm.Show();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using API.Controllers;
+﻿                                                                                                                                                                                                             using API.Controllers;
 using BLL.Services;
 using BO.DTO.Requests;
 using BO.Entity;
@@ -53,13 +53,13 @@ namespace UnitTest
             Ingredients salt2 = new ()
 
             {
-                Id_ingredient = 105,
+                Id = 105,
                 Name = "Salt",
                 Price = 1.5m
             };
             Ingredients saltGood = new ()
             {
-                Id_ingredient = 1,
+                Id = 1,
                 Name = "Salt",
                 Price = 1.5m
             };

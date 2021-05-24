@@ -71,6 +71,12 @@ namespace BLL.Services
         /// <param name="id">Int</param>
         /// <returns>Code No Content : 204</returns>
         Task<bool> RemoveDishById(int id);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task<Dish> GetIngredientsOfDishById(int id);
         #endregion
         #region TypeOfDish
         /// <summary>
@@ -143,8 +149,9 @@ namespace BLL.Services
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Menu</returns>
-        Task<Menu> GetMenuById(int id);
+        Task<Menu> GetServicesOfMenuById(int id);
+
         #endregion
-        //TODO : Est-ce qu'il ne manque pas une entitée "IsComposed" qui permet de faire la table de liaison "un service est composé des trois plats suivants..."
+        
     }
 }

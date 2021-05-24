@@ -19,6 +19,8 @@ namespace BLL.Services
         {
             _db = unitOfWork;
         }
+        //TODO : Il y a plein de méthodes qui ne sont pas encore implémenté ici !
+
         #region Ingredients
         /// <summary>
         /// Create an ingredient !
@@ -181,6 +183,10 @@ namespace BLL.Services
                 return false;
             }
         }
+        public Task<Dish> GetIngredientsOfDishById(int id)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
         #region TypeOfDish
         /// <summary>
@@ -248,12 +254,13 @@ namespace BLL.Services
             throw new NotImplementedException();
         }
 
-        public Task<Menu> GetMenuById(int id)
+        public Task<Menu> GetServicesOfMenuById(int id)
         {
             throw new NotImplementedException();
     }
-    #endregion
+
+        #endregion
 
 
-}
+    }
 }

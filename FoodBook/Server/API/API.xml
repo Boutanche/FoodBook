@@ -29,7 +29,7 @@
             Controller Dish
             </summary>
         </member>
-        <member name="M:API.Controllers.DishController.GetAll">
+        <member name="M:API.Controllers.DishController.GetAllDish">
             <summary>
             Get All Dish
             </summary>
@@ -103,6 +103,12 @@
             </summary>
             <param name="id"></param>
             <returns>No Content Code 204.</returns>
+        </member>
+        <member name="T:API.Controllers.ListOfIngredientController">
+            <summary>
+            List Of Ingredient for a Dish : Link Table
+            Know the necessary amount of ingredients for this dish
+            </summary>
         </member>
         <member name="T:API.Controllers.MenuController">
             <summary>

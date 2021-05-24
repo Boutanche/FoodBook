@@ -15,7 +15,7 @@ namespace BO.Entity
         /// Identifiant unique de l'ingrédient 
         /// </summary>
 
-        public int? Id_ingredient { get; set; }
+        public int? Id { get; set; }
         /// <summary>
         /// Nom de l'ingrédient
         /// </summary>
@@ -37,7 +37,7 @@ namespace BO.Entity
         /// <param name="price"></param>
         public Ingredients(int? id_ingredient, string name, decimal price)
         {
-            Id_ingredient = id_ingredient;
+            Id = id_ingredient;
             Name = name;
             Price = price;
         }
@@ -51,7 +51,7 @@ namespace BO.Entity
         public override bool Equals(object obj)
         {
             return obj is Ingredients ingredients &&
-                   Id_ingredient == ingredients.Id_ingredient &&
+                   Id == ingredients.Id &&
                    Name == ingredients.Name &&
                    Price == ingredients.Price;
         }
@@ -61,7 +61,7 @@ namespace BO.Entity
         /// <returns>HashCode</returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id_ingredient, Name, Price);
+            return HashCode.Combine(Id, Name, Price);
         }
     }
 }

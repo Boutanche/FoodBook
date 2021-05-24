@@ -21,7 +21,7 @@ namespace IntegrationTest
             //Arrange
             var expected = new Ingredients()
             {
-                Id_ingredient = 1,
+                Id = 1,
                 Name = "Apple",
                 Price = 2.5m
             };

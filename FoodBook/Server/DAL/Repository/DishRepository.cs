@@ -38,7 +38,7 @@ namespace DAL.Repository
 
         public async Task<Dish> InsertAsync(Dish entity)
         {
-            var stmt = @"insert into dishes(Name, Popularity) output INSERTED.ID
+            var stmt = @"insert into dishes(Name, Popularity) output INSERTED.id_dish
             values (@Name, @Popularity)";
             int i = await _session.Connection.QuerySingleAsync<int>(stmt, entity, _session.Transaction);
             return await GetAsync(i);

@@ -51,7 +51,7 @@ namespace UnitTest.Services
 
         public Task<Ingredients> GetIngredientById(int id)
         {
-            return Task.FromResult(ingredientsFakeDB.Find(i => i.Id_ingredient == id));
+            return Task.FromResult(ingredientsFakeDB.Find(i => i.Id == id));
         }
         /// <summary>
         /// Modify Ingredient
@@ -60,16 +60,16 @@ namespace UnitTest.Services
         /// <returns>Ingredients</returns>
         public Task<Ingredients> ModifyIngredient(Ingredients ingredient)
         {
-            if (ingredient.Id_ingredient > 100)
+            if (ingredient.Id > 100)
             {
                 return Task.FromResult<Ingredients>(null);
             }
-            if (ingredient.Id_ingredient == null)
+            if (ingredient.Id == null)
             {
                 return null;
             }
 
-            var _ingredient = ingredientsFakeDB.Find(i => i.Id_ingredient == ingredient.Id_ingredient);
+            var _ingredient = ingredientsFakeDB.Find(i => i.Id == ingredient.Id);
             _ingredient.Name = ingredient.Name;
             _ingredient.Price = ingredient.Price;
 
@@ -82,7 +82,7 @@ namespace UnitTest.Services
         /// <returns></returns>
         public Task<bool> RemoveIngredientById(int id)
         {
-            ingredientsFakeDB.RemoveAll(i => i.Id_ingredient == id);
+            ingredientsFakeDB.RemoveAll(i => i.Id == id);
             return Task.FromResult(id > 0);
         }
         #endregion
@@ -197,7 +197,12 @@ namespace UnitTest.Services
             throw new NotImplementedException();
         }
 
-        public Task<Menu> GetMenuById(int id)
+        public Task<Menu> GetServicesOfMenuById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Dish> GetIngredientsOfDishById(int id)
         {
             throw new NotImplementedException();
         }

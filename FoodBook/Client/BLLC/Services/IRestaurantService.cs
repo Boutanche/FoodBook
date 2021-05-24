@@ -7,5 +7,6 @@ namespace BLLC.Services
     public interface IRestaurantService
     {
         Task<List<Ingredients>> GetAllIngredients();
+        Task<Ingredients> CreateIngredients(Ingredients ingredients);
     }
 }

@@ -18,7 +18,7 @@ namespace DAL.Repository
         }
         public async Task<int> DeleteAsync(long id)
         {
-            var stmt = @"delete from ingredients where id_ingredient = @id";
+            var stmt = @"delete from ingredients where id = @id";
             return await _session.Connection.ExecuteAsync(stmt, new { Id = id }, _session.Transaction);
         }
 
@@ -32,13 +32,13 @@ namespace DAL.Repository
         public async Task<Ingredients> GetAsync(int id)
         {
             //Eviter l'injection sql avec des reqêtes paramétrées
-            var stmt = @"select * from ingredients where id_ingredient = @id";
+            var stmt = @"select * from ingredients where id = @id";
             return await _session.Connection.QueryFirstOrDefaultAsync<Ingredients>(stmt, new { Id = id }, _session.Transaction);
         }
 
         public async Task<Ingredients> InsertAsync(Ingredients entity)
         {
-            var stmt = @"insert into ingredients(Name, Price) output INSERTED.ID
+            var stmt = @"insert into ingredients(Name, Price) output INSERTED.Id
             values (@Name, @Price)";
             int i = await _session.Connection.QuerySingleAsync<int>(stmt, entity, _session.Transaction);
             return await GetAsync(i);
@@ -46,7 +46,7 @@ namespace DAL.Repository
 
         public async Task UpdateAsync(Ingredients entity)
         {
-            var stmt = @"UPDATE  ingredients SET Name = @Name, Price= @Price WHERE id_ingredient = @id";
+            var stmt = @"UPDATE  ingredients SET Name = @Name, Price= @Price WHERE id = @id";
             await _session.Connection.QueryAsync<Ingredients>(stmt, entity, _session.Transaction);
         }
     }

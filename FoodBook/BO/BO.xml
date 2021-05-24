@@ -167,7 +167,7 @@
         </member>
         <member name="M:BO.Entity.Dish.#ctor(System.Nullable{System.Int32},System.String,System.Int32,System.Int32)">
             <summary>
-            Utilitaru constructor ful properties
+            Utilitari constructor full properties
             </summary>
             <param name="id_dish">Id of dish</param>
             <param name="name">Name of this dish</param>
@@ -192,7 +192,7 @@
             Représente un objet Ingredient
             </summary>
         </member>
-        <member name="P:BO.Entity.Ingredients.Id_ingredient">
+        <member name="P:BO.Entity.Ingredients.Id">
             <summary>
             Identifiant unique de l'ingrédient 
             </summary>
@@ -232,6 +232,53 @@
             Hash Code
             </summary>
             <returns>HashCode</returns>
+        </member>
+        <member name="T:BO.Entity.ListOfIngredient">
+            <summary>
+            Entitée qui permet de faire la liaison entre l'ingrédient et l'un des plats dans lequel il est utilisé.
+            Informe aussi sur la quantité nécéssaire de commander pour un plat.
+            </summary>
+        </member>
+        <member name="P:BO.Entity.ListOfIngredient.Id_ingredient">
+            <summary>
+            Id de l'ingrédient
+            </summary>
+        </member>
+        <member name="P:BO.Entity.ListOfIngredient.Id_dish">
+            <summary>
+            Id du plat
+            </summary>
+        </member>
+        <member name="P:BO.Entity.ListOfIngredient.Quantity">
+            <summary>
+            Quantité nécessaire de cet ingrédient dans un de ce plat.
+            </summary>
+        </member>
+        <member name="M:BO.Entity.ListOfIngredient.#ctor">
+            <summary>
+            Constructeur par défault pour la sérialisation de l'API
+            </summary>
+        </member>
+        <member name="M:BO.Entity.ListOfIngredient.#ctor(System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            Constructeur utilitaire avec l'ensemble des propriétés
+            </summary>
+            <param name="id_ingredient">L'id de l'ingrédient</param>
+            <param name="id_dish">L'id du plat auquel il est nécessaire</param>
+            <param name="quantity">Quantité nécéssaire de cet ingrédient pour ce plat</param>
+        </member>
+        <member name="M:BO.Entity.ListOfIngredient.Equals(System.Object)">
+            <summary>
+            Override Equals Methode for ListOfIngredient
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BO.Entity.ListOfIngredient.GetHashCode">
+            <summary>
+            Override GetHashCode for ListOfIngredient
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:BO.Entity.Menu">
             <summary>

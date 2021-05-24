@@ -18,7 +18,29 @@ namespace BLLC.Services
         public RestaurantService()
         {
             _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("https://localhost:5001/api/");
+            _httpClient.BaseAddress = new Uri("https://localhost:5001/api/v1.0/");
+        }
+
+        public async Task<Ingredients> CreateIngredients(Ingredients ingredients)
+        {
+            var response = await _httpClient.PostAsync("ingredients",
+                new StringContent(
+                    JsonSerializer.Serialize(ingredients), Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
+            {
+                using (var stream = await response.Content.ReadAsStreamAsync())
+                {
+                    Ingredients newIngredient = await JsonSerializer.DeserializeAsync<Ingredients>(stream, new JsonSerializerOptions()
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                    return newIngredient;
+                }
+            }
+            else
+            {
+                return null;
+            };
         }
 
         public async Task<List<Ingredients>> GetAllIngredients()
