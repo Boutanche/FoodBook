@@ -35,7 +35,6 @@ namespace ClientDesktop
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DishForm));
             this.tableLayoutPanel_background = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView_ingredients = new System.Windows.Forms.DataGridView();
-            this.AddIngredients = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel_IngredientPannel = new System.Windows.Forms.TableLayoutPanel();
             this.button_createIngredient = new System.Windows.Forms.Button();
             this.label_Title = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@ namespace ClientDesktop
             this.textBox_NameDish = new System.Windows.Forms.TextBox();
             this.comboBox_TypeDish = new System.Windows.Forms.ComboBox();
             this.dataGridView_DishComposedBy = new System.Windows.Forms.DataGridView();
+            this.btn_AddIngredients = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel_background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ingredients)).BeginInit();
             this.tableLayoutPanel_IngredientPannel.SuspendLayout();
@@ -84,7 +84,7 @@ namespace ClientDesktop
             this.dataGridView_ingredients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_ingredients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_ingredients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.AddIngredients});
+            this.btn_AddIngredients});
             this.dataGridView_ingredients.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_ingredients.Location = new System.Drawing.Point(403, 46);
             this.dataGridView_ingredients.Name = "dataGridView_ingredients";
@@ -92,15 +92,7 @@ namespace ClientDesktop
             this.dataGridView_ingredients.RowTemplate.Height = 25;
             this.dataGridView_ingredients.Size = new System.Drawing.Size(394, 401);
             this.dataGridView_ingredients.TabIndex = 0;
-            // 
-            // AddIngredients
-            // 
-            this.AddIngredients.HeaderText = "Ajouter au plat";
-            this.AddIngredients.Name = "AddIngredients";
-            this.AddIngredients.ReadOnly = true;
-            this.AddIngredients.Text = "+";
-            this.AddIngredients.ToolTipText = "Ici pour ajouter";
-            this.AddIngredients.UseColumnTextForButtonValue = true;
+            this.dataGridView_ingredients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_ingredients_CellClick);
             // 
             // tableLayoutPanel_IngredientPannel
             // 
@@ -289,6 +281,15 @@ namespace ClientDesktop
             this.dataGridView_DishComposedBy.Size = new System.Drawing.Size(388, 159);
             this.dataGridView_DishComposedBy.TabIndex = 3;
             // 
+            // btn_AddIngredients
+            // 
+            this.btn_AddIngredients.HeaderText = "Ajouter au plat";
+            this.btn_AddIngredients.Name = "btn_AddIngredients";
+            this.btn_AddIngredients.ReadOnly = true;
+            this.btn_AddIngredients.Text = "+";
+            this.btn_AddIngredients.ToolTipText = "Cliquer ici pour ajouter à votre plat";
+            this.btn_AddIngredients.UseColumnTextForButtonValue = true;
+            // 
             // DishForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -314,7 +315,6 @@ namespace ClientDesktop
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_background;
         private System.Windows.Forms.DataGridView dataGridView_ingredients;
-        private DataGridViewButtonColumn AddIngredients;
         private TableLayoutPanel tableLayoutPanel_IngredientPannel;
         private Button button_createIngredient;
         private Label label_Title;
@@ -329,5 +329,6 @@ namespace ClientDesktop
         private ComboBox comboBox_TypeDish;
         private TextBox textBox_PopularityDish;
         private DataGridView dataGridView_DishComposedBy;
+        private DataGridViewButtonColumn btn_AddIngredients;
     }
 }
