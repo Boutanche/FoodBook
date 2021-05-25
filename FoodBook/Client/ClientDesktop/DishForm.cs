@@ -81,5 +81,11 @@ namespace ClientDesktop
             CreateIngredientForm createIngredientForm = new CreateIngredientForm();
             createIngredientForm.Show();
         }
+
+        private void dataGridView_ingredients_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // TODO : Lire la documentation !!!
+
+        }
     }
 }
