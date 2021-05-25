@@ -30,7 +30,7 @@ namespace DAL.Repository
         public async Task<TypeOfDish> GetAsync(int id)
         {
             //Eviter l'injection sql avec des reqêtes paramétrées
-            var stmt = @"select * from typeOfDishes where id_type = @id";
+            var stmt = @"select * from typeOfDishes where id = @id";
             return await _session.Connection.QueryFirstOrDefaultAsync<TypeOfDish>(stmt, new { Id = id }, _session.Transaction);
         }
 

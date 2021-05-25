@@ -20,18 +20,22 @@ namespace ClientDesktop
         public CreateIngredientForm()
         {
             InitializeComponent();
+            _restaurantService = new RestaurantService();
         }
 
         private void button_validate_Click(object sender, EventArgs e)
         {
+            // TODO : Controle sur les données entrantes : 
             Ingredients ingredient = new Ingredients();
             {
+             
                 ingredient.Name = textBox_ingredientName.Text;
                 ingredient.Price = decimal.Parse(textBox_ingredientPrice.Text);
             }
-            
-            Task<Ingredients> ingredientsTask = _restaurantService.CreateIngredients(ingredient);
 
+            Task<Ingredients> ingredientsTask = _restaurantService.CreateIngredients(ingredient);
+            // TODO : A la sortie : Afficher OK ou Afficher Erreur. 
+            // TODO : Réfraichir les données.
         }
     }
 }
