@@ -19,11 +19,11 @@ namespace ClientDesktop
         //Connexion aux données 
         private BindingSource bindingSourceIngredients = new BindingSource();
         private BindingSource bindingSourceList = new BindingSource();
-
         //Initialise une liste d'ingrédients côté client.
         private List<ListOfIngredient> listIngredients = new();
-        //HACK : Pour la liste d'ingrédients
-        private ListOfIngredient fictifIngredient = new();
+        /// <summary>
+        /// Constructeur de la Fenêtre "DishForm"
+        /// </summary>
         public DishForm()
         {   
             //Service qui gère le restaurant
@@ -31,13 +31,13 @@ namespace ClientDesktop
             InitializeComponent();
             //Chargement de la liste d'ingrédients : 
             LoadIngredients();
-            //Chargement de la liste d'ingrédient de ce plat      
-            //Durant la première initialisation la liste des ingrédients de ce plat est vide...
-            //TODO : Boucle (if is fictifIngredient){do autre chose.}
-            LoadListOfIngredient(fictifIngredient);
+
+
         }
-        //En attente : on tente autre chose.
-        //Il faut que cette methode me produise la liste des ingrédients pour le plat sélectionné.
+        /// <summary>
+        /// Chargement de la liste des ingrédients qui composent le plat ! 
+        /// </summary>
+        /// <param name="listOfIngredient"></param>
         private void LoadListOfIngredient(ListOfIngredient listOfIngredient)
         {
             dataGridView_DishComposedBy.DataSource = null;
@@ -48,14 +48,16 @@ namespace ClientDesktop
 
             bindingSourceList.DataSource = listIngredients;
             dataGridView_DishComposedBy.DataSource = bindingSourceList;
+            //Enlever la colone idDish du dataGridView
+            dataGridView_DishComposedBy.Columns["idDish"].Visible = false;
 
-            //dataGridView_DishComposedBy.Rows.Clear();
-            //dataGridView_DishComposedBy.Update();
-            //dataGridView_DishComposedBy.Refresh();
-            
+            //TODO : Ajouter un colone "Nom de l'ingrédient" et Afficher cette colonne à la place de "idIngredient"
         }
 
-        //Fonction : trouer un id_Type à partir de la comboBox
+        /// <summary>
+        /// Trouver l'iD à partir de la comboBox TypeDish
+        /// </summary>
+        /// <returns></returns>
         private int IsMyTypeOfDish()
         {
             if (comboBox_TypeDish.Text == "Entrée") {
@@ -66,6 +68,9 @@ namespace ClientDesktop
             }
             return 3;
         }
+        /// <summary>
+        /// Récupérer l'ensemble des ingrédients de la base de données.
+        /// </summary>
         private async void LoadIngredients()
         {
             Task<List<Ingredients>> ingredientsTask = _restaurantService.GetAllIngredients();
@@ -75,30 +80,36 @@ namespace ClientDesktop
             dataGridView_ingredients.DataSource = bindingSourceIngredients;
             dataGridView_ingredients.Columns["id"].Visible = false;
         }
-
+        /// <summary>
+        /// Afficher la fenêtre pour créer un ingrédient
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_createIngredient_Click(object sender, EventArgs e)
         {
             CreateIngredientForm createIngredientForm = new CreateIngredientForm();
             createIngredientForm.Show();
         }
-
+        /// <summary>
+        /// Quand on clique sur un ingrédient de la datagridview l'ingrédient s'ajoute à la liste des ingrédients qui composent le plat
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dataGridView_ingredients_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-  
             //Quand tu cliques tu m'ajoutes l'id de l'ingrédient à la liste temporaire.
-            ListOfIngredient newIngredient = new(null, Int32.Parse(dataGridView_ingredients.CurrentRow.Cells["id"].Value.ToString()), 1);
+            ListOfIngredient newIngredient = new( Int32.Parse(dataGridView_ingredients.CurrentRow.Cells["id"].Value.ToString()), 0, 1);
             LoadListOfIngredient(newIngredient);
-
-            //Pour Tester : 
-            //textBox_PopularityDish.Text = dataGridView_ingredients.CurrentRow.Cells["id"].Value.ToString();
-            //Cela semble fonctionner
-
-            // TODO : Lire la documentation !!!
         }
-
+        /// <summary>
+        /// Ce boutton va créer un plat à partir des premières informations : IMPLEMENTATION : OK.
+        /// PUIS : ce bouton va compléter la table de liaison ListOfIngredient de la BDD.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_ConfirmDish_Click(object sender, EventArgs e)
         {
-            // 1
+            // Etape : 1
             //Création d'un nouveau plat
             Dish newDish = new();
             {
@@ -107,13 +118,31 @@ namespace ClientDesktop
                 newDish.Popularity = 0;
             }
             Task<Dish> dishTask = _restaurantService.CreateDish(newDish);
-      
-            //récupérer l'id du plat.
+            //OK!
 
-            //Update liste des ingrédients du plat.
 
-            // 2
+            //TODO : les deux méthodes n'ont pas été codée encore.
+            //GetDishByName
+            //CreateListOfIngredient
+
+            //Etape 1.5 : 
+            //Récupérer l'id du plat.
+            Task<Dish> dishTaskTwo = _restaurantService.GetDishByName(newDish.Name);
+
+            //Etape 2 :
             //Création de la liste des ingrédients pour ce plat.
+            foreach (var item in dataGridView_DishComposedBy.Rows)
+            {
+                ListOfIngredient listOfIngredient = new();
+                {
+                    listOfIngredient.IdDish = newDish.Id;
+                    listOfIngredient.IdIngredient = Int32.Parse(
+                        dataGridView_DishComposedBy.CurrentRow.Cells["idIngredient"].Value.ToString());
+                    listOfIngredient.Quantity = Int32.Parse(
+                        dataGridView_DishComposedBy.CurrentRow.Cells["quantity"].Value.ToString());
+                }
+                Task<ListOfIngredient> listOfIngredientTask = _restaurantService.CreateListOfIngredient(listOfIngredient);
+            }
         }
     }
 
@@ -124,14 +153,20 @@ namespace ClientDesktop
 
 
 
-
-    //********************************* CODE POUBELLE A EFFACER AVANT RELEASE *******************************************************
+    //*******************************************************************************************************************************
+    //******************************************* CODE POUBELLE A EFFACER AVANT RELEASE *********************************************
     /*
      *  1 : - Un test sur convertir une liste en data-table : Qui n'était pas utile en fait ça le fait tout seul.
      * 
      */
-    
-    // 1 :
+    //*******************************************************************************************************************************
+    //*** Une pensée émue pour l'ensemble des codes qui finissent à la poubelle alors qu'ils ont été écris avec patience les dev. ***
+    //
+    //
+    //
+    //
+    // 1 : Coonvertir une liste en data-table : 
+    //
     ////Ne sert à rien au final.
     ///// <summary>
     ///// Stackoverflow : how to convert a list into data-table ?
@@ -142,7 +177,6 @@ namespace ClientDesktop
     //public static DataTable ToDataTable<T>(List<T> items)
     //{
     //    DataTable dataTable = new DataTable(typeof(T).Name);
-
     //    //Get all the properties
     //    PropertyInfo[] Props = typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance);
     //    foreach (PropertyInfo prop in Props)
