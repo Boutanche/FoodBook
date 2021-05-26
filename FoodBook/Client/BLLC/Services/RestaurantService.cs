@@ -21,6 +21,27 @@ namespace BLLC.Services
             _httpClient.BaseAddress = new Uri("https://localhost:5001/api/v1.0/");
         }
 
+        public async Task<Dish> CreateDish(Dish newDish)
+        {
+            var response = await _httpClient.PostAsync("dish",
+                new StringContent(JsonSerializer.Serialize(newDish), Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
+            {
+                using (var stream = await response.Content.ReadAsStreamAsync())
+                {
+                    Dish dish = await JsonSerializer.DeserializeAsync<Dish>(stream, new JsonSerializerOptions()
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                    return dish;
+                }
+            }
+            else
+            {
+                return null;
+            };
+        }
+
         public async Task<Ingredients> CreateIngredients(Ingredients ingredient)
         {
             var response = await _httpClient.PostAsync("ingredients",

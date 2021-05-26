@@ -14,7 +14,7 @@ namespace BO.Entity
         /// <summary>
         /// Identifiant unique du Type Of Dish
         /// </summary>
-        public int? Id_type { get; set; }
+        public int? Id { get; set; }
         /// <summary>
         /// Label du Type Of Dish
         /// </summary>
@@ -30,7 +30,7 @@ namespace BO.Entity
         /// <param name="wording"></param>
         public TypeOfDish(int? id_typeOfDish, string wording)
         {
-            Id_type = id_typeOfDish;
+            Id = id_typeOfDish;
             Wording = wording;
         }
         /// <summary>
@@ -41,7 +41,7 @@ namespace BO.Entity
         public override bool Equals(object obj)
         {
             return obj is TypeOfDish typeOfDish &&
-                   Id_type == typeOfDish.Id_type &&
+                   Id == typeOfDish.Id &&
                    Wording == typeOfDish.Wording;
         }
         /// <summary>
@@ -50,7 +50,7 @@ namespace BO.Entity
         /// <returns>HashCode</returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id_type, Wording);
+            return HashCode.Combine(Id, Wording);
         }
     }
 }

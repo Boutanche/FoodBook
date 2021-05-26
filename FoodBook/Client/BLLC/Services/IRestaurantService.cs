@@ -8,5 +8,6 @@ namespace BLLC.Services
     {
         Task<List<Ingredients>> GetAllIngredients();
         Task<Ingredients> CreateIngredients(Ingredients ingredients);
+        Task<Dish> CreateDish(Dish newDish);
     }
 }

@@ -14,7 +14,7 @@ namespace BO.Entity
         /// <summary>
         /// int : Id Dish
         /// </summary>
-        public int? Id_dish { get; set; }
+        public int? Id { get; set; }
         /// <summary>
         /// string : Name of a dish
         /// </summary>
@@ -26,7 +26,7 @@ namespace BO.Entity
         /// <summary>
         /// int : Foreign key of type of dish
         /// </summary>
-        public int Id_type { get; set; }
+        public int IdType { get; set; }
 
         /// <summary>
         /// Default constructor for API serialisation
@@ -36,16 +36,16 @@ namespace BO.Entity
         /// <summary>
         /// Utilitari constructor full properties
         /// </summary>
-        /// <param name="id_dish">Id of dish</param>
+        /// <param name="idDish">Id of dish</param>
         /// <param name="name">Name of this dish</param>
         /// <param name="popularity">Number how many times this dish is selected by clients</param>
         /// <param name="fk_typeOfDish">Foreign Key</param>
-        public Dish(int? id_dish, string name, int popularity, int fk_typeOfDish)
+        public Dish(int? idDish, string name, int popularity, int fk_typeOfDish)
         {
-            Id_dish = id_dish;
+            Id = idDish;
             Name = name;
             Popularity = popularity;
-            Id_type = fk_typeOfDish;
+            IdType = fk_typeOfDish;
         }
 
         //Générer automatiquement Equals() and GetHashCocde()
@@ -57,10 +57,10 @@ namespace BO.Entity
         public override bool Equals(object obj)
         {
             return obj is Dish dish &&
-                Id_dish == dish.Id_dish &&
+                Id == dish.Id &&
                 Name == dish.Name &&
                 Popularity == dish.Popularity &&
-                Id_type == dish.Id_type;
+                IdType == dish.IdType;
         }
         /// <summary>
         /// Override GetHashCode for dish
@@ -68,7 +68,7 @@ namespace BO.Entity
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id_dish, Name, Popularity, Id_type);
+            return HashCode.Combine(Id, Name, Popularity, IdType);
         }
     }
 }

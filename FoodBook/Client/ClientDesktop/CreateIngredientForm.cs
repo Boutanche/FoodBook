@@ -37,5 +37,10 @@ namespace ClientDesktop
             // TODO : A la sortie : Afficher OK ou Afficher Erreur. 
             // TODO : Réfraichir les données.
         }
+
+        private void button_cancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

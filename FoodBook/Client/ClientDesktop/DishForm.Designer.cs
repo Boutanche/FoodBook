@@ -35,6 +35,7 @@ namespace ClientDesktop
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DishForm));
             this.tableLayoutPanel_background = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView_ingredients = new System.Windows.Forms.DataGridView();
+            this.btn_AddIngredients = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel_IngredientPannel = new System.Windows.Forms.TableLayoutPanel();
             this.button_createIngredient = new System.Windows.Forms.Button();
             this.label_Title = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@ namespace ClientDesktop
             this.textBox_NameDish = new System.Windows.Forms.TextBox();
             this.comboBox_TypeDish = new System.Windows.Forms.ComboBox();
             this.dataGridView_DishComposedBy = new System.Windows.Forms.DataGridView();
-            this.btn_AddIngredients = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel_background.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ingredients)).BeginInit();
             this.tableLayoutPanel_IngredientPannel.SuspendLayout();
@@ -93,6 +93,15 @@ namespace ClientDesktop
             this.dataGridView_ingredients.Size = new System.Drawing.Size(394, 401);
             this.dataGridView_ingredients.TabIndex = 0;
             this.dataGridView_ingredients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_ingredients_CellClick);
+            // 
+            // btn_AddIngredients
+            // 
+            this.btn_AddIngredients.HeaderText = "Ajouter au plat";
+            this.btn_AddIngredients.Name = "btn_AddIngredients";
+            this.btn_AddIngredients.ReadOnly = true;
+            this.btn_AddIngredients.Text = "+";
+            this.btn_AddIngredients.ToolTipText = "Cliquer ici pour ajouter à votre plat";
+            this.btn_AddIngredients.UseColumnTextForButtonValue = true;
             // 
             // tableLayoutPanel_IngredientPannel
             // 
@@ -165,6 +174,7 @@ namespace ClientDesktop
             this.button_ConfirmDish.TabIndex = 0;
             this.button_ConfirmDish.Text = "Confirmer création du plat";
             this.button_ConfirmDish.UseVisualStyleBackColor = false;
+            this.button_ConfirmDish.Click += new System.EventHandler(this.button_ConfirmDish_Click);
             // 
             // button_CancelDish
             // 
@@ -273,22 +283,15 @@ namespace ClientDesktop
             // 
             // dataGridView_DishComposedBy
             // 
+            this.dataGridView_DishComposedBy.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_DishComposedBy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_DishComposedBy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_DishComposedBy.Location = new System.Drawing.Point(3, 168);
             this.dataGridView_DishComposedBy.Name = "dataGridView_DishComposedBy";
+            this.dataGridView_DishComposedBy.RowHeadersVisible = false;
             this.dataGridView_DishComposedBy.RowTemplate.Height = 25;
             this.dataGridView_DishComposedBy.Size = new System.Drawing.Size(388, 159);
             this.dataGridView_DishComposedBy.TabIndex = 3;
-            // 
-            // btn_AddIngredients
-            // 
-            this.btn_AddIngredients.HeaderText = "Ajouter au plat";
-            this.btn_AddIngredients.Name = "btn_AddIngredients";
-            this.btn_AddIngredients.ReadOnly = true;
-            this.btn_AddIngredients.Text = "+";
-            this.btn_AddIngredients.ToolTipText = "Cliquer ici pour ajouter à votre plat";
-            this.btn_AddIngredients.UseColumnTextForButtonValue = true;
             // 
             // DishForm
             // 

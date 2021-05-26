@@ -71,7 +71,7 @@ namespace API.Controllers
             if (newDish != null)
             {
                 //Créer une redirection vers GetDishById(NewDish.Id_dish)
-                return CreatedAtAction(nameof(GetDishById), new { id = newDish.Id_dish }, newDish);
+                return CreatedAtAction(nameof(GetDishById), new { id = newDish.Id }, newDish);
             }
             else
             {
@@ -91,7 +91,7 @@ namespace API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> ModifyDish([FromRoute] int id, Dish dish)
         {
-            if (dish == null || id != dish.Id_dish)
+            if (dish == null || id != dish.Id)
             {
                 //Retourner le code 400 : Bad Request
                 return BadRequest();

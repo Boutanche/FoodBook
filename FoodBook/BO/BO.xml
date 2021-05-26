@@ -140,7 +140,7 @@
             Dish composed by 1 or n Ingredients.
             </summary>
         </member>
-        <member name="P:BO.Entity.Dish.Id_dish">
+        <member name="P:BO.Entity.Dish.Id">
             <summary>
             int : Id Dish
             </summary>
@@ -155,7 +155,7 @@
             int : Popularity of a dish
             </summary>
         </member>
-        <member name="P:BO.Entity.Dish.Id_type">
+        <member name="P:BO.Entity.Dish.IdType">
             <summary>
             int : Foreign key of type of dish
             </summary>
@@ -169,7 +169,7 @@
             <summary>
             Utilitari constructor full properties
             </summary>
-            <param name="id_dish">Id of dish</param>
+            <param name="idDish">Id of dish</param>
             <param name="name">Name of this dish</param>
             <param name="popularity">Number how many times this dish is selected by clients</param>
             <param name="fk_typeOfDish">Foreign Key</param>
@@ -239,12 +239,12 @@
             Informe aussi sur la quantité nécéssaire de commander pour un plat.
             </summary>
         </member>
-        <member name="P:BO.Entity.ListOfIngredient.Id_ingredient">
+        <member name="P:BO.Entity.ListOfIngredient.IdIngredient">
             <summary>
             Id de l'ingrédient
             </summary>
         </member>
-        <member name="P:BO.Entity.ListOfIngredient.Id_dish">
+        <member name="P:BO.Entity.ListOfIngredient.IdDish">
             <summary>
             Id du plat
             </summary>
@@ -387,7 +387,7 @@
             Représente un objet Type Of Dish
             </summary>
         </member>
-        <member name="P:BO.Entity.TypeOfDish.Id_type">
+        <member name="P:BO.Entity.TypeOfDish.Id">
             <summary>
             Identifiant unique du Type Of Dish
             </summary>
