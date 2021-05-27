@@ -127,6 +127,7 @@ namespace ClientDesktop
 
             //Etape 1.5 : 
             //Récupérer l'id du plat.
+            //WIP : 27/05/2020 : 12h30
             Task<Dish> dishTaskTwo = _restaurantService.GetDishByName(newDish.Name);
 
             //Etape 2 :
