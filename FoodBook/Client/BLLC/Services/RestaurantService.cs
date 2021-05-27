@@ -78,9 +78,26 @@ namespace BLLC.Services
         /// </summary>
         /// <param name="listOfIngredient"></param>
         /// <returns></returns>
-        public Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient)
+        public async Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.PostAsync("listOfIngredient",
+                new StringContent(
+                    JsonSerializer.Serialize(listOfIngredient), Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
+            {
+                using (var stream = await response.Content.ReadAsStreamAsync())
+                {
+                    ListOfIngredient newListOfIngredient = await JsonSerializer.DeserializeAsync<ListOfIngredient>(stream, new JsonSerializerOptions()
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                    return newListOfIngredient;
+                }
+            }
+            else
+            {
+                return null;
+            };
         }
         /// <summary>
         /// Récupérer la liste de tous les ingrédients.
@@ -115,9 +132,24 @@ namespace BLLC.Services
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public Task<Dish> GetDishByName(string name)
+        public async Task<Dish> GetDishByName(string name)
         {
-            throw new NotImplementedException();
+            var reponse = await _httpClient.GetAsync($"dish/name/{name}");
+            if (reponse.IsSuccessStatusCode)
+            {
+                using (var stream = await reponse.Content.ReadAsStreamAsync())
+                {
+                    //Ici reception de json qu'il faut que je remette en objet C#.
+                    Dish dish = await JsonSerializer.DeserializeAsync<Dish>
+                        (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                    return dish;
+                }
+            }
+            else
+            {
+                //Faudra traiter ça sur l'interface si problème.
+                return null;
+            }
         }
     }
 }

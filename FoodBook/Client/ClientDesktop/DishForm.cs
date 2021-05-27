@@ -107,7 +107,7 @@ namespace ClientDesktop
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button_ConfirmDish_Click(object sender, EventArgs e)
+        private async void button_ConfirmDish_ClickAsync(object sender, EventArgs e)
         {
             // Etape : 1
             //Création d'un nouveau plat
@@ -119,7 +119,7 @@ namespace ClientDesktop
             }
             Task<Dish> dishTask = _restaurantService.CreateDish(newDish);
             //OK!
-
+            
 
             //TODO : les deux méthodes n'ont pas été codée encore.
             //GetDishByName
@@ -128,7 +128,8 @@ namespace ClientDesktop
             //Etape 1.5 : 
             //Récupérer l'id du plat.
             //WIP : 27/05/2020 : 12h30
-            Task<Dish> dishTaskTwo = _restaurantService.GetDishByName(newDish.Name);
+            
+            Dish MyNewDish = await dishTask;
 
             //Etape 2 :
             //Création de la liste des ingrédients pour ce plat.
@@ -136,7 +137,7 @@ namespace ClientDesktop
             {
                 ListOfIngredient listOfIngredient = new();
                 {
-                    listOfIngredient.IdDish = newDish.Id;
+                    listOfIngredient.IdDish = MyNewDish.Id;
                     listOfIngredient.IdIngredient = Int32.Parse(
                         dataGridView_DishComposedBy.CurrentRow.Cells["idIngredient"].Value.ToString());
                     listOfIngredient.Quantity = Int32.Parse(

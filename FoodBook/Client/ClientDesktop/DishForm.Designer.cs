@@ -174,7 +174,7 @@ namespace ClientDesktop
             this.button_ConfirmDish.TabIndex = 0;
             this.button_ConfirmDish.Text = "Confirmer création du plat";
             this.button_ConfirmDish.UseVisualStyleBackColor = false;
-            this.button_ConfirmDish.Click += new System.EventHandler(this.button_ConfirmDish_Click);
+            this.button_ConfirmDish.Click += new System.EventHandler(this.button_ConfirmDish_ClickAsync);
             // 
             // button_CancelDish
             // 
