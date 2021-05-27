@@ -22,7 +22,7 @@ namespace IntegrationTest
             var expected = new Ingredients()
             {
                 Id = 1,
-                Name = "Apple",
+                Name = "Green Apple",
                 Price = 2.5m
             };
 
@@ -30,8 +30,8 @@ namespace IntegrationTest
             var response = await _client.GetFromJsonAsync<Ingredients>("api/v1/ingredients/1");
                 
             //Assert
-            Assert.Equal(response, expected);
-                    
+            Assert.Equal(response, expected);        
         }
+        
     }
 }

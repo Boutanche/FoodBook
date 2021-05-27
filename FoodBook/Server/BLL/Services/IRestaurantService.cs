@@ -77,6 +77,12 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns></returns>
         Task<Dish> GetIngredientsOfDishById(int id);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        Task<Dish> GetDishByName(string name);
         #endregion
         #region TypeOfDish
         /// <summary>

@@ -21,13 +21,29 @@ namespace IntegrationTest
             //Arrange
             var expected = new Dish()
             {
-                Id_dish = 1,
-                Name = "couscous",
+                Id = 6,
+                Name = "Couscous",
                 Popularity = 0,
-                Id_type = 2
+                IdType = 2
             };
             //Act
-            var response = await _client.GetFromJsonAsync<Dish>("api/v1.0/dish/1");
+            var response = await _client.GetFromJsonAsync<Dish>("api/v1.0/dish/6");
+            //Assert
+            Assert.Equal(response, expected);
+        }
+        [Fact]
+        public async void GetDishByName_Should_Be_OK()
+        {
+            //Arrange
+            var expected = new Dish()
+            {
+                Id = 6,
+                Name = "Couscous",
+                Popularity = 0,
+                IdType = 2
+            };
+            //Act
+            var response = await _client.GetFromJsonAsync<Dish>("api/v1.0/dish/name/Couscous");
             //Assert
             Assert.Equal(response, expected);
         }

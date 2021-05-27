@@ -29,6 +29,37 @@ namespace UnitTest
             //Assert
             Assert.NotNull(DishActionResult);
         }
+
+        // WIP : Get By Dish Name () ...
+        [Fact]
+        public async void TestGetDishByName()
+        {
+            //Arrange
+            
+            IRestaurantService restaurantService = new FakeRestaurantService();
+            DishController dishController = new(restaurantService);
+            string name = "Couscous";
+            
+            //string noName = "NoName";
+            
+            //Act
+            //Test sur id = 1 
+            OkObjectResult dishActionResult1 = await dishController.GetDishByName(name) as OkObjectResult;
+            
+            //Test sur Résultat n'existe pas :
+            // TODO : Trouver le pbm ici ?  
+            //NotFoundResult notFounddishActionResult = await dishController.GetDishByName(noName) as NotFoundResult;
+
+
+            //Assert
+            Assert.NotNull(dishActionResult1);
+            Assert.Equal(200, dishActionResult1.StatusCode);
+            
+            //Assert.NotNull(notFounddishActionResult);
+            //Assert.Equal(404, notFounddishActionResult.StatusCode);
+        }
+
+
         /// <summary>
         /// Test Unitaire sur GetDishById
         /// </summary>
@@ -104,13 +135,13 @@ namespace UnitTest
             Dish couscous = new()
 
             {
-                Id_dish = 105,
+                Id = 105,
                 Name = "Couscous",
                 Popularity = 1
             };
             Dish couscousGood = new()
             {
-                Id_dish = 1,
+                Id = 1,
                 Name = "Couscous",
                 Popularity = 1
             };

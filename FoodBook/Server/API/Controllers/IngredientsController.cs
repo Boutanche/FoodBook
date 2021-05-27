@@ -40,6 +40,7 @@ namespace API.Controllers
  
             return Ok(await _restaurantService.GetAllIngredients());
         }
+
         /// <summary>
         /// Permet de récupérer la liste des Ingrédients par son identifiant unique
         /// </summary>

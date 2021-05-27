@@ -56,6 +56,23 @@ namespace API.Controllers
                 return Ok(dish);   // StatusCode = 200
             }
         }
+
+        [HttpGet("name/{name}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Dish))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetDishByName([FromRoute] string name)
+        {
+            Dish dish = await _restaurantService.GetDishByName(name);
+            if (dish == null)
+            {
+                return NotFound();        // StatusCode = 404
+            }
+            else
+            {
+                return Ok(dish);   // StatusCode = 200
+            }
+        }
+
         /// <summary>
         /// Créer un plat et l'ajouter à la BDD
         /// </summary>

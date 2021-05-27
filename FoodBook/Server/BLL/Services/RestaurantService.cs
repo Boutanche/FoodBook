@@ -113,7 +113,12 @@ namespace BLL.Services
             List<Dish> dishes = (await _dish.GetAllAsync()).ToList();
             return dishes;
         }
+        public async Task<Dish> GetDishByName(string name)
+        {
+            IDishRepository _dish = _db.GetRepository<IDishRepository>();
 
+            return await _dish.GetAsync(name);
+        }
         /// <summary>
         /// Get a Dish By an ID
         /// </summary>
@@ -258,6 +263,8 @@ namespace BLL.Services
         {
             throw new NotImplementedException();
     }
+
+
 
         #endregion
 

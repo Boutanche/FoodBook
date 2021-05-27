@@ -135,6 +135,13 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:BLL.Services.IRestaurantService.GetDishByName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
         <member name="M:BLL.Services.IRestaurantService.GetAllTypeOfDish">
             <summary>
             Récupérer tous les Type Of Dish

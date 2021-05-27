@@ -23,6 +23,22 @@ namespace DAL.Repository
             return await _session.Connection.ExecuteAsync(stmt, new { Id = id }, _session.Transaction);
         }
 
+        public async Task<IEnumerable<Dish>> GetAllAsync(string name)
+        {
+            if (name != null)
+            {
+                var stmt = @"select * from dishes where name = @name";
+                return await _session.Connection.QueryAsync<Dish>(stmt, new { Name = name }, _session.Transaction);
+            }
+            else
+            {
+                //TODO : Traiter l'erreur : 
+                var stmt = @"MESSAGE ERREUR";
+                return await _session.Connection.QueryAsync<Dish>(stmt, null, _session.Transaction);
+            }
+            
+        }
+
         public async Task<IEnumerable<Dish>> GetAllAsync()
         {
             var stmt = @"select * from dishes";
@@ -34,6 +50,13 @@ namespace DAL.Repository
             //Eviter l'injection sql avec des reqêtes paramétrées
             var stmt = @"select * from dishes where id = @id";
             return await _session.Connection.QueryFirstOrDefaultAsync<Dish>(stmt, new { Id = id }, _session.Transaction);
+        }
+
+        public async Task<Dish> GetAsync(string name)
+        {
+            //TOTO : Faire un Like
+            var stmt = @"select * from dishes where name = @name";
+            return await _session.Connection.QueryFirstOrDefaultAsync<Dish>(stmt, new { Name = name }, _session.Transaction);
         }
 
         public async Task<Dish> InsertAsync(Dish entity)

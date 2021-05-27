@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace DAL.Repository
 {
     public interface IDishRepository : IGenericRepository<Dish>
-    
+
     {
+        Task<Dish> GetAsync(string name);
     }
 }

@@ -97,6 +97,7 @@ namespace UnitTest.Services
             new Dish(2, "Banana Bread", 1, 3),
             new Dish(3, "Carrot Cake", 0, 3),
             new Dish(4, "Pancake", 2, 3),
+            new Dish(5 , "Couscous", 2, 1)
         };
         /// <summary>
         /// Fake Get All Dish
@@ -122,20 +123,20 @@ namespace UnitTest.Services
         /// <returns></returns>
         public Task<Dish> GetDishById(int id)
         {
-            return Task.FromResult(dishFakeDB.Find(i => i.Id_dish == id));
+            return Task.FromResult(dishFakeDB.Find(i => i.Id == id));
         }
         public Task<Dish> ModifyDish(Dish dish)
         {
-            if (dish.Id_dish > 100)
+            if (dish.Id > 100)
             {
                 return Task.FromResult<Dish>(null);
             }
-            if (dish.Id_dish == null)
+            if (dish.Id == null)
             {
                 return null;
             }
 
-            var _dish = dishFakeDB.Find(i => i.Id_dish == dish.Id_dish);
+            var _dish = dishFakeDB.Find(i => i.Id == dish.Id);
             _dish.Name = dish.Name;
             _dish.Popularity = dish.Popularity;
 
@@ -143,7 +144,7 @@ namespace UnitTest.Services
         }
         public Task<bool> RemoveDishById(int id)
         {
-            dishFakeDB.RemoveAll(i => i.Id_dish == id);
+            dishFakeDB.RemoveAll(i => i.Id == id);
             return Task.FromResult(id > 0);
         }
 
@@ -205,6 +206,11 @@ namespace UnitTest.Services
         public Task<Dish> GetIngredientsOfDishById(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public Task<Dish> GetDishByName(string name)
+        {
+            return Task.FromResult(dishFakeDB.Find(i => i.Name == name));
         }
         #endregion
     }
