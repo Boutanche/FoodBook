@@ -117,7 +117,7 @@ namespace BLL.Services
         {
             IDishRepository _dish = _db.GetRepository<IDishRepository>();
 
-            return await _dish.GetAsync(name);
+            return await _dish.GetAsyncByName(name);
         }
         /// <summary>
         /// Get a Dish By an ID
@@ -262,7 +262,43 @@ namespace BLL.Services
         public Task<Menu> GetServicesOfMenuById(int id)
         {
             throw new NotImplementedException();
-    }
+        }
+        #endregion
+        #region ListOfDish
+
+        public Task<List<ListOfIngredient>> GetAllListOfIngredient()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<ListOfIngredient>> GetListOfIngredientByIdDish(int idDish)
+        {
+            throw new NotImplementedException();
+        }
+        /// <summary>
+        /// Créer une ListOfIngredient
+        /// </summary>
+        /// <param name="listOfIngredient"></param>
+        /// <returns></returns>
+        public async Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient)
+        {
+
+            _db.BeginTransaction();
+            IListOfIngredientRepository _listOfIngredient = _db.GetRepository<IListOfIngredientRepository>();
+            ListOfIngredient newListOfIngredient = await _listOfIngredient.InsertAsync(listOfIngredient);
+            _db.Commit();
+            return newListOfIngredient;
+        }
+
+        public Task<ListOfIngredient> ModifyListOfIngredient(ListOfIngredient listOfIngredient)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> RemoveListOfIngredientById(int id)
+        {
+            throw new NotImplementedException();
+        }
 
 
 

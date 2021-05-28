@@ -220,6 +220,40 @@
             <param name="id"></param>
             <returns>Menu</returns>
         </member>
+        <member name="M:BLL.Services.IRestaurantService.GetAllListOfIngredient">
+            <summary>
+            Récupérer toutes les listOfIngredient: table de liaison en Ingredient et Dish
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.GetListOfIngredientByIdDish(System.Int32)">
+            <summary>
+            Récupérer les ListOfIngredient qui composent un plat désigné par on id.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)">
+            <summary>
+            Créer une ListOfIngredient
+            </summary>
+            <param name="listOfIngredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)">
+            <summary>
+            Modifier un ...
+            Penser que id = int32.Parse(idIngredient.toString() + idDish.toString())
+            </summary>
+            <param name="listOfIngredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.RemoveListOfIngredientById(System.Int32)">
+            <summary>
+            Supprimer un ListOfIngredient
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:BLL.Services.RestaurantService">
             <summary>
             All concern about restauration service
@@ -304,6 +338,13 @@
             Get a TypeOfDish
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)">
+            <summary>
+            Créer une ListOfIngredient
+            </summary>
+            <param name="listOfIngredient"></param>
             <returns></returns>
         </member>
     </members>

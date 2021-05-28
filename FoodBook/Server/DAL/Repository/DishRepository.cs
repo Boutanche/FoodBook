@@ -54,7 +54,7 @@ namespace DAL.Repository
             return await _session.Connection.QueryFirstOrDefaultAsync<Dish>(stmt, new { Id = id }, _session.Transaction);
         }
 
-        public async Task<Dish> GetAsync(string name)
+        public async Task<Dish> GetAsyncByName(string name)
         {
             //TOTO : Faire un Like
             var stmt = @"select * from dishes where name = @name";

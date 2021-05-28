@@ -35,6 +35,8 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns></returns>
         Task<bool> RemoveIngredientById(int id);
+        
+
         /// <summary>
         /// Récupérer la liste de tous les ingrédients
         /// </summary>
@@ -59,6 +61,8 @@ namespace BLL.Services
         /// <param name="dish">Dish</param>
         /// <returns>Dish</returns>
         Task<Dish> CreateDish(Dish dish);
+
+
         /// <summary>
         /// Modifé un plat
         /// </summary>
@@ -77,6 +81,8 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns></returns>
         Task<Dish> GetIngredientsOfDishById(int id);
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -116,6 +122,8 @@ namespace BLL.Services
         /// <param name="service"></param>
         /// <returns>Service</returns>
         Task<Service> CreateService(Service service);
+
+
         /// <summary>
         /// Ajouter un plat au service
         /// </summary>
@@ -138,6 +146,8 @@ namespace BLL.Services
         /// <param name="date"></param>
         /// <returns>Menu</returns>
         Task<DateTime> NextMenu(DateTime date);
+
+
         /// <summary>
         /// Menu Précédent
         /// </summary>
@@ -158,6 +168,37 @@ namespace BLL.Services
         Task<Menu> GetServicesOfMenuById(int id);
 
         #endregion
-        
+        #region ListOfIngredient
+        /// <summary>
+        /// Récupérer toutes les listOfIngredient: table de liaison en Ingredient et Dish
+        /// </summary>
+        /// <returns></returns>
+        Task<List<ListOfIngredient>> GetAllListOfIngredient();
+        /// <summary>
+        /// Récupérer les ListOfIngredient qui composent un plat désigné par on id.
+        /// </summary>
+        /// <returns></returns>
+        Task<List<ListOfIngredient>> GetListOfIngredientByIdDish(int idDish);
+        /// <summary>
+        /// Créer une ListOfIngredient
+        /// </summary>
+        /// <param name="listOfIngredient"></param>
+        /// <returns></returns>
+        Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient);
+        /// <summary>
+        /// Modifier un ...
+        /// Penser que id = int32.Parse(idIngredient.toString() + idDish.toString())
+        /// </summary>
+        /// <param name="listOfIngredient"></param>
+        /// <returns></returns>
+        Task<ListOfIngredient> ModifyListOfIngredient(ListOfIngredient listOfIngredient);
+        /// <summary>
+        /// Supprimer un ListOfIngredient
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task<bool> RemoveListOfIngredientById(int id);
+        #endregion
+
     }
 }

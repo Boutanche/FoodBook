@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
-    public interface IDishRepository : IGenericRepository<Dish>
+    public interface IListOfIngredientRepository : IGenericRepository<ListOfIngredient>
 
     {
-        Task<Dish> GetAsyncByName(string name);
+
     }
 }
+

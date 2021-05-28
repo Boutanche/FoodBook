@@ -19,6 +19,7 @@ namespace DAL
             services.AddTransient<IIngredientRepository, IngredientRepository>();
             services.AddTransient<IDishRepository, DishRepository>();
             services.AddTransient<ITypeOfDishRepository, TypeOfDishRepository>();
+            services.AddTransient<IListOfIngredientRepository, ListOfIngredientRepository>();
 
             return services;
         }

@@ -110,6 +110,42 @@
             Know the necessary amount of ingredients for this dish
             </summary>
         </member>
+        <member name="M:API.Controllers.ListOfIngredientController.GetAll">
+            <summary>
+            Récupérer l'ensemble des ListOfIngredient Table de liaison entre le ingrédient et les plats qu'ils composent.
+            Permet de connaitre la quantité nécessaire des produits en question pour ce plat.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.GetListOfIngredientByIdDish(System.Int32)">
+            <summary>
+            Récupérer uniquement les ingrédients qui composent le plat désigné par l'id précisé.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.CreateListOfIngredient(BO.Entity.ListOfIngredient)">
+            <summary>
+            Créer un ListOfIngredient :
+            </summary>
+            <param name="ListOfIngredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.ModifyListOfIngredient(System.Int32,BO.Entity.ListOfIngredient)">
+            <summary>
+            Modifier un ...
+            Penser que id = int32.Parse(idIngredient.toString() + idDish.toString())
+            </summary>
+            <param name="id"></param>
+            <param name="listOfIngredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.DeleteListOfIngredient(System.Int32)">
+            <summary>
+            Suppression d'un ListOfIngredient donné
+            </summary>
+            <param name="id"></param>
+            <returns>No Content Code 204.</returns>
+        </member>
         <member name="T:API.Controllers.MenuController">
             <summary>
             Controller sur Menu

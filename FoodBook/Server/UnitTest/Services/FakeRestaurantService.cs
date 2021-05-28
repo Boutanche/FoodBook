@@ -212,6 +212,31 @@ namespace UnitTest.Services
         {
             return Task.FromResult(dishFakeDB.Find(i => i.Name == name));
         }
+
+        public Task<List<ListOfIngredient>> GetAllListOfIngredient()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<ListOfIngredient>> GetListOfIngredientByIdDish(int idDish)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient)
+        {
+            return Task.FromResult(listOfIngredient);
+        }
+
+        public Task<ListOfIngredient> ModifyListOfIngredient(ListOfIngredient listOfIngredient)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> RemoveListOfIngredientById(int id)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }
