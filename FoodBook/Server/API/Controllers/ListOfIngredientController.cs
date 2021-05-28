@@ -58,12 +58,12 @@ namespace API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> CreateListOfIngredient([FromBody] ListOfIngredient ListOfIngredient)
         {
-            //Ajout de l'ingrédient avec la BLL server
-            //ListOfIngredient newListOfIngredient = await _restaurantService.CreateListOfIngredient(ListOfIngredient);
+            // Bug FIX : Important sur insert !
             if (ListOfIngredient != null)
             {
                 //Créer une redirection vers GetIngredientById(NewIngredient.IngredientId)
                 return Ok (await _restaurantService.CreateListOfIngredient(ListOfIngredient));
+                //C'est fait.
             }
             else
             {
