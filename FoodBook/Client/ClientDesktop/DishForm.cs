@@ -119,7 +119,7 @@ namespace ClientDesktop
             }
             Task<Dish> dishTask = _restaurantService.CreateDish(newDish);
             //OK!
-            
+
 
             //TODO : les deux méthodes n'ont pas été codée encore.
             //GetDishByName
@@ -128,22 +128,24 @@ namespace ClientDesktop
             //Etape 1.5 : 
             //Récupérer l'id du plat.
             //WIP : 27/05/2020 : 12h30
-            
             Dish MyNewDish = await dishTask;
+
 
             //Etape 2 :
             //Création de la liste des ingrédients pour ce plat.
-            foreach (var item in dataGridView_DishComposedBy.Rows)
+
+            for (int i = 0; i< (dataGridView_DishComposedBy.Rows.Count -1); i++)
             {
                 ListOfIngredient listOfIngredient = new();
                 {
                     listOfIngredient.IdDish = MyNewDish.Id;
                     listOfIngredient.IdIngredient = Int32.Parse(
-                        dataGridView_DishComposedBy.CurrentRow.Cells["idIngredient"].Value.ToString());
+                        dataGridView_DishComposedBy.Rows[i].Cells["idIngredient"].Value.ToString());
                     listOfIngredient.Quantity = Int32.Parse(
-                        dataGridView_DishComposedBy.CurrentRow.Cells["quantity"].Value.ToString());
+                        dataGridView_DishComposedBy.Rows[i].Cells["quantity"].Value.ToString());
                 }
                 Task<ListOfIngredient> listOfIngredientTask = _restaurantService.CreateListOfIngredient(listOfIngredient);
+
             }
         }
     }

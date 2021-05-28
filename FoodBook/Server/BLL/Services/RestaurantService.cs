@@ -266,9 +266,12 @@ namespace BLL.Services
         #endregion
         #region ListOfDish
 
-        public Task<List<ListOfIngredient>> GetAllListOfIngredient()
+        public async Task<List<ListOfIngredient>> GetAllListOfIngredient()
         {
-            throw new NotImplementedException();
+            IListOfIngredientRepository _listOfIngredient = _db.GetRepository<IListOfIngredientRepository>();
+            List<ListOfIngredient> listOfIngredient = (await _listOfIngredient.GetAllAsync()).ToList();
+            return listOfIngredient;
+            
         }
 
         public Task<List<ListOfIngredient>> GetListOfIngredientByIdDish(int idDish)

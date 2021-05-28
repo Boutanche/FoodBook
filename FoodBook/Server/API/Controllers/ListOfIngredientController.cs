@@ -59,8 +59,8 @@ namespace API.Controllers
         public async Task<IActionResult> CreateListOfIngredient([FromBody] ListOfIngredient ListOfIngredient)
         {
             //Ajout de l'ingrédient avec la BLL server
-            ListOfIngredient newListOfIngredient = await _restaurantService.CreateListOfIngredient(ListOfIngredient);
-            if (newListOfIngredient != null)
+            //ListOfIngredient newListOfIngredient = await _restaurantService.CreateListOfIngredient(ListOfIngredient);
+            if (ListOfIngredient != null)
             {
                 //Créer une redirection vers GetIngredientById(NewIngredient.IngredientId)
                 return Ok (await _restaurantService.CreateListOfIngredient(ListOfIngredient));
