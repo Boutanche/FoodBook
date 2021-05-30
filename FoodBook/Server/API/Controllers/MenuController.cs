@@ -64,11 +64,5 @@ namespace API.Controllers
                 return Ok(menu);   // StatusCode = 200
             }
         }
-            //TODO : Next Menu (à faire par le client)
-
-            //TODO : Previous Menu (à faire par le client)
-
-            //TODO : IdMenuById 
-
-        }
+    }
 }

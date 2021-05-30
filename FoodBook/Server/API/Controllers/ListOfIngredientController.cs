@@ -27,7 +27,6 @@ namespace API.Controllers
         {
             _restaurantService = restaurantService;
         }
-        //TODO : WIP 27/05 15h40 ça ne risque pas de fonctionner ici, c'est vide !
         /// <summary>
         /// Récupérer l'ensemble des ListOfIngredient Table de liaison entre le ingrédient et les plats qu'ils composent.
         /// Permet de connaitre la quantité nécessaire des produits en question pour ce plat.
@@ -125,7 +124,5 @@ namespace API.Controllers
                 return NotFound();
             }
         }
-
-
     }
 }
