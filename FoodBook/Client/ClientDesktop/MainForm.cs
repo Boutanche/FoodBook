@@ -26,7 +26,7 @@ namespace ClientDesktop
         _restaurantService = new RestaurantService();
             InitializeComponent();
             //Charge le menu de la semaine
-            // TODO : Si le numéro de la semaine n'existe pas afficher le menu existant le plus proche.
+            //TODO : Si le numéro de la semaine n'existe pas afficher le menu existant le plus proche.
             textBox_week.Text = _currentWeekNumber.ToString();
         }
         /// <summary>
@@ -41,7 +41,8 @@ namespace ClientDesktop
         }
 
         //TODO : Gestion de l'année.
-        //HACK : La fonction actuelle ne prend pas en compte la bonne semaine, il a donc était nécessaire d'incrémenter de 1 la semaine retournée. 
+        //HACK : La fonction actuelle ne prend pas en compte la bonne semaine,
+        // il a donc était nécessaire d'incrémenter de 1 la semaine retournée. 
         /// <summary>
         /// Permet de récurer la numéro de la semaine courrante
         /// </summary>
