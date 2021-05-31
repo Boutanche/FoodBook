@@ -78,61 +78,61 @@ namespace ClientDesktop
             this.comboBox24 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel65 = new System.Windows.Forms.TableLayoutPanel();
-            this.button67 = new System.Windows.Forms.Button();
+            this.button_AddDishS1D5 = new System.Windows.Forms.Button();
             this.button68 = new System.Windows.Forms.Button();
             this.button69 = new System.Windows.Forms.Button();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel64 = new System.Windows.Forms.TableLayoutPanel();
-            this.button64 = new System.Windows.Forms.Button();
+            this.button_AddDishS1D4 = new System.Windows.Forms.Button();
             this.button65 = new System.Windows.Forms.Button();
             this.button66 = new System.Windows.Forms.Button();
             this.comboBox22 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel40 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel63 = new System.Windows.Forms.TableLayoutPanel();
-            this.button61 = new System.Windows.Forms.Button();
+            this.button_AddDishS1D3 = new System.Windows.Forms.Button();
             this.button62 = new System.Windows.Forms.Button();
             this.button63 = new System.Windows.Forms.Button();
             this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel39 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel62 = new System.Windows.Forms.TableLayoutPanel();
-            this.button58 = new System.Windows.Forms.Button();
+            this.button_AddDishS1D2 = new System.Windows.Forms.Button();
             this.button59 = new System.Windows.Forms.Button();
             this.button60 = new System.Windows.Forms.Button();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel61 = new System.Windows.Forms.TableLayoutPanel();
-            this.button55 = new System.Windows.Forms.Button();
+            this.button_AddDishS1D1 = new System.Windows.Forms.Button();
             this.button56 = new System.Windows.Forms.Button();
             this.button57 = new System.Windows.Forms.Button();
             this.comboBox19 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel60 = new System.Windows.Forms.TableLayoutPanel();
-            this.button52 = new System.Windows.Forms.Button();
+            this.button_AddS1D7 = new System.Windows.Forms.Button();
             this.button53 = new System.Windows.Forms.Button();
             this.button54 = new System.Windows.Forms.Button();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel36 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel59 = new System.Windows.Forms.TableLayoutPanel();
-            this.button49 = new System.Windows.Forms.Button();
+            this.button_AddS1D6 = new System.Windows.Forms.Button();
             this.button50 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel35 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel58 = new System.Windows.Forms.TableLayoutPanel();
-            this.button46 = new System.Windows.Forms.Button();
+            this.button_AddS1D5 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.button48 = new System.Windows.Forms.Button();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel34 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel57 = new System.Windows.Forms.TableLayoutPanel();
-            this.button43 = new System.Windows.Forms.Button();
+            this.button_AddS1D4 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.button45 = new System.Windows.Forms.Button();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel33 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel56 = new System.Windows.Forms.TableLayoutPanel();
-            this.button37 = new System.Windows.Forms.Button();
+            this.button_AddS1D3 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
@@ -186,7 +186,7 @@ namespace ClientDesktop
             this.button_ModifyS1D1Starter = new System.Windows.Forms.Button();
             this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel55 = new System.Windows.Forms.TableLayoutPanel();
-            this.button22 = new System.Windows.Forms.Button();
+            this.button_AddS1D2 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
@@ -235,31 +235,31 @@ namespace ClientDesktop
             this.comboBox32 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel73 = new System.Windows.Forms.TableLayoutPanel();
-            this.button91 = new System.Windows.Forms.Button();
+            this.button_AddStarterS2D7 = new System.Windows.Forms.Button();
             this.button92 = new System.Windows.Forms.Button();
             this.button93 = new System.Windows.Forms.Button();
             this.comboBox31 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel72 = new System.Windows.Forms.TableLayoutPanel();
-            this.button88 = new System.Windows.Forms.Button();
+            this.button_AddStarterS2D6 = new System.Windows.Forms.Button();
             this.button89 = new System.Windows.Forms.Button();
             this.button90 = new System.Windows.Forms.Button();
             this.comboBox30 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel71 = new System.Windows.Forms.TableLayoutPanel();
-            this.button85 = new System.Windows.Forms.Button();
+            this.button_AddStarterS2D5 = new System.Windows.Forms.Button();
             this.button86 = new System.Windows.Forms.Button();
             this.button87 = new System.Windows.Forms.Button();
             this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel70 = new System.Windows.Forms.TableLayoutPanel();
-            this.button82 = new System.Windows.Forms.Button();
+            this.button_AddStarterS2D4 = new System.Windows.Forms.Button();
             this.button83 = new System.Windows.Forms.Button();
             this.button84 = new System.Windows.Forms.Button();
             this.comboBox28 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel69 = new System.Windows.Forms.TableLayoutPanel();
-            this.button79 = new System.Windows.Forms.Button();
+            this.button_AddStarterS2D3 = new System.Windows.Forms.Button();
             this.button80 = new System.Windows.Forms.Button();
             this.button81 = new System.Windows.Forms.Button();
             this.comboBox27 = new System.Windows.Forms.ComboBox();
@@ -308,12 +308,12 @@ namespace ClientDesktop
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_AddStarterS2D1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel68 = new System.Windows.Forms.TableLayoutPanel();
-            this.button76 = new System.Windows.Forms.Button();
+            this.button_AddStarterS2D2 = new System.Windows.Forms.Button();
             this.button77 = new System.Windows.Forms.Button();
             this.button78 = new System.Windows.Forms.Button();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
@@ -1086,7 +1086,7 @@ namespace ClientDesktop
             this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel65.Controls.Add(this.button67, 0, 0);
+            this.tableLayoutPanel65.Controls.Add(this.button_AddDishS1D5, 0, 0);
             this.tableLayoutPanel65.Controls.Add(this.button68, 1, 0);
             this.tableLayoutPanel65.Controls.Add(this.button69, 2, 0);
             this.tableLayoutPanel65.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1098,16 +1098,16 @@ namespace ClientDesktop
             this.tableLayoutPanel65.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel65.TabIndex = 2;
             // 
-            // button67
+            // button_AddDishS1D5
             // 
-            this.button67.BackColor = System.Drawing.Color.PaleGreen;
-            this.button67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button67.Location = new System.Drawing.Point(3, 3);
-            this.button67.Name = "button67";
-            this.button67.Size = new System.Drawing.Size(46, 27);
-            this.button67.TabIndex = 0;
-            this.button67.Text = "+";
-            this.button67.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D5.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddDishS1D5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddDishS1D5.Location = new System.Drawing.Point(3, 3);
+            this.button_AddDishS1D5.Name = "button_AddDishS1D5";
+            this.button_AddDishS1D5.Size = new System.Drawing.Size(46, 27);
+            this.button_AddDishS1D5.TabIndex = 0;
+            this.button_AddDishS1D5.Text = "+";
+            this.button_AddDishS1D5.UseVisualStyleBackColor = false;
             // 
             // button68
             // 
@@ -1163,7 +1163,7 @@ namespace ClientDesktop
             this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel64.Controls.Add(this.button64, 0, 0);
+            this.tableLayoutPanel64.Controls.Add(this.button_AddDishS1D4, 0, 0);
             this.tableLayoutPanel64.Controls.Add(this.button65, 1, 0);
             this.tableLayoutPanel64.Controls.Add(this.button66, 2, 0);
             this.tableLayoutPanel64.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1175,16 +1175,16 @@ namespace ClientDesktop
             this.tableLayoutPanel64.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel64.TabIndex = 2;
             // 
-            // button64
+            // button_AddDishS1D4
             // 
-            this.button64.BackColor = System.Drawing.Color.PaleGreen;
-            this.button64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button64.Location = new System.Drawing.Point(3, 3);
-            this.button64.Name = "button64";
-            this.button64.Size = new System.Drawing.Size(46, 27);
-            this.button64.TabIndex = 0;
-            this.button64.Text = "+";
-            this.button64.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D4.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddDishS1D4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddDishS1D4.Location = new System.Drawing.Point(3, 3);
+            this.button_AddDishS1D4.Name = "button_AddDishS1D4";
+            this.button_AddDishS1D4.Size = new System.Drawing.Size(46, 27);
+            this.button_AddDishS1D4.TabIndex = 0;
+            this.button_AddDishS1D4.Text = "+";
+            this.button_AddDishS1D4.UseVisualStyleBackColor = false;
             // 
             // button65
             // 
@@ -1240,7 +1240,7 @@ namespace ClientDesktop
             this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel63.Controls.Add(this.button61, 0, 0);
+            this.tableLayoutPanel63.Controls.Add(this.button_AddDishS1D3, 0, 0);
             this.tableLayoutPanel63.Controls.Add(this.button62, 1, 0);
             this.tableLayoutPanel63.Controls.Add(this.button63, 2, 0);
             this.tableLayoutPanel63.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1252,16 +1252,16 @@ namespace ClientDesktop
             this.tableLayoutPanel63.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel63.TabIndex = 2;
             // 
-            // button61
+            // button_AddDishS1D3
             // 
-            this.button61.BackColor = System.Drawing.Color.PaleGreen;
-            this.button61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button61.Location = new System.Drawing.Point(3, 3);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(46, 27);
-            this.button61.TabIndex = 0;
-            this.button61.Text = "+";
-            this.button61.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D3.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddDishS1D3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddDishS1D3.Location = new System.Drawing.Point(3, 3);
+            this.button_AddDishS1D3.Name = "button_AddDishS1D3";
+            this.button_AddDishS1D3.Size = new System.Drawing.Size(46, 27);
+            this.button_AddDishS1D3.TabIndex = 0;
+            this.button_AddDishS1D3.Text = "+";
+            this.button_AddDishS1D3.UseVisualStyleBackColor = false;
             // 
             // button62
             // 
@@ -1317,7 +1317,7 @@ namespace ClientDesktop
             this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel62.Controls.Add(this.button58, 0, 0);
+            this.tableLayoutPanel62.Controls.Add(this.button_AddDishS1D2, 0, 0);
             this.tableLayoutPanel62.Controls.Add(this.button59, 1, 0);
             this.tableLayoutPanel62.Controls.Add(this.button60, 2, 0);
             this.tableLayoutPanel62.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1329,16 +1329,16 @@ namespace ClientDesktop
             this.tableLayoutPanel62.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel62.TabIndex = 2;
             // 
-            // button58
+            // button_AddDishS1D2
             // 
-            this.button58.BackColor = System.Drawing.Color.PaleGreen;
-            this.button58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button58.Location = new System.Drawing.Point(3, 3);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(46, 27);
-            this.button58.TabIndex = 0;
-            this.button58.Text = "+";
-            this.button58.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D2.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddDishS1D2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddDishS1D2.Location = new System.Drawing.Point(3, 3);
+            this.button_AddDishS1D2.Name = "button_AddDishS1D2";
+            this.button_AddDishS1D2.Size = new System.Drawing.Size(46, 27);
+            this.button_AddDishS1D2.TabIndex = 0;
+            this.button_AddDishS1D2.Text = "+";
+            this.button_AddDishS1D2.UseVisualStyleBackColor = false;
             // 
             // button59
             // 
@@ -1394,7 +1394,7 @@ namespace ClientDesktop
             this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel61.Controls.Add(this.button55, 0, 0);
+            this.tableLayoutPanel61.Controls.Add(this.button_AddDishS1D1, 0, 0);
             this.tableLayoutPanel61.Controls.Add(this.button56, 1, 0);
             this.tableLayoutPanel61.Controls.Add(this.button57, 2, 0);
             this.tableLayoutPanel61.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1406,16 +1406,16 @@ namespace ClientDesktop
             this.tableLayoutPanel61.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel61.TabIndex = 2;
             // 
-            // button55
+            // button_AddDishS1D1
             // 
-            this.button55.BackColor = System.Drawing.Color.PaleGreen;
-            this.button55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button55.Location = new System.Drawing.Point(3, 3);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(46, 27);
-            this.button55.TabIndex = 0;
-            this.button55.Text = "+";
-            this.button55.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D1.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddDishS1D1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddDishS1D1.Location = new System.Drawing.Point(3, 3);
+            this.button_AddDishS1D1.Name = "button_AddDishS1D1";
+            this.button_AddDishS1D1.Size = new System.Drawing.Size(46, 27);
+            this.button_AddDishS1D1.TabIndex = 0;
+            this.button_AddDishS1D1.Text = "+";
+            this.button_AddDishS1D1.UseVisualStyleBackColor = false;
             // 
             // button56
             // 
@@ -1471,7 +1471,7 @@ namespace ClientDesktop
             this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel60.Controls.Add(this.button52, 0, 0);
+            this.tableLayoutPanel60.Controls.Add(this.button_AddS1D7, 0, 0);
             this.tableLayoutPanel60.Controls.Add(this.button53, 1, 0);
             this.tableLayoutPanel60.Controls.Add(this.button54, 2, 0);
             this.tableLayoutPanel60.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1483,16 +1483,16 @@ namespace ClientDesktop
             this.tableLayoutPanel60.Size = new System.Drawing.Size(157, 33);
             this.tableLayoutPanel60.TabIndex = 2;
             // 
-            // button52
+            // button_AddS1D7
             // 
-            this.button52.BackColor = System.Drawing.Color.PaleGreen;
-            this.button52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button52.Location = new System.Drawing.Point(3, 3);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(46, 27);
-            this.button52.TabIndex = 0;
-            this.button52.Text = "+";
-            this.button52.UseVisualStyleBackColor = false;
+            this.button_AddS1D7.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddS1D7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddS1D7.Location = new System.Drawing.Point(3, 3);
+            this.button_AddS1D7.Name = "button_AddS1D7";
+            this.button_AddS1D7.Size = new System.Drawing.Size(46, 27);
+            this.button_AddS1D7.TabIndex = 0;
+            this.button_AddS1D7.Text = "+";
+            this.button_AddS1D7.UseVisualStyleBackColor = false;
             // 
             // button53
             // 
@@ -1548,7 +1548,7 @@ namespace ClientDesktop
             this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel59.Controls.Add(this.button49, 0, 0);
+            this.tableLayoutPanel59.Controls.Add(this.button_AddS1D6, 0, 0);
             this.tableLayoutPanel59.Controls.Add(this.button50, 1, 0);
             this.tableLayoutPanel59.Controls.Add(this.button51, 2, 0);
             this.tableLayoutPanel59.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1560,16 +1560,16 @@ namespace ClientDesktop
             this.tableLayoutPanel59.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel59.TabIndex = 2;
             // 
-            // button49
+            // button_AddS1D6
             // 
-            this.button49.BackColor = System.Drawing.Color.PaleGreen;
-            this.button49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button49.Location = new System.Drawing.Point(3, 3);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(46, 27);
-            this.button49.TabIndex = 0;
-            this.button49.Text = "+";
-            this.button49.UseVisualStyleBackColor = false;
+            this.button_AddS1D6.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddS1D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddS1D6.Location = new System.Drawing.Point(3, 3);
+            this.button_AddS1D6.Name = "button_AddS1D6";
+            this.button_AddS1D6.Size = new System.Drawing.Size(46, 27);
+            this.button_AddS1D6.TabIndex = 0;
+            this.button_AddS1D6.Text = "+";
+            this.button_AddS1D6.UseVisualStyleBackColor = false;
             // 
             // button50
             // 
@@ -1625,7 +1625,7 @@ namespace ClientDesktop
             this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel58.Controls.Add(this.button46, 0, 0);
+            this.tableLayoutPanel58.Controls.Add(this.button_AddS1D5, 0, 0);
             this.tableLayoutPanel58.Controls.Add(this.button47, 1, 0);
             this.tableLayoutPanel58.Controls.Add(this.button48, 2, 0);
             this.tableLayoutPanel58.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1637,16 +1637,16 @@ namespace ClientDesktop
             this.tableLayoutPanel58.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel58.TabIndex = 2;
             // 
-            // button46
+            // button_AddS1D5
             // 
-            this.button46.BackColor = System.Drawing.Color.PaleGreen;
-            this.button46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button46.Location = new System.Drawing.Point(3, 3);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(46, 27);
-            this.button46.TabIndex = 0;
-            this.button46.Text = "+";
-            this.button46.UseVisualStyleBackColor = false;
+            this.button_AddS1D5.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddS1D5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddS1D5.Location = new System.Drawing.Point(3, 3);
+            this.button_AddS1D5.Name = "button_AddS1D5";
+            this.button_AddS1D5.Size = new System.Drawing.Size(46, 27);
+            this.button_AddS1D5.TabIndex = 0;
+            this.button_AddS1D5.Text = "+";
+            this.button_AddS1D5.UseVisualStyleBackColor = false;
             // 
             // button47
             // 
@@ -1702,7 +1702,7 @@ namespace ClientDesktop
             this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel57.Controls.Add(this.button43, 0, 0);
+            this.tableLayoutPanel57.Controls.Add(this.button_AddS1D4, 0, 0);
             this.tableLayoutPanel57.Controls.Add(this.button44, 1, 0);
             this.tableLayoutPanel57.Controls.Add(this.button45, 2, 0);
             this.tableLayoutPanel57.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1714,16 +1714,16 @@ namespace ClientDesktop
             this.tableLayoutPanel57.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel57.TabIndex = 2;
             // 
-            // button43
+            // button_AddS1D4
             // 
-            this.button43.BackColor = System.Drawing.Color.PaleGreen;
-            this.button43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button43.Location = new System.Drawing.Point(3, 3);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(46, 27);
-            this.button43.TabIndex = 0;
-            this.button43.Text = "+";
-            this.button43.UseVisualStyleBackColor = false;
+            this.button_AddS1D4.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddS1D4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddS1D4.Location = new System.Drawing.Point(3, 3);
+            this.button_AddS1D4.Name = "button_AddS1D4";
+            this.button_AddS1D4.Size = new System.Drawing.Size(46, 27);
+            this.button_AddS1D4.TabIndex = 0;
+            this.button_AddS1D4.Text = "+";
+            this.button_AddS1D4.UseVisualStyleBackColor = false;
             // 
             // button44
             // 
@@ -1779,7 +1779,7 @@ namespace ClientDesktop
             this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel56.Controls.Add(this.button37, 0, 0);
+            this.tableLayoutPanel56.Controls.Add(this.button_AddS1D3, 0, 0);
             this.tableLayoutPanel56.Controls.Add(this.button38, 1, 0);
             this.tableLayoutPanel56.Controls.Add(this.button39, 2, 0);
             this.tableLayoutPanel56.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1791,16 +1791,16 @@ namespace ClientDesktop
             this.tableLayoutPanel56.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel56.TabIndex = 2;
             // 
-            // button37
+            // button_AddS1D3
             // 
-            this.button37.BackColor = System.Drawing.Color.PaleGreen;
-            this.button37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button37.Location = new System.Drawing.Point(3, 3);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(46, 27);
-            this.button37.TabIndex = 0;
-            this.button37.Text = "+";
-            this.button37.UseVisualStyleBackColor = false;
+            this.button_AddS1D3.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddS1D3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddS1D3.Location = new System.Drawing.Point(3, 3);
+            this.button_AddS1D3.Name = "button_AddS1D3";
+            this.button_AddS1D3.Size = new System.Drawing.Size(46, 27);
+            this.button_AddS1D3.TabIndex = 0;
+            this.button_AddS1D3.Text = "+";
+            this.button_AddS1D3.UseVisualStyleBackColor = false;
             // 
             // button38
             // 
@@ -2426,6 +2426,7 @@ namespace ClientDesktop
             this.button_AddS1D1.TabIndex = 0;
             this.button_AddS1D1.Text = "+";
             this.button_AddS1D1.UseVisualStyleBackColor = false;
+            this.button_AddS1D1.Click += new System.EventHandler(this.button_AddS1D1_Click);
             // 
             // button_DellS1S1Starter
             // 
@@ -2473,7 +2474,7 @@ namespace ClientDesktop
             this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel55.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel55.Controls.Add(this.button22, 0, 0);
+            this.tableLayoutPanel55.Controls.Add(this.button_AddS1D2, 0, 0);
             this.tableLayoutPanel55.Controls.Add(this.button23, 1, 0);
             this.tableLayoutPanel55.Controls.Add(this.button24, 2, 0);
             this.tableLayoutPanel55.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2485,16 +2486,17 @@ namespace ClientDesktop
             this.tableLayoutPanel55.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel55.TabIndex = 2;
             // 
-            // button22
+            // button_AddS1D2
             // 
-            this.button22.BackColor = System.Drawing.Color.PaleGreen;
-            this.button22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button22.Location = new System.Drawing.Point(3, 3);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(46, 27);
-            this.button22.TabIndex = 0;
-            this.button22.Text = "+";
-            this.button22.UseVisualStyleBackColor = false;
+            this.button_AddS1D2.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddS1D2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddS1D2.Location = new System.Drawing.Point(3, 3);
+            this.button_AddS1D2.Name = "button_AddS1D2";
+            this.button_AddS1D2.Size = new System.Drawing.Size(46, 27);
+            this.button_AddS1D2.TabIndex = 0;
+            this.button_AddS1D2.Text = "+";
+            this.button_AddS1D2.UseVisualStyleBackColor = false;
+            this.button_AddS1D2.Click += new System.EventHandler(this.button_AddS1D2_Click);
             // 
             // button23
             // 
@@ -3131,7 +3133,7 @@ namespace ClientDesktop
             this.tableLayoutPanel73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel73.Controls.Add(this.button91, 0, 0);
+            this.tableLayoutPanel73.Controls.Add(this.button_AddStarterS2D7, 0, 0);
             this.tableLayoutPanel73.Controls.Add(this.button92, 1, 0);
             this.tableLayoutPanel73.Controls.Add(this.button93, 2, 0);
             this.tableLayoutPanel73.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3143,16 +3145,16 @@ namespace ClientDesktop
             this.tableLayoutPanel73.Size = new System.Drawing.Size(157, 33);
             this.tableLayoutPanel73.TabIndex = 2;
             // 
-            // button91
+            // button_AddStarterS2D7
             // 
-            this.button91.BackColor = System.Drawing.Color.PaleGreen;
-            this.button91.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button91.Location = new System.Drawing.Point(3, 3);
-            this.button91.Name = "button91";
-            this.button91.Size = new System.Drawing.Size(46, 27);
-            this.button91.TabIndex = 0;
-            this.button91.Text = "+";
-            this.button91.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D7.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS2D7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS2D7.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS2D7.Name = "button_AddStarterS2D7";
+            this.button_AddStarterS2D7.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS2D7.TabIndex = 0;
+            this.button_AddStarterS2D7.Text = "+";
+            this.button_AddStarterS2D7.UseVisualStyleBackColor = false;
             // 
             // button92
             // 
@@ -3208,7 +3210,7 @@ namespace ClientDesktop
             this.tableLayoutPanel72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel72.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel72.Controls.Add(this.button88, 0, 0);
+            this.tableLayoutPanel72.Controls.Add(this.button_AddStarterS2D6, 0, 0);
             this.tableLayoutPanel72.Controls.Add(this.button89, 1, 0);
             this.tableLayoutPanel72.Controls.Add(this.button90, 2, 0);
             this.tableLayoutPanel72.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3220,16 +3222,16 @@ namespace ClientDesktop
             this.tableLayoutPanel72.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel72.TabIndex = 2;
             // 
-            // button88
+            // button_AddStarterS2D6
             // 
-            this.button88.BackColor = System.Drawing.Color.PaleGreen;
-            this.button88.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button88.Location = new System.Drawing.Point(3, 3);
-            this.button88.Name = "button88";
-            this.button88.Size = new System.Drawing.Size(46, 27);
-            this.button88.TabIndex = 0;
-            this.button88.Text = "+";
-            this.button88.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D6.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS2D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS2D6.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS2D6.Name = "button_AddStarterS2D6";
+            this.button_AddStarterS2D6.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS2D6.TabIndex = 0;
+            this.button_AddStarterS2D6.Text = "+";
+            this.button_AddStarterS2D6.UseVisualStyleBackColor = false;
             // 
             // button89
             // 
@@ -3285,7 +3287,7 @@ namespace ClientDesktop
             this.tableLayoutPanel71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel71.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel71.Controls.Add(this.button85, 0, 0);
+            this.tableLayoutPanel71.Controls.Add(this.button_AddStarterS2D5, 0, 0);
             this.tableLayoutPanel71.Controls.Add(this.button86, 1, 0);
             this.tableLayoutPanel71.Controls.Add(this.button87, 2, 0);
             this.tableLayoutPanel71.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3297,16 +3299,16 @@ namespace ClientDesktop
             this.tableLayoutPanel71.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel71.TabIndex = 2;
             // 
-            // button85
+            // button_AddStarterS2D5
             // 
-            this.button85.BackColor = System.Drawing.Color.PaleGreen;
-            this.button85.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button85.Location = new System.Drawing.Point(3, 3);
-            this.button85.Name = "button85";
-            this.button85.Size = new System.Drawing.Size(46, 27);
-            this.button85.TabIndex = 0;
-            this.button85.Text = "+";
-            this.button85.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D5.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS2D5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS2D5.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS2D5.Name = "button_AddStarterS2D5";
+            this.button_AddStarterS2D5.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS2D5.TabIndex = 0;
+            this.button_AddStarterS2D5.Text = "+";
+            this.button_AddStarterS2D5.UseVisualStyleBackColor = false;
             // 
             // button86
             // 
@@ -3362,7 +3364,7 @@ namespace ClientDesktop
             this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel70.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel70.Controls.Add(this.button82, 0, 0);
+            this.tableLayoutPanel70.Controls.Add(this.button_AddStarterS2D4, 0, 0);
             this.tableLayoutPanel70.Controls.Add(this.button83, 1, 0);
             this.tableLayoutPanel70.Controls.Add(this.button84, 2, 0);
             this.tableLayoutPanel70.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3374,16 +3376,16 @@ namespace ClientDesktop
             this.tableLayoutPanel70.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel70.TabIndex = 2;
             // 
-            // button82
+            // button_AddStarterS2D4
             // 
-            this.button82.BackColor = System.Drawing.Color.PaleGreen;
-            this.button82.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button82.Location = new System.Drawing.Point(3, 3);
-            this.button82.Name = "button82";
-            this.button82.Size = new System.Drawing.Size(46, 27);
-            this.button82.TabIndex = 0;
-            this.button82.Text = "+";
-            this.button82.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D4.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS2D4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS2D4.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS2D4.Name = "button_AddStarterS2D4";
+            this.button_AddStarterS2D4.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS2D4.TabIndex = 0;
+            this.button_AddStarterS2D4.Text = "+";
+            this.button_AddStarterS2D4.UseVisualStyleBackColor = false;
             // 
             // button83
             // 
@@ -3439,7 +3441,7 @@ namespace ClientDesktop
             this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel69.Controls.Add(this.button79, 0, 0);
+            this.tableLayoutPanel69.Controls.Add(this.button_AddStarterS2D3, 0, 0);
             this.tableLayoutPanel69.Controls.Add(this.button80, 1, 0);
             this.tableLayoutPanel69.Controls.Add(this.button81, 2, 0);
             this.tableLayoutPanel69.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3451,16 +3453,16 @@ namespace ClientDesktop
             this.tableLayoutPanel69.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel69.TabIndex = 2;
             // 
-            // button79
+            // button_AddStarterS2D3
             // 
-            this.button79.BackColor = System.Drawing.Color.PaleGreen;
-            this.button79.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button79.Location = new System.Drawing.Point(3, 3);
-            this.button79.Name = "button79";
-            this.button79.Size = new System.Drawing.Size(46, 27);
-            this.button79.TabIndex = 0;
-            this.button79.Text = "+";
-            this.button79.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D3.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS2D3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS2D3.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS2D3.Name = "button_AddStarterS2D3";
+            this.button_AddStarterS2D3.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS2D3.TabIndex = 0;
+            this.button_AddStarterS2D3.Text = "+";
+            this.button_AddStarterS2D3.UseVisualStyleBackColor = false;
             // 
             // button80
             // 
@@ -4064,7 +4066,7 @@ namespace ClientDesktop
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Controls.Add(this.button4, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.button_AddStarterS2D1, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.button5, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.button6, 2, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -4076,16 +4078,17 @@ namespace ClientDesktop
             this.tableLayoutPanel5.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
-            // button4
+            // button_AddStarterS2D1
             // 
-            this.button4.BackColor = System.Drawing.Color.PaleGreen;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(3, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(46, 27);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D1.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS2D1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS2D1.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS2D1.Name = "button_AddStarterS2D1";
+            this.button_AddStarterS2D1.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS2D1.TabIndex = 0;
+            this.button_AddStarterS2D1.Text = "+";
+            this.button_AddStarterS2D1.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D1.Click += new System.EventHandler(this.button_AddStarterS2D1_Click);
             // 
             // button5
             // 
@@ -4132,7 +4135,7 @@ namespace ClientDesktop
             this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel68.Controls.Add(this.button76, 0, 0);
+            this.tableLayoutPanel68.Controls.Add(this.button_AddStarterS2D2, 0, 0);
             this.tableLayoutPanel68.Controls.Add(this.button77, 1, 0);
             this.tableLayoutPanel68.Controls.Add(this.button78, 2, 0);
             this.tableLayoutPanel68.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -4144,16 +4147,16 @@ namespace ClientDesktop
             this.tableLayoutPanel68.Size = new System.Drawing.Size(156, 33);
             this.tableLayoutPanel68.TabIndex = 2;
             // 
-            // button76
+            // button_AddStarterS2D2
             // 
-            this.button76.BackColor = System.Drawing.Color.PaleGreen;
-            this.button76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button76.Location = new System.Drawing.Point(3, 3);
-            this.button76.Name = "button76";
-            this.button76.Size = new System.Drawing.Size(46, 27);
-            this.button76.TabIndex = 0;
-            this.button76.Text = "+";
-            this.button76.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D2.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS2D2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS2D2.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS2D2.Name = "button_AddStarterS2D2";
+            this.button_AddStarterS2D2.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS2D2.TabIndex = 0;
+            this.button_AddStarterS2D2.Text = "+";
+            this.button_AddStarterS2D2.UseVisualStyleBackColor = false;
             // 
             // button77
             // 
@@ -4406,7 +4409,7 @@ namespace ClientDesktop
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_AddStarterS2D1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel44;
@@ -4423,61 +4426,61 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox comboBox24;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel42;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel65;
-        private System.Windows.Forms.Button button67;
+        private System.Windows.Forms.Button button_AddDishS1D5;
         private System.Windows.Forms.Button button68;
         private System.Windows.Forms.Button button69;
         private System.Windows.Forms.ComboBox comboBox23;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel41;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel64;
-        private System.Windows.Forms.Button button64;
+        private System.Windows.Forms.Button button_AddDishS1D4;
         private System.Windows.Forms.Button button65;
         private System.Windows.Forms.Button button66;
         private System.Windows.Forms.ComboBox comboBox22;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel40;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel63;
-        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button button_AddDishS1D3;
         private System.Windows.Forms.Button button62;
         private System.Windows.Forms.Button button63;
         private System.Windows.Forms.ComboBox comboBox21;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel39;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel62;
-        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Button button_AddDishS1D2;
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button60;
         private System.Windows.Forms.ComboBox comboBox20;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel38;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel61;
-        private System.Windows.Forms.Button button55;
+        private System.Windows.Forms.Button button_AddDishS1D1;
         private System.Windows.Forms.Button button56;
         private System.Windows.Forms.Button button57;
         private System.Windows.Forms.ComboBox comboBox19;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel37;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel60;
-        private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Button button_AddS1D7;
         private System.Windows.Forms.Button button53;
         private System.Windows.Forms.Button button54;
         private System.Windows.Forms.ComboBox comboBox18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel36;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel59;
-        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button_AddS1D6;
         private System.Windows.Forms.Button button50;
         private System.Windows.Forms.Button button51;
         private System.Windows.Forms.ComboBox comboBox17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel35;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel58;
-        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button button_AddS1D5;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.ComboBox comboBox16;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel34;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel57;
-        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button button_AddS1D4;
         private System.Windows.Forms.Button button44;
         private System.Windows.Forms.Button button45;
         private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel33;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel56;
-        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button_AddS1D3;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.ComboBox comboBox13;
@@ -4495,7 +4498,7 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button_ModifyS1D5Dessert;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel32;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel55;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button_AddS1D2;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.ComboBox comboBox8;
@@ -4543,31 +4546,31 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox comboBox32;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel47;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel73;
-        private System.Windows.Forms.Button button91;
+        private System.Windows.Forms.Button button_AddStarterS2D7;
         private System.Windows.Forms.Button button92;
         private System.Windows.Forms.Button button93;
         private System.Windows.Forms.ComboBox comboBox31;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel46;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel72;
-        private System.Windows.Forms.Button button88;
+        private System.Windows.Forms.Button button_AddStarterS2D6;
         private System.Windows.Forms.Button button89;
         private System.Windows.Forms.Button button90;
         private System.Windows.Forms.ComboBox comboBox30;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel45;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel71;
-        private System.Windows.Forms.Button button85;
+        private System.Windows.Forms.Button button_AddStarterS2D5;
         private System.Windows.Forms.Button button86;
         private System.Windows.Forms.Button button87;
         private System.Windows.Forms.ComboBox comboBox29;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel31;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel70;
-        private System.Windows.Forms.Button button82;
+        private System.Windows.Forms.Button button_AddStarterS2D4;
         private System.Windows.Forms.Button button83;
         private System.Windows.Forms.Button button84;
         private System.Windows.Forms.ComboBox comboBox28;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel30;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel69;
-        private System.Windows.Forms.Button button79;
+        private System.Windows.Forms.Button button_AddStarterS2D3;
         private System.Windows.Forms.Button button80;
         private System.Windows.Forms.Button button81;
         private System.Windows.Forms.ComboBox comboBox27;
@@ -4591,7 +4594,7 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox comboBox40;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel68;
-        private System.Windows.Forms.Button button76;
+        private System.Windows.Forms.Button button_AddStarterS2D2;
         private System.Windows.Forms.Button button77;
         private System.Windows.Forms.Button button78;
         private System.Windows.Forms.ComboBox comboBox26;
