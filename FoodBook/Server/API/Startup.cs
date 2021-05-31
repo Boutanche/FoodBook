@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -16,6 +15,9 @@ using BLL;
 using BLL.Services;
 using DocFX;
 using DocFX.AspNetCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
 
 namespace API
 {
@@ -33,9 +35,9 @@ namespace API
         {
 
             //Unique dans toute mon application (même instance dans toute l'aplication)
-            ////A chaque fois qu'on demande un Ilibrairi service => nouvelle instance
+            //A chaque fois qu'on demande un Ilibrairi service => nouvelle instance
             //services.AddTransient<IRestaurantService, RestaurantService>();
-            //// La même instance tout au long de la requête
+            // La même instance tout au long de la requête
             //services.AddScoped<ILibrairiService, LibrairiService>();
 
             //Service de Versionning
@@ -76,6 +78,21 @@ namespace API
                 config.ApiGroupNames = new[] { "1.0" };
             });
             //End OpenAPI Document
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidIssuer = Configuration["JwtIssuer"],
+                    ValidAudience =  Configuration["JwtIssuer"],
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JwtKey"])),
+                    //
+                    ClockSkew = TimeSpan.Zero //Remove delay of token when expire.
+                };
+            });
+        
 
             services.AddControllers();
             services.AddBLL();
@@ -115,7 +132,11 @@ namespace API
 
             app.UseRouting();
 
+            //CE : 403
             app.UseAuthorization();
+
+            //CE : 401
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

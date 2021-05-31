@@ -4,6 +4,16 @@
         <name>BO</name>
     </assembly>
     <members>
+        <member name="T:BO.DTO.Requests.LoginRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BO.DTO.Requests.LoginRequest.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BO.DTO.Requests.PageRequest">
             <summary>
             Coucou II
@@ -37,6 +47,26 @@
             </summary>
             <param name="a_page"></param>
             <param name="a_pageSize"></param>
+        </member>
+        <member name="T:BO.DTO.Responses.LoginResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.DTO.Responses.LoginResponse.AccessToken">
+            <summary>
+            C'est le JWT !!IMPORTANT!!
+            </summary>
+        </member>
+        <member name="P:BO.DTO.Responses.LoginResponse.Username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BO.DTO.Responses.LoginResponse.#ctor">
+            <summary>
+            
+            </summary>
         </member>
         <member name="T:BO.DTO.Responses.PageResponse`1">
             <summary>
