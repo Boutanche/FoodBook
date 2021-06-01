@@ -23,24 +23,6 @@ namespace DAL.Repository
             return await _session.Connection.ExecuteAsync(stmt, new { Id = id }, _session.Transaction);
         }
 
-        //On doit pouvoir supprimmer tout ça : 
-
-        //public async Task<IEnumerable<Dish>> GetAllAsync(string name)
-        //{
-        //    if (name != null)
-        //    {
-        //        var stmt = @"select * from dishes where name = @name";
-        //        return await _session.Connection.QueryAsync<Dish>(stmt, new { Name = name }, _session.Transaction);
-        //    }
-        //    else
-        //    {
-        //        // Traiter l'erreur : 
-        //        var stmt = @"MESSAGE ERREUR";
-        //        return await _session.Connection.QueryAsync<Dish>(stmt, null, _session.Transaction);
-        //    }
-        //    
-        //}
-
         public async Task<IEnumerable<Dish>> GetAllAsync()
         {
             var stmt = @"select * from dishes";
@@ -76,3 +58,31 @@ namespace DAL.Repository
         }
     }
 }
+
+
+
+/**
+ * ********************************
+ *  Le Code poubelle est par là ->
+ * ********************************
+ **/
+
+
+
+
+//On doit pouvoir supprimmer tout ça : 
+//public async Task<IEnumerable<Dish>> GetAllAsync(string name)
+//{
+//    if (name != null)
+//    {
+//        var stmt = @"select * from dishes where name = @name";
+//        return await _session.Connection.QueryAsync<Dish>(stmt, new { Name = name }, _session.Transaction);
+//    }
+//    else
+//    {
+//        // Traiter l'erreur : 
+//        var stmt = @"MESSAGE ERREUR";
+//        return await _session.Connection.QueryAsync<Dish>(stmt, null, _session.Transaction);
+//    }
+//    
+//}

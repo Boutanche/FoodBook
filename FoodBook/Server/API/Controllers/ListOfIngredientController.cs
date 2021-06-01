@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Net.Mime;
 using BLL.Services;
 using BO.Entity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
@@ -33,6 +34,8 @@ namespace API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        //Not implemented yet !
+        //[Authorize(Roles ="Admin, User")]
         public async Task<ActionResult<List<ListOfIngredient>>> GetAll()
         {
             return Ok(await _restaurantService.GetAllListOfIngredient());
