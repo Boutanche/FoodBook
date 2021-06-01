@@ -20,6 +20,9 @@ namespace BLL.Services
             _db = unitOfWork;
         }
         //TODO : Il y a plein de méthodes qui ne sont pas encore implémenté ici !
+        //SERVICE :
+        //MENU :
+        //LIST OF INGREDIENT :
 
         #region Ingredients
         /// <summary>

@@ -38,7 +38,7 @@ namespace DAL.Repository
 
         public async Task<Dish> GetAsyncByName(string name)
         {
-            //TOTO : Faire un Like
+            //TODO : Faire un Like si je veux un système de "search"
             var stmt = @"select * from dishes where name = @name";
             return await _session.Connection.QueryFirstOrDefaultAsync<Dish>(stmt, new { Name = name }, _session.Transaction);
         }

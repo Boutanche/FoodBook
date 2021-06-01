@@ -9,6 +9,8 @@ using Dapper;
 
 namespace DAL.Repository
 {
+    //TODO : Aucune requête Client n'a été implémenté sur cette version
+
     class ClientRepository : IClientRepository
     {
         public Task<int> DeleteAsync(long id)
