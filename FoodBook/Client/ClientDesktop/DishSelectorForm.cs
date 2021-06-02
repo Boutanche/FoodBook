@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLLC.Services;
+using BO.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,25 @@ namespace ClientDesktop
 {
     public partial class DishSelectorForm : Form
     {
+        private readonly IRestaurantService _restaurantService;
+        //Connexion aux données 
+        private BindingSource bindingSourceDishes = new BindingSource();
+        
         public DishSelectorForm()
         {
+            _restaurantService = new RestaurantService();
             InitializeComponent();
+            LoadDishes();
+        }
+
+        private async void LoadDishes()
+        {
+            Task<List<Dish>> dishTask = _restaurantService.GetAllDish();
+            List<Dish> dishes = await dishTask;
+
+            bindingSourceDishes.DataSource = dishes;
+            dataGridViewDishes.DataSource = bindingSourceDishes;
+            //dataGridViewDishes.Columns["id"].Visible = false;
         }
     }
 }

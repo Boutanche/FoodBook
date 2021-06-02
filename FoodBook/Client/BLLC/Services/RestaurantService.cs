@@ -99,6 +99,28 @@ namespace BLLC.Services
                 return null;
             };
         }
+
+        public async Task<List<Dish>> GetAllDish()
+        {
+            var reponse = await _httpClient.GetAsync("dish");
+            if (reponse.IsSuccessStatusCode)
+            {
+                using (var stream = await reponse.Content.ReadAsStreamAsync())
+                {
+                    //Ici reception de json qu'il faut que je remette en objet C#.
+                    List<Dish> dishesPage = await JsonSerializer.DeserializeAsync<List<Dish>>
+                        (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                    return dishesPage;
+                }
+            }
+            else
+            {
+                //Faudra traiter ça sur l'interface si problème.
+                return null;
+            }
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Récupérer la liste de tous les ingrédients.
         /// </summary>

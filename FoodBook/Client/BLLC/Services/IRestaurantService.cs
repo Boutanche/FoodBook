@@ -11,5 +11,6 @@ namespace BLLC.Services
         Task<Dish> CreateDish(Dish newDish);
         Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient);
         Task<Dish> GetDishByName(string name);
+        Task<List<Dish>> GetAllDish();
     }
 }

@@ -16,6 +16,13 @@
             <param name="services"></param>
             <returns></returns>
         </member>
+        <member name="M:BLL.Services.ClientService.CreateClient(BO.Entity.Client)">
+            <summary>
+            Create NewClient with a Client
+            </summary>
+            <param name="client">Client</param>
+            <returns>New Client</returns>
+        </member>
         <member name="T:BLL.Services.IAccountService">
             <summary>
             
