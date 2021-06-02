@@ -165,6 +165,64 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:BO.Entity.Client">
+            <summary>
+            Client is a user of FoodBook
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Client.Id">
+            <summary>
+            int. Identifier
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Client.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Client.PhoneNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Client.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Client.IsAdmin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BO.Entity.Client.#ctor">
+            <summary>
+            Default Constructor for API serialisation
+            </summary>
+        </member>
+        <member name="M:BO.Entity.Client.#ctor(System.Nullable{System.Int32},System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Utilitary constructor full properties
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="phoneNumber"></param>
+            <param name="password"></param>
+            <param name="isAdmin"></param>
+        </member>
+        <member name="M:BO.Entity.Client.Equals(System.Object)">
+            <summary>
+            Override Equals Methode for Client
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BO.Entity.Client.GetHashCode">
+            <summary>
+            Override GetHasCode Methode for Client
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BO.Entity.Dish">
             <summary>
             Dish composed by 1 or n Ingredients.
