@@ -25,7 +25,8 @@ namespace ClientDesktop
 
         private void button_validate_Click(object sender, EventArgs e)
         {
-            // TODO : Controle sur les données entrantes : 
+            // TODO : Controle sur les données entrantes :
+            // Il ne faut pas que l'utilisateur puisse entrer n'importe quoi.
             Ingredients ingredient = new Ingredients();
             {
              
