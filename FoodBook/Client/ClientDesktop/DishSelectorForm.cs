@@ -34,5 +34,14 @@ namespace ClientDesktop
             dataGridViewDishes.DataSource = bindingSourceDishes;
             //dataGridViewDishes.Columns["id"].Visible = false;
         }
+
+        private void dataGridViewDishes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //TODO : Controle avec demande de confirmation
+            
+            //TODO : Création du menu s'il n'existe pas.
+
+            //TODO : Ajout du plat à ce jour de la semaine au service demandé.
+        }
     }
 }

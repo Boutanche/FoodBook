@@ -330,9 +330,8 @@ namespace ClientDesktop
             DishSelectorForm dishSelectorForm = new DishSelectorForm();
             dishSelectorForm.Show();
         }
-        #endregion
-        
 
-        
+
+        #endregion
     }
 }

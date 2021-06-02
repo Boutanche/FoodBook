@@ -282,11 +282,11 @@ namespace ClientDesktop
             this.button120 = new System.Windows.Forms.Button();
             this.combobox_S2D4Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.combobox_S2D7Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddS2D7Dessert = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
+            this.combobox_S2D7Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.combobox_S2D6Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
@@ -294,11 +294,11 @@ namespace ClientDesktop
             this.button32 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.combobox_S2D1Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddS2D1Dessert = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
+            this.combobox_S2D1Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.combobox_S2D2Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -954,6 +954,7 @@ namespace ClientDesktop
             this.button_AddDishS1D7.TabIndex = 0;
             this.button_AddDishS1D7.Text = "+";
             this.button_AddDishS1D7.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D7.Click += new System.EventHandler(this.button_AddDishS1D7_Click);
             // 
             // button74
             // 
@@ -1031,6 +1032,7 @@ namespace ClientDesktop
             this.button_AddDishS1D6.TabIndex = 0;
             this.button_AddDishS1D6.Text = "+";
             this.button_AddDishS1D6.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D6.Click += new System.EventHandler(this.button_AddDishS1D6_Click);
             // 
             // button71
             // 
@@ -1108,6 +1110,7 @@ namespace ClientDesktop
             this.button_AddDishS1D5.TabIndex = 0;
             this.button_AddDishS1D5.Text = "+";
             this.button_AddDishS1D5.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D5.Click += new System.EventHandler(this.button_AddDishS1D5_Click);
             // 
             // button68
             // 
@@ -1185,6 +1188,7 @@ namespace ClientDesktop
             this.button_AddDishS1D4.TabIndex = 0;
             this.button_AddDishS1D4.Text = "+";
             this.button_AddDishS1D4.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D4.Click += new System.EventHandler(this.button_AddDishS1D4_Click);
             // 
             // button65
             // 
@@ -1262,6 +1266,7 @@ namespace ClientDesktop
             this.button_AddDishS1D3.TabIndex = 0;
             this.button_AddDishS1D3.Text = "+";
             this.button_AddDishS1D3.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D3.Click += new System.EventHandler(this.button_AddDishS1D3_Click);
             // 
             // button62
             // 
@@ -1339,6 +1344,7 @@ namespace ClientDesktop
             this.button_AddDishS1D2.TabIndex = 0;
             this.button_AddDishS1D2.Text = "+";
             this.button_AddDishS1D2.UseVisualStyleBackColor = false;
+            this.button_AddDishS1D2.Click += new System.EventHandler(this.button_AddDishS1D2_Click);
             // 
             // button59
             // 
@@ -1494,6 +1500,7 @@ namespace ClientDesktop
             this.button_AddS1D7.TabIndex = 0;
             this.button_AddS1D7.Text = "+";
             this.button_AddS1D7.UseVisualStyleBackColor = false;
+            this.button_AddS1D7.Click += new System.EventHandler(this.button_AddS1D7_Click);
             // 
             // button53
             // 
@@ -1571,6 +1578,7 @@ namespace ClientDesktop
             this.button_AddS1D6.TabIndex = 0;
             this.button_AddS1D6.Text = "+";
             this.button_AddS1D6.UseVisualStyleBackColor = false;
+            this.button_AddS1D6.Click += new System.EventHandler(this.button_AddS1D6_Click);
             // 
             // button50
             // 
@@ -1648,6 +1656,7 @@ namespace ClientDesktop
             this.button_AddS1D5.TabIndex = 0;
             this.button_AddS1D5.Text = "+";
             this.button_AddS1D5.UseVisualStyleBackColor = false;
+            this.button_AddS1D5.Click += new System.EventHandler(this.button_AddS1D5_Click);
             // 
             // button47
             // 
@@ -1725,6 +1734,7 @@ namespace ClientDesktop
             this.button_AddS1D4.TabIndex = 0;
             this.button_AddS1D4.Text = "+";
             this.button_AddS1D4.UseVisualStyleBackColor = false;
+            this.button_AddS1D4.ClientSizeChanged += new System.EventHandler(this.button_AddS1D4_Click);
             // 
             // button44
             // 
@@ -1802,6 +1812,7 @@ namespace ClientDesktop
             this.button_AddS1D3.TabIndex = 0;
             this.button_AddS1D3.Text = "+";
             this.button_AddS1D3.UseVisualStyleBackColor = false;
+            this.button_AddS1D3.Click += new System.EventHandler(this.button_AddS1D3_Click);
             // 
             // button38
             // 
@@ -3745,15 +3756,6 @@ namespace ClientDesktop
             this.tableLayoutPanel24.Size = new System.Drawing.Size(163, 78);
             this.tableLayoutPanel24.TabIndex = 5;
             // 
-            // combobox_S2D7Dessert
-            // 
-            this.combobox_S2D7Dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.combobox_S2D7Dessert.FormattingEnabled = true;
-            this.combobox_S2D7Dessert.Location = new System.Drawing.Point(3, 8);
-            this.combobox_S2D7Dessert.Name = "combobox_S2D7Dessert";
-            this.combobox_S2D7Dessert.Size = new System.Drawing.Size(157, 23);
-            this.combobox_S2D7Dessert.TabIndex = 0;
-            // 
             // tableLayoutPanel25
             // 
             this.tableLayoutPanel25.ColumnCount = 3;
@@ -3805,6 +3807,15 @@ namespace ClientDesktop
             this.button36.Text = "...";
             this.button36.UseVisualStyleBackColor = false;
             this.button36.Visible = false;
+            // 
+            // combobox_S2D7Dessert
+            // 
+            this.combobox_S2D7Dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.combobox_S2D7Dessert.FormattingEnabled = true;
+            this.combobox_S2D7Dessert.Location = new System.Drawing.Point(3, 8);
+            this.combobox_S2D7Dessert.Name = "combobox_S2D7Dessert";
+            this.combobox_S2D7Dessert.Size = new System.Drawing.Size(157, 23);
+            this.combobox_S2D7Dessert.TabIndex = 0;
             // 
             // tableLayoutPanel22
             // 
@@ -3899,15 +3910,6 @@ namespace ClientDesktop
             this.tableLayoutPanel14.Size = new System.Drawing.Size(162, 78);
             this.tableLayoutPanel14.TabIndex = 3;
             // 
-            // combobox_S2D1Dessert
-            // 
-            this.combobox_S2D1Dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.combobox_S2D1Dessert.FormattingEnabled = true;
-            this.combobox_S2D1Dessert.Location = new System.Drawing.Point(3, 8);
-            this.combobox_S2D1Dessert.Name = "combobox_S2D1Dessert";
-            this.combobox_S2D1Dessert.Size = new System.Drawing.Size(156, 23);
-            this.combobox_S2D1Dessert.TabIndex = 0;
-            // 
             // tableLayoutPanel15
             // 
             this.tableLayoutPanel15.ColumnCount = 3;
@@ -3959,6 +3961,15 @@ namespace ClientDesktop
             this.button21.Text = "...";
             this.button21.UseVisualStyleBackColor = false;
             this.button21.Visible = false;
+            // 
+            // combobox_S2D1Dessert
+            // 
+            this.combobox_S2D1Dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.combobox_S2D1Dessert.FormattingEnabled = true;
+            this.combobox_S2D1Dessert.Location = new System.Drawing.Point(3, 8);
+            this.combobox_S2D1Dessert.Name = "combobox_S2D1Dessert";
+            this.combobox_S2D1Dessert.Size = new System.Drawing.Size(156, 23);
+            this.combobox_S2D1Dessert.TabIndex = 0;
             // 
             // tableLayoutPanel6
             // 
