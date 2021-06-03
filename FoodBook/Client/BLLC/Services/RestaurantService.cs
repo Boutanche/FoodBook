@@ -17,8 +17,10 @@ namespace BLLC.Services
         private readonly HttpClient _httpClient;
         public RestaurantService()
         {
-            _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("https://localhost:5001/api/v1.0/");
+            _httpClient = new HttpClient
+            {
+                BaseAddress = new Uri("https://localhost:5001/api/v1.0/")
+            };
         }
         //TODO : Faire des régions : ce qui concerne les plats, les ingrédients, etc...
         
@@ -33,14 +35,12 @@ namespace BLLC.Services
                 new StringContent(JsonSerializer.Serialize(newDish), Encoding.UTF8, "application/json"));
             if (response.IsSuccessStatusCode)
             {
-                using (var stream = await response.Content.ReadAsStreamAsync())
+                using var stream = await response.Content.ReadAsStreamAsync();
+                Dish dish = await JsonSerializer.DeserializeAsync<Dish>(stream, new JsonSerializerOptions()
                 {
-                    Dish dish = await JsonSerializer.DeserializeAsync<Dish>(stream, new JsonSerializerOptions()
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-                    return dish;
-                }
+                    PropertyNameCaseInsensitive = true
+                });
+                return dish;
             }
             else
             {
@@ -59,14 +59,12 @@ namespace BLLC.Services
                     JsonSerializer.Serialize(ingredient), Encoding.UTF8, "application/json"));
             if (response.IsSuccessStatusCode)
             {
-                using (var stream = await response.Content.ReadAsStreamAsync())
+                using var stream = await response.Content.ReadAsStreamAsync();
+                Ingredients newIngredient = await JsonSerializer.DeserializeAsync<Ingredients>(stream, new JsonSerializerOptions()
                 {
-                    Ingredients newIngredient = await JsonSerializer.DeserializeAsync<Ingredients>(stream, new JsonSerializerOptions()
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-                    return newIngredient;
-                }
+                    PropertyNameCaseInsensitive = true
+                });
+                return newIngredient;
             }
             else
             {
@@ -85,14 +83,12 @@ namespace BLLC.Services
                     JsonSerializer.Serialize(listOfIngredient), Encoding.UTF8, "application/json"));
             if (response.IsSuccessStatusCode)
             {
-                using (var stream = await response.Content.ReadAsStreamAsync())
+                using var stream = await response.Content.ReadAsStreamAsync();
+                ListOfIngredient newListOfIngredient = await JsonSerializer.DeserializeAsync<ListOfIngredient>(stream, new JsonSerializerOptions()
                 {
-                    ListOfIngredient newListOfIngredient = await JsonSerializer.DeserializeAsync<ListOfIngredient>(stream, new JsonSerializerOptions()
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-                    return newListOfIngredient;
-                }
+                    PropertyNameCaseInsensitive = true
+                });
+                return newListOfIngredient;
             }
             else
             {
@@ -105,13 +101,11 @@ namespace BLLC.Services
             var reponse = await _httpClient.GetAsync("dish");
             if (reponse.IsSuccessStatusCode)
             {
-                using (var stream = await reponse.Content.ReadAsStreamAsync())
-                {
-                    //Ici reception de json qu'il faut que je remette en objet C#.
-                    List<Dish> dishesPage = await JsonSerializer.DeserializeAsync<List<Dish>>
-                        (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-                    return dishesPage;
-                }
+                using var stream = await reponse.Content.ReadAsStreamAsync();
+                //Ici reception de json qu'il faut que je remette en objet C#.
+                List<Dish> dishesPage = await JsonSerializer.DeserializeAsync<List<Dish>>
+                    (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return dishesPage;
             }
             else
             {
@@ -134,13 +128,11 @@ namespace BLLC.Services
             // Si la requete a reussi
             if (reponse.IsSuccessStatusCode)
             {
-                using (var stream = await reponse.Content.ReadAsStreamAsync())
-                {
-                    //Ici reception de json qu'il faut que je remette en objet C#.
-                    List<Ingredients> ingredientsPage = await JsonSerializer.DeserializeAsync<List<Ingredients>>
-                        (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-                    return ingredientsPage;
-                }
+                using var stream = await reponse.Content.ReadAsStreamAsync();
+                //Ici reception de json qu'il faut que je remette en objet C#.
+                List<Ingredients> ingredientsPage = await JsonSerializer.DeserializeAsync<List<Ingredients>>
+                    (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return ingredientsPage;
             }
             else
             {
@@ -159,13 +151,11 @@ namespace BLLC.Services
             var reponse = await _httpClient.GetAsync($"dish/name/{name}");
             if (reponse.IsSuccessStatusCode)
             {
-                using (var stream = await reponse.Content.ReadAsStreamAsync())
-                {
-                    //Ici reception de json qu'il faut que je remette en objet C#.
-                    Dish dish = await JsonSerializer.DeserializeAsync<Dish>
-                        (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-                    return dish;
-                }
+                using var stream = await reponse.Content.ReadAsStreamAsync();
+                //Ici reception de json qu'il faut que je remette en objet C#.
+                Dish dish = await JsonSerializer.DeserializeAsync<Dish>
+                    (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return dish;
             }
             else
             {
