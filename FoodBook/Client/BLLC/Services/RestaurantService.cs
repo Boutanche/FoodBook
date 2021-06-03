@@ -31,6 +31,9 @@ namespace BLLC.Services
         /// <returns></returns>
         public async Task<Dish> CreateDish(Dish newDish)
         {
+            //WIP : If is logged ?
+            //TODO : Travailler sur la vérification du Token de connexion.
+
             var response = await _httpClient.PostAsync("dish",
                 new StringContent(JsonSerializer.Serialize(newDish), Encoding.UTF8, "application/json"));
             if (response.IsSuccessStatusCode)
