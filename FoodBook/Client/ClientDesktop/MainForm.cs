@@ -78,12 +78,35 @@ namespace ClientDesktop
             actualWeek--;
             textBox_week.Text = actualWeek.ToString();
         }
+        //TODO : C'est chiant à développer : Trouver une autre méthode :
+        //TODO : 130 button à customiser et duplication de code !!!
 
+        //HACK MainForm 1 : Cursor.Position
+        // Utilisation de la position du curseur pour déterminer la date, le service le type de plat ?
+        // -> Impose d'interdire le resize des fenètres.
+        // https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.cursor.position?view=net-5.0
+
+        //HACK MainForm 2 : MainFormDesigner.cs
+        // Passer par la zone interdite du designer et faire des boucles de génération d'item ?
+        // -> "Tu as pas le droit" il a dit M. Microsoft.
+
+        //HACK MainForm 3 : Google : 
+        //Etat actuel : J'affiche des semaines des jours le restaurateur quand il clique ça va ajouter un menu avec un plat -> Création en BDD.
+        //Faire l'inverse ? Créer un menu (DTO?) à chaque affichage. Cela doit être plus facile pour récupérer les variables.
+        //Quid des buttons et comment on gére leurs noms. 
+
+        //HACK MainForm 4 : Fabien :
+        
+        // :
+        
         //TODO Faire la même chose avec les buttons :  Remove Starter / Dish / Dessert 
         //TODO Faire la même chose avec les buttons : Modify Starter / Dish / Dessert
+        
+        //FIXME : Modifier ou Réparer ...l'ensemble des Buttons Add... 
+
         #region Add Starter
         //Tous les boutons Ajouter un Starter :
-        //TODO : Ajouter une entrée
+
         //Service 1 : 
         //Day 1 :
         private void button_AddS1D1_Click(object sender, EventArgs e)
@@ -184,6 +207,8 @@ namespace ClientDesktop
         }
         #endregion
         #region Add Dish
+        //Tous les plats :
+        
         //Service 1 :
         private void button_AddDishS1D1_Click(object sender, EventArgs e)
         {
@@ -258,6 +283,8 @@ namespace ClientDesktop
         }
         #endregion
         #region Add Dessert
+        //Tous les desserts :
+
         //Service 1 :
         private void button_AddS1D1Dessert_Click(object sender, EventArgs e)
         {
