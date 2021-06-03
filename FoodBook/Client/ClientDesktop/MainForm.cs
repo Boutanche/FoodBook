@@ -15,14 +15,17 @@ namespace ClientDesktop
     public partial class MainForm : Form
     {
         //Connexion aux données
-        private readonly IRestaurantService _restaurantService;
-        private readonly BindingSource bidingSource = new();
+
+        //WIP : Connexion à la BDD : Récupération des Menus
+        //private readonly IRestaurantService _restaurantService;
+        //private readonly BindingSource bidingSource = new();
 
         public MainForm()
         {
         int _currentWeekNumber = CurrentWeekNumber();
 
-        _restaurantService = new RestaurantService();
+            //WIP : Connexion à la BDD : Récupération des Menus
+            //_restaurantService = new RestaurantService();
             InitializeComponent();
             //Charge le menu de la semaine
             //TODO : Si le numéro de la semaine n'existe pas :
