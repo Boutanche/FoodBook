@@ -247,6 +247,13 @@ namespace BLL.Services
         }
         #endregion
         #region Menu
+        public async Task<List<Menu>> GetAllMenu()
+        {
+            
+            IMenuRepository _menu = _db.GetRepository<IMenuRepository>();
+            List<Menu> menu = (await _menu.GetAllAsync()).ToList();
+            return menu;
+        }
         public Task<DateTime> NextMenu(DateTime date)
         {
             throw new NotImplementedException();
@@ -305,6 +312,8 @@ namespace BLL.Services
         {
             throw new NotImplementedException();
         }
+
+
 
 
 

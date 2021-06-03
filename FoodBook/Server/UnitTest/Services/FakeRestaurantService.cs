@@ -237,6 +237,27 @@ namespace UnitTest.Services
         {
             throw new NotImplementedException();
         }
+
+
+        #endregion
+        #region Menu
+        public List<Menu> menuFakeDB = new()
+        {
+            new Menu(1, DateTime.Parse("01/01/2021"), 1),
+            new Menu(2, DateTime.Parse("01/01/2021"), 2),
+            new Menu(3, DateTime.Parse("01/01/2021"), 3),
+            new Menu(4, DateTime.Parse("01/01/2021"), 4),
+            new Menu(5, DateTime.Parse("01/01/2021"), 5)
+        };
+        /// <summary>
+        /// Fake Get All Dish
+        /// </summary>
+        /// <returns></returns>
+        public Task<List<Menu>> GetAllMenu()
+        {
+            return Task.FromResult(menuFakeDB);
+        }
+        
         #endregion
     }
 }

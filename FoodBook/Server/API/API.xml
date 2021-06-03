@@ -151,6 +151,12 @@
             Controller sur Menu
             </summary>
         </member>
+        <member name="M:API.Controllers.MenuController.GetAllMenu">
+            <summary>
+            Get All Menu
+            </summary>
+            <returns>List of Menu</returns>
+        </member>
         <member name="M:API.Controllers.MenuController.GetServicesOfMenuById(System.Int32)">
             <summary>
             Récupère les services du menu.

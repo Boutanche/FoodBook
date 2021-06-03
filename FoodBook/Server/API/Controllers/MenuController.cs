@@ -27,6 +27,16 @@ namespace API.Controllers
         {
             _restaurantService = restaurantService;
         }
+        /// <summary>
+        /// Get All Menu
+        /// </summary>
+        /// <returns>List of Menu</returns>
+        [HttpGet]
+        public async Task<ActionResult<List<Menu>>> GetAllMenu()
+        {
+            return Ok(await _restaurantService.GetAllMenu());
+        }
+
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Menu))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

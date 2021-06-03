@@ -141,13 +141,16 @@ namespace BLL.Services
         #endregion
         #region Menu
         /// <summary>
+        /// La liste de tous les menu
+        /// </summary>
+        /// <returns></returns>
+        Task<List<Menu>> GetAllMenu();
+        /// <summary>
         /// Menu Suivant
         /// </summary>
         /// <param name="date"></param>
         /// <returns>Menu</returns>
         Task<DateTime> NextMenu(DateTime date);
-
-
         /// <summary>
         /// Menu Précédent
         /// </summary>

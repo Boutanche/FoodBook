@@ -209,6 +209,12 @@
             <param name="service"></param>
             <returns>Bool</returns>
         </member>
+        <member name="M:BLL.Services.IRestaurantService.GetAllMenu">
+            <summary>
+            La liste de tous les menu
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BLL.Services.IRestaurantService.NextMenu(System.DateTime)">
             <summary>
             Menu Suivant
