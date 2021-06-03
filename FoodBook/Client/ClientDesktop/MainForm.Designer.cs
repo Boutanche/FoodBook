@@ -2439,7 +2439,7 @@ namespace ClientDesktop
             this.button_AddS1D1.TabIndex = 0;
             this.button_AddS1D1.Text = "+";
             this.button_AddS1D1.UseVisualStyleBackColor = false;
-            this.button_AddS1D1.Click += new System.EventHandler(this.button_AddS1D1_Click);
+            this.button_AddS1D1.Click += new System.EventHandler(this.Button_AddS1D1_Click);
             // 
             // button_DellS1S1Starter
             // 

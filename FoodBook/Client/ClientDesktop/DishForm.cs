@@ -17,10 +17,10 @@ namespace ClientDesktop
     {
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
-        private BindingSource bindingSourceIngredients = new();
-        private BindingSource bindingSourceList = new();
+        private readonly BindingSource bindingSourceIngredients = new();
+        private readonly BindingSource bindingSourceList = new();
         //Initialise une liste d'ingrédients côté client.
-        private List<ListOfIngredient> listIngredients = new();
+        private readonly List<ListOfIngredient> listIngredients = new();
         /// <summary>
         /// Constructeur de la Fenêtre "DishForm"
         /// </summary>
@@ -144,7 +144,8 @@ namespace ClientDesktop
                     listOfIngredient.Quantity = Int32.Parse(
                         dataGridView_DishComposedBy.Rows[i].Cells["quantity"].Value.ToString());
                 }
-                Task<ListOfIngredient> listOfIngredientTask = _restaurantService.CreateListOfIngredient(listOfIngredient);
+                //Hack : Innutile : Réellement ? 
+                //Task<ListOfIngredient> listOfIngredientTask = _restaurantService.CreateListOfIngredient(listOfIngredient);
 
             }
         }

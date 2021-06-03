@@ -98,12 +98,12 @@ namespace ClientDesktop
         //Quid des buttons et comment on gére leurs noms. 
 
         //HACK MainForm 4 : Fabien :
-        
+
         // TODO : Demander à Fabien comment lui il ferait dans ce cas : 
-        
+
         //TODO Faire la même chose avec les buttons :  Remove Starter / Dish / Dessert 
         //TODO Faire la même chose avec les buttons : Modify Starter / Dish / Dessert
-        
+
         //FIXME : Modifier ou Réparer ...l'ensemble des Buttons Add... 
 
         #region Add Starter
@@ -111,11 +111,11 @@ namespace ClientDesktop
 
         //Service 1 : 
         //Day 1 :
-        private void button_AddS1D1_Click(object sender, EventArgs e)
+        private void Button_AddS1D1_Click(object sender, EventArgs e)
         {
+            
             DishSelectorForm dishSelectorForm = new();
             dishSelectorForm.Show();
-
         }
         //Day 2: 
         private void button_AddS1D2_Click(object sender, EventArgs e)
@@ -362,5 +362,7 @@ namespace ClientDesktop
 
 
         #endregion
+
+
     }
 }

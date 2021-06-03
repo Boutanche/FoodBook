@@ -16,7 +16,7 @@ namespace ClientDesktop
     {
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
-        private BindingSource bindingSourceDishes = new();
+        private readonly BindingSource bindingSourceDishes = new();
         
         public DishSelectorForm()
         {
