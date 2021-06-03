@@ -99,7 +99,7 @@ namespace ClientDesktop
 
         //HACK MainForm 4 : Fabien :
         
-        // :
+        // TODO : Demander à Fabien comment lui il ferait dans ce cas : 
         
         //TODO Faire la même chose avec les buttons :  Remove Starter / Dish / Dessert 
         //TODO Faire la même chose avec les buttons : Modify Starter / Dish / Dessert
