@@ -16,12 +16,11 @@ namespace ClientDesktop
     {
         //Connexion aux données
         private readonly IRestaurantService _restaurantService;
-        private BindingSource bidingSource = new BindingSource();
+        private readonly BindingSource bidingSource = new();
 
         public MainForm()
         {
         int _currentWeekNumber = CurrentWeekNumber();
-        int thisWeekNumber = _currentWeekNumber;
 
         _restaurantService = new RestaurantService();
             InitializeComponent();
@@ -37,7 +36,7 @@ namespace ClientDesktop
         /// <param name="e"></param>        
         private void button_createDish_Click(object sender, EventArgs e)
         {
-            DishForm dishForm = new DishForm();
+            DishForm dishForm = new();
             dishForm.Show();
         }
 
@@ -48,7 +47,7 @@ namespace ClientDesktop
         /// Permet de récurer la numéro de la semaine courrante
         /// </summary>
         /// <returns>int numéro de la semaine</returns>
-        private int CurrentWeekNumber()
+        private static int CurrentWeekNumber()
         {
             int weekNumber = 1 + CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(
                 DateTime.Now, CalendarWeekRule.FirstFullWeek, DayOfWeek.Sunday);
@@ -111,49 +110,49 @@ namespace ClientDesktop
         //Day 1 :
         private void button_AddS1D1_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new();
             dishSelectorForm.Show();
 
         }
         //Day 2: 
         private void button_AddS1D2_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new();
             dishSelectorForm.Show();
         }
 
         //Day 3:
         private void button_AddS1D3_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new();
             dishSelectorForm.Show();
         }
 
         //Day 4:
         private void button_AddS1D4_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new();
             dishSelectorForm.Show();
         }
 
         //Day 5:
         private void button_AddS1D5_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
 
         //Day 6:
         private void button_AddS1D6_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
 
         //Day 7: 
         private void button_AddS1D7_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
 
@@ -162,47 +161,47 @@ namespace ClientDesktop
 
         private void button_AddStarterS2D1_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
 
         //Day 2: 
         private void button_AddStarterS2D2_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
 
         //Day 3:
         private void button_AddStarterS2D3_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         //Day 4:
         private void button_AddStarterS2D4_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
 
         //Day 5:
         private void button_AddStarterS2D5_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         //Day 6:
         private void button_AddStarterS2D6_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
 
         //Day 7:
         private void button_AddStarterS2D7_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         #endregion
@@ -212,73 +211,73 @@ namespace ClientDesktop
         //Service 1 :
         private void button_AddDishS1D1_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS1D2_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS1D3_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS1D4_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS1D5_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS1D6_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS1D7_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         //Service 2 : 
         private void button_AddDishS2D1_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS2D2_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS2D3_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS2D4_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS2D5_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS2D6_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddDishS2D7_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         #endregion
@@ -288,73 +287,73 @@ namespace ClientDesktop
         //Service 1 :
         private void button_AddS1D1Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS1D2Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS1D3Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS1D4Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS1D5Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS1D6Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS1D7Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         //Service 2
         private void button_AddS2D1Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS2D2Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS2D3Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS2D4Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS2D5Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS2D6Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
         private void button_AddS2D7Dessert_Click(object sender, EventArgs e)
         {
-            DishSelectorForm dishSelectorForm = new DishSelectorForm();
+            DishSelectorForm dishSelectorForm = new ();
             dishSelectorForm.Show();
         }
 
