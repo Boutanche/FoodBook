@@ -17,8 +17,8 @@ namespace ClientDesktop
     {
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
-        private BindingSource bindingSourceIngredients = new BindingSource();
-        private BindingSource bindingSourceList = new BindingSource();
+        private BindingSource bindingSourceIngredients = new();
+        private BindingSource bindingSourceList = new();
         //Initialise une liste d'ingrédients côté client.
         private List<ListOfIngredient> listIngredients = new();
         /// <summary>
@@ -87,7 +87,7 @@ namespace ClientDesktop
         /// <param name="e"></param>
         private void button_createIngredient_Click(object sender, EventArgs e)
         {
-            CreateIngredientForm createIngredientForm = new CreateIngredientForm();
+            CreateIngredientForm createIngredientForm = new();
             createIngredientForm.Show();
         }
         /// <summary>
