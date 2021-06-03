@@ -85,6 +85,10 @@ namespace UnitTest.Services
             ingredientsFakeDB.RemoveAll(i => i.Id == id);
             return Task.FromResult(id > 0);
         }
+        public Task<Dish> GetIngredientsOfDishById(int id)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
         #region Dish
@@ -148,6 +152,14 @@ namespace UnitTest.Services
             return Task.FromResult(id > 0);
         }
 
+        public Task<Dish> GetDishByName(string name)
+        {
+            return Task.FromResult(dishFakeDB.Find(i => i.Name == name));
+        }
+        #endregion
+
+        #region TypeOfDish
+
         public Task<List<TypeOfDish>> GetAllTypeOfDish()
         {
             throw new NotImplementedException();
@@ -157,6 +169,9 @@ namespace UnitTest.Services
         {
             throw new NotImplementedException();
         }
+        #endregion
+
+        #region Service
 
         public Task<Service> GetServiceById(int id)
         {
@@ -182,37 +197,9 @@ namespace UnitTest.Services
         {
             throw new NotImplementedException();
         }
+        #endregion
 
-        public Task<DateTime> NextMenu(DateTime date)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<DateTime> PreviousMenu(DateTime date)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> GetIdMenuByDate(DateTime date)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Menu> GetServicesOfMenuById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Dish> GetIngredientsOfDishById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Dish> GetDishByName(string name)
-        {
-            return Task.FromResult(dishFakeDB.Find(i => i.Name == name));
-        }
-
+        #region ListOfIngredient  
         public Task<List<ListOfIngredient>> GetAllListOfIngredient()
         {
             throw new NotImplementedException();
@@ -237,9 +224,8 @@ namespace UnitTest.Services
         {
             throw new NotImplementedException();
         }
-
-
         #endregion
+        
         #region Menu
         public List<Menu> menuFakeDB = new()
         {
@@ -257,7 +243,25 @@ namespace UnitTest.Services
         {
             return Task.FromResult(menuFakeDB);
         }
-        
+        public Task<DateTime> NextMenu(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<DateTime> PreviousMenu(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<int> GetIdMenuByDate(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Menu> GetServicesOfMenuById(int id)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }
