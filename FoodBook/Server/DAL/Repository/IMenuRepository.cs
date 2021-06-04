@@ -9,6 +9,6 @@ namespace DAL.Repository
 {
     public interface IMenuRepository : IGenericRepository<Menu>
     {
-
+        Task<Menu> GetMenuByIdAsync(int id);
     }
 }

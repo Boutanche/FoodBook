@@ -26,7 +26,12 @@ namespace DAL.Repository
             var stmt = @"select * from menu";
             return await _session.Connection.QueryAsync<Menu>(stmt, null, _session.Transaction);
         }
-
+        public async Task<Menu> GetMenuByIdAsync(int id)
+        {
+            //Eviter l'injection sql avec des reqêtes paramétrées
+            var stmt = @"select * from menu where id = @id";
+            return await _session.Connection.QueryFirstOrDefaultAsync<Menu>(stmt, new { Id = id }, _session.Transaction);
+        }
         public Task<Menu> GetAsync(int id)
         {
             throw new NotImplementedException();

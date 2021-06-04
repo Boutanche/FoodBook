@@ -26,5 +26,28 @@ namespace UnitTest
             //Assert
             Assert.NotNull(MenuActionResult);
         }
+        //Get Menu By Id
+        /// <summary>
+        /// Unit Test On Get Menu By Id
+        /// </summary>
+        /// <returns></returns>
+        [Fact]
+        public async void TestGetMenuById()
+        {
+            //Arrange
+            IRestaurantService restaurantService = new FakeRestaurantService();
+            MenuController menuController = new(restaurantService);
+            //Act
+            OkObjectResult menuActionResult = await menuController.GetMenuById(1) as OkObjectResult;
+            NotFoundResult notFoundMenuActionResult = await menuController.GetMenuById(9999) as NotFoundResult;
+            //Assert
+            Assert.NotNull(menuActionResult);
+            Assert.Equal(200, menuActionResult.StatusCode);
+            Assert.NotNull(notFoundMenuActionResult);
+            Assert.Equal(404, notFoundMenuActionResult.StatusCode);
+        }
+        //Next Menu
+        //Previous Menu
+
     }
 }

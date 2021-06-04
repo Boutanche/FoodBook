@@ -14,7 +14,7 @@ namespace BO.Entity
         /// <summary>
         /// Identifiant unique du menu
         /// </summary>
-        public int? Id_menu { get; set; }
+        public int? Id { get; set; }
         /// <summary>
         /// Année concernée par ce menu
         /// </summary>
@@ -35,7 +35,7 @@ namespace BO.Entity
         /// <param name="weekNumber"></param>
         public Menu(int? id_menu, DateTime year, int weekNumber)
         {
-            Id_menu = id_menu;
+            Id = id_menu;
             Year = year;
             WeekNumber = weekNumber;
         }
@@ -47,7 +47,7 @@ namespace BO.Entity
         public override bool Equals(object obj)
         {
             return obj is Menu menu &&
-                   Id_menu == menu.Id_menu &&
+                   Id == menu.Id &&
                    Year == menu.Year &&
                    WeekNumber == menu.WeekNumber;
         }
@@ -57,7 +57,7 @@ namespace BO.Entity
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id_menu, Year, WeekNumber);
+            return HashCode.Combine(Id, Year, WeekNumber);
         }
     }
 }

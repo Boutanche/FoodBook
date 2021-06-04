@@ -243,6 +243,10 @@ namespace UnitTest.Services
         {
             return Task.FromResult(menuFakeDB);
         }
+        public Task<Menu> GetMenuById(int id)
+        {
+            return Task.FromResult(menuFakeDB.Find(i => i.Id == id));
+        }
         public Task<DateTime> NextMenu(DateTime date)
         {
             throw new NotImplementedException();
@@ -257,7 +261,7 @@ namespace UnitTest.Services
         {
             throw new NotImplementedException();
         }
-
+        
         public Task<Menu> GetServicesOfMenuById(int id)
         {
             throw new NotImplementedException();
