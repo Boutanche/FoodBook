@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.BooksController.GetAll(BO.DTO.Requests.PageRequest)">
+            <summary>
+            Permet de récupérer la liste des livres
+            </summary>
+            <returns>La liste des livres</returns>
+        </member>
+        <member name="M:API.Controllers.BooksController.GetBookById(System.Int32)">
+            <summary>
+            Permert de récupérer un livre avec son identifiant unique
+            </summary>
+            <param name="id">Identifiant unique du livre</param>
+            <returns>Renvoi le livre définit par l'identifiant unique</returns>
+        </member>
+        <member name="M:API.Controllers.BooksController.CreateBook(BO.Entity.Book)">
+            <summary>
+            Créer un livre et l'ajoute en BDD
+            </summary>
+            <param name="book">Livre à ajouter sans l'identifiant unique</param>
+            <returns>Renvoi le livre avec l'identifiant généré</returns>
+        </member>
+        <member name="T:API.Controllers.DishController">
+            <summary>
+            Controller Dish
+            </summary>
+        </member>
+        <member name="M:API.Controllers.DishController.GetAllDish">
+            <summary>
+            Get All Dish
+            </summary>
+            <returns>List od Dish</returns>
+        </member>
+        <member name="M:API.Controllers.DishController.GetDishById(System.Int32)">
+            <summary>
+            Get Dish By Id
+            </summary>
+            <param name="id">int</param>
+            <returns>Dish </returns>
+        </member>
+        <member name="M:API.Controllers.DishController.CreateDish(BO.Entity.Dish)">
+            <summary>
+            Créer un plat et l'ajouter à la BDD
+            </summary>
+            <param name="dish">Dish</param>
+            <returns>Le plat avec un identifiant généré</returns>
+        </member>
+        <member name="M:API.Controllers.DishController.ModifyDish(System.Int32,BO.Entity.Dish)">
+            <summary>
+            Modifier un plat donné en le trouvant par son id.
+            </summary>
+            <param name="id">int</param>
+            <param name="dish">dish</param>
+            <returns>Un plat modifé</returns>
+        </member>
+        <member name="M:API.Controllers.DishController.DeleteDish(System.Int32)">
+            <summary>
+            Suppression d'un plat donné
+            </summary>
+            <param name="id">Int</param>
+            <returns>No Content Code 204</returns>
+        </member>
+        <member name="T:API.Controllers.IngredientsController">
+            <summary>
+            Controller Ingredient
+            </summary>
+        </member>
+        <member name="M:API.Controllers.IngredientsController.GetAll">
+            <summary>
+            Récupérer la liste des Ingrédients
+            </summary>
+            <returns> la liste des Ingredients</returns>
+        </member>
+        <member name="M:API.Controllers.IngredientsController.GetIngredientById(System.Int32)">
+            <summary>
+            Permet de récupérer la liste des Ingrédients par son identifiant unique
+            </summary>
+            <param name="id">Identifiant d'un ingrédient</param>
+            <returns>L'ingrédient définit par l'indentifiant unique</returns>
+        </member>
+        <member name="M:API.Controllers.IngredientsController.CreateIngredient(BO.Entity.Ingredients)">
+            <summary>
+            Créer un ingrédient et l'ajouter en Bdd
+            </summary>
+            <param name="ingredient"></param>
+            <returns>L'ingrédient avec l'indentifiant généré</returns>
+        </member>
+        <member name="M:API.Controllers.IngredientsController.ModifyIngredient(System.Int32,BO.Entity.Ingredients)">
+            <summary>
+            Modifier un ingredient donné
+            </summary>
+            <param name="id"></param>
+            <param name="ingredient"></param>
+            <returns>Une modification d'un ingrédient</returns>
+        </member>
+        <member name="M:API.Controllers.IngredientsController.DeleteIngredient(System.Int32)">
+            <summary>
+            Suppression d'un ingredient donné
+            </summary>
+            <param name="id"></param>
+            <returns>No Content Code 204.</returns>
+        </member>
+        <member name="T:API.Controllers.ListOfIngredientController">
+            <summary>
+            List Of Ingredient for a Dish : Link Table
+            Know the necessary amount of ingredients for this dish
+            </summary>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.GetAll">
+            <summary>
+            Récupérer l'ensemble des ListOfIngredient Table de liaison entre le ingrédient et les plats qu'ils composent.
+            Permet de connaitre la quantité nécessaire des produits en question pour ce plat.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.GetListOfIngredientByIdDish(System.Int32)">
+            <summary>
+            Récupérer uniquement les ingrédients qui composent le plat désigné par l'id précisé.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.CreateListOfIngredient(BO.Entity.ListOfIngredient)">
+            <summary>
+            Créer un ListOfIngredient :
+            </summary>
+            <param name="ListOfIngredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.ModifyListOfIngredient(System.Int32,BO.Entity.ListOfIngredient)">
+            <summary>
+            Modifier un ...
+            Penser que id = int32.Parse(idIngredient.toString() + idDish.toString())
+            </summary>
+            <param name="id"></param>
+            <param name="listOfIngredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ListOfIngredientController.DeleteListOfIngredient(System.Int32)">
+            <summary>
+            Suppression d'un ListOfIngredient donné
+            </summary>
+            <param name="id"></param>
+            <returns>No Content Code 204.</returns>
+        </member>
+        <member name="T:API.Controllers.MenuController">
+            <summary>
+            Controller sur Menu
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MenuController.GetAllMenu">
+            <summary>
+            Get All Menu
+            </summary>
+            <returns>List of Menu</returns>
+        </member>
+        <member name="M:API.Controllers.MenuController.GetServicesOfMenuById(System.Int32)">
+            <summary>
+            Récupère les services du menu.
+            </summary>
+            <param name="id">Identifiant du menu </param>
+            <returns>Liste des services du menu</returns>
+        </member>
+        <member name="M:API.Controllers.ServiceController.GetServicesByIdMenu(System.Nullable{System.Int32})">
+            <summary>
+            Récupérer la liste des service du menu :   API/V1/service?menu=4
+            </summary>
+            <param name=""></param>
+            <param name="id_Menu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ServiceController.GetServiceById(System.Int32)">
+            <summary>
+            Récupèrer un service par son Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ServiceController.CreateService(BO.Entity.Service)">
+            <summary>
+            Créer un nouveau service
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="T:API.Controllers.TypeOfDishController">
+            <summary>
+            Controller Type Of Dish
+            </summary>
+        </member>
+        <member name="M:API.Controllers.TypeOfDishController.GetAll">
+            <summary>
+            Récupérer la liste de tous les Type Of Dish
+            </summary>
+            <returns>Une liste de TypeOdDish</returns>
+        </member>
+        <member name="M:API.Controllers.TypeOfDishController.GetTypeOfDishById(System.Int32)">
+            <summary>
+            Récupérer un Type Of Dish par son id
+            </summary>
+            <param name="id">int</param>
+            <returns>TypeOfDish</returns>
+        </member>
+    </members>
+</doc>
