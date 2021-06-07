@@ -72,6 +72,11 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="T:BLL.Services.IOrderService">
+            <summary>
+            Interface des services dédiés aux "Commandes"
+            </summary>
+        </member>
         <member name="T:BLL.Services.IRestaurantService">
             <summary>
             

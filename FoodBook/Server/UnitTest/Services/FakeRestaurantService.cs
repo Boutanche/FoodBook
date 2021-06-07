@@ -269,7 +269,8 @@ namespace UnitTest.Services
 
         public Task<Menu> CreateMenu(Menu menu)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(menu);
+         
         }
         #endregion
     }

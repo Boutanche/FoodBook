@@ -164,6 +164,13 @@
             <param name="id">Identifiant du menu </param>
             <returns>Liste des services du menu</returns>
         </member>
+        <member name="M:API.Controllers.MenuController.CreateMenu(BO.Entity.Menu)">
+            <summary>
+            Créer un menu afin de l'ajouter en base de données. 
+            </summary>
+            <param name="firstMenu"></param>
+            <returns></returns>
+        </member>
         <member name="M:API.Controllers.ServiceController.GetServicesByIdMenu(System.Nullable{System.Int32})">
             <summary>
             Récupérer la liste des service du menu :   API/V1/service?menu=4

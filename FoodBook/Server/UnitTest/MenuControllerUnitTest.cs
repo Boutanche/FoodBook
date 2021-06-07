@@ -55,7 +55,8 @@ namespace UnitTest
             MenuController menuController = new(restaurantService);
             Menu firstMenu = new();
             {
-                
+                firstMenu.Year = DateTime.Parse("01/01/2021");
+                firstMenu.WeekNumber = 1;
             }
             //Act
             var firstMenuActionResult = await menuController.CreateMenu(firstMenu);

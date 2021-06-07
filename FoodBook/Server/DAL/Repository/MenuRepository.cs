@@ -37,9 +37,11 @@ namespace DAL.Repository
             throw new NotImplementedException();
         }
 
-        public Task<Menu> InsertAsync(Menu entity)
+        public async Task<Menu> InsertAsync(Menu entity)
         {
-            throw new NotImplementedException();
+            var stmt = @"INSERT INTO menu (Year, WeekNumber) OUPUT INSERTED.id VALUES (@Year, @WeekNumber)";
+            int i = await _session.Connection.QuerySingleAsync<int>(stmt, entity, _session.Transaction);
+            return await GetAsync(i);
         }
 
         public Task UpdateAsync(Menu entity)
