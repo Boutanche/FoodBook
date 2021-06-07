@@ -31,6 +31,17 @@ namespace BLL.Services
             return newClient;
 
         }
+        //Get all clients
+
+        //Get client by id
+        #endregion
+        #region  Booking
+
+        //Create Booking
+
+        //Remove Booking
+
+        //Get Booking by Menu
         #endregion
     }
 }

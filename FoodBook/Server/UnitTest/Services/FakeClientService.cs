@@ -10,5 +10,10 @@ namespace UnitTest.Services
 {
     class FakeClientService : IClientService
     {
+        #region Client
+        //Fake List of Clients :
+
+        #endregion
+
     }
 }

@@ -10,5 +10,9 @@ namespace UnitTest.Services
 {
     class FakeOrderService : IOrderService
     {
+        #region Order
+        //Fake list of Order
+
+        #endregion
     }
 }

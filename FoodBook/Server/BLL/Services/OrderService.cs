@@ -16,5 +16,9 @@ namespace BLL.Services
         {
             _db = unitOfWork;
         }
+        #region Order
+        // La tâche principale ici c'est générer la commande.
+        // La liste des ingrédients de la semaine en fonction du nombre de réservations pour les plats. 
+        #endregion
     }
 }
