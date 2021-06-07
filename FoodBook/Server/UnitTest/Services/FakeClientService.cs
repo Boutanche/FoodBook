@@ -12,7 +12,10 @@ namespace UnitTest.Services
     {
         #region Client
         //Fake List of Clients :
-
+        public Task<Client> CreateClient(Client client)
+        {
+            return Task.FromResult(client);
+        }
         #endregion
 
     }

@@ -10,7 +10,7 @@ using Xunit;
 
 namespace UnitTest
 {
-    class OrderControllerUnitTest
+    public class OrderControllerUnitTest
     {
     }
 }
