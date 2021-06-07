@@ -266,6 +266,11 @@ namespace UnitTest.Services
         {
             throw new NotImplementedException();
         }
+
+        public Task<Menu> CreateMenu(Menu menu)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }

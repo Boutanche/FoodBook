@@ -279,6 +279,11 @@ namespace BLL.Services
         {
             throw new NotImplementedException();
         }
+
+        public Task<Menu> CreateMenu(Menu menu)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
         #region ListOfDish
 
@@ -318,6 +323,7 @@ namespace BLL.Services
         {
             throw new NotImplementedException();
         }
+
         #endregion
 
 

@@ -74,5 +74,24 @@ namespace API.Controllers
                 return Ok(menu);   // StatusCode = 200
             }
         }
+        /// <summary>
+        /// Créer un menu afin de l'ajouter en base de données. 
+        /// </summary>
+        /// <param name="firstMenu"></param>
+        /// <returns></returns>
+        public async Task<IActionResult> CreateMenu([FromBody] Menu menu)
+        {
+            Menu newMenu = await _restaurantService.CreateMenu(menu);
+            if (newMenu != null)
+            {
+                return CreatedAtAction(nameof(GetMenuById), new { id = newMenu.Id }, newMenu);
+            }
+            else
+            {
+
+                //Return Code 400 : Bad Request
+                return BadRequest();
+            }
+        }
     }
 }

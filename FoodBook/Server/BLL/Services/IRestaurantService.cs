@@ -89,6 +89,7 @@ namespace BLL.Services
         /// <param name="name"></param>
         /// <returns></returns>
         Task<Dish> GetDishByName(string name);
+        Task<Menu> CreateMenu(Menu menu);
         #endregion
         #region TypeOfDish
         /// <summary>

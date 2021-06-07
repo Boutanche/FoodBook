@@ -46,6 +46,23 @@ namespace UnitTest
             Assert.NotNull(notFoundMenuActionResult);
             Assert.Equal(404, notFoundMenuActionResult.StatusCode);
         }
+        //Create Menu
+        [Fact]
+        public async void TestCreateMenu()
+        {
+            //Arrange
+            IRestaurantService restaurantService = new FakeRestaurantService();
+            MenuController menuController = new(restaurantService);
+            Menu firstMenu = new();
+            {
+                
+            }
+            //Act
+            var firstMenuActionResult = await menuController.CreateMenu(firstMenu);
+            //Assert
+            Assert.NotNull(firstMenuActionResult);
+        }
+
         //Next Menu
         //Previous Menu
 
