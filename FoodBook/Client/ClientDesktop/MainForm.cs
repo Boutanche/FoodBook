@@ -16,6 +16,9 @@ namespace ClientDesktop
     {
 
         public String weekNumber;
+        public int dayNumber;
+        public int serviceNumber;
+        public int typeNumber;
         
         //Connexion aux données
 
@@ -117,6 +120,9 @@ namespace ClientDesktop
             weekNumber = textBox_week.Text;
             DishSelectorForm dishSelectorForm = new();
             dishSelectorForm.localWeek = weekNumber;
+            dishSelectorForm.localDay = dayNumber;
+            dishSelectorForm.localService = serviceNumber;
+            dishSelectorForm.localType = typeNumber;
             dishSelectorForm.Show();
         }
 
@@ -128,41 +134,62 @@ namespace ClientDesktop
 
         private void Button_AddS1D1_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 1;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         //Day 2: 
         private void button_AddS1D2_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 2;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
 
         //Day 3:
         private void button_AddS1D3_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 3;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
 
         //Day 4:
         private void button_AddS1D4_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 4;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
 
         //Day 5:
         private void button_AddS1D5_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 5;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
 
         //Day 6:
         private void button_AddS1D6_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 6;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
 
         //Day 7: 
         private void button_AddS1D7_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 7;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
 
@@ -171,40 +198,61 @@ namespace ClientDesktop
 
         private void button_AddStarterS2D1_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 1;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
 
         //Day 2: 
         private void button_AddStarterS2D2_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 2;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
 
         //Day 3:
         private void button_AddStarterS2D3_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 3;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         //Day 4:
         private void button_AddStarterS2D4_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 4;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
 
         //Day 5:
         private void button_AddStarterS2D5_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 5;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         //Day 6:
         private void button_AddStarterS2D6_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 6;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
 
         //Day 7:
         private void button_AddStarterS2D7_Click(object sender, EventArgs e)
         {
+            typeNumber = 1;
+            dayNumber = 7;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         #endregion
@@ -214,59 +262,101 @@ namespace ClientDesktop
         //Service 1 :
         private void button_AddDishS1D1_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 1;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddDishS1D2_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 2;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddDishS1D3_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 3;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddDishS1D4_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 4;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddDishS1D5_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 5;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddDishS1D6_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 6;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddDishS1D7_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 7;
+            serviceNumber = 1; 
             OpenDishSelectorForm();
         }
         //Service 2 : 
         private void button_AddDishS2D1_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 1;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddDishS2D2_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 2;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddDishS2D3_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 3;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddDishS2D4_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 4;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddDishS2D5_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 5;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddDishS2D6_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 6;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddDishS2D7_Click(object sender, EventArgs e)
         {
+            typeNumber = 2;
+            dayNumber = 7;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         #endregion
@@ -276,59 +366,101 @@ namespace ClientDesktop
         //Service 1 :
         private void button_AddS1D1Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 1;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddS1D2Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 2;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddS1D3Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 3;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddS1D4Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 4;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddS1D5Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 5;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddS1D6Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 6;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         private void button_AddS1D7Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 7;
+            serviceNumber = 1;
             OpenDishSelectorForm();
         }
         //Service 2
         private void button_AddS2D1Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 1;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddS2D2Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 2;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddS2D3Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 3;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddS2D4Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 4;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddS2D5Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 5;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddS2D6Dessert_Click(object sender, EventArgs e)
         {
+            typeNumber = 3;
+            dayNumber = 6;
+            serviceNumber = 2;
             OpenDishSelectorForm();
         }
         private void button_AddS2D7Dessert_Click(object sender, EventArgs e)
-        { 
+        {
+            typeNumber = 3;
+            dayNumber = 7;
+            serviceNumber = 2;
             OpenDishSelectorForm(); 
         }
 

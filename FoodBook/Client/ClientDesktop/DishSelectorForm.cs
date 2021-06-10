@@ -16,6 +16,9 @@ namespace ClientDesktop
     {
         //Passage de paramètre entre deux fenètres.
         public String localWeek;
+        public int localDay;
+        public int localService;
+        public int localType;
         //
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
@@ -52,7 +55,9 @@ namespace ClientDesktop
         //Récupération du numéro de la semaine depuis mainForm:
         private void DishSelectorForm_Load(object sender, EventArgs e)
         {
+            //Test Affichage de la semaine : 
             labelWeekNumber.Text = localWeek;
+
         }
     }
 }
