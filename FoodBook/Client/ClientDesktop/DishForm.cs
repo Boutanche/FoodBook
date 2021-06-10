@@ -14,7 +14,9 @@ using System.Windows.Forms;
 namespace ClientDesktop
 {
     public partial class DishForm : Form
+
     {
+
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
         private readonly BindingSource bindingSourceIngredients = new();
@@ -29,6 +31,7 @@ namespace ClientDesktop
             //Service qui gère le restaurant
             _restaurantService = new RestaurantService();
             InitializeComponent();
+            
             //Chargement de la liste d'ingrédients : 
             LoadIngredients();
 

@@ -34,6 +34,7 @@ namespace ClientDesktop
             this.tableLayoutPanel_Remember = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePicker_ConvertWeekAndDayInDate = new System.Windows.Forms.DateTimePicker();
             this.labelService = new System.Windows.Forms.Label();
+            this.labelWeekNumber = new System.Windows.Forms.Label();
             this.label_Title = new System.Windows.Forms.Label();
             this.dataGridViewDishes = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel_body.SuspendLayout();
@@ -65,6 +66,7 @@ namespace ClientDesktop
             this.tableLayoutPanel_Remember.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel_Remember.Controls.Add(this.dateTimePicker_ConvertWeekAndDayInDate, 0, 0);
             this.tableLayoutPanel_Remember.Controls.Add(this.labelService, 0, 1);
+            this.tableLayoutPanel_Remember.Controls.Add(this.labelWeekNumber, 1, 0);
             this.tableLayoutPanel_Remember.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel_Remember.Location = new System.Drawing.Point(403, 3);
             this.tableLayoutPanel_Remember.Name = "tableLayoutPanel_Remember";
@@ -96,6 +98,15 @@ namespace ClientDesktop
             this.labelService.TabIndex = 3;
             this.labelService.Text = "Service : ";
             this.labelService.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelWeekNumber
+            // 
+            this.labelWeekNumber.AutoSize = true;
+            this.labelWeekNumber.Location = new System.Drawing.Point(318, 0);
+            this.labelWeekNumber.Name = "labelWeekNumber";
+            this.labelWeekNumber.Size = new System.Drawing.Size(70, 28);
+            this.labelWeekNumber.TabIndex = 4;
+            this.labelWeekNumber.Text = "WeekNumber";
             // 
             // label_Title
             // 
@@ -130,6 +141,7 @@ namespace ClientDesktop
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DishSelectorForm";
             this.Text = "DishSelectorForm";
+            this.Load += new System.EventHandler(this.DishSelectorForm_Load);
             this.tableLayoutPanel_body.ResumeLayout(false);
             this.tableLayoutPanel_body.PerformLayout();
             this.tableLayoutPanel_Remember.ResumeLayout(false);
@@ -148,5 +160,6 @@ namespace ClientDesktop
         private System.Windows.Forms.Label labelService;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridViewDishes;
+        private System.Windows.Forms.Label labelWeekNumber;
     }
 }

@@ -14,6 +14,9 @@ namespace ClientDesktop
 {
     public partial class MainForm : Form
     {
+
+        public String weekNumber;
+        
         //Connexion aux données
 
         //WIP : Connexion à la BDD : Récupération des Menus
@@ -22,6 +25,7 @@ namespace ClientDesktop
 
         public MainForm()
         {
+
         int _currentWeekNumber = CurrentWeekNumber();
 
             //WIP : Connexion à la BDD : Récupération des Menus
@@ -113,9 +117,16 @@ namespace ClientDesktop
         //Day 1 :
         private void Button_AddS1D1_Click(object sender, EventArgs e)
         {
-            
+            //Le click doit envoyer le numéro de jour et la semaine à DishSelectorForm():
+            weekNumber = textBox_week.Text;
+
             DishSelectorForm dishSelectorForm = new();
+            
+            
+            dishSelectorForm.localWeek = weekNumber;
             dishSelectorForm.Show();
+            
+            
         }
         //Day 2: 
         private void button_AddS1D2_Click(object sender, EventArgs e)

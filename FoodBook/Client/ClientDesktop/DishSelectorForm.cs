@@ -14,6 +14,9 @@ namespace ClientDesktop
 {
     public partial class DishSelectorForm : Form
     {
+        //Passage de paramètre entre deux fenètres.
+        public String localWeek;
+        //
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
         private readonly BindingSource bindingSourceDishes = new();
@@ -27,6 +30,8 @@ namespace ClientDesktop
 
         private async void LoadDishes()
         {
+            //TODO : Au clic il faut afficher le jour concerné.
+
             Task<List<Dish>> dishTask = _restaurantService.GetAllDish();
             List<Dish> dishes = await dishTask;
 
@@ -42,6 +47,12 @@ namespace ClientDesktop
             //TODO : Création du menu s'il n'existe pas.
 
             //TODO : Ajout du plat à ce jour de la semaine au service demandé.
+        }
+
+        //Récupération du numéro de la semaine depuis mainForm:
+        private void DishSelectorForm_Load(object sender, EventArgs e)
+        {
+            labelWeekNumber.Text = localWeek;
         }
     }
 }
