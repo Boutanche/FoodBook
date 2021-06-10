@@ -43,7 +43,7 @@ namespace ClientDesktop
             //dataGridViewDishes.Columns["id"].Visible = false;
         }
 
-        private void dataGridViewDishes_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridViewDishes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             bool menuExist = false;
             //TODO : Controle avec demande de confirmation

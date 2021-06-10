@@ -525,7 +525,7 @@ namespace ClientDesktop
             this.button_previous.TabIndex = 3;
             this.button_previous.Text = "<";
             this.button_previous.UseVisualStyleBackColor = true;
-            this.button_previous.Click += new System.EventHandler(this.button_previous_Click);
+            this.button_previous.Click += new System.EventHandler(this.Button_previous_Click);
             // 
             // button_next
             // 
@@ -536,7 +536,7 @@ namespace ClientDesktop
             this.button_next.TabIndex = 4;
             this.button_next.Text = ">";
             this.button_next.UseVisualStyleBackColor = true;
-            this.button_next.Click += new System.EventHandler(this.button_next_Click);
+            this.button_next.Click += new System.EventHandler(this.Button_next_Click);
             // 
             // tableLayoutPanel_btnMenuHeader
             // 
@@ -573,7 +573,7 @@ namespace ClientDesktop
             this.button_createDish.TabIndex = 0;
             this.button_createDish.Text = "Créer un plat";
             this.button_createDish.UseVisualStyleBackColor = false;
-            this.button_createDish.Click += new System.EventHandler(this.button_createDish_Click);
+            this.button_createDish.Click += new System.EventHandler(this.Button_createDish_Click);
             // 
             // tableLayoutPanel_MainBody
             // 
@@ -954,7 +954,7 @@ namespace ClientDesktop
             this.button_AddDishS1D7.TabIndex = 0;
             this.button_AddDishS1D7.Text = "+";
             this.button_AddDishS1D7.UseVisualStyleBackColor = false;
-            this.button_AddDishS1D7.Click += new System.EventHandler(this.button_AddDishS1D7_Click);
+            this.button_AddDishS1D7.Click += new System.EventHandler(this.Button_AddDishS1D7_Click);
             // 
             // button74
             // 
@@ -1032,7 +1032,7 @@ namespace ClientDesktop
             this.button_AddDishS1D6.TabIndex = 0;
             this.button_AddDishS1D6.Text = "+";
             this.button_AddDishS1D6.UseVisualStyleBackColor = false;
-            this.button_AddDishS1D6.Click += new System.EventHandler(this.button_AddDishS1D6_Click);
+            this.button_AddDishS1D6.Click += new System.EventHandler(this.Button_AddDishS1D6_Click);
             // 
             // button71
             // 
@@ -1110,7 +1110,7 @@ namespace ClientDesktop
             this.button_AddDishS1D5.TabIndex = 0;
             this.button_AddDishS1D5.Text = "+";
             this.button_AddDishS1D5.UseVisualStyleBackColor = false;
-            this.button_AddDishS1D5.Click += new System.EventHandler(this.button_AddDishS1D5_Click);
+            this.button_AddDishS1D5.Click += new System.EventHandler(this.Button_AddDishS1D5_Click);
             // 
             // button68
             // 
@@ -1188,7 +1188,7 @@ namespace ClientDesktop
             this.button_AddDishS1D4.TabIndex = 0;
             this.button_AddDishS1D4.Text = "+";
             this.button_AddDishS1D4.UseVisualStyleBackColor = false;
-            this.button_AddDishS1D4.Click += new System.EventHandler(this.button_AddDishS1D4_Click);
+            this.button_AddDishS1D4.Click += new System.EventHandler(this.Button_AddDishS1D4_Click);
             // 
             // button65
             // 
@@ -1266,7 +1266,7 @@ namespace ClientDesktop
             this.button_AddDishS1D3.TabIndex = 0;
             this.button_AddDishS1D3.Text = "+";
             this.button_AddDishS1D3.UseVisualStyleBackColor = false;
-            this.button_AddDishS1D3.Click += new System.EventHandler(this.button_AddDishS1D3_Click);
+            this.button_AddDishS1D3.Click += new System.EventHandler(this.Button_AddDishS1D3_Click);
             // 
             // button62
             // 
@@ -1344,7 +1344,7 @@ namespace ClientDesktop
             this.button_AddDishS1D2.TabIndex = 0;
             this.button_AddDishS1D2.Text = "+";
             this.button_AddDishS1D2.UseVisualStyleBackColor = false;
-            this.button_AddDishS1D2.Click += new System.EventHandler(this.button_AddDishS1D2_Click);
+            this.button_AddDishS1D2.Click += new System.EventHandler(this.Button_AddDishS1D2_Click);
             // 
             // button59
             // 
@@ -1422,7 +1422,7 @@ namespace ClientDesktop
             this.button_AddDishS1D1.TabIndex = 0;
             this.button_AddDishS1D1.Text = "+";
             this.button_AddDishS1D1.UseVisualStyleBackColor = false;
-            this.button_AddDishS1D1.Click += new System.EventHandler(this.button_AddDishS1D1_Click);
+            this.button_AddDishS1D1.Click += new System.EventHandler(this.Button_AddDishS1D1_Click);
             // 
             // button56
             // 
@@ -1500,7 +1500,7 @@ namespace ClientDesktop
             this.button_AddS1D7.TabIndex = 0;
             this.button_AddS1D7.Text = "+";
             this.button_AddS1D7.UseVisualStyleBackColor = false;
-            this.button_AddS1D7.Click += new System.EventHandler(this.button_AddS1D7_Click);
+            this.button_AddS1D7.Click += new System.EventHandler(this.Button_AddS1D7_Click);
             // 
             // button53
             // 
@@ -1578,7 +1578,7 @@ namespace ClientDesktop
             this.button_AddS1D6.TabIndex = 0;
             this.button_AddS1D6.Text = "+";
             this.button_AddS1D6.UseVisualStyleBackColor = false;
-            this.button_AddS1D6.Click += new System.EventHandler(this.button_AddS1D6_Click);
+            this.button_AddS1D6.Click += new System.EventHandler(this.Button_AddS1D6_Click);
             // 
             // button50
             // 
@@ -1656,7 +1656,7 @@ namespace ClientDesktop
             this.button_AddS1D5.TabIndex = 0;
             this.button_AddS1D5.Text = "+";
             this.button_AddS1D5.UseVisualStyleBackColor = false;
-            this.button_AddS1D5.Click += new System.EventHandler(this.button_AddS1D5_Click);
+            this.button_AddS1D5.Click += new System.EventHandler(this.Button_AddS1D5_Click);
             // 
             // button47
             // 
@@ -1734,7 +1734,7 @@ namespace ClientDesktop
             this.button_AddS1D4.TabIndex = 0;
             this.button_AddS1D4.Text = "+";
             this.button_AddS1D4.UseVisualStyleBackColor = false;
-            this.button_AddS1D4.ClientSizeChanged += new System.EventHandler(this.button_AddS1D4_Click);
+            this.button_AddS1D4.ClientSizeChanged += new System.EventHandler(this.Button_AddS1D4_Click);
             // 
             // button44
             // 
@@ -1812,7 +1812,7 @@ namespace ClientDesktop
             this.button_AddS1D3.TabIndex = 0;
             this.button_AddS1D3.Text = "+";
             this.button_AddS1D3.UseVisualStyleBackColor = false;
-            this.button_AddS1D3.Click += new System.EventHandler(this.button_AddS1D3_Click);
+            this.button_AddS1D3.Click += new System.EventHandler(this.Button_AddS1D3_Click);
             // 
             // button38
             // 
@@ -2284,7 +2284,7 @@ namespace ClientDesktop
             this.button_AddS1D1Dessert.TabIndex = 0;
             this.button_AddS1D1Dessert.Text = "+";
             this.button_AddS1D1Dessert.UseVisualStyleBackColor = false;
-            this.button_AddS1D1Dessert.Click += new System.EventHandler(this.button_AddS1D1Dessert_Click);
+            this.button_AddS1D1Dessert.Click += new System.EventHandler(this.Button_AddS1D1Dessert_Click);
             // 
             // button11
             // 
@@ -2509,7 +2509,7 @@ namespace ClientDesktop
             this.button_AddS1D2.TabIndex = 0;
             this.button_AddS1D2.Text = "+";
             this.button_AddS1D2.UseVisualStyleBackColor = false;
-            this.button_AddS1D2.Click += new System.EventHandler(this.button_AddS1D2_Click);
+            this.button_AddS1D2.Click += new System.EventHandler(this.Button_AddS1D2_Click);
             // 
             // button23
             // 
@@ -4101,7 +4101,7 @@ namespace ClientDesktop
             this.button_AddStarterS2D1.TabIndex = 0;
             this.button_AddStarterS2D1.Text = "+";
             this.button_AddStarterS2D1.UseVisualStyleBackColor = false;
-            this.button_AddStarterS2D1.Click += new System.EventHandler(this.button_AddStarterS2D1_Click);
+            this.button_AddStarterS2D1.Click += new System.EventHandler(this.Button_AddStarterS2D1_Click);
             // 
             // button5
             // 

@@ -92,7 +92,7 @@ namespace ClientDesktop
             this.dataGridView_ingredients.RowTemplate.Height = 25;
             this.dataGridView_ingredients.Size = new System.Drawing.Size(394, 401);
             this.dataGridView_ingredients.TabIndex = 0;
-            this.dataGridView_ingredients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_ingredients_CellClick);
+            this.dataGridView_ingredients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_ingredients_CellClick);
             // 
             // btn_AddIngredients
             // 
@@ -128,7 +128,7 @@ namespace ClientDesktop
             this.button_createIngredient.TabIndex = 0;
             this.button_createIngredient.Text = "Ajouter un ingrédient à la liste";
             this.button_createIngredient.UseVisualStyleBackColor = false;
-            this.button_createIngredient.Click += new System.EventHandler(this.button_createIngredient_Click);
+            this.button_createIngredient.Click += new System.EventHandler(this.Button_createIngredient_Click);
             // 
             // label_Title
             // 
@@ -174,7 +174,7 @@ namespace ClientDesktop
             this.button_ConfirmDish.TabIndex = 0;
             this.button_ConfirmDish.Text = "Confirmer création du plat";
             this.button_ConfirmDish.UseVisualStyleBackColor = false;
-            this.button_ConfirmDish.Click += new System.EventHandler(this.button_ConfirmDish_ClickAsync);
+            this.button_ConfirmDish.Click += new System.EventHandler(this.Button_ConfirmDish_ClickAsync);
             // 
             // button_CancelDish
             // 

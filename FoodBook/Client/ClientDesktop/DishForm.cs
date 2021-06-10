@@ -88,7 +88,7 @@ namespace ClientDesktop
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button_createIngredient_Click(object sender, EventArgs e)
+        private void Button_createIngredient_Click(object sender, EventArgs e)
         {
             CreateIngredientForm createIngredientForm = new();
             createIngredientForm.Show();
@@ -98,7 +98,7 @@ namespace ClientDesktop
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void dataGridView_ingredients_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView_ingredients_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //Quand tu cliques tu m'ajoutes l'id de l'ingrédient à la liste temporaire.
             ListOfIngredient newIngredient = new( Int32.Parse(dataGridView_ingredients.CurrentRow.Cells["id"].Value.ToString()), 0, 1);
@@ -110,7 +110,7 @@ namespace ClientDesktop
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private async void button_ConfirmDish_ClickAsync(object sender, EventArgs e)
+        private async void Button_ConfirmDish_ClickAsync(object sender, EventArgs e)
         {
             // Etape : 1
             //Création d'un nouveau plat

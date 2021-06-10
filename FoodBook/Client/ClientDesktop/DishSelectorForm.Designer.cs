@@ -130,7 +130,7 @@ namespace ClientDesktop
             this.dataGridViewDishes.RowTemplate.Height = 25;
             this.dataGridViewDishes.Size = new System.Drawing.Size(394, 354);
             this.dataGridViewDishes.TabIndex = 2;
-            this.dataGridViewDishes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDishes_CellClick);
+            this.dataGridViewDishes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewDishes_CellClick);
             // 
             // DishSelectorForm
             // 
