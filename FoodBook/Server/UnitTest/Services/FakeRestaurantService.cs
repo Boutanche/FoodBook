@@ -247,31 +247,33 @@ namespace UnitTest.Services
         {
             return Task.FromResult(menuFakeDB.Find(i => i.Id == id));
         }
+
+        public Task<Menu> CreateMenu(Menu menu)
+        {
+            return Task.FromResult(menu);
+
+        }
+        //TODO : Next Menu : 
         public Task<DateTime> NextMenu(DateTime date)
         {
             throw new NotImplementedException();
         }
-
+        //TODO : Previous Menu
         public Task<DateTime> PreviousMenu(DateTime date)
         {
             throw new NotImplementedException();
         }
-
+        //TODO : Get menu by date 
         public Task<int> GetIdMenuByDate(DateTime date)
         {
             throw new NotImplementedException();
         }
-        
+        //TODO : Get services of Menu By Id Menu.
         public Task<Menu> GetServicesOfMenuById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Menu> CreateMenu(Menu menu)
-        {
-            return Task.FromResult(menu);
-         
-        }
         #endregion
     }
 }

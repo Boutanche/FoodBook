@@ -77,7 +77,7 @@ namespace API.Controllers
         /// <summary>
         /// Créer un menu afin de l'ajouter en base de données. 
         /// </summary>
-        /// <param name="firstMenu"></param>
+        /// <param ></param>
         /// <returns></returns>
         public async Task<IActionResult> CreateMenu([FromBody] Menu menu)
         {

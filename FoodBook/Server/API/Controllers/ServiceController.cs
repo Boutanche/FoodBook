@@ -24,6 +24,12 @@ namespace API.Controllers
         {
             _restaurantService = restaurantService;
         }
+
+        public Task<ActionResult<List<Service>>> GetAllService()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Récupérer la liste des service du menu :   API/V1/service?menu=4
         /// </summary>

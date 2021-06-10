@@ -16,17 +16,22 @@ namespace UnitTest
         [Fact]
         public async void TestCreateClient()
         {
-            //Arrange :
-            ///IClientService clientService = await new FakeClientService();
-            ///ClientControllerUnitTest clientController = new(clientService);
-            ///Client robert = new();
-            {
-               /// robert.Name = "Robert"
-            }
-            //Act : 
+            //WIP : Client :
+            //Non prioritaire sur ce jalon.
+            //Beaucoup de choses à régler avant d'en arriver là.
 
-            ///ActionResult
-            //Assert :  
+            ////Arrange :
+            //IClientService clientService = await new FakeClientService();
+            //ClientControllerUnitTest clientController = new(clientService);
+            //Client robert = new();
+            //{
+            //    robert.Name = "Robert";
+            //    robert.PhoneNumber = " "
+            //}
+            ////Act : 
+
+            //ActionResult
+            ////Assert :  
         }
     }
 }
