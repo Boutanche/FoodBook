@@ -6,11 +6,23 @@ namespace BLLC.Services
 {
     public interface IRestaurantService
     {
+        #region Ingredients
         Task<List<Ingredients>> GetAllIngredients();
+
         Task<Ingredients> CreateIngredients(Ingredients ingredients);
+        #endregion
+        #region Dish
         Task<Dish> CreateDish(Dish newDish);
-        Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient);
+        
         Task<Dish> GetDishByName(string name);
+
         Task<List<Dish>> GetAllDish();
+        #endregion
+        #region ListOfIngredient
+        Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient);
+        #endregion
+        #region Menu
+        Task<Menu> CreateMenu(Menu newMenu);
+        #endregion
     }
 }
