@@ -18,6 +18,7 @@ using DocFX.AspNetCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
+using System.Diagnostics;
 
 namespace API
 {
@@ -33,10 +34,11 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            Trace.WriteLine("...Lancement de ConfigureServices...");
             //Unique dans toute mon application (même instance dans toute l'aplication)
             //A chaque fois qu'on demande un Ilibrairi service => nouvelle instance
             //services.AddTransient<IRestaurantService, RestaurantService>();
+            
             // La même instance tout au long de la requête
             //services.AddScoped<ILibrairiService, LibrairiService>();
 

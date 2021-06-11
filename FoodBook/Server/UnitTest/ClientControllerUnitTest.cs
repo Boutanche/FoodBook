@@ -12,7 +12,10 @@ namespace UnitTest
 {
     public class ClientControllerUnitTest
     {
-        //Créer un client : 
+        //Créer un client :
+        /// <summary>
+        /// Module de test de création d'un client
+        /// </summary>
         [Fact]
         public async void TestCreateClient()
         {

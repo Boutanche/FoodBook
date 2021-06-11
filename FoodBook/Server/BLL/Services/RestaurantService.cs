@@ -3,6 +3,7 @@ using DAL.Repository;
 using DAL.UOW;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,9 +15,11 @@ namespace BLL.Services
     /// </summary>
     internal class RestaurantService : IRestaurantService
     {
+
         private readonly IUnitOfWork _db;
         public RestaurantService(IUnitOfWork unitOfWork)
         {
+            Trace.WriteLine(".. Si tu me vois c'est qu'on passe dans RestaurantService");
             _db = unitOfWork;
         }
         #region Ingredients
@@ -50,6 +53,7 @@ namespace BLL.Services
             }
             catch (Exception e)
             {
+                Trace.WriteLine(e);
                 _db.Rollback();
                 return null;
             }
@@ -71,6 +75,7 @@ namespace BLL.Services
             }
             catch (Exception e)
             {
+                Trace.WriteLine(e);
                 _db.Rollback();
                 return false;
             }
@@ -161,6 +166,7 @@ namespace BLL.Services
             }
             catch (Exception e)
             {
+                Trace.WriteLine(e);
                 _db.Rollback();
                 return null;
             }
@@ -182,6 +188,7 @@ namespace BLL.Services
             }
             catch (Exception e)
             {
+                Trace.WriteLine(e);
                 _db.Rollback();
                 return false;
             }

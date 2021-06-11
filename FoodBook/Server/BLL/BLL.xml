@@ -28,6 +28,14 @@
             
             </summary>
         </member>
+        <member name="M:BLL.Services.IAccountService.Login(System.String,System.String)">
+            <summary>
+            Login
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
         <member name="T:BLL.Services.IClientService">
             <summary>
             Interface des Services dédiés "CLient"
@@ -213,6 +221,13 @@
             <param name="dish"></param>
             <param name="service"></param>
             <returns>Bool</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.CreateMenu(BO.Entity.Menu)">
+            <summary>
+            Création d'un menu
+            </summary>
+            <param name="menu"></param>
+            <returns></returns>
         </member>
         <member name="M:BLL.Services.IRestaurantService.GetAllMenu">
             <summary>

@@ -33,7 +33,6 @@ namespace API.Controllers
         /// <summary>
         /// Récupérer la liste des service du menu :   API/V1/service?menu=4
         /// </summary>
-        /// <param name=""></param>
         /// <param name="id_Menu"></param>
         /// <returns></returns>
         [HttpGet()]

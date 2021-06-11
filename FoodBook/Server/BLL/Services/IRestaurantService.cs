@@ -10,6 +10,7 @@ namespace BLL.Services
     /// </summary>
     public interface IRestaurantService
     {
+
         #region Ingredients
         /// <summary>
         /// Récupérer un ingrédient par son identifiant
@@ -89,7 +90,7 @@ namespace BLL.Services
         /// <param name="name"></param>
         /// <returns></returns>
         Task<Dish> GetDishByName(string name);
-        Task<Menu> CreateMenu(Menu menu);
+
         #endregion
         #region TypeOfDish
         /// <summary>
@@ -141,6 +142,12 @@ namespace BLL.Services
         Task<bool> RemoveDishForThisService(Dish dish, Service service);
         #endregion
         #region Menu
+        /// <summary>
+        /// Création d'un menu
+        /// </summary>
+        /// <param name="menu"></param>
+        /// <returns></returns>
+        Task<Menu> CreateMenu(Menu menu);
         /// <summary>
         /// La liste de tous les menu
         /// </summary>
