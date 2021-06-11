@@ -1734,7 +1734,7 @@ namespace ClientDesktop
             this.button_AddS1D4.TabIndex = 0;
             this.button_AddS1D4.Text = "+";
             this.button_AddS1D4.UseVisualStyleBackColor = false;
-            this.button_AddS1D4.ClientSizeChanged += new System.EventHandler(this.Button_AddS1D4_Click);
+            this.button_AddS1D4.Click += new System.EventHandler(this.Button_AddS2D7Dessert_Click);
             // 
             // button44
             // 
@@ -1890,6 +1890,7 @@ namespace ClientDesktop
             this.button_AddS1D3Dessert.TabIndex = 0;
             this.button_AddS1D3Dessert.Text = "+";
             this.button_AddS1D3Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS1D3Dessert.Click += new System.EventHandler(this.Button_AddS1D3Dessert_Click);
             // 
             // button_DellS1D3Dessert
             // 
@@ -1976,6 +1977,7 @@ namespace ClientDesktop
             this.button_AddS1D5Dessert.TabIndex = 0;
             this.button_AddS1D5Dessert.Text = "+";
             this.button_AddS1D5Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS1D5Dessert.Click += new System.EventHandler(this.Button_AddS1D5Dessert_Click);
             // 
             // button26
             // 
@@ -2053,6 +2055,7 @@ namespace ClientDesktop
             this.button_AddS1D4Dessert.TabIndex = 0;
             this.button_AddS1D4Dessert.Text = "+";
             this.button_AddS1D4Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS1D4Dessert.Click += new System.EventHandler(this.Button_AddS1D4Dessert_Click);
             // 
             // button41
             // 
@@ -2130,6 +2133,7 @@ namespace ClientDesktop
             this.button_AddS1D7Dessert.TabIndex = 0;
             this.button_AddS1D7Dessert.Text = "+";
             this.button_AddS1D7Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS1D7Dessert.Click += new System.EventHandler(this.Button_AddS1D7Dessert_Click);
             // 
             // button17
             // 
@@ -2207,6 +2211,7 @@ namespace ClientDesktop
             this.button_AddS1D6Dessert.TabIndex = 0;
             this.button_AddS1D6Dessert.Text = "+";
             this.button_AddS1D6Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS1D6Dessert.Click += new System.EventHandler(this.Button_AddS1D6Dessert_Click);
             // 
             // button14
             // 
@@ -2362,6 +2367,7 @@ namespace ClientDesktop
             this.button_AddS1D2Dessert.TabIndex = 0;
             this.button_AddS1D2Dessert.Text = "+";
             this.button_AddS1D2Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS1D2Dessert.Click += new System.EventHandler(this.Button_AddS1D2Dessert_Click);
             // 
             // button2
             // 
@@ -2629,6 +2635,7 @@ namespace ClientDesktop
             this.button_AddDishS2D7.TabIndex = 0;
             this.button_AddDishS2D7.Text = "+";
             this.button_AddDishS2D7.UseVisualStyleBackColor = false;
+            this.button_AddDishS2D7.Click += new System.EventHandler(this.Button_AddDishS2D7_Click);
             // 
             // button113
             // 
@@ -2706,6 +2713,7 @@ namespace ClientDesktop
             this.button_AddDishS2D6.TabIndex = 0;
             this.button_AddDishS2D6.Text = "+";
             this.button_AddDishS2D6.UseVisualStyleBackColor = false;
+            this.button_AddDishS2D6.Click += new System.EventHandler(this.Button_AddDishS2D6_Click);
             // 
             // button110
             // 
@@ -2783,6 +2791,7 @@ namespace ClientDesktop
             this.button_AddDishS2D5.TabIndex = 0;
             this.button_AddDishS2D5.Text = "+";
             this.button_AddDishS2D5.UseVisualStyleBackColor = false;
+            this.button_AddDishS2D5.Click += new System.EventHandler(this.Button_AddDishS2D5_Click);
             // 
             // button107
             // 
@@ -2860,6 +2869,7 @@ namespace ClientDesktop
             this.button_AddDishS2D4.TabIndex = 0;
             this.button_AddDishS2D4.Text = "+";
             this.button_AddDishS2D4.UseVisualStyleBackColor = false;
+            this.button_AddDishS2D4.Click += new System.EventHandler(this.Button_AddDishS2D4_Click);
             // 
             // button104
             // 
@@ -2937,6 +2947,7 @@ namespace ClientDesktop
             this.button_AddDishS2D3.TabIndex = 0;
             this.button_AddDishS2D3.Text = "+";
             this.button_AddDishS2D3.UseVisualStyleBackColor = false;
+            this.button_AddDishS2D3.Click += new System.EventHandler(this.Button_AddDishS2D3_Click);
             // 
             // button101
             // 
@@ -3014,6 +3025,7 @@ namespace ClientDesktop
             this.button_AddDishS2D2.TabIndex = 0;
             this.button_AddDishS2D2.Text = "+";
             this.button_AddDishS2D2.UseVisualStyleBackColor = false;
+            this.button_AddDishS2D2.Click += new System.EventHandler(this.Button_AddDishS2D2_Click);
             // 
             // button98
             // 
@@ -3091,6 +3103,7 @@ namespace ClientDesktop
             this.button_AddDishS2D1.TabIndex = 0;
             this.button_AddDishS2D1.Text = "+";
             this.button_AddDishS2D1.UseVisualStyleBackColor = false;
+            this.button_AddDishS2D1.Click += new System.EventHandler(this.Button_AddDishS2D1_Click);
             // 
             // button95
             // 
@@ -3157,6 +3170,7 @@ namespace ClientDesktop
             this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel73.Size = new System.Drawing.Size(157, 33);
             this.tableLayoutPanel73.TabIndex = 2;
+            this.tableLayoutPanel73.Click += new System.EventHandler(this.Button_AddStarterS2D7_Click);
             // 
             // button_AddStarterS2D7
             // 
@@ -3168,6 +3182,7 @@ namespace ClientDesktop
             this.button_AddStarterS2D7.TabIndex = 0;
             this.button_AddStarterS2D7.Text = "+";
             this.button_AddStarterS2D7.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D7.Click += new System.EventHandler(this.Button_AddStarterS2D7_Click);
             // 
             // button92
             // 
@@ -3245,6 +3260,7 @@ namespace ClientDesktop
             this.button_AddStarterS2D6.TabIndex = 0;
             this.button_AddStarterS2D6.Text = "+";
             this.button_AddStarterS2D6.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D6.Click += new System.EventHandler(this.Button_AddStarterS2D6_Click);
             // 
             // button89
             // 
@@ -3322,6 +3338,7 @@ namespace ClientDesktop
             this.button_AddStarterS2D5.TabIndex = 0;
             this.button_AddStarterS2D5.Text = "+";
             this.button_AddStarterS2D5.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D5.Click += new System.EventHandler(this.Button_AddStarterS2D5_Click);
             // 
             // button86
             // 
@@ -3399,6 +3416,7 @@ namespace ClientDesktop
             this.button_AddStarterS2D4.TabIndex = 0;
             this.button_AddStarterS2D4.Text = "+";
             this.button_AddStarterS2D4.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D4.Click += new System.EventHandler(this.Button_AddStarterS2D4_Click);
             // 
             // button83
             // 
@@ -3476,6 +3494,7 @@ namespace ClientDesktop
             this.button_AddStarterS2D3.TabIndex = 0;
             this.button_AddStarterS2D3.Text = "+";
             this.button_AddStarterS2D3.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D3.Click += new System.EventHandler(this.Button_AddStarterS2D3_Click);
             // 
             // button80
             // 
@@ -3553,6 +3572,7 @@ namespace ClientDesktop
             this.button_AddS2D3Dessert.TabIndex = 0;
             this.button_AddS2D3Dessert.Text = "+";
             this.button_AddS2D3Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS2D3Dessert.Click += new System.EventHandler(this.Button_AddS2D3Dessert_Click);
             // 
             // button116
             // 
@@ -3630,6 +3650,7 @@ namespace ClientDesktop
             this.button_AddS2D5Dessert.TabIndex = 0;
             this.button_AddS2D5Dessert.Text = "+";
             this.button_AddS2D5Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS2D5Dessert.Click += new System.EventHandler(this.Button_AddS2D5Dessert_Click);
             // 
             // button122
             // 
@@ -3707,6 +3728,7 @@ namespace ClientDesktop
             this.button_AddS2D4Dessert.TabIndex = 0;
             this.button_AddS2D4Dessert.Text = "+";
             this.button_AddS2D4Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS2D4Dessert.Click += new System.EventHandler(this.Button_AddS2D4Dessert_Click);
             // 
             // button119
             // 
@@ -3784,6 +3806,7 @@ namespace ClientDesktop
             this.button_AddS2D7Dessert.TabIndex = 0;
             this.button_AddS2D7Dessert.Text = "+";
             this.button_AddS2D7Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS2D7Dessert.Click += new System.EventHandler(this.Button_AddS2D7Dessert_Click);
             // 
             // button35
             // 
@@ -3870,6 +3893,7 @@ namespace ClientDesktop
             this.button_AddS2D6Dessert.TabIndex = 0;
             this.button_AddS2D6Dessert.Text = "+";
             this.button_AddS2D6Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS2D6Dessert.Click += new System.EventHandler(this.Button_AddS2D6Dessert_Click);
             // 
             // button32
             // 
@@ -3938,6 +3962,7 @@ namespace ClientDesktop
             this.button_AddS2D1Dessert.TabIndex = 0;
             this.button_AddS2D1Dessert.Text = "+";
             this.button_AddS2D1Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS2D1Dessert.Click += new System.EventHandler(this.Button_AddS2D1Dessert_Click);
             // 
             // button20
             // 
@@ -4024,6 +4049,7 @@ namespace ClientDesktop
             this.button_AddS2D2Dessert.TabIndex = 0;
             this.button_AddS2D2Dessert.Text = "+";
             this.button_AddS2D2Dessert.UseVisualStyleBackColor = false;
+            this.button_AddS2D2Dessert.Click += new System.EventHandler(this.Button_AddS2D2Dessert_Click);
             // 
             // button8
             // 
@@ -4170,6 +4196,7 @@ namespace ClientDesktop
             this.button_AddStarterS2D2.TabIndex = 0;
             this.button_AddStarterS2D2.Text = "+";
             this.button_AddStarterS2D2.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D2.Click += new System.EventHandler(this.Button_AddStarterS2D2_Click);
             // 
             // button77
             // 
@@ -4320,7 +4347,7 @@ namespace ClientDesktop
         }
 
         #endregion
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_MainForm;
+        //private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_MainForm;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Main;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox_Logo;
@@ -4351,9 +4378,9 @@ namespace ClientDesktop
         private System.Windows.Forms.Label label_day6;
         private System.Windows.Forms.Label label_day7;
         private System.Windows.Forms.Label label_day4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label _day2;
-        private System.Windows.Forms.Label label1;
+        //private System.Windows.Forms.Label label3;
+        //private System.Windows.Forms.Label _day2;
+        //private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_day1;
         private System.Windows.Forms.Label label_day2;
         private System.Windows.Forms.Label label_day3;
@@ -4386,7 +4413,7 @@ namespace ClientDesktop
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.ComboBox combobox_S1D1Dessert;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Button button_AddS1D1Desset;
+        //private System.Windows.Forms.Button button_AddS1D1Desset;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button_ModifyS1D1Dessert;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -4414,7 +4441,7 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.ComboBox comboBox3;
+        //private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Button button_AddS2D2Dessert;
         private System.Windows.Forms.Button button8;
@@ -4498,7 +4525,7 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.ComboBox combobox_S1D3Starter;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        private System.Windows.Forms.ComboBox comboBox10;
+        //private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
         private System.Windows.Forms.Button button_AddS1D3Dessert;
         private System.Windows.Forms.Button button_DellS1D3Dessert;
@@ -4529,7 +4556,7 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox combobox_S2D6Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel52;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel78;
-        private System.Windows.Forms.Button button106;
+        //private System.Windows.Forms.Button button106;
         private System.Windows.Forms.Button button107;
         private System.Windows.Forms.Button button108;
         private System.Windows.Forms.ComboBox combobox_S2D5Dish;
@@ -4541,16 +4568,16 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox combobox_S2D4Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel50;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel76;
-        private System.Windows.Forms.Button button100;
+        //private System.Windows.Forms.Button button100;
         private System.Windows.Forms.Button button101;
         private System.Windows.Forms.Button button102;
         private System.Windows.Forms.ComboBox combobox_S2D3Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel49;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel75;
-        private System.Windows.Forms.Button button97;
+        //private System.Windows.Forms.Button button97;
         private System.Windows.Forms.Button button98;
         private System.Windows.Forms.Button button99;
-        private System.Windows.Forms.ComboBox combobox_S2DDish;
+        //private System.Windows.Forms.ComboBox combobox_S2DDish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel48;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel74;
         private System.Windows.Forms.Button button_AddDishS2D1;
@@ -4612,11 +4639,11 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button78;
         private System.Windows.Forms.ComboBox combobox_S2D2Starter;
         private System.Windows.Forms.Button button_AddS1D1Dessert;
-        private System.Windows.Forms.Button bu;
+        //private System.Windows.Forms.Button bu;
         private System.Windows.Forms.Button button_AddDishS2D2;
         private System.Windows.Forms.Button button_AddDishS2D3;
         private System.Windows.Forms.Button button_AddDishS2D5;
-        private System.Windows.Forms.Button D2;
+        //private System.Windows.Forms.Button D2;
         private System.Windows.Forms.ComboBox combobox_S1D3Dessert;
         private System.Windows.Forms.ComboBox combobox_S2D2Dish;
         private System.Windows.Forms.ComboBox combobox_S2D2Dessert;

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -134,6 +135,7 @@ namespace ClientDesktop
 
         private void Button_AddS1D1_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("Tu viens de cliquer sur : **Button_AddS1D1_Click**");
             typeNumber = 1;
             dayNumber = 1;
             serviceNumber = 1;
@@ -153,15 +155,6 @@ namespace ClientDesktop
         {
             typeNumber = 1;
             dayNumber = 3;
-            serviceNumber = 1;
-            OpenDishSelectorForm();
-        }
-
-        //Day 4:
-        private void Button_AddS1D4_Click(object sender, EventArgs e)
-        {
-            typeNumber = 1;
-            dayNumber = 4;
             serviceNumber = 1;
             OpenDishSelectorForm();
         }
@@ -465,8 +458,9 @@ namespace ClientDesktop
         }
 
 
+
         #endregion
 
-
+        
     }
 }
