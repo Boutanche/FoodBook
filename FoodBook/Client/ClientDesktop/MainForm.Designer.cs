@@ -201,8 +201,8 @@ namespace ClientDesktop
             this.tableLayoutPanel_S2D6Dish = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel79 = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS2D6 = new System.Windows.Forms.Button();
-            this.button110 = new System.Windows.Forms.Button();
-            this.button111 = new System.Windows.Forms.Button();
+            this.button_RemoveDishS2D6 = new System.Windows.Forms.Button();
+            this.button_ModifyDishS2D6 = new System.Windows.Forms.Button();
             this.combobox_S2D6Dish = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel_S2D5Dish = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel78 = new System.Windows.Forms.TableLayoutPanel();
@@ -2724,8 +2724,8 @@ namespace ClientDesktop
             this.tableLayoutPanel79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel79.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel79.Controls.Add(this.button_AddDishS2D6, 0, 0);
-            this.tableLayoutPanel79.Controls.Add(this.button110, 1, 0);
-            this.tableLayoutPanel79.Controls.Add(this.button111, 2, 0);
+            this.tableLayoutPanel79.Controls.Add(this.button_RemoveDishS2D6, 1, 0);
+            this.tableLayoutPanel79.Controls.Add(this.button_ModifyDishS2D6, 2, 0);
             this.tableLayoutPanel79.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel79.Location = new System.Drawing.Point(3, 42);
             this.tableLayoutPanel79.Name = "tableLayoutPanel79";
@@ -2747,28 +2747,28 @@ namespace ClientDesktop
             this.button_AddDishS2D6.UseVisualStyleBackColor = false;
             this.button_AddDishS2D6.Click += new System.EventHandler(this.Button_AddDishS2D6_Click);
             // 
-            // button110
+            // button_RemoveDishS2D6
             // 
-            this.button110.BackColor = System.Drawing.Color.LightCoral;
-            this.button110.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button110.Location = new System.Drawing.Point(55, 3);
-            this.button110.Name = "button110";
-            this.button110.Size = new System.Drawing.Size(46, 27);
-            this.button110.TabIndex = 1;
-            this.button110.Text = "x";
-            this.button110.UseVisualStyleBackColor = false;
+            this.button_RemoveDishS2D6.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDishS2D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDishS2D6.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDishS2D6.Name = "button_RemoveDishS2D6";
+            this.button_RemoveDishS2D6.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDishS2D6.TabIndex = 1;
+            this.button_RemoveDishS2D6.Text = "x";
+            this.button_RemoveDishS2D6.UseVisualStyleBackColor = false;
             // 
-            // button111
+            // button_ModifyDishS2D6
             // 
-            this.button111.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button111.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button111.Location = new System.Drawing.Point(107, 3);
-            this.button111.Name = "button111";
-            this.button111.Size = new System.Drawing.Size(46, 27);
-            this.button111.TabIndex = 2;
-            this.button111.Text = "...";
-            this.button111.UseVisualStyleBackColor = false;
-            this.button111.Visible = false;
+            this.button_ModifyDishS2D6.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDishS2D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDishS2D6.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDishS2D6.Name = "button_ModifyDishS2D6";
+            this.button_ModifyDishS2D6.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyDishS2D6.TabIndex = 2;
+            this.button_ModifyDishS2D6.Text = "...";
+            this.button_ModifyDishS2D6.UseVisualStyleBackColor = false;
+            this.button_ModifyDishS2D6.Visible = false;
             // 
             // combobox_S2D6Dish
             // 
@@ -4822,8 +4822,8 @@ namespace ClientDesktop
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S2D6Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel79;
         private System.Windows.Forms.Button button_AddDishS2D6;
-        private System.Windows.Forms.Button button110;
-        private System.Windows.Forms.Button button111;
+        private System.Windows.Forms.Button button_RemoveDishS2D6;
+        private System.Windows.Forms.Button button_ModifyDishS2D6;
         private System.Windows.Forms.ComboBox combobox_S2D6Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S2D5Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel78;
