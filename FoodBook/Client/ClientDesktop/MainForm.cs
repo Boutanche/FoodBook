@@ -28,24 +28,8 @@ namespace ClientDesktop
             textBox_week.Text = _currentWeekNumber.ToString();
             //_restaurantService = new RestaurantService();
 
-            //Tentative de régler le problême sur la vitesse du Gif.
-            //timeBeginPeriod(timerAccuracy);
-
-
         }
-        //[Suite]Tentative de régler le problême sur la vitesse du Gif.
-        //protected override void OnFormClosed(FormClosedEventArgs e)
-        //{
-        //    timeEndPeriod(timerAccuracy);
-        //    base.OnFormClosed(e);
-        //}
-        ////C'est quoi le Pinvoke ?
-        ////Pinvoke: 
-        //private const int timerAccuracy = 1;
-        //[System.Runtime.InteropServices.DllImport("winmm.dll")]
-        //private static extern int timeBeginPeriod(int msec);
-        //[System.Runtime.InteropServices.DllImport("winmm.dll")]
-        //public static extern int timeEndPeriod(int msec);
+
 
         //TODO : Gestion de l'année.
         //Ecrire une fonction qui me permette de remplir le champ year de la table menu. 
@@ -118,6 +102,8 @@ namespace ClientDesktop
          * ** S2
          * * Dessert
          * ** S1
+         * /!\ ATTENTION /!\ Les Btn S1Dx de Dessert : 
+         * /!\ ATTENTION /!\ n'ont pas les même noms que l'ensemble des Btn de cette page. 
          * ** S2
          // TODO : Le reste des buttons sur la MainForm();
          * All Remove Button
@@ -535,3 +521,35 @@ namespace ClientDesktop
 
     }
 }
+
+
+/**
+ * **************************************************************************************
+ * ************************************* Code Poubelle ***********************************
+ * **************************************************************************************
+ * 
+ * ** Dans le constructeur MainForm (){
+ *             //Tentative de régler le problême sur la vitesse du Gif.
+ *             //timeBeginPeriod(timerAccuracy);
+ * }
+ * 
+ * //[Suite]Tentative de régler le problême sur la vitesse du Gif.
+        //protected override void OnFormClosed(FormClosedEventArgs e)
+        //{
+        //    timeEndPeriod(timerAccuracy);
+        //    base.OnFormClosed(e);
+        //}
+        ////C'est quoi le Pinvoke ?
+        ////Pinvoke: 
+        //private const int timerAccuracy = 1;
+        //[System.Runtime.InteropServices.DllImport("winmm.dll")]
+        //private static extern int timeBeginPeriod(int msec);
+        //[System.Runtime.InteropServices.DllImport("winmm.dll")]
+        //public static extern int timeEndPeriod(int msec);
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ **/
