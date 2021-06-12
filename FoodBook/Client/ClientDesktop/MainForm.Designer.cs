@@ -562,6 +562,7 @@ namespace ClientDesktop
             this.button_status.TabIndex = 1;
             this.button_status.Text = "Statistiques";
             this.button_status.UseVisualStyleBackColor = true;
+            this.button_status.Click += new System.EventHandler(this.Button_status_Click);
             // 
             // button_createDish
             // 
@@ -1734,7 +1735,7 @@ namespace ClientDesktop
             this.button_AddS1D4.TabIndex = 0;
             this.button_AddS1D4.Text = "+";
             this.button_AddS1D4.UseVisualStyleBackColor = false;
-            this.button_AddS1D4.Click += new System.EventHandler(this.Button_AddS2D7Dessert_Click);
+            this.button_AddS1D4.Click += new System.EventHandler(this.Button_AddS1D4_Click);
             // 
             // button44
             // 
