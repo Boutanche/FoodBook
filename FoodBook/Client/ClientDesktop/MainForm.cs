@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Globalization;
 using System.Windows.Forms;
 
@@ -12,7 +14,7 @@ namespace ClientDesktop
         public int dayNumber;
         public int serviceNumber;
         public int typeNumber;
-        
+
         //Connexion aux données
         //WIP : Connexion à la BDD : Récupération des Menus
         //private readonly IRestaurantService _restaurantService;
@@ -25,7 +27,25 @@ namespace ClientDesktop
             InitializeComponent();
             textBox_week.Text = _currentWeekNumber.ToString();
             //_restaurantService = new RestaurantService();
+
+            //Tentative de régler le problême sur la vitesse du Gif.
+            //timeBeginPeriod(timerAccuracy);
+
+
         }
+        //[Suite]Tentative de régler le problême sur la vitesse du Gif.
+        //protected override void OnFormClosed(FormClosedEventArgs e)
+        //{
+        //    timeEndPeriod(timerAccuracy);
+        //    base.OnFormClosed(e);
+        //}
+        ////C'est quoi le Pinvoke ?
+        ////Pinvoke: 
+        //private const int timerAccuracy = 1;
+        //[System.Runtime.InteropServices.DllImport("winmm.dll")]
+        //private static extern int timeBeginPeriod(int msec);
+        //[System.Runtime.InteropServices.DllImport("winmm.dll")]
+        //public static extern int timeEndPeriod(int msec);
 
         //TODO : Gestion de l'année.
         //Ecrire une fonction qui me permette de remplir le champ year de la table menu. 
@@ -33,7 +53,7 @@ namespace ClientDesktop
 
         //HACK : La fonction actuelle ne prend pas en compte la bonne semaine,
         // il a donc était nécessaire d'incrémenter de 1 la semaine retournée. 
-        
+
         /// <summary>
         /// Permet de récurer la numéro de la semaine courrante
         /// </summary>
@@ -51,7 +71,7 @@ namespace ClientDesktop
         /// </summary>
         private void OpenDishSelectorForm()
         {
-            //Récupération de l'enesmelbe des information nécessaires à la DishForm
+            //Récupération de l'ensemble des informations nécessaires à la DishForm
             weekNumber = textBox_week.Text;
             DishSelectorForm dishSelectorForm = new();
             dishSelectorForm.localWeek = weekNumber;
@@ -69,9 +89,12 @@ namespace ClientDesktop
 
         private void Timer_Loading_Tick(object sender, EventArgs e)
         {
+
             timer_Loading.Stop();
             pictureBox_Loading.Dispose();
+
         }
+
 
         //Il y a peut-être une erreur ici :
         //Vérifier qu'il n'y a pas une distinction du style : FormClosed() and FormClosing()
@@ -206,7 +229,7 @@ namespace ClientDesktop
         }
 
         //Day 6:
-        private void Button_AddS1D6_Click(object sender, EventArgs e)
+        private void Button_AddStarterS1D6_Click(object sender, EventArgs e)
         {
             Trace.WriteLine("Tu viens de cliquer sur : **Button_AddS1D6_Click**");
             typeNumber = 1;
@@ -216,7 +239,7 @@ namespace ClientDesktop
         }
 
         //Day 7: 
-        private void Button_AddS1D7_Click(object sender, EventArgs e)
+        private void Button_AddStarterS1D7_Click(object sender, EventArgs e)
         {
             Trace.WriteLine("Tu viens de cliquer sur : **Button_AddS1D7_Click**");
             typeNumber = 1;
@@ -502,6 +525,7 @@ namespace ClientDesktop
             serviceNumber = 2;
             OpenDishSelectorForm(); 
         }
+
 
 
 

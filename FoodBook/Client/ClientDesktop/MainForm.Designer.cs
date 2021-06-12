@@ -32,7 +32,7 @@ namespace ClientDesktop
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tableLayoutPanel_Main = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Header = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel_Title = new System.Windows.Forms.TableLayoutPanel();
             this.label_WeekNumber = new System.Windows.Forms.Label();
@@ -44,13 +44,13 @@ namespace ClientDesktop
             this.button_status = new System.Windows.Forms.Button();
             this.button_createDish = new System.Windows.Forms.Button();
             this.tableLayoutPanel_MainBody = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel_Row2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Service1 = new System.Windows.Forms.TableLayoutPanel();
             this.label_service1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel_S1Formule = new System.Windows.Forms.TableLayoutPanel();
             this.label_S1Starter = new System.Windows.Forms.Label();
             this.label_S1Meal = new System.Windows.Forms.Label();
             this.label_S1Dessert = new System.Windows.Forms.Label();
-            this.tableLayoutPanel_Row3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Service2 = new System.Windows.Forms.TableLayoutPanel();
             this.label_service2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel_S2Formule = new System.Windows.Forms.TableLayoutPanel();
             this.label_S2Starter = new System.Windows.Forms.Label();
@@ -65,59 +65,59 @@ namespace ClientDesktop
             this.label_day2 = new System.Windows.Forms.Label();
             this.label_day3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel_S1Body = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel67 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S1D7Dish = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D7Dish = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS1D7 = new System.Windows.Forms.Button();
-            this.button74 = new System.Windows.Forms.Button();
-            this.button75 = new System.Windows.Forms.Button();
+            this.button_RemoveDishS1D7 = new System.Windows.Forms.Button();
+            this.button_ModifyDishS1D7 = new System.Windows.Forms.Button();
             this.combobox_S1D7Dish = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel66 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S1D6Dish = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D6Dish = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS1D6 = new System.Windows.Forms.Button();
-            this.button71 = new System.Windows.Forms.Button();
-            this.button72 = new System.Windows.Forms.Button();
+            this.button_RemoveDishS1D6 = new System.Windows.Forms.Button();
+            this.button_ModifyDishS1D6 = new System.Windows.Forms.Button();
             this.combobox_S1D6Dish = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel65 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S1D5Dish = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D5Dish = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS1D5 = new System.Windows.Forms.Button();
-            this.button68 = new System.Windows.Forms.Button();
-            this.button69 = new System.Windows.Forms.Button();
+            this.button_RemoveDishS1D5 = new System.Windows.Forms.Button();
+            this.button_ModifyDishS1D5 = new System.Windows.Forms.Button();
             this.combobox_S1D5Dish = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel64 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S1D4Dish = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D4Dish = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS1D4 = new System.Windows.Forms.Button();
-            this.button65 = new System.Windows.Forms.Button();
-            this.button66 = new System.Windows.Forms.Button();
+            this.button_RemoveDishS1D4 = new System.Windows.Forms.Button();
+            this.button_ModifyDishS1D4 = new System.Windows.Forms.Button();
             this.combobox_S1D4Dish = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel40 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel63 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S1D3Dish = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D3Dish = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS1D3 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
-            this.button63 = new System.Windows.Forms.Button();
+            this.button_RemoveDishS1D3 = new System.Windows.Forms.Button();
+            this.button_ModifyDishS1D3 = new System.Windows.Forms.Button();
             this.combobox_S1D3Dish = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel39 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel62 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S1D2Dish = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D2Dish = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS1D2 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
+            this.button_RemoveDishS1D2 = new System.Windows.Forms.Button();
+            this.button_ModifyDishS1D2 = new System.Windows.Forms.Button();
             this.combobox_S1D2Dish = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel61 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S1D1Dish = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D1Dish = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS1D1 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
+            this.button_RemoveDishS1D1 = new System.Windows.Forms.Button();
+            this.button_ModifyDishS1D1 = new System.Windows.Forms.Button();
             this.combobox_S1D1Dish = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel60 = new System.Windows.Forms.TableLayoutPanel();
-            this.button_AddS1D7 = new System.Windows.Forms.Button();
-            this.button53 = new System.Windows.Forms.Button();
-            this.button54 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel_S1D7Starter = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D7Starter = new System.Windows.Forms.TableLayoutPanel();
+            this.button_AddStarterS1D7 = new System.Windows.Forms.Button();
+            this.button_RemoveStarterS1D7 = new System.Windows.Forms.Button();
+            this.button_ModifyStarterS1D7 = new System.Windows.Forms.Button();
             this.combobox_S1D7Starter = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel36 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel59 = new System.Windows.Forms.TableLayoutPanel();
-            this.button_AddS1D6 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel_S1D6Starter = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S1D6Starter = new System.Windows.Forms.TableLayoutPanel();
+            this.button_AddStarterS1D6 = new System.Windows.Forms.Button();
+            this.button_RemoveStarterS1D6 = new System.Windows.Forms.Button();
+            this.button_ModifyStarterS1D6 = new System.Windows.Forms.Button();
             this.combobox_S1D6Starter = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel35 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel58 = new System.Windows.Forms.TableLayoutPanel();
@@ -321,35 +321,35 @@ namespace ClientDesktop
             this.pictureBox_Loading = new System.Windows.Forms.PictureBox();
             this.timer_Loading = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel_Main.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
             this.tableLayoutPanel_Title.SuspendLayout();
             this.tableLayoutPanel_btnMenuHeader.SuspendLayout();
             this.tableLayoutPanel_MainBody.SuspendLayout();
-            this.tableLayoutPanel_Row2.SuspendLayout();
+            this.tableLayoutPanel_Service1.SuspendLayout();
             this.tableLayoutPanel_S1Formule.SuspendLayout();
-            this.tableLayoutPanel_Row3.SuspendLayout();
+            this.tableLayoutPanel_Service2.SuspendLayout();
             this.tableLayoutPanel_S2Formule.SuspendLayout();
             this.tableLayoutPanel_DaysHeader.SuspendLayout();
             this.tableLayoutPanel_S1Body.SuspendLayout();
-            this.tableLayoutPanel44.SuspendLayout();
-            this.tableLayoutPanel67.SuspendLayout();
-            this.tableLayoutPanel43.SuspendLayout();
-            this.tableLayoutPanel66.SuspendLayout();
-            this.tableLayoutPanel42.SuspendLayout();
-            this.tableLayoutPanel65.SuspendLayout();
-            this.tableLayoutPanel41.SuspendLayout();
-            this.tableLayoutPanel64.SuspendLayout();
-            this.tableLayoutPanel40.SuspendLayout();
-            this.tableLayoutPanel63.SuspendLayout();
-            this.tableLayoutPanel39.SuspendLayout();
-            this.tableLayoutPanel62.SuspendLayout();
-            this.tableLayoutPanel38.SuspendLayout();
-            this.tableLayoutPanel61.SuspendLayout();
-            this.tableLayoutPanel37.SuspendLayout();
-            this.tableLayoutPanel60.SuspendLayout();
-            this.tableLayoutPanel36.SuspendLayout();
-            this.tableLayoutPanel59.SuspendLayout();
+            this.tableLayoutPanel_S1D7Dish.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D7Dish.SuspendLayout();
+            this.tableLayoutPanel_S1D6Dish.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D6Dish.SuspendLayout();
+            this.tableLayoutPanel_S1D5Dish.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D5Dish.SuspendLayout();
+            this.tableLayoutPanel_S1D4Dish.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D4Dish.SuspendLayout();
+            this.tableLayoutPanel_S1D3Dish.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D3Dish.SuspendLayout();
+            this.tableLayoutPanel_S1D2Dish.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D2Dish.SuspendLayout();
+            this.tableLayoutPanel_S1D1Dish.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D1Dish.SuspendLayout();
+            this.tableLayoutPanel_S1D7Starter.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D7Starter.SuspendLayout();
+            this.tableLayoutPanel_S1D6Starter.SuspendLayout();
+            this.tableLayoutPanel_Btn_S1D6Starter.SuspendLayout();
             this.tableLayoutPanel35.SuspendLayout();
             this.tableLayoutPanel58.SuspendLayout();
             this.tableLayoutPanel34.SuspendLayout();
@@ -424,7 +424,7 @@ namespace ClientDesktop
             // 
             this.tableLayoutPanel_Main.ColumnCount = 1;
             this.tableLayoutPanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_Main.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel_Main.Controls.Add(this.tableLayoutPanel_Header, 0, 0);
             this.tableLayoutPanel_Main.Controls.Add(this.tableLayoutPanel_MainBody, 0, 1);
             this.tableLayoutPanel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel_Main.Location = new System.Drawing.Point(0, 0);
@@ -435,22 +435,22 @@ namespace ClientDesktop
             this.tableLayoutPanel_Main.Size = new System.Drawing.Size(1299, 641);
             this.tableLayoutPanel_Main.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanel_Header
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox_Logo, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel_Title, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel_btnMenuHeader, 2, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1293, 74);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel_Header.ColumnCount = 3;
+            this.tableLayoutPanel_Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel_Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Header.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel_Header.Controls.Add(this.pictureBox_Logo, 0, 0);
+            this.tableLayoutPanel_Header.Controls.Add(this.tableLayoutPanel_Title, 1, 0);
+            this.tableLayoutPanel_Header.Controls.Add(this.tableLayoutPanel_btnMenuHeader, 2, 0);
+            this.tableLayoutPanel_Header.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Header.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel_Header.Name = "tableLayoutPanel_Header";
+            this.tableLayoutPanel_Header.RowCount = 1;
+            this.tableLayoutPanel_Header.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Header.Size = new System.Drawing.Size(1293, 74);
+            this.tableLayoutPanel_Header.TabIndex = 0;
             // 
             // pictureBox_Logo
             // 
@@ -585,8 +585,8 @@ namespace ClientDesktop
             this.tableLayoutPanel_MainBody.ColumnCount = 2;
             this.tableLayoutPanel_MainBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel_MainBody.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_Row2, 0, 1);
-            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_Row3, 0, 2);
+            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_Service1, 0, 1);
+            this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_Service2, 0, 2);
             this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_DaysHeader, 1, 0);
             this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_S1Body, 1, 1);
             this.tableLayoutPanel_MainBody.Controls.Add(this.tableLayoutPanel_S2Body, 1, 2);
@@ -600,21 +600,21 @@ namespace ClientDesktop
             this.tableLayoutPanel_MainBody.Size = new System.Drawing.Size(1293, 555);
             this.tableLayoutPanel_MainBody.TabIndex = 1;
             // 
-            // tableLayoutPanel_Row2
+            // tableLayoutPanel_Service1
             // 
-            this.tableLayoutPanel_Row2.ColumnCount = 2;
-            this.tableLayoutPanel_Row2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Row2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Row2.Controls.Add(this.label_service1, 0, 0);
-            this.tableLayoutPanel_Row2.Controls.Add(this.tableLayoutPanel_S1Formule, 1, 0);
-            this.tableLayoutPanel_Row2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_Row2.Location = new System.Drawing.Point(3, 43);
-            this.tableLayoutPanel_Row2.Name = "tableLayoutPanel_Row2";
-            this.tableLayoutPanel_Row2.RowCount = 1;
-            this.tableLayoutPanel_Row2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Row2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Row2.Size = new System.Drawing.Size(104, 251);
-            this.tableLayoutPanel_Row2.TabIndex = 0;
+            this.tableLayoutPanel_Service1.ColumnCount = 2;
+            this.tableLayoutPanel_Service1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Service1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Service1.Controls.Add(this.label_service1, 0, 0);
+            this.tableLayoutPanel_Service1.Controls.Add(this.tableLayoutPanel_S1Formule, 1, 0);
+            this.tableLayoutPanel_Service1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Service1.Location = new System.Drawing.Point(3, 43);
+            this.tableLayoutPanel_Service1.Name = "tableLayoutPanel_Service1";
+            this.tableLayoutPanel_Service1.RowCount = 1;
+            this.tableLayoutPanel_Service1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Service1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Service1.Size = new System.Drawing.Size(104, 251);
+            this.tableLayoutPanel_Service1.TabIndex = 0;
             // 
             // label_service1
             // 
@@ -679,21 +679,21 @@ namespace ClientDesktop
             this.label_S1Dessert.TabIndex = 2;
             this.label_S1Dessert.Text = "Dessert";
             // 
-            // tableLayoutPanel_Row3
+            // tableLayoutPanel_Service2
             // 
-            this.tableLayoutPanel_Row3.ColumnCount = 2;
-            this.tableLayoutPanel_Row3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Row3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_Row3.Controls.Add(this.label_service2, 0, 0);
-            this.tableLayoutPanel_Row3.Controls.Add(this.tableLayoutPanel_S2Formule, 1, 0);
-            this.tableLayoutPanel_Row3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_Row3.Location = new System.Drawing.Point(3, 300);
-            this.tableLayoutPanel_Row3.Name = "tableLayoutPanel_Row3";
-            this.tableLayoutPanel_Row3.RowCount = 1;
-            this.tableLayoutPanel_Row3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_Row3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 252F));
-            this.tableLayoutPanel_Row3.Size = new System.Drawing.Size(104, 252);
-            this.tableLayoutPanel_Row3.TabIndex = 1;
+            this.tableLayoutPanel_Service2.ColumnCount = 2;
+            this.tableLayoutPanel_Service2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Service2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_Service2.Controls.Add(this.label_service2, 0, 0);
+            this.tableLayoutPanel_Service2.Controls.Add(this.tableLayoutPanel_S2Formule, 1, 0);
+            this.tableLayoutPanel_Service2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Service2.Location = new System.Drawing.Point(3, 300);
+            this.tableLayoutPanel_Service2.Name = "tableLayoutPanel_Service2";
+            this.tableLayoutPanel_Service2.RowCount = 1;
+            this.tableLayoutPanel_Service2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Service2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 252F));
+            this.tableLayoutPanel_Service2.Size = new System.Drawing.Size(104, 252);
+            this.tableLayoutPanel_Service2.TabIndex = 1;
             // 
             // label_service2
             // 
@@ -883,15 +883,15 @@ namespace ClientDesktop
             this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel_S1Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel44, 6, 1);
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel43, 5, 1);
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel42, 4, 1);
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel41, 3, 1);
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel40, 2, 1);
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel39, 1, 1);
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel38, 0, 1);
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel37, 6, 0);
-            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel36, 5, 0);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D7Dish, 6, 1);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D6Dish, 5, 1);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D5Dish, 4, 1);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D4Dish, 3, 1);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D3Dish, 2, 1);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D2Dish, 1, 1);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D1Dish, 0, 1);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D7Starter, 6, 0);
+            this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel_S1D6Starter, 5, 0);
             this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel35, 4, 0);
             this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel34, 3, 0);
             this.tableLayoutPanel_S1Body.Controls.Add(this.tableLayoutPanel33, 2, 0);
@@ -915,39 +915,39 @@ namespace ClientDesktop
             this.tableLayoutPanel_S1Body.Size = new System.Drawing.Size(1177, 251);
             this.tableLayoutPanel_S1Body.TabIndex = 3;
             // 
-            // tableLayoutPanel44
+            // tableLayoutPanel_S1D7Dish
             // 
-            this.tableLayoutPanel44.ColumnCount = 1;
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel44.Controls.Add(this.tableLayoutPanel67, 0, 1);
-            this.tableLayoutPanel44.Controls.Add(this.combobox_S1D7Dish, 0, 0);
-            this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel44.Location = new System.Drawing.Point(1011, 86);
-            this.tableLayoutPanel44.Name = "tableLayoutPanel44";
-            this.tableLayoutPanel44.RowCount = 2;
-            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel44.Size = new System.Drawing.Size(163, 77);
-            this.tableLayoutPanel44.TabIndex = 25;
+            this.tableLayoutPanel_S1D7Dish.ColumnCount = 1;
+            this.tableLayoutPanel_S1D7Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D7Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D7Dish.Controls.Add(this.tableLayoutPanel_Btn_S1D7Dish, 0, 1);
+            this.tableLayoutPanel_S1D7Dish.Controls.Add(this.combobox_S1D7Dish, 0, 0);
+            this.tableLayoutPanel_S1D7Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D7Dish.Location = new System.Drawing.Point(1011, 86);
+            this.tableLayoutPanel_S1D7Dish.Name = "tableLayoutPanel_S1D7Dish";
+            this.tableLayoutPanel_S1D7Dish.RowCount = 2;
+            this.tableLayoutPanel_S1D7Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D7Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D7Dish.Size = new System.Drawing.Size(163, 77);
+            this.tableLayoutPanel_S1D7Dish.TabIndex = 25;
             // 
-            // tableLayoutPanel67
+            // tableLayoutPanel_Btn_S1D7Dish
             // 
-            this.tableLayoutPanel67.ColumnCount = 3;
-            this.tableLayoutPanel67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel67.Controls.Add(this.button_AddDishS1D7, 0, 0);
-            this.tableLayoutPanel67.Controls.Add(this.button74, 1, 0);
-            this.tableLayoutPanel67.Controls.Add(this.button75, 2, 0);
-            this.tableLayoutPanel67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel67.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel67.Name = "tableLayoutPanel67";
-            this.tableLayoutPanel67.RowCount = 1;
-            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel67.Size = new System.Drawing.Size(157, 33);
-            this.tableLayoutPanel67.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D7Dish.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D7Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D7Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D7Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D7Dish.Controls.Add(this.button_AddDishS1D7, 0, 0);
+            this.tableLayoutPanel_Btn_S1D7Dish.Controls.Add(this.button_RemoveDishS1D7, 1, 0);
+            this.tableLayoutPanel_Btn_S1D7Dish.Controls.Add(this.button_ModifyDishS1D7, 2, 0);
+            this.tableLayoutPanel_Btn_S1D7Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D7Dish.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D7Dish.Name = "tableLayoutPanel_Btn_S1D7Dish";
+            this.tableLayoutPanel_Btn_S1D7Dish.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D7Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D7Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D7Dish.Size = new System.Drawing.Size(157, 33);
+            this.tableLayoutPanel_Btn_S1D7Dish.TabIndex = 2;
             // 
             // button_AddDishS1D7
             // 
@@ -961,28 +961,28 @@ namespace ClientDesktop
             this.button_AddDishS1D7.UseVisualStyleBackColor = false;
             this.button_AddDishS1D7.Click += new System.EventHandler(this.Button_AddDishS1D7_Click);
             // 
-            // button74
+            // button_RemoveDishS1D7
             // 
-            this.button74.BackColor = System.Drawing.Color.LightCoral;
-            this.button74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button74.Location = new System.Drawing.Point(55, 3);
-            this.button74.Name = "button74";
-            this.button74.Size = new System.Drawing.Size(46, 27);
-            this.button74.TabIndex = 1;
-            this.button74.Text = "x";
-            this.button74.UseVisualStyleBackColor = false;
+            this.button_RemoveDishS1D7.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDishS1D7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDishS1D7.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDishS1D7.Name = "button_RemoveDishS1D7";
+            this.button_RemoveDishS1D7.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDishS1D7.TabIndex = 1;
+            this.button_RemoveDishS1D7.Text = "x";
+            this.button_RemoveDishS1D7.UseVisualStyleBackColor = false;
             // 
-            // button75
+            // button_ModifyDishS1D7
             // 
-            this.button75.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button75.Location = new System.Drawing.Point(107, 3);
-            this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(47, 27);
-            this.button75.TabIndex = 2;
-            this.button75.Text = "...";
-            this.button75.UseVisualStyleBackColor = false;
-            this.button75.Visible = false;
+            this.button_ModifyDishS1D7.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDishS1D7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDishS1D7.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDishS1D7.Name = "button_ModifyDishS1D7";
+            this.button_ModifyDishS1D7.Size = new System.Drawing.Size(47, 27);
+            this.button_ModifyDishS1D7.TabIndex = 2;
+            this.button_ModifyDishS1D7.Text = "...";
+            this.button_ModifyDishS1D7.UseVisualStyleBackColor = false;
+            this.button_ModifyDishS1D7.Visible = false;
             // 
             // combobox_S1D7Dish
             // 
@@ -993,39 +993,39 @@ namespace ClientDesktop
             this.combobox_S1D7Dish.Size = new System.Drawing.Size(157, 23);
             this.combobox_S1D7Dish.TabIndex = 1;
             // 
-            // tableLayoutPanel43
+            // tableLayoutPanel_S1D6Dish
             // 
-            this.tableLayoutPanel43.ColumnCount = 1;
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel43.Controls.Add(this.tableLayoutPanel66, 0, 1);
-            this.tableLayoutPanel43.Controls.Add(this.combobox_S1D6Dish, 0, 0);
-            this.tableLayoutPanel43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel43.Location = new System.Drawing.Point(843, 86);
-            this.tableLayoutPanel43.Name = "tableLayoutPanel43";
-            this.tableLayoutPanel43.RowCount = 2;
-            this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel43.Size = new System.Drawing.Size(162, 77);
-            this.tableLayoutPanel43.TabIndex = 24;
+            this.tableLayoutPanel_S1D6Dish.ColumnCount = 1;
+            this.tableLayoutPanel_S1D6Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D6Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D6Dish.Controls.Add(this.tableLayoutPanel_Btn_S1D6Dish, 0, 1);
+            this.tableLayoutPanel_S1D6Dish.Controls.Add(this.combobox_S1D6Dish, 0, 0);
+            this.tableLayoutPanel_S1D6Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D6Dish.Location = new System.Drawing.Point(843, 86);
+            this.tableLayoutPanel_S1D6Dish.Name = "tableLayoutPanel_S1D6Dish";
+            this.tableLayoutPanel_S1D6Dish.RowCount = 2;
+            this.tableLayoutPanel_S1D6Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D6Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D6Dish.Size = new System.Drawing.Size(162, 77);
+            this.tableLayoutPanel_S1D6Dish.TabIndex = 24;
             // 
-            // tableLayoutPanel66
+            // tableLayoutPanel_Btn_S1D6Dish
             // 
-            this.tableLayoutPanel66.ColumnCount = 3;
-            this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel66.Controls.Add(this.button_AddDishS1D6, 0, 0);
-            this.tableLayoutPanel66.Controls.Add(this.button71, 1, 0);
-            this.tableLayoutPanel66.Controls.Add(this.button72, 2, 0);
-            this.tableLayoutPanel66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel66.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel66.Name = "tableLayoutPanel66";
-            this.tableLayoutPanel66.RowCount = 1;
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel66.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel66.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D6Dish.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D6Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D6Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D6Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D6Dish.Controls.Add(this.button_AddDishS1D6, 0, 0);
+            this.tableLayoutPanel_Btn_S1D6Dish.Controls.Add(this.button_RemoveDishS1D6, 1, 0);
+            this.tableLayoutPanel_Btn_S1D6Dish.Controls.Add(this.button_ModifyDishS1D6, 2, 0);
+            this.tableLayoutPanel_Btn_S1D6Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D6Dish.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D6Dish.Name = "tableLayoutPanel_Btn_S1D6Dish";
+            this.tableLayoutPanel_Btn_S1D6Dish.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D6Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D6Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D6Dish.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S1D6Dish.TabIndex = 2;
             // 
             // button_AddDishS1D6
             // 
@@ -1039,28 +1039,28 @@ namespace ClientDesktop
             this.button_AddDishS1D6.UseVisualStyleBackColor = false;
             this.button_AddDishS1D6.Click += new System.EventHandler(this.Button_AddDishS1D6_Click);
             // 
-            // button71
+            // button_RemoveDishS1D6
             // 
-            this.button71.BackColor = System.Drawing.Color.LightCoral;
-            this.button71.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button71.Location = new System.Drawing.Point(55, 3);
-            this.button71.Name = "button71";
-            this.button71.Size = new System.Drawing.Size(46, 27);
-            this.button71.TabIndex = 1;
-            this.button71.Text = "x";
-            this.button71.UseVisualStyleBackColor = false;
+            this.button_RemoveDishS1D6.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDishS1D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDishS1D6.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDishS1D6.Name = "button_RemoveDishS1D6";
+            this.button_RemoveDishS1D6.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDishS1D6.TabIndex = 1;
+            this.button_RemoveDishS1D6.Text = "x";
+            this.button_RemoveDishS1D6.UseVisualStyleBackColor = false;
             // 
-            // button72
+            // button_ModifyDishS1D6
             // 
-            this.button72.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button72.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button72.Location = new System.Drawing.Point(107, 3);
-            this.button72.Name = "button72";
-            this.button72.Size = new System.Drawing.Size(46, 27);
-            this.button72.TabIndex = 2;
-            this.button72.Text = "...";
-            this.button72.UseVisualStyleBackColor = false;
-            this.button72.Visible = false;
+            this.button_ModifyDishS1D6.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDishS1D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDishS1D6.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDishS1D6.Name = "button_ModifyDishS1D6";
+            this.button_ModifyDishS1D6.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyDishS1D6.TabIndex = 2;
+            this.button_ModifyDishS1D6.Text = "...";
+            this.button_ModifyDishS1D6.UseVisualStyleBackColor = false;
+            this.button_ModifyDishS1D6.Visible = false;
             // 
             // combobox_S1D6Dish
             // 
@@ -1071,39 +1071,39 @@ namespace ClientDesktop
             this.combobox_S1D6Dish.Size = new System.Drawing.Size(156, 23);
             this.combobox_S1D6Dish.TabIndex = 1;
             // 
-            // tableLayoutPanel42
+            // tableLayoutPanel_S1D5Dish
             // 
-            this.tableLayoutPanel42.ColumnCount = 1;
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel65, 0, 1);
-            this.tableLayoutPanel42.Controls.Add(this.combobox_S1D5Dish, 0, 0);
-            this.tableLayoutPanel42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel42.Location = new System.Drawing.Point(675, 86);
-            this.tableLayoutPanel42.Name = "tableLayoutPanel42";
-            this.tableLayoutPanel42.RowCount = 2;
-            this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel42.Size = new System.Drawing.Size(162, 77);
-            this.tableLayoutPanel42.TabIndex = 23;
+            this.tableLayoutPanel_S1D5Dish.ColumnCount = 1;
+            this.tableLayoutPanel_S1D5Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D5Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D5Dish.Controls.Add(this.tableLayoutPanel_Btn_S1D5Dish, 0, 1);
+            this.tableLayoutPanel_S1D5Dish.Controls.Add(this.combobox_S1D5Dish, 0, 0);
+            this.tableLayoutPanel_S1D5Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D5Dish.Location = new System.Drawing.Point(675, 86);
+            this.tableLayoutPanel_S1D5Dish.Name = "tableLayoutPanel_S1D5Dish";
+            this.tableLayoutPanel_S1D5Dish.RowCount = 2;
+            this.tableLayoutPanel_S1D5Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D5Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D5Dish.Size = new System.Drawing.Size(162, 77);
+            this.tableLayoutPanel_S1D5Dish.TabIndex = 23;
             // 
-            // tableLayoutPanel65
+            // tableLayoutPanel_Btn_S1D5Dish
             // 
-            this.tableLayoutPanel65.ColumnCount = 3;
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel65.Controls.Add(this.button_AddDishS1D5, 0, 0);
-            this.tableLayoutPanel65.Controls.Add(this.button68, 1, 0);
-            this.tableLayoutPanel65.Controls.Add(this.button69, 2, 0);
-            this.tableLayoutPanel65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel65.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel65.Name = "tableLayoutPanel65";
-            this.tableLayoutPanel65.RowCount = 1;
-            this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel65.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel65.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D5Dish.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D5Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D5Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D5Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D5Dish.Controls.Add(this.button_AddDishS1D5, 0, 0);
+            this.tableLayoutPanel_Btn_S1D5Dish.Controls.Add(this.button_RemoveDishS1D5, 1, 0);
+            this.tableLayoutPanel_Btn_S1D5Dish.Controls.Add(this.button_ModifyDishS1D5, 2, 0);
+            this.tableLayoutPanel_Btn_S1D5Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D5Dish.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D5Dish.Name = "tableLayoutPanel_Btn_S1D5Dish";
+            this.tableLayoutPanel_Btn_S1D5Dish.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D5Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D5Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D5Dish.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S1D5Dish.TabIndex = 2;
             // 
             // button_AddDishS1D5
             // 
@@ -1117,28 +1117,28 @@ namespace ClientDesktop
             this.button_AddDishS1D5.UseVisualStyleBackColor = false;
             this.button_AddDishS1D5.Click += new System.EventHandler(this.Button_AddDishS1D5_Click);
             // 
-            // button68
+            // button_RemoveDishS1D5
             // 
-            this.button68.BackColor = System.Drawing.Color.LightCoral;
-            this.button68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button68.Location = new System.Drawing.Point(55, 3);
-            this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(46, 27);
-            this.button68.TabIndex = 1;
-            this.button68.Text = "x";
-            this.button68.UseVisualStyleBackColor = false;
+            this.button_RemoveDishS1D5.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDishS1D5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDishS1D5.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDishS1D5.Name = "button_RemoveDishS1D5";
+            this.button_RemoveDishS1D5.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDishS1D5.TabIndex = 1;
+            this.button_RemoveDishS1D5.Text = "x";
+            this.button_RemoveDishS1D5.UseVisualStyleBackColor = false;
             // 
-            // button69
+            // button_ModifyDishS1D5
             // 
-            this.button69.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button69.Location = new System.Drawing.Point(107, 3);
-            this.button69.Name = "button69";
-            this.button69.Size = new System.Drawing.Size(46, 27);
-            this.button69.TabIndex = 2;
-            this.button69.Text = "...";
-            this.button69.UseVisualStyleBackColor = false;
-            this.button69.Visible = false;
+            this.button_ModifyDishS1D5.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDishS1D5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDishS1D5.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDishS1D5.Name = "button_ModifyDishS1D5";
+            this.button_ModifyDishS1D5.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyDishS1D5.TabIndex = 2;
+            this.button_ModifyDishS1D5.Text = "...";
+            this.button_ModifyDishS1D5.UseVisualStyleBackColor = false;
+            this.button_ModifyDishS1D5.Visible = false;
             // 
             // combobox_S1D5Dish
             // 
@@ -1149,39 +1149,39 @@ namespace ClientDesktop
             this.combobox_S1D5Dish.Size = new System.Drawing.Size(156, 23);
             this.combobox_S1D5Dish.TabIndex = 1;
             // 
-            // tableLayoutPanel41
+            // tableLayoutPanel_S1D4Dish
             // 
-            this.tableLayoutPanel41.ColumnCount = 1;
-            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel41.Controls.Add(this.tableLayoutPanel64, 0, 1);
-            this.tableLayoutPanel41.Controls.Add(this.combobox_S1D4Dish, 0, 0);
-            this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel41.Location = new System.Drawing.Point(507, 86);
-            this.tableLayoutPanel41.Name = "tableLayoutPanel41";
-            this.tableLayoutPanel41.RowCount = 2;
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel41.Size = new System.Drawing.Size(162, 77);
-            this.tableLayoutPanel41.TabIndex = 22;
+            this.tableLayoutPanel_S1D4Dish.ColumnCount = 1;
+            this.tableLayoutPanel_S1D4Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D4Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D4Dish.Controls.Add(this.tableLayoutPanel_Btn_S1D4Dish, 0, 1);
+            this.tableLayoutPanel_S1D4Dish.Controls.Add(this.combobox_S1D4Dish, 0, 0);
+            this.tableLayoutPanel_S1D4Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D4Dish.Location = new System.Drawing.Point(507, 86);
+            this.tableLayoutPanel_S1D4Dish.Name = "tableLayoutPanel_S1D4Dish";
+            this.tableLayoutPanel_S1D4Dish.RowCount = 2;
+            this.tableLayoutPanel_S1D4Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D4Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D4Dish.Size = new System.Drawing.Size(162, 77);
+            this.tableLayoutPanel_S1D4Dish.TabIndex = 22;
             // 
-            // tableLayoutPanel64
+            // tableLayoutPanel_Btn_S1D4Dish
             // 
-            this.tableLayoutPanel64.ColumnCount = 3;
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel64.Controls.Add(this.button_AddDishS1D4, 0, 0);
-            this.tableLayoutPanel64.Controls.Add(this.button65, 1, 0);
-            this.tableLayoutPanel64.Controls.Add(this.button66, 2, 0);
-            this.tableLayoutPanel64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel64.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel64.Name = "tableLayoutPanel64";
-            this.tableLayoutPanel64.RowCount = 1;
-            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel64.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel64.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D4Dish.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D4Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D4Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D4Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D4Dish.Controls.Add(this.button_AddDishS1D4, 0, 0);
+            this.tableLayoutPanel_Btn_S1D4Dish.Controls.Add(this.button_RemoveDishS1D4, 1, 0);
+            this.tableLayoutPanel_Btn_S1D4Dish.Controls.Add(this.button_ModifyDishS1D4, 2, 0);
+            this.tableLayoutPanel_Btn_S1D4Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D4Dish.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D4Dish.Name = "tableLayoutPanel_Btn_S1D4Dish";
+            this.tableLayoutPanel_Btn_S1D4Dish.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D4Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D4Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D4Dish.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S1D4Dish.TabIndex = 2;
             // 
             // button_AddDishS1D4
             // 
@@ -1195,28 +1195,28 @@ namespace ClientDesktop
             this.button_AddDishS1D4.UseVisualStyleBackColor = false;
             this.button_AddDishS1D4.Click += new System.EventHandler(this.Button_AddDishS1D4_Click);
             // 
-            // button65
+            // button_RemoveDishS1D4
             // 
-            this.button65.BackColor = System.Drawing.Color.LightCoral;
-            this.button65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button65.Location = new System.Drawing.Point(55, 3);
-            this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(46, 27);
-            this.button65.TabIndex = 1;
-            this.button65.Text = "x";
-            this.button65.UseVisualStyleBackColor = false;
+            this.button_RemoveDishS1D4.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDishS1D4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDishS1D4.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDishS1D4.Name = "button_RemoveDishS1D4";
+            this.button_RemoveDishS1D4.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDishS1D4.TabIndex = 1;
+            this.button_RemoveDishS1D4.Text = "x";
+            this.button_RemoveDishS1D4.UseVisualStyleBackColor = false;
             // 
-            // button66
+            // button_ModifyDishS1D4
             // 
-            this.button66.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button66.Location = new System.Drawing.Point(107, 3);
-            this.button66.Name = "button66";
-            this.button66.Size = new System.Drawing.Size(46, 27);
-            this.button66.TabIndex = 2;
-            this.button66.Text = "...";
-            this.button66.UseVisualStyleBackColor = false;
-            this.button66.Visible = false;
+            this.button_ModifyDishS1D4.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDishS1D4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDishS1D4.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDishS1D4.Name = "button_ModifyDishS1D4";
+            this.button_ModifyDishS1D4.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyDishS1D4.TabIndex = 2;
+            this.button_ModifyDishS1D4.Text = "...";
+            this.button_ModifyDishS1D4.UseVisualStyleBackColor = false;
+            this.button_ModifyDishS1D4.Visible = false;
             // 
             // combobox_S1D4Dish
             // 
@@ -1227,39 +1227,39 @@ namespace ClientDesktop
             this.combobox_S1D4Dish.Size = new System.Drawing.Size(156, 23);
             this.combobox_S1D4Dish.TabIndex = 1;
             // 
-            // tableLayoutPanel40
+            // tableLayoutPanel_S1D3Dish
             // 
-            this.tableLayoutPanel40.ColumnCount = 1;
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.Controls.Add(this.tableLayoutPanel63, 0, 1);
-            this.tableLayoutPanel40.Controls.Add(this.combobox_S1D3Dish, 0, 0);
-            this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel40.Location = new System.Drawing.Point(339, 86);
-            this.tableLayoutPanel40.Name = "tableLayoutPanel40";
-            this.tableLayoutPanel40.RowCount = 2;
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(162, 77);
-            this.tableLayoutPanel40.TabIndex = 21;
+            this.tableLayoutPanel_S1D3Dish.ColumnCount = 1;
+            this.tableLayoutPanel_S1D3Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D3Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D3Dish.Controls.Add(this.tableLayoutPanel_Btn_S1D3Dish, 0, 1);
+            this.tableLayoutPanel_S1D3Dish.Controls.Add(this.combobox_S1D3Dish, 0, 0);
+            this.tableLayoutPanel_S1D3Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D3Dish.Location = new System.Drawing.Point(339, 86);
+            this.tableLayoutPanel_S1D3Dish.Name = "tableLayoutPanel_S1D3Dish";
+            this.tableLayoutPanel_S1D3Dish.RowCount = 2;
+            this.tableLayoutPanel_S1D3Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D3Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D3Dish.Size = new System.Drawing.Size(162, 77);
+            this.tableLayoutPanel_S1D3Dish.TabIndex = 21;
             // 
-            // tableLayoutPanel63
+            // tableLayoutPanel_Btn_S1D3Dish
             // 
-            this.tableLayoutPanel63.ColumnCount = 3;
-            this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel63.Controls.Add(this.button_AddDishS1D3, 0, 0);
-            this.tableLayoutPanel63.Controls.Add(this.button62, 1, 0);
-            this.tableLayoutPanel63.Controls.Add(this.button63, 2, 0);
-            this.tableLayoutPanel63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel63.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel63.Name = "tableLayoutPanel63";
-            this.tableLayoutPanel63.RowCount = 1;
-            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel63.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel63.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D3Dish.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D3Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D3Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D3Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D3Dish.Controls.Add(this.button_AddDishS1D3, 0, 0);
+            this.tableLayoutPanel_Btn_S1D3Dish.Controls.Add(this.button_RemoveDishS1D3, 1, 0);
+            this.tableLayoutPanel_Btn_S1D3Dish.Controls.Add(this.button_ModifyDishS1D3, 2, 0);
+            this.tableLayoutPanel_Btn_S1D3Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D3Dish.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D3Dish.Name = "tableLayoutPanel_Btn_S1D3Dish";
+            this.tableLayoutPanel_Btn_S1D3Dish.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D3Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D3Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D3Dish.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S1D3Dish.TabIndex = 2;
             // 
             // button_AddDishS1D3
             // 
@@ -1273,28 +1273,28 @@ namespace ClientDesktop
             this.button_AddDishS1D3.UseVisualStyleBackColor = false;
             this.button_AddDishS1D3.Click += new System.EventHandler(this.Button_AddDishS1D3_Click);
             // 
-            // button62
+            // button_RemoveDishS1D3
             // 
-            this.button62.BackColor = System.Drawing.Color.LightCoral;
-            this.button62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button62.Location = new System.Drawing.Point(55, 3);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(46, 27);
-            this.button62.TabIndex = 1;
-            this.button62.Text = "x";
-            this.button62.UseVisualStyleBackColor = false;
+            this.button_RemoveDishS1D3.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDishS1D3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDishS1D3.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDishS1D3.Name = "button_RemoveDishS1D3";
+            this.button_RemoveDishS1D3.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDishS1D3.TabIndex = 1;
+            this.button_RemoveDishS1D3.Text = "x";
+            this.button_RemoveDishS1D3.UseVisualStyleBackColor = false;
             // 
-            // button63
+            // button_ModifyDishS1D3
             // 
-            this.button63.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button63.Location = new System.Drawing.Point(107, 3);
-            this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(46, 27);
-            this.button63.TabIndex = 2;
-            this.button63.Text = "...";
-            this.button63.UseVisualStyleBackColor = false;
-            this.button63.Visible = false;
+            this.button_ModifyDishS1D3.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDishS1D3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDishS1D3.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDishS1D3.Name = "button_ModifyDishS1D3";
+            this.button_ModifyDishS1D3.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyDishS1D3.TabIndex = 2;
+            this.button_ModifyDishS1D3.Text = "...";
+            this.button_ModifyDishS1D3.UseVisualStyleBackColor = false;
+            this.button_ModifyDishS1D3.Visible = false;
             // 
             // combobox_S1D3Dish
             // 
@@ -1305,39 +1305,39 @@ namespace ClientDesktop
             this.combobox_S1D3Dish.Size = new System.Drawing.Size(156, 23);
             this.combobox_S1D3Dish.TabIndex = 1;
             // 
-            // tableLayoutPanel39
+            // tableLayoutPanel_S1D2Dish
             // 
-            this.tableLayoutPanel39.ColumnCount = 1;
-            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.Controls.Add(this.tableLayoutPanel62, 0, 1);
-            this.tableLayoutPanel39.Controls.Add(this.combobox_S1D2Dish, 0, 0);
-            this.tableLayoutPanel39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel39.Location = new System.Drawing.Point(171, 86);
-            this.tableLayoutPanel39.Name = "tableLayoutPanel39";
-            this.tableLayoutPanel39.RowCount = 2;
-            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel39.Size = new System.Drawing.Size(162, 77);
-            this.tableLayoutPanel39.TabIndex = 20;
+            this.tableLayoutPanel_S1D2Dish.ColumnCount = 1;
+            this.tableLayoutPanel_S1D2Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D2Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D2Dish.Controls.Add(this.tableLayoutPanel_Btn_S1D2Dish, 0, 1);
+            this.tableLayoutPanel_S1D2Dish.Controls.Add(this.combobox_S1D2Dish, 0, 0);
+            this.tableLayoutPanel_S1D2Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D2Dish.Location = new System.Drawing.Point(171, 86);
+            this.tableLayoutPanel_S1D2Dish.Name = "tableLayoutPanel_S1D2Dish";
+            this.tableLayoutPanel_S1D2Dish.RowCount = 2;
+            this.tableLayoutPanel_S1D2Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D2Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D2Dish.Size = new System.Drawing.Size(162, 77);
+            this.tableLayoutPanel_S1D2Dish.TabIndex = 20;
             // 
-            // tableLayoutPanel62
+            // tableLayoutPanel_Btn_S1D2Dish
             // 
-            this.tableLayoutPanel62.ColumnCount = 3;
-            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel62.Controls.Add(this.button_AddDishS1D2, 0, 0);
-            this.tableLayoutPanel62.Controls.Add(this.button59, 1, 0);
-            this.tableLayoutPanel62.Controls.Add(this.button60, 2, 0);
-            this.tableLayoutPanel62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel62.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel62.Name = "tableLayoutPanel62";
-            this.tableLayoutPanel62.RowCount = 1;
-            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel62.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel62.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D2Dish.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D2Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D2Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D2Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D2Dish.Controls.Add(this.button_AddDishS1D2, 0, 0);
+            this.tableLayoutPanel_Btn_S1D2Dish.Controls.Add(this.button_RemoveDishS1D2, 1, 0);
+            this.tableLayoutPanel_Btn_S1D2Dish.Controls.Add(this.button_ModifyDishS1D2, 2, 0);
+            this.tableLayoutPanel_Btn_S1D2Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D2Dish.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D2Dish.Name = "tableLayoutPanel_Btn_S1D2Dish";
+            this.tableLayoutPanel_Btn_S1D2Dish.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D2Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D2Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D2Dish.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S1D2Dish.TabIndex = 2;
             // 
             // button_AddDishS1D2
             // 
@@ -1351,28 +1351,28 @@ namespace ClientDesktop
             this.button_AddDishS1D2.UseVisualStyleBackColor = false;
             this.button_AddDishS1D2.Click += new System.EventHandler(this.Button_AddDishS1D2_Click);
             // 
-            // button59
+            // button_RemoveDishS1D2
             // 
-            this.button59.BackColor = System.Drawing.Color.LightCoral;
-            this.button59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button59.Location = new System.Drawing.Point(55, 3);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(46, 27);
-            this.button59.TabIndex = 1;
-            this.button59.Text = "x";
-            this.button59.UseVisualStyleBackColor = false;
+            this.button_RemoveDishS1D2.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDishS1D2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDishS1D2.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDishS1D2.Name = "button_RemoveDishS1D2";
+            this.button_RemoveDishS1D2.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDishS1D2.TabIndex = 1;
+            this.button_RemoveDishS1D2.Text = "x";
+            this.button_RemoveDishS1D2.UseVisualStyleBackColor = false;
             // 
-            // button60
+            // button_ModifyDishS1D2
             // 
-            this.button60.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button60.Location = new System.Drawing.Point(107, 3);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(46, 27);
-            this.button60.TabIndex = 2;
-            this.button60.Text = "...";
-            this.button60.UseVisualStyleBackColor = false;
-            this.button60.Visible = false;
+            this.button_ModifyDishS1D2.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDishS1D2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDishS1D2.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDishS1D2.Name = "button_ModifyDishS1D2";
+            this.button_ModifyDishS1D2.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyDishS1D2.TabIndex = 2;
+            this.button_ModifyDishS1D2.Text = "...";
+            this.button_ModifyDishS1D2.UseVisualStyleBackColor = false;
+            this.button_ModifyDishS1D2.Visible = false;
             // 
             // combobox_S1D2Dish
             // 
@@ -1383,39 +1383,39 @@ namespace ClientDesktop
             this.combobox_S1D2Dish.Size = new System.Drawing.Size(156, 23);
             this.combobox_S1D2Dish.TabIndex = 1;
             // 
-            // tableLayoutPanel38
+            // tableLayoutPanel_S1D1Dish
             // 
-            this.tableLayoutPanel38.ColumnCount = 1;
-            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.Controls.Add(this.tableLayoutPanel61, 0, 1);
-            this.tableLayoutPanel38.Controls.Add(this.combobox_S1D1Dish, 0, 0);
-            this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel38.Location = new System.Drawing.Point(3, 86);
-            this.tableLayoutPanel38.Name = "tableLayoutPanel38";
-            this.tableLayoutPanel38.RowCount = 2;
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(162, 77);
-            this.tableLayoutPanel38.TabIndex = 19;
+            this.tableLayoutPanel_S1D1Dish.ColumnCount = 1;
+            this.tableLayoutPanel_S1D1Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D1Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D1Dish.Controls.Add(this.tableLayoutPanel_Btn_S1D1Dish, 0, 1);
+            this.tableLayoutPanel_S1D1Dish.Controls.Add(this.combobox_S1D1Dish, 0, 0);
+            this.tableLayoutPanel_S1D1Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D1Dish.Location = new System.Drawing.Point(3, 86);
+            this.tableLayoutPanel_S1D1Dish.Name = "tableLayoutPanel_S1D1Dish";
+            this.tableLayoutPanel_S1D1Dish.RowCount = 2;
+            this.tableLayoutPanel_S1D1Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D1Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D1Dish.Size = new System.Drawing.Size(162, 77);
+            this.tableLayoutPanel_S1D1Dish.TabIndex = 19;
             // 
-            // tableLayoutPanel61
+            // tableLayoutPanel_Btn_S1D1Dish
             // 
-            this.tableLayoutPanel61.ColumnCount = 3;
-            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel61.Controls.Add(this.button_AddDishS1D1, 0, 0);
-            this.tableLayoutPanel61.Controls.Add(this.button56, 1, 0);
-            this.tableLayoutPanel61.Controls.Add(this.button57, 2, 0);
-            this.tableLayoutPanel61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel61.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel61.Name = "tableLayoutPanel61";
-            this.tableLayoutPanel61.RowCount = 1;
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel61.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel61.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D1Dish.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D1Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D1Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D1Dish.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D1Dish.Controls.Add(this.button_AddDishS1D1, 0, 0);
+            this.tableLayoutPanel_Btn_S1D1Dish.Controls.Add(this.button_RemoveDishS1D1, 1, 0);
+            this.tableLayoutPanel_Btn_S1D1Dish.Controls.Add(this.button_ModifyDishS1D1, 2, 0);
+            this.tableLayoutPanel_Btn_S1D1Dish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D1Dish.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D1Dish.Name = "tableLayoutPanel_Btn_S1D1Dish";
+            this.tableLayoutPanel_Btn_S1D1Dish.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D1Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D1Dish.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D1Dish.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S1D1Dish.TabIndex = 2;
             // 
             // button_AddDishS1D1
             // 
@@ -1429,28 +1429,28 @@ namespace ClientDesktop
             this.button_AddDishS1D1.UseVisualStyleBackColor = false;
             this.button_AddDishS1D1.Click += new System.EventHandler(this.Button_AddDishS1D1_Click);
             // 
-            // button56
+            // button_RemoveDishS1D1
             // 
-            this.button56.BackColor = System.Drawing.Color.LightCoral;
-            this.button56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button56.Location = new System.Drawing.Point(55, 3);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(46, 27);
-            this.button56.TabIndex = 1;
-            this.button56.Text = "x";
-            this.button56.UseVisualStyleBackColor = false;
+            this.button_RemoveDishS1D1.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDishS1D1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDishS1D1.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDishS1D1.Name = "button_RemoveDishS1D1";
+            this.button_RemoveDishS1D1.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDishS1D1.TabIndex = 1;
+            this.button_RemoveDishS1D1.Text = "x";
+            this.button_RemoveDishS1D1.UseVisualStyleBackColor = false;
             // 
-            // button57
+            // button_ModifyDishS1D1
             // 
-            this.button57.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button57.Location = new System.Drawing.Point(107, 3);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(46, 27);
-            this.button57.TabIndex = 2;
-            this.button57.Text = "...";
-            this.button57.UseVisualStyleBackColor = false;
-            this.button57.Visible = false;
+            this.button_ModifyDishS1D1.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDishS1D1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDishS1D1.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDishS1D1.Name = "button_ModifyDishS1D1";
+            this.button_ModifyDishS1D1.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyDishS1D1.TabIndex = 2;
+            this.button_ModifyDishS1D1.Text = "...";
+            this.button_ModifyDishS1D1.UseVisualStyleBackColor = false;
+            this.button_ModifyDishS1D1.Visible = false;
             // 
             // combobox_S1D1Dish
             // 
@@ -1461,74 +1461,74 @@ namespace ClientDesktop
             this.combobox_S1D1Dish.Size = new System.Drawing.Size(156, 23);
             this.combobox_S1D1Dish.TabIndex = 1;
             // 
-            // tableLayoutPanel37
+            // tableLayoutPanel_S1D7Starter
             // 
-            this.tableLayoutPanel37.ColumnCount = 1;
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.Controls.Add(this.tableLayoutPanel60, 0, 1);
-            this.tableLayoutPanel37.Controls.Add(this.combobox_S1D7Starter, 0, 0);
-            this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel37.Location = new System.Drawing.Point(1011, 3);
-            this.tableLayoutPanel37.Name = "tableLayoutPanel37";
-            this.tableLayoutPanel37.RowCount = 2;
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(163, 77);
-            this.tableLayoutPanel37.TabIndex = 18;
+            this.tableLayoutPanel_S1D7Starter.ColumnCount = 1;
+            this.tableLayoutPanel_S1D7Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D7Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D7Starter.Controls.Add(this.tableLayoutPanel_Btn_S1D7Starter, 0, 1);
+            this.tableLayoutPanel_S1D7Starter.Controls.Add(this.combobox_S1D7Starter, 0, 0);
+            this.tableLayoutPanel_S1D7Starter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D7Starter.Location = new System.Drawing.Point(1011, 3);
+            this.tableLayoutPanel_S1D7Starter.Name = "tableLayoutPanel_S1D7Starter";
+            this.tableLayoutPanel_S1D7Starter.RowCount = 2;
+            this.tableLayoutPanel_S1D7Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D7Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D7Starter.Size = new System.Drawing.Size(163, 77);
+            this.tableLayoutPanel_S1D7Starter.TabIndex = 18;
             // 
-            // tableLayoutPanel60
+            // tableLayoutPanel_Btn_S1D7Starter
             // 
-            this.tableLayoutPanel60.ColumnCount = 3;
-            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel60.Controls.Add(this.button_AddS1D7, 0, 0);
-            this.tableLayoutPanel60.Controls.Add(this.button53, 1, 0);
-            this.tableLayoutPanel60.Controls.Add(this.button54, 2, 0);
-            this.tableLayoutPanel60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel60.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel60.Name = "tableLayoutPanel60";
-            this.tableLayoutPanel60.RowCount = 1;
-            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel60.Size = new System.Drawing.Size(157, 33);
-            this.tableLayoutPanel60.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D7Starter.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D7Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D7Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D7Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D7Starter.Controls.Add(this.button_AddStarterS1D7, 0, 0);
+            this.tableLayoutPanel_Btn_S1D7Starter.Controls.Add(this.button_RemoveStarterS1D7, 1, 0);
+            this.tableLayoutPanel_Btn_S1D7Starter.Controls.Add(this.button_ModifyStarterS1D7, 2, 0);
+            this.tableLayoutPanel_Btn_S1D7Starter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D7Starter.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D7Starter.Name = "tableLayoutPanel_Btn_S1D7Starter";
+            this.tableLayoutPanel_Btn_S1D7Starter.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D7Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D7Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D7Starter.Size = new System.Drawing.Size(157, 33);
+            this.tableLayoutPanel_Btn_S1D7Starter.TabIndex = 2;
             // 
-            // button_AddS1D7
+            // button_AddStarterS1D7
             // 
-            this.button_AddS1D7.BackColor = System.Drawing.Color.PaleGreen;
-            this.button_AddS1D7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_AddS1D7.Location = new System.Drawing.Point(3, 3);
-            this.button_AddS1D7.Name = "button_AddS1D7";
-            this.button_AddS1D7.Size = new System.Drawing.Size(46, 27);
-            this.button_AddS1D7.TabIndex = 0;
-            this.button_AddS1D7.Text = "+";
-            this.button_AddS1D7.UseVisualStyleBackColor = false;
-            this.button_AddS1D7.Click += new System.EventHandler(this.Button_AddS1D7_Click);
+            this.button_AddStarterS1D7.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS1D7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS1D7.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS1D7.Name = "button_AddStarterS1D7";
+            this.button_AddStarterS1D7.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS1D7.TabIndex = 0;
+            this.button_AddStarterS1D7.Text = "+";
+            this.button_AddStarterS1D7.UseVisualStyleBackColor = false;
+            this.button_AddStarterS1D7.Click += new System.EventHandler(this.Button_AddStarterS1D7_Click);
             // 
-            // button53
+            // button_RemoveStarterS1D7
             // 
-            this.button53.BackColor = System.Drawing.Color.LightCoral;
-            this.button53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button53.Location = new System.Drawing.Point(55, 3);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(46, 27);
-            this.button53.TabIndex = 1;
-            this.button53.Text = "x";
-            this.button53.UseVisualStyleBackColor = false;
+            this.button_RemoveStarterS1D7.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveStarterS1D7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveStarterS1D7.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveStarterS1D7.Name = "button_RemoveStarterS1D7";
+            this.button_RemoveStarterS1D7.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveStarterS1D7.TabIndex = 1;
+            this.button_RemoveStarterS1D7.Text = "x";
+            this.button_RemoveStarterS1D7.UseVisualStyleBackColor = false;
             // 
-            // button54
+            // button_ModifyStarterS1D7
             // 
-            this.button54.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button54.Location = new System.Drawing.Point(107, 3);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(47, 27);
-            this.button54.TabIndex = 2;
-            this.button54.Text = "...";
-            this.button54.UseVisualStyleBackColor = false;
-            this.button54.Visible = false;
+            this.button_ModifyStarterS1D7.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyStarterS1D7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyStarterS1D7.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyStarterS1D7.Name = "button_ModifyStarterS1D7";
+            this.button_ModifyStarterS1D7.Size = new System.Drawing.Size(47, 27);
+            this.button_ModifyStarterS1D7.TabIndex = 2;
+            this.button_ModifyStarterS1D7.Text = "...";
+            this.button_ModifyStarterS1D7.UseVisualStyleBackColor = false;
+            this.button_ModifyStarterS1D7.Visible = false;
             // 
             // combobox_S1D7Starter
             // 
@@ -1539,74 +1539,74 @@ namespace ClientDesktop
             this.combobox_S1D7Starter.Size = new System.Drawing.Size(157, 23);
             this.combobox_S1D7Starter.TabIndex = 1;
             // 
-            // tableLayoutPanel36
+            // tableLayoutPanel_S1D6Starter
             // 
-            this.tableLayoutPanel36.ColumnCount = 1;
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.Controls.Add(this.tableLayoutPanel59, 0, 1);
-            this.tableLayoutPanel36.Controls.Add(this.combobox_S1D6Starter, 0, 0);
-            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(843, 3);
-            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
-            this.tableLayoutPanel36.RowCount = 2;
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(162, 77);
-            this.tableLayoutPanel36.TabIndex = 17;
+            this.tableLayoutPanel_S1D6Starter.ColumnCount = 1;
+            this.tableLayoutPanel_S1D6Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D6Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D6Starter.Controls.Add(this.tableLayoutPanel_Btn_S1D6Starter, 0, 1);
+            this.tableLayoutPanel_S1D6Starter.Controls.Add(this.combobox_S1D6Starter, 0, 0);
+            this.tableLayoutPanel_S1D6Starter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S1D6Starter.Location = new System.Drawing.Point(843, 3);
+            this.tableLayoutPanel_S1D6Starter.Name = "tableLayoutPanel_S1D6Starter";
+            this.tableLayoutPanel_S1D6Starter.RowCount = 2;
+            this.tableLayoutPanel_S1D6Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D6Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S1D6Starter.Size = new System.Drawing.Size(162, 77);
+            this.tableLayoutPanel_S1D6Starter.TabIndex = 17;
             // 
-            // tableLayoutPanel59
+            // tableLayoutPanel_Btn_S1D6Starter
             // 
-            this.tableLayoutPanel59.ColumnCount = 3;
-            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel59.Controls.Add(this.button_AddS1D6, 0, 0);
-            this.tableLayoutPanel59.Controls.Add(this.button50, 1, 0);
-            this.tableLayoutPanel59.Controls.Add(this.button51, 2, 0);
-            this.tableLayoutPanel59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel59.Location = new System.Drawing.Point(3, 41);
-            this.tableLayoutPanel59.Name = "tableLayoutPanel59";
-            this.tableLayoutPanel59.RowCount = 1;
-            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel59.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel59.TabIndex = 2;
+            this.tableLayoutPanel_Btn_S1D6Starter.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S1D6Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D6Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D6Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S1D6Starter.Controls.Add(this.button_AddStarterS1D6, 0, 0);
+            this.tableLayoutPanel_Btn_S1D6Starter.Controls.Add(this.button_RemoveStarterS1D6, 1, 0);
+            this.tableLayoutPanel_Btn_S1D6Starter.Controls.Add(this.button_ModifyStarterS1D6, 2, 0);
+            this.tableLayoutPanel_Btn_S1D6Starter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S1D6Starter.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel_Btn_S1D6Starter.Name = "tableLayoutPanel_Btn_S1D6Starter";
+            this.tableLayoutPanel_Btn_S1D6Starter.RowCount = 1;
+            this.tableLayoutPanel_Btn_S1D6Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S1D6Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S1D6Starter.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S1D6Starter.TabIndex = 2;
             // 
-            // button_AddS1D6
+            // button_AddStarterS1D6
             // 
-            this.button_AddS1D6.BackColor = System.Drawing.Color.PaleGreen;
-            this.button_AddS1D6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_AddS1D6.Location = new System.Drawing.Point(3, 3);
-            this.button_AddS1D6.Name = "button_AddS1D6";
-            this.button_AddS1D6.Size = new System.Drawing.Size(46, 27);
-            this.button_AddS1D6.TabIndex = 0;
-            this.button_AddS1D6.Text = "+";
-            this.button_AddS1D6.UseVisualStyleBackColor = false;
-            this.button_AddS1D6.Click += new System.EventHandler(this.Button_AddS1D6_Click);
+            this.button_AddStarterS1D6.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS1D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS1D6.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS1D6.Name = "button_AddStarterS1D6";
+            this.button_AddStarterS1D6.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS1D6.TabIndex = 0;
+            this.button_AddStarterS1D6.Text = "+";
+            this.button_AddStarterS1D6.UseVisualStyleBackColor = false;
+            this.button_AddStarterS1D6.Click += new System.EventHandler(this.Button_AddStarterS1D6_Click);
             // 
-            // button50
+            // button_RemoveStarterS1D6
             // 
-            this.button50.BackColor = System.Drawing.Color.LightCoral;
-            this.button50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button50.Location = new System.Drawing.Point(55, 3);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(46, 27);
-            this.button50.TabIndex = 1;
-            this.button50.Text = "x";
-            this.button50.UseVisualStyleBackColor = false;
+            this.button_RemoveStarterS1D6.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveStarterS1D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveStarterS1D6.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveStarterS1D6.Name = "button_RemoveStarterS1D6";
+            this.button_RemoveStarterS1D6.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveStarterS1D6.TabIndex = 1;
+            this.button_RemoveStarterS1D6.Text = "x";
+            this.button_RemoveStarterS1D6.UseVisualStyleBackColor = false;
             // 
-            // button51
+            // button_ModifyStarterS1D6
             // 
-            this.button51.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button51.Location = new System.Drawing.Point(107, 3);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(46, 27);
-            this.button51.TabIndex = 2;
-            this.button51.Text = "...";
-            this.button51.UseVisualStyleBackColor = false;
-            this.button51.Visible = false;
+            this.button_ModifyStarterS1D6.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyStarterS1D6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyStarterS1D6.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyStarterS1D6.Name = "button_ModifyStarterS1D6";
+            this.button_ModifyStarterS1D6.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyStarterS1D6.TabIndex = 2;
+            this.button_ModifyStarterS1D6.Text = "...";
+            this.button_ModifyStarterS1D6.UseVisualStyleBackColor = false;
+            this.button_ModifyStarterS1D6.Visible = false;
             // 
             // combobox_S1D6Starter
             // 
@@ -4238,17 +4238,19 @@ namespace ClientDesktop
             // pictureBox_Loading
             // 
             this.pictureBox_Loading.Image = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
+            this.pictureBox_Loading.InitialImage = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
             this.pictureBox_Loading.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Loading.Name = "pictureBox_Loading";
-            this.pictureBox_Loading.Size = new System.Drawing.Size(298, 126);
+            this.pictureBox_Loading.Size = new System.Drawing.Size(123, 83);
             this.pictureBox_Loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Loading.TabIndex = 1;
             this.pictureBox_Loading.TabStop = false;
+            this.pictureBox_Loading.UseWaitCursor = true;
             // 
             // timer_Loading
             // 
             this.timer_Loading.Enabled = true;
-            this.timer_Loading.Interval = 4000;
+            this.timer_Loading.Interval = 8000;
             this.timer_Loading.Tick += new System.EventHandler(this.Timer_Loading_Tick);
             // 
             // MainForm
@@ -4263,41 +4265,41 @@ namespace ClientDesktop
             this.Text = "FoodBook Desktop";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tableLayoutPanel_Main.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel_Header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
             this.tableLayoutPanel_Title.ResumeLayout(false);
             this.tableLayoutPanel_Title.PerformLayout();
             this.tableLayoutPanel_btnMenuHeader.ResumeLayout(false);
             this.tableLayoutPanel_MainBody.ResumeLayout(false);
-            this.tableLayoutPanel_Row2.ResumeLayout(false);
-            this.tableLayoutPanel_Row2.PerformLayout();
+            this.tableLayoutPanel_Service1.ResumeLayout(false);
+            this.tableLayoutPanel_Service1.PerformLayout();
             this.tableLayoutPanel_S1Formule.ResumeLayout(false);
             this.tableLayoutPanel_S1Formule.PerformLayout();
-            this.tableLayoutPanel_Row3.ResumeLayout(false);
-            this.tableLayoutPanel_Row3.PerformLayout();
+            this.tableLayoutPanel_Service2.ResumeLayout(false);
+            this.tableLayoutPanel_Service2.PerformLayout();
             this.tableLayoutPanel_S2Formule.ResumeLayout(false);
             this.tableLayoutPanel_S2Formule.PerformLayout();
             this.tableLayoutPanel_DaysHeader.ResumeLayout(false);
             this.tableLayoutPanel_DaysHeader.PerformLayout();
             this.tableLayoutPanel_S1Body.ResumeLayout(false);
-            this.tableLayoutPanel44.ResumeLayout(false);
-            this.tableLayoutPanel67.ResumeLayout(false);
-            this.tableLayoutPanel43.ResumeLayout(false);
-            this.tableLayoutPanel66.ResumeLayout(false);
-            this.tableLayoutPanel42.ResumeLayout(false);
-            this.tableLayoutPanel65.ResumeLayout(false);
-            this.tableLayoutPanel41.ResumeLayout(false);
-            this.tableLayoutPanel64.ResumeLayout(false);
-            this.tableLayoutPanel40.ResumeLayout(false);
-            this.tableLayoutPanel63.ResumeLayout(false);
-            this.tableLayoutPanel39.ResumeLayout(false);
-            this.tableLayoutPanel62.ResumeLayout(false);
-            this.tableLayoutPanel38.ResumeLayout(false);
-            this.tableLayoutPanel61.ResumeLayout(false);
-            this.tableLayoutPanel37.ResumeLayout(false);
-            this.tableLayoutPanel60.ResumeLayout(false);
-            this.tableLayoutPanel36.ResumeLayout(false);
-            this.tableLayoutPanel59.ResumeLayout(false);
+            this.tableLayoutPanel_S1D7Dish.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D7Dish.ResumeLayout(false);
+            this.tableLayoutPanel_S1D6Dish.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D6Dish.ResumeLayout(false);
+            this.tableLayoutPanel_S1D5Dish.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D5Dish.ResumeLayout(false);
+            this.tableLayoutPanel_S1D4Dish.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D4Dish.ResumeLayout(false);
+            this.tableLayoutPanel_S1D3Dish.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D3Dish.ResumeLayout(false);
+            this.tableLayoutPanel_S1D2Dish.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D2Dish.ResumeLayout(false);
+            this.tableLayoutPanel_S1D1Dish.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D1Dish.ResumeLayout(false);
+            this.tableLayoutPanel_S1D7Starter.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D7Starter.ResumeLayout(false);
+            this.tableLayoutPanel_S1D6Starter.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S1D6Starter.ResumeLayout(false);
             this.tableLayoutPanel35.ResumeLayout(false);
             this.tableLayoutPanel58.ResumeLayout(false);
             this.tableLayoutPanel34.ResumeLayout(false);
@@ -4371,11 +4373,10 @@ namespace ClientDesktop
         }
 
         #endregion
-        //private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_MainForm;
         private System.Windows.Forms.PictureBox pictureBox_Loading;
         private System.Windows.Forms.Timer timer_Loading;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Main;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Header;
         private System.Windows.Forms.PictureBox pictureBox_Logo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Title;
         private System.Windows.Forms.Label label_WeekNumber;
@@ -4387,9 +4388,9 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button_createDish;
         private System.Windows.Forms.Button button_status;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_MainBody;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Row2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Service1;
         private System.Windows.Forms.Label label_service1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Row3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Service2;
         private System.Windows.Forms.Label label_service2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1Formule;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S2Formule;
@@ -4404,9 +4405,6 @@ namespace ClientDesktop
         private System.Windows.Forms.Label label_day6;
         private System.Windows.Forms.Label label_day7;
         private System.Windows.Forms.Label label_day4;
-        //private System.Windows.Forms.Label label3;
-        //private System.Windows.Forms.Label _day2;
-        //private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_day1;
         private System.Windows.Forms.Label label_day2;
         private System.Windows.Forms.Label label_day3;
@@ -4439,7 +4437,6 @@ namespace ClientDesktop
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.ComboBox combobox_S1D1Dessert;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        //private System.Windows.Forms.Button button_AddS1D1Desset;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button_ModifyS1D1Dessert;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -4467,7 +4464,6 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        //private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Button button_AddS2D2Dessert;
         private System.Windows.Forms.Button button8;
@@ -4478,59 +4474,59 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button_AddStarterS2D1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel44;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel67;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D7Dish;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D7Dish;
         private System.Windows.Forms.Button button_AddDishS1D7;
-        private System.Windows.Forms.Button button74;
-        private System.Windows.Forms.Button button75;
+        private System.Windows.Forms.Button button_RemoveDishS1D7;
+        private System.Windows.Forms.Button button_ModifyDishS1D7;
         private System.Windows.Forms.ComboBox combobox_S1D7Dish;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel43;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel66;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D6Dish;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D6Dish;
         private System.Windows.Forms.Button button_AddDishS1D6;
-        private System.Windows.Forms.Button button71;
-        private System.Windows.Forms.Button button72;
+        private System.Windows.Forms.Button button_RemoveDishS1D6;
+        private System.Windows.Forms.Button button_ModifyDishS1D6;
         private System.Windows.Forms.ComboBox combobox_S1D6Dish;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel42;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel65;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D5Dish;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D5Dish;
         private System.Windows.Forms.Button button_AddDishS1D5;
-        private System.Windows.Forms.Button button68;
-        private System.Windows.Forms.Button button69;
+        private System.Windows.Forms.Button button_RemoveDishS1D5;
+        private System.Windows.Forms.Button button_ModifyDishS1D5;
         private System.Windows.Forms.ComboBox combobox_S1D5Dish;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel41;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel64;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D4Dish;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D4Dish;
         private System.Windows.Forms.Button button_AddDishS1D4;
-        private System.Windows.Forms.Button button65;
-        private System.Windows.Forms.Button button66;
+        private System.Windows.Forms.Button button_RemoveDishS1D4;
+        private System.Windows.Forms.Button button_ModifyDishS1D4;
         private System.Windows.Forms.ComboBox combobox_S1D4Dish;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel40;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel63;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D3Dish;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D3Dish;
         private System.Windows.Forms.Button button_AddDishS1D3;
-        private System.Windows.Forms.Button button62;
-        private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.Button button_RemoveDishS1D3;
+        private System.Windows.Forms.Button button_ModifyDishS1D3;
         private System.Windows.Forms.ComboBox combobox_S1D3Dish;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel39;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel62;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D2Dish;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D2Dish;
         private System.Windows.Forms.Button button_AddDishS1D2;
-        private System.Windows.Forms.Button button59;
-        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Button button_RemoveDishS1D2;
+        private System.Windows.Forms.Button button_ModifyDishS1D2;
         private System.Windows.Forms.ComboBox combobox_S1D2Dish;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel38;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel61;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D1Dish;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D1Dish;
         private System.Windows.Forms.Button button_AddDishS1D1;
-        private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button button_RemoveDishS1D1;
+        private System.Windows.Forms.Button button_ModifyDishS1D1;
         private System.Windows.Forms.ComboBox combobox_S1D1Dish;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel37;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel60;
-        private System.Windows.Forms.Button button_AddS1D7;
-        private System.Windows.Forms.Button button53;
-        private System.Windows.Forms.Button button54;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D7Starter;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D7Starter;
+        private System.Windows.Forms.Button button_AddStarterS1D7;
+        private System.Windows.Forms.Button button_RemoveStarterS1D7;
+        private System.Windows.Forms.Button button_ModifyStarterS1D7;
         private System.Windows.Forms.ComboBox combobox_S1D7Starter;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel36;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel59;
-        private System.Windows.Forms.Button button_AddS1D6;
-        private System.Windows.Forms.Button button50;
-        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_S1D6Starter;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Btn_S1D6Starter;
+        private System.Windows.Forms.Button button_AddStarterS1D6;
+        private System.Windows.Forms.Button button_RemoveStarterS1D6;
+        private System.Windows.Forms.Button button_ModifyStarterS1D6;
         private System.Windows.Forms.ComboBox combobox_S1D6Starter;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel35;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel58;
@@ -4551,7 +4547,6 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.ComboBox combobox_S1D3Starter;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        //private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
         private System.Windows.Forms.Button button_AddS1D3Dessert;
         private System.Windows.Forms.Button button_DellS1D3Dessert;
@@ -4582,7 +4577,6 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox combobox_S2D6Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel52;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel78;
-        //private System.Windows.Forms.Button button106;
         private System.Windows.Forms.Button button107;
         private System.Windows.Forms.Button button108;
         private System.Windows.Forms.ComboBox combobox_S2D5Dish;
@@ -4594,16 +4588,13 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox combobox_S2D4Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel50;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel76;
-        //private System.Windows.Forms.Button button100;
         private System.Windows.Forms.Button button101;
         private System.Windows.Forms.Button button102;
         private System.Windows.Forms.ComboBox combobox_S2D3Dish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel49;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel75;
-        //private System.Windows.Forms.Button button97;
         private System.Windows.Forms.Button button98;
         private System.Windows.Forms.Button button99;
-        //private System.Windows.Forms.ComboBox combobox_S2DDish;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel48;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel74;
         private System.Windows.Forms.Button button_AddDishS2D1;
@@ -4665,11 +4656,9 @@ namespace ClientDesktop
         private System.Windows.Forms.Button button78;
         private System.Windows.Forms.ComboBox combobox_S2D2Starter;
         private System.Windows.Forms.Button button_AddS1D1Dessert;
-        //private System.Windows.Forms.Button bu;
         private System.Windows.Forms.Button button_AddDishS2D2;
         private System.Windows.Forms.Button button_AddDishS2D3;
         private System.Windows.Forms.Button button_AddDishS2D5;
-        //private System.Windows.Forms.Button D2;
         private System.Windows.Forms.ComboBox combobox_S1D3Dessert;
         private System.Windows.Forms.ComboBox combobox_S2D2Dish;
         private System.Windows.Forms.ComboBox combobox_S2D2Dessert;
