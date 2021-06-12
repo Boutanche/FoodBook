@@ -2,12 +2,6 @@
 using BO.Entity;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -147,7 +141,7 @@ namespace ClientDesktop
                     listOfIngredient.Quantity = Int32.Parse(
                         dataGridView_DishComposedBy.Rows[i].Cells["quantity"].Value.ToString());
                 }
-                //Hack : Innutile : Réellement ? 
+                //HACK : Innutile : Réellement ? 
                 //Task<ListOfIngredient> listOfIngredientTask = _restaurantService.CreateListOfIngredient(listOfIngredient);
 
             }

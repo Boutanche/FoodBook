@@ -158,7 +158,6 @@ namespace ClientDesktop
         private System.Windows.Forms.DateTimePicker dateTimePicker_ConvertWeekAndDayInDate;
         private System.Windows.Forms.Label label_Title;
         private System.Windows.Forms.Label labelService;
-
         private System.Windows.Forms.DataGridView dataGridViewDishes;
         private System.Windows.Forms.Label labelWeekNumber;
     }
