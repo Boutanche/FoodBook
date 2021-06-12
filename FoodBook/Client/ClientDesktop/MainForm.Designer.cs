@@ -4372,6 +4372,8 @@ namespace ClientDesktop
 
         #endregion
         //private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_MainForm;
+        private System.Windows.Forms.PictureBox pictureBox_Loading;
+        private System.Windows.Forms.Timer timer_Loading;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_Main;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox_Logo;
@@ -4671,8 +4673,7 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox combobox_S1D3Dessert;
         private System.Windows.Forms.ComboBox combobox_S2D2Dish;
         private System.Windows.Forms.ComboBox combobox_S2D2Dessert;
-        private System.Windows.Forms.PictureBox pictureBox_Loading;
-        private System.Windows.Forms.Timer timer_Loading;
+
     }
 }
 
