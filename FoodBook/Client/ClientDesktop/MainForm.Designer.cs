@@ -4237,7 +4237,7 @@ namespace ClientDesktop
             // 
             // pictureBox_Loading
             // 
-            this.pictureBox_Loading.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Loading.Image")));
+            this.pictureBox_Loading.Image = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
             this.pictureBox_Loading.Location = new System.Drawing.Point(0, 0);
             this.pictureBox_Loading.Name = "pictureBox_Loading";
             this.pictureBox_Loading.Size = new System.Drawing.Size(298, 126);
