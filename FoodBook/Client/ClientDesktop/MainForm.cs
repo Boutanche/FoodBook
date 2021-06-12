@@ -69,6 +69,26 @@ namespace ClientDesktop
             dishSelectorForm.Show();
         }
 
+        // But pédagogique : un test sur une loading form
+        // FIXME : Problême de vitesse de l'annimation du gif en exécution.
+        // TODO : Dock the picture box pour qu'elle prenne toute la mainForm.
+        // HACK : Un timer, ce n'est pas la même chose qu'on évenement sur le chargement... 
+        // Ne pas le faire pendant le développement, c'est chiant !
+
+        private void Timer_Loading_Tick(object sender, EventArgs e)
+        {
+            timer_Loading.Stop();
+            pictureBox_Loading.Dispose();
+        }
+
+        //Il y a peut-être une erreur ici :
+        //Vérifier qu'il n'y a pas une distinction du style : FormClosed() and FormClosing()
+        //Sur le chargement.
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            timer_Loading.Start();
+        }
+
         //Attention : Dans cette page il y a plus de 130 buttons : 
         //Pour le moment ils sont classés :
         /**

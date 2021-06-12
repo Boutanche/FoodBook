@@ -29,6 +29,7 @@ namespace ClientDesktop
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tableLayoutPanel_Main = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -317,6 +318,8 @@ namespace ClientDesktop
             this.button77 = new System.Windows.Forms.Button();
             this.button78 = new System.Windows.Forms.Button();
             this.combobox_S2D2Starter = new System.Windows.Forms.ComboBox();
+            this.pictureBox_Loading = new System.Windows.Forms.PictureBox();
+            this.timer_Loading = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel_Main.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
@@ -414,6 +417,7 @@ namespace ClientDesktop
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
             this.tableLayoutPanel68.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Loading)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel_Main
@@ -4231,15 +4235,33 @@ namespace ClientDesktop
             this.combobox_S2D2Starter.Size = new System.Drawing.Size(156, 23);
             this.combobox_S2D2Starter.TabIndex = 1;
             // 
+            // pictureBox_Loading
+            // 
+            this.pictureBox_Loading.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Loading.Image")));
+            this.pictureBox_Loading.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Loading.Name = "pictureBox_Loading";
+            this.pictureBox_Loading.Size = new System.Drawing.Size(298, 126);
+            this.pictureBox_Loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Loading.TabIndex = 1;
+            this.pictureBox_Loading.TabStop = false;
+            // 
+            // timer_Loading
+            // 
+            this.timer_Loading.Enabled = true;
+            this.timer_Loading.Interval = 4000;
+            this.timer_Loading.Tick += new System.EventHandler(this.Timer_Loading_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1299, 641);
+            this.Controls.Add(this.pictureBox_Loading);
             this.Controls.Add(this.tableLayoutPanel_Main);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "FoodBook Desktop";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.tableLayoutPanel_Main.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
@@ -4343,6 +4365,7 @@ namespace ClientDesktop
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel17.ResumeLayout(false);
             this.tableLayoutPanel68.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Loading)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4648,6 +4671,8 @@ namespace ClientDesktop
         private System.Windows.Forms.ComboBox combobox_S1D3Dessert;
         private System.Windows.Forms.ComboBox combobox_S2D2Dish;
         private System.Windows.Forms.ComboBox combobox_S2D2Dessert;
+        private System.Windows.Forms.PictureBox pictureBox_Loading;
+        private System.Windows.Forms.Timer timer_Loading;
     }
 }
 
