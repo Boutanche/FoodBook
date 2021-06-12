@@ -68,6 +68,28 @@ namespace ClientDesktop
             dishSelectorForm.localType = typeNumber;
             dishSelectorForm.Show();
         }
+
+        //Attention : Dans cette page il y a plus de 130 buttons : 
+        //Pour le moment ils sont classés :
+        /**
+         * ****************
+         * All Header Button
+         * All Add Button
+         * * Starter
+         * ** S1
+         * ** S2
+         * * Dish
+         * ** S1
+         * ** S2
+         * * Dessert
+         * ** S1
+         * ** S2
+         // TODO : Le reste des buttons sur la MainForm();
+         * All Remove Button
+         * All Modify Button
+         **/
+        //Il faudrait réfléchir à un moyen d'automatiser et simplifier la création et les appels.
+
         #region Header Button
         /// <summary>
         /// ouverture du menu créer un plat
