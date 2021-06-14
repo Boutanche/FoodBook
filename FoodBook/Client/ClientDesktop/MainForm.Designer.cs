@@ -192,6 +192,24 @@ namespace ClientDesktop
             this.button_ModifyStarterS1D2 = new System.Windows.Forms.Button();
             this.combobox_S1D2Starter = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel_S2Body = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_S2D2Starter = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S2D2Starter = new System.Windows.Forms.TableLayoutPanel();
+            this.button_AddStarterS2D2 = new System.Windows.Forms.Button();
+            this.button_RemoveStarterS2D2 = new System.Windows.Forms.Button();
+            this.button_ModifyStarterS2D2 = new System.Windows.Forms.Button();
+            this.comboBox_S2D2Starter = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel_S2D1Starter = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S2D1Starter = new System.Windows.Forms.TableLayoutPanel();
+            this.button_AddSarterS2D1 = new System.Windows.Forms.Button();
+            this.button_RemoveStarterS2D1 = new System.Windows.Forms.Button();
+            this.button_ModifyStarterS2D1 = new System.Windows.Forms.Button();
+            this.comboBox_S2D1Starter = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel_S2D5Dessert = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_Btn_S2D5Dessert = new System.Windows.Forms.TableLayoutPanel();
+            this.button_AddDessertS2D5 = new System.Windows.Forms.Button();
+            this.button_RemoveDessertS2D5 = new System.Windows.Forms.Button();
+            this.button_ModifyDessertS2D5 = new System.Windows.Forms.Button();
+            this.comboBox_S2D5Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel_S2D7Dish = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel_Btn_S2D7Dish = new System.Windows.Forms.TableLayoutPanel();
             this.button_AddDishS2D7 = new System.Windows.Forms.Button();
@@ -302,12 +320,6 @@ namespace ClientDesktop
             this.combobox_S2D3Dessert = new System.Windows.Forms.ComboBox();
             this.pictureBox_Loading = new System.Windows.Forms.PictureBox();
             this.timer_Loading = new System.Windows.Forms.Timer(this.components);
-            this.tableLayoutPanel_S2D5Dessert = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel_Btn_S2D5Dessert = new System.Windows.Forms.TableLayoutPanel();
-            this.button_AddDessertS2D5 = new System.Windows.Forms.Button();
-            this.button_RemoveDessertS2D5 = new System.Windows.Forms.Button();
-            this.button_ModifyDessertS2D5 = new System.Windows.Forms.Button();
-            this.comboBox_S2D5Dessert = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
@@ -326,18 +338,6 @@ namespace ClientDesktop
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel_S2D1Starter = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel_Btn_S2D1Starter = new System.Windows.Forms.TableLayoutPanel();
-            this.button_AddSarterS2D1 = new System.Windows.Forms.Button();
-            this.button_RemoveStarterS2D1 = new System.Windows.Forms.Button();
-            this.button_ModifyStarterS2D1 = new System.Windows.Forms.Button();
-            this.comboBox_S2D1Starter = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanel_S2D2Starter = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel_Btn_S2D2Starter = new System.Windows.Forms.TableLayoutPanel();
-            this.button_AddStarterS2D2 = new System.Windows.Forms.Button();
-            this.button_RemoveStarterS2D2 = new System.Windows.Forms.Button();
-            this.button_ModifyStarterS2D2 = new System.Windows.Forms.Button();
-            this.comboBox_S2D2Starter = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel_Main.SuspendLayout();
             this.tableLayoutPanel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
@@ -393,6 +393,12 @@ namespace ClientDesktop
             this.tableLayoutPanel_S1D2Starter.SuspendLayout();
             this.tableLayoutPanel_Btn_S1D2Starter.SuspendLayout();
             this.tableLayoutPanel_S2Body.SuspendLayout();
+            this.tableLayoutPanel_S2D2Starter.SuspendLayout();
+            this.tableLayoutPanel_Btn_S2D2Starter.SuspendLayout();
+            this.tableLayoutPanel_S2D1Starter.SuspendLayout();
+            this.tableLayoutPanel_Btn_S2D1Starter.SuspendLayout();
+            this.tableLayoutPanel_S2D5Dessert.SuspendLayout();
+            this.tableLayoutPanel_Btn_S2D5Dessert.SuspendLayout();
             this.tableLayoutPanel_S2D7Dish.SuspendLayout();
             this.tableLayoutPanel_Btn_S2D7Dish.SuspendLayout();
             this.tableLayoutPanel_S2D6Dish.SuspendLayout();
@@ -430,18 +436,12 @@ namespace ClientDesktop
             this.tableLayoutPanel_S2D3Dessert.SuspendLayout();
             this.tableLayoutPanel_Btn_S2D3Dessert.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Loading)).BeginInit();
-            this.tableLayoutPanel_S2D5Dessert.SuspendLayout();
-            this.tableLayoutPanel_Btn_S2D5Dessert.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel_S2D1Starter.SuspendLayout();
-            this.tableLayoutPanel_Btn_S2D1Starter.SuspendLayout();
-            this.tableLayoutPanel_S2D2Starter.SuspendLayout();
-            this.tableLayoutPanel_Btn_S2D2Starter.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel_Main
@@ -2623,6 +2623,240 @@ namespace ClientDesktop
             this.tableLayoutPanel_S2Body.Size = new System.Drawing.Size(1177, 252);
             this.tableLayoutPanel_S2Body.TabIndex = 4;
             // 
+            // tableLayoutPanel_S2D2Starter
+            // 
+            this.tableLayoutPanel_S2D2Starter.ColumnCount = 1;
+            this.tableLayoutPanel_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D2Starter.Controls.Add(this.tableLayoutPanel_Btn_S2D2Starter, 0, 1);
+            this.tableLayoutPanel_S2D2Starter.Controls.Add(this.comboBox_S2D2Starter, 0, 0);
+            this.tableLayoutPanel_S2D2Starter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S2D2Starter.Location = new System.Drawing.Point(171, 3);
+            this.tableLayoutPanel_S2D2Starter.Name = "tableLayoutPanel_S2D2Starter";
+            this.tableLayoutPanel_S2D2Starter.RowCount = 2;
+            this.tableLayoutPanel_S2D2Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D2Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D2Starter.Size = new System.Drawing.Size(162, 78);
+            this.tableLayoutPanel_S2D2Starter.TabIndex = 36;
+            // 
+            // tableLayoutPanel_Btn_S2D2Starter
+            // 
+            this.tableLayoutPanel_Btn_S2D2Starter.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D2Starter.Controls.Add(this.button_AddStarterS2D2, 0, 0);
+            this.tableLayoutPanel_Btn_S2D2Starter.Controls.Add(this.button_RemoveStarterS2D2, 1, 0);
+            this.tableLayoutPanel_Btn_S2D2Starter.Controls.Add(this.button_ModifyStarterS2D2, 2, 0);
+            this.tableLayoutPanel_Btn_S2D2Starter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S2D2Starter.Location = new System.Drawing.Point(3, 42);
+            this.tableLayoutPanel_Btn_S2D2Starter.Name = "tableLayoutPanel_Btn_S2D2Starter";
+            this.tableLayoutPanel_Btn_S2D2Starter.RowCount = 1;
+            this.tableLayoutPanel_Btn_S2D2Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S2D2Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S2D2Starter.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S2D2Starter.TabIndex = 2;
+            // 
+            // button_AddStarterS2D2
+            // 
+            this.button_AddStarterS2D2.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddStarterS2D2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddStarterS2D2.Location = new System.Drawing.Point(3, 3);
+            this.button_AddStarterS2D2.Name = "button_AddStarterS2D2";
+            this.button_AddStarterS2D2.Size = new System.Drawing.Size(46, 27);
+            this.button_AddStarterS2D2.TabIndex = 0;
+            this.button_AddStarterS2D2.Text = "+";
+            this.button_AddStarterS2D2.UseVisualStyleBackColor = false;
+            this.button_AddStarterS2D2.Click += new System.EventHandler(this.Button_AddStarterS2D2_Click);
+            // 
+            // button_RemoveStarterS2D2
+            // 
+            this.button_RemoveStarterS2D2.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveStarterS2D2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveStarterS2D2.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveStarterS2D2.Name = "button_RemoveStarterS2D2";
+            this.button_RemoveStarterS2D2.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveStarterS2D2.TabIndex = 1;
+            this.button_RemoveStarterS2D2.Text = "x";
+            this.button_RemoveStarterS2D2.UseVisualStyleBackColor = false;
+            // 
+            // button_ModifyStarterS2D2
+            // 
+            this.button_ModifyStarterS2D2.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyStarterS2D2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyStarterS2D2.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyStarterS2D2.Name = "button_ModifyStarterS2D2";
+            this.button_ModifyStarterS2D2.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyStarterS2D2.TabIndex = 2;
+            this.button_ModifyStarterS2D2.Text = "...";
+            this.button_ModifyStarterS2D2.UseVisualStyleBackColor = false;
+            this.button_ModifyStarterS2D2.Visible = false;
+            // 
+            // comboBox_S2D2Starter
+            // 
+            this.comboBox_S2D2Starter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_S2D2Starter.FormattingEnabled = true;
+            this.comboBox_S2D2Starter.Location = new System.Drawing.Point(3, 8);
+            this.comboBox_S2D2Starter.Name = "comboBox_S2D2Starter";
+            this.comboBox_S2D2Starter.Size = new System.Drawing.Size(156, 23);
+            this.comboBox_S2D2Starter.TabIndex = 1;
+            // 
+            // tableLayoutPanel_S2D1Starter
+            // 
+            this.tableLayoutPanel_S2D1Starter.ColumnCount = 1;
+            this.tableLayoutPanel_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D1Starter.Controls.Add(this.tableLayoutPanel_Btn_S2D1Starter, 0, 1);
+            this.tableLayoutPanel_S2D1Starter.Controls.Add(this.comboBox_S2D1Starter, 0, 0);
+            this.tableLayoutPanel_S2D1Starter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S2D1Starter.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel_S2D1Starter.Name = "tableLayoutPanel_S2D1Starter";
+            this.tableLayoutPanel_S2D1Starter.RowCount = 2;
+            this.tableLayoutPanel_S2D1Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D1Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D1Starter.Size = new System.Drawing.Size(162, 78);
+            this.tableLayoutPanel_S2D1Starter.TabIndex = 35;
+            // 
+            // tableLayoutPanel_Btn_S2D1Starter
+            // 
+            this.tableLayoutPanel_Btn_S2D1Starter.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D1Starter.Controls.Add(this.button_AddSarterS2D1, 0, 0);
+            this.tableLayoutPanel_Btn_S2D1Starter.Controls.Add(this.button_RemoveStarterS2D1, 1, 0);
+            this.tableLayoutPanel_Btn_S2D1Starter.Controls.Add(this.button_ModifyStarterS2D1, 2, 0);
+            this.tableLayoutPanel_Btn_S2D1Starter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S2D1Starter.Location = new System.Drawing.Point(3, 42);
+            this.tableLayoutPanel_Btn_S2D1Starter.Name = "tableLayoutPanel_Btn_S2D1Starter";
+            this.tableLayoutPanel_Btn_S2D1Starter.RowCount = 1;
+            this.tableLayoutPanel_Btn_S2D1Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S2D1Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S2D1Starter.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S2D1Starter.TabIndex = 2;
+            // 
+            // button_AddSarterS2D1
+            // 
+            this.button_AddSarterS2D1.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddSarterS2D1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddSarterS2D1.Location = new System.Drawing.Point(3, 3);
+            this.button_AddSarterS2D1.Name = "button_AddSarterS2D1";
+            this.button_AddSarterS2D1.Size = new System.Drawing.Size(46, 27);
+            this.button_AddSarterS2D1.TabIndex = 0;
+            this.button_AddSarterS2D1.Text = "+";
+            this.button_AddSarterS2D1.UseVisualStyleBackColor = false;
+            this.button_AddSarterS2D1.Click += new System.EventHandler(this.Button_AddStarterS2D1_Click);
+            // 
+            // button_RemoveStarterS2D1
+            // 
+            this.button_RemoveStarterS2D1.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveStarterS2D1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveStarterS2D1.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveStarterS2D1.Name = "button_RemoveStarterS2D1";
+            this.button_RemoveStarterS2D1.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveStarterS2D1.TabIndex = 1;
+            this.button_RemoveStarterS2D1.Text = "x";
+            this.button_RemoveStarterS2D1.UseVisualStyleBackColor = false;
+            // 
+            // button_ModifyStarterS2D1
+            // 
+            this.button_ModifyStarterS2D1.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyStarterS2D1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyStarterS2D1.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyStarterS2D1.Name = "button_ModifyStarterS2D1";
+            this.button_ModifyStarterS2D1.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyStarterS2D1.TabIndex = 2;
+            this.button_ModifyStarterS2D1.Text = "...";
+            this.button_ModifyStarterS2D1.UseVisualStyleBackColor = false;
+            this.button_ModifyStarterS2D1.Visible = false;
+            // 
+            // comboBox_S2D1Starter
+            // 
+            this.comboBox_S2D1Starter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_S2D1Starter.FormattingEnabled = true;
+            this.comboBox_S2D1Starter.Location = new System.Drawing.Point(3, 8);
+            this.comboBox_S2D1Starter.Name = "comboBox_S2D1Starter";
+            this.comboBox_S2D1Starter.Size = new System.Drawing.Size(156, 23);
+            this.comboBox_S2D1Starter.TabIndex = 1;
+            // 
+            // tableLayoutPanel_S2D5Dessert
+            // 
+            this.tableLayoutPanel_S2D5Dessert.ColumnCount = 1;
+            this.tableLayoutPanel_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D5Dessert.Controls.Add(this.tableLayoutPanel_Btn_S2D5Dessert, 0, 1);
+            this.tableLayoutPanel_S2D5Dessert.Controls.Add(this.comboBox_S2D5Dessert, 0, 0);
+            this.tableLayoutPanel_S2D5Dessert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_S2D5Dessert.Location = new System.Drawing.Point(675, 171);
+            this.tableLayoutPanel_S2D5Dessert.Name = "tableLayoutPanel_S2D5Dessert";
+            this.tableLayoutPanel_S2D5Dessert.RowCount = 2;
+            this.tableLayoutPanel_S2D5Dessert.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D5Dessert.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel_S2D5Dessert.Size = new System.Drawing.Size(162, 78);
+            this.tableLayoutPanel_S2D5Dessert.TabIndex = 34;
+            // 
+            // tableLayoutPanel_Btn_S2D5Dessert
+            // 
+            this.tableLayoutPanel_Btn_S2D5Dessert.ColumnCount = 3;
+            this.tableLayoutPanel_Btn_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel_Btn_S2D5Dessert.Controls.Add(this.button_AddDessertS2D5, 0, 0);
+            this.tableLayoutPanel_Btn_S2D5Dessert.Controls.Add(this.button_RemoveDessertS2D5, 1, 0);
+            this.tableLayoutPanel_Btn_S2D5Dessert.Controls.Add(this.button_ModifyDessertS2D5, 2, 0);
+            this.tableLayoutPanel_Btn_S2D5Dessert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel_Btn_S2D5Dessert.Location = new System.Drawing.Point(3, 42);
+            this.tableLayoutPanel_Btn_S2D5Dessert.Name = "tableLayoutPanel_Btn_S2D5Dessert";
+            this.tableLayoutPanel_Btn_S2D5Dessert.RowCount = 1;
+            this.tableLayoutPanel_Btn_S2D5Dessert.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Btn_S2D5Dessert.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel_Btn_S2D5Dessert.Size = new System.Drawing.Size(156, 33);
+            this.tableLayoutPanel_Btn_S2D5Dessert.TabIndex = 2;
+            // 
+            // button_AddDessertS2D5
+            // 
+            this.button_AddDessertS2D5.BackColor = System.Drawing.Color.PaleGreen;
+            this.button_AddDessertS2D5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_AddDessertS2D5.Location = new System.Drawing.Point(3, 3);
+            this.button_AddDessertS2D5.Name = "button_AddDessertS2D5";
+            this.button_AddDessertS2D5.Size = new System.Drawing.Size(46, 27);
+            this.button_AddDessertS2D5.TabIndex = 0;
+            this.button_AddDessertS2D5.Text = "+";
+            this.button_AddDessertS2D5.UseVisualStyleBackColor = false;
+            this.button_AddDessertS2D5.Click += new System.EventHandler(this.Button_AddS2D5Dessert_Click);
+            // 
+            // button_RemoveDessertS2D5
+            // 
+            this.button_RemoveDessertS2D5.BackColor = System.Drawing.Color.LightCoral;
+            this.button_RemoveDessertS2D5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_RemoveDessertS2D5.Location = new System.Drawing.Point(55, 3);
+            this.button_RemoveDessertS2D5.Name = "button_RemoveDessertS2D5";
+            this.button_RemoveDessertS2D5.Size = new System.Drawing.Size(46, 27);
+            this.button_RemoveDessertS2D5.TabIndex = 1;
+            this.button_RemoveDessertS2D5.Text = "x";
+            this.button_RemoveDessertS2D5.UseVisualStyleBackColor = false;
+            // 
+            // button_ModifyDessertS2D5
+            // 
+            this.button_ModifyDessertS2D5.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.button_ModifyDessertS2D5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_ModifyDessertS2D5.Location = new System.Drawing.Point(107, 3);
+            this.button_ModifyDessertS2D5.Name = "button_ModifyDessertS2D5";
+            this.button_ModifyDessertS2D5.Size = new System.Drawing.Size(46, 27);
+            this.button_ModifyDessertS2D5.TabIndex = 2;
+            this.button_ModifyDessertS2D5.Text = "...";
+            this.button_ModifyDessertS2D5.UseVisualStyleBackColor = false;
+            this.button_ModifyDessertS2D5.Visible = false;
+            // 
+            // comboBox_S2D5Dessert
+            // 
+            this.comboBox_S2D5Dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox_S2D5Dessert.FormattingEnabled = true;
+            this.comboBox_S2D5Dessert.Location = new System.Drawing.Point(3, 8);
+            this.comboBox_S2D5Dessert.Name = "comboBox_S2D5Dessert";
+            this.comboBox_S2D5Dessert.Size = new System.Drawing.Size(156, 23);
+            this.comboBox_S2D5Dessert.TabIndex = 1;
+            // 
             // tableLayoutPanel_S2D7Dish
             // 
             this.tableLayoutPanel_S2D7Dish.ColumnCount = 1;
@@ -4032,9 +4266,9 @@ namespace ClientDesktop
             // 
             this.pictureBox_Loading.Image = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
             this.pictureBox_Loading.InitialImage = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
-            this.pictureBox_Loading.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox_Loading.Location = new System.Drawing.Point(0, 60);
             this.pictureBox_Loading.Name = "pictureBox_Loading";
-            this.pictureBox_Loading.Size = new System.Drawing.Size(123, 83);
+            this.pictureBox_Loading.Size = new System.Drawing.Size(123, 23);
             this.pictureBox_Loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Loading.TabIndex = 1;
             this.pictureBox_Loading.TabStop = false;
@@ -4045,84 +4279,6 @@ namespace ClientDesktop
             this.timer_Loading.Enabled = true;
             this.timer_Loading.Interval = 8000;
             this.timer_Loading.Tick += new System.EventHandler(this.Timer_Loading_Tick);
-            // 
-            // tableLayoutPanel_S2D5Dessert
-            // 
-            this.tableLayoutPanel_S2D5Dessert.ColumnCount = 1;
-            this.tableLayoutPanel_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D5Dessert.Controls.Add(this.tableLayoutPanel_Btn_S2D5Dessert, 0, 1);
-            this.tableLayoutPanel_S2D5Dessert.Controls.Add(this.comboBox_S2D5Dessert, 0, 0);
-            this.tableLayoutPanel_S2D5Dessert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_S2D5Dessert.Location = new System.Drawing.Point(675, 171);
-            this.tableLayoutPanel_S2D5Dessert.Name = "tableLayoutPanel_S2D5Dessert";
-            this.tableLayoutPanel_S2D5Dessert.RowCount = 2;
-            this.tableLayoutPanel_S2D5Dessert.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D5Dessert.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D5Dessert.Size = new System.Drawing.Size(162, 78);
-            this.tableLayoutPanel_S2D5Dessert.TabIndex = 34;
-            // 
-            // tableLayoutPanel_Btn_S2D5Dessert
-            // 
-            this.tableLayoutPanel_Btn_S2D5Dessert.ColumnCount = 3;
-            this.tableLayoutPanel_Btn_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D5Dessert.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D5Dessert.Controls.Add(this.button_AddDessertS2D5, 0, 0);
-            this.tableLayoutPanel_Btn_S2D5Dessert.Controls.Add(this.button_RemoveDessertS2D5, 1, 0);
-            this.tableLayoutPanel_Btn_S2D5Dessert.Controls.Add(this.button_ModifyDessertS2D5, 2, 0);
-            this.tableLayoutPanel_Btn_S2D5Dessert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_Btn_S2D5Dessert.Location = new System.Drawing.Point(3, 42);
-            this.tableLayoutPanel_Btn_S2D5Dessert.Name = "tableLayoutPanel_Btn_S2D5Dessert";
-            this.tableLayoutPanel_Btn_S2D5Dessert.RowCount = 1;
-            this.tableLayoutPanel_Btn_S2D5Dessert.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_Btn_S2D5Dessert.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel_Btn_S2D5Dessert.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel_Btn_S2D5Dessert.TabIndex = 2;
-            // 
-            // button_AddDessertS2D5
-            // 
-            this.button_AddDessertS2D5.BackColor = System.Drawing.Color.PaleGreen;
-            this.button_AddDessertS2D5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_AddDessertS2D5.Location = new System.Drawing.Point(3, 3);
-            this.button_AddDessertS2D5.Name = "button_AddDessertS2D5";
-            this.button_AddDessertS2D5.Size = new System.Drawing.Size(46, 27);
-            this.button_AddDessertS2D5.TabIndex = 0;
-            this.button_AddDessertS2D5.Text = "+";
-            this.button_AddDessertS2D5.UseVisualStyleBackColor = false;
-            this.button_AddDessertS2D5.Click += new System.EventHandler(this.Button_AddS2D5Dessert_Click);
-            // 
-            // button_RemoveDessertS2D5
-            // 
-            this.button_RemoveDessertS2D5.BackColor = System.Drawing.Color.LightCoral;
-            this.button_RemoveDessertS2D5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_RemoveDessertS2D5.Location = new System.Drawing.Point(55, 3);
-            this.button_RemoveDessertS2D5.Name = "button_RemoveDessertS2D5";
-            this.button_RemoveDessertS2D5.Size = new System.Drawing.Size(46, 27);
-            this.button_RemoveDessertS2D5.TabIndex = 1;
-            this.button_RemoveDessertS2D5.Text = "x";
-            this.button_RemoveDessertS2D5.UseVisualStyleBackColor = false;
-            // 
-            // button_ModifyDessertS2D5
-            // 
-            this.button_ModifyDessertS2D5.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button_ModifyDessertS2D5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_ModifyDessertS2D5.Location = new System.Drawing.Point(107, 3);
-            this.button_ModifyDessertS2D5.Name = "button_ModifyDessertS2D5";
-            this.button_ModifyDessertS2D5.Size = new System.Drawing.Size(46, 27);
-            this.button_ModifyDessertS2D5.TabIndex = 2;
-            this.button_ModifyDessertS2D5.Text = "...";
-            this.button_ModifyDessertS2D5.UseVisualStyleBackColor = false;
-            this.button_ModifyDessertS2D5.Visible = false;
-            // 
-            // comboBox_S2D5Dessert
-            // 
-            this.comboBox_S2D5Dessert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_S2D5Dessert.FormattingEnabled = true;
-            this.comboBox_S2D5Dessert.Location = new System.Drawing.Point(3, 8);
-            this.comboBox_S2D5Dessert.Name = "comboBox_S2D5Dessert";
-            this.comboBox_S2D5Dessert.Size = new System.Drawing.Size(156, 23);
-            this.comboBox_S2D5Dessert.TabIndex = 1;
             // 
             // tableLayoutPanel3
             // 
@@ -4352,162 +4508,6 @@ namespace ClientDesktop
             this.comboBox4.Size = new System.Drawing.Size(194, 23);
             this.comboBox4.TabIndex = 1;
             // 
-            // tableLayoutPanel_S2D1Starter
-            // 
-            this.tableLayoutPanel_S2D1Starter.ColumnCount = 1;
-            this.tableLayoutPanel_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D1Starter.Controls.Add(this.tableLayoutPanel_Btn_S2D1Starter, 0, 1);
-            this.tableLayoutPanel_S2D1Starter.Controls.Add(this.comboBox_S2D1Starter, 0, 0);
-            this.tableLayoutPanel_S2D1Starter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_S2D1Starter.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel_S2D1Starter.Name = "tableLayoutPanel_S2D1Starter";
-            this.tableLayoutPanel_S2D1Starter.RowCount = 2;
-            this.tableLayoutPanel_S2D1Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D1Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D1Starter.Size = new System.Drawing.Size(162, 78);
-            this.tableLayoutPanel_S2D1Starter.TabIndex = 35;
-            // 
-            // tableLayoutPanel_Btn_S2D1Starter
-            // 
-            this.tableLayoutPanel_Btn_S2D1Starter.ColumnCount = 3;
-            this.tableLayoutPanel_Btn_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D1Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D1Starter.Controls.Add(this.button_AddSarterS2D1, 0, 0);
-            this.tableLayoutPanel_Btn_S2D1Starter.Controls.Add(this.button_RemoveStarterS2D1, 1, 0);
-            this.tableLayoutPanel_Btn_S2D1Starter.Controls.Add(this.button_ModifyStarterS2D1, 2, 0);
-            this.tableLayoutPanel_Btn_S2D1Starter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_Btn_S2D1Starter.Location = new System.Drawing.Point(3, 42);
-            this.tableLayoutPanel_Btn_S2D1Starter.Name = "tableLayoutPanel_Btn_S2D1Starter";
-            this.tableLayoutPanel_Btn_S2D1Starter.RowCount = 1;
-            this.tableLayoutPanel_Btn_S2D1Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_Btn_S2D1Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel_Btn_S2D1Starter.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel_Btn_S2D1Starter.TabIndex = 2;
-            // 
-            // button_AddSarterS2D1
-            // 
-            this.button_AddSarterS2D1.BackColor = System.Drawing.Color.PaleGreen;
-            this.button_AddSarterS2D1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_AddSarterS2D1.Location = new System.Drawing.Point(3, 3);
-            this.button_AddSarterS2D1.Name = "button_AddSarterS2D1";
-            this.button_AddSarterS2D1.Size = new System.Drawing.Size(46, 27);
-            this.button_AddSarterS2D1.TabIndex = 0;
-            this.button_AddSarterS2D1.Text = "+";
-            this.button_AddSarterS2D1.UseVisualStyleBackColor = false;
-            this.button_AddSarterS2D1.Click += new System.EventHandler(this.Button_AddStarterS2D1_Click);
-            // 
-            // button_RemoveStarterS2D1
-            // 
-            this.button_RemoveStarterS2D1.BackColor = System.Drawing.Color.LightCoral;
-            this.button_RemoveStarterS2D1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_RemoveStarterS2D1.Location = new System.Drawing.Point(55, 3);
-            this.button_RemoveStarterS2D1.Name = "button_RemoveStarterS2D1";
-            this.button_RemoveStarterS2D1.Size = new System.Drawing.Size(46, 27);
-            this.button_RemoveStarterS2D1.TabIndex = 1;
-            this.button_RemoveStarterS2D1.Text = "x";
-            this.button_RemoveStarterS2D1.UseVisualStyleBackColor = false;
-            // 
-            // button_ModifyStarterS2D1
-            // 
-            this.button_ModifyStarterS2D1.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button_ModifyStarterS2D1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_ModifyStarterS2D1.Location = new System.Drawing.Point(107, 3);
-            this.button_ModifyStarterS2D1.Name = "button_ModifyStarterS2D1";
-            this.button_ModifyStarterS2D1.Size = new System.Drawing.Size(46, 27);
-            this.button_ModifyStarterS2D1.TabIndex = 2;
-            this.button_ModifyStarterS2D1.Text = "...";
-            this.button_ModifyStarterS2D1.UseVisualStyleBackColor = false;
-            this.button_ModifyStarterS2D1.Visible = false;
-            // 
-            // comboBox_S2D1Starter
-            // 
-            this.comboBox_S2D1Starter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_S2D1Starter.FormattingEnabled = true;
-            this.comboBox_S2D1Starter.Location = new System.Drawing.Point(3, 8);
-            this.comboBox_S2D1Starter.Name = "comboBox_S2D1Starter";
-            this.comboBox_S2D1Starter.Size = new System.Drawing.Size(156, 23);
-            this.comboBox_S2D1Starter.TabIndex = 1;
-            // 
-            // tableLayoutPanel_S2D2Starter
-            // 
-            this.tableLayoutPanel_S2D2Starter.ColumnCount = 1;
-            this.tableLayoutPanel_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D2Starter.Controls.Add(this.tableLayoutPanel_Btn_S2D2Starter, 0, 1);
-            this.tableLayoutPanel_S2D2Starter.Controls.Add(this.comboBox_S2D2Starter, 0, 0);
-            this.tableLayoutPanel_S2D2Starter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_S2D2Starter.Location = new System.Drawing.Point(171, 3);
-            this.tableLayoutPanel_S2D2Starter.Name = "tableLayoutPanel_S2D2Starter";
-            this.tableLayoutPanel_S2D2Starter.RowCount = 2;
-            this.tableLayoutPanel_S2D2Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D2Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_S2D2Starter.Size = new System.Drawing.Size(162, 78);
-            this.tableLayoutPanel_S2D2Starter.TabIndex = 36;
-            // 
-            // tableLayoutPanel_Btn_S2D2Starter
-            // 
-            this.tableLayoutPanel_Btn_S2D2Starter.ColumnCount = 3;
-            this.tableLayoutPanel_Btn_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D2Starter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel_Btn_S2D2Starter.Controls.Add(this.button_AddStarterS2D2, 0, 0);
-            this.tableLayoutPanel_Btn_S2D2Starter.Controls.Add(this.button_RemoveStarterS2D2, 1, 0);
-            this.tableLayoutPanel_Btn_S2D2Starter.Controls.Add(this.button_ModifyStarterS2D2, 2, 0);
-            this.tableLayoutPanel_Btn_S2D2Starter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel_Btn_S2D2Starter.Location = new System.Drawing.Point(3, 42);
-            this.tableLayoutPanel_Btn_S2D2Starter.Name = "tableLayoutPanel_Btn_S2D2Starter";
-            this.tableLayoutPanel_Btn_S2D2Starter.RowCount = 1;
-            this.tableLayoutPanel_Btn_S2D2Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel_Btn_S2D2Starter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel_Btn_S2D2Starter.Size = new System.Drawing.Size(156, 33);
-            this.tableLayoutPanel_Btn_S2D2Starter.TabIndex = 2;
-            // 
-            // button_AddStarterS2D2
-            // 
-            this.button_AddStarterS2D2.BackColor = System.Drawing.Color.PaleGreen;
-            this.button_AddStarterS2D2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_AddStarterS2D2.Location = new System.Drawing.Point(3, 3);
-            this.button_AddStarterS2D2.Name = "button_AddStarterS2D2";
-            this.button_AddStarterS2D2.Size = new System.Drawing.Size(46, 27);
-            this.button_AddStarterS2D2.TabIndex = 0;
-            this.button_AddStarterS2D2.Text = "+";
-            this.button_AddStarterS2D2.UseVisualStyleBackColor = false;
-            this.button_AddStarterS2D2.Click += new System.EventHandler(this.Button_AddStarterS2D2_Click);
-            // 
-            // button_RemoveStarterS2D2
-            // 
-            this.button_RemoveStarterS2D2.BackColor = System.Drawing.Color.LightCoral;
-            this.button_RemoveStarterS2D2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_RemoveStarterS2D2.Location = new System.Drawing.Point(55, 3);
-            this.button_RemoveStarterS2D2.Name = "button_RemoveStarterS2D2";
-            this.button_RemoveStarterS2D2.Size = new System.Drawing.Size(46, 27);
-            this.button_RemoveStarterS2D2.TabIndex = 1;
-            this.button_RemoveStarterS2D2.Text = "x";
-            this.button_RemoveStarterS2D2.UseVisualStyleBackColor = false;
-            // 
-            // button_ModifyStarterS2D2
-            // 
-            this.button_ModifyStarterS2D2.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.button_ModifyStarterS2D2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_ModifyStarterS2D2.Location = new System.Drawing.Point(107, 3);
-            this.button_ModifyStarterS2D2.Name = "button_ModifyStarterS2D2";
-            this.button_ModifyStarterS2D2.Size = new System.Drawing.Size(46, 27);
-            this.button_ModifyStarterS2D2.TabIndex = 2;
-            this.button_ModifyStarterS2D2.Text = "...";
-            this.button_ModifyStarterS2D2.UseVisualStyleBackColor = false;
-            this.button_ModifyStarterS2D2.Visible = false;
-            // 
-            // comboBox_S2D2Starter
-            // 
-            this.comboBox_S2D2Starter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_S2D2Starter.FormattingEnabled = true;
-            this.comboBox_S2D2Starter.Location = new System.Drawing.Point(3, 8);
-            this.comboBox_S2D2Starter.Name = "comboBox_S2D2Starter";
-            this.comboBox_S2D2Starter.Size = new System.Drawing.Size(156, 23);
-            this.comboBox_S2D2Starter.TabIndex = 1;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -4580,6 +4580,12 @@ namespace ClientDesktop
             this.tableLayoutPanel_S1D2Starter.ResumeLayout(false);
             this.tableLayoutPanel_Btn_S1D2Starter.ResumeLayout(false);
             this.tableLayoutPanel_S2Body.ResumeLayout(false);
+            this.tableLayoutPanel_S2D2Starter.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S2D2Starter.ResumeLayout(false);
+            this.tableLayoutPanel_S2D1Starter.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S2D1Starter.ResumeLayout(false);
+            this.tableLayoutPanel_S2D5Dessert.ResumeLayout(false);
+            this.tableLayoutPanel_Btn_S2D5Dessert.ResumeLayout(false);
             this.tableLayoutPanel_S2D7Dish.ResumeLayout(false);
             this.tableLayoutPanel_Btn_S2D7Dish.ResumeLayout(false);
             this.tableLayoutPanel_S2D6Dish.ResumeLayout(false);
@@ -4617,18 +4623,12 @@ namespace ClientDesktop
             this.tableLayoutPanel_S2D3Dessert.ResumeLayout(false);
             this.tableLayoutPanel_Btn_S2D3Dessert.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Loading)).EndInit();
-            this.tableLayoutPanel_S2D5Dessert.ResumeLayout(false);
-            this.tableLayoutPanel_Btn_S2D5Dessert.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel_S2D1Starter.ResumeLayout(false);
-            this.tableLayoutPanel_Btn_S2D1Starter.ResumeLayout(false);
-            this.tableLayoutPanel_S2D2Starter.ResumeLayout(false);
-            this.tableLayoutPanel_Btn_S2D2Starter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

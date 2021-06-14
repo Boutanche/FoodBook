@@ -16,5 +16,10 @@ namespace ClientDesktop.Composants
         {
             InitializeComponent();
         }
+
+        private void dayServiceControlComponent_Monday_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

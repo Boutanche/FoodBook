@@ -30,13 +30,13 @@ namespace ClientDesktop.Composants
         private void InitializeComponent()
         {
             this.tLP_ServiceByMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.dayServiceControlComponent_Monday = new ClientDesktop.Composants.DayServiceControlComponent();
-            this.dayServiceControlComponent_Thuesday = new ClientDesktop.Composants.DayServiceControlComponent();
-            this.dayServiceControlComponent_Wednesday = new ClientDesktop.Composants.DayServiceControlComponent();
-            this.dayServiceControlComponent_Thursday = new ClientDesktop.Composants.DayServiceControlComponent();
-            this.dayServiceControlComponent_Friday = new ClientDesktop.Composants.DayServiceControlComponent();
-            this.dayServiceControlComponent_Saturday = new ClientDesktop.Composants.DayServiceControlComponent();
             this.dayServiceControlComponent_Sunday = new ClientDesktop.Composants.DayServiceControlComponent();
+            this.dayServiceControlComponent_Saturday = new ClientDesktop.Composants.DayServiceControlComponent();
+            this.dayServiceControlComponent_Friday = new ClientDesktop.Composants.DayServiceControlComponent();
+            this.dayServiceControlComponent_Thursday = new ClientDesktop.Composants.DayServiceControlComponent();
+            this.dayServiceControlComponent_Wednesday = new ClientDesktop.Composants.DayServiceControlComponent();
+            this.dayServiceControlComponent_Thuesday = new ClientDesktop.Composants.DayServiceControlComponent();
+            this.dayServiceControlComponent_Monday = new ClientDesktop.Composants.DayServiceControlComponent();
             this.tLP_ServiceByMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,40 +67,12 @@ namespace ClientDesktop.Composants
             this.tLP_ServiceByMenu.Size = new System.Drawing.Size(1202, 366);
             this.tLP_ServiceByMenu.TabIndex = 0;
             // 
-            // dayServiceControlComponent_Monday
+            // dayServiceControlComponent_Sunday
             // 
-            this.dayServiceControlComponent_Monday.Location = new System.Drawing.Point(3, 3);
-            this.dayServiceControlComponent_Monday.Name = "dayServiceControlComponent_Monday";
-            this.dayServiceControlComponent_Monday.Size = new System.Drawing.Size(165, 360);
-            this.dayServiceControlComponent_Monday.TabIndex = 0;
-            // 
-            // dayServiceControlComponent_Thuesday
-            // 
-            this.dayServiceControlComponent_Thuesday.Location = new System.Drawing.Point(174, 3);
-            this.dayServiceControlComponent_Thuesday.Name = "dayServiceControlComponent_Thuesday";
-            this.dayServiceControlComponent_Thuesday.Size = new System.Drawing.Size(165, 360);
-            this.dayServiceControlComponent_Thuesday.TabIndex = 1;
-            // 
-            // dayServiceControlComponent_Wednesday
-            // 
-            this.dayServiceControlComponent_Wednesday.Location = new System.Drawing.Point(345, 3);
-            this.dayServiceControlComponent_Wednesday.Name = "dayServiceControlComponent_Wednesday";
-            this.dayServiceControlComponent_Wednesday.Size = new System.Drawing.Size(165, 360);
-            this.dayServiceControlComponent_Wednesday.TabIndex = 2;
-            // 
-            // dayServiceControlComponent_Thursday
-            // 
-            this.dayServiceControlComponent_Thursday.Location = new System.Drawing.Point(516, 3);
-            this.dayServiceControlComponent_Thursday.Name = "dayServiceControlComponent_Thursday";
-            this.dayServiceControlComponent_Thursday.Size = new System.Drawing.Size(165, 360);
-            this.dayServiceControlComponent_Thursday.TabIndex = 3;
-            // 
-            // dayServiceControlComponent_Friday
-            // 
-            this.dayServiceControlComponent_Friday.Location = new System.Drawing.Point(687, 3);
-            this.dayServiceControlComponent_Friday.Name = "dayServiceControlComponent_Friday";
-            this.dayServiceControlComponent_Friday.Size = new System.Drawing.Size(165, 360);
-            this.dayServiceControlComponent_Friday.TabIndex = 4;
+            this.dayServiceControlComponent_Sunday.Location = new System.Drawing.Point(1029, 3);
+            this.dayServiceControlComponent_Sunday.Name = "dayServiceControlComponent_Sunday";
+            this.dayServiceControlComponent_Sunday.Size = new System.Drawing.Size(165, 360);
+            this.dayServiceControlComponent_Sunday.TabIndex = 6;
             // 
             // dayServiceControlComponent_Saturday
             // 
@@ -109,12 +81,41 @@ namespace ClientDesktop.Composants
             this.dayServiceControlComponent_Saturday.Size = new System.Drawing.Size(165, 360);
             this.dayServiceControlComponent_Saturday.TabIndex = 5;
             // 
-            // dayServiceControlComponent_Sunday
+            // dayServiceControlComponent_Friday
             // 
-            this.dayServiceControlComponent_Sunday.Location = new System.Drawing.Point(1029, 3);
-            this.dayServiceControlComponent_Sunday.Name = "dayServiceControlComponent_Sunday";
-            this.dayServiceControlComponent_Sunday.Size = new System.Drawing.Size(165, 360);
-            this.dayServiceControlComponent_Sunday.TabIndex = 6;
+            this.dayServiceControlComponent_Friday.Location = new System.Drawing.Point(687, 3);
+            this.dayServiceControlComponent_Friday.Name = "dayServiceControlComponent_Friday";
+            this.dayServiceControlComponent_Friday.Size = new System.Drawing.Size(165, 360);
+            this.dayServiceControlComponent_Friday.TabIndex = 4;
+            // 
+            // dayServiceControlComponent_Thursday
+            // 
+            this.dayServiceControlComponent_Thursday.Location = new System.Drawing.Point(516, 3);
+            this.dayServiceControlComponent_Thursday.Name = "dayServiceControlComponent_Thursday";
+            this.dayServiceControlComponent_Thursday.Size = new System.Drawing.Size(165, 360);
+            this.dayServiceControlComponent_Thursday.TabIndex = 3;
+            // 
+            // dayServiceControlComponent_Wednesday
+            // 
+            this.dayServiceControlComponent_Wednesday.Location = new System.Drawing.Point(345, 3);
+            this.dayServiceControlComponent_Wednesday.Name = "dayServiceControlComponent_Wednesday";
+            this.dayServiceControlComponent_Wednesday.Size = new System.Drawing.Size(165, 360);
+            this.dayServiceControlComponent_Wednesday.TabIndex = 2;
+            // 
+            // dayServiceControlComponent_Thuesday
+            // 
+            this.dayServiceControlComponent_Thuesday.Location = new System.Drawing.Point(174, 3);
+            this.dayServiceControlComponent_Thuesday.Name = "dayServiceControlComponent_Thuesday";
+            this.dayServiceControlComponent_Thuesday.Size = new System.Drawing.Size(165, 360);
+            this.dayServiceControlComponent_Thuesday.TabIndex = 1;
+            // 
+            // dayServiceControlComponent_Monday
+            // 
+            this.dayServiceControlComponent_Monday.Location = new System.Drawing.Point(3, 3);
+            this.dayServiceControlComponent_Monday.Name = "dayServiceControlComponent_Monday";
+            this.dayServiceControlComponent_Monday.Size = new System.Drawing.Size(165, 360);
+            this.dayServiceControlComponent_Monday.TabIndex = 0;
+            this.dayServiceControlComponent_Monday.Load += new System.EventHandler(this.dayServiceControlComponent_Monday_Load);
             // 
             // ServiceControlComponent
             // 
