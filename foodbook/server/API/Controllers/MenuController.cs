@@ -25,6 +25,7 @@ namespace API.Controllers
 
         public MenuController(IRestaurantService restaurantService)
         {
+            //On a une connexion là.
             _restaurantService = restaurantService;
         }
         /// <summary>
