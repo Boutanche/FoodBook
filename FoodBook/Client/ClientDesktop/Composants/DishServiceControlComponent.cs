@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,12 @@ namespace ClientDesktop.Composants
         // State of component
         private Service Service { get; set; }
         private TypeOfDish TypeOfDish { get; set; }
+        private Dish Dish { get; set; }
+        private Menu Menu { get; set; }
 
-        public DishServiceControlComponent()
+        public DishServiceControlComponent(int typeOdDishInInt)
         {
+            Trace.WriteLine("Initialisation du DishServiceControlComponen");
             InitializeComponent();
         }
 
@@ -27,38 +31,42 @@ namespace ClientDesktop.Composants
             Service = service;
             TypeOfDish = typeOfDish;
 
-            AddBtn.Click += PerformAddClick;
-            DelBtn.Click += PerformRemoveClick;
-            ModifyBtn.Click += PerformModifyClick;
-
-
         }
 
-        private void PerformAddClick(object sender, EventArgs e)
+
+
+        private void AddBtn_Click(object sender, EventArgs e)
         {
-            using( var dialog = new DishSelectorForm())
+            Trace.WriteLine("Tu viens de cliquer sur un Btn Add");
+            using (var dialog = new DishSelectorForm())
             {
                 var dialogResult = dialog.ShowDialog();
-                if(dialogResult == DialogResult.OK)
+                if (dialogResult == DialogResult.OK)
                 {
-                    // finis
+                    //Tu prends le plat et tu le lies avec son service dans la table ! isComposed.
+                    IsComposed isComposed = new IsComposed(1, Service.Id_service);
+                    
+                    //Si il n'existe pas tu crées le menu de la semaine.
+
+                    //SI le menu de la semaine existe déjà : Tu ajoute un service ou tu modifie l'existant
+
+                    
                 }
                 else
                 {
                     //Annuler
                 }
             }
-            //Doit me faire un click un type/ UN jour / 
         }
 
-        private void PerformRemoveClick(object sender, EventArgs e)
+        private void DelBtn_Click(object sender, EventArgs e)
         {
-            //Doit me faire un click un type/ UN jour / 
+            Trace.WriteLine("Tu viens de cliquer sur un Btn Del");
         }
 
-        private void PerformModifyClick(object sender, EventArgs e)
+        private void ModifyBtn_Click(object sender, EventArgs e)
         {
-            //Doit me faire un click un type/ UN jour / 
+            Trace.WriteLine("Tu viens de cliquer sur un Btn Modify");
         }
     }
 }

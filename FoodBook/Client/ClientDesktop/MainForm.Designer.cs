@@ -486,6 +486,7 @@ namespace ClientDesktop
             this.pictureBox_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Logo.TabIndex = 0;
             this.pictureBox_Logo.TabStop = false;
+            this.pictureBox_Logo.Click += new System.EventHandler(this.pictureBox_Logo_Click);
             // 
             // tableLayoutPanel_Title
             // 

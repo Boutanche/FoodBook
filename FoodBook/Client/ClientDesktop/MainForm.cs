@@ -519,6 +519,12 @@ namespace ClientDesktop
 
         #endregion
 
+        private void pictureBox_Logo_Click(object sender, EventArgs e)
+        {
+            Trace.WriteLine("Tu viens de cliquer sur : le butn secret pour afficher WeekForm ");
+            WeekForm weekForm = new();
+            weekForm.Show();
+        }
     }
 }
 

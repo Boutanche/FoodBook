@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,12 +25,24 @@ namespace ClientDesktop.Composants
         public void Initialize(Service service, List<TypeOfDish> typesOfDish)
         {
             this.Service = service;
-            typesOfDish.ForEach((type) =>
+            typesOfDish.ForEach((typeOfDish) =>
             {
-                var component = new DishServiceControlComponent();
+                int typeOfDishInt = 1;
+                Trace.WriteLine("Je suis dans la boucle ForEach dayServiceControl" + typeOfDish);
+                var component = new DishServiceControlComponent(typeOfDishInt);
                 MainTableService.Controls.Add(component);
-                component.Initialize(service, type);
+                component.Initialize(service, typeOfDish);
             });
+        }
+        public void InitializeTest()
+        {
+            for (int i = 1; i < 4; i++)
+            {
+                Trace.WriteLine("Je suis dans la boucle ForEach de Test : dayServiceControl" + i);
+                var component = new DishServiceControlComponent(i);
+                MainTableService.Controls.Add(component);
+
+            }
         }
     }
 }

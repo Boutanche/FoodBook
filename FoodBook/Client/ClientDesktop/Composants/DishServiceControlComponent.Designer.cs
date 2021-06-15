@@ -92,6 +92,7 @@ namespace ClientDesktop.Composants
             this.AddBtn.TabIndex = 0;
             this.AddBtn.Text = "+";
             this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // DelBtn
             // 
@@ -104,6 +105,7 @@ namespace ClientDesktop.Composants
             this.DelBtn.TabIndex = 1;
             this.DelBtn.Text = "x";
             this.DelBtn.UseVisualStyleBackColor = false;
+            this.DelBtn.Click += new System.EventHandler(this.DelBtn_Click);
             // 
             // ModifyBtn
             // 
@@ -115,6 +117,7 @@ namespace ClientDesktop.Composants
             this.ModifyBtn.TabIndex = 2;
             this.ModifyBtn.Text = "...";
             this.ModifyBtn.UseVisualStyleBackColor = false;
+            this.ModifyBtn.Click += new System.EventHandler(this.ModifyBtn_Click);
             // 
             // DishServiceControlComponent
             // 
