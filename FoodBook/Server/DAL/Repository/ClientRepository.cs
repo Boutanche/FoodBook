@@ -9,7 +9,12 @@ using Dapper;
 
 namespace DAL.Repository
 {
-    //TODO : Aucune requête Client n'a été implémenté sur cette version
+
+    //TODO : Supprimer Client et IClientRepository
+
+    //Aucune requête Client n'a été implémenté sur cette version
+
+    //Update 16/06/2021 : Client n'existe plus : Il a été remplacé par User
 
     class ClientRepository : IClientRepository
     {

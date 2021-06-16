@@ -19,7 +19,7 @@ namespace BLL.Services
         private readonly IUnitOfWork _db;
         public RestaurantService(IUnitOfWork unitOfWork)
         {
-            Trace.WriteLine(".. Si tu me vois c'est qu'on passe dans RestaurantService");
+            Trace.WriteLine(".. Utilisation de RestaurantService");
             _db = unitOfWork;
         }
         #region Ingredients

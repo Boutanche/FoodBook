@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Diagnostics;
 
 namespace DAL.UOW
 {
@@ -13,6 +14,7 @@ namespace DAL.UOW
         private readonly IServiceProvider _serviceProvider;
         public UnitOfWork(DbSession session, IServiceProvider serviceProvider)
         {
+            Trace.WriteLine(" Unit Of Work ");
             _session = session;
             _serviceProvider = serviceProvider;
         }

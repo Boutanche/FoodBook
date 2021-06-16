@@ -54,7 +54,7 @@ namespace DAL.Repository
         public async Task UpdateAsync(Dish entity)
         {
             var stmt = @"UPDATE  dishes SET Name = @Name, Popularity= @Popularity WHERE id = @id";
-            await _session.Connection.QueryAsync<Ingredients>(stmt, entity, _session.Transaction);
+            await _session.Connection.QueryAsync<Dish>(stmt, entity, _session.Transaction);
         }
     }
 }

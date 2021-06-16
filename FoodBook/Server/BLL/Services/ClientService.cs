@@ -16,6 +16,11 @@ namespace BLL.Services
         {
             _db = unitOfWork;
         }
+        
+        //Update du 15/06/2021 : Suppression de Cient remplacé par User :
+
+        //TODO : Implémenter Uer : 
+
         #region Client
         /// <summary>
         /// Create NewClient with a Client

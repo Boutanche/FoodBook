@@ -28,6 +28,7 @@ namespace API
         {
             Trace.WriteLine("...Lancement du Startup ...");
             Configuration = configuration;
+            
         }
 
         public IConfiguration Configuration { get; }
