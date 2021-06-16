@@ -321,6 +321,41 @@
             </summary>
             <returns>HashCode</returns>
         </member>
+        <member name="T:BO.Entity.IsComposed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.IsComposed.IdDish">
+            <summary>
+            Id du plat
+            </summary>
+        </member>
+        <member name="P:BO.Entity.IsComposed.IdService">
+            <summary>
+            Id du servite 
+            </summary>
+        </member>
+        <member name="M:BO.Entity.IsComposed.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Constructeur
+            </summary>
+            <param name="idDish"></param>
+            <param name="idService"></param>
+        </member>
+        <member name="M:BO.Entity.IsComposed.Equals(System.Object)">
+            <summary>
+            Généré automatiquement
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BO.Entity.IsComposed.GetHashCode">
+            <summary>
+            Généré automatiquement
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:BO.Entity.ListOfIngredient">
             <summary>
             Entitée qui permet de faire la liaison entre l'ingrédient et l'un des plats dans lequel il est utilisé.
