@@ -28,11 +28,15 @@ namespace ClientDesktop
             int _currentWeekNumber = CWeekNumber();
 
 
-            InitializeComponent();
 
+            InitializeComponent();
             tBWeek.Text = _currentWeekNumber.ToString();
             Initialize();
             CreateClientMenu();
+
+            //Trop rapide pour être visible "Acutellement" voir -> TimerLoading_Tick();
+            //timerLoading.Stop();
+            //pictureBox_Loading.Dispose();
         }
 
         private int CWeekNumber()
@@ -105,6 +109,19 @@ namespace ClientDesktop
             };
             Trace.WriteLine("Création du Menu Client numéro " + weekMenu.WeekNumber);
             //Ajouter un control : Si existe déjà ne fait pas un new ?
+        }
+        
+        //Se produit au chargement de la page : 
+        private void WeekForm_Load(object sender, EventArgs e)
+        {
+            timerLoading.Start();
+
+        }
+
+        private void timerLoading_Tick(object sender, EventArgs e)
+        {
+            //timerLoading.Stop();
+            //pictureBox_Loading.Dispose();
         }
     }
 }

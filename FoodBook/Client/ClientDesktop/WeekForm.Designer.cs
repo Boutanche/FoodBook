@@ -29,6 +29,7 @@ namespace ClientDesktop
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WeekForm));
             this.tableLayoutPanel_WeekMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel_Header = new System.Windows.Forms.TableLayoutPanel();
@@ -43,6 +44,7 @@ namespace ClientDesktop
             this.button_status = new System.Windows.Forms.Button();
             this.button_createDish = new System.Windows.Forms.Button();
             this.tableLayoutPanel_Body = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox_Loading = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel_ServiceEvening = new System.Windows.Forms.TableLayoutPanel();
             this.label_service2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel_S1Formule = new System.Windows.Forms.TableLayoutPanel();
@@ -82,12 +84,14 @@ namespace ClientDesktop
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.timerLoading = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel_WeekMain.SuspendLayout();
             this.tableLayoutPanel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
             this.tableLayoutPanel_Title.SuspendLayout();
             this.tableLayoutPanel_btnMenuHeader.SuspendLayout();
             this.tableLayoutPanel_Body.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Loading)).BeginInit();
             this.tableLayoutPanel_ServiceEvening.SuspendLayout();
             this.tableLayoutPanel_S1Formule.SuspendLayout();
             this.tableLayoutPanel_DaysLabel.SuspendLayout();
@@ -266,6 +270,7 @@ namespace ClientDesktop
             this.tableLayoutPanel_Body.ColumnCount = 2;
             this.tableLayoutPanel_Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.tableLayoutPanel_Body.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_Body.Controls.Add(this.pictureBox_Loading, 0, 0);
             this.tableLayoutPanel_Body.Controls.Add(this.tableLayoutPanel_ServiceEvening, 0, 2);
             this.tableLayoutPanel_Body.Controls.Add(this.tableLayoutPanel_DaysLabel, 1, 0);
             this.tableLayoutPanel_Body.Controls.Add(this.tableLayoutPanel_ServiceMidday, 0, 1);
@@ -281,6 +286,18 @@ namespace ClientDesktop
             this.tableLayoutPanel_Body.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel_Body.Size = new System.Drawing.Size(1313, 555);
             this.tableLayoutPanel_Body.TabIndex = 1;
+            // 
+            // pictureBox_Loading
+            // 
+            this.pictureBox_Loading.Image = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
+            this.pictureBox_Loading.InitialImage = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
+            this.pictureBox_Loading.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox_Loading.Name = "pictureBox_Loading";
+            this.pictureBox_Loading.Size = new System.Drawing.Size(234, 54);
+            this.pictureBox_Loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Loading.TabIndex = 2;
+            this.pictureBox_Loading.TabStop = false;
+            this.pictureBox_Loading.UseWaitCursor = true;
             // 
             // tableLayoutPanel_ServiceEvening
             // 
@@ -801,6 +818,11 @@ namespace ClientDesktop
             this.tableLayoutPanel7.Size = new System.Drawing.Size(200, 100);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
+            // timerLoading
+            // 
+            this.timerLoading.Interval = 1000;
+            this.timerLoading.Tick += new System.EventHandler(this.timerLoading_Tick);
+            // 
             // WeekForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -810,6 +832,7 @@ namespace ClientDesktop
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WeekForm";
             this.Text = "WeekForm";
+            this.Load += new System.EventHandler(this.WeekForm_Load);
             this.tableLayoutPanel_WeekMain.ResumeLayout(false);
             this.tableLayoutPanel_Header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
@@ -817,6 +840,7 @@ namespace ClientDesktop
             this.tableLayoutPanel_Title.PerformLayout();
             this.tableLayoutPanel_btnMenuHeader.ResumeLayout(false);
             this.tableLayoutPanel_Body.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Loading)).EndInit();
             this.tableLayoutPanel_ServiceEvening.ResumeLayout(false);
             this.tableLayoutPanel_ServiceEvening.PerformLayout();
             this.tableLayoutPanel_S1Formule.ResumeLayout(false);
@@ -895,5 +919,7 @@ namespace ClientDesktop
         private System.Windows.Forms.TableLayoutPanel tlpMidday;
         private System.Windows.Forms.TableLayoutPanel tlpEvening;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.PictureBox pictureBox_Loading;
+        private System.Windows.Forms.Timer timerLoading;
     }
 }

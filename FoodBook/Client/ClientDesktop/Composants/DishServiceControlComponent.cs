@@ -44,7 +44,7 @@ namespace ClientDesktop.Composants
                 if (dialogResult == DialogResult.OK)
                 {
                     //Tu prends le plat et tu le lies avec son service dans la table ! isComposed.
-                    IsComposed isComposed = new IsComposed(1, Service.Id_service);
+                    IsComposed isComposed = new IsComposed(1, Service.Id);
                     
                     //Si il n'existe pas tu crées le menu de la semaine.
 
