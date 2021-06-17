@@ -1,10 +1,7 @@
 ﻿using BO.Entity;
 using DAL.UOW;
 using Dapper;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL.Repository
@@ -22,7 +19,6 @@ namespace DAL.Repository
         {
             var stmt = @"delete from service where id = @id";
             return await _session.Connection.ExecuteAsync(stmt, new { Id = id }, _session.Transaction);
-
         }
 
         public async Task<IEnumerable<Service>> GetAllAsync()
@@ -34,6 +30,7 @@ namespace DAL.Repository
         public async Task<Service> GetAsync(int id)
         {
             var stmt = @"select * from service where id = @id";
+            //
             return await _session.Connection.QueryFirstOrDefaultAsync<Service>(stmt, new { Id = id }, _session.Transaction);
         }
 

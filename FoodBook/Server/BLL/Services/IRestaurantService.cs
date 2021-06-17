@@ -107,6 +107,11 @@ namespace BLL.Services
         #endregion
         #region Service
         /// <summary>
+        /// Get All Service
+        /// </summary>
+        /// <returns></returns>
+        Task<List<Service>> GetAllService();
+        /// <summary>
         /// Trouver un service par son Id
         /// </summary>
         /// <param name="id"></param>

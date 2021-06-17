@@ -17,7 +17,6 @@ namespace API
             Trace.WriteLine("... Lancement de l'API FoodBook ..." );
 
             CreateHostBuilder(args).Build().Run();
-            Console.ForegroundColor = ConsoleColor.Yellow;
             Trace.WriteLine("A des fins pédagogiques, j'ai tendance à laisser des 'TRACES' un peu partout, ne faites pas attention à moi.");
             
         }

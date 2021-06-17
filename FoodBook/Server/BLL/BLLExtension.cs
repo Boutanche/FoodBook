@@ -22,6 +22,7 @@ namespace BLL
             //Les Services liés à la BLL
             services.AddTransient<ILibrairiService, LibrairiService>();
             services.AddTransient<IRestaurantService, RestaurantService>();
+            services.AddTransient<IAccountService, AccountService>();
 
             return services;
         }

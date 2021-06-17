@@ -185,6 +185,12 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:BLL.Services.IRestaurantService.GetAllService">
+            <summary>
+            Get All Service
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:BLL.Services.IRestaurantService.GetServiceById(System.Int32)">
             <summary>
             Trouver un service par son Id

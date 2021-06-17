@@ -24,10 +24,14 @@ namespace API.Controllers
         {
             _restaurantService = restaurantService;
         }
-
-        public Task<ActionResult<List<Service>>> GetAllService()
+        /// <summary>
+        /// Get all Service
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ActionResult<List<Service>>> GetAllService()
         {
-            throw new NotImplementedException();
+            return Ok(await _restaurantService.GetAllService());
         }
 
         /// <summary>
@@ -79,7 +83,7 @@ namespace API.Controllers
             if (newService != null)
             {
                 //Créer une redirection vers GetIngredientById(NewIngredient.IngredientId)
-                return CreatedAtAction(nameof(GetServiceById), new { id = newService.Id_service }, newService);
+                return CreatedAtAction(nameof(GetServiceById), new { id = newService.Id }, newService);
             }
             else
             {

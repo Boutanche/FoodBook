@@ -223,6 +223,13 @@ namespace BLL.Services
         #endregion
         #region Service
 
+        public async Task<List<Service>> GetAllService()
+        {
+            IServiceRepository _service = _db.GetRepository<IServiceRepository>();
+            List<Service> services = (await _service.GetAllAsync()).ToList();
+            return services;
+        }
+
         public Task<Service> GetServiceById(int id)
         {
             throw new NotImplementedException();

@@ -451,12 +451,12 @@
         </member>
         <member name="T:BO.Entity.Service">
             <summary>
-            Représente un service : 
-            Un service est composé de un ou plusieurs plats.
-            14, (7 jours * 2 par jours) services composent un menu dit "menu de la semaine".
+            Update 15/06/2021
+            Remise à zéro des data : avec utilisation de "Date" pour une manipulation plus simple.
+            Suppression de
             </summary>
         </member>
-        <member name="P:BO.Entity.Service.Id_service">
+        <member name="P:BO.Entity.Service.Id">
             <summary>
             Identifiant unique du service
             </summary>
@@ -467,43 +467,37 @@
             1 = Midi , 2 = Soir
             </summary>
         </member>
-        <member name="P:BO.Entity.Service.DayNumber">
+        <member name="P:BO.Entity.Service.DateService">
             <summary>
             Numéro du jour de la semaine,
             1 = Lundi ..., 7 = Dimanche
             </summary>
         </member>
-        <member name="P:BO.Entity.Service.Id_Menu">
-            <summary>
-            Clé étrangère sur le Menu de la semaine qui contient ce service
-            </summary>
-        </member>
         <member name="M:BO.Entity.Service.#ctor">
             <summary>
-            Default constructor for API serialisation
+            
             </summary>
         </member>
-        <member name="M:BO.Entity.Service.#ctor(System.Nullable{System.Int32},System.Int32,System.Int32,System.Int32)">
+        <member name="M:BO.Entity.Service.#ctor(System.Nullable{System.Int32},System.Int32,System.DateTime)">
             <summary>
-            Utilitary constructor full properties
+            
             </summary>
-            <param name="id_service"></param>
+            <param name="id"></param>
             <param name="serviceNumber"></param>
-            <param name="dayNumber"></param>
-            <param name="id_menu"></param>
+            <param name="dateService"></param>
         </member>
         <member name="M:BO.Entity.Service.Equals(System.Object)">
             <summary>
-            Equals() 
+            
             </summary>
             <param name="obj"></param>
-            <returns>Ingredients</returns>
+            <returns></returns>
         </member>
         <member name="M:BO.Entity.Service.GetHashCode">
             <summary>
-            Get Hash Code ()
+            
             </summary>
-            <returns>HashCode</returns>
+            <returns></returns>
         </member>
         <member name="T:BO.Entity.TypeOfDish">
             <summary>

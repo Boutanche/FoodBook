@@ -21,6 +21,7 @@ namespace DAL
             services.AddTransient<ITypeOfDishRepository, TypeOfDishRepository>();
             services.AddTransient<IListOfIngredientRepository, ListOfIngredientRepository>();
             services.AddTransient<IClientRepository, ClientRepository>();
+            services.AddTransient<IServiceRepository, ServiceRepository>();
             
             //Avec les nouvelles data il n'y a plus de menu :
             services.AddTransient<IMenuRepository, MenuRepository>();

@@ -10,6 +10,7 @@ using BO.Entity;
 using BO.DTO.Requests;
 using Microsoft.AspNetCore.Authorization;
 using BO.DTO.Responses;
+using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
 {
@@ -21,9 +22,14 @@ namespace API.Controllers
     public class AccountController : ControllerBase
     {
         private readonly IAccountService _accountService;
-        public AccountController (IAccountService accountService)
+        //Récupèretation des logs.
+        private readonly ILogger _logger;
+        public AccountController (IAccountService accountService, ILogger<AccountController> logger)
         {
+            _logger = logger;
             _accountService = accountService;
+
+            
         }
 
         [HttpPost("login")]
@@ -33,10 +39,12 @@ namespace API.Controllers
             LoginResponse loginResponse = await _accountService.Login(loginRequest.Username, loginRequest.Password);
             if (loginResponse != null)
             {
+                _logger.LogInformation("Reception d'une réponse positive sur login.");
                 return Ok(loginResponse);
             }
             else
             {
+                _logger.LogError("Erreur sur les autorisations.");
                 return Unauthorized();
             }
         }

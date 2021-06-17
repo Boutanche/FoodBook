@@ -171,6 +171,12 @@
             <param ></param>
             <returns></returns>
         </member>
+        <member name="M:API.Controllers.ServiceController.GetAllService">
+            <summary>
+            Get all Service
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:API.Controllers.ServiceController.GetServicesByIdMenu(System.Nullable{System.Int32})">
             <summary>
             Récupérer la liste des service du menu :   API/V1/service?menu=4
