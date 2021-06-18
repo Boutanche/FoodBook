@@ -124,4 +124,13 @@
   <data name="ezgif-2-6d0b072c3d3f" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ezgif-2-6d0b072c3d3f.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gifLoad2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gifLoad2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gifLoad21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gifLoad21.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gifLoad3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gifLoad3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

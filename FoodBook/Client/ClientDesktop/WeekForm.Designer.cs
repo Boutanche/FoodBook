@@ -40,6 +40,7 @@ namespace ClientDesktop
             this.tBWeek = new System.Windows.Forms.TextBox();
             this.button_next = new System.Windows.Forms.Button();
             this.label_WeekSubTitle = new System.Windows.Forms.Label();
+            this.dateTimePicker_FDOW = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel_btnMenuHeader = new System.Windows.Forms.TableLayoutPanel();
             this.button_status = new System.Windows.Forms.Button();
             this.button_createDish = new System.Windows.Forms.Button();
@@ -159,6 +160,7 @@ namespace ClientDesktop
             this.tableLayoutPanel_Title.Controls.Add(this.tBWeek, 1, 1);
             this.tableLayoutPanel_Title.Controls.Add(this.button_next, 2, 1);
             this.tableLayoutPanel_Title.Controls.Add(this.label_WeekSubTitle, 1, 0);
+            this.tableLayoutPanel_Title.Controls.Add(this.dateTimePicker_FDOW, 2, 0);
             this.tableLayoutPanel_Title.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel_Title.Location = new System.Drawing.Point(103, 3);
             this.tableLayoutPanel_Title.Name = "tableLayoutPanel_Title";
@@ -228,6 +230,14 @@ namespace ClientDesktop
             this.label_WeekSubTitle.Text = "Numéro de semaine";
             this.label_WeekSubTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // dateTimePicker_FDOW
+            // 
+            this.dateTimePicker_FDOW.Enabled = false;
+            this.dateTimePicker_FDOW.Location = new System.Drawing.Point(741, 3);
+            this.dateTimePicker_FDOW.Name = "dateTimePicker_FDOW";
+            this.dateTimePicker_FDOW.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker_FDOW.TabIndex = 7;
+            // 
             // tableLayoutPanel_btnMenuHeader
             // 
             this.tableLayoutPanel_btnMenuHeader.ColumnCount = 1;
@@ -264,6 +274,7 @@ namespace ClientDesktop
             this.button_createDish.TabIndex = 0;
             this.button_createDish.Text = "Créer un plat";
             this.button_createDish.UseVisualStyleBackColor = false;
+            this.button_createDish.Click += new System.EventHandler(this.Button_createDish_Click);
             // 
             // tableLayoutPanel_Body
             // 
@@ -289,7 +300,7 @@ namespace ClientDesktop
             // 
             // pictureBox_Loading
             // 
-            this.pictureBox_Loading.Image = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
+            this.pictureBox_Loading.Image = global::ClientDesktop.Properties.Resources.gifLoad3;
             this.pictureBox_Loading.InitialImage = global::ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f;
             this.pictureBox_Loading.Location = new System.Drawing.Point(3, 3);
             this.pictureBox_Loading.Name = "pictureBox_Loading";
@@ -821,7 +832,7 @@ namespace ClientDesktop
             // timerLoading
             // 
             this.timerLoading.Interval = 1000;
-            this.timerLoading.Tick += new System.EventHandler(this.timerLoading_Tick);
+            this.timerLoading.Tick += new System.EventHandler(this.TimerLoading_Tick);
             // 
             // WeekForm
             // 
@@ -908,7 +919,6 @@ namespace ClientDesktop
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label_Title;
-        private System.Windows.Forms.TextBox tBWeek;
         private System.Windows.Forms.Button button_previous;
         private System.Windows.Forms.Button button_next;
         private System.Windows.Forms.Label label_WeekSubTitle;
@@ -921,5 +931,7 @@ namespace ClientDesktop
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.PictureBox pictureBox_Loading;
         private System.Windows.Forms.Timer timerLoading;
+        private System.Windows.Forms.TextBox tBWeek;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_FDOW;
     }
 }
