@@ -15,25 +15,23 @@ namespace ClientDesktop.Composants
     public partial class DayServiceControlComponent : UserControl
     {
         //State 
-        private Service Service;
-
-        public DayServiceControlComponent()
+        
+        public DayServiceControlComponent(Service service)
         {
             InitializeComponent();
-        
         }
-        public void Initialize(Service service, List<TypeOfDish> typesOfDish)
-        {
-            this.Service = service;
-            typesOfDish.ForEach((typeOfDish) =>
-            {
-                int typeOfDishInt = 1;
-                Trace.WriteLine("Je suis dans la boucle ForEach dayServiceControl" + typeOfDish);
-                var component = new DishServiceControlComponent(typeOfDishInt);
-                MainTableService.Controls.Add(component);
-                component.Initialize(service, typeOfDish);
-            });
-        }
+        //public void Initialize(Service service, List<TypeOfDish> typesOfDish)
+        //{
+        //    this.Service = service;
+        //    typesOfDish.ForEach((typeOfDish) =>
+        //    {
+        //        int typeOfDishInt = 1;
+        //        Trace.WriteLine("Je suis dans la boucle ForEach dayServiceControl" + typeOfDish);
+        //        var component = new DishServiceControlComponent(typeOfDishInt);
+        //        MainTableService.Controls.Add(component);
+        //        component.Initialize(service, typeOfDish);
+        //    });
+        //}
         public void InitializeTest()
         {
             for (int i = 1; i < 4; i++)

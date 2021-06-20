@@ -16,11 +16,10 @@ namespace ClientDesktop
 {
     public partial class WeekForm : Form
     {
-        //State 
-        //private String stringWeekNumber;
+        //State
         private Menu weekMenu;
-        internal Service serviceMidday;
-        public Service serviceEvening;
+
+        //Constructeur
         /// <summary>
         /// Ctor
         /// </summary>
@@ -46,7 +45,7 @@ namespace ClientDesktop
             //FDOW : First Day Of Week
             dateTimePicker_FDOW.Value = IsMonday(isMonday);
             //Initiatialisation pour les services et conrollers
-            Initialize();
+            Initialize(isMonday);
             //TODO : Revoir cette fonction qui ne sert plus de la même manière
             CreateClientMenu();
             //TODO : Mettre le loading en place
@@ -96,28 +95,24 @@ namespace ClientDesktop
             }
             return isMonday;
         }
+        //Fonction pour Initiialiser les Control Component
         /// <summary>
         /// Initialisation des Control Component sur chaque service
         /// </summary>
-        public void Initialize()
+        public void Initialize(DateTime isMonday)
         {
             Trace.WriteLine("Tu es sur le weekForm et tu veux initialiser.");
-            var componentMidday = new ServiceControlComponent();
-            var componentEvening = new ServiceControlComponent();
+            var componentMidday = new ServiceControlComponent(1, isMonday);
+            var componentEvening = new ServiceControlComponent(2, isMonday);
+            
             // /!\ : Menu n'existe plus !!
             //Si le menu existe dans la BDD alors il existe au moins un service midi ou soir sinon aucun service n'existe.
             //Si Menu n'existe pas dans la BDD : 
-            serviceMidday = new Service()
-            {
-                ServiceNumber = 1,
-            };
-            serviceEvening = new Service()
-            {
-                ServiceNumber = 2,
-            };
+
             // /!\ : Menu n'existe plus !!
             //Si Menu existe il faut chercher  
             //Si Service existe dans la BDD
+
             tlpMidday.Controls.Add(componentMidday);
             tlpEvening.Controls.Add(componentEvening);
         }

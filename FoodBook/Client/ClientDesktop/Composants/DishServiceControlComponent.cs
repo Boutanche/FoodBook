@@ -19,7 +19,10 @@ namespace ClientDesktop.Composants
         private TypeOfDish TypeOfDish { get; set; }
         private Dish Dish { get; set; }
         private Menu Menu { get; set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="typeOdDishInInt"></param>
         public DishServiceControlComponent(int typeOdDishInInt)
         {
             Trace.WriteLine("Initialisation du DishServiceControlComponen");
@@ -30,7 +33,6 @@ namespace ClientDesktop.Composants
         {
             Service = service;
             TypeOfDish = typeOfDish;
-
         }
 
 
@@ -47,10 +49,7 @@ namespace ClientDesktop.Composants
                     IsComposed isComposed = new IsComposed(1, Service.Id);
                     
                     //Si il n'existe pas tu crées le menu de la semaine.
-
-                    //SI le menu de la semaine existe déjà : Tu ajoute un service ou tu modifie l'existant
-
-                    
+                    //SI le menu de la semaine existe déjà : Tu ajoute un service ou tu modifie l'existant.                    
                 }
                 else
                 {

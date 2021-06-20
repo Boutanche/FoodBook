@@ -831,8 +831,8 @@ namespace ClientDesktop
             // 
             // timerLoading
             // 
-            this.timerLoading.Interval = 1000;
-            this.timerLoading.Tick += new System.EventHandler(this.TimerLoading_Tick);
+            //this.timerLoading.Interval = 1000;
+            //this.timerLoading.Tick += new System.EventHandler(this.TimerLoading_Tick);
             // 
             // WeekForm
             // 

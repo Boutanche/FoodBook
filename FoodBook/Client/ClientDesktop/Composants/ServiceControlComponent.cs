@@ -17,22 +17,27 @@ namespace ClientDesktop.Composants
         //State 
         //private Service Service;
 
-        public ServiceControlComponent()
+        public ServiceControlComponent(int serviceNumber, DateTime isMonday)
         {
             InitializeComponent();
-            InitializeTest();
+            InitializeTest(serviceNumber, isMonday);
         }
         
         
-        public void InitializeTest()
+        public void InitializeTest(int serviceNumber, DateTime isMonday)
         {
-            for (int i = 1; i < 8; i++)
+            for (int i = 0; i < 7; i++)
             {
-                //Service = service;
-                ///Service.DayNumber = i;
-                //WIP le i :
+                //Quand je passe ici je peux connaitre les dates :
+                //Je peux donc créer mes entités Service :
+                //Je récupère le numéro de service
+                //Et ici la date.
+                Service service = new Service();
+                service.ServiceNumber = serviceNumber;
+                service.DateService = isMonday.AddDays(i);
+               
                 Trace.WriteLine("Je suis dans la boucle for du ServiceControlComponent : " + i);
-                var component = new DayServiceControlComponent();
+                var component = new DayServiceControlComponent(service);
                 tLP_ServiceByMenu.Controls.Add(component);
                 component.InitializeTest();
             }
