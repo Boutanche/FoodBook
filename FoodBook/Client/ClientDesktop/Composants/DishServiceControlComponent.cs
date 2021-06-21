@@ -41,6 +41,11 @@ namespace ClientDesktop.Composants
             IntTypeOfDish = typeOfDish;
             
         }
+        public void UpdateTest(Service service, int typeOfDish)
+        {
+            Service = service;
+            IntTypeOfDish = typeOfDish;
+        }
 
 
 

@@ -31,14 +31,15 @@ namespace ClientDesktop.Composants
 
             for (int i = 0; i < 7; i++)
             {
-                
+
                 //Quand je passe ici je peux connaitre les dates :
                 //Je peux donc créer mes entités Service :
                 //Je récupère le numéro de service
                 //Et ici la date.
-
                 //J'ajoute un nouveau service à ma liste ?
 
+                 
+                    
                 Service service = new Service();
                 service.ServiceNumber = serviceNumber;
                 service.DateService = isMonday.AddDays(i);
@@ -54,17 +55,10 @@ namespace ClientDesktop.Composants
             }
         }
 
-        public void UpdateComponent(int serviceNumber, DateTime isMonday)
+        public void UpdateComponent(int serviceNumber,DateTime isMonday)
         {
             for (int i = 0; i < 7; i++)
             {
-
-                //Quand je passe ici je peux connaitre les dates :
-                //Je peux donc créer mes entités Service :
-                //Je récupère le numéro de service
-                //Et ici la date.
-
-                //J'ajoute un nouveau service à ma liste ?
 
                 Service service = new Service();
                 service.ServiceNumber = serviceNumber;
@@ -73,7 +67,7 @@ namespace ClientDesktop.Composants
                 Trace.WriteLine("Je suis dans la boucle for du ServiceControlComponent : " + i);
 
                 //Je crée un DayComponent avec le service de son jour ?
-                dayServiceControlComponents[i].UpdateCOmponent(service)
+                dayServiceControlComponents[i].UpdateComponent(service);
             }
         }
 

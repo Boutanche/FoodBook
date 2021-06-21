@@ -16,6 +16,9 @@ namespace ClientDesktop.Composants
     {
         //State 
         public Service Service { get; private set; }
+        List<DishServiceControlComponent> dishServiceControlComponents = new List<DishServiceControlComponent>();
+        
+
         public DayServiceControlComponent(Service service)
         {
             InitializeComponent();
@@ -38,19 +41,20 @@ namespace ClientDesktop.Composants
             for (int i = 1; i < 4; i++)
             {
                 Trace.WriteLine("Je suis dans la boucle ForEach de Test : dayServiceControl : " + i);
-                var component = new DishServiceControlComponent(i);
+                DishServiceControlComponent component = new DishServiceControlComponent(i);
                 MainTableService.Controls.Add(component);
+                dishServiceControlComponents.Add(component);
                 component.InitializeTest(service, i);
 
             }
         }
         public void UpdateComponent(Service service)
         {
-            for (int i = 1; i < 4; i++)
+            Service = service;
+            for (int i = 0; i < 3; i++)
             {
+                dishServiceControlComponents[i].UpdateTest(service, i+1);
                 //WIP : Repas :
-
-
             }
         }
     }

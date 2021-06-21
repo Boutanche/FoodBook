@@ -17,7 +17,7 @@ namespace ClientDesktop
     public partial class WeekForm : Form
     {
         //State
-        private Menu weekMenu;
+        //private Menu weekMenu;
         private ServiceControlComponent componentMidday;
         private ServiceControlComponent componentEvening;
 
@@ -141,6 +141,8 @@ namespace ClientDesktop
             tBWeek.Text = actualWeek.ToString();
             dateTimePicker_FDOW.Value = isToday;
             //Initialize(isToday);
+            componentMidday.UpdateComponent(1, isToday);
+            componentEvening.UpdateComponent(2, isToday);
             //CreateClientMenu();
         }
         /// <summary>
@@ -163,6 +165,8 @@ namespace ClientDesktop
             tBWeek.Text = actualWeek.ToString();
             dateTimePicker_FDOW.Value = isToday;
             //Initialize(isToday);
+            componentMidday.UpdateComponent(1, isToday);
+            componentEvening.UpdateComponent(2, isToday);
             //CreateClientMenu();
         }
         #endregion
@@ -208,6 +212,7 @@ namespace ClientDesktop
         public void UpdateComponent(DateTime isMonday)
         {
             componentMidday.UpdateComponent(1, isMonday);
+            componentEvening.UpdateComponent(2, isMonday);
         }
     }
 }
