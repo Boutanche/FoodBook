@@ -55,7 +55,7 @@ namespace ClientDesktop.Composants
             Trace.WriteLine("Tu viens de cliquer sur un Btn Add");
             Trace.WriteLine("Concerne le service numéro : (doit me renvoyer null) : " + Service.Id.ToString() );
             Trace.WriteLine("Concerne le jour service date  : (doit me renvoyer une date) : " + StringDate);
-            using (var dialog = new DishSelectorForm())
+            using (var dialog = new DishSelectorForm(Service))
             {
                 var dialogResult = dialog.ShowDialog();
                 if (dialogResult == DialogResult.OK)
