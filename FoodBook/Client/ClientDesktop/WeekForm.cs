@@ -18,6 +18,9 @@ namespace ClientDesktop
     {
         //State
         private Menu weekMenu;
+        private ServiceControlComponent componentMidday;
+        private ServiceControlComponent componentEvening;
+
 
         //Constructeur
         /// <summary>
@@ -47,7 +50,7 @@ namespace ClientDesktop
             //Initiatialisation pour les services et conrollers
             Initialize(isMonday);
             //TODO : Revoir cette fonction qui ne sert plus de la même manière
-            CreateClientMenu();
+            //CreateClientMenu();
             //TODO : Mettre le loading en place
             // /!\ : Le timer ne s'arrête jamais pour le moment !
             //********************************Start_Image_Loading*************************
@@ -102,8 +105,8 @@ namespace ClientDesktop
         public void Initialize(DateTime isMonday)
         {
             Trace.WriteLine("Tu es sur le weekForm et tu veux initialiser.");
-            var componentMidday = new ServiceControlComponent(1, isMonday);
-            var componentEvening = new ServiceControlComponent(2, isMonday);
+            componentMidday = new ServiceControlComponent(1, isMonday);
+            componentEvening = new ServiceControlComponent(2, isMonday);
             
             // /!\ : Menu n'existe plus !!
             //Si le menu existe dans la BDD alors il existe au moins un service midi ou soir sinon aucun service n'existe.
@@ -137,7 +140,8 @@ namespace ClientDesktop
             }
             tBWeek.Text = actualWeek.ToString();
             dateTimePicker_FDOW.Value = isToday;
-            CreateClientMenu();
+            //Initialize(isToday);
+            //CreateClientMenu();
         }
         /// <summary>
         /// Click sur Btn Previous
@@ -158,7 +162,8 @@ namespace ClientDesktop
             }
             tBWeek.Text = actualWeek.ToString();
             dateTimePicker_FDOW.Value = isToday;
-            CreateClientMenu();
+            //Initialize(isToday);
+            //CreateClientMenu();
         }
         #endregion
         // /!\ : Menu n'existe plus !!
@@ -166,17 +171,17 @@ namespace ClientDesktop
         /// <summary>
         /// Côté Client le menu est l'ensemble de deux services de la même semaine
         /// </summary>
-        private void CreateClientMenu()
-        {
-            //Création du Menu côté client : 
-            weekMenu = new Menu()
-            {
-                Year = DateTime.Parse("01/01/2021"),
-                WeekNumber = Int32.Parse(tBWeek.Text),
-            };
-            Trace.WriteLine("Création du Menu Client numéro " + weekMenu.WeekNumber);
-            //Ajouter un control : Si existe déjà ne fait pas un new ?
-        }
+        //private void CreateClientMenu()
+        //{
+        //    //Création du Menu côté client : 
+        //    weekMenu = new Menu()
+        //    {
+        //        Year = DateTime.Parse("01/01/2021"),
+        //        WeekNumber = Int32.Parse(tBWeek.Text),
+        //    };
+        //    Trace.WriteLine("Création du Menu Client numéro " + weekMenu.WeekNumber);
+        //    //Ajouter un control : Si existe déjà ne fait pas un new ?
+        //}
         //Se produit au chargement de la page : 
         /// <summary>
         /// Lancement du Timer
@@ -198,6 +203,11 @@ namespace ClientDesktop
             Trace.WriteLine("Tu viens de cliquer sur : button_createDish ");
             DishForm dishForm = new();
             dishForm.Show();
+        }
+        //
+        public void UpdateComponent(DateTime isMonday)
+        {
+            componentMidday.UpdateComponent(1, isMonday);
         }
     }
 }

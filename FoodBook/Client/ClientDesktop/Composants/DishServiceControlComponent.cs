@@ -16,7 +16,8 @@ namespace ClientDesktop.Composants
     {
         // State of component
         private Service Service { get; set; }
-        private TypeOfDish TypeOfDish { get; set; }
+        private TypeOfDish MyTypeOfDish { get; set; }
+        private int IntTypeOfDish { get; set; }
         private Dish Dish { get; set; }
         private Menu Menu { get; set; }
         /// <summary>
@@ -32,20 +33,31 @@ namespace ClientDesktop.Composants
         public void Initialize (Service service, TypeOfDish typeOfDish)
         {
             Service = service;
-            TypeOfDish = typeOfDish;
+            MyTypeOfDish = typeOfDish;
+        }
+        public void InitializeTest (Service service, int typeOfDish)
+        {
+            Service = service;
+            IntTypeOfDish = typeOfDish;
+            
         }
 
 
 
         private void AddBtn_Click(object sender, EventArgs e)
         {
+            String StringDate = Service.DateService.ToString();
             Trace.WriteLine("Tu viens de cliquer sur un Btn Add");
+            Trace.WriteLine("Concerne le service numéro : (doit me renvoyer null) : " + Service.Id.ToString() );
+            Trace.WriteLine("Concerne le jour service date  : (doit me renvoyer une date) : " + StringDate);
             using (var dialog = new DishSelectorForm())
             {
                 var dialogResult = dialog.ShowDialog();
                 if (dialogResult == DialogResult.OK)
                 {
                     //Tu prends le plat et tu le lies avec son service dans la table ! isComposed.
+                    //Pour créer un IsComposed j'ai besoin du Dish.Id qui m'est donné par le DishSelectorForm
+
                     IsComposed isComposed = new IsComposed(1, Service.Id);
                     
                     //Si il n'existe pas tu crées le menu de la semaine.
