@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BO.Entity
 {
@@ -23,23 +24,28 @@ namespace BO.Entity
         /// 1 = Lundi ..., 7 = Dimanche
         /// </summary>
         public DateTime DateService { get; set; }
-        
+        /// <summary>
+        /// 
+        /// </summary>
+        public List<int> ListOfIntDishes { get; set; }
         /// <summary>
         /// 
         /// </summary>
         public Service() { }
-        
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="id"></param>
         /// <param name="serviceNumber"></param>
         /// <param name="dateService"></param>
-        public Service(int? id, int serviceNumber, DateTime dateService)
+        /// <param name ="listOfIntDishes"><</param>
+        public Service(int? id, int serviceNumber, DateTime dateService, List<int> listOfIntDishes)
         {
             Id = id;
             ServiceNumber = serviceNumber;
             DateService = dateService;
+            ListOfIntDishes = listOfIntDishes;
         }
         /// <summary>
         /// 

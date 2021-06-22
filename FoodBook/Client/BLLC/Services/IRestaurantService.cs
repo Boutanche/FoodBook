@@ -21,8 +21,9 @@ namespace BLLC.Services
         #region ListOfIngredient
         Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient);
         #endregion
-        #region Menu
-        Task<Menu> CreateMenu(Menu newMenu);
-        #endregion
+        //Supression des menu
+        //#region Menu
+        ////Task<Menu> CreateMenu(Menu newMenu);
+        //#endregion
     }
 }

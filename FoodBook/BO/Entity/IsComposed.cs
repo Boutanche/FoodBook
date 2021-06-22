@@ -8,7 +8,7 @@ namespace BO.Entity
 
 {
     /// <summary>
-    /// 
+    /// i
     /// </summary>
     public class IsComposed
     {

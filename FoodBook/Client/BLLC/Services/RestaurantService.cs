@@ -164,27 +164,39 @@ namespace BLLC.Services
                 return null;
             }
         }
-
-        #region Menu
-        public async Task<Menu> CreateMenu(Menu menu)
-        {
-            var response = await _httpClient.PostAsync("Menu",
-                new StringContent(
-                    JsonSerializer.Serialize(menu), Encoding.UTF8, "application/json"));
-            if (response.IsSuccessStatusCode)
-            {
-                using var stream = await response.Content.ReadAsStreamAsync();
-                Menu newMenu = await JsonSerializer.DeserializeAsync<Menu>(stream, new JsonSerializerOptions()
-                {
-                    PropertyNameCaseInsensitive = true
-                });
-                return newMenu;
-            }
-            else
-            {
-                return null;
-            };
-        }
-        #endregion
     }
 }
+
+/******************************************************************************************************
+ ******************************* Code Poubelle ********************************************************
+ *** Menu : ***
+
+
+        ////Menu n'existe plus à virer : 
+        //#region Menu
+        //public async Task<Menu> CreateMenu(Menu menu)
+        //{
+        //    var response = await _httpClient.PostAsync("Menu",
+        //        new StringContent(
+        //            JsonSerializer.Serialize(menu), Encoding.UTF8, "application/json"));
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        using var stream = await response.Content.ReadAsStreamAsync();
+        //        Menu newMenu = await JsonSerializer.DeserializeAsync<Menu>(stream, new JsonSerializerOptions()
+        //        {
+        //            PropertyNameCaseInsensitive = true
+        //        });
+        //        return newMenu;
+        //    }
+        //    else
+        //    {
+        //        return null;
+        //    };
+        //}
+        //#endregion 
+
+ *
+ * 
+ * 
+ * 
+ */
