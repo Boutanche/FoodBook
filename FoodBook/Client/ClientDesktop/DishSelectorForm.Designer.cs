@@ -123,11 +123,15 @@ namespace ClientDesktop
             // 
             // dataGridViewDishes
             // 
+            this.dataGridViewDishes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewDishes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDishes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewDishes.Location = new System.Drawing.Point(403, 93);
+            this.dataGridViewDishes.MultiSelect = false;
             this.dataGridViewDishes.Name = "dataGridViewDishes";
+            this.dataGridViewDishes.ReadOnly = true;
             this.dataGridViewDishes.RowTemplate.Height = 25;
+            this.dataGridViewDishes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDishes.Size = new System.Drawing.Size(394, 354);
             this.dataGridViewDishes.TabIndex = 2;
             this.dataGridViewDishes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewDishes_CellClick);

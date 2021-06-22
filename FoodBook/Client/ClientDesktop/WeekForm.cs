@@ -49,8 +49,7 @@ namespace ClientDesktop
             dateTimePicker_FDOW.Value = IsMonday(isMonday);
             //Initiatialisation pour les services et conrollers
             Initialize(isMonday);
-            //TODO : Revoir cette fonction qui ne sert plus de la même manière
-            //CreateClientMenu();
+
             //TODO : Mettre le loading en place
             // /!\ : Le timer ne s'arrête jamais pour le moment !
             //********************************Start_Image_Loading*************************
@@ -224,7 +223,7 @@ namespace ClientDesktop
 ////Fonction qui ne sert normalement plus à rien.
 //private int CWeekNumber()
 //{
-//    //HACK : Problême du nombre de semaine dans une année à cause des "Leap" year. 
+
 //    int weekNumber = CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(
 //        DateTime.Now, CalendarWeekRule.FirstFullWeek, DayOfWeek.Sunday);
 //    return weekNumber;

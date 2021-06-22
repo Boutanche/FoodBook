@@ -26,7 +26,7 @@ namespace ClientDesktop.Composants
         /// <param name="typeOdDishInInt"></param>
         public DishServiceControlComponent(int typeOdDishInInt)
         {
-            Trace.WriteLine("Initialisation du DishServiceControlComponen");
+            Trace.WriteLine("Initialisation du DishServiceControlComponent");
             InitializeComponent();
         }
 
@@ -38,8 +38,7 @@ namespace ClientDesktop.Composants
         public void InitializeTest (Service service, int typeOfDish)
         {
             Service = service;
-            IntTypeOfDish = typeOfDish;
-            
+            IntTypeOfDish = typeOfDish;            
         }
         public void UpdateTest(Service service, int typeOfDish)
         {
@@ -47,15 +46,13 @@ namespace ClientDesktop.Composants
             IntTypeOfDish = typeOfDish;
         }
 
-
-
         private void AddBtn_Click(object sender, EventArgs e)
         {
             String StringDate = Service.DateService.ToString();
             Trace.WriteLine("Tu viens de cliquer sur un Btn Add");
             Trace.WriteLine("Concerne le service numéro : (doit me renvoyer null) : " + Service.Id.ToString() );
             Trace.WriteLine("Concerne le jour service date  : (doit me renvoyer une date) : " + StringDate);
-            using (var dialog = new DishSelectorForm(Service))
+            using (var dialog = new DishSelectorForm(Service, IntTypeOfDish))
             {
                 var dialogResult = dialog.ShowDialog();
                 if (dialogResult == DialogResult.OK)

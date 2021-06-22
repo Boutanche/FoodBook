@@ -35,7 +35,6 @@
 //        //Ecrire une fonction qui me permette de remplir le champ year de la table menu. 
 //        //Il faudra que cette fonction s'actualise avec le click sur les button "next" and "previous".
 
-//        //HACK : La fonction actuelle ne prend pas en compte la bonne semaine,
 //        // il a donc était nécessaire d'incrémenter de 1 la semaine retournée. 
 
 //        /// <summary>
@@ -66,9 +65,7 @@
 //        }
 
 //        // But pédagogique : un test sur une loading form
-//        // FIXME : Problême de vitesse de l'annimation du gif en exécution.
-//        // TODO : Dock the picture box pour qu'elle prenne toute la mainForm.
-//        // HACK : Un timer, ce n'est pas la même chose qu'on évenement sur le chargement... 
+
 //        // Ne pas le faire pendant le développement, c'est chiant !
 
 //        private void Timer_Loading_Tick(object sender, EventArgs e)
@@ -105,7 +102,7 @@
 //         * /!\ ATTENTION /!\ Les Btn S1Dx de Dessert : 
 //         * /!\ ATTENTION /!\ n'ont pas les même noms que l'ensemble des Btn de cette page. 
 //         * ** S2
-//         // TODO : Le reste des buttons sur la MainForm();
+
 //         * All Remove Button
 //         * All Modify Button
 //         **/
@@ -132,7 +129,7 @@
 //        {
 //            Trace.WriteLine("Tu viens de cliquer sur : button_next ");
 //            int actualWeek = Int32.Parse(textBox_week.Text);
-//            //TODO : Effectuer un controle sur actualweek pour éviter d'être >52
+
 //            //Si >52 alors changer alors years++
 //            actualWeek++;
 //            textBox_week.Text = actualWeek.ToString();         
@@ -146,7 +143,7 @@
 //        {
 //            Trace.WriteLine("Tu viens de cliquer sur : button_previous ");
 //            int actualWeek = Int32.Parse(textBox_week.Text);
-//            //TODO : Effectuer un controle sur actualweek pour éviter d'être <1
+
 //            //Si <1 alors changer alors years--; .
 //            actualWeek--;
 //            textBox_week.Text = actualWeek.ToString();
