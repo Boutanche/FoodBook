@@ -77,7 +77,7 @@
             <CheckBox Content="Formule" Grid.Column="2" RequestedTheme="Dark" Margin="0,0,0,0" Grid.Row="2" HorizontalAlignment="Center"/>
             <TextBox Grid.Column="1" HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="124" Margin="0,0,0,0" Grid.Row="2"/>
             <TextBlock HorizontalAlignment="Center" Text="Entrée" TextWrapping="Wrap" VerticalAlignment="Center" RequestedTheme="Dark" Grid.Row="2"/>
-            <Button Content="Réserver" Grid.Column="1" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" RequestedTheme="Dark"/>
+            <Button Content="Réserver" Grid.Column="1" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" RequestedTheme="Dark" Click="Button_Click"/>
         </Grid>
 
     </Grid>

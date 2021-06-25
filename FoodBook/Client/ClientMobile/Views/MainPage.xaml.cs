@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClientMobile.Views;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,7 +30,12 @@ namespace ClientMobile
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            this.Frame.Navigate(typeof(BookingPage));
 
+
+            //AppWindow appWindow = await AppWindow.TryCreateAsync();
+            //BookingPage appWindowContentFrame = new BookingPage();
+            //ppWindowContentFrame.Navigate(typeof(AppWindowMainPage));
         }
     }
 }
