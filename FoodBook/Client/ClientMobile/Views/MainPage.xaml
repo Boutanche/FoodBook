@@ -61,141 +61,170 @@
 
             </Grid>
             <Grid x:Name="SelectDate" VerticalAlignment="Center" Height="31">
-                <CalendarDatePicker HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,0,40,0" FocusVisualPrimaryBrush="#FFC3C1C1" FirstDayOfWeek="Monday" Foreground="White" FocusVisualSecondaryBrush="{x:Null}"/>
+                <CalendarDatePicker Name="DatePicker" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,0,40,0" FocusVisualPrimaryBrush="#FFC3C1C1" FirstDayOfWeek="Monday" Foreground="White" FocusVisualSecondaryBrush="{x:Null}"/>
             </Grid>
         </Grid>
         <ScrollViewer HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Row="2" FlowDirection="LeftToRight">
-            <Grid x:Name="WeekMenu" Margin="9,0,0,0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="645">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="73*"/>
-                    <ColumnDefinition Width="26*"/>
-                    <ColumnDefinition Width="218*"/>
-                    <ColumnDefinition Width="82*"/>
-                    <ColumnDefinition Width="27*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock HorizontalAlignment="Left" Height="50" Text="Lundi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.ColumnSpan="2">
-                    <TextBlock.FocusVisualPrimaryBrush>
-                        <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
-                    </TextBlock.FocusVisualPrimaryBrush>
-                </TextBlock>
-                <TextBlock HorizontalAlignment="Left" Height="50" Text="Mardi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="1" Grid.ColumnSpan="2">
-                    <TextBlock.FocusVisualPrimaryBrush>
-                        <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
-                    </TextBlock.FocusVisualPrimaryBrush>
-                </TextBlock>
-                <TextBlock HorizontalAlignment="Left" Height="50" Text="Mercredi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="2" Grid.ColumnSpan="2">
-                    <TextBlock.FocusVisualPrimaryBrush>
-                        <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
-                    </TextBlock.FocusVisualPrimaryBrush>
-                </TextBlock>
-                <TextBlock HorizontalAlignment="Left" Height="50" Text="Jeudi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="3" Grid.ColumnSpan="2">
-                    <TextBlock.FocusVisualPrimaryBrush>
-                        <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
-                    </TextBlock.FocusVisualPrimaryBrush>
-                </TextBlock>
-                <TextBlock HorizontalAlignment="Left" Height="50" Text="Vendredi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="4" Grid.ColumnSpan="2">
-                    <TextBlock.FocusVisualPrimaryBrush>
-                        <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
-                    </TextBlock.FocusVisualPrimaryBrush>
-                </TextBlock>
-                <TextBlock HorizontalAlignment="Left" Height="50" Text="Samedi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="5" Grid.ColumnSpan="2">
-                    <TextBlock.FocusVisualPrimaryBrush>
-                        <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
-                    </TextBlock.FocusVisualPrimaryBrush>
-                </TextBlock>
-                <TextBlock HorizontalAlignment="Left" Height="50" Text="Dimanche" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="6" Grid.ColumnSpan="2">
-                    <TextBlock.FocusVisualPrimaryBrush>
-                        <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
-                    </TextBlock.FocusVisualPrimaryBrush>
-                </TextBlock>
-                <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Width="68" Click="Button_Click"/>
-                <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="1" Width="68"/>
-                <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="2" Width="68"/>
-                <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="3" Width="68"/>
-                <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="4" Width="68"/>
-                <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="5" Width="68"/>
-                <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="6" Width="68"/>
-                <Grid x:Name="MenuLundi" Grid.Column="2" Margin="0,10,0,10">
+            <!-- Test de transfert d'informations entre fenètres : -->
+            <!-- Pas forcément nécessaire -->
+            <!-- Ne pas passer une information entre deux View, passer par le View-Model-->
+            <StackPanel>
+                <Grid x:Name="WeekMenu" Margin="9,0,0,0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="645">
+                
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
-                </Grid>
-                <Grid x:Name="MenuLundi_Copy" Grid.Column="2" Margin="0,10,0,10" Grid.Row="1">
-                    <Grid.RowDefinitions>
+                        <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
-                </Grid>
-                <Grid x:Name="MenuLundi_Copy1" Grid.Column="2" Margin="0,11,0,9" Grid.Row="2">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
-                </Grid>
-                <Grid x:Name="MenuLundi_Copy2" Grid.Column="2" Margin="0,11,0,10" Grid.Row="3">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
-                </Grid>
-                <Grid x:Name="MenuLundi_Copy3" Grid.Column="2" Margin="0,10,0,10" Grid.Row="4">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
-                </Grid>
-                <Grid x:Name="MenuLundi_Copy4" Grid.Column="2" Margin="0,11,0,10" Grid.Row="5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
-                </Grid>
-                <Grid x:Name="MenuLundi_Copy5" Grid.Column="2" Margin="0,10,0,10" Grid.Row="6">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                    <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
-                </Grid>
+                
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="73*"/>
+                        <ColumnDefinition Width="26*"/>
+                        <ColumnDefinition Width="218*"/>
+                        <ColumnDefinition Width="82*"/>
+                        <ColumnDefinition Width="27*"/>
+                    </Grid.ColumnDefinitions>
+                
+                    <TextBlock HorizontalAlignment="Left" Height="50" Text="Lundi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.ColumnSpan="2">
+                        <TextBlock.FocusVisualPrimaryBrush>
+                            <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+                        </TextBlock.FocusVisualPrimaryBrush>
+                    </TextBlock>
+                
+                    <TextBlock HorizontalAlignment="Left" Height="50" Text="Mardi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="1" Grid.ColumnSpan="2">
+                        <TextBlock.FocusVisualPrimaryBrush>
+                            <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+                        </TextBlock.FocusVisualPrimaryBrush>
+                    </TextBlock>
+                
+                    <TextBlock HorizontalAlignment="Left" Height="50" Text="Mercredi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="2" Grid.ColumnSpan="2">
+                        <TextBlock.FocusVisualPrimaryBrush>
+                            <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+                        </TextBlock.FocusVisualPrimaryBrush>
+                    </TextBlock>
+                
+                    <TextBlock HorizontalAlignment="Left" Height="50" Text="Jeudi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="3" Grid.ColumnSpan="2">
+                        <TextBlock.FocusVisualPrimaryBrush>
+                            <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+                        </TextBlock.FocusVisualPrimaryBrush>
+                    </TextBlock>
+                
+                    <TextBlock HorizontalAlignment="Left" Height="50" Text="Vendredi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="4" Grid.ColumnSpan="2">
+                        <TextBlock.FocusVisualPrimaryBrush>
+                            <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+                        </TextBlock.FocusVisualPrimaryBrush>
+                    </TextBlock>
+                
+                    <TextBlock HorizontalAlignment="Left" Height="50" Text="Samedi" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="5" Grid.ColumnSpan="2">
+                        <TextBlock.FocusVisualPrimaryBrush>
+                            <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+                        </TextBlock.FocusVisualPrimaryBrush>
+                    </TextBlock>
+                
+                    <TextBlock HorizontalAlignment="Left" Height="50" Text="Dimanche" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="6" Grid.ColumnSpan="2">
+                        <TextBlock.FocusVisualPrimaryBrush>
+                            <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+                        </TextBlock.FocusVisualPrimaryBrush>
+                    </TextBlock>
+                
+                        <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="0" Width="68" Click="Button_Click"/>
 
-            </Grid>
+                        <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="1" Width="68" Click="Button_Click"/>
+
+                        <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="2" Width="68" Click="Button_Click"/>
+
+                        <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="3" Width="68" Click="Button_Click"/>
+
+                        <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="4" Width="68" Click="Button_Click"/>
+
+                        <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="5" Width="68" Click="Button_Click"/>
+
+                        <Button Content="Réserver" Grid.Column="3" Background="#FFFF7C00" FontSize="11" HorizontalAlignment="Center" Height="69" Foreground="#FF181885" FocusVisualSecondaryBrush="#99F37E7E" FocusVisualPrimaryBrush="#FF5617FF" BorderBrush="Transparent" RequestedTheme="Dark" ClickMode="Press" Grid.Row="6" Width="68" Click="Button_Click"/>
+                
+                    <Grid x:Name="MenuLundi" Grid.Column="2" Margin="0,10,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                    </Grid>
+                
+                    <Grid x:Name="MenuMardi" Grid.Column="2" Margin="0,10,0,10" Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                    </Grid>
+                
+                    <Grid x:Name="MenuMercredi" Grid.Column="2" Margin="0,11,0,9" Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                    </Grid>
+                
+                    <Grid x:Name="MenuJeudi" Grid.Column="2" Margin="0,11,0,10" Grid.Row="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                    </Grid>
+                
+                    <Grid x:Name="MenuVendredi" Grid.Column="2" Margin="0,10,0,10" Grid.Row="4">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                    </Grid>
+                
+                    <Grid x:Name="MenuSamedi" Grid.Column="2" Margin="0,11,0,10" Grid.Row="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                    </Grid>
+                
+                    <Grid x:Name="MenuDimanche" Grid.Column="2" Margin="0,10,0,10" Grid.Row="6">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                    </Grid>
+               
+                </Grid>
+            </StackPanel>
         </ScrollViewer>
+        
     </Grid>
 </Page>
