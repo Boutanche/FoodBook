@@ -12,9 +12,14 @@ namespace BO.DTO.Requests
     /// </summary>
     public class LoginRequest
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [Required]
         public string Username { get; set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         [Required]
         public string Password { get; set; }
         /// <summary>
