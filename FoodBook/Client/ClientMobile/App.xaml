@@ -1,0 +1,41 @@
+﻿<Application
+    x:Class="ClientMobile.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClientMobile"
+    RequestedTheme="Dark">
+
+
+    <Application.Resources>
+        
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="/RessourcesDictionary/DictionaryTheme.xaml"/>
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        
+
+        <!--<ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <SolidColorBrush x:Key="OrangeFoodBook" Color="#FFFF7C00"></SolidColorBrush>
+                </ResourceDictionary>
+                <ResourceDictionary>
+                    <Style x:Key="StyleMainBtn" TargetType="Button">
+                        <Setter Property="Background" Value="{StaticResource OrangeFoodBook}"></Setter>
+                        <Setter Property="Foreground" Value="Black"></Setter>
+                        <Setter Property="FocusVisualPrimaryBrush" Value="#FF5617FF"></Setter>
+                        <Setter Property="FocusVisualPrimaryBrush" Value="#99F37E7E"></Setter>
+                        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                        <Setter Property="FontSize" Value="11"></Setter>
+                        <Setter Property="Height" Value="69"></Setter>
+                        <Setter Property="Width" Value="68"></Setter>
+                        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                        <Setter Property="Content" Value="Réserver"></Setter>
+                    </Style>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>-->
+    </Application.Resources>
+
+</Application>

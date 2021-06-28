@@ -116,7 +116,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Views\App.xaml.cs">
+    <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BookingPage.xaml.cs">
@@ -146,10 +146,14 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="Views\App.xaml">
+    <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="RessourcesDictionary\DictionaryTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\BookingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +170,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="RessourcesLocalization\fr-FR\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="RessourcesLocalization\en-US\Resources.resw" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
