@@ -117,7 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MainPage_BookingBtn.Content" xml:space="preserve">
+    <value>Réserver</value>
+  </data>
+  <data name="MainPage_TextBlockFriday.Text" xml:space="preserve">
+    <value>Vendredi</value>
+  </data>
+  <data name="MainPage_TextBlockMonday.Text" xml:space="preserve">
+    <value>Lundi</value>
+  </data>
+  <data name="MainPage_TextBlockSaturday.Text" xml:space="preserve">
+    <value>Samedi</value>
+  </data>
+  <data name="MainPage_TextBlockSunday.Text" xml:space="preserve">
+    <value>Dimanche</value>
+  </data>
+  <data name="MainPage_TextBlockThuesday.Text" xml:space="preserve">
+    <value>Mardi</value>
+  </data>
+  <data name="MainPage_TextBlockThursday.Text" xml:space="preserve">
+    <value>Jeudi</value>
+  </data>
+  <data name="MainPage_TextBlockWednesday.Text" xml:space="preserve">
+    <value>Mercredi</value>
+  </data>
   <data name="MainPage_Title.Text" xml:space="preserve">
-    <value>Hello !</value>
+    <value>Bonjour</value>
   </data>
 </root>
