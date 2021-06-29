@@ -32,6 +32,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <!--No Traduction here because FoddBook is a Name of the Application -->
             <TextBlock HorizontalAlignment="Left" Height="50" Text="FoodBook" TextWrapping="Wrap" VerticalAlignment="Center" Width="168" FontFamily="Ebrima" FontWeight="Normal" FontSize="36">
                 <TextBlock.Foreground>
                     <SolidColorBrush Color="{StaticResource SystemRevealListMediumColor}"/>
@@ -58,8 +59,8 @@
                 <ColumnDefinition Width="7*"/>
             </Grid.ColumnDefinitions>
             <Grid x:Name="SelectService" Grid.Column="1">
-                <ToggleSwitch Header="Service :" Margin="0,0,0,0"  
-                              OffContent="Midi" OnContent="Soir" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+                <ToggleSwitch x:Uid="MainPage_ToggleSwitch" Header="MainPage_ToggleSwitch" Margin="0,0,0,0"  
+                              OffContent="MainPage_ToggleSwitch" OnContent="MainPage_ToggleSwitch" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
 
             </Grid>
             <Grid x:Name="SelectDate" VerticalAlignment="Center" Height="31">
@@ -96,42 +97,37 @@
                             <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
                         </TextBlock.FocusVisualPrimaryBrush>
                     </TextBlock>
-
                     <TextBlock HorizontalAlignment="Left" Height="50" x:Uid="MainPage_TextBlockThuesday" Text="MainPage_TextBlockThuesday" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="1" Grid.ColumnSpan="2">
                         <TextBlock.FocusVisualPrimaryBrush>
                             <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
                         </TextBlock.FocusVisualPrimaryBrush>
                     </TextBlock>
-
                     <TextBlock HorizontalAlignment="Left" Height="50" x:Uid="MainPage_TextBlockWednesday" Text="MainPage_TextBlockWednesday" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="2" Grid.ColumnSpan="2">
                         <TextBlock.FocusVisualPrimaryBrush>
                             <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
                         </TextBlock.FocusVisualPrimaryBrush>
                     </TextBlock>
-
                     <TextBlock HorizontalAlignment="Left" Height="50" x:Uid="MainPage_TextBlockThursday" Text="MainPage_TextBlockThursday" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="3" Grid.ColumnSpan="2">
                         <TextBlock.FocusVisualPrimaryBrush>
                             <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
                         </TextBlock.FocusVisualPrimaryBrush>
                     </TextBlock>
-
                     <TextBlock HorizontalAlignment="Left" Height="50" x:Uid="MainPage_TextBlockFriday" Text="MainPage_TextBlockFriday" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="4" Grid.ColumnSpan="2">
                         <TextBlock.FocusVisualPrimaryBrush>
                             <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
                         </TextBlock.FocusVisualPrimaryBrush>
                     </TextBlock>
-
                     <TextBlock HorizontalAlignment="Left" Height="50" x:Uid="MainPage_TextBlockSaturday" Text="MainPage_TextBlockSaturday" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="5" Grid.ColumnSpan="2">
                         <TextBlock.FocusVisualPrimaryBrush>
                             <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
                         </TextBlock.FocusVisualPrimaryBrush>
                     </TextBlock>
-
                     <TextBlock HorizontalAlignment="Left" Height="50" x:Uid="MainPage_TextBlockSunday" Text="MainPage_TextBlockSunday" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontFamily="Ebrima" FontWeight="Normal" Foreground="#FFF96109" FontSize="16" Grid.Row="6" Grid.ColumnSpan="2">
                         <TextBlock.FocusVisualPrimaryBrush>
                             <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
                         </TextBlock.FocusVisualPrimaryBrush>
                     </TextBlock>
+                    
                     <Button x:Name="BookingBtn0" Grid.Row="0" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn" />
                     <Button x:Name="BookingBtn1" Grid.Row="1" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn" />
                     <Button x:Name="BookingBtn2" Grid.Row="2" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn" />
@@ -145,9 +141,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
                     </Grid>
                     <Grid x:Name="MenuMardi" Grid.Column="2" Margin="0,10,0,10" Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -155,9 +151,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
                     </Grid>
                     <Grid x:Name="MenuMercredi" Grid.Column="2" Margin="0,11,0,9" Grid.Row="2">
                         <Grid.RowDefinitions>
@@ -165,9 +161,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
                     </Grid>
                     <Grid x:Name="MenuJeudi" Grid.Column="2" Margin="0,11,0,10" Grid.Row="3">
                         <Grid.RowDefinitions>
@@ -175,9 +171,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
                     </Grid>
                     <Grid x:Name="MenuVendredi" Grid.Column="2" Margin="0,10,0,10" Grid.Row="4">
                         <Grid.RowDefinitions>
@@ -185,9 +181,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
                     </Grid>
                     <Grid x:Name="MenuSamedi" Grid.Column="2" Margin="0,11,0,10" Grid.Row="5">
                         <Grid.RowDefinitions>
@@ -195,9 +191,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
                     </Grid>
 
                     <Grid x:Name="MenuDimanche" Grid.Column="2" Margin="0,10,0,10" Grid.Row="6">
@@ -206,9 +202,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8"/>
-                        <TextBox HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox"/>
                     </Grid>
 
                 </Grid>

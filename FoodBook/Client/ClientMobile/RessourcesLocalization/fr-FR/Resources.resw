@@ -141,7 +141,19 @@
   <data name="MainPage_TextBlockWednesday.Text" xml:space="preserve">
     <value>Mercredi</value>
   </data>
+  <data name="MainPage_TextBox.PlaceholderText" xml:space="preserve">
+    <value>Le plat n'est pas encore complété</value>
+  </data>
   <data name="MainPage_Title.Text" xml:space="preserve">
     <value>Bonjour</value>
+  </data>
+  <data name="MainPage_ToggleSwitch.Header" xml:space="preserve">
+    <value>Service :</value>
+  </data>
+  <data name="MainPage_ToggleSwitch.OffContent" xml:space="preserve">
+    <value>Midi</value>
+  </data>
+  <data name="MainPage_ToggleSwitch.OnContent" xml:space="preserve">
+    <value>Soir</value>
   </data>
 </root>

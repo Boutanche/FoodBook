@@ -39,7 +39,7 @@ namespace BO.Entity
         /// <param name="id"></param>
         /// <param name="serviceNumber"></param>
         /// <param name="dateService"></param>
-        /// <param name ="listOfIntDishes"><</param>
+        /// <param name ="listOfIntDishes"></param>
         public Service(int? id, int serviceNumber, DateTime dateService, List<int> listOfIntDishes)
         {
             Id = id;

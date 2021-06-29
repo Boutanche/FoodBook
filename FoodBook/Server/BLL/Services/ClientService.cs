@@ -19,7 +19,7 @@ namespace BLL.Services
         
         //Update du 15/06/2021 : Suppression de Cient remplacé par User :
 
-        //TODO : Implémenter Uer : 
+        //TODO : Implémenter User : 
 
         #region Client
         /// <summary>
