@@ -36,7 +36,6 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns></returns>
         Task<bool> RemoveIngredientById(int id);
-        
 
         /// <summary>
         /// Récupérer la liste de tous les ingrédients
@@ -56,6 +55,8 @@ namespace BLL.Services
         /// <param name="id">int</param>
         /// <returns>Dish</returns>
         Task<Dish> GetDishById(int id);
+
+
         /// <summary>
         /// Créer un plat
         /// </summary>
@@ -220,6 +221,21 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns></returns>
         Task<bool> RemoveListOfIngredientById(int id);
+        #endregion
+        #region Booking
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task<Booking> GetBookingById(int id);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="booking"></param>
+        /// <returns></returns>
+        Task<Booking> CreateBooking(Booking booking);
+
         #endregion
 
     }
