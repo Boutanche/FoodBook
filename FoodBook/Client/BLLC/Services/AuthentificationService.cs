@@ -15,7 +15,7 @@ namespace BLLC.Services
         // Propriété de classe :
         //Mon instance dans toute l'application : 
         private static AuthentificationService _instance;
-        private static readonly object locker = new();
+        private static readonly object locker = new object();
 
         // Propriétés d'instance :
         public bool IsLogged { get; private set; }

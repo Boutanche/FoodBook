@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\BookingM.cs" />
     <Compile Include="Models\ModelBase.cs" />
     <Compile Include="ViewModels\MainVM.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
@@ -170,8 +171,16 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.12</Version>
     </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>6.0.0-preview.6.21352.12</Version>
+    </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLLC\BLLC.csproj">
+      <Project>{180147DD-474E-4395-AFAB-75707289A0D7}</Project>
+      <Name>BLLC</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <PRIResource Include="RessourcesLocalization\fr-FR\Resources.resw" />
   </ItemGroup>

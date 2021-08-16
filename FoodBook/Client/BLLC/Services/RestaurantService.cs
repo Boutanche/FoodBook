@@ -35,7 +35,7 @@ namespace BLLC.Services
                 new StringContent(JsonSerializer.Serialize(newDish), Encoding.UTF8, "application/json"));
             if (response.IsSuccessStatusCode)
             {
-                using var stream = await response.Content.ReadAsStreamAsync();
+                var stream = await response.Content.ReadAsStreamAsync();
                 Dish dish = await JsonSerializer.DeserializeAsync<Dish>(stream, new JsonSerializerOptions()
                 {
                     PropertyNameCaseInsensitive = true
@@ -59,7 +59,7 @@ namespace BLLC.Services
                     JsonSerializer.Serialize(ingredient), Encoding.UTF8, "application/json"));
             if (response.IsSuccessStatusCode)
             {
-                using var stream = await response.Content.ReadAsStreamAsync();
+                var stream = await response.Content.ReadAsStreamAsync();
                 Ingredients newIngredient = await JsonSerializer.DeserializeAsync<Ingredients>(stream, new JsonSerializerOptions()
                 {
                     PropertyNameCaseInsensitive = true
@@ -83,7 +83,7 @@ namespace BLLC.Services
                     JsonSerializer.Serialize(listOfIngredient), Encoding.UTF8, "application/json"));
             if (response.IsSuccessStatusCode)
             {
-                using var stream = await response.Content.ReadAsStreamAsync();
+                var stream = await response.Content.ReadAsStreamAsync();
                 ListOfIngredient newListOfIngredient = await JsonSerializer.DeserializeAsync<ListOfIngredient>(stream, new JsonSerializerOptions()
                 {
                     PropertyNameCaseInsensitive = true
@@ -102,7 +102,7 @@ namespace BLLC.Services
             var reponse = await _httpClient.GetAsync("dish");
             if (reponse.IsSuccessStatusCode)
             {
-                using var stream = await reponse.Content.ReadAsStreamAsync();
+                var stream = await reponse.Content.ReadAsStreamAsync();
                 //Ici reception de json qu'il faut que je remette en objet C#.
                 List<Dish> dishesPage = await JsonSerializer.DeserializeAsync<List<Dish>>
                     (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
@@ -129,7 +129,7 @@ namespace BLLC.Services
             // Si la requete a reussi
             if (reponse.IsSuccessStatusCode)
             {
-                using var stream = await reponse.Content.ReadAsStreamAsync();
+                var stream = await reponse.Content.ReadAsStreamAsync();
                 //Ici reception de json qu'il faut que je remette en objet C#.
                 List<Ingredients> ingredientsPage = await JsonSerializer.DeserializeAsync<List<Ingredients>>
                     (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
@@ -152,7 +152,7 @@ namespace BLLC.Services
             var reponse = await _httpClient.GetAsync($"dish/name/{name}");
             if (reponse.IsSuccessStatusCode)
             {
-                using var stream = await reponse.Content.ReadAsStreamAsync();
+                var stream = await reponse.Content.ReadAsStreamAsync();
                 //Ici reception de json qu'il faut que je remette en objet C#.
                 Dish dish = await JsonSerializer.DeserializeAsync<Dish>
                     (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
@@ -163,6 +163,30 @@ namespace BLLC.Services
                 //Faudra traiter ça sur l'interface si problème.
                 return null;
             }
+        }
+        public async Task<Booking> CreateBooking(Booking booking)
+        {
+            var response = await _httpClient.PostAsync("booking",
+               new StringContent(
+                   JsonSerializer.Serialize(booking), Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
+            {
+                var stream = await response.Content.ReadAsStreamAsync();
+                Booking newBooking = await JsonSerializer.DeserializeAsync<Booking>(stream, new JsonSerializerOptions()
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                return newBooking;
+            }
+            else
+            {
+                return null;
+            };
+        }
+
+        public Task<Menu> CreateMenu(Menu newMenu)
+        {
+            throw new NotImplementedException();
         }
     }
 }
