@@ -47,13 +47,21 @@ namespace BO.Entity
                    Year == menu.Year &&
                    WeekNumber == menu.WeekNumber;
         }
+
         /// <summary>
         /// GetHashCode()
         /// </summary>
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id, Year, WeekNumber);
+            int hashCode = -673405900;
+            hashCode = hashCode * -1521134295 + Id.GetHashCode();
+            hashCode = hashCode * -1521134295 + Year.GetHashCode();
+            hashCode = hashCode * -1521134295 + WeekNumber.GetHashCode();
+            return hashCode;
         }
+
+
+ 
     }
 }

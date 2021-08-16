@@ -48,13 +48,20 @@ namespace BO.Entity
                    IdDish == ingredient.IdDish &&
                    Quantity == ingredient.Quantity;
         }
+
         /// <summary>
         /// Override GetHashCode for ListOfIngredient
         /// </summary>
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(IdIngredient, IdDish, Quantity);
+            int hashCode = 343967131;
+            hashCode = hashCode * -1521134295 + IdIngredient.GetHashCode();
+            hashCode = hashCode * -1521134295 + IdDish.GetHashCode();
+            hashCode = hashCode * -1521134295 + Quantity.GetHashCode();
+            return hashCode;
         }
+
+
     }
 }

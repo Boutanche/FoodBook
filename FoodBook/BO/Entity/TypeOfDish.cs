@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BO.Entity
 {
@@ -46,7 +47,10 @@ namespace BO.Entity
         /// <returns>HashCode</returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id, Wording);
+            int hashCode = -1902563005;
+            hashCode = hashCode * -1521134295 + Id.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Wording);
+            return hashCode;
         }
     }
 }

@@ -41,13 +41,19 @@ namespace BO.Entity
                    IdDish == composed.IdDish &&
                    IdService == composed.IdService;
         }
+
         /// <summary>
         /// Généré automatiquement
         /// </summary>
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(IdDish, IdService);
+            int hashCode = -953204169;
+            hashCode = hashCode * -1521134295 + IdDish.GetHashCode();
+            hashCode = hashCode * -1521134295 + IdService.GetHashCode();
+            return hashCode;
         }
+
+        
     }
 }

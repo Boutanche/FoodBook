@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BO.Entity
 {
@@ -51,13 +52,20 @@ namespace BO.Entity
                    Name == ingredients.Name &&
                    Price == ingredients.Price;
         }
+
         /// <summary>
         /// Hash Code
         /// </summary>
         /// <returns>HashCode</returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id, Name, Price);
+            int hashCode = -479135040;
+            hashCode = hashCode * -1521134295 + Id.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name);
+            hashCode = hashCode * -1521134295 + Price.GetHashCode();
+            return hashCode;
         }
+
+
     }
 }

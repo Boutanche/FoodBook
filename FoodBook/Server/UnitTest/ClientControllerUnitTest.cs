@@ -17,7 +17,8 @@ namespace UnitTest
         /// Module de test de création d'un client
         /// </summary>
         [Fact]
-        public async void TestCreateClient()
+        //ATTENTION Normalement elle est async !
+        public void TestCreateClient()
         {
             //WIP : Client :
             //Non prioritaire sur ce jalon.

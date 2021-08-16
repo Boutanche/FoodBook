@@ -135,6 +135,7 @@
                     <Button x:Name="BookingBtn4" Grid.Row="4" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn" />
                     <Button x:Name="BookingBtn5" Grid.Row="5" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn"/>
                     <Button x:Name="BookingBtn6" Grid.Row="6" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn"/>
+                    
                     <Grid x:Name="MenuLundi" Grid.Column="2" Margin="0,10,0,10">
                         <Grid.RowDefinitions>
                             <RowDefinition/>

@@ -59,14 +59,22 @@ namespace BO.Entity
                    ServiceNumber == service.ServiceNumber &&
                    DateService == service.DateService;
         }
+
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id, ServiceNumber, DateService);
+            int hashCode = 993594278;
+            hashCode = hashCode * -1521134295 + Id.GetHashCode();
+            hashCode = hashCode * -1521134295 + ServiceNumber.GetHashCode();
+            hashCode = hashCode * -1521134295 + DateService.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<List<int>>.Default.GetHashCode(ListOfIntDishes);
+            return hashCode;
         }
+
+
     }
   
 }
