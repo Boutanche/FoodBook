@@ -289,6 +289,29 @@ namespace UnitTest.Services
         {
             throw new NotImplementedException();
         }
+        #endregion
+
+        #region Booking
+        public List<Booking> bookingFakeDB = new()
+        {
+            new Booking(1, DateTime.Now, 1, 1, 1, 1, 1, 1),
+            new Booking(2, DateTime.Now, 1, 0, 0, 1, 2, 1),
+            new Booking(3, DateTime.Now, 1, 1, 1, 1, 1, 2),
+            new Booking(4, DateTime.Now, 1, 0, 0, 0, 2, 2),
+
+
+        };
+
+
+        public Task<Booking> GetBookingById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Booking> CreateBooking(Booking booking)
+        {
+            return Task.FromResult(booking);
+        }
 
         #endregion
     }

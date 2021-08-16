@@ -334,6 +334,21 @@ namespace BLL.Services
         }
 
         #endregion
+        #region Booking
+        public async Task<Booking> CreateBooking(Booking booking)
+        {
+            _db.BeginTransaction();
+            IBookingRepository _booking = _db.GetRepository<IBookingRepository>();
+            Booking newBooking = await _booking.InsertAsync(booking);
+            _db.Commit();
+            return newBooking;
+        }
+        public async Task<Booking> GetBookingById(int id)
+        {
+            IBookingRepository _booking = _db.GetRepository<IBookingRepository>();
+            return await _booking.GetAsync(id);
+        }
+        #endregion
 
     }
 }
