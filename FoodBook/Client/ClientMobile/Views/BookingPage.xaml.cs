@@ -31,6 +31,8 @@ namespace ClientMobile.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //TODO : Effectuer une réservation
+
             this.Frame.Navigate(typeof(MainPage));
         }
     }
