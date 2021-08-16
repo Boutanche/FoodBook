@@ -17,6 +17,8 @@ using Windows.UI.Xaml.Navigation;
 
 namespace ClientMobile.Views
 {
+    //Mise à jour 16/08
+
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
