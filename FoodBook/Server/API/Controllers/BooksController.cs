@@ -9,6 +9,7 @@ using BLL.Services;
 using Microsoft.AspNetCore.Http;
 using BO.DTO.Requests;
 
+//A suprimer : Me sert juste d'exemple repris depuis les TP
 namespace API.Controllers
 {
     [ApiController]

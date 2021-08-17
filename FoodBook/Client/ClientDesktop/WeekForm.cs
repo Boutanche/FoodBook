@@ -68,6 +68,7 @@ namespace ClientDesktop
         /// <returns></returns>
         private DateTime IsMonday(DateTime isToday)
         {
+            Trace.WriteLine("Entrée dans la fonction : Trouver le premier jour de la semaine");
             DateTime isMonday = isToday;
             switch (isToday.DayOfWeek)
             {
@@ -108,12 +109,8 @@ namespace ClientDesktop
             componentEvening = new ServiceControlComponent(2, isMonday);
             
             // /!\ : Menu n'existe plus !!
-            //Si le menu existe dans la BDD alors il existe au moins un service midi ou soir sinon aucun service n'existe.
-            //Si Menu n'existe pas dans la BDD : 
-
             // /!\ : Menu n'existe plus !!
-            //Si Menu existe il faut chercher  
-            //Si Service existe dans la BDD
+
 
             tlpMidday.Controls.Add(componentMidday);
             tlpEvening.Controls.Add(componentEvening);
@@ -142,7 +139,7 @@ namespace ClientDesktop
             //Initialize(isToday);
             componentMidday.UpdateComponent(1, isToday);
             componentEvening.UpdateComponent(2, isToday);
-            //CreateClientMenu();
+
         }
         /// <summary>
         /// Click sur Btn Previous
@@ -166,25 +163,11 @@ namespace ClientDesktop
             //Initialize(isToday);
             componentMidday.UpdateComponent(1, isToday);
             componentEvening.UpdateComponent(2, isToday);
-            //CreateClientMenu();
+
         }
         #endregion
         // /!\ : Menu n'existe plus !!
-        //FIXME : Changer le nom de cette fonction ?
-        /// <summary>
-        /// Côté Client le menu est l'ensemble de deux services de la même semaine
-        /// </summary>
-        //private void CreateClientMenu()
-        //{
-        //    //Création du Menu côté client : 
-        //    weekMenu = new Menu()
-        //    {
-        //        Year = DateTime.Parse("01/01/2021"),
-        //        WeekNumber = Int32.Parse(tBWeek.Text),
-        //    };
-        //    Trace.WriteLine("Création du Menu Client numéro " + weekMenu.WeekNumber);
-        //    //Ajouter un control : Si existe déjà ne fait pas un new ?
-        //}
+
         //Se produit au chargement de la page : 
         /// <summary>
         /// Lancement du Timer
@@ -193,6 +176,7 @@ namespace ClientDesktop
         /// <param name="e"></param>
         private void WeekForm_Load(object sender, EventArgs e)
         {
+            Trace.WriteLine("Lancement du Timer");
             timerLoading.Start();
         }
         //Se produit au click sur Btn CreateDish
@@ -210,36 +194,10 @@ namespace ClientDesktop
         //
         public void UpdateComponent(DateTime isMonday)
         {
+            Trace.WriteLine("Mise à jour des Component Midday et Evening");
             componentMidday.UpdateComponent(1, isMonday);
             componentEvening.UpdateComponent(2, isMonday);
         }
     }
 }
-//********************************
-//*********CodePoubelle***********
-//********************************
-//
-//********************************
-////Fonction qui ne sert normalement plus à rien.
-//private int CWeekNumber()
-//{
 
-//    int weekNumber = CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(
-//        DateTime.Now, CalendarWeekRule.FirstFullWeek, DayOfWeek.Sunday);
-//    return weekNumber;
-//}
-//********************************
-//
-//********************************
-////Fonction non utilisée pour le moment
-///// <summary>
-///// Se produit à la fin du timer 
-///// </summary>
-///// <param name="sender"></param>
-///// <param name="e"></param>
-//private void TimerLoading_Tick(object sender, EventArgs e)
-//{
-//    //timerLoading.Stop();
-//    //pictureBox_Loading.Dispose();
-//}
-//*********************************

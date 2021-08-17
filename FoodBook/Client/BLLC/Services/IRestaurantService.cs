@@ -1,4 +1,5 @@
 ﻿using BO.Entity;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -23,11 +24,19 @@ namespace BLLC.Services
         #endregion
 
         #region Menu
-        Task<Menu> CreateMenu(Menu newMenu);
+        // /!\ : Menu n'existe plus !!
+        //Task<Menu> CreateMenu(Menu newMenu);
         // TODO : Supression des menu
         #endregion
         #region Booking
         Task<Booking> CreateBooking(Booking newBooking);
+        #endregion
+        #region Service
+        Task<Service> CreateService(Service service);
+        Task<List<Service>> GetServiceByDate(DateTime dateTime);
+        #endregion
+        #region
+        Task<IsComposed> CreateIsComposed(IsComposed newIsComposed);
         #endregion
     }
 }

@@ -15,7 +15,10 @@ namespace ClientDesktop
         public int localService;
         public int localType;
         //
+        private Service LocalService;
         private int IntIdService;
+        private int IntServiceNumber;
+        private DateTime DateTimeService;
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
         private readonly BindingSource bindingSourceDishes = new();
@@ -25,9 +28,12 @@ namespace ClientDesktop
             //Mon service ici n'a pas encore id !!! C'est le service "Client" qui n'a pas été créé dans la bdd.
             
             _restaurantService = new RestaurantService();
+            IntServiceNumber = service.ServiceNumber;
+            DateTimeService = service.DateService;
+            LocalService = service;
             InitializeComponent();
             //J'ai récupéré IntTypeOfDish pour effectuer un tri plus tard.
-            LoadDishes(service.DateService);
+            LoadDishes(service.DateService) ;
         }
 
         private async void LoadDishes(DateTime dateService)
@@ -43,18 +49,42 @@ namespace ClientDesktop
             dataGridViewDishes.Columns["idType"].Visible = false;
         }
 
-        private void DataGridViewDishes_CellClick(object sender, DataGridViewCellEventArgs e)
+        private async void DataGridViewDishes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int idDish = Int32.Parse(dataGridViewDishes.CurrentRow.Cells["id"].Value.ToString());
-            //Id service n'exite pas encore : 
-            int idService = 1;
-            //J'ai pas d'id service
-            //WIP : Supression de l'entité isComposed
-            //
-            IsComposed newIsComposed = new(idDish, idService);
+            IsComposed newIsComposed = null;
 
             //1 : Vérifier si le service existe
+            Task<List<Service>> serviceTask = _restaurantService.GetServiceByDate(DateTimeService);
+            
+            if (serviceTask == null)
+            {
+                //ICI : Si le service n'existe pas.
+                Task<Service> newService = _restaurantService.CreateService(LocalService);
+                newIsComposed = new(idDish, newService.Id);
+            }
+            else
+            {
+                List<Service> services = await serviceTask;
+                foreach (Service item in services)
+                {
+                    if (item.ServiceNumber == IntServiceNumber)
+                    {
+                        //TODO : Vérifier que IsComposed n'existe pas déjà. 
+                        newIsComposed = new(idDish, item.Id);
+                        
+                    }
+                }
+            }
+            //TODO : Création IsComposed
+            //Enregisgtrer IsComposed dans la BDD.
 
+            Task<IsComposed> isComposed = _restaurantService.CreateIsComposed(newIsComposed);
+            
+            //J'ai pas d'id service
+            //WIP : Supression de l'entité isComposed
+            
+            //
             //Select service where dateService = Service.dateService && serviceNumber = service.serviceNumber
             //Cette requête va me renvoyer soit 0, soit 1.
 
@@ -66,14 +96,18 @@ namespace ClientDesktop
             //Alors : Créer le service et lier le plat à ce ce service.
 
             //WIP : IsComposed
-            //Task<IsComposed> TaskIsComposed = _restaurantService.CreateIsComposed(newIsComposed);
-            
+            //Task<IsComposed> TaskIsComp
+            //o
+            //sed
+            // =
+            // _restaurantService.CreateIsComposed(newIsComposed);
+
             //Sinon Si : Le service existe mais il n'y a pas de table is composed .
             //Alors : Créer seulement la liaison.
 
             //Sinon : Il faut réaliser un update du plat c'est à dire : modifier la table is composed.
             // /!\ Réaliser un update sur une table de liaison où l'id est composée de deux clès étrangères. 
-            
+
         }
 
         //Récupération du numéro de la semaine depuis mainForm:

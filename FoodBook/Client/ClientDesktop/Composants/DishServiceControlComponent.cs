@@ -50,7 +50,7 @@ namespace ClientDesktop.Composants
         {
             String StringDate = Service.DateService.ToString();
             Trace.WriteLine("Tu viens de cliquer sur un Btn Add");
-            Trace.WriteLine("Concerne le service numéro : (doit me renvoyer null) : " + Service.Id.ToString() );
+            Trace.WriteLine("Concerne le service numéro : (doit me renvoyer un muméro de service) : " + Service.ServiceNumber.ToString() );
             Trace.WriteLine("Concerne le jour service date  : (doit me renvoyer une date) : " + StringDate);
             using (var dialog = new DishSelectorForm(Service, IntTypeOfDish))
             {

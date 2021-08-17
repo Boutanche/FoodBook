@@ -1,6 +1,7 @@
 ﻿using BO.Entity;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
@@ -18,8 +19,9 @@ namespace BLLC.Services
                 BaseAddress = new Uri("https://localhost:5001/api/v1.0/")
             };
         }
-        //TODO : Faire des régions : ce qui concerne les plats, les ingrédients, etc...
         
+        #region Dish
+
         /// <summary>
         /// Créer un plat
         /// </summary>
@@ -47,6 +49,49 @@ namespace BLLC.Services
                 return null;
             };
         }
+
+        public async Task<List<Dish>> GetAllDish()
+        {
+            var reponse = await _httpClient.GetAsync("dish");
+            if (reponse.IsSuccessStatusCode)
+            {
+                var stream = await reponse.Content.ReadAsStreamAsync();
+                //Ici reception de json qu'il faut que je remette en objet C#.
+                List<Dish> dishesPage = await JsonSerializer.DeserializeAsync<List<Dish>>
+                    (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return dishesPage;
+            }
+            else
+            {
+                //Faudra traiter ça sur l'interface si problème.
+                return null;
+            }  
+        }
+        /// <summary>
+        /// Récupérer un plat par son nom
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public async Task<Dish> GetDishByName(string name)
+        {
+            var reponse = await _httpClient.GetAsync($"dish/name/{name}");
+            if (reponse.IsSuccessStatusCode)
+            {
+                var stream = await reponse.Content.ReadAsStreamAsync();
+                //Ici reception de json qu'il faut que je remette en objet C#.
+                Dish dish = await JsonSerializer.DeserializeAsync<Dish>
+                    (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return dish;
+            }
+            else
+            {
+                //Faudra traiter ça sur l'interface si problème.
+                return null;
+            }
+        }
+
+        #endregion
+        #region Ingredient
         /// <summary>
         /// Créer un ingrédient
         /// </summary>
@@ -72,51 +117,6 @@ namespace BLLC.Services
             };
         }
         /// <summary>
-        /// Créer un élément de liaison entre un plat et un ingrédient
-        /// </summary>
-        /// <param name="listOfIngredient"></param>
-        /// <returns></returns>
-        public async Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient)
-        {
-            var response = await _httpClient.PostAsync("listOfIngredient",
-                new StringContent(
-                    JsonSerializer.Serialize(listOfIngredient), Encoding.UTF8, "application/json"));
-            if (response.IsSuccessStatusCode)
-            {
-                var stream = await response.Content.ReadAsStreamAsync();
-                ListOfIngredient newListOfIngredient = await JsonSerializer.DeserializeAsync<ListOfIngredient>(stream, new JsonSerializerOptions()
-                {
-                    PropertyNameCaseInsensitive = true
-                });
-                return newListOfIngredient;
-            }
-            else
-            {
-                return null;
-            };
-        }
-
-
-        public async Task<List<Dish>> GetAllDish()
-        {
-            var reponse = await _httpClient.GetAsync("dish");
-            if (reponse.IsSuccessStatusCode)
-            {
-                var stream = await reponse.Content.ReadAsStreamAsync();
-                //Ici reception de json qu'il faut que je remette en objet C#.
-                List<Dish> dishesPage = await JsonSerializer.DeserializeAsync<List<Dish>>
-                    (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-                return dishesPage;
-            }
-            else
-            {
-                //Faudra traiter ça sur l'interface si problème.
-                return null;
-            }
-            throw new NotImplementedException();
-        }
-
-        /// <summary>
         /// Récupérer la liste de tous les ingrédients.
         /// </summary>
         /// <returns></returns>
@@ -141,29 +141,34 @@ namespace BLLC.Services
                 return null;
             }
         }
-
+        #endregion
+        #region List Of Ingredient
         /// <summary>
-        /// Récupérer un plat par son nom
+        /// Créer un élément de liaison entre un plat et un ingrédient
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="listOfIngredient"></param>
         /// <returns></returns>
-        public async Task<Dish> GetDishByName(string name)
+        public async Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient)
         {
-            var reponse = await _httpClient.GetAsync($"dish/name/{name}");
-            if (reponse.IsSuccessStatusCode)
+            var response = await _httpClient.PostAsync("listOfIngredient",
+                new StringContent(
+                    JsonSerializer.Serialize(listOfIngredient), Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
             {
-                var stream = await reponse.Content.ReadAsStreamAsync();
-                //Ici reception de json qu'il faut que je remette en objet C#.
-                Dish dish = await JsonSerializer.DeserializeAsync<Dish>
-                    (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-                return dish;
+                var stream = await response.Content.ReadAsStreamAsync();
+                ListOfIngredient newListOfIngredient = await JsonSerializer.DeserializeAsync<ListOfIngredient>(stream, new JsonSerializerOptions()
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                return newListOfIngredient;
             }
             else
             {
-                //Faudra traiter ça sur l'interface si problème.
                 return null;
-            }
+            };
         }
+        #endregion,
+        #region Booking
         public async Task<Booking> CreateBooking(Booking booking)
         {
             var response = await _httpClient.PostAsync("booking",
@@ -176,51 +181,82 @@ namespace BLLC.Services
                 {
                     PropertyNameCaseInsensitive = true
                 });
+                Trace.WriteLine("Création d'une réservation");
                 return newBooking;
+
             }
             else
             {
+                Trace.WriteLine("Problème dans la création d'une réservation");
                 return null;
             };
         }
-
-        public Task<Menu> CreateMenu(Menu newMenu)
+        #endregion
+        #region Service
+        public async Task<Service> CreateService(Service service)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.PostAsync("service",
+                new StringContent(
+                    JsonSerializer.Serialize(service), Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
+            {
+                var stream = await response.Content.ReadAsStreamAsync();
+                Service newService= await JsonSerializer.DeserializeAsync<Service>(stream, new JsonSerializerOptions()
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                Trace.WriteLine("Création d'un service");
+                return newService;
+            }
+            else
+            {
+                Trace.WriteLine("Problème dans la création d'un service");
+                return null;
+            }
         }
+        public async Task<List<Service>> GetServiceByDate(DateTime dateTime)
+        {
+            var reponse = await _httpClient.GetAsync($"dish/date/{dateTime}");
+            if (reponse.IsSuccessStatusCode)
+            {
+                var stream = await reponse.Content.ReadAsStreamAsync();
+                //Ici reception de json qu'il faut que je remette en objet C#.
+                                List<Service> servicePage = await JsonSerializer.DeserializeAsync<List<Service>>
+                       (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return servicePage;
+            }
+            else
+            {
+                //Faudra traiter ça sur l'interface si problème.
+                return null;
+            }
+        }
+
+        #endregion
+
+        #region Is Composed
+        public async Task<IsComposed> CreateIsComposed(IsComposed isComposed)
+        {
+            var response = await _httpClient.PostAsync("isComposed",
+                new StringContent(
+                    JsonSerializer.Serialize(isComposed), Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
+            {
+                var stream = await response.Content.ReadAsStreamAsync();
+                IsComposed newIsComposed = await JsonSerializer.DeserializeAsync<IsComposed>(stream, new JsonSerializerOptions()
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                Trace.WriteLine("Création d'un IsComposed");
+                return newIsComposed;
+            }
+            else
+            {
+                Trace.WriteLine("Problème dans la création d'un IsComposed");
+                return null;
+            }
+        
+        }
+        #endregion
     }
 }
-
-/******************************************************************************************************
- ******************************* Code Poubelle ********************************************************
- *** Menu : ***
-
-
-        ////Menu n'existe plus à virer : 
-        //#region Menu
-        //public async Task<Menu> CreateMenu(Menu menu)
-        //{
-        //    var response = await _httpClient.PostAsync("Menu",
-        //        new StringContent(
-        //            JsonSerializer.Serialize(menu), Encoding.UTF8, "application/json"));
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        using var stream = await response.Content.ReadAsStreamAsync();
-        //        Menu newMenu = await JsonSerializer.DeserializeAsync<Menu>(stream, new JsonSerializerOptions()
-        //        {
-        //            PropertyNameCaseInsensitive = true
-        //        });
-        //        return newMenu;
-        //    }
-        //    else
-        //    {
-        //        return null;
-        //    };
-        //}
-        //#endregion 
-
- *
- * 
- * 
- * 
- */
