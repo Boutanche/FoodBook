@@ -1,5 +1,6 @@
 ﻿using App.Models;
 using BLLC.Services;
+using BO.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +32,7 @@ namespace ClientMobile.Models
                 {
                     if (_instance == null)
                     {
-                        _instance = Load();
+                        //_instance = Load();
                     }
 
                     return _instance;
@@ -100,7 +101,7 @@ namespace ClientMobile.Models
 
         }
 
-        //load qui charge les settings
+        //Load qui charge les réservations
         public static BookingM Load(int idBooking)
         {
             try

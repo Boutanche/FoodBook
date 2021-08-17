@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClientMobile.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,6 +18,9 @@ using Windows.UI.Xaml.Navigation;
 
 namespace ClientMobile.Views
 {
+
+    //Appeller firmule autrement
+
     //Mise à jour 16/08
 
     /// <summary>
@@ -31,7 +35,7 @@ namespace ClientMobile.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //TODO : Effectuer une réservation
+            BookingVM.Book();
 
             this.Frame.Navigate(typeof(MainPage));
         }

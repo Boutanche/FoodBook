@@ -121,6 +121,8 @@
     </Compile>
     <Compile Include="Models\BookingM.cs" />
     <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Models\WeekM.cs" />
+    <Compile Include="ViewModels\BookingVM.cs" />
     <Compile Include="ViewModels\MainVM.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\BookingPage.xaml.cs">
@@ -176,6 +178,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\BO\BO.csproj">
+      <Project>{06FD84A9-3293-4A8D-A585-B0207B3CE1E9}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BLLC\BLLC.csproj">
       <Project>{180147DD-474E-4395-AFAB-75707289A0D7}</Project>
       <Name>BLLC</Name>

@@ -24,7 +24,7 @@ namespace BLLC.Services
 
         #region Menu
         Task<Menu> CreateMenu(Menu newMenu);
-        //Supression des menu
+        // TODO : Supression des menu
         #endregion
         #region Booking
         Task<Booking> CreateBooking(Booking newBooking);
