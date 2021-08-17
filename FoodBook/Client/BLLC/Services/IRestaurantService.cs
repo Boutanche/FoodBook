@@ -37,6 +37,8 @@ namespace BLLC.Services
         #endregion
         #region
         Task<IsComposed> CreateIsComposed(IsComposed newIsComposed);
+        Task<List<IsComposed>> GetIsComposedByIdService(int? id);
+        Dish GetDishById(int? idDish);
         #endregion
     }
 }

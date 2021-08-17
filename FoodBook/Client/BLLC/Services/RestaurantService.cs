@@ -67,6 +67,11 @@ namespace BLLC.Services
                 return null;
             }  
         }
+
+        public Dish GetDishById(int? idDish)
+        {
+            throw new NotImplementedException();
+        }
         /// <summary>
         /// Récupérer un plat par son nom
         /// </summary>
@@ -219,6 +224,7 @@ namespace BLLC.Services
             var reponse = await _httpClient.GetAsync($"dish/date/{dateTime}");
             if (reponse.IsSuccessStatusCode)
             {
+                Trace.WriteLine("GetServiceByDate return a servicePage");
                 var stream = await reponse.Content.ReadAsStreamAsync();
                 //Ici reception de json qu'il faut que je remette en objet C#.
                                 List<Service> servicePage = await JsonSerializer.DeserializeAsync<List<Service>>
@@ -228,6 +234,7 @@ namespace BLLC.Services
             else
             {
                 //Faudra traiter ça sur l'interface si problème.
+                Trace.WriteLine("GetServiceByDate return null");
                 return null;
             }
         }
@@ -257,6 +264,12 @@ namespace BLLC.Services
             }
         
         }
+
+        public Task<List<IsComposed>> GetIsComposedByIdService(int? id)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
     }
 }
