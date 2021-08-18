@@ -28,5 +28,22 @@ namespace UnitTest
             //Assert
             Assert.NotNull(ServiceActionResult);
         }
+        [Fact]
+        public async void TestCreateService()
+        {
+            //Arange
+            IRestaurantService restaurantService = new FakeRestaurantService();
+            ServiceController serviceController = new(restaurantService);
+            Service service = new();
+            {
+                service.ServiceNumber = 1;
+                service.DateService = DateTime.Now;
+                
+            }
+            //Act
+            var serviceActionResult = await serviceController.CreateService(service);
+            //Assert
+            Assert.NotNull(serviceActionResult);
+        }
     }
 }

@@ -37,11 +37,12 @@ namespace ClientDesktop
             Task<Ingredients> ingredientsTask = _restaurantService.CreateIngredients(ingredient);
             // TODO : A la sortie : Afficher OK ou Afficher Erreur. 
             // TODO : Réfraichir les données.
+            
         }
         //TODO : Button Cancel !
         private void button_cancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

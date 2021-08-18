@@ -177,11 +177,11 @@ namespace UnitTest.Services
         public List<Service> serviceFakeDB = new()
         {
             
-            new Service(1, 1, DateTime.Parse("01/01/2021"), new List<int>(1)),
-            new Service(2, 2, DateTime.Parse("01/01/2021"), new List<int>(1)),
-            new Service(3, 1, DateTime.Parse("08/01/2021"), new List<int>(1)),
-            new Service(4, 2, DateTime.Parse("08/01/2021"), new List<int>(1)),
-            new Service(5, 1, DateTime.Parse("15/01/2021"), new List<int>(1)),
+            new Service(1, 1, DateTime.Parse("01/01/2021")),
+            new Service(2, 2, DateTime.Parse("01/01/2021")),
+            new Service(3, 1, DateTime.Parse("08/01/2021")),
+            new Service(4, 2, DateTime.Parse("08/01/2021")),
+            new Service(5, 1, DateTime.Parse("15/01/2021")),
 
         };
         public async Task<List<Service>> GetAllService()
@@ -201,7 +201,7 @@ namespace UnitTest.Services
 
         public Task<Service> CreateService(Service service)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(service);
         }
 
         public Task<bool> AddDishForThisService(Dish dish, Service service)
@@ -311,6 +311,11 @@ namespace UnitTest.Services
         public Task<Booking> CreateBooking(Booking booking)
         {
             return Task.FromResult(booking);
+        }
+
+        public Task<IEnumerable<Service>> GetServiceByDate(DateTime date)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

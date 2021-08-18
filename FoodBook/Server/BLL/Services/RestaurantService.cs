@@ -235,14 +235,21 @@ namespace BLL.Services
             throw new NotImplementedException();
         }
 
-        public Task<List<Service>> GetServicesByIdMenu(int idMenu)
+        public async Task<IEnumerable<Service>> GetServiceByDate(DateTime date)
         {
-            throw new NotImplementedException();
-        }
+            IServiceRepository _service = _db.GetRepository<IServiceRepository>();
 
-        public Task<Service> CreateService(Service service)
+            return await _service.GetAsyncByDate(date);
+        }
+        
+
+        public async Task<Service> CreateService(Service service)
         {
-            throw new NotImplementedException();
+            _db.BeginTransaction();
+            IServiceRepository _service = _db.GetRepository<IServiceRepository>();
+            Service newService = await _service.InsertAsync(service);
+            _db.Commit();
+            return newService;
         }
 
         public Task<bool> AddDishForThisService(Dish dish, Service service)
@@ -251,6 +258,11 @@ namespace BLL.Services
         }
 
         public Task<bool> RemoveDishForThisService(Dish dish, Service service)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Service>> GetServicesByIdMenu(int idMenu)
         {
             throw new NotImplementedException();
         }
@@ -348,6 +360,9 @@ namespace BLL.Services
             IBookingRepository _booking = _db.GetRepository<IBookingRepository>();
             return await _booking.GetAsync(id);
         }
+
+
+
         #endregion
 
     }

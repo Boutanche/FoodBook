@@ -27,7 +27,8 @@ namespace BO.Entity
         /// <summary>
         /// 
         /// </summary>
-        public List<int> ListOfIntDishes { get; set; }
+        
+        //public List<int> ListOfIntDishes { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -39,13 +40,13 @@ namespace BO.Entity
         /// <param name="id"></param>
         /// <param name="serviceNumber"></param>
         /// <param name="dateService"></param>
-        /// <param name ="listOfIntDishes"></param>
-        public Service(int? id, int serviceNumber, DateTime dateService, List<int> listOfIntDishes)
+        
+        public Service(int? id, int serviceNumber, DateTime dateService)
         {
             Id = id;
             ServiceNumber = serviceNumber;
             DateService = dateService;
-            ListOfIntDishes = listOfIntDishes;
+        //    ListOfIntDishes = listOfIntDishes;
         }
         /// <summary>
         /// 
@@ -70,7 +71,7 @@ namespace BO.Entity
             hashCode = hashCode * -1521134295 + Id.GetHashCode();
             hashCode = hashCode * -1521134295 + ServiceNumber.GetHashCode();
             hashCode = hashCode * -1521134295 + DateService.GetHashCode();
-            hashCode = hashCode * -1521134295 + EqualityComparer<List<int>>.Default.GetHashCode(ListOfIntDishes);
+            //hashCode = hashCode * -1521134295 + EqualityComparer<List<int>>.Default.GetHashCode(ListOfIntDishes);
             return hashCode;
         }
 

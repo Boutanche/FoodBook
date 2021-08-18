@@ -37,6 +37,7 @@ namespace ClientDesktop
             this.labelWeekNumber = new System.Windows.Forms.Label();
             this.label_Title = new System.Windows.Forms.Label();
             this.dataGridViewDishes = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel_body.SuspendLayout();
             this.tableLayoutPanel_Remember.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDishes)).BeginInit();
@@ -50,6 +51,7 @@ namespace ClientDesktop
             this.tableLayoutPanel_body.Controls.Add(this.tableLayoutPanel_Remember, 1, 0);
             this.tableLayoutPanel_body.Controls.Add(this.label_Title, 0, 0);
             this.tableLayoutPanel_body.Controls.Add(this.dataGridViewDishes, 1, 1);
+            this.tableLayoutPanel_body.Controls.Add(this.button1, 0, 1);
             this.tableLayoutPanel_body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel_body.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel_body.Name = "tableLayoutPanel_body";
@@ -136,6 +138,16 @@ namespace ClientDesktop
             this.dataGridViewDishes.TabIndex = 2;
             this.dataGridViewDishes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewDishes_CellClick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 93);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button_ok";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // DishSelectorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -164,5 +176,6 @@ namespace ClientDesktop
         private System.Windows.Forms.Label labelService;
         private System.Windows.Forms.DataGridView dataGridViewDishes;
         private System.Windows.Forms.Label labelWeekNumber;
+        private System.Windows.Forms.Button button1;
     }
 }

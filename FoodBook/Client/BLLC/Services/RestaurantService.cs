@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
@@ -68,9 +69,22 @@ namespace BLLC.Services
             }  
         }
 
-        public Dish GetDishById(int? idDish)
+        public async Task<Dish> GetDishById(int? idDish)
         {
-            throw new NotImplementedException();
+            var reponse = await _httpClient.GetAsync($"dish/id/{idDish}");
+            if (reponse.IsSuccessStatusCode)
+            {
+                var stream = await reponse.Content.ReadAsStreamAsync();
+                //Ici reception de json qu'il faut que je remette en objet C#.
+                Dish dish = await JsonSerializer.DeserializeAsync<Dish>
+                    (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return dish;
+            }
+            else
+            {
+                //Faudra traiter ça sur l'interface si problème.
+                return null;
+            }
         }
         /// <summary>
         /// Récupérer un plat par son nom
@@ -221,7 +235,7 @@ namespace BLLC.Services
         }
         public async Task<List<Service>> GetServiceByDate(DateTime dateTime)
         {
-            var reponse = await _httpClient.GetAsync($"dish/date/{dateTime}");
+            var reponse = await _httpClient.GetAsync($"service/date?date={dateTime.ToString("s", CultureInfo.InvariantCulture)}");
             if (reponse.IsSuccessStatusCode)
             {
                 Trace.WriteLine("GetServiceByDate return a servicePage");
@@ -265,9 +279,25 @@ namespace BLLC.Services
         
         }
 
-        public Task<List<IsComposed>> GetIsComposedByIdService(int? id)
+        public async Task<List<IsComposed>> GetIsComposedByIdService(int? id)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.GetAsync($"isComposed/service/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                var stream = await response.Content.ReadAsStreamAsync();
+                List<IsComposed> newIsComposed = await JsonSerializer.DeserializeAsync<List<IsComposed>>(stream, new JsonSerializerOptions()
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                List<IsComposed> ListIsComposed = newIsComposed;
+                Trace.WriteLine("Récupération d'une liste de IsComposed By IdService");
+                return newIsComposed;
+            }
+            else
+            {
+                Trace.WriteLine("Problème dans la récupération de liste IsComposed By IdService");
+                return null;
+            }
         }
 
         #endregion

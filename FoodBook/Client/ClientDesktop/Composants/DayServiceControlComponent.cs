@@ -38,7 +38,7 @@ namespace ClientDesktop.Composants
         public void InitializeTest(Service service)
         {
             Service = service;
-            
+
             for (int i = 1; i < 4; i++)
             {
                 Trace.WriteLine("Je suis dans la boucle ForEach de Test : dayServiceControl : " + i);

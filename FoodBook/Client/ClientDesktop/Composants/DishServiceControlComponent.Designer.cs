@@ -30,11 +30,11 @@ namespace ClientDesktop.Composants
         private void InitializeComponent()
         {
             this.MainTable = new System.Windows.Forms.TableLayoutPanel();
-            this.DishComboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel_BtnS1D1 = new System.Windows.Forms.TableLayoutPanel();
             this.AddBtn = new System.Windows.Forms.Button();
             this.DelBtn = new System.Windows.Forms.Button();
             this.ModifyBtn = new System.Windows.Forms.Button();
+            this.labelDish = new System.Windows.Forms.Label();
             this.MainTable.SuspendLayout();
             this.tableLayoutPanel_BtnS1D1.SuspendLayout();
             this.SuspendLayout();
@@ -44,8 +44,8 @@ namespace ClientDesktop.Composants
             this.MainTable.ColumnCount = 1;
             this.MainTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.MainTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.MainTable.Controls.Add(this.DishComboBox, 0, 0);
             this.MainTable.Controls.Add(this.tableLayoutPanel_BtnS1D1, 0, 1);
+            this.MainTable.Controls.Add(this.labelDish, 0, 0);
             this.MainTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainTable.Location = new System.Drawing.Point(0, 0);
             this.MainTable.Name = "MainTable";
@@ -54,15 +54,6 @@ namespace ClientDesktop.Composants
             this.MainTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.MainTable.Size = new System.Drawing.Size(150, 150);
             this.MainTable.TabIndex = 1;
-            // 
-            // DishComboBox
-            // 
-            this.DishComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.DishComboBox.FormattingEnabled = true;
-            this.DishComboBox.Location = new System.Drawing.Point(3, 26);
-            this.DishComboBox.Name = "DishComboBox";
-            this.DishComboBox.Size = new System.Drawing.Size(144, 23);
-            this.DishComboBox.TabIndex = 0;
             // 
             // tableLayoutPanel_BtnS1D1
             // 
@@ -119,6 +110,16 @@ namespace ClientDesktop.Composants
             this.ModifyBtn.UseVisualStyleBackColor = false;
             this.ModifyBtn.Click += new System.EventHandler(this.ModifyBtn_Click);
             // 
+            // labelDish
+            // 
+            this.labelDish.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelDish.AutoSize = true;
+            this.labelDish.Location = new System.Drawing.Point(54, 30);
+            this.labelDish.Name = "labelDish";
+            this.labelDish.Size = new System.Drawing.Size(41, 15);
+            this.labelDish.TabIndex = 2;
+            this.labelDish.Text = "Empty";
+            // 
             // DishServiceControlComponent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -126,6 +127,7 @@ namespace ClientDesktop.Composants
             this.Controls.Add(this.MainTable);
             this.Name = "DishServiceControlComponent";
             this.MainTable.ResumeLayout(false);
+            this.MainTable.PerformLayout();
             this.tableLayoutPanel_BtnS1D1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -134,10 +136,10 @@ namespace ClientDesktop.Composants
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel MainTable;
-        private System.Windows.Forms.ComboBox DishComboBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_BtnS1D1;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button DelBtn;
         private System.Windows.Forms.Button ModifyBtn;
+        private System.Windows.Forms.Label labelDish;
     }
 }

@@ -3,7 +3,8 @@
 namespace BO.Entity
 {
     /// <summary>
-    /// Le menu de la semaine
+    /// Le menu de la semaine 
+    /// /!\ Menu n'existe plus !!! /!\
     /// </summary>
     public class Menu
     {

@@ -1,4 +1,5 @@
-﻿using BO.Entity;
+﻿using BLLC.Services;
+using BO.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,29 +20,47 @@ namespace ClientDesktop.Composants
         private TypeOfDish MyTypeOfDish { get; set; }
         private int IntTypeOfDish { get; set; }
         private Dish Dish { get; set; }
-        private Menu Menu { get; set; }
+        private readonly IRestaurantService _restaurantService;
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="typeOdDishInInt"></param>
         public DishServiceControlComponent(int typeOdDishInInt)
         {
-            Trace.WriteLine("Initialisation du DishServiceControlComponent");
+            _restaurantService = new RestaurantService();
             InitializeComponent();
         }
 
-        public void Initialize (Service service, TypeOfDish typeOfDish)
+        //public void Initialize (Service service, TypeOfDish typeOfDish)
+        //{
+        //    Service = service;
+        //    MyTypeOfDish = typeOfDish;
+        //}
+        public async void InitializeTest (Service service, int typeOfDish)
         {
+            Trace.WriteLine("Initialisation du DishServiceControlComponent");
             Service = service;
-            MyTypeOfDish = typeOfDish;
-        }
-        public void InitializeTest (Service service, int typeOfDish)
-        {
-            Service = service;
-            IntTypeOfDish = typeOfDish;            
+            IntTypeOfDish = typeOfDish;
+            //Sélectionner le plat l'afficher dans la DishCombobox
+            Task<Dish> dish = SelectDish(typeOfDish, service);
+            if ( await dish != null)
+            {
+                Dish dishHere = await dish;
+                
+                labelDish.Text = dishHere.Name;
+            }
+            else if (await dish == null)
+            {
+                labelDish.Text = "Not completed yet";
+            }
+            
+            ///DishComboBox.DataBindings.; 
         }
         public void UpdateTest(Service service, int typeOfDish)
         {
+            Trace.WriteLine("Update du DishServiceControlComponent : " + typeOfDish);
+            //Selectionner le plat et afficher dans la DishCombo box
             Service = service;
             IntTypeOfDish = typeOfDish;
         }
@@ -54,19 +73,20 @@ namespace ClientDesktop.Composants
             Trace.WriteLine("Concerne le jour service date  : (doit me renvoyer une date) : " + StringDate);
             using (var dialog = new DishSelectorForm(Service, IntTypeOfDish))
             {
+
                 var dialogResult = dialog.ShowDialog();
                 if (dialogResult == DialogResult.OK)
                 {
                     //Tu prends le plat et tu le lies avec son service dans la table ! isComposed.
                     //Pour créer un IsComposed j'ai besoin du Dish.Id qui m'est donné par le DishSelectorForm
-
-                    IsComposed isComposed = new IsComposed(1, Service.Id);
+                    Trace.WriteLine("Tu viens de fermer la dialogueBox en disant que tout est OK.");
                     
                     //Si il n'existe pas tu crées le menu de la semaine.
                     //SI le menu de la semaine existe déjà : Tu ajoute un service ou tu modifie l'existant.                    
                 }
                 else
                 {
+                    Trace.WriteLine("Tu viens de fermer la dialogueBox en annulant.");
                     //Annuler
                 }
             }
@@ -80,6 +100,29 @@ namespace ClientDesktop.Composants
         private void ModifyBtn_Click(object sender, EventArgs e)
         {
             Trace.WriteLine("Tu viens de cliquer sur un Btn Modify");
+        }
+        private async Task<Dish> SelectDish(int typeOfDish, Service service)
+        {
+            Trace.WriteLine("Tu es entré dans la fonction SelectDish");
+            int? idDish = null;
+            //Select isComposed where idService.
+            Task<List<IsComposed>> taskIsComposed = _restaurantService.GetIsComposedByIdService(service.Id);
+            List<IsComposed> composition = await taskIsComposed;
+            if (composition != null)
+            {
+                foreach (var item in composition)
+                {
+                    if (service.ServiceNumber == typeOfDish)
+                    {
+                        idDish = item.IdDish;
+                    }
+                }
+            }
+            
+            //Select Dish
+            Task<Dish> dish = _restaurantService.GetDishById(idDish);
+
+            return await dish;
         }
     }
 }

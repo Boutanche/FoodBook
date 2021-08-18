@@ -1,6 +1,7 @@
 ﻿using BO.Entity;
 using DAL.UOW;
 using Dapper;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -33,6 +34,13 @@ namespace DAL.Repository
             var stmt = @"select * from service where id = @id";
             //
             return await _session.Connection.QueryFirstOrDefaultAsync<Service>(stmt, new { Id = id }, _session.Transaction);
+        }
+
+        public async Task<IEnumerable<Service>> GetAsyncByDate(DateTime date)
+        {
+            var stmt = @"select * from service where dateService = @date";
+            return await _session.Connection.QueryAsync<Service>(stmt, new { Date = date }, _session.Transaction);
+            
         }
 
         public async Task<Service> InsertAsync(Service entity)

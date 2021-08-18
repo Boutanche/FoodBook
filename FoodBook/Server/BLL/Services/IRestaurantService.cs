@@ -118,6 +118,8 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns>Service</returns>
         Task<Service> GetServiceById(int id);
+        Task<IEnumerable<Service>> GetServiceByDate(DateTime date);
+
         /// <summary>
         /// Trouver les services qui composent un menu de la semaine
         /// </summary>

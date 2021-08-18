@@ -94,5 +94,20 @@ namespace API.Controllers
         //TODO : AddDishForThisSrvice
 
         //TODO : RemoveDishForThisService
+        [HttpGet("date")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Service))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetServiceByDate([FromQuery] DateTime date)
+        {
+            IEnumerable<Service> service = await _restaurantService.GetServiceByDate(date);
+            if (service == null)
+            {
+                return NotFound();        // StatusCode = 404
+            }
+            else
+            {
+                return Ok(service);   // StatusCode = 200
+            }
+        }
     }
 }

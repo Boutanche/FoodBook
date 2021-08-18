@@ -28,7 +28,7 @@ namespace ClientDesktop.Composants
         public void InitializeTest(int serviceNumber, DateTime isMonday)
         {
             //Faut que je crée une liste de service ?
-
+            Trace.WriteLine("Je suis dans le service numéro : " + serviceNumber);
             for (int i = 0; i < 7; i++)
             {
 
@@ -44,7 +44,7 @@ namespace ClientDesktop.Composants
                 service.ServiceNumber = serviceNumber;
                 service.DateService = isMonday.AddDays(i);
                
-                Trace.WriteLine("Je suis dans la boucle for du ServiceControlComponent : " + i);
+                Trace.WriteLine("Je suis dans la boucle for Initialize du ServiceControlComponent : " + i);
 
                 //Je crée un DayComponent avec le service de son jour ?
                 var component = new DayServiceControlComponent(service);
@@ -57,6 +57,7 @@ namespace ClientDesktop.Composants
 
         public void UpdateComponent(int serviceNumber,DateTime isMonday)
         {
+            Trace.WriteLine("Je suis dans le service numéro : " + serviceNumber);
             for (int i = 0; i < 7; i++)
             {
 
@@ -64,7 +65,7 @@ namespace ClientDesktop.Composants
                 service.ServiceNumber = serviceNumber;
                 service.DateService = isMonday.AddDays(i);
 
-                Trace.WriteLine("Je suis dans la boucle for du ServiceControlComponent : " + i);
+                Trace.WriteLine("Je suis dans la boucle for Update du ServiceControlComponent : " + i);
 
                 //Je crée un DayComponent avec le service de son jour ?
                 dayServiceControlComponents[i].UpdateComponent(service);

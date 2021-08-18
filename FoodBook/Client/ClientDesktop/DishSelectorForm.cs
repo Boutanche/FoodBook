@@ -58,26 +58,32 @@ namespace ClientDesktop
             //Je cherche tous les services de la date sélectionnée : 
             Task<List<Service>> serviceTask = _restaurantService.GetServiceByDate(DateTimeService);
             
-            if (await serviceTask == null)
+            if ((await serviceTask) == null)
             {
                 Trace.WriteLine("GetServiceBydate a renvoyé un null.");
                 //Si le service n'existe pas : Il faut le créer.
+                Trace.WriteLine("Tentative : création du Service");
                 Task<Service> newService = _restaurantService.CreateService(LocalService);
-                newIsComposed = new(idDish, newService.Id);
+                Service createdService = await newService;
+                newIsComposed = new(idDish, createdService.Id);
                 //On fait la création de IsComposed sans se poser de questions.
+                Trace.WriteLine("Tentative : création de IsComposed");
                 Task<IsComposed> isComposed = _restaurantService.CreateIsComposed(newIsComposed);
-
+                IsComposed createdComposed = await isComposed;
+                
             }
             else
             {
                 //Si le service de cette date existe... C'est la grosse merde !!!
                 Trace.WriteLine("GetServiceBydate n'a pas renvoyé null.");
                 //J'ai la liste de tous mes services de ce jour
-                List<Service> services = await serviceTask;
-                Trace.WriteLine("services contien : " + services.ToString());
+                //List<Service> services = await serviceTask;
+                Trace.WriteLine("services contient : " + await serviceTask);
+                //List<Service> services = await serviceTask;
                 //Je cherche dans cette liste de service le même serviceNumber que celui que je veux créer
-                foreach (Service item in services)
+                foreach (Service item in await serviceTask)
                 {
+                    Trace.WriteLine("item contient : " + item.Id);
                     //Si mon numéro de service est le même que celui que le client on est sur la bonne piste.
                     if (item.ServiceNumber == IntServiceNumber)
                     {
@@ -97,15 +103,17 @@ namespace ClientDesktop
                             //ATTENTION // Pas aussi simple.
                             foreach (IsComposed composition in listIsComposed)
                             {
-                                Dish dish = _restaurantService.GetDishById(composition.IdDish);
+                                Task<Dish> dish = _restaurantService.GetDishById(composition.IdDish);
+                                Dish dishHere = await dish;
                                 //Si ce type n'existe pas : création de isComposed avec ce plat et ce service.
-                                if (dish.IdType != idType)
+                                if (dishHere.IdType != idType)
                                 {
-                                    
+                                    //
                                 }
+                                //S'il ce type existe : mise à jour du isComposed en modifiant l'id_dish.
                                 else
                                 {
-                                    //S'il existe : mise à jour du isComposed en modifiant l'id_dish.
+                                    //Faire un update
                                 }
                             }
                         }
@@ -116,12 +124,14 @@ namespace ClientDesktop
                     //Si ce n'est pas le même numéro de service :
                     else
                     {
-                        
                         //Ne rien faire et continuer la boucle.
                         Trace.WriteLine("Ce n'était pas le service que nous souhaitions créer");
                     }
               
                 }
+                //Fermer la fenêtre avec un resultat OK.
+                button1.PerformClick();
+
             }
             //TODO : Création IsComposed
             //Enregisgtrer IsComposed dans la BDD.
@@ -163,6 +173,12 @@ namespace ClientDesktop
             //Test Affichage de la semaine : 
             labelWeekNumber.Text = localWeek;
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }
