@@ -118,6 +118,11 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns>Service</returns>
         Task<Service> GetServiceById(int id);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
         Task<IEnumerable<Service>> GetServiceByDate(DateTime date);
 
         /// <summary>

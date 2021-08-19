@@ -24,10 +24,7 @@ namespace BO.Entity
         /// 1 = Lundi ..., 7 = Dimanche
         /// </summary>
         public DateTime DateService { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        
+       
         //public List<int> ListOfIntDishes { get; set; }
         /// <summary>
         /// 

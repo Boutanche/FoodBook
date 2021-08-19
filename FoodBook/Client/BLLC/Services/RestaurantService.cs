@@ -235,7 +235,7 @@ namespace BLLC.Services
         }
         public async Task<List<Service>> GetServiceByDate(DateTime dateTime)
         {
-            var reponse = await _httpClient.GetAsync($"service/date?date={dateTime.ToString("s", CultureInfo.InvariantCulture)}");
+            var reponse = await _httpClient.GetAsync($"service/date?date={dateTime.ToString("d", CultureInfo.InvariantCulture)}");
             if (reponse.IsSuccessStatusCode)
             {
                 Trace.WriteLine("GetServiceByDate return a servicePage");

@@ -230,9 +230,11 @@ namespace BLL.Services
             return services;
         }
 
-        public Task<Service> GetServiceById(int id)
+        public async Task<Service> GetServiceById(int id)
         {
-            throw new NotImplementedException();
+            IServiceRepository _service = _db.GetRepository<IServiceRepository>();
+
+            return await _service.GetAsync(id);
         }
 
         public async Task<IEnumerable<Service>> GetServiceByDate(DateTime date)

@@ -41,7 +41,11 @@ namespace ClientDesktop
             int weekNumber = myCI.Calendar.GetWeekOfYear(DateTime.Now, myCWR, myFirstDOW);
             int _currentWeekNumber = weekNumber;
             //Initialization des composants :
+
+
+
             InitializeComponent();
+
             //Afficher le numéro de la semaine
             tBWeek.Text = _currentWeekNumber.ToString();
             //Afficher la date du premier jour de la semaine
@@ -49,6 +53,12 @@ namespace ClientDesktop
             dateTimePicker_FDOW.Value = IsMonday(isMonday);
             //Initiatialisation pour les services et conrollers
             Initialize(isMonday);
+           
+
+
+
+
+
 
             //TODO : Mettre le loading en place
             // /!\ : Le timer ne s'arrête jamais pour le moment !
@@ -114,6 +124,7 @@ namespace ClientDesktop
 
             tlpMidday.Controls.Add(componentMidday);
             tlpEvening.Controls.Add(componentEvening);
+
         }
         //Ensemble des controles sur les Btn Next & Previous ([>>] & [<<])
         #region Btn Previous and Next
@@ -178,6 +189,9 @@ namespace ClientDesktop
         {
             Trace.WriteLine("Lancement du Timer");
             timerLoading.Start();
+            //TODO : Voici un problême de date qu'il faudra régler un jour
+            //HACK : Pbm avec la date et son initialisation : 
+            button_next.PerformClick();
         }
         //Se produit au click sur Btn CreateDish
         /// <summary>

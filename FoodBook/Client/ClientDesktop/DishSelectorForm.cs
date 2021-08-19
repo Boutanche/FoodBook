@@ -78,17 +78,19 @@ namespace ClientDesktop
                 Trace.WriteLine("GetServiceBydate n'a pas renvoyé null.");
                 //J'ai la liste de tous mes services de ce jour
                 //List<Service> services = await serviceTask;
-                Trace.WriteLine("services contient : " + await serviceTask);
-                //List<Service> services = await serviceTask;
+                Trace.WriteLine("services contient : serviceTask " + serviceTask);
+                List<Service> listService = await serviceTask;
+                Trace.WriteLine("services contient : listSerbvice " + listService);
+                
                 //Je cherche dans cette liste de service le même serviceNumber que celui que je veux créer
-                foreach (Service item in await serviceTask)
+                foreach (Service item in listService)
                 {
                     Trace.WriteLine("item contient : " + item.Id);
                     //Si mon numéro de service est le même que celui que le client on est sur la bonne piste.
                     if (item.ServiceNumber == IntServiceNumber)
                     {
                         //Je récupére l'id_type du plat 
-                        int idType = Int32.Parse(dataGridViewDishes.CurrentRow.Cells["id_type"].Value.ToString());
+                        int idType = Int32.Parse(dataGridViewDishes.CurrentRow.Cells["idType"].Value.ToString());
                         //Je récupére la liste IsComposed du service en question  :
                         Task <List<IsComposed>> taskIsComposed = _restaurantService.GetIsComposedByIdService(item.Id);
                         //S'il n'y pas de liste : Tout va bien : Création de isComposed avec ce plat et ce service.

@@ -34,20 +34,17 @@ namespace API.Controllers
             return Ok(await _restaurantService.GetAllService());
         }
 
-        /// <summary>
-        /// Récupérer la liste des service du menu :   API/V1/service?menu=4
-        /// </summary>
-        /// <param name="id_Menu"></param>
-        /// <returns></returns>
-        [HttpGet()]
-        public async Task<ActionResult<List<Service>>> GetServicesByIdMenu ([FromQuery(Name="menu")] int? id_Menu)
-        {
-            if(id_Menu.HasValue)
-            {
-                return Ok(await _restaurantService.GetServicesByIdMenu(id_Menu.Value));
-            }
-            return BadRequest();
-        }
+
+        //[HttpGet()]
+        //public async Task<ActionResult<List<Service>>> GetServicesByIdMenu ([FromQuery(Name="menu")] int? id_Menu)
+        //{
+        //    if(id_Menu.HasValue)
+        //    {
+        //        return Ok(await _restaurantService.GetServicesByIdMenu(id_Menu.Value));
+        //    }
+        //    return BadRequest();
+        //}
+
         /// <summary>
         /// Récupèrer un service par son Id
         /// </summary>
