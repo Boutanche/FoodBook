@@ -365,6 +365,18 @@ namespace BLL.Services
 
 
 
+
+
+        #endregion
+        #region IsComposed
+        public async Task<IsComposed> CreateIsComposed(IsComposed isComposed)
+        {
+            _db.BeginTransaction();
+            IIsComposedRepository _isComposed = _db.GetRepository<IIsComposedRepository>();
+            IsComposed newIsComposed = await _isComposed.InsertAsync(isComposed);
+            _db.Commit();
+            return newIsComposed;
+        }
         #endregion
 
     }

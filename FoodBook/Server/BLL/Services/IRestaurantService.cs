@@ -36,6 +36,7 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns></returns>
         Task<bool> RemoveIngredientById(int id);
+        Task<IsComposed> CreateIsComposed(IsComposed isComposed);
 
         /// <summary>
         /// Récupérer la liste de tous les ingrédients
