@@ -34,8 +34,8 @@ namespace DAL.Repository
 
         public async Task<IsComposed> InsertAsync(IsComposed entity)
         {
-            var stmt = @"insert into isComposed (idDish, idService) output inserted.id values (@idDish, @idService)";
-            int i = await _session.Connection.QuerySingleAsync<int>(stmt, entity, _session.Transaction);
+            var stmt = @"insert into isComposed (idDish, idService) values (@idDish, @idService)";
+            int i = await _session.Connection.ExecuteAsync(stmt, entity, _session.Transaction);
             return await GetAsync(i);
         }
 
