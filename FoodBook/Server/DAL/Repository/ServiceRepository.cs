@@ -55,5 +55,24 @@ namespace DAL.Repository
             var stmt = @"update service set serviceNumber = @serviceNumber, dateService = @dateService where id = @id";
             await _session.Connection.QueryAsync<Service>(stmt, entity, _session.Transaction);
         }
+
+
+        public async Task<Service> AddDishToService(Service entity)
+        {
+            //Création de la table de liaison : 
+            //Méthode AddDish
+            List<int> listIdDish = entity.ListOfIdDish;
+
+            var stmt = @"insert into isComposed (idDish, idService) values (@idDish, @idService)";
+            
+            int i = 0;
+            
+            foreach (var idDish in listIdDish)
+            {
+               await _session.Connection.QueryAsync(stmt, param: new { idService = entity.Id, idDish = int.Parse(idDish.ToString()) }, _session.Transaction);
+                i++;
+            }
+            return await GetAsync(i);
+        }
     }
 }

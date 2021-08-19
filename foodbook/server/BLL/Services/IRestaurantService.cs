@@ -36,8 +36,6 @@ namespace BLL.Services
         /// <param name="id"></param>
         /// <returns></returns>
         Task<bool> RemoveIngredientById(int id);
-        Task<IsComposed> CreateIsComposed(IsComposed isComposed);
-
         /// <summary>
         /// Récupérer la liste de tous les ingrédients
         /// </summary>
@@ -245,6 +243,13 @@ namespace BLL.Services
         Task<Booking> CreateBooking(Booking booking);
 
         #endregion
-
+        #region IsComposed
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="isComposed"></param>
+        /// <returns></returns>
+        Task<IsComposed> CreateIsComposed(IsComposed isComposed);
+        #endregion
     }
 }

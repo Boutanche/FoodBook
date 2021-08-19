@@ -24,13 +24,14 @@ namespace BO.Entity
         /// 1 = Lundi ..., 7 = Dimanche
         /// </summary>
         public DateTime DateService { get; set; }
-       
-        //public List<int> ListOfIntDishes { get; set; }
         /// <summary>
-        /// 
+        /// Récupérer la liste des plats car il y a pas entitée isComposed
+        /// </summary>
+        public List<int> ListOfIdDish { get; set; }
+        /// <summary>
+        /// 1 = midi , 2 = soir
         /// </summary>
         public Service() { }
-
         /// <summary>
         /// 
         /// </summary>
