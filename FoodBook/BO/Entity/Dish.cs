@@ -26,6 +26,10 @@ namespace BO.Entity
         public int IdType { get; set; }
 
         /// <summary>
+        /// int : Foreign key of type of dish
+        /// </summary>
+        public TypeOfDish TypeofDish { get; set; }
+        /// <summary>
         /// Default constructor for API serialisation
         /// </summary>
         public Dish() { }

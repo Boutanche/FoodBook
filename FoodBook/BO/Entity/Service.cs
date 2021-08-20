@@ -27,7 +27,7 @@ namespace BO.Entity
         /// <summary>
         /// Récupérer la liste des plats car il y a pas entitée isComposed
         /// </summary>
-        public List<int> ListOfIdDish { get; set; }
+        public List<Dish> ListOfDish { get; set; }
         /// <summary>
         /// 1 = midi , 2 = soir
         /// </summary>

@@ -226,7 +226,7 @@ namespace BLL.Services
         public async Task<List<Service>> GetAllService()
         {
             IServiceRepository _service = _db.GetRepository<IServiceRepository>();
-            List<Service> services = (await _service.GetAllAsync()).ToList();
+            List<Service> services = (await _service.GetServicesDetailsAsync()).ToList();
             return services;
         }
 
@@ -241,7 +241,7 @@ namespace BLL.Services
         {
             IServiceRepository _service = _db.GetRepository<IServiceRepository>();
 
-            return await _service.GetAsyncByDate(date);
+            return await _service.GetServicesDetailsByDateAsync(date);
         }
         
 

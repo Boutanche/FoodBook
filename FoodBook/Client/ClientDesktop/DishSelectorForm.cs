@@ -66,10 +66,13 @@ namespace ClientDesktop
                 Task<Service> newService = _restaurantService.CreateService(LocalService);
                 Service createdService = await newService;
                 newIsComposed = new(idDish, createdService.Id);
+
+                //Is composed par automatique
+
                 //On fait la création de IsComposed sans se poser de questions.
-                Trace.WriteLine("Tentative : création de IsComposed");
-                Task<IsComposed> isComposed = _restaurantService.CreateIsComposed(newIsComposed);
-                IsComposed createdComposed = await isComposed;
+                //Trace.WriteLine("Tentative : création de IsComposed");
+                //Task<IsComposed> isComposed = _restaurantService.CreateIsComposed(newIsComposed);
+                //IsComposed createdComposed = await isComposed;
                 
             }
             else
