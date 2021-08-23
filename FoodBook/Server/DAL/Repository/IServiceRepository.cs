@@ -11,6 +11,7 @@ namespace DAL.Repository
         Task<IEnumerable<Service>> GetServicesDetailsAsync();
         Task<IEnumerable<Service>> GetServicesDetailsByDateAsync(DateTime date);
         Task<bool> AddDishToService(Service entity);
+        Task<bool> RemovAllIsComposedByIdService(int? id);
         //Task<Service> GetAsync(int id);
     }
 }

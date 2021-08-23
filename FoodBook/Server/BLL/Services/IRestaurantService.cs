@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 namespace BLL.Services
 {
     /// <summary>
-    /// 
+    /// Interface couplage faible de Restaurant Service
     /// </summary>
     public interface IRestaurantService
     {
-
         #region Ingredients
         /// <summary>
         /// Récupérer un ingrédient par son identifiant
@@ -112,18 +111,23 @@ namespace BLL.Services
         /// <returns></returns>
         Task<List<Service>> GetAllService();
         /// <summary>
+        /// Ajouter un plat au service
+        /// </summary>
+        /// <param name="service"></param>
+        /// <returns></returns>
+        Task<bool> AddDishToService(Service service);
+        /// <summary>
         /// Trouver un service par son Id
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Service</returns>
         Task<Service> GetServiceById(int id);
         /// <summary>
-        /// 
+        /// Récupérer les services par date
         /// </summary>
         /// <param name="date"></param>
         /// <returns></returns>
         Task<IEnumerable<Service>> GetServiceByDate(DateTime date);
-
         /// <summary>
         /// Trouver les services qui composent un menu de la semaine
         /// </summary>
@@ -137,14 +141,6 @@ namespace BLL.Services
         /// <returns>Service</returns>
         Task<Service> CreateService(Service service);
 
-
-        /// <summary>
-        /// Ajouter un plat au service
-        /// </summary>
-        /// <param name="dish"></param>
-        /// <param name="service"></param>
-        /// <returns>Bool</returns>
-        Task<bool> AddDishForThisService(Dish dish, Service service);
         /// <summary>
         /// Supprimer un plat du Service
         /// </summary>

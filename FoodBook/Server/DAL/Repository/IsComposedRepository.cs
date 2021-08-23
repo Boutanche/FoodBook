@@ -43,5 +43,10 @@ namespace DAL.Repository
         {
             throw new NotImplementedException();
         }
+        public async Task<int> DeleteByIdService(long id)
+        {
+            var stmt = @"delete from isComposed where idService = @Id";
+            return await _session.Connection.ExecuteAsync(stmt, new { Id = id }, _session.Transaction);
+        }
     }
 }

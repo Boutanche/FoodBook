@@ -31,20 +31,25 @@ namespace BO.Entity
         /// <summary>
         /// 1 = midi , 2 = soir
         /// </summary>
-        public Service() { }
+        public Service() {
+            ListOfDish = new List<Dish>();
+
+        }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="id"></param>
         /// <param name="serviceNumber"></param>
         /// <param name="dateService"></param>
-        
+
         public Service(int? id, int serviceNumber, DateTime dateService)
         {
             Id = id;
             ServiceNumber = serviceNumber;
             DateService = dateService;
-        //    ListOfIntDishes = listOfIntDishes;
+            ListOfDish = new List<Dish>();
+
+            //    ListOfIntDishes = listOfIntDishes;
         }
         /// <summary>
         /// 

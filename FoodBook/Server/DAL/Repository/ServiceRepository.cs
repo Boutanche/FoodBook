@@ -69,8 +69,8 @@ namespace DAL.Repository
             List<Dish> listDish = entity.ListOfDish;
             foreach (var dish in listDish)
             {
-                await _session.Connection.QueryAsync(stmt, param: new { idService = entity.Id, idDish = dish.Id }, _session.Transaction);
-                nbModifiedLines++;
+                var i = await _session.Connection.ExecuteAsync(stmt, param: new { idService = entity.Id, idDish = dish.Id }, _session.Transaction);
+                nbModifiedLines += i;
             }
             return nbModifiedLines > 0;
 
@@ -138,6 +138,15 @@ namespace DAL.Repository
             });
 
         }
+
+        public async Task<bool> RemovAllIsComposedByIdService(int? id)
+        {
+
+            var stmt = @"delete from isComposed where idService = @Id";
+            var ok = await _session.Connection.ExecuteAsync(stmt, new { Id = id }, _session.Transaction);
+            return ok > 0;
+        }
+
     }
 }
 /* *** Les requêtes *** 

@@ -15,7 +15,6 @@ namespace BLL.Services
     /// </summary>
     internal class RestaurantService : IRestaurantService
     {
-
         private readonly IUnitOfWork _db;
         public RestaurantService(IUnitOfWork unitOfWork)
         {
@@ -127,7 +126,6 @@ namespace BLL.Services
         /// </summary>
         /// <param name="id">Int</param>
         /// <returns>Dish</returns>
-
         public async Task<Dish> GetDishById(int id)
         {
 
@@ -135,7 +133,6 @@ namespace BLL.Services
 
             return await _dish.GetAsync(id);
         }
-
         /// <summary>
         /// Create a Dish
         /// </summary>
@@ -254,10 +251,38 @@ namespace BLL.Services
             return newService;
         }
 
-        public Task<bool> AddDishForThisService(Dish dish, Service service)
+        /// <summary>
+        /// Ajouter les plats au service !
+        /// Méthode naîve, on supprime tout ce qui est ancien et on on recré la nouvelle.
+        /// </summary>
+        /// <param name="service"></param>
+        /// <returns></returns>
+        public async Task<bool> AddDishToService(Service service)
         {
-            throw new NotImplementedException();
+            _db.BeginTransaction();
+            IServiceRepository _service = _db.GetRepository<IServiceRepository>();
+
+            //Supprimer les anciens en premier:
+            //Seulement s'il y a déjà des anciens sinon il va renvoyer false !
+            //var okUno = await _service.RemovAllIsComposedByIdService(service.Id);
+            var okUno = true;
+             
+            //Ajouter les nouveaux ensuite.
+            var okDeuse =await _service.AddDishToService(service);
+            if (okUno && okDeuse)
+            {
+                okUno = true;
+                _db.Commit();
+            }
+            else
+            {
+                okUno = false;
+                _db.Rollback();
+            }
+
+            return okUno ;
         }
+
 
         public Task<bool> RemoveDishForThisService(Dish dish, Service service)
         {
@@ -377,6 +402,24 @@ namespace BLL.Services
             _db.Commit();
             return newIsComposed;
         }
+        //Delete All Is Composed for This Service
+        public async Task<bool> RemovAllIsComposedByIdService(int id)
+        {
+            _db.BeginTransaction();
+            IIsComposedRepository _isComposed = _db.GetRepository<IIsComposedRepository>();
+            try
+            {
+                var count = await _isComposed.DeleteAsync(id);
+                _db.Commit();
+                return count > 0;
+            }
+            catch (Exception e)
+            {
+                _db.Rollback();
+                return false;
+            }
+        }
+
         #endregion
 
     }

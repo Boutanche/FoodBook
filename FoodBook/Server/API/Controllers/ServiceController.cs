@@ -88,9 +88,42 @@ namespace API.Controllers
                 return BadRequest();
             }
         }
-        //TODO : AddDishForThisSrvice
+        //TODO : AddDishForThisService
+        [HttpPost("dish")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> AddDishToService([FromBody] Service service)
+        {
+            bool newService = await _restaurantService.AddDishToService(service);
+            if (newService != false)
+            {
+                //TODO valider avec Fabien
+                return Ok(service);
+            }
+            else
+            {
+                //Retourner code 400 Bad Request
+                return BadRequest();
+            }
+        }
 
-        //TODO : RemoveDishForThisService
+
+        //[HttpDelete("date")]
+        //[ProducesResponseType(StatusCodes.Status204NoContent)]
+        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        //public async Task<IActionResult> GetServiceByDate([FromQuery] DateTime date)
+        //{
+        //    IEnumerable<Service> service = await _restaurantService.GetServiceByDate(date);
+        //    if (service == null)
+        //    {
+        //        return NotFound();        // StatusCode = 404
+        //    }
+        //    else
+        //    {
+        //        return Ok(service);   // StatusCode = 200
+        //    }
+        //}
+
         [HttpGet("date")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Service))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -106,5 +139,6 @@ namespace API.Controllers
                 return Ok(service);   // StatusCode = 200
             }
         }
+
     }
 }

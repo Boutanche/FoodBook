@@ -323,6 +323,11 @@ namespace UnitTest.Services
         {
             throw new NotImplementedException();
         }
+
+        public Task<bool> AddDishToService(Service service)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }

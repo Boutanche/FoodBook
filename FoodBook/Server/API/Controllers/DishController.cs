@@ -41,7 +41,7 @@ namespace API.Controllers
         /// </summary>
         /// <param name="id">int</param>
         /// <returns>Dish </returns>
-        [HttpGet("{id}")]
+        [HttpGet("id/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Dish))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetDishById([FromRoute] int id)

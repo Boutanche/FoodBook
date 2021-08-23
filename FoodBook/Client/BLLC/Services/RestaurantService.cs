@@ -252,6 +252,27 @@ namespace BLLC.Services
                 return null;
             }
         }
+        public async Task<Service> AddDishToService(Service createdService) {
+
+            var response = await _httpClient.PostAsync("service/dish",
+            new StringContent(
+                JsonSerializer.Serialize(createdService), Encoding.UTF8, "application/json"));
+            if (response.IsSuccessStatusCode)
+            {
+                var stream = await response.Content.ReadAsStreamAsync();
+                Service newService = await JsonSerializer.DeserializeAsync<Service>(stream, new JsonSerializerOptions()
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+                Trace.WriteLine("Passage du service et sa liste vers la Bdd");
+                return newService;
+            }
+            else
+            {
+                Trace.WriteLine("Problème dans la création d'un isComposed");
+                return null;
+            }
+        }
 
         #endregion
 
@@ -278,7 +299,7 @@ namespace BLLC.Services
             }
         
         }
-
+        //Aïe !
         public async Task<List<IsComposed>> GetIsComposedByIdService(int? id)
         {
             var response = await _httpClient.GetAsync($"isComposed/service/{id}");

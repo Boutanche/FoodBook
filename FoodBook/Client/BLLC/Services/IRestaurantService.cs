@@ -34,11 +34,13 @@ namespace BLLC.Services
         #region Service
         Task<Service> CreateService(Service service);
         Task<List<Service>> GetServiceByDate(DateTime dateTime);
+        Task<Service> AddDishToService(Service createdService);
         #endregion
         #region
         Task<IsComposed> CreateIsComposed(IsComposed newIsComposed);
         Task<List<IsComposed>> GetIsComposedByIdService(int? id);
         Task<Dish> GetDishById(int? idDish);
+
         #endregion
     }
 }
