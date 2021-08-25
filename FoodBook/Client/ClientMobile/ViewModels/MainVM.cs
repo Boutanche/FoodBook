@@ -1,4 +1,5 @@
-﻿using ClientMobile.Models;
+﻿using BO.Entity;
+using ClientMobile.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -25,13 +26,8 @@ namespace ClientMobile.ViewModels
 
     class MainVM : ViewModelBase
     {
-        /// <summary>
-        /// WTF ?! 
-        /// </summary>
-        private WeekM semaineM;
-        private ServiceM serviceM = ServiceM.Instance;
-   
-
+        private WeekM semaineM = WeekM.Instance;
+        //private ServiceM serviceM = ServiceM.Instance;
         private DateTime _currentDate;
         public DateTime CurrentDate
         {
@@ -46,21 +42,25 @@ namespace ClientMobile.ViewModels
 
 
         public async Task LoadSemaine(DateTime date)
-        {
-
-            //Refaire retrouver le premier jour de la semaine
-            //J'affiche des sermaines donc quel que soit le jour il faut que je retrouve le lundi dont il est question...
-            //Et si je le fais dans WeekM ? 
-            
-            
+        {   
             semaineM = new WeekM(_currentDate);
             semaineM.Load(date);
-
+            //I'm Here
+            for (int i = 0; i < semaineM.ListService.Count; i++)
+            {
+                //semaineM.ListService[i]
+                //ServiceM s = semaineM.ListService[i].ServiceList.Where(serv => serv.ServiceNumber == 1).FirstOrDefault();
+            }
             
-            //foreach(days in semaineM.days )
-            //{
-
-            //}; 
+            
+            
+            
+            
+            
+            foreach (var service in semaineM.ListService)
+            {
+                //Service s = service.ServiceList.Where(serv => serv.ServiceNumber == 1).FirstOrDefault();
+            }; 
         }
     }
 }

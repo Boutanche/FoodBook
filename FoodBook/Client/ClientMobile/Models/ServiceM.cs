@@ -15,30 +15,29 @@ namespace ClientMobile.Models
     {
         //On veut utiliser notre RestaurantService BLLC :
         private IRestaurantService _restaurantService = new RestaurantService();
-        //Ici Faire un Singleton 
-        private static ServiceM _instance;
+        //Ici Faire un Singleton
+        //Heu Non, il m'en faut 14 ce n'est pas un Singleton !!!
+        //private static ServiceM _instance;
         //Avec un lock ?
-        private static readonly object Verrou = new object();
+        //private static readonly object Verrou = new object();
 
-        public static ServiceM Instance
-        {
-            get {
-                if (_instance == null)
-                {
-                    lock (Verrou)
-                    {
-                        if (_instance == null)
-                        {
-                            _instance = new ServiceM();
-                        }                     
-                    }
-                }
-                return _instance;
-            }
-        }
-
+        //public static ServiceM Instance
+        //{
+        //    get {
+        //        if (_instance == null)
+        //        {
+        //            lock (Verrou)
+        //            {
+        //                if (_instance == null)
+        //                {
+        //                    _instance = new ServiceM();
+        //                }                     
+        //            }
+        //        }
+        //        return _instance;
+        //    }
+        //}
         public ServiceM() { }
-
         private List<Service> _serviceList;
         public List<Service> ServiceList 
         {
@@ -53,8 +52,6 @@ namespace ClientMobile.Models
         //    get => _service;
         //    set { Set(ref _service, value); }
         //}
-
-
         private int? _id;
         public int? Id
         {
@@ -111,8 +108,6 @@ namespace ClientMobile.Models
                 }
             }
             return service;
-            
         }
-
     }
 }
