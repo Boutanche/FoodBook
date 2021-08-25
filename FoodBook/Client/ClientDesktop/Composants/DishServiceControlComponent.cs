@@ -43,25 +43,28 @@ namespace ClientDesktop.Composants
             Service = service;
             IntTypeOfDish = typeOfDish;
             //HACK : Va falloir trouver le bug sur la date à un moment... 
-            DateTime hackDate = service.DateService.AddDays(7);
+            //DateTime hackDate = service.DateService.AddDays(7);
             //Sélectionner le plat l'afficher dans la DishCombobox
-            Task<List<Service>> serviceList = _restaurantService.GetServiceByDate(hackDate);
+            Task<List<Service>> serviceList = _restaurantService.GetServiceByDate(service.DateService);
             List<Service> newServiceList = await serviceList;
-            Trace.WriteLine("Initialisation de la newServiceList pour la journée du  : " + hackDate);
+            Trace.WriteLine("Initialisation de la newServiceList pour la journée du  : " + service.DateService);
             if ( newServiceList.Count > 0)
             {
 
                 //List<Service> newServiceList = await serviceList; 
                 foreach (var item in newServiceList)
                 {
-                    foreach (var dish in item.ListOfDish)
+                    if (item.ServiceNumber == service.ServiceNumber)
                     {
-                        if (dish.TypeofDish.Id == typeOfDish)
+                        foreach (var dish in item.ListOfDish)
                         {
-                            labelDish.Text = dish.Name;
+                            if (dish.TypeofDish.Id == typeOfDish)
+                            {
+                                labelDish.Text = dish.Name;
+                            }
                         }
-
                     }
+                    
                 }
             }
             else if ((await serviceList).Count == 0)
@@ -77,6 +80,7 @@ namespace ClientDesktop.Composants
             //Selectionner le plat et afficher dans la DishCombo box
             Service = service;
             IntTypeOfDish = typeOfDish;
+            InitializeTest(service, typeOfDish);
         }
 
         private void AddBtn_Click(object sender, EventArgs e)

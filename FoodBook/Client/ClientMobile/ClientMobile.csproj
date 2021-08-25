@@ -121,6 +121,7 @@
     </Compile>
     <Compile Include="Models\BookingM.cs" />
     <Compile Include="Models\ModelBase.cs" />
+    <Compile Include="Models\ServiceM.cs" />
     <Compile Include="Models\WeekM.cs" />
     <Compile Include="ViewModels\BookingVM.cs" />
     <Compile Include="ViewModels\MainVM.cs" />

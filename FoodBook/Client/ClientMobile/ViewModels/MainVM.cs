@@ -25,9 +25,11 @@ namespace ClientMobile.ViewModels
 
     class MainVM : ViewModelBase
     {
-
+        /// <summary>
+        /// WTF ?! 
+        /// </summary>
         private WeekM semaineM;
-
+        private ServiceM serviceM = ServiceM.Instance;
    
 
         private DateTime _currentDate;
@@ -36,7 +38,6 @@ namespace ClientMobile.ViewModels
             get => _currentDate;
             set {
                 Set(ref _currentDate, value);
-                LoadSemaine();
             }
         }
 
@@ -44,11 +45,16 @@ namespace ClientMobile.ViewModels
         private ObservableCollection<DayStruct> _days;
 
 
-        public async Task LoadSemaine()
+        public async Task LoadSemaine(DateTime date)
         {
 
+            //Refaire retrouver le premier jour de la semaine
+            //J'affiche des sermaines donc quel que soit le jour il faut que je retrouve le lundi dont il est question...
+            //Et si je le fais dans WeekM ? 
+            
+            
             semaineM = new WeekM(_currentDate);
-            await semaineM.Load();
+            semaineM.Load(date);
 
             
             //foreach(days in semaineM.days )

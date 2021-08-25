@@ -23,7 +23,7 @@ namespace ClientDesktop.Composants
             InitializeComponent();
             InitializeTest(serviceNumber, isMonday);
         }
-        //Mauvain nom isMonday n'est pas bool !!
+        //Mauvai nom isMonday n'est pas bool !!
         
         public void InitializeTest(int serviceNumber, DateTime isMonday)
         {

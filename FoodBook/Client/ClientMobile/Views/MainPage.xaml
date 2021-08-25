@@ -69,7 +69,6 @@
         </Grid>
         <ScrollViewer HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Row="2" FlowDirection="LeftToRight">
             <!-- Test de transfert d'informations entre fenètres : -->
-            <!-- Pas forcément nécessaire -->
             <!-- Ne pas passer une information entre deux View, passer par le View-Model-->
             <StackPanel>
                 <Grid x:Name="WeekMenu" Margin="9,0,0,0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="645">
