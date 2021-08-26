@@ -41,22 +41,25 @@ namespace ClientMobile.ViewModels
         private ObservableCollection<DayStruct> _days;
 
 
-        public async Task LoadSemaine(DateTime date)
-        {   
-            semaineM = new WeekM(_currentDate);
-            semaineM.Load(date);
+        public async Task LoadSemaine(DateTime date, bool _midiSoir)
+        {
+            int serviceNumber = 0;
+            if (_midiSoir)
+            {
+                serviceNumber = 1;
+            }
+            else
+            {
+                serviceNumber = 2;
+            }
+            semaineM = new WeekM(_currentDate, serviceNumber);
+            //semaineM.Load(date);
             //I'm Here
             for (int i = 0; i < semaineM.ListService.Count; i++)
             {
                 //semaineM.ListService[i]
                 //ServiceM s = semaineM.ListService[i].ServiceList.Where(serv => serv.ServiceNumber == 1).FirstOrDefault();
-            }
-            
-            
-            
-            
-            
-            
+            }            
             foreach (var service in semaineM.ListService)
             {
                 //Service s = service.ServiceList.Where(serv => serv.ServiceNumber == 1).FirstOrDefault();

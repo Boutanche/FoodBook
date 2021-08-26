@@ -53,7 +53,7 @@ namespace ClientMobile.Models
             get => _listServiceSoir;
             set { Set(ref _listServiceSoir, value); }
         }
-        public WeekM(DateTime currentDate)
+        public WeekM(DateTime currentDate, int serviceNumber)
         {
             //S'il n'y a pas de currentDate (qui vient du dateTimePicker alors, prend la date du jour.)
             if (currentDate == null)
@@ -63,30 +63,14 @@ namespace ClientMobile.Models
             //fonction trouver la date de début de semaine avec currentDate.
             DateTime firstDayOfWeek = WhathIsTheFirstDay(currentDate);
             //fonction pour récupérer les dates des 7 jours de la semaine et les 14 services
-            Task<List<ServiceM>> ListServiceM = GetAllServiceForNextWeekAsync(firstDayOfWeek);
-            //Récupérer les services du midi.
-            _listServiceMidi = GetServiceMidi(ListServiceM);
-            //Récupérer les services du soir.
-            _ = GetServiceSoir(ListServiceM);      
-            //fonction pour charger les 14 services.
-        }
-        private List<ServiceM> GetServiceSoir(Task<List<ServiceM>> listServiceM)
-        {
-            throw new NotImplementedException();
-        }
-        private List<ServiceM> GetServiceMidi( Task<List<ServiceM>> listServiceM)
-        {
-            //ServiceM serviceM = new ServiceM();
-            List<ServiceM> listServiceMidi = new List<ServiceM>();
-            //TODO : HELP FABIEN : J'arrive pas à refaire ce que tu m'as montré hier.
-            //cf. : l_132
-            listServiceMidi.Add(listServiceM.ServiceList.Where(serv => serv.ServiceNumber == 1).FirstOrDefault());
-            throw new NotImplementedException();
+            //Et seulement le service Midi ou service Soir en fonction de serviceNumber
+            Task<List<Service>> ListServiceM = GetAllServiceForNextWeekAsync(firstDayOfWeek, serviceNumber);
+
         }
         
-        public WeekM Load(DateTime date)
+        public WeekM Load(DateTime date, int serviceNumber)
         {
-            return new WeekM(date);
+            return new WeekM(date, serviceNumber);
         }
         public DateTime WhathIsTheFirstDay(DateTime currentDate) 
         {
@@ -120,9 +104,11 @@ namespace ClientMobile.Models
             }
             return isMonday;
         }
-        public async Task<List<ServiceM>> GetAllServiceForNextWeekAsync(DateTime firstDayOfWeek)
+        public async Task<List<Service>> GetAllServiceForNextWeekAsync(DateTime firstDayOfWeek, int serviceNumber)
         {
+            //J'ai rien compris : Pourquoi j'utilise un ServiceM "model" si j'utilise des Services ?
             List<ServiceM> listServiceM = new List<ServiceM>();
+            List<Service> listServiceByServiceNumber = new List<Service>();
             //Récupérer un service 
             for (int i = 0; i < 7; i++)
             {
@@ -130,9 +116,13 @@ namespace ClientMobile.Models
                 ServiceM service = new ServiceM();
                 await service.LoadServiceByDate(date);
                 listServiceM.Add(service);
-                //Service s = listServiceM[0].ServiceList.Where(serv => serv.ServiceNumber == 1).FirstOrDefault();
+                //Ici j'ai les 14 services de la semaine dans listServiceM.
+                Service se = listServiceM[i].ServiceList.Where(serv => serv.ServiceNumber == serviceNumber).FirstOrDefault();
+                listServiceByServiceNumber.Add(se);
             }
-            return listServiceM;
+            //Service s = listServiceM[0].ServiceList.Where(serv => serv.ServiceNumber == serviceNumber).FirstOrDefault();
+
+            return listServiceByServiceNumber;
         }
     }
 }
