@@ -1,6 +1,8 @@
-﻿using ClientMobile.Views;
+﻿using ClientMobile.ViewModels;
+using ClientMobile.Views;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -23,6 +25,8 @@ namespace ClientMobile
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        MainVM VM = new MainVM();
+
         public MainPage()
         {
             InitializeComponent();

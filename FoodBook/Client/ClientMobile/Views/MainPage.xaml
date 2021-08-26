@@ -59,7 +59,7 @@
                 <ColumnDefinition Width="7*"/>
             </Grid.ColumnDefinitions>
             <Grid x:Name="SelectService" Grid.Column="1">
-                <ToggleSwitch x:Uid="MainPage_ToggleSwitch" Header="MainPage_ToggleSwitch" Margin="0,0,0,0"  
+                <ToggleSwitch x:Uid="MainPage_ToggleSwitch" IsOn="{x:Bind VM.MidiSoirToogle, Mode=TwoWay}" Header="MainPage_ToggleSwitch" Margin="0,0,0,0"  
                               OffContent="MainPage_ToggleSwitch" OnContent="MainPage_ToggleSwitch" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
 
             </Grid>

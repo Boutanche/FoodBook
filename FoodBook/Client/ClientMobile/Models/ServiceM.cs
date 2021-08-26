@@ -15,50 +15,17 @@ namespace ClientMobile.Models
     {
         //On veut utiliser notre RestaurantService BLLC :
         private IRestaurantService _restaurantService = new RestaurantService();
-        //Ici Faire un Singleton
-        //Heu Non, il m'en faut 14 ce n'est pas un Singleton !!!
-        //private static ServiceM _instance;
-        //Avec un lock ?
-        //private static readonly object Verrou = new object();
-
-        //public static ServiceM Instance
-        //{
-        //    get {
-        //        if (_instance == null)
-        //        {
-        //            lock (Verrou)
-        //            {
-        //                if (_instance == null)
-        //                {
-        //                    _instance = new ServiceM();
-        //                }                     
-        //            }
-        //        }
-        //        return _instance;
-        //    }
-        //}
+       
         public ServiceM() { }
-        private List<Service> _serviceList;
-        public List<Service> ServiceList 
+
+        private Service _service;
+        public Service Service
         {
-            get => _serviceList;
-            set { Set(ref _serviceList, value); }
-        }
-        //Je pense que Service ne sert à rien du coup...
-        //D'ailleurs on va le retirer pour le moment.
-        //private Service _service;
-        //public Service Service
-        //{
-        //    get => _service;
-        //    set { Set(ref _service, value); }
-        //}
-        private int? _id;
-        public int? Id
-        {
-            get => _id;
-            set { Set(ref _id, value); }
+            get => _service;
+            set { Set(ref _service, value); }
         }
 
+        //MIDI OU SOIR
         private int _serviceNumber;
         public int ServiceNumber
         {
@@ -66,12 +33,24 @@ namespace ClientMobile.Models
             set { Set(ref _serviceNumber, value); }
         }
 
+        /// <summary>
+        /// Id unique du service Modèle
+        /// </summary>
+        private int? _id;
+        public int? Id
+        {
+            get => _id;
+            set { Set(ref _id, value); }
+        }
+
+
         private DateTime _dateService;
         public DateTime DateService
         {
             get => _dateService;
             set { Set(ref _dateService, value); }
         }
+
         //ObservableCollection<Dish> ??? Ou List ???
         private List<Dish> _listOfDish = new List<Dish>();
         public List<Dish> ListOfDish
@@ -79,35 +58,30 @@ namespace ClientMobile.Models
             get => _listOfDish;
             set { Set(ref _listOfDish, value); }
         }
-        //C'est l'occasion de voir la différence : (But pédagogique)
-        private ObservableCollection<Dish> _obCollDish = new ObservableCollection<Dish>();
-        public ObservableCollection<Dish> ObCollDish
-        {
-            get => _obCollDish;
-            set => Set(ref _obCollDish, value);
-        }
 
-        public static ServiceM Load(int idService)
-        {
-            return new ServiceM();
-        }
-        public async Task<List<Service>> LoadServiceByDate(DateTime date)
-        {
-            ObCollDish.Clear();
 
-            List<Service> service = await _restaurantService.GetServiceByDate(date);
+        /// <summary>
+        /// Charge le modèle
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="isMidi"></param>
+        /// <returns></returns>
+        public async Task Load(DateTime date, bool isMidi)
+        {
+
+            List<Service> services = await _restaurantService.GetServiceByDate(date);
+            var service = (isMidi) ? services[0] : services[1];
+
             if (service != null)
             {
-                ServiceList = service;
-                foreach (var item in ServiceList)
-                {
-                    foreach (var itemDish in item.ListOfDish)
-                    {
-                        ObCollDish.Add(itemDish);
-                    }
-                }
+                Service = service;
+                Id = service.Id;
+                DateService = service.DateService;
+                ListOfDish = service.ListOfDish;
+                ServiceNumber = service.ServiceNumber;
             }
-            return service;
         }
+
+
     }
 }

@@ -53,25 +53,34 @@ namespace ClientMobile.Models
             get => _listServiceSoir;
             set { Set(ref _listServiceSoir, value); }
         }
+
+        public DateTime CurrentDate { get; private set; }
+
         public WeekM(DateTime currentDate, int serviceNumber)
         {
-            //S'il n'y a pas de currentDate (qui vient du dateTimePicker alors, prend la date du jour.)
-            if (currentDate == null)
-            {
-                currentDate = DateTime.Now.Date;
-            }
-            //fonction trouver la date de début de semaine avec currentDate.
-            DateTime firstDayOfWeek = WhathIsTheFirstDay(currentDate);
-            //fonction pour récupérer les dates des 7 jours de la semaine et les 14 services
-            //Et seulement le service Midi ou service Soir en fonction de serviceNumber
-            Task<List<Service>> ListServiceM = GetAllServiceForNextWeekAsync(firstDayOfWeek, serviceNumber);
+            Load(currentDate, serviceNumber);
 
         }
         
         public WeekM Load(DateTime date, int serviceNumber)
         {
-            return new WeekM(date, serviceNumber);
+            CurrentDate = date;
+            //S'il n'y a pas de currentDate (qui vient du dateTimePicker alors, prend la date du jour.)
+            if (date == null)
+            {
+                date = DateTime.Now.Date;
+            }
+            //fonction trouver la date de début de semaine avec currentDate.
+            DateTime firstDayOfWeek = WhathIsTheFirstDay(date);
+            //fonction pour récupérer les dates des 7 jours de la semaine et les 14 services
+            //Et seulement le service Midi ou service Soir en fonction de serviceNumber
+            Task<List<ServiceM>> ListServiceM = GetAllServiceForNextWeekAsync(firstDayOfWeek, serviceNumber);
+            
+;
+            
+            return null;
         }
+
         public DateTime WhathIsTheFirstDay(DateTime currentDate) 
         {
             Trace.WriteLine("Entrée dans la fonction : Trouver le premier jour de la semaine");
@@ -104,25 +113,41 @@ namespace ClientMobile.Models
             }
             return isMonday;
         }
-        public async Task<List<Service>> GetAllServiceForNextWeekAsync(DateTime firstDayOfWeek, int serviceNumber)
+   
+        public async Task<List<ServiceM>> GetAllServiceForNextWeekAsync(DateTime firstDayOfWeek, int serviceNumber)
         {
             //J'ai rien compris : Pourquoi j'utilise un ServiceM "model" si j'utilise des Services ?
-            List<ServiceM> listServiceM = new List<ServiceM>();
-            List<Service> listServiceByServiceNumber = new List<Service>();
-            //Récupérer un service 
+            //Il y a certainement un truc que j'ai compris !
+            List<ServiceM> listServices = new List<ServiceM>();
+            List<ServiceM> listServiceMidi = new List<ServiceM>();
+            List<ServiceM> listServiceSoir = new List<ServiceM>();
+            //Récupérer un service
+            //
+            List<Task> servicesLoader = new List<Task>();
+
             for (int i = 0; i < 7; i++)
             {
                 DateTime date = firstDayOfWeek.AddDays(i);
-                ServiceM service = new ServiceM();
-                await service.LoadServiceByDate(date);
-                listServiceM.Add(service);
-                //Ici j'ai les 14 services de la semaine dans listServiceM.
-                Service se = listServiceM[i].ServiceList.Where(serv => serv.ServiceNumber == serviceNumber).FirstOrDefault();
-                listServiceByServiceNumber.Add(se);
-            }
-            //Service s = listServiceM[0].ServiceList.Where(serv => serv.ServiceNumber == serviceNumber).FirstOrDefault();
 
-            return listServiceByServiceNumber;
+                ServiceM serviceMMidi = new ServiceM();
+                var ts = serviceMMidi.Load(date, true);
+                listServiceMidi.Add(serviceMMidi);
+
+
+                ServiceM serviceMSoir = new ServiceM();
+                var ts2 = serviceMSoir.Load(date, false);
+                listServiceSoir.Add(serviceMSoir);
+
+                listServices.AddRange(new List<ServiceM>() { serviceMMidi, serviceMSoir });
+
+                servicesLoader.AddRange(new List<Task>() { ts, ts2 });
+
+            }
+
+            Task.WaitAll(servicesLoader.ToArray());
+
+
+            return listServices;
         }
     }
 }

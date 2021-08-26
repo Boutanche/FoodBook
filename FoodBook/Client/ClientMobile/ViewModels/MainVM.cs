@@ -34,36 +34,51 @@ namespace ClientMobile.ViewModels
             get => _currentDate;
             set {
                 Set(ref _currentDate, value);
+                LoadSemaine();
             }
         }
 
         private bool _midiSoirToogle;
-        private ObservableCollection<DayStruct> _days;
+        public bool MidiSoirToogle
+        {
+            get => _midiSoirToogle;
+            set
+            {
+                Set(ref _midiSoirToogle, value);
+                LoadSemaine();
+            }
+        }
 
+        private ObservableCollection<ServiceM> _days;
+        public ObservableCollection<ServiceM> Days
+        {
+            get => _days;
+            set
+            {
+                Set(ref _days, value);
+            }
+        }
 
-        public async Task LoadSemaine(DateTime date, bool _midiSoir)
+        public async Task LoadSemaine()
         {
             int serviceNumber = 0;
-            if (_midiSoir)
+
+            if(CurrentDate != semaineM.CurrentDate)
+            {
+                semaineM = new WeekM(_currentDate, serviceNumber);
+                await semaineM.Load();
+            }
+            if (_midiSoirToogle)
             {
                 serviceNumber = 1;
+                Days = new ObservableCollection<ServiceM>(semaineM.ListServiceMidi);
             }
             else
             {
                 serviceNumber = 2;
+                Days = new ObservableCollection<ServiceM>(semaineM.ListServiceSoir);
             }
-            semaineM = new WeekM(_currentDate, serviceNumber);
-            //semaineM.Load(date);
-            //I'm Here
-            for (int i = 0; i < semaineM.ListService.Count; i++)
-            {
-                //semaineM.ListService[i]
-                //ServiceM s = semaineM.ListService[i].ServiceList.Where(serv => serv.ServiceNumber == 1).FirstOrDefault();
-            }            
-            foreach (var service in semaineM.ListService)
-            {
-                //Service s = service.ServiceList.Where(serv => serv.ServiceNumber == 1).FirstOrDefault();
-            }; 
+
         }
     }
 }
