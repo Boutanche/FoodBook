@@ -112,7 +112,7 @@ namespace ClientMobile.Models
         /// <returns></returns>
         public DateTime WhathIsTheFirstDay(DateTime currentDate) 
         {
-            Trace.WriteLine("Entrée dans la fonction : Trouver le premier jour de la semaine");
+            Trace.WriteLine("Entrée dans la fonction : Trouver le premier jour de la semaine Client :");
             DateTime isMonday = currentDate;
             switch (currentDate.DayOfWeek)
             {

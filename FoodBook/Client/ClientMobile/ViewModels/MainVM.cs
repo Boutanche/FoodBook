@@ -46,6 +46,7 @@ namespace ClientMobile.ViewModels
             {
                 Set(ref _midiSoirToogle, value);
                 LoadSemaine();
+                
             }
         }
 
@@ -68,6 +69,12 @@ namespace ClientMobile.ViewModels
                 semaineM = new WeekM(_currentDate);
                 await semaineM.Load(_currentDate);
             }
+            else
+            {
+
+                CurrentDate = DateTime.Now.Date;
+
+            }
             if (_midiSoirToogle)
             {
                 serviceNumber = 1;
@@ -78,7 +85,15 @@ namespace ClientMobile.ViewModels
                 serviceNumber = 2;
                 Days = new ObservableCollection<ServiceM>(semaineM.ListServiceSoir);
             }
+            foreach (var item in Days)
+            {
+                string jour = item.DateService.Day.ToString();
+                string entree = item.ListOfDish[0].Name.ToString();
+                string plat = item.ListOfDish[1].Name.ToString();
+                string dessert = item.ListOfDish[2].Name.ToString();
 
+                DayStruct myDay = new DayStruct(jour, entree, plat, dessert);
+            }
         }
     }
 }
