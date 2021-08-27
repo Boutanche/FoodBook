@@ -65,8 +65,8 @@ namespace ClientMobile.ViewModels
 
             if(CurrentDate != semaineM.CurrentDate)
             {
-                semaineM = new WeekM(_currentDate, serviceNumber);
-                await semaineM.Load();
+                semaineM = new WeekM(_currentDate);
+                await semaineM.Load(_currentDate);
             }
             if (_midiSoirToogle)
             {

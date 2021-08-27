@@ -233,11 +233,6 @@ namespace BLLC.Services
                 return null;
             }
         }
-        public async Task<Service> GetOneServiceByDate(DateTime date, int ServiceNumber)
-        {
-            //WIP
-            return null;
-        }
         public async Task<List<Service>> GetServiceByDate(DateTime dateTime)
         {
             var reponse = await _httpClient.GetAsync($"service/date?date={dateTime.ToString("d", CultureInfo.InvariantCulture)}");
@@ -257,6 +252,7 @@ namespace BLLC.Services
                 return null;
             }
         }
+        
         public async Task<Service> AddDishToService(Service createdService) {
 
             var response = await _httpClient.PostAsync("service/dish",

@@ -13,19 +13,28 @@ namespace ClientMobile.Models
 {
     class ServiceM : ModelBase
     {
-        //On veut utiliser notre RestaurantService BLLC :
+        /// <summary>
+        /// Instance de RestaurantService : BLLC
+        /// </summary>
         private IRestaurantService _restaurantService = new RestaurantService();
        
+        /// <summary>
+        /// Ctor par défaut 
+        /// </summary>
         public ServiceM() { }
 
+        /// <summary>
+        /// Service du Service Model
+        /// </summary>
         private Service _service;
         public Service Service
         {
             get => _service;
             set { Set(ref _service, value); }
         }
-
-        //MIDI OU SOIR
+        /// <summary>
+        /// Midi(1) ou Soir(2) du Service Model
+        /// </summary>
         private int _serviceNumber;
         public int ServiceNumber
         {
@@ -43,7 +52,9 @@ namespace ClientMobile.Models
             set { Set(ref _id, value); }
         }
 
-
+        /// <summary>
+        /// Date du service Modèle
+        /// </summary>
         private DateTime _dateService;
         public DateTime DateService
         {
@@ -51,7 +62,9 @@ namespace ClientMobile.Models
             set { Set(ref _dateService, value); }
         }
 
-        //ObservableCollection<Dish> ??? Ou List ???
+        /// <summary>
+        /// List of Dish du Service Modèle
+        /// </summary>
         private List<Dish> _listOfDish = new List<Dish>();
         public List<Dish> ListOfDish
         {
@@ -61,7 +74,7 @@ namespace ClientMobile.Models
 
 
         /// <summary>
-        /// Charge le modèle
+        /// Charge le modèle en fonction du service demandé
         /// </summary>
         /// <param name="date"></param>
         /// <param name="isMidi"></param>
