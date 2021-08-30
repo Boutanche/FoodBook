@@ -17,7 +17,7 @@ namespace ClientMobile.Models
         /// Instance de RestaurantService : BLLC
         /// </summary>
         private IRestaurantService _restaurantService = new RestaurantService();
-       
+
         /// <summary>
         /// Ctor par défaut 
         /// </summary>
@@ -81,9 +81,9 @@ namespace ClientMobile.Models
         /// <returns></returns>
         public async Task Load(DateTime date, bool isMidi)
         {
-
+            var isMidiServiceNumber = (isMidi) ? 1 : 2;
             List<Service> services = await _restaurantService.GetServiceByDate(date);
-            var service = (isMidi) ? services[0] : services[1];
+            var service = services.Where(s => s.ServiceNumber == isMidiServiceNumber).FirstOrDefault();
 
             if (service != null)
             {

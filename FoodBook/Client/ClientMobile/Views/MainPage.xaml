@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ClientMobile"
+    xmlns:tp="using:ClientMobile.ViewModels"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
@@ -117,7 +118,8 @@
                             <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
                         </TextBlock.FocusVisualPrimaryBrush>
                     </TextBlock>
-                    
+
+                    <!-- Ici faudrait faire une boucle et pas le mettre en dur : -->
                     <Button x:Name="BookingBtn0" Grid.Row="0" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn" />
                     <Button x:Name="BookingBtn1" Grid.Row="1" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn" />
                     <Button x:Name="BookingBtn2" Grid.Row="2" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn" />
@@ -125,16 +127,16 @@
                     <Button x:Name="BookingBtn4" Grid.Row="4" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn" />
                     <Button x:Name="BookingBtn5" Grid.Row="5" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn"/>
                     <Button x:Name="BookingBtn6" Grid.Row="6" Grid.Column="3" x:Uid="MainPage_BookingBtn" ClickMode="Press" Click="Button_Click" Content="MainPage_BookingBtn"/>
-                    
+
                     <Grid x:Name="MenuLundi" Grid.Column="2" Margin="0,10,0,10">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[0].ListOfDish[2].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[0].ListOfDish[1].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[0].ListOfDish[0].Name.ToString(), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="{x:Bind VM.GetDayOrDefault(0, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="{x:Bind VM.GetDayOrDefault(0, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="{x:Bind VM.GetDayOrDefault(0, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuMardi" Grid.Column="2" Margin="0,10,0,10" Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -142,9 +144,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[1].ListOfDish[2].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[1].ListOfDish[1].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[1].ListOfDish[0].Name.ToString(), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(1, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(1, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(1, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuMercredi" Grid.Column="2" Margin="0,11,0,9" Grid.Row="2">
                         <Grid.RowDefinitions>
@@ -152,9 +154,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[2].ListOfDish[2].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[2].ListOfDish[1].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[2].ListOfDish[0].Name.ToString(), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(2, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(2, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(2, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuJeudi" Grid.Column="2" Margin="0,11,0,10" Grid.Row="3">
                         <Grid.RowDefinitions>
@@ -162,9 +164,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[3].ListOfDish[2].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[3].ListOfDish[1].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[3].ListOfDish[0].Name.ToString(), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(3, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(3, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(3, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuVendredi" Grid.Column="2" Margin="0,10,0,10" Grid.Row="4">
                         <Grid.RowDefinitions>
@@ -172,9 +174,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[4].ListOfDish[2].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[4].ListOfDish[1].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[4].ListOfDish[0].Name.ToString(), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(4, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(4, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(4, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuSamedi" Grid.Column="2" Margin="0,11,0,10" Grid.Row="5">
                         <Grid.RowDefinitions>
@@ -182,25 +184,22 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[5].ListOfDish[2].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[5].ListOfDish[1].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[5].ListOfDish[0].Name.ToString(), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(5, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(5, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(5, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
-
                     <Grid x:Name="MenuDimanche" Grid.Column="2" Margin="0,10,0,10" Grid.Row="6">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[6].ListOfDish[2].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[6].ListOfDish[1].Name.ToString(), Mode=OneWay}"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.Days[6].ListOfDish[0].Name.ToString(), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="2" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(6, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="1" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(6, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" Width="188" Grid.Row="0" FontSize="8" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(6, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
-
                 </Grid>
             </StackPanel>
         </ScrollViewer>
-
     </Grid>
 </Page>

@@ -15,12 +15,19 @@ namespace BLLC.Services
         private readonly HttpClient _httpClient;
         public RestaurantService()
         {
-            _httpClient = new HttpClient
+            var handler = new HttpClientHandler();
+            handler.ClientCertificateOptions = ClientCertificateOption.Manual;
+            handler.ServerCertificateCustomValidationCallback =
+                (httpRequestMessage, cert, cetChain, policyErrors) =>
+                {
+                    return true;
+                };
+            _httpClient = new HttpClient(handler)
             {
                 BaseAddress = new Uri("https://localhost:5001/api/v1.0/")
             };
         }
-        
+
         #region Dish
 
         /// <summary>
@@ -66,7 +73,7 @@ namespace BLLC.Services
             {
                 //Faudra traiter ça sur l'interface si problème.
                 return null;
-            }  
+            }
         }
 
         public async Task<Dish> GetDishById(int? idDish)
@@ -220,7 +227,7 @@ namespace BLLC.Services
             if (response.IsSuccessStatusCode)
             {
                 var stream = await response.Content.ReadAsStreamAsync();
-                Service newService= await JsonSerializer.DeserializeAsync<Service>(stream, new JsonSerializerOptions()
+                Service newService = await JsonSerializer.DeserializeAsync<Service>(stream, new JsonSerializerOptions()
                 {
                     PropertyNameCaseInsensitive = true
                 });
@@ -235,25 +242,38 @@ namespace BLLC.Services
         }
         public async Task<List<Service>> GetServiceByDate(DateTime dateTime)
         {
-            var reponse = await _httpClient.GetAsync($"service/date?date={dateTime.ToString("d", CultureInfo.InvariantCulture)}");
-            if (reponse.IsSuccessStatusCode)
+            Trace.WriteLine("Attention : nous sommes sur le point de nous perdre dans la matrice au niveau du Mobil");
+      
+            try
             {
-                Trace.WriteLine("GetServiceByDate return a servicePage");
-                var stream = await reponse.Content.ReadAsStreamAsync();
-                //Ici reception de json qu'il faut que je remette en objet C#.
-                                List<Service> servicePage = await JsonSerializer.DeserializeAsync<List<Service>>
-                       (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-                return servicePage;
+               var reponse = await _httpClient.GetAsync($"service/date?date={dateTime.ToString("d", CultureInfo.InvariantCulture)}");
+
+                if (reponse.IsSuccessStatusCode)
+                {
+                    Trace.WriteLine("GetServiceByDate return a servicePage");
+                    var stream = await reponse.Content.ReadAsStreamAsync();
+                    //Ici reception de json qu'il faut que je remette en objet C#.
+                    List<Service> servicePage = await JsonSerializer.DeserializeAsync<List<Service>>
+            (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                    return servicePage;
+                }
+                else
+                {
+                    //Faudra traiter ça sur l'interface si problème.
+                    Trace.WriteLine("GetServiceByDate return null");
+                    return null;
+                }
             }
-            else
+            catch (Exception e)
             {
-                //Faudra traiter ça sur l'interface si problème.
-                Trace.WriteLine("GetServiceByDate return null");
-                return null;
+                Trace.WriteLine(e.Message);
+
             }
+            return null;
         }
-        
-        public async Task<Service> AddDishToService(Service createdService) {
+
+        public async Task<Service> AddDishToService(Service createdService)
+        {
 
             var response = await _httpClient.PostAsync("service/dish",
             new StringContent(
@@ -298,7 +318,7 @@ namespace BLLC.Services
                 Trace.WriteLine("Problème dans la création d'un IsComposed");
                 return null;
             }
-        
+
         }
         //Aïe !
         public async Task<List<IsComposed>> GetIsComposedByIdService(int? id)

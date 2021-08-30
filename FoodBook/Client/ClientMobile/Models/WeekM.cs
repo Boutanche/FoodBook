@@ -99,10 +99,12 @@ namespace ClientMobile.Models
             }
             //Trouver début de la semaine
             DateTime firstDayOfWeek = WhathIsTheFirstDay(date);
+            //Prendre la semaine prochaine : 
+            firstDayOfWeek = firstDayOfWeek.AddDays(7);
             //Retourner les 14 Services
             Task<List<ServiceM>> ListServiceM = GetAllServiceForNextWeekAsync(firstDayOfWeek);
             
-            ListService = await ListServiceM;
+            _listService = await ListServiceM;
 
         }
         /// <summary>
@@ -140,6 +142,7 @@ namespace ClientMobile.Models
                 default:
                     break;
             }
+            Trace.WriteLine("La semaine commence le : " + isMonday);
             return isMonday;
         }
         /// <summary>
@@ -158,6 +161,9 @@ namespace ClientMobile.Models
             //Pour chaque jour de la semaine
             for (int i = 0; i < 7; i++)
             {
+                try
+                {
+
                 DateTime date = firstDayOfWeek.AddDays(i);
                 //Service du Midi
                 ServiceM serviceMMidi = new ServiceM();
@@ -171,9 +177,14 @@ namespace ClientMobile.Models
                 listServices.AddRange(new List<ServiceM>() { serviceMMidi, serviceMSoir });
                 //Ajouter à la liste des Taches
                 servicesLoader.AddRange(new List<Task>() { ts, ts2 });
+                }
+                catch(Exception e)
+                {
+                    Trace.WriteLine(e.Message);
+                }
             }
 
-            Task.WaitAll(servicesLoader.ToArray());
+            await Task.WhenAll(servicesLoader);
             ListServiceMidi = listServiceMidi;
             ListServiceSoir = listServiceSoir;
 
