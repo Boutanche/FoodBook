@@ -14,6 +14,7 @@ namespace ClientDesktop
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Ajouter ici un problème si pas de connexion bdd ?
             Application.Run(new WeekForm());
         }
     }

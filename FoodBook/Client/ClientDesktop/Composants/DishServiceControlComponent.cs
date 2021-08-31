@@ -48,30 +48,34 @@ namespace ClientDesktop.Composants
             Task<List<Service>> serviceList = _restaurantService.GetServiceByDate(service.DateService);
             List<Service> newServiceList = await serviceList;
             Trace.WriteLine("Initialisation de la newServiceList pour la journée du  : " + service.DateService);
-            if ( newServiceList.Count > 0)
+            //Si newSerrviceList.Count supérieur à zéro et n'est pas null.
+            if (newServiceList != null)
             {
-
-                //List<Service> newServiceList = await serviceList; 
-                foreach (var item in newServiceList)
+                if (newServiceList.Count > 0)
                 {
-                    if (item.ServiceNumber == service.ServiceNumber)
+                    //List<Service> newServiceList = await serviceList; 
+                    foreach (var item in newServiceList)
                     {
-                        foreach (var dish in item.ListOfDish)
+                        if (item.ServiceNumber == service.ServiceNumber)
                         {
-                            if (dish.TypeofDish.Id == typeOfDish)
+                            foreach (var dish in item.ListOfDish)
                             {
-                                labelDish.Text = dish.Name;
+                                if (dish.TypeofDish.Id == typeOfDish)
+                                {
+                                    labelDish.Text = dish.Name;
+                                }
                             }
                         }
                     }
-                    
                 }
+                //Si newSerrviceList.Count = zéro ou est null.
+                else if ((await serviceList).Count == 0)
+                {
+                    labelDish.Text = "Not completed yet";
+                }
+
             }
-            else if ((await serviceList).Count == 0)
-            {
-                labelDish.Text = "Not completed yet";
-            }
-            
+
             ///DishComboBox.DataBindings.; 
         }
         public void UpdateTest(Service service, int typeOfDish)

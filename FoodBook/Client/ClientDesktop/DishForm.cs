@@ -75,7 +75,11 @@ namespace ClientDesktop
 
             bindingSourceIngredients.DataSource = ingredients;
             dataGridView_ingredients.DataSource = bindingSourceIngredients;
+            //Todo : Controle sur le != null ici ?
+            if (dataGridView_ingredients.Columns["id"] != null)
+            {
             dataGridView_ingredients.Columns["id"].Visible = false;
+            }
         }
         /// <summary>
         /// Afficher la fenêtre pour créer un ingrédient
