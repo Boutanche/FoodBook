@@ -25,7 +25,7 @@ namespace BLLC.Services
             _httpClient = new HttpClient(handler)
             {
                 //BaseAddress = new Uri("https://localhost:5001/api/v1.0/")
-                BaseAddress = new Uri("https://user11.2isa.org/api/v1.0/")
+                BaseAddress = new Uri("http://user11.2isa.org/api/v1.0/")
             };
         }
 

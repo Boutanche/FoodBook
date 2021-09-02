@@ -12,21 +12,25 @@ namespace API
 {
     public class Program
     {
+        /// <summary>
+        /// Point d'entrée de l'Interface de programmation d'applications - API - FoodBook
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            Trace.WriteLine("... Lancement de l'API FoodBook ..." );
-
             CreateHostBuilder(args).Build().Run();
-            Trace.WriteLine("A des fins pédagogiques, j'ai tendance à laisser des 'TRACES' un peu partout, ne faites pas attention à moi.");
-            
         }
-
+        /// <summary>
+        /// Configuration
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    Trace.WriteLine("Je suis Ligne 30 de la classe Program.cs");
+                    
                 });
 
     }

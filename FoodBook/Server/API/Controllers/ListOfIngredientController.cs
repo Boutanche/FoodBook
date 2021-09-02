@@ -24,6 +24,10 @@ namespace API.Controllers
     {
         //Service qui gère la restauration :
         private readonly IRestaurantService _restaurantService = null;
+        /// <summary>
+        /// BLL
+        /// </summary>
+        /// <param name="restaurantService"></param>
         public ListOfIngredientController(IRestaurantService restaurantService)
         {
             _restaurantService = restaurantService;
@@ -32,10 +36,8 @@ namespace API.Controllers
         /// Récupérer l'ensemble des ListOfIngredient Table de liaison entre le ingrédient et les plats qu'ils composent.
         /// Permet de connaitre la quantité nécessaire des produits en question pour ce plat.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Task</returns>
         [HttpGet]
-        //Not implemented yet !
-        //[Authorize(Roles ="Admin, User")]
         public async Task<ActionResult<List<ListOfIngredient>>> GetAll()
         {
             return Ok(await _restaurantService.GetAllListOfIngredient());
@@ -43,7 +45,7 @@ namespace API.Controllers
         /// <summary>
         /// Récupérer uniquement les ingrédients qui composent le plat désigné par l'id précisé.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Task</returns>
         [HttpGet("{idDish}")]
         
         public async Task<ActionResult<List<ListOfIngredient>>> GetListOfIngredientByIdDish(int idDish)
@@ -54,7 +56,7 @@ namespace API.Controllers
         /// Créer un ListOfIngredient :
         /// </summary>
         /// <param name="ListOfIngredient"></param>
-        /// <returns></returns>
+        /// <returns>Task</returns>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -74,18 +76,18 @@ namespace API.Controllers
             }
         }
         /// <summary>
-        /// Modifier un ...
-        /// Penser que id = int32.Parse(idIngredient.toString() + idDish.toString())
+        /// Modifier une ListOfIngredient
         /// </summary>
         /// <param name="id"></param>
         /// <param name="listOfIngredient"></param>
-        /// <returns></returns>
+        /// <returns>Task</returns>
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> ModifyListOfIngredient([FromRoute] int id, [FromBody] ListOfIngredient listOfIngredient)
         {
+            // Penser que id = int32.Parse(idIngredient.toString() + idDish.toString())
             if (listOfIngredient == null || id != Int32.Parse(listOfIngredient.IdIngredient.ToString() + listOfIngredient.IdDish.ToString()))
             {
                 // Retourne un code 400  Bad Request
@@ -107,7 +109,7 @@ namespace API.Controllers
             }
         }
         /// <summary>
-        /// Suppression d'un ListOfIngredient donné
+        /// Suppression d'un ListOfIngredient
         /// </summary>
         /// <param name="id"></param>
         /// <returns>No Content Code 204.</returns>

@@ -22,10 +22,12 @@ namespace API.Controllers
     public class MenuController : ControllerBase
     {
         private readonly IRestaurantService _restaurantService = null;
-
+        /// <summary>
+        /// BLL
+        /// </summary>
+        /// <param name="restaurantService"></param>
         public MenuController(IRestaurantService restaurantService)
         {
-            //On a une connexion là.
             _restaurantService = restaurantService;
         }
         /// <summary>
@@ -37,7 +39,11 @@ namespace API.Controllers
         {
             return Ok(await _restaurantService.GetAllMenu());
         }
-
+        /// <summary>
+        /// Get Menu By Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Task</returns>
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Menu))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -79,7 +85,7 @@ namespace API.Controllers
         /// Créer un menu afin de l'ajouter en base de données. 
         /// </summary>
         /// <param ></param>
-        /// <returns></returns>
+        /// <returns>Task</returns>
         public async Task<IActionResult> CreateMenu([FromBody] Menu menu)
         {
             Menu newMenu = await _restaurantService.CreateMenu(menu);

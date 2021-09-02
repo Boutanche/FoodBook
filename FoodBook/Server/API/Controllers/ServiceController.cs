@@ -11,6 +11,13 @@ using BO.DTO.Requests;
 
 namespace API.Controllers
 {
+    /// <summary>
+    /// Controller : Service
+    /// Les services regroupent une entrée un plat et un dessert 
+    /// En fonction de la date 
+    /// Et d'un numéro de service : midi/soir.
+    /// Cf : documentation du projet.
+    /// </summary>
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/service")]
@@ -18,8 +25,12 @@ namespace API.Controllers
     [Consumes(MediaTypeNames.Application.Json)]
     public class ServiceController : ControllerBase
     {
-        //Service qui gère la Restauration :
+        //Service qui gère la Restauration : BLL
         private readonly IRestaurantService _restaurantService = null;
+        /// <summary>
+        /// Business Logic Layer
+        /// </summary>
+        /// <param name="restaurantService"></param>
         public ServiceController(IRestaurantService restaurantService)
         {
             _restaurantService = restaurantService;
@@ -27,29 +38,18 @@ namespace API.Controllers
         /// <summary>
         /// Get all Service
         /// </summary>
-        /// <returns></returns>
+        /// <returns>List of Service</returns>
         [HttpGet]
         public async Task<ActionResult<List<Service>>> GetAllService()
         {
             return Ok(await _restaurantService.GetAllService());
         }
 
-
-        //[HttpGet()]
-        //public async Task<ActionResult<List<Service>>> GetServicesByIdMenu ([FromQuery(Name="menu")] int? id_Menu)
-        //{
-        //    if(id_Menu.HasValue)
-        //    {
-        //        return Ok(await _restaurantService.GetServicesByIdMenu(id_Menu.Value));
-        //    }
-        //    return BadRequest();
-        //}
-
         /// <summary>
-        /// Récupèrer un service par son Id
+        /// Get Service By ID
         /// </summary>
         /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>One Service</returns>
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Service))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -66,10 +66,10 @@ namespace API.Controllers
             }
         }
         /// <summary>
-        /// Créer un nouveau service
+        /// Create new service
         /// </summary>
         /// <param name="service"></param>
-        /// <returns></returns>
+        /// <returns> --Task of IActionResult-- </returns>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -88,7 +88,12 @@ namespace API.Controllers
                 return BadRequest();
             }
         }
-        //TODO : AddDishForThisService
+
+        /// <summary>
+        /// Add Dish To Service :
+        /// </summary>
+        /// <param name="service"></param>
+        /// <returns> --Task of IActionResult-- </returns>
         [HttpPost("dish")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -97,7 +102,6 @@ namespace API.Controllers
             bool newService = await _restaurantService.AddDishToService(service);
             if (newService != false)
             {
-                //TODO valider avec Fabien
                 return Ok(service);
             }
             else
@@ -107,23 +111,11 @@ namespace API.Controllers
             }
         }
 
-
-        //[HttpDelete("date")]
-        //[ProducesResponseType(StatusCodes.Status204NoContent)]
-        //[ProducesResponseType(StatusCodes.Status404NotFound)]
-        //public async Task<IActionResult> GetServiceByDate([FromQuery] DateTime date)
-        //{
-        //    IEnumerable<Service> service = await _restaurantService.GetServiceByDate(date);
-        //    if (service == null)
-        //    {
-        //        return NotFound();        // StatusCode = 404
-        //    }
-        //    else
-        //    {
-        //        return Ok(service);   // StatusCode = 200
-        //    }
-        //}
-
+        /// <summary>
+        /// Get Service By Date
+        /// </summary>
+        /// <param name="date"></param>
+        /// <returns></returns>
         [HttpGet("date")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Service))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

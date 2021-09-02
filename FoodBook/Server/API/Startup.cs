@@ -24,11 +24,13 @@ namespace API
 {
     public class Startup
     {
+        /// <summary>
+        /// Point d'entrée pour la configuaration de l'API
+        /// </summary>
+        /// <param name="configuration"></param>
         public Startup(IConfiguration configuration)
         {
-            Trace.WriteLine("...Lancement du Startup ...");
-            Configuration = configuration;
-            
+            Configuration = configuration;   
         }
 
         public IConfiguration Configuration { get; }
@@ -36,26 +38,29 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            Trace.WriteLine("...Lancement de Configure Services...");
+            /*************************************************************************
+             * 
+             * But Pédagogique : 
+             * AddTrasient ou AddScoped .
+             * 
+             * 
             //Unique dans toute mon application (même instance dans toute l'aplication)
             //A chaque fois qu'on demande un Ilibrairi service => nouvelle instance
             //services.AddTransient<IRestaurantService, RestaurantService>();
             
             // La même instance tout au long de la requête
             //services.AddScoped<ILibrairiService, LibrairiService>();
-
+            ***************************************************************************/
+            
             //Service de Versionning
             services.AddApiVersioning(config =>
             {
-                Trace.WriteLine("Service : Versions d'API ...");
                 //Renvoie dans le header les versions d'API supportées.
                 config.ReportApiVersions = true;
             });
-            //Correction de Bug 
 
             services.AddVersionedApiExplorer(options =>
             {
-                Trace.WriteLine("Service : Explorateur Versions d'API ");
                 options.SubstituteApiVersionInUrl = true;
             });
 
@@ -82,9 +87,8 @@ namespace API
                     };
                 };
                 config.ApiGroupNames = new[] { "1.0" };
-                Trace.WriteLine("Service : Mise à disposition de la documentation :  ");
             });
-            //End OpenAPI Document
+            //Authentification : 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 Trace.WriteLine("Service : Mise en place de Authentification  ");
@@ -100,13 +104,10 @@ namespace API
                     ClockSkew = TimeSpan.Zero //Remove delay of token when expire.
                 };
             });
-        
-
+            //Controllers :
             services.AddControllers();
-            Trace.WriteLine("Service : Controllers ");
+            //BLL :
             services.AddBLL();
-            Trace.WriteLine("Service : Couche Bibliothèque Logique");
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -119,53 +120,48 @@ namespace API
                 app.UseDeveloperExceptionPage();
 
             }
+            /***            ***
+             *                *
+             * Middleware     *
+             *                *
+             ***              */
             
             //DocFX
             app.UseDocFx(config =>
             {
-                Trace.WriteLine("Mise en place de la route pour configuration la documentation :  ");
                 config.rootPath = "/doc";
             });
 
-            //Middleware de génération du OpenAPIjson
+            //OpenAPIjson
             app.UseOpenApi(config =>
             {
-                Trace.WriteLine("Mise en place de la route pour consulter la documentation :  ");
                 config.Path = "/api/doc/{documentName}/api.json";
             });
-            //END
 
-            // Interface utilisateur en fonction du OpenApi.json
+            // Interface utilisateur en fonction du OpenApi.json : Swagger
             app.UseSwaggerUi3(config =>
             {
-                Trace.WriteLine("Mise en place de l'interface pour la documentation :  ");
                 config.DocumentPath = "/api/doc/{documentName}/api.json";
                 config.Path = "/api/doc";
             });
-            //END
 
+            //Https :
             app.UseHttpsRedirection();
-            Trace.WriteLine("Mise en place de la route pour HTTPS :  ");
-
+            
+            //Routes
             app.UseRouting();
-            Trace.WriteLine("Mise en place des routes :  ");
-
+            
             //CE : 403
             app.UseAuthorization();
-            Trace.WriteLine("Mise en place des authorisations :  ");
 
             //CE : 401
             app.UseAuthentication();
-            Trace.WriteLine("Mise en place des authentifications : ");
-
+            
+            //Mapping
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                Trace.WriteLine("Mappage de API : ");
             });
-
-            
-
         }
     }
 }

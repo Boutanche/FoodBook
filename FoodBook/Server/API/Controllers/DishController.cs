@@ -22,7 +22,10 @@ namespace API.Controllers
     {
         //Service qui gère la Restauration : 
         private readonly IRestaurantService _restaurantService = null;
-
+        /// <summary>
+        /// BLL
+        /// </summary>
+        /// <param name="restaurantService"></param>
         public DishController(IRestaurantService restaurantService)
         {
             _restaurantService = restaurantService;
@@ -56,7 +59,11 @@ namespace API.Controllers
                 return Ok(dish);   // StatusCode = 200
             }
         }
-
+        /// <summary>
+        /// Get Dish By Name
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>Task</returns>
         [HttpGet("name/{name}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Dish))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -149,6 +156,11 @@ namespace API.Controllers
                 return NotFound();
             }
         }
+        /// <summary>
+        /// Réculére les ingrédients d'un plat par l'id du plat
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Task</returns>
         [HttpGet("{id}/ingredients")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Dish))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

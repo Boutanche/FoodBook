@@ -23,11 +23,19 @@ namespace API.Controllers
     {
         //Service qui gére la restauration : 
         private readonly IRestaurantService _restaurantService = null;
-
+        /// <summary>
+        /// BLL
+        /// </summary>
+        /// <param name="restaurantService"></param>
         public BookingController (IRestaurantService restaurantService)
         {
             _restaurantService = restaurantService;
         }
+        /// <summary>
+        /// Récupérer une réservation par son Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Booking))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -44,7 +52,11 @@ namespace API.Controllers
             }
         }
 
-
+        /// <summary>
+        /// Créer une réservation
+        /// </summary>
+        /// <param name="booking"></param>
+        /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

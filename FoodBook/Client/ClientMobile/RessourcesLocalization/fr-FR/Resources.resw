@@ -151,9 +151,9 @@
     <value>Service :</value>
   </data>
   <data name="MainPage_ToggleSwitch.OffContent" xml:space="preserve">
-    <value>Midi</value>
+    <value>Soir</value>
   </data>
   <data name="MainPage_ToggleSwitch.OnContent" xml:space="preserve">
-    <value>Soir</value>
+    <value>Midi</value>
   </data>
 </root>

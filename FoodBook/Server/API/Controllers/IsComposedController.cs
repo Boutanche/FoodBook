@@ -11,6 +11,11 @@ using BO.DTO.Requests;
 
 namespace API.Controllers
 {
+    /// <summary>
+    /// Controller Is Composed
+    /// Concerne la table de liaison entre Les services et les plats.
+    /// N'est pas utilisé.
+    /// </summary>
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/isComposed")]
@@ -25,11 +30,12 @@ namespace API.Controllers
         {
             _restaurantService = restaurantService;
         }
-        //TODO : Rajoute FromQuery + DTO filtre
-
-
-        //Je suis là !!!
-
+        /// <summary>
+        /// Create IsComposed
+        /// Concerve une table d'association entre un Service qui est Composé de Plats
+        /// </summary>
+        /// <param name="isComposed"></param>
+        /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

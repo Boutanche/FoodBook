@@ -23,7 +23,10 @@ namespace API.Controllers
     {
         //Service qui gère la Restauration :
         private readonly IRestaurantService _restaurantService = null;
-
+        /// <summary>
+        /// BLL
+        /// </summary>
+        /// <param name="restaurantService"></param>
         public IngredientsController(IRestaurantService restaurantService)
         {
             _restaurantService = restaurantService;
@@ -137,6 +140,5 @@ namespace API.Controllers
                 return NotFound();
             }
         }
-
     }
 }

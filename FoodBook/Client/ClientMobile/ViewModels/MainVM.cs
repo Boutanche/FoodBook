@@ -106,6 +106,7 @@ namespace ClientMobile.ViewModels
             {
                 foreach (var item in Days)
                 {
+                    //TODO : Bug : WIP : Actuellement ne peut rien afficher car récupére uniquement le 01/01 en date.
                     string jour = item.DateService.Day.ToString();
                     string entree = item.ListOfDish.Where( p => p.TypeofDish.Wording == "Entrée").FirstOrDefault()?.Name.ToString();
                     string plat = item.ListOfDish.Where(p => p.TypeofDish.Wording == "Plat").FirstOrDefault()?.Name.ToString();
@@ -116,6 +117,8 @@ namespace ClientMobile.ViewModels
                 }
 
             }
+            //Rafraichir sur une fonction... 
+            OnPropertyChanged("GetDayOrDefault");
         }
 
 
