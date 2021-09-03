@@ -31,7 +31,6 @@ namespace API.Controllers
         {
             _restaurantService = restaurantService;
         }
-        //TODO : Rajoute FromQuery + DTO filtre
 
         /// <summary>
         /// Récupérer la liste des Ingrédients

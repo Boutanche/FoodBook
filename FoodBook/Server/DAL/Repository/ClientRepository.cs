@@ -10,7 +10,7 @@ using Dapper;
 namespace DAL.Repository
 {
 
-    //TODO : Supprimer Client et IClientRepository
+    //TODO : V2 : Client et IClientRepository
     //Aucune requête Client n'a été implémenté sur cette version
     //Update 16/06/2021 : Client n'existe plus : Il a été remplacé par User
 

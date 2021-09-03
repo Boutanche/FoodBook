@@ -21,7 +21,7 @@ namespace BLL.Services
         public Task<LoginResponse> Login(string username, string password)
         {
             //Rechercher dans la base de donnée : 
-            //TODO : Implémenter Client et Role dans la base de données.
+            //TODO : V2 : Implémenter Client et Role dans la base de données.
             var loginResponse = new LoginResponse()
             {
                 Username = username,

@@ -31,14 +31,13 @@ namespace DAL.Repository
 
         public async Task<Dish> GetAsync(int id)
         {
-            //Eviter l'injection sql avec des reqêtes paramétrées
             var stmt = @"select * from dishes where id = @id";
             return await _session.Connection.QueryFirstOrDefaultAsync<Dish>(stmt, new { Id = id }, _session.Transaction);
         }
 
         public async Task<Dish> GetAsyncByName(string name)
         {
-            //TODO : Faire un Like si je veux un système de "search"
+            //TODO : V0 : Faire une requête --Like-- si je veux un système de "search" et de Filtre
 
             var stmt = @"select * from dishes where name = @name";
             return await _session.Connection.QueryFirstOrDefaultAsync<Dish>(stmt, new { Name = name }, _session.Transaction);
