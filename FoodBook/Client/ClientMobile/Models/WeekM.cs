@@ -138,7 +138,7 @@ namespace ClientMobile.Models
                     break;
                 case DayOfWeek.Sunday:
                     isMonday = currentDate.AddDays(-6);
-                    break;
+                    break; 
                 default:
                     break;
             }

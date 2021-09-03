@@ -10,9 +10,13 @@ using System.Threading.Tasks;
 
 namespace BLLC.Services
 {
+    /// <summary>
+    /// Implémentation de IRestaurantSerrvice
+    /// </summary>
     public class RestaurantService : IRestaurantService
     {
         private readonly HttpClient _httpClient;
+
         public RestaurantService()
         {
             var handler = new HttpClientHandler();
@@ -24,7 +28,9 @@ namespace BLLC.Services
                 };
             _httpClient = new HttpClient(handler)
             {
+                //URI Pour les tests en Local : 
                 //BaseAddress = new Uri("https://localhost:5001/api/v1.0/")
+                //URI Pour deploiement :
                 BaseAddress = new Uri("http://user11.2isa.org/api/v1.0/")
             };
         }
@@ -38,8 +44,7 @@ namespace BLLC.Services
         /// <returns></returns>
         public async Task<Dish> CreateDish(Dish newDish)
         {
-            //WIP : If is logged ?
-
+            //If is logged ?
             //TODO : Travailler sur la vérification du Token de connexion.
 
             var response = await _httpClient.PostAsync("dish",

@@ -20,6 +20,7 @@ namespace ClientMobile.Models
 
         /// <summary>
         /// Ctor par défaut 
+        /// Objet ServiceM qui posséde des prorpiétes : 
         /// </summary>
         public ServiceM() { }
 

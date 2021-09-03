@@ -29,7 +29,6 @@ namespace ClientMobile.ViewModels
             Plat = plat;
             Dessert = dessert;
         }
- 
     };
 
     class MainVM : ViewModelBase
@@ -65,7 +64,6 @@ namespace ClientMobile.ViewModels
                 
             }
         }
-
         private ObservableCollection<ServiceM> _days;
         public ObservableCollection<ServiceM> Days
         {
@@ -75,7 +73,10 @@ namespace ClientMobile.ViewModels
                 Set(ref _days, value);
             }
         }
-
+        /// <summary>
+        /// Charger une semaine
+        /// </summary>
+        /// <returns></returns>
         public async Task LoadSemaine()
         {
             int serviceNumber = 0;
@@ -121,7 +122,12 @@ namespace ClientMobile.ViewModels
             OnPropertyChanged("GetDayOrDefault");
         }
 
-
+        /// <summary>
+        /// Récupérer un jour : ou par défaut une chaine de caractère vide.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="type"></param>
+        /// <returns>string</returns>
         public string GetDayOrDefault(int index, TypePlat type)
         {
             switch (type)

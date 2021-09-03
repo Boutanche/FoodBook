@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 namespace BLLC.Services
 {
+    /// <summary>
+    /// Interface des données : Contient toutes les méthodes qui me permettent de récupérer les données 
+    /// Ici : concernant l'aspect "Restaurant" de l'API        
+    /// </summary>
     public interface IRestaurantService
     {
         #region Ingredients
