@@ -30,8 +30,6 @@
 
 //        }
 
-
-//        //TODO : Gestion de l'année.
 //        //Ecrire une fonction qui me permette de remplir le champ year de la table menu. 
 //        //Il faudra que cette fonction s'actualise avec le click sur les button "next" and "previous".
 

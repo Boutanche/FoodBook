@@ -83,7 +83,6 @@ namespace ClientDesktop
                     //Si mon numéro de service est le même que celui que le client on est sur la bonne piste.
                     if (item.ServiceNumber == IntServiceNumber)
                     {
-                        //TODO : 23/08/2021 Controle sur la table is composed ?
 
                         //Je récupére l'id_type du plat 
                         int idType = Int32.Parse(dataGridViewDishes.CurrentRow.Cells["idType"].Value.ToString());
@@ -129,25 +128,6 @@ namespace ClientDesktop
                 //Fermer la fenêtre avec un resultat OK.
                 button1.PerformClick();
             }
-            //TODO : Création IsComposed
-            //Enregisgtrer IsComposed dans la BDD.
-            //J'ai pas d'id service
-            //WIP : Supression de l'entité isComposed
-            //Select service where dateService = Service.dateService && serviceNumber = service.serviceNumber
-            //Cette requête va me renvoyer soit 0, soit 1.
-            //2 : Vérifier si ce service est lié à un plat de même type de plat ***IntTypeOfDish*** : "Table : iscomposed"
-            //Faire une requête sur une vue Service triées par type de plat... 
-            //Attention ça ne règle pas le problème du Melon... !! Le melon est un ingrédient on peut créer un plat Melon Dessert : Melon Entrée
-            //2.5 : Si Le service n'existe pas et/ou s'il n'est pas lié à une table : "is composed" :
-            //Alors : Créer le service et lier le plat à ce ce service.
-            //WIP : IsComposed
-            //Task<IsComposed> TaskIsComposed = _restaurantService.CreateIsComposed(newIsComposed);
-            //Sinon Si : Le service existe mais il n'y a pas de table is composed .
-            //Alors : Créer seulement la liaison.
-
-            //Sinon : Il faut réaliser un update du plat c'est à dire : modifier la table is composed.
-            // /!\ Réaliser un update sur une table de liaison où l'id est composée de deux clès étrangères. 
-
         }
 
         //Récupération du numéro de la semaine depuis mainForm:

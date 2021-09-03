@@ -52,7 +52,7 @@ namespace ClientMobile
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
-                    //TODO: chargez l'état de l'application précédemment suspendue
+                    //Chargez l'état de l'application précédemment suspendue
                 }
 
                 // Placez le frame dans la fenêtre active
@@ -93,7 +93,7 @@ namespace ClientMobile
         private void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
-            //TODO: enregistrez l'état de l'application et arrêtez toute activité en arrière-plan
+            //Enregistrez l'état de l'application et arrêtez toute activité en arrière-plan
             deferral.Complete();
         }
     }

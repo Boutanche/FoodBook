@@ -63,7 +63,8 @@ namespace BLLC.Services
             };
 
             //URI De base pour l'API
-            //TODO : un singleton de configuration et y mettre toutes les valeurs.
+            //TODO : V2 : Modifier URI pour release
+            // un singleton de configuration et y mettre toutes les valeurs.
             _httpClient.BaseAddress = new Uri("https://localhost:5001/api/v1.0/");
 
             try

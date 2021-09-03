@@ -32,19 +32,15 @@ namespace ClientDesktop.Composants
             InitializeComponent();
         }
 
-        //public void Initialize (Service service, TypeOfDish typeOfDish)
-        //{
-        //    Service = service;
-        //    MyTypeOfDish = typeOfDish;
-        //}
         public async void InitializeTest (Service service, int typeOfDish)
         {
-            Trace.WriteLine("Initialisation du DishServiceControlComponent");
+            
             Service = service;
             IntTypeOfDish = typeOfDish;
-            //HACK : Va falloir trouver le bug sur la date à un moment... 
-            //DateTime hackDate = service.DateService.AddDays(7);
-            //Sélectionner le plat l'afficher dans la DishCombobox
+
+            //HACK : 001 : N'affiche pas la date courrante : Hack avec performClick()
+            //Trouver le bug sur la date.  
+
             Task<List<Service>> serviceList = _restaurantService.GetServiceByDate(service.DateService);
             List<Service> newServiceList = await serviceList;
             Trace.WriteLine("Initialisation de la newServiceList pour la journée du  : " + service.DateService);

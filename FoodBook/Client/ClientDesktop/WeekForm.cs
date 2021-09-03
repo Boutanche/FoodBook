@@ -60,7 +60,7 @@ namespace ClientDesktop
 
 
 
-            //TODO : Mettre le loading en place
+            //TODO : V3 : Mettre le loading en place
             // /!\ : Le timer ne s'arrête jamais pour le moment !
             //********************************Start_Image_Loading*************************
             //***************************************************************************
@@ -189,8 +189,7 @@ namespace ClientDesktop
         {
             Trace.WriteLine("Lancement du Timer");
             timerLoading.Start();
-            //TODO : Voici un problême de date qu'il faudra régler un jour
-            //HACK : Pbm avec la date et son initialisation : 
+            //TODO : ICI : Suite --HACK:K001 -- problême de date --
             button_next.PerformClick();
         }
         //Se produit au click sur Btn CreateDish

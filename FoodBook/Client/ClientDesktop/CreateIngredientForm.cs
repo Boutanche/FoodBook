@@ -25,7 +25,7 @@ namespace ClientDesktop
 
         private void button_validate_Click(object sender, EventArgs e)
         {
-            // TODO : Controle sur les données entrantes :
+            // TODO : V2 : Controle sur les données entrantes :
             // Il ne faut pas que l'utilisateur puisse entrer n'importe quoi.
             Ingredients ingredient = new Ingredients();
             {
@@ -35,11 +35,9 @@ namespace ClientDesktop
             }
 
             Task<Ingredients> ingredientsTask = _restaurantService.CreateIngredients(ingredient);
-            // TODO : A la sortie : Afficher OK ou Afficher Erreur. 
-            // TODO : Réfraichir les données.
             
         }
-        //TODO : Button Cancel !
+        //TODO : V2 : Button Cancel !
         private void button_cancel_Click(object sender, EventArgs e)
         {
             this.Close();

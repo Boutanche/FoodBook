@@ -48,7 +48,7 @@ namespace ClientDesktop
             //Enlever la colone idDish du dataGridView
             dataGridView_DishComposedBy.Columns["idDish"].Visible = false;
 
-            //TODO : Ajouter un colone "Nom de l'ingrédient" et Afficher cette colonne à la place de "idIngredient"
+            //TODO : V2 : Ajouter un colone "Nom de l'ingrédient" et Afficher cette colonne à la place de "idIngredient"
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace ClientDesktop
 
             bindingSourceIngredients.DataSource = ingredients;
             dataGridView_ingredients.DataSource = bindingSourceIngredients;
-            //Todo : Controle sur le != null ici ?
+
             if (dataGridView_ingredients.Columns["id"] != null)
             {
             dataGridView_ingredients.Columns["id"].Visible = false;
@@ -119,21 +119,8 @@ namespace ClientDesktop
                 newDish.Popularity = 0;
             }
             Task<Dish> dishTask = _restaurantService.CreateDish(newDish);
-            //OK!
 
-
-            //TODO : les deux méthodes n'ont pas été codée encore.
-            //GetDishByName
-            //CreateListOfIngredient
-
-            //Etape 1.5 : 
-            //Récupérer l'id du plat.
-            //WIP : 27/05/2020 : 12h30
             Dish MyNewDish = await dishTask;
-
-
-            //Etape 2 :
-            //Création de la liste des ingrédients pour ce plat.
 
             for (int i = 0; i< (dataGridView_DishComposedBy.Rows.Count -1); i++)
             {
@@ -145,9 +132,7 @@ namespace ClientDesktop
                     listOfIngredient.Quantity = Int32.Parse(
                         dataGridView_DishComposedBy.Rows[i].Cells["quantity"].Value.ToString());
                 }
-                //HACK : Innutile : Réellement ? 
-                //Task<ListOfIngredient> listOfIngredientTask = _restaurantService.CreateListOfIngredient(listOfIngredient);
-
+                
             }
         }
     }
