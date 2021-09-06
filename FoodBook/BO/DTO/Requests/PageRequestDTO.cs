@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 namespace BO.DTO.Requests
 {
     /// <summary>
-    /// Coucou II
+    /// Réquêtes sur des pages : 
     /// </summary>
     public class PageRequest
     {
         /// <summary>
-        /// Fuck
+        /// 
         /// </summary>
         /// 
         public int? page {get; set; }
         /// <summary>
-        /// Fuck Too
+        /// 
         /// </summary>
         public int? maxPerPage {get; set; }
         /// <summary>
@@ -26,7 +26,7 @@ namespace BO.DTO.Requests
         public int? pageSize { get; set; }
         
         /// <summary>
-        /// Coucou
+        /// 
         /// </summary>
         /// 
         public PageRequest()

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BO.DTO.Responses
 {
     /// <summary>
-    /// 
+    /// Mise en place de réponses par page d'affichage :
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class PageResponse<T>

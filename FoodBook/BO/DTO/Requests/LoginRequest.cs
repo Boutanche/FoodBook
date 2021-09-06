@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace BO.DTO.Requests
 {
     /// <summary>
-    /// 
+    /// Requêtes sur Authentification
     /// </summary>
     public class LoginRequest
     {

@@ -16,7 +16,7 @@ namespace ClientMobile.Models
         /// <summary>
         /// Instance de RestaurantService : BLLC
         /// </summary>
-        private IRestaurantService _restaurantService = new RestaurantService();
+        private readonly IRestaurantService _restaurantService = new RestaurantService();
 
         /// <summary>
         /// Ctor par défaut 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BO.DTO.Responses
 {
     /// <summary>
-    /// 
+    /// Réponses sur Authentification
     /// </summary>
     public class LoginResponse
     {

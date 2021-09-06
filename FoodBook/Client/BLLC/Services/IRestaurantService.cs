@@ -15,13 +15,13 @@ namespace BLLC.Services
         /// <summary>
         /// Répuréer la liste de tous les ingrédients
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Liste d'ingrédients</returns>
         Task<List<Ingredients>> GetAllIngredients();
         /// <summary>
         /// Créer un ingrédient
         /// </summary>
         /// <param name="ingredients"></param>
-        /// <returns></returns>
+        /// <returns>Task : Créer un ingrédient</returns>
         Task<Ingredients> CreateIngredients(Ingredients ingredients);
         #endregion
         

@@ -16,10 +16,10 @@ namespace ClientDesktop
         public int localService;
         public int localType;
         //Private
-        private Service LocalService;
-        private int IntIdService;
-        private int IntServiceNumber;
-        private DateTime DateTimeService;
+        private readonly Service LocalService;
+        private readonly int IntIdService;
+        private readonly int IntServiceNumber;
+        private readonly DateTime DateTimeService;
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
         private readonly BindingSource bindingSourceDishes = new();
@@ -47,15 +47,14 @@ namespace ClientDesktop
         private async void DataGridViewDishes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int idDish = Int32.Parse(dataGridViewDishes.CurrentRow.Cells["id"].Value.ToString());
-            IsComposed newIsComposed = null;
+            IsComposed newIsComposed;
             //Vérifier si le service existe
             //Je cherche tous les services de la date sélectionnée : 
             Task<List<Service>> serviceTask = _restaurantService.GetServiceByDate(DateTimeService);   
             if ((await serviceTask).Count == 0)
             {
-                Trace.WriteLine("GetServiceBydate a renvoyé un null.");
+                
                 //Si le service n'existe pas : Il faut le créer.
-                Trace.WriteLine("Tentative : création du Service.");
                 Task<Service> newService = _restaurantService.CreateService(LocalService);
                 Service createdService = await newService;
                 //Faut ensuite ajouter le plat à la liste service côté client.

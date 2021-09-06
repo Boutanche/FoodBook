@@ -134,7 +134,7 @@ namespace BLLC.Services
         /// Créer un ingrédient
         /// </summary>
         /// <param name="ingredient"></param>
-        /// <returns></returns>
+        /// <returns>Task : Créer un ingrédient</returns>
         public async Task<Ingredients> CreateIngredients(Ingredients ingredient)
         {
             var response = await _httpClient.PostAsync("ingredients",

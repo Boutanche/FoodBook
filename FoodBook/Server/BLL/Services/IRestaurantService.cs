@@ -150,47 +150,47 @@ namespace BLL.Services
         Task<bool> RemoveDishForThisService(Dish dish, Service service);
         #endregion
         #region Menu
-        /// <summary>
-        /// Création d'un menu
-        /// </summary>
-        /// <param name="menu"></param>
-        /// <returns></returns>
-        Task<Menu> CreateMenu(Menu menu);
-        /// <summary>
-        /// La liste de tous les menu
-        /// </summary>
-        /// <returns></returns>
-        Task<List<Menu>> GetAllMenu();
-        /// <summary>
-        /// Récupérer un menu par son Id
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        Task<Menu> GetMenuById(int id);
-        /// <summary>
-        /// Menu Suivant
-        /// </summary>
-        /// <param name="date"></param>
-        /// <returns>Menu</returns>
-        Task<DateTime> NextMenu(DateTime date);
-        /// <summary>
-        /// Menu Précédent
-        /// </summary>
-        /// <param name="date"></param>
-        /// <returns>Menu</returns>
-        Task<DateTime> PreviousMenu(DateTime date);
-        /// <summary>
-        /// Trouver l'id d'un menu par sa date
-        /// </summary>
-        /// <param name="date"></param>
-        /// <returns>Int</returns>
-        Task<int> GetIdMenuByDate(DateTime date);
-        /// <summary>
-        /// Trouver un menu par son Id
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns>Menu</returns>
-        Task<Menu> GetServicesOfMenuById(int id);
+        ///// <summary>
+        ///// Création d'un menu
+        ///// </summary>
+        ///// <param name="menu"></param>
+        ///// <returns></returns>
+        //Task<Menu> CreateMenu(Menu menu);
+        ///// <summary>
+        ///// La liste de tous les menu
+        ///// </summary>
+        ///// <returns></returns>
+        //Task<List<Menu>> GetAllMenu();
+        ///// <summary>
+        ///// Récupérer un menu par son Id
+        ///// </summary>
+        ///// <param name="id"></param>
+        ///// <returns></returns>
+        //Task<Menu> GetMenuById(int id);
+        ///// <summary>
+        ///// Menu Suivant
+        ///// </summary>
+        ///// <param name="date"></param>
+        ///// <returns>Menu</returns>
+        //Task<DateTime> NextMenu(DateTime date);
+        ///// <summary>
+        ///// Menu Précédent
+        ///// </summary>
+        ///// <param name="date"></param>
+        ///// <returns>Menu</returns>
+        //Task<DateTime> PreviousMenu(DateTime date);
+        ///// <summary>
+        ///// Trouver l'id d'un menu par sa date
+        ///// </summary>
+        ///// <param name="date"></param>
+        ///// <returns>Int</returns>
+        //Task<int> GetIdMenuByDate(DateTime date);
+        ///// <summary>
+        ///// Trouver un menu par son Id
+        ///// </summary>
+        ///// <param name="id"></param>
+        ///// <returns>Menu</returns>
+        //Task<Menu> GetServicesOfMenuById(int id);
 
         #endregion
         #region ListOfIngredient

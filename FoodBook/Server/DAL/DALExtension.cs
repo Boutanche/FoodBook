@@ -24,8 +24,7 @@ namespace DAL
             services.AddTransient<IServiceRepository, ServiceRepository>();
             services.AddTransient<IIsComposedRepository, IsComposedRepository>();
             
-            //Avec les nouvelles data il n'y a plus de menu :
-            services.AddTransient<IMenuRepository, MenuRepository>();
+
 
             return services;
         }

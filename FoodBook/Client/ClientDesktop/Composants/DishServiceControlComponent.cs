@@ -43,7 +43,7 @@ namespace ClientDesktop.Composants
 
             Task<List<Service>> serviceList = _restaurantService.GetServiceByDate(service.DateService);
             List<Service> newServiceList = await serviceList;
-            Trace.WriteLine("Initialisation de la newServiceList pour la journée du  : " + service.DateService);
+            
             //Si newSerrviceList.Count supérieur à zéro et n'est pas null.
             if (newServiceList != null)
             {
@@ -89,24 +89,22 @@ namespace ClientDesktop.Composants
             Trace.WriteLine("Tu viens de cliquer sur un Btn Add");
             Trace.WriteLine("Concerne le service numéro : (doit me renvoyer un muméro de service) : " + Service.ServiceNumber.ToString() );
             Trace.WriteLine("Concerne le jour service date  : (doit me renvoyer une date) : " + StringDate);
-            using (var dialog = new DishSelectorForm(Service, IntTypeOfDish))
-            {
+            using var dialog = new DishSelectorForm(Service, IntTypeOfDish);
 
-                var dialogResult = dialog.ShowDialog();
-                if (dialogResult == DialogResult.OK)
-                {
-                    //Tu prends le plat et tu le lies avec son service dans la table ! isComposed.
-                    //Pour créer un IsComposed j'ai besoin du Dish.Id qui m'est donné par le DishSelectorForm
-                    Trace.WriteLine("Tu viens de fermer la dialogueBox en disant que tout est OK.");
-                    
-                    //Si il n'existe pas tu crées le menu de la semaine.
-                    //SI le menu de la semaine existe déjà : Tu ajoute un service ou tu modifie l'existant.                    
-                }
-                else
-                {
-                    Trace.WriteLine("Tu viens de fermer la dialogueBox en annulant.");
-                    //Annuler
-                }
+            var dialogResult = dialog.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+                //Tu prends le plat et tu le lies avec son service dans la table ! isComposed.
+                //Pour créer un IsComposed j'ai besoin du Dish.Id qui m'est donné par le DishSelectorForm
+                Trace.WriteLine("Tu viens de fermer la dialogueBox en disant que tout est OK.");
+
+                //Si il n'existe pas tu crées le menu de la semaine.
+                //SI le menu de la semaine existe déjà : Tu ajoute un service ou tu modifie l'existant.                    
+            }
+            else
+            {
+                Trace.WriteLine("Tu viens de fermer la dialogueBox en annulant.");
+                //Annuler
             }
         }
 

@@ -16,7 +16,8 @@ namespace ClientDesktop.Composants
     {
         //State 
         public Service Service { get; private set; }
-        List<DishServiceControlComponent> dishServiceControlComponents = new List<DishServiceControlComponent>();
+
+        readonly List<DishServiceControlComponent> dishServiceControlComponents = new List<DishServiceControlComponent>();
         
 
         public DayServiceControlComponent(Service service)
