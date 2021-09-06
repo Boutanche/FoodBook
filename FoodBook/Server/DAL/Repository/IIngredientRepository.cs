@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
+    /// <summary>
+    /// Interface Ingredient Repository
+    /// </summary>
     public interface IIngredientRepository : IGenericRepository<Ingredients>
     {
     }

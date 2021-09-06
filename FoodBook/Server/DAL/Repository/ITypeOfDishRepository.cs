@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
+    /// <summary>
+    /// Interface TypeOfDish Repository
+    /// </summary>
     public interface ITypeOfDishRepository : IGenericRepository<TypeOfDish>
     {
     }

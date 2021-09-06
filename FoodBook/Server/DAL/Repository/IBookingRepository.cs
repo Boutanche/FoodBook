@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
+    /// <summary>
+    /// Interface Reservation Repository
+    /// </summary>
     public interface IBookingRepository : IGenericRepository<Booking>
     {
     }

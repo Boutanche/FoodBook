@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
+    /// <summary>
+    /// Interface IsComposed Repository
+    /// </summary>
     public interface IIsComposedRepository : IGenericRepository<IsComposed>
     {
     }

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Repository
 {
+    /// <summary>
+    /// Interface Client Repository
+    /// </summary>
     public interface IClientRepository : IGenericRepository<Client>
     {
 

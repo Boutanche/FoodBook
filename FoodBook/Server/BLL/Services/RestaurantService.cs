@@ -18,7 +18,6 @@ namespace BLL.Services
         private readonly IUnitOfWork _db;
         public RestaurantService(IUnitOfWork unitOfWork)
         {
-            Trace.WriteLine(".. Utilisation de RestaurantService");
             _db = unitOfWork;
         }
         #region Ingredients
@@ -104,6 +103,7 @@ namespace BLL.Services
             return await _ingredient.GetAsync(id);
         }
         #endregion
+
         #region Dish
         /// <summary>
         /// Get A list of all dishes on the FoodBook data base.
@@ -195,6 +195,7 @@ namespace BLL.Services
             throw new NotImplementedException();
         }
         #endregion
+
         #region TypeOfDish
         /// <summary>
         /// Get a list of TypeOfDish
@@ -218,6 +219,7 @@ namespace BLL.Services
             return await _dish.GetAsync(id);
         }
         #endregion
+        
         #region Service
 
         public async Task<List<Service>> GetAllService()
@@ -294,6 +296,7 @@ namespace BLL.Services
             throw new NotImplementedException();
         }
         #endregion
+        
         #region ListOfDish
 
         public async Task<List<ListOfIngredient>> GetAllListOfIngredient()
@@ -334,6 +337,7 @@ namespace BLL.Services
         }
 
         #endregion
+        
         #region Booking
         public async Task<Booking> CreateBooking(Booking booking)
         {
@@ -354,6 +358,7 @@ namespace BLL.Services
 
 
         #endregion
+        
         #region IsComposed
         public async Task<IsComposed> CreateIsComposed(IsComposed isComposed)
         {
