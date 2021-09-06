@@ -6,6 +6,16 @@
     <members>
         <member name="T:BO.DTO.Requests.LoginRequest">
             <summary>
+            Requêtes sur Authentification
+            </summary>
+        </member>
+        <member name="P:BO.DTO.Requests.LoginRequest.Username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.DTO.Requests.LoginRequest.Password">
+            <summary>
             
             </summary>
         </member>
@@ -16,18 +26,18 @@
         </member>
         <member name="T:BO.DTO.Requests.PageRequest">
             <summary>
-            Coucou II
+            Réquêtes sur des pages : 
             </summary>
         </member>
         <member name="P:BO.DTO.Requests.PageRequest.page">
             <summary>
-            Fuck
+            
             </summary>
             
         </member>
         <member name="P:BO.DTO.Requests.PageRequest.maxPerPage">
             <summary>
-            Fuck Too
+            
             </summary>
         </member>
         <member name="P:BO.DTO.Requests.PageRequest.pageSize">
@@ -37,7 +47,7 @@
         </member>
         <member name="M:BO.DTO.Requests.PageRequest.#ctor">
             <summary>
-            Coucou
+            
             </summary>
             
         </member>
@@ -50,7 +60,7 @@
         </member>
         <member name="T:BO.DTO.Responses.LoginResponse">
             <summary>
-            
+            Réponses sur Authentification
             </summary>
         </member>
         <member name="P:BO.DTO.Responses.LoginResponse.AccessToken">
@@ -70,7 +80,7 @@
         </member>
         <member name="T:BO.DTO.Responses.PageResponse`1">
             <summary>
-            
+            Mise en place de réponses par page d'affichage :
             </summary>
             <typeparam name="T"></typeparam>
         </member>
@@ -113,57 +123,61 @@
             <param name="totalRecords"></param>
             <param name="data"></param>
         </member>
-        <member name="T:BO.Entity.Book">
+        <member name="T:BO.Entity.Booking">
             <summary>
-            Représente un objet livre
+            Réprésente l'objet Réservation
             </summary>
         </member>
-        <member name="P:BO.Entity.Book.Id">
-            <summary>
-            Identifiant unique du livre
-            </summary>
-        </member>
-        <member name="P:BO.Entity.Book.ISBN">
-            <summary>
-            ISBN unique du livre
-            </summary>
-        </member>
-        <member name="P:BO.Entity.Book.Title">
-            <summary>
-            Titre du livre
-            </summary>
-        </member>
-        <member name="P:BO.Entity.Book.Description">
-            <summary>
-            Résumé du livre
-            </summary>
-        </member>
-        <member name="M:BO.Entity.Book.#ctor">
-            <summary>
-            Default constructor for API serialisation
-            </summary>
-        </member>
-        <member name="M:BO.Entity.Book.#ctor(System.Int32,System.String,System.String,System.String)">
-            <summary>
-            Constructeur utilitaire full properties
-            </summary>
-            <param name="bookId">Identifiant of book</param>
-            <param name="iSBN">IBN of book </param>
-            <param name="title"> Book title </param>
-            <param name="description">Summary of book</param>
-        </member>
-        <member name="M:BO.Entity.Book.Equals(System.Object)">
+        <member name="P:BO.Entity.Booking.Id">
             <summary>
             
             </summary>
-            <param name="obj"></param>
-            <returns></returns>
         </member>
-        <member name="M:BO.Entity.Book.GetHashCode">
+        <member name="P:BO.Entity.Booking.BookingDate">
             <summary>
             
             </summary>
-            <returns></returns>
+        </member>
+        <member name="P:BO.Entity.Booking.MealNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Booking.Starter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Booking.MainCourse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Booking.Dessert">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Booking.Id_Client">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:BO.Entity.Booking.Id_Service">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BO.Entity.Booking.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BO.Entity.Booking.#ctor(System.Nullable{System.Int32},System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            
+            </summary>
         </member>
         <member name="T:BO.Entity.Client">
             <summary>
@@ -248,6 +262,11 @@
             int : Foreign key of type of dish
             </summary>
         </member>
+        <member name="P:BO.Entity.Dish.TypeofDish">
+            <summary>
+            int : Foreign key of type of dish
+            </summary>
+        </member>
         <member name="M:BO.Entity.Dish.#ctor">
             <summary>
             Default constructor for API serialisation
@@ -323,7 +342,7 @@
         </member>
         <member name="T:BO.Entity.IsComposed">
             <summary>
-            
+            /!\
             </summary>
         </member>
         <member name="P:BO.Entity.IsComposed.IdDish">
@@ -403,52 +422,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="T:BO.Entity.Menu">
-            <summary>
-            Le menu de la semaine
-            </summary>
-        </member>
-        <member name="P:BO.Entity.Menu.Id">
-            <summary>
-            Identifiant unique du menu
-            </summary>
-        </member>
-        <member name="P:BO.Entity.Menu.Year">
-            <summary>
-            Année concernée par ce menu
-            </summary>
-        </member>
-        <member name="P:BO.Entity.Menu.WeekNumber">
-            <summary>
-            Il y a 52 semaines dans une année
-            </summary>
-        </member>
-        <member name="M:BO.Entity.Menu.#ctor">
-            <summary>
-            Default Constructor for API serialisation
-            </summary>
-        </member>
-        <member name="M:BO.Entity.Menu.#ctor(System.Nullable{System.Int32},System.DateTime,System.Int32)">
-            <summary>
-            Utilitary constructor full properties
-            </summary>
-            <param name="id_menu"></param>
-            <param name="year"></param>
-            <param name="weekNumber"></param>
-        </member>
-        <member name="M:BO.Entity.Menu.Equals(System.Object)">
-            <summary>
-            Equals()
-            </summary>
-            <param name="obj"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BO.Entity.Menu.GetHashCode">
-            <summary>
-            GetHashCode()
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:BO.Entity.Service">
             <summary>
             Update 15/06/2021
@@ -473,9 +446,14 @@
             1 = Lundi ..., 7 = Dimanche
             </summary>
         </member>
+        <member name="P:BO.Entity.Service.ListOfDish">
+            <summary>
+            Récupérer la liste des plats car il y a pas entitée isComposed
+            </summary>
+        </member>
         <member name="M:BO.Entity.Service.#ctor">
             <summary>
-            
+            1 = midi , 2 = soir
             </summary>
         </member>
         <member name="M:BO.Entity.Service.#ctor(System.Nullable{System.Int32},System.Int32,System.DateTime)">

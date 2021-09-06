@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DocFX</name>
+    </assembly>
+    <members>
+        <member name="M:DocFX.AspNetCore.DocFxExtension.UseDocFx(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{DocFX.DocFxSettings})">
+            <summary>
+            Ajouter middleware Server static files
+            </summary>
+            <param name="app"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

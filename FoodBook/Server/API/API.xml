@@ -4,30 +4,41 @@
         <name>API</name>
     </assembly>
     <members>
-        <member name="M:API.Controllers.BooksController.GetAll(BO.DTO.Requests.PageRequest)">
+        <member name="T:API.Controllers.BookingController">
             <summary>
-            Permet de récupérer la liste des livres
+            Controler sur les réservations
             </summary>
-            <returns>La liste des livres</returns>
         </member>
-        <member name="M:API.Controllers.BooksController.GetBookById(System.Int32)">
+        <member name="M:API.Controllers.BookingController.#ctor(BLL.Services.IRestaurantService)">
             <summary>
-            Permert de récupérer un livre avec son identifiant unique
+            BLL
             </summary>
-            <param name="id">Identifiant unique du livre</param>
-            <returns>Renvoi le livre définit par l'identifiant unique</returns>
+            <param name="restaurantService"></param>
         </member>
-        <member name="M:API.Controllers.BooksController.CreateBook(BO.Entity.Book)">
+        <member name="M:API.Controllers.BookingController.GetBookingById(System.Int32)">
             <summary>
-            Créer un livre et l'ajoute en BDD
+            Récupérer une réservation par son Id
             </summary>
-            <param name="book">Livre à ajouter sans l'identifiant unique</param>
-            <returns>Renvoi le livre avec l'identifiant généré</returns>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BookingController.CreateBooking(BO.Entity.Booking)">
+            <summary>
+            Créer une réservation
+            </summary>
+            <param name="booking"></param>
+            <returns></returns>
         </member>
         <member name="T:API.Controllers.DishController">
             <summary>
             Controller Dish
             </summary>
+        </member>
+        <member name="M:API.Controllers.DishController.#ctor(BLL.Services.IRestaurantService)">
+            <summary>
+            BLL
+            </summary>
+            <param name="restaurantService"></param>
         </member>
         <member name="M:API.Controllers.DishController.GetAllDish">
             <summary>
@@ -41,6 +52,13 @@
             </summary>
             <param name="id">int</param>
             <returns>Dish </returns>
+        </member>
+        <member name="M:API.Controllers.DishController.GetDishByName(System.String)">
+            <summary>
+            Get Dish By Name
+            </summary>
+            <param name="name"></param>
+            <returns>Task</returns>
         </member>
         <member name="M:API.Controllers.DishController.CreateDish(BO.Entity.Dish)">
             <summary>
@@ -64,10 +82,23 @@
             <param name="id">Int</param>
             <returns>No Content Code 204</returns>
         </member>
+        <member name="M:API.Controllers.DishController.GetIngredientsOfDishById(System.Int32)">
+            <summary>
+            Réculére les ingrédients d'un plat par l'id du plat
+            </summary>
+            <param name="id"></param>
+            <returns>Task</returns>
+        </member>
         <member name="T:API.Controllers.IngredientsController">
             <summary>
             Controller Ingredient
             </summary>
+        </member>
+        <member name="M:API.Controllers.IngredientsController.#ctor(BLL.Services.IRestaurantService)">
+            <summary>
+            BLL
+            </summary>
+            <param name="restaurantService"></param>
         </member>
         <member name="M:API.Controllers.IngredientsController.GetAll">
             <summary>
@@ -104,98 +135,115 @@
             <param name="id"></param>
             <returns>No Content Code 204.</returns>
         </member>
+        <member name="T:API.Controllers.IsComposedController">
+            <summary>
+            Controller Is Composed
+            Concerne la table de liaison entre Les services et les plats.
+            N'est pas utilisé.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.IsComposedController.CreateIsComposed(BO.Entity.IsComposed)">
+            <summary>
+            Create IsComposed
+            Concerve une table d'association entre un Service qui est Composé de Plats
+            </summary>
+            <param name="isComposed"></param>
+            <returns></returns>
+        </member>
         <member name="T:API.Controllers.ListOfIngredientController">
             <summary>
             List Of Ingredient for a Dish : Link Table
             Know the necessary amount of ingredients for this dish
             </summary>
         </member>
+        <member name="M:API.Controllers.ListOfIngredientController.#ctor(BLL.Services.IRestaurantService)">
+            <summary>
+            BLL
+            </summary>
+            <param name="restaurantService"></param>
+        </member>
         <member name="M:API.Controllers.ListOfIngredientController.GetAll">
             <summary>
             Récupérer l'ensemble des ListOfIngredient Table de liaison entre le ingrédient et les plats qu'ils composent.
             Permet de connaitre la quantité nécessaire des produits en question pour ce plat.
             </summary>
-            <returns></returns>
+            <returns>Task</returns>
         </member>
         <member name="M:API.Controllers.ListOfIngredientController.GetListOfIngredientByIdDish(System.Int32)">
             <summary>
             Récupérer uniquement les ingrédients qui composent le plat désigné par l'id précisé.
             </summary>
-            <returns></returns>
+            <returns>Task</returns>
         </member>
         <member name="M:API.Controllers.ListOfIngredientController.CreateListOfIngredient(BO.Entity.ListOfIngredient)">
             <summary>
             Créer un ListOfIngredient :
             </summary>
             <param name="ListOfIngredient"></param>
-            <returns></returns>
+            <returns>Task</returns>
         </member>
         <member name="M:API.Controllers.ListOfIngredientController.ModifyListOfIngredient(System.Int32,BO.Entity.ListOfIngredient)">
             <summary>
-            Modifier un ...
-            Penser que id = int32.Parse(idIngredient.toString() + idDish.toString())
+            Modifier une ListOfIngredient
             </summary>
             <param name="id"></param>
             <param name="listOfIngredient"></param>
-            <returns></returns>
+            <returns>Task</returns>
         </member>
         <member name="M:API.Controllers.ListOfIngredientController.DeleteListOfIngredient(System.Int32)">
             <summary>
-            Suppression d'un ListOfIngredient donné
+            Suppression d'un ListOfIngredient
             </summary>
             <param name="id"></param>
             <returns>No Content Code 204.</returns>
         </member>
-        <member name="T:API.Controllers.MenuController">
+        <member name="T:API.Controllers.ServiceController">
             <summary>
-            Controller sur Menu
+            Controller : Service
+            Les services regroupent une entrée un plat et un dessert 
+            En fonction de la date 
+            Et d'un numéro de service : midi/soir.
+            Cf : documentation du projet.
             </summary>
         </member>
-        <member name="M:API.Controllers.MenuController.GetAllMenu">
+        <member name="M:API.Controllers.ServiceController.#ctor(BLL.Services.IRestaurantService)">
             <summary>
-            Get All Menu
+            Business Logic Layer
             </summary>
-            <returns>List of Menu</returns>
-        </member>
-        <member name="M:API.Controllers.MenuController.GetServicesOfMenuById(System.Int32)">
-            <summary>
-            Récupère les services du menu.
-            </summary>
-            <param name="id">Identifiant du menu </param>
-            <returns>Liste des services du menu</returns>
-        </member>
-        <member name="M:API.Controllers.MenuController.CreateMenu(BO.Entity.Menu)">
-            <summary>
-            Créer un menu afin de l'ajouter en base de données. 
-            </summary>
-            <param ></param>
-            <returns></returns>
+            <param name="restaurantService"></param>
         </member>
         <member name="M:API.Controllers.ServiceController.GetAllService">
             <summary>
             Get all Service
             </summary>
-            <returns></returns>
-        </member>
-        <member name="M:API.Controllers.ServiceController.GetServicesByIdMenu(System.Nullable{System.Int32})">
-            <summary>
-            Récupérer la liste des service du menu :   API/V1/service?menu=4
-            </summary>
-            <param name="id_Menu"></param>
-            <returns></returns>
+            <returns>List of Service</returns>
         </member>
         <member name="M:API.Controllers.ServiceController.GetServiceById(System.Int32)">
             <summary>
-            Récupèrer un service par son Id
+            Get Service By ID
             </summary>
             <param name="id"></param>
-            <returns></returns>
+            <returns>One Service</returns>
         </member>
         <member name="M:API.Controllers.ServiceController.CreateService(BO.Entity.Service)">
             <summary>
-            Créer un nouveau service
+            Create new service
             </summary>
             <param name="service"></param>
+            <returns> --Task of IActionResult-- </returns>
+        </member>
+        <member name="M:API.Controllers.ServiceController.AddDishToService(BO.Entity.Service)">
+            <summary>
+            Add Dish To Service :
+            </summary>
+            <param name="service"></param>
+            <returns> --Task of IActionResult-- </returns>
+        </member>
+        <member name="M:API.Controllers.ServiceController.GetServiceByDate(System.DateTime)">
+            <summary>
+            Get Service By Date
+            </summary>
+            <param name="date"></param>
             <returns></returns>
         </member>
         <member name="T:API.Controllers.TypeOfDishController">
@@ -215,6 +263,25 @@
             </summary>
             <param name="id">int</param>
             <returns>TypeOfDish</returns>
+        </member>
+        <member name="M:API.Program.Main(System.String[])">
+            <summary>
+            Point d'entrée de l'Interface de programmation d'applications - API - FoodBook
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:API.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Configuration
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Point d'entrée pour la configuaration de l'API
+            </summary>
+            <param name="configuration"></param>
         </member>
     </members>
 </doc>

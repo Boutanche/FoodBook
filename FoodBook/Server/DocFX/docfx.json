@@ -6,7 +6,7 @@
           "files": [
             "**.csproj"
           ],
-          "src": "E:\\Fbook\\FoodBook\\Server"
+          "src": "E:\\Fbook\\FoodBook"
         }
       ],
       "dest": "api",

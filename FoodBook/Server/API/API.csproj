@@ -8,19 +8,19 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>E:\Fbook\FoodBook\Server\API\API.xml</DocumentationFile>
+    <DocumentationFile>D:\Fbook\FoodBook\Server\API\API.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <DocumentationFile>E:\Fbook\FoodBook\Server\API\API.xml</DocumentationFile>
+    <DocumentationFile>D:\Fbook\FoodBook\Server\API\API.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>E:\Fbook\FoodBook\Server\API\API.xml</DocumentationFile>
+    <DocumentationFile>D:\Fbook\FoodBook\Server\API\API.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-    <DocumentationFile>E:\Fbook\FoodBook\Server\API\API.xml</DocumentationFile>
+    <DocumentationFile>D:\Fbook\FoodBook\Server\API\API.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

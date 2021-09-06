@@ -4,5 +4,172 @@
         <name>DAL</name>
     </assembly>
     <members>
+        <member name="T:DAL.DALExtension">
+            <summary>
+            Couche d'Acces aux Données : DATA ACCESS LAYER
+            </summary>
+        </member>
+        <member name="M:DAL.DALExtension.AddDAL(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Data Access Layer : Couche d'accés aux données : 
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.BookingRepository.InsertAsync(BO.Entity.Booking)">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Repository.IBookingRepository">
+            <summary>
+            Interface Reservation Repository
+            </summary>
+        </member>
+        <member name="T:DAL.Repository.IClientRepository">
+            <summary>
+            Interface Client Repository
+            </summary>
+        </member>
+        <member name="T:DAL.Repository.IDishRepository">
+            <summary>
+            Interface Dish Repository
+            </summary>
+        </member>
+        <member name="M:DAL.Repository.IDishRepository.GetAsyncByName(System.String)">
+            <summary>
+            Récupérer plat par son nom
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Repository.IGenericRepository`1">
+            <summary>
+            Interface GenericRepository
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:DAL.Repository.IGenericRepository`1.GetAllAsync">
+            <summary>
+            Retourner Tout
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)">
+            <summary>
+            Retourner Un 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)">
+            <summary>
+            Supprimer
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.IGenericRepository`1.UpdateAsync(`0)">
+            <summary>
+            Modifier
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.IGenericRepository`1.InsertAsync(`0)">
+            <summary>
+            Créer
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Repository.IIngredientRepository">
+            <summary>
+            Interface Ingredient Repository
+            </summary>
+        </member>
+        <member name="T:DAL.Repository.IIsComposedRepository">
+            <summary>
+            Interface IsComposed Repository
+            </summary>
+        </member>
+        <member name="T:DAL.Repository.IListOfIngredientRepository">
+            <summary>
+            Interface ListOfIngredient Repository
+            </summary>
+        </member>
+        <member name="T:DAL.Repository.IServiceRepository">
+            <summary>
+            Interface de ServiceREpository
+            </summary>
+        </member>
+        <member name="M:DAL.Repository.IServiceRepository.GetAsyncByDate(System.DateTime)">
+            <summary>
+            Récupérer un service par la Date
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.IServiceRepository.GetServicesDetailsAsync">
+            <summary>
+            Récupérer un service complet (avec les plats et les ingrédients des plats)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.IServiceRepository.GetServicesDetailsByDateAsync(System.DateTime)">
+            <summary>
+            Récupérer un service complet (avec les plats et les ingrédients des plats) par date.
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.IServiceRepository.AddDishToService(BO.Entity.Service)">
+            <summary>
+            Ajouter un plat aux services
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repository.IServiceRepository.RemovAllIsComposedByIdService(System.Nullable{System.Int32})">
+            <summary>
+            Retirer tous les plats qui composent le service dont l'id est : id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DAL.Repository.ITypeOfDishRepository">
+            <summary>
+            Interface TypeOfDish Repository
+            </summary>
+        </member>
+        <member name="T:DAL.UOW.IUnitOfWork">
+            <summary>
+            Interface de Unit Of Work
+            </summary>
+        </member>
+        <member name="M:DAL.UOW.IUnitOfWork.BeginTransaction">
+            <summary>
+            Commencer une Transaction
+            </summary>
+        </member>
+        <member name="M:DAL.UOW.IUnitOfWork.Commit">
+            <summary>
+            Commiter
+            </summary>
+        </member>
+        <member name="M:DAL.UOW.IUnitOfWork.Rollback">
+            <summary>
+            Effectuer un RollBack
+            </summary>
+        </member>
+        <member name="M:DAL.UOW.IUnitOfWork.GetRepository``1">
+            <summary>
+            Récupérer une Repository
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
     </members>
 </doc>

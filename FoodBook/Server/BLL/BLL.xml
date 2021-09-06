@@ -41,45 +41,6 @@
             Interface des Services dédiés "CLient"
             </summary>
         </member>
-        <member name="T:BLL.Services.ILibrairiService">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)">
-            <summary>
-            
-            </summary>
-            <param name="book"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BLL.Services.ILibrairiService.GetAllBooks">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BLL.Services.ILibrairiService.GetBookById(System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)">
-            <summary>
-            
-            </summary>
-            <param name="book"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BLL.Services.ILibrairiService.RemoveBookById(System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
         <member name="T:BLL.Services.IOrderService">
             <summary>
             Interface des services dédiés aux "Commandes"
@@ -87,7 +48,7 @@
         </member>
         <member name="T:BLL.Services.IRestaurantService">
             <summary>
-            
+            Interface couplage faible de Restaurant Service
             </summary>
         </member>
         <member name="M:BLL.Services.IRestaurantService.GetIngredientById(System.Int32)">
@@ -191,12 +152,26 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:BLL.Services.IRestaurantService.AddDishToService(BO.Entity.Service)">
+            <summary>
+            Ajouter un plat au service
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
         <member name="M:BLL.Services.IRestaurantService.GetServiceById(System.Int32)">
             <summary>
             Trouver un service par son Id
             </summary>
             <param name="id"></param>
             <returns>Service</returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.GetServiceByDate(System.DateTime)">
+            <summary>
+            Récupérer les services par date
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
         </member>
         <member name="M:BLL.Services.IRestaurantService.GetServicesByIdMenu(System.Int32)">
             <summary>
@@ -212,14 +187,6 @@
             <param name="service"></param>
             <returns>Service</returns>
         </member>
-        <member name="M:BLL.Services.IRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)">
-            <summary>
-            Ajouter un plat au service
-            </summary>
-            <param name="dish"></param>
-            <param name="service"></param>
-            <returns>Bool</returns>
-        </member>
         <member name="M:BLL.Services.IRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)">
             <summary>
             Supprimer un plat du Service
@@ -227,54 +194,6 @@
             <param name="dish"></param>
             <param name="service"></param>
             <returns>Bool</returns>
-        </member>
-        <member name="M:BLL.Services.IRestaurantService.CreateMenu(BO.Entity.Menu)">
-            <summary>
-            Création d'un menu
-            </summary>
-            <param name="menu"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BLL.Services.IRestaurantService.GetAllMenu">
-            <summary>
-            La liste de tous les menu
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:BLL.Services.IRestaurantService.GetMenuById(System.Int32)">
-            <summary>
-            Récupérer un menu par son Id
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:BLL.Services.IRestaurantService.NextMenu(System.DateTime)">
-            <summary>
-            Menu Suivant
-            </summary>
-            <param name="date"></param>
-            <returns>Menu</returns>
-        </member>
-        <member name="M:BLL.Services.IRestaurantService.PreviousMenu(System.DateTime)">
-            <summary>
-            Menu Précédent
-            </summary>
-            <param name="date"></param>
-            <returns>Menu</returns>
-        </member>
-        <member name="M:BLL.Services.IRestaurantService.GetIdMenuByDate(System.DateTime)">
-            <summary>
-            Trouver l'id d'un menu par sa date
-            </summary>
-            <param name="date"></param>
-            <returns>Int</returns>
-        </member>
-        <member name="M:BLL.Services.IRestaurantService.GetServicesOfMenuById(System.Int32)">
-            <summary>
-            Trouver un menu par son Id
-            </summary>
-            <param name="id"></param>
-            <returns>Menu</returns>
         </member>
         <member name="M:BLL.Services.IRestaurantService.GetAllListOfIngredient">
             <summary>
@@ -308,6 +227,27 @@
             Supprimer un ListOfIngredient
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.GetBookingById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.CreateBooking(BO.Entity.Booking)">
+            <summary>
+            
+            </summary>
+            <param name="booking"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.IRestaurantService.CreateIsComposed(BO.Entity.IsComposed)">
+            <summary>
+            
+            </summary>
+            <param name="isComposed"></param>
             <returns></returns>
         </member>
         <member name="T:BLL.Services.RestaurantService">
@@ -394,6 +334,14 @@
             Get a TypeOfDish
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLL.Services.RestaurantService.AddDishToService(BO.Entity.Service)">
+            <summary>
+            Ajouter les plats au service !
+            Méthode naîve, on supprime tout ce qui est ancien et on on recré la nouvelle.
+            </summary>
+            <param name="service"></param>
             <returns></returns>
         </member>
         <member name="M:BLL.Services.RestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)">

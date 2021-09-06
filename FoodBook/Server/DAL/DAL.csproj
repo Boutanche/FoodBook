@@ -6,11 +6,19 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>E:\Fbook\FoodBook\Server\DAL\DAL.xml</DocumentationFile>
+    <DocumentationFile>D:\Fbook\FoodBook\Server\DAL\DAL.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
-    <DocumentationFile>E:\Fbook\FoodBook\Server\DAL\DAL.xml</DocumentationFile>
+    <DocumentationFile>D:\Fbook\FoodBook\Server\DAL\DAL.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Fbook\FoodBook\Server\DAL\DAL.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DocumentationFile>D:\Fbook\FoodBook\Server\DAL\DAL.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
