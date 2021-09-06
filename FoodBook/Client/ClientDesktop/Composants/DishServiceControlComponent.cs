@@ -76,7 +76,7 @@ namespace ClientDesktop.Composants
         }
         public void UpdateTest(Service service, int typeOfDish)
         {
-            Trace.WriteLine("Update du DishServiceControlComponent : " + typeOfDish);
+
             //Selectionner le plat et afficher dans la DishCombo box
             Service = service;
             IntTypeOfDish = typeOfDish;
@@ -86,9 +86,7 @@ namespace ClientDesktop.Composants
         private void AddBtn_Click(object sender, EventArgs e)
         {
             String StringDate = Service.DateService.ToString();
-            Trace.WriteLine("Tu viens de cliquer sur un Btn Add");
-            Trace.WriteLine("Concerne le service numéro : (doit me renvoyer un muméro de service) : " + Service.ServiceNumber.ToString() );
-            Trace.WriteLine("Concerne le jour service date  : (doit me renvoyer une date) : " + StringDate);
+            
             using var dialog = new DishSelectorForm(Service, IntTypeOfDish);
 
             var dialogResult = dialog.ShowDialog();
@@ -96,14 +94,14 @@ namespace ClientDesktop.Composants
             {
                 //Tu prends le plat et tu le lies avec son service dans la table ! isComposed.
                 //Pour créer un IsComposed j'ai besoin du Dish.Id qui m'est donné par le DishSelectorForm
-                Trace.WriteLine("Tu viens de fermer la dialogueBox en disant que tout est OK.");
+
 
                 //Si il n'existe pas tu crées le menu de la semaine.
                 //SI le menu de la semaine existe déjà : Tu ajoute un service ou tu modifie l'existant.                    
             }
             else
             {
-                Trace.WriteLine("Tu viens de fermer la dialogueBox en annulant.");
+
                 //Annuler
             }
         }
