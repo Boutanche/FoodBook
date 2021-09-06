@@ -41,11 +41,9 @@ namespace BLLC.Services
         /// Créer un plat
         /// </summary>
         /// <param name="newDish"></param>
-        /// <returns></returns>
+        /// <returns>Task</returns>
         public async Task<Dish> CreateDish(Dish newDish)
         {
-            //If is logged ?
-            //Travailler sur la vérification du Token de connexion.
 
             var response = await _httpClient.PostAsync("dish",
                 new StringContent(JsonSerializer.Serialize(newDish), Encoding.UTF8, "application/json"));
@@ -63,7 +61,10 @@ namespace BLLC.Services
                 return null;
             };
         }
-
+        /// <summary>
+        /// Récupérer la liste des plats
+        /// </summary>
+        /// <returns>Task</returns>
         public async Task<List<Dish>> GetAllDish()
         {
             var reponse = await _httpClient.GetAsync("dish");
@@ -81,7 +82,11 @@ namespace BLLC.Services
                 return null;
             }
         }
-
+        /// <summary>
+        /// Récupérer le plat par son Id.
+        /// </summary>
+        /// <param name="idDish"></param>
+        /// <returns>Task</returns>
         public async Task<Dish> GetDishById(int? idDish)
         {
             var reponse = await _httpClient.GetAsync($"dish/id/{idDish}");
@@ -123,6 +128,7 @@ namespace BLLC.Services
         }
 
         #endregion
+        
         #region Ingredient
         /// <summary>
         /// Créer un ingrédient
@@ -174,6 +180,7 @@ namespace BLLC.Services
             }
         }
         #endregion
+        
         #region List Of Ingredient
         /// <summary>
         /// Créer un élément de liaison entre un plat et un ingrédient
@@ -200,7 +207,13 @@ namespace BLLC.Services
             };
         }
         #endregion,
+        
         #region Booking
+        /// <summary>
+        /// Créer une réservation :
+        /// </summary>
+        /// <param name="booking"></param>
+        /// <returns>Task</returns>
         public async Task<Booking> CreateBooking(Booking booking)
         {
             var response = await _httpClient.PostAsync("booking",
@@ -224,7 +237,13 @@ namespace BLLC.Services
             };
         }
         #endregion
+        
         #region Service
+        /// <summary>
+        /// Créer un service :
+        /// </summary>
+        /// <param name="service"></param>
+        /// <returns>Task</returns>
         public async Task<Service> CreateService(Service service)
         {
             var response = await _httpClient.PostAsync("service",
@@ -237,47 +256,47 @@ namespace BLLC.Services
                 {
                     PropertyNameCaseInsensitive = true
                 });
-                Trace.WriteLine("Création d'un service");
                 return newService;
             }
             else
             {
-                Trace.WriteLine("Problème dans la création d'un service");
                 return null;
             }
         }
+        /// <summary>
+        /// Récupérer la liste des services :
+        /// </summary>
+        /// <param name="dateTime"></param>
+        /// <returns>Task</returns>
         public async Task<List<Service>> GetServiceByDate(DateTime dateTime)
         {
-            Trace.WriteLine("Attention : nous sommes sur le point de nous perdre dans la matrice au niveau du Mobil");
-      
             try
             {
                var reponse = await _httpClient.GetAsync($"service/date?date={dateTime.ToString("d", CultureInfo.InvariantCulture)}");
 
                 if (reponse.IsSuccessStatusCode)
                 {
-                    Trace.WriteLine("GetServiceByDate return a servicePage");
                     var stream = await reponse.Content.ReadAsStreamAsync();
-                    //Ici reception de json qu'il faut que je remette en objet C#.
                     List<Service> servicePage = await JsonSerializer.DeserializeAsync<List<Service>>
-            (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                        (stream, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
                     return servicePage;
                 }
                 else
                 {
-                    //Faudra traiter ça sur l'interface si problème.
-                    Trace.WriteLine("GetServiceByDate return null");
                     return null;
                 }
             }
             catch (Exception e)
             {
                 Trace.WriteLine(e.Message);
-
             }
             return null;
         }
-
+        /// <summary>
+        /// Ajouter un plat au service :
+        /// </summary>
+        /// <param name="createdService"></param>
+        /// <returns></returns>
         public async Task<Service> AddDishToService(Service createdService)
         {
 
@@ -291,12 +310,11 @@ namespace BLLC.Services
                 {
                     PropertyNameCaseInsensitive = true
                 });
-                Trace.WriteLine("Passage du service et sa liste vers la Bdd");
                 return newService;
             }
             else
             {
-                Trace.WriteLine("Problème dans la création d'un isComposed");
+                
                 return null;
             }
         }
@@ -304,6 +322,11 @@ namespace BLLC.Services
         #endregion
 
         #region Is Composed
+        /// <summary>
+        /// Créer la table d'association "IsComposed" associant les services et les plats :
+        /// </summary>
+        /// <param name="isComposed"></param>
+        /// <returns>Task</returns>
         public async Task<IsComposed> CreateIsComposed(IsComposed isComposed)
         {
             var response = await _httpClient.PostAsync("isComposed",
@@ -326,7 +349,12 @@ namespace BLLC.Services
             }
 
         }
-        //Aïe !
+        
+        /// <summary>
+        /// Récupérer les plats qui sont associés à l'Id Service :
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Task</returns>
         public async Task<List<IsComposed>> GetIsComposedByIdService(int? id)
         {
             var response = await _httpClient.GetAsync($"isComposed/service/{id}");
