@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace BLLC.Services
 {
+    /// <summary>
+    /// L'Authentification est à mettre en place à la V2 de l'application.
+    /// </summary>
     public class AuthentificationService
     {
         // Propriété de classe :
