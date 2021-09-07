@@ -26,7 +26,9 @@ namespace ClientMobile
     public sealed partial class MainPage : Page
     {
         MainVM VM = new MainVM();
-
+        /// <summary>
+        /// Page Principale
+        /// </summary>
         public MainPage()
         {
             InitializeComponent();

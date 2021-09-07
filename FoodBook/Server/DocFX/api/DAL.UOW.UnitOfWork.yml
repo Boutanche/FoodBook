@@ -1,0 +1,831 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAL.UOW.UnitOfWork
+  commentId: T:DAL.UOW.UnitOfWork
+  id: UnitOfWork
+  parent: DAL.UOW
+  children:
+  - DAL.UOW.UnitOfWork.#ctor(DAL.UOW.DbSession,System.IServiceProvider)
+  - DAL.UOW.UnitOfWork._serviceProvider
+  - DAL.UOW.UnitOfWork._session
+  - DAL.UOW.UnitOfWork.BeginTransaction
+  - DAL.UOW.UnitOfWork.Commit
+  - DAL.UOW.UnitOfWork.Dispose
+  - DAL.UOW.UnitOfWork.GetRepository``1
+  - DAL.UOW.UnitOfWork.Rollback
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: DAL.UOW.UnitOfWork
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: UnitOfWork
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 10
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: 'sealed class UnitOfWork : IUnitOfWork, IDisposable'
+    content.vb: >-
+      NotInheritable Class UnitOfWork
+          Implements IUnitOfWork, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - DAL.UOW.IUnitOfWork
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - sealed
+  - class
+  modifiers.vb:
+  - NotInheritable
+  - Class
+- uid: DAL.UOW.UnitOfWork._session
+  commentId: F:DAL.UOW.UnitOfWork._session
+  id: _session
+  parent: DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: _session
+  nameWithType: UnitOfWork._session
+  fullName: DAL.UOW.UnitOfWork._session
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: _session
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 12
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: readonly DbSession _session
+    return:
+      type: DAL.UOW.DbSession
+    content.vb: ReadOnly _session As DbSession
+  modifiers.csharp:
+  - readonly
+  modifiers.vb:
+  - ReadOnly
+- uid: DAL.UOW.UnitOfWork._serviceProvider
+  commentId: F:DAL.UOW.UnitOfWork._serviceProvider
+  id: _serviceProvider
+  parent: DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: _serviceProvider
+  nameWithType: UnitOfWork._serviceProvider
+  fullName: DAL.UOW.UnitOfWork._serviceProvider
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: _serviceProvider
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 13
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: readonly IServiceProvider _serviceProvider
+    return:
+      type: System.IServiceProvider
+    content.vb: ReadOnly _serviceProvider As IServiceProvider
+  modifiers.csharp:
+  - readonly
+  modifiers.vb:
+  - ReadOnly
+- uid: DAL.UOW.UnitOfWork.#ctor(DAL.UOW.DbSession,System.IServiceProvider)
+  commentId: M:DAL.UOW.UnitOfWork.#ctor(DAL.UOW.DbSession,System.IServiceProvider)
+  id: '#ctor(DAL.UOW.DbSession,System.IServiceProvider)'
+  parent: DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWork(DbSession, IServiceProvider)
+  nameWithType: UnitOfWork.UnitOfWork(DbSession, IServiceProvider)
+  fullName: DAL.UOW.UnitOfWork.UnitOfWork(DAL.UOW.DbSession, System.IServiceProvider)
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 14
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public UnitOfWork(DbSession session, IServiceProvider serviceProvider)
+    parameters:
+    - id: session
+      type: DAL.UOW.DbSession
+    - id: serviceProvider
+      type: System.IServiceProvider
+    content.vb: Public Sub New(session As DbSession, serviceProvider As IServiceProvider)
+  overload: DAL.UOW.UnitOfWork.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.UOW.UnitOfWork.BeginTransaction
+  commentId: M:DAL.UOW.UnitOfWork.BeginTransaction
+  id: BeginTransaction
+  parent: DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: BeginTransaction()
+  nameWithType: UnitOfWork.BeginTransaction()
+  fullName: DAL.UOW.UnitOfWork.BeginTransaction()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: BeginTransaction
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 21
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public void BeginTransaction()
+    content.vb: Public Sub BeginTransaction
+  overload: DAL.UOW.UnitOfWork.BeginTransaction*
+  implements:
+  - DAL.UOW.IUnitOfWork.BeginTransaction
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.UOW.UnitOfWork.Commit
+  commentId: M:DAL.UOW.UnitOfWork.Commit
+  id: Commit
+  parent: DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Commit()
+  nameWithType: UnitOfWork.Commit()
+  fullName: DAL.UOW.UnitOfWork.Commit()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Commit
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 26
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public void Commit()
+    content.vb: Public Sub Commit
+  overload: DAL.UOW.UnitOfWork.Commit*
+  implements:
+  - DAL.UOW.IUnitOfWork.Commit
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.UOW.UnitOfWork.Rollback
+  commentId: M:DAL.UOW.UnitOfWork.Rollback
+  id: Rollback
+  parent: DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Rollback()
+  nameWithType: UnitOfWork.Rollback()
+  fullName: DAL.UOW.UnitOfWork.Rollback()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Rollback
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 32
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public void Rollback()
+    content.vb: Public Sub Rollback
+  overload: DAL.UOW.UnitOfWork.Rollback*
+  implements:
+  - DAL.UOW.IUnitOfWork.Rollback
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.UOW.UnitOfWork.Dispose
+  commentId: M:DAL.UOW.UnitOfWork.Dispose
+  id: Dispose
+  parent: DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UnitOfWork.Dispose()
+  fullName: DAL.UOW.UnitOfWork.Dispose()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Dispose
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 38
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: DAL.UOW.UnitOfWork.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.UOW.UnitOfWork.GetRepository``1
+  commentId: M:DAL.UOW.UnitOfWork.GetRepository``1
+  id: GetRepository``1
+  parent: DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: GetRepository<T>()
+  nameWithType: UnitOfWork.GetRepository<T>()
+  fullName: DAL.UOW.UnitOfWork.GetRepository<T>()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/UnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetRepository
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/UnitOfWork.cs
+    startLine: 41
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public T GetRepository<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function GetRepository(Of T) As T
+  overload: DAL.UOW.UnitOfWork.GetRepository*
+  implements:
+  - DAL.UOW.IUnitOfWork.GetRepository``1
+  nameWithType.vb: UnitOfWork.GetRepository(Of T)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DAL.UOW.UnitOfWork.GetRepository(Of T)()
+  name.vb: GetRepository(Of T)()
+references:
+- uid: DAL.UOW
+  commentId: N:DAL.UOW
+  name: DAL.UOW
+  nameWithType: DAL.UOW
+  fullName: DAL.UOW
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DAL.UOW.IUnitOfWork
+  commentId: T:DAL.UOW.IUnitOfWork
+  parent: DAL.UOW
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: DAL.UOW.IUnitOfWork
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAL.UOW.DbSession
+  commentId: T:DAL.UOW.DbSession
+  parent: DAL.UOW
+  name: DbSession
+  nameWithType: DbSession
+  fullName: DAL.UOW.DbSession
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: DAL.UOW.UnitOfWork.#ctor*
+  commentId: Overload:DAL.UOW.UnitOfWork.#ctor
+  name: UnitOfWork
+  nameWithType: UnitOfWork.UnitOfWork
+  fullName: DAL.UOW.UnitOfWork.UnitOfWork
+- uid: DAL.UOW.UnitOfWork.BeginTransaction*
+  commentId: Overload:DAL.UOW.UnitOfWork.BeginTransaction
+  name: BeginTransaction
+  nameWithType: UnitOfWork.BeginTransaction
+  fullName: DAL.UOW.UnitOfWork.BeginTransaction
+- uid: DAL.UOW.IUnitOfWork.BeginTransaction
+  commentId: M:DAL.UOW.IUnitOfWork.BeginTransaction
+  parent: DAL.UOW.IUnitOfWork
+  name: BeginTransaction()
+  nameWithType: IUnitOfWork.BeginTransaction()
+  fullName: DAL.UOW.IUnitOfWork.BeginTransaction()
+  spec.csharp:
+  - uid: DAL.UOW.IUnitOfWork.BeginTransaction
+    name: BeginTransaction
+    nameWithType: IUnitOfWork.BeginTransaction
+    fullName: DAL.UOW.IUnitOfWork.BeginTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.UOW.IUnitOfWork.BeginTransaction
+    name: BeginTransaction
+    nameWithType: IUnitOfWork.BeginTransaction
+    fullName: DAL.UOW.IUnitOfWork.BeginTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.UOW.UnitOfWork.Commit*
+  commentId: Overload:DAL.UOW.UnitOfWork.Commit
+  name: Commit
+  nameWithType: UnitOfWork.Commit
+  fullName: DAL.UOW.UnitOfWork.Commit
+- uid: DAL.UOW.IUnitOfWork.Commit
+  commentId: M:DAL.UOW.IUnitOfWork.Commit
+  parent: DAL.UOW.IUnitOfWork
+  name: Commit()
+  nameWithType: IUnitOfWork.Commit()
+  fullName: DAL.UOW.IUnitOfWork.Commit()
+  spec.csharp:
+  - uid: DAL.UOW.IUnitOfWork.Commit
+    name: Commit
+    nameWithType: IUnitOfWork.Commit
+    fullName: DAL.UOW.IUnitOfWork.Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.UOW.IUnitOfWork.Commit
+    name: Commit
+    nameWithType: IUnitOfWork.Commit
+    fullName: DAL.UOW.IUnitOfWork.Commit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.UOW.UnitOfWork.Rollback*
+  commentId: Overload:DAL.UOW.UnitOfWork.Rollback
+  name: Rollback
+  nameWithType: UnitOfWork.Rollback
+  fullName: DAL.UOW.UnitOfWork.Rollback
+- uid: DAL.UOW.IUnitOfWork.Rollback
+  commentId: M:DAL.UOW.IUnitOfWork.Rollback
+  parent: DAL.UOW.IUnitOfWork
+  name: Rollback()
+  nameWithType: IUnitOfWork.Rollback()
+  fullName: DAL.UOW.IUnitOfWork.Rollback()
+  spec.csharp:
+  - uid: DAL.UOW.IUnitOfWork.Rollback
+    name: Rollback
+    nameWithType: IUnitOfWork.Rollback
+    fullName: DAL.UOW.IUnitOfWork.Rollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.UOW.IUnitOfWork.Rollback
+    name: Rollback
+    nameWithType: IUnitOfWork.Rollback
+    fullName: DAL.UOW.IUnitOfWork.Rollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.UOW.UnitOfWork.Dispose*
+  commentId: Overload:DAL.UOW.UnitOfWork.Dispose
+  name: Dispose
+  nameWithType: UnitOfWork.Dispose
+  fullName: DAL.UOW.UnitOfWork.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.UOW.UnitOfWork.GetRepository*
+  commentId: Overload:DAL.UOW.UnitOfWork.GetRepository
+  name: GetRepository
+  nameWithType: UnitOfWork.GetRepository
+  fullName: DAL.UOW.UnitOfWork.GetRepository
+- uid: DAL.UOW.IUnitOfWork.GetRepository``1
+  commentId: M:DAL.UOW.IUnitOfWork.GetRepository``1
+  parent: DAL.UOW.IUnitOfWork
+  name: GetRepository<T>()
+  nameWithType: IUnitOfWork.GetRepository<T>()
+  fullName: DAL.UOW.IUnitOfWork.GetRepository<T>()
+  nameWithType.vb: IUnitOfWork.GetRepository(Of T)()
+  fullName.vb: DAL.UOW.IUnitOfWork.GetRepository(Of T)()
+  name.vb: GetRepository(Of T)()
+  spec.csharp:
+  - uid: DAL.UOW.IUnitOfWork.GetRepository``1
+    name: GetRepository<T>
+    nameWithType: IUnitOfWork.GetRepository<T>
+    fullName: DAL.UOW.IUnitOfWork.GetRepository<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.UOW.IUnitOfWork.GetRepository``1
+    name: GetRepository(Of T)
+    nameWithType: IUnitOfWork.GetRepository(Of T)
+    fullName: DAL.UOW.IUnitOfWork.GetRepository(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

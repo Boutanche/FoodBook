@@ -1,0 +1,813 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientDesktop.Properties.Resources
+  commentId: T:ClientDesktop.Properties.Resources
+  id: Resources
+  parent: ClientDesktop.Properties
+  children:
+  - ClientDesktop.Properties.Resources.#ctor
+  - ClientDesktop.Properties.Resources.Culture
+  - ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f
+  - ClientDesktop.Properties.Resources.gifLoad2
+  - ClientDesktop.Properties.Resources.gifLoad21
+  - ClientDesktop.Properties.Resources.gifLoad3
+  - ClientDesktop.Properties.Resources.logo
+  - ClientDesktop.Properties.Resources.resourceCulture
+  - ClientDesktop.Properties.Resources.resourceMan
+  - ClientDesktop.Properties.Resources.ResourceManager
+  langs:
+  - csharp
+  - vb
+  name: Resources
+  nameWithType: Resources
+  fullName: ClientDesktop.Properties.Resources
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Resources
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 21
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  summary: "\nUne classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.\n"
+  example: []
+  syntax:
+    content: class Resources
+    content.vb: Class Resources
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - class
+  modifiers.vb:
+  - Class
+- uid: ClientDesktop.Properties.Resources.resourceMan
+  commentId: F:ClientDesktop.Properties.Resources.resourceMan
+  id: resourceMan
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: resourceMan
+  nameWithType: Resources.resourceMan
+  fullName: ClientDesktop.Properties.Resources.resourceMan
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: resourceMan
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 26
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  syntax:
+    content: static ResourceManager resourceMan
+    return:
+      type: System.Resources.ResourceManager
+    content.vb: Shared resourceMan As ResourceManager
+  modifiers.csharp:
+  - static
+  modifiers.vb:
+  - Shared
+- uid: ClientDesktop.Properties.Resources.resourceCulture
+  commentId: F:ClientDesktop.Properties.Resources.resourceCulture
+  id: resourceCulture
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: resourceCulture
+  nameWithType: Resources.resourceCulture
+  fullName: ClientDesktop.Properties.Resources.resourceCulture
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: resourceCulture
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 28
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  syntax:
+    content: static CultureInfo resourceCulture
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Shared resourceCulture As CultureInfo
+  modifiers.csharp:
+  - static
+  modifiers.vb:
+  - Shared
+- uid: ClientDesktop.Properties.Resources.#ctor
+  commentId: M:ClientDesktop.Properties.Resources.#ctor
+  id: '#ctor'
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: Resources()
+  nameWithType: Resources.Resources()
+  fullName: ClientDesktop.Properties.Resources.Resources()
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 30
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  syntax:
+    content: Resources()
+    content.vb: Sub New
+  overload: ClientDesktop.Properties.Resources.#ctor*
+- uid: ClientDesktop.Properties.Resources.ResourceManager
+  commentId: P:ClientDesktop.Properties.Resources.ResourceManager
+  id: ResourceManager
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: ResourceManager
+  nameWithType: Resources.ResourceManager
+  fullName: ClientDesktop.Properties.Resources.ResourceManager
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ResourceManager
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 37
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  summary: "\nRetourne l&apos;instance ResourceManager mise en cache utilisée par cette classe.\n"
+  example: []
+  syntax:
+    content: >-
+      static ResourceManager ResourceManager
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Resources.ResourceManager
+    content.vb: Shared ReadOnly WriteOnly Property ResourceManager As ResourceManager
+  overload: ClientDesktop.Properties.Resources.ResourceManager*
+  modifiers.csharp:
+  - static
+  - get
+  modifiers.vb:
+  - Shared
+  - ReadOnly
+- uid: ClientDesktop.Properties.Resources.Culture
+  commentId: P:ClientDesktop.Properties.Resources.Culture
+  id: Culture
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: Resources.Culture
+  fullName: ClientDesktop.Properties.Resources.Culture
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Culture
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 52
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  summary: "\nRemplace la propriété CurrentUICulture du thread actuel pour toutes\nles recherches de ressources à l&apos;aide de cette classe de ressource fortement typée.\n"
+  example: []
+  syntax:
+    content: >-
+      static CultureInfo Culture
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Shared ReadOnly WriteOnly Property Culture As CultureInfo
+  overload: ClientDesktop.Properties.Resources.Culture*
+  modifiers.csharp:
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Shared
+- uid: ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f
+  commentId: P:ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f
+  id: ezgif_2_6d0b072c3d3f
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: ezgif_2_6d0b072c3d3f
+  nameWithType: Resources.ezgif_2_6d0b072c3d3f
+  fullName: ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ezgif_2_6d0b072c3d3f
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 65
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  summary: "\nRecherche une ressource localisée de type System.Drawing.Bitmap.\n"
+  example: []
+  syntax:
+    content: >-
+      static Bitmap ezgif_2_6d0b072c3d3f
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: Shared ReadOnly WriteOnly Property ezgif_2_6d0b072c3d3f As Bitmap
+  overload: ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f*
+  modifiers.csharp:
+  - static
+  - get
+  modifiers.vb:
+  - Shared
+  - ReadOnly
+- uid: ClientDesktop.Properties.Resources.gifLoad2
+  commentId: P:ClientDesktop.Properties.Resources.gifLoad2
+  id: gifLoad2
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: gifLoad2
+  nameWithType: Resources.gifLoad2
+  fullName: ClientDesktop.Properties.Resources.gifLoad2
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: gifLoad2
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 75
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  summary: "\nRecherche une ressource localisée de type System.Drawing.Bitmap.\n"
+  example: []
+  syntax:
+    content: >-
+      static Bitmap gifLoad2
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: Shared ReadOnly WriteOnly Property gifLoad2 As Bitmap
+  overload: ClientDesktop.Properties.Resources.gifLoad2*
+  modifiers.csharp:
+  - static
+  - get
+  modifiers.vb:
+  - Shared
+  - ReadOnly
+- uid: ClientDesktop.Properties.Resources.gifLoad21
+  commentId: P:ClientDesktop.Properties.Resources.gifLoad21
+  id: gifLoad21
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: gifLoad21
+  nameWithType: Resources.gifLoad21
+  fullName: ClientDesktop.Properties.Resources.gifLoad21
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: gifLoad21
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 85
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  summary: "\nRecherche une ressource localisée de type System.Drawing.Bitmap.\n"
+  example: []
+  syntax:
+    content: >-
+      static Bitmap gifLoad21
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: Shared ReadOnly WriteOnly Property gifLoad21 As Bitmap
+  overload: ClientDesktop.Properties.Resources.gifLoad21*
+  modifiers.csharp:
+  - static
+  - get
+  modifiers.vb:
+  - Shared
+  - ReadOnly
+- uid: ClientDesktop.Properties.Resources.gifLoad3
+  commentId: P:ClientDesktop.Properties.Resources.gifLoad3
+  id: gifLoad3
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: gifLoad3
+  nameWithType: Resources.gifLoad3
+  fullName: ClientDesktop.Properties.Resources.gifLoad3
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: gifLoad3
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 95
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  summary: "\nRecherche une ressource localisée de type System.Drawing.Bitmap.\n"
+  example: []
+  syntax:
+    content: >-
+      static Bitmap gifLoad3
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: Shared ReadOnly WriteOnly Property gifLoad3 As Bitmap
+  overload: ClientDesktop.Properties.Resources.gifLoad3*
+  modifiers.csharp:
+  - static
+  - get
+  modifiers.vb:
+  - Shared
+  - ReadOnly
+- uid: ClientDesktop.Properties.Resources.logo
+  commentId: P:ClientDesktop.Properties.Resources.logo
+  id: logo
+  parent: ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: logo
+  nameWithType: Resources.logo
+  fullName: ClientDesktop.Properties.Resources.logo
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: logo
+    path: E:/Fbook/FoodBook/Client/ClientDesktop/Properties/Resources.Designer.cs
+    startLine: 105
+  assemblies:
+  - ClientDesktop
+  namespace: ClientDesktop.Properties
+  summary: "\nRecherche une ressource localisée de type System.Drawing.Bitmap.\n"
+  example: []
+  syntax:
+    content: >-
+      static Bitmap logo
+
+      {
+
+      }
+    parameters: []
+    return:
+      type: System.Drawing.Bitmap
+    content.vb: Shared ReadOnly WriteOnly Property logo As Bitmap
+  overload: ClientDesktop.Properties.Resources.logo*
+  modifiers.csharp:
+  - static
+  - get
+  modifiers.vb:
+  - Shared
+  - ReadOnly
+references:
+- uid: ClientDesktop.Properties
+  commentId: N:ClientDesktop.Properties
+  name: ClientDesktop.Properties
+  nameWithType: ClientDesktop.Properties
+  fullName: ClientDesktop.Properties
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Resources.ResourceManager
+  commentId: T:System.Resources.ResourceManager
+  parent: System.Resources
+  isExternal: true
+  name: ResourceManager
+  nameWithType: ResourceManager
+  fullName: System.Resources.ResourceManager
+- uid: System.Resources
+  commentId: N:System.Resources
+  isExternal: true
+  name: System.Resources
+  nameWithType: System.Resources
+  fullName: System.Resources
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+- uid: ClientDesktop.Properties.Resources.#ctor*
+  commentId: Overload:ClientDesktop.Properties.Resources.#ctor
+  name: Resources
+  nameWithType: Resources.Resources
+  fullName: ClientDesktop.Properties.Resources.Resources
+- uid: ClientDesktop.Properties.Resources.ResourceManager*
+  commentId: Overload:ClientDesktop.Properties.Resources.ResourceManager
+  name: ResourceManager
+  nameWithType: Resources.ResourceManager
+  fullName: ClientDesktop.Properties.Resources.ResourceManager
+- uid: ClientDesktop.Properties.Resources.Culture*
+  commentId: Overload:ClientDesktop.Properties.Resources.Culture
+  name: Culture
+  nameWithType: Resources.Culture
+  fullName: ClientDesktop.Properties.Resources.Culture
+- uid: ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f*
+  commentId: Overload:ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f
+  name: ezgif_2_6d0b072c3d3f
+  nameWithType: Resources.ezgif_2_6d0b072c3d3f
+  fullName: ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f
+- uid: System.Drawing.Bitmap
+  commentId: T:System.Drawing.Bitmap
+  parent: System.Drawing
+  isExternal: true
+  name: Bitmap
+  nameWithType: Bitmap
+  fullName: System.Drawing.Bitmap
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+- uid: ClientDesktop.Properties.Resources.gifLoad2*
+  commentId: Overload:ClientDesktop.Properties.Resources.gifLoad2
+  name: gifLoad2
+  nameWithType: Resources.gifLoad2
+  fullName: ClientDesktop.Properties.Resources.gifLoad2
+- uid: ClientDesktop.Properties.Resources.gifLoad21*
+  commentId: Overload:ClientDesktop.Properties.Resources.gifLoad21
+  name: gifLoad21
+  nameWithType: Resources.gifLoad21
+  fullName: ClientDesktop.Properties.Resources.gifLoad21
+- uid: ClientDesktop.Properties.Resources.gifLoad3*
+  commentId: Overload:ClientDesktop.Properties.Resources.gifLoad3
+  name: gifLoad3
+  nameWithType: Resources.gifLoad3
+  fullName: ClientDesktop.Properties.Resources.gifLoad3
+- uid: ClientDesktop.Properties.Resources.logo*
+  commentId: Overload:ClientDesktop.Properties.Resources.logo
+  name: logo
+  nameWithType: Resources.logo
+  fullName: ClientDesktop.Properties.Resources.logo

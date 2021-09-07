@@ -124,8 +124,8 @@ namespace BLL.Services
         /// <summary>
         /// Get a Dish By an ID
         /// </summary>
-        /// <param name="id">Int</param>
-        /// <returns>Dish</returns>
+        /// <param name="id">Identifiant unique du plat</param>
+        /// <returns>Renvoi le plat si trouvé</returns>
         public async Task<Dish> GetDishById(int id)
         {
 

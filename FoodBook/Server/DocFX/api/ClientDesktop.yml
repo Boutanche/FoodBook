@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientDesktop
+  commentId: N:ClientDesktop
+  id: ClientDesktop
+  children:
+  - ClientDesktop.CreateIngredientForm
+  - ClientDesktop.DishForm
+  - ClientDesktop.DishSelectorForm
+  - ClientDesktop.Program
+  - ClientDesktop.WeekForm
+  langs:
+  - csharp
+  - vb
+  name: ClientDesktop
+  nameWithType: ClientDesktop
+  fullName: ClientDesktop
+  type: Namespace
+  assemblies:
+  - ClientDesktop
+references:
+- uid: ClientDesktop.CreateIngredientForm
+  commentId: T:ClientDesktop.CreateIngredientForm
+  name: CreateIngredientForm
+  nameWithType: CreateIngredientForm
+  fullName: ClientDesktop.CreateIngredientForm
+- uid: ClientDesktop.DishForm
+  commentId: T:ClientDesktop.DishForm
+  name: DishForm
+  nameWithType: DishForm
+  fullName: ClientDesktop.DishForm
+- uid: ClientDesktop.DishSelectorForm
+  commentId: T:ClientDesktop.DishSelectorForm
+  name: DishSelectorForm
+  nameWithType: DishSelectorForm
+  fullName: ClientDesktop.DishSelectorForm
+- uid: ClientDesktop.Program
+  commentId: T:ClientDesktop.Program
+  name: Program
+  nameWithType: Program
+  fullName: ClientDesktop.Program
+- uid: ClientDesktop.WeekForm
+  commentId: T:ClientDesktop.WeekForm
+  name: WeekForm
+  nameWithType: WeekForm
+  fullName: ClientDesktop.WeekForm

@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: BO.DTO.Responses
+  commentId: N:BO.DTO.Responses
+  id: BO.DTO.Responses
+  children:
+  - BO.DTO.Responses.LoginResponse
+  - BO.DTO.Responses.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: BO.DTO.Responses
+  nameWithType: BO.DTO.Responses
+  fullName: BO.DTO.Responses
+  type: Namespace
+  assemblies:
+  - BO
+references:
+- uid: BO.DTO.Responses.LoginResponse
+  commentId: T:BO.DTO.Responses.LoginResponse
+  name: LoginResponse
+  nameWithType: LoginResponse
+  fullName: BO.DTO.Responses.LoginResponse
+- uid: BO.DTO.Responses.PageResponse`1
+  commentId: T:BO.DTO.Responses.PageResponse`1
+  name: PageResponse<T>
+  nameWithType: PageResponse<T>
+  fullName: BO.DTO.Responses.PageResponse<T>
+  nameWithType.vb: PageResponse(Of T)
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T)
+  name.vb: PageResponse(Of T)
+  spec.csharp:
+  - uid: BO.DTO.Responses.PageResponse`1
+    name: PageResponse
+    nameWithType: PageResponse
+    fullName: BO.DTO.Responses.PageResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: BO.DTO.Responses.PageResponse`1
+    name: PageResponse
+    nameWithType: PageResponse
+    fullName: BO.DTO.Responses.PageResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

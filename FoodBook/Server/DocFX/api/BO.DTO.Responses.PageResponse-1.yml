@@ -1,0 +1,851 @@
+### YamlMime:ManagedReference
+items:
+- uid: BO.DTO.Responses.PageResponse`1
+  commentId: T:BO.DTO.Responses.PageResponse`1
+  id: PageResponse`1
+  parent: BO.DTO.Responses
+  children:
+  - BO.DTO.Responses.PageResponse`1.#ctor
+  - BO.DTO.Responses.PageResponse`1.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Collections.Generic.List{`0})
+  - BO.DTO.Responses.PageResponse`1.Data
+  - BO.DTO.Responses.PageResponse`1.Page
+  - BO.DTO.Responses.PageResponse`1.PageSize
+  - BO.DTO.Responses.PageResponse`1.TotalPages
+  - BO.DTO.Responses.PageResponse`1.TotalRecords
+  langs:
+  - csharp
+  - vb
+  name: PageResponse<T>
+  nameWithType: PageResponse<T>
+  fullName: BO.DTO.Responses.PageResponse<T>
+  type: Class
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Responses/PageResponse.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: PageResponse
+    path: E:/Fbook/FoodBook/BO/DTO/Responses/PageResponse.cs
+    startLine: 12
+  assemblies:
+  - BO
+  namespace: BO.DTO.Responses
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public class PageResponse<T>
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Class PageResponse(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: PageResponse(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T)
+  name.vb: PageResponse(Of T)
+- uid: BO.DTO.Responses.PageResponse`1.Page
+  commentId: P:BO.DTO.Responses.PageResponse`1.Page
+  id: Page
+  parent: BO.DTO.Responses.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: Page
+  nameWithType: PageResponse<T>.Page
+  fullName: BO.DTO.Responses.PageResponse<T>.Page
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Responses/PageResponse.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Page
+    path: E:/Fbook/FoodBook/BO/DTO/Responses/PageResponse.cs
+    startLine: 17
+  assemblies:
+  - BO
+  namespace: BO.DTO.Responses
+  summary: "\nCurrent Page\n"
+  example: []
+  syntax:
+    content: public int Page { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Page As Integer
+  overload: BO.DTO.Responses.PageResponse`1.Page*
+  nameWithType.vb: PageResponse(Of T).Page
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).Page
+- uid: BO.DTO.Responses.PageResponse`1.PageSize
+  commentId: P:BO.DTO.Responses.PageResponse`1.PageSize
+  id: PageSize
+  parent: BO.DTO.Responses.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: PageResponse<T>.PageSize
+  fullName: BO.DTO.Responses.PageResponse<T>.PageSize
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Responses/PageResponse.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: PageSize
+    path: E:/Fbook/FoodBook/BO/DTO/Responses/PageResponse.cs
+    startLine: 25
+  assemblies:
+  - BO
+  namespace: BO.DTO.Responses
+  summary: "\nLimit entities on one page\n"
+  example: []
+  syntax:
+    content: public int PageSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property PageSize As Integer
+  overload: BO.DTO.Responses.PageResponse`1.PageSize*
+  nameWithType.vb: PageResponse(Of T).PageSize
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).PageSize
+- uid: BO.DTO.Responses.PageResponse`1.TotalRecords
+  commentId: P:BO.DTO.Responses.PageResponse`1.TotalRecords
+  id: TotalRecords
+  parent: BO.DTO.Responses.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: TotalRecords
+  nameWithType: PageResponse<T>.TotalRecords
+  fullName: BO.DTO.Responses.PageResponse<T>.TotalRecords
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Responses/PageResponse.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TotalRecords
+    path: E:/Fbook/FoodBook/BO/DTO/Responses/PageResponse.cs
+    startLine: 33
+  assemblies:
+  - BO
+  namespace: BO.DTO.Responses
+  summary: "\nTotal count entities repository\n"
+  example: []
+  syntax:
+    content: public int? TotalRecords { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property TotalRecords As Integer?
+  overload: BO.DTO.Responses.PageResponse`1.TotalRecords*
+  nameWithType.vb: PageResponse(Of T).TotalRecords
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).TotalRecords
+- uid: BO.DTO.Responses.PageResponse`1.TotalPages
+  commentId: P:BO.DTO.Responses.PageResponse`1.TotalPages
+  id: TotalPages
+  parent: BO.DTO.Responses.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: TotalPages
+  nameWithType: PageResponse<T>.TotalPages
+  fullName: BO.DTO.Responses.PageResponse<T>.TotalPages
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Responses/PageResponse.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TotalPages
+    path: E:/Fbook/FoodBook/BO/DTO/Responses/PageResponse.cs
+    startLine: 41
+  assemblies:
+  - BO
+  namespace: BO.DTO.Responses
+  summary: "\nTotalPages\n"
+  example: []
+  syntax:
+    content: public int? TotalPages { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public ReadOnly Property TotalPages As Integer?
+  overload: BO.DTO.Responses.PageResponse`1.TotalPages*
+  nameWithType.vb: PageResponse(Of T).TotalPages
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).TotalPages
+- uid: BO.DTO.Responses.PageResponse`1.Data
+  commentId: P:BO.DTO.Responses.PageResponse`1.Data
+  id: Data
+  parent: BO.DTO.Responses.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: PageResponse<T>.Data
+  fullName: BO.DTO.Responses.PageResponse<T>.Data
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Responses/PageResponse.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Data
+    path: E:/Fbook/FoodBook/BO/DTO/Responses/PageResponse.cs
+    startLine: 46
+  assemblies:
+  - BO
+  namespace: BO.DTO.Responses
+  summary: "\nList entities of the current page\n"
+  example: []
+  syntax:
+    content: public List<T> Data { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Property Data As List(Of T)
+  overload: BO.DTO.Responses.PageResponse`1.Data*
+  nameWithType.vb: PageResponse(Of T).Data
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).Data
+- uid: BO.DTO.Responses.PageResponse`1.#ctor
+  commentId: M:BO.DTO.Responses.PageResponse`1.#ctor
+  id: '#ctor'
+  parent: BO.DTO.Responses.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: PageResponse()
+  nameWithType: PageResponse<T>.PageResponse()
+  fullName: BO.DTO.Responses.PageResponse<T>.PageResponse()
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Responses/PageResponse.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/BO/DTO/Responses/PageResponse.cs
+    startLine: 50
+  assemblies:
+  - BO
+  namespace: BO.DTO.Responses
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public PageResponse()
+    content.vb: Public Sub New
+  overload: BO.DTO.Responses.PageResponse`1.#ctor*
+  nameWithType.vb: PageResponse(Of T).PageResponse()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).PageResponse()
+- uid: BO.DTO.Responses.PageResponse`1.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Collections.Generic.List{`0})
+  commentId: M:BO.DTO.Responses.PageResponse`1.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Collections.Generic.List{`0})
+  id: '#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Collections.Generic.List{`0})'
+  parent: BO.DTO.Responses.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: PageResponse(Int32, Int32, Nullable<Int32>, List<T>)
+  nameWithType: PageResponse<T>.PageResponse(Int32, Int32, Nullable<Int32>, List<T>)
+  fullName: BO.DTO.Responses.PageResponse<T>.PageResponse(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Collections.Generic.List<T>)
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Responses/PageResponse.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/BO/DTO/Responses/PageResponse.cs
+    startLine: 60
+  assemblies:
+  - BO
+  namespace: BO.DTO.Responses
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public PageResponse(int page, int pageSize, int? totalRecords, List<T> data)
+    parameters:
+    - id: page
+      type: System.Int32
+      description: ''
+    - id: pageSize
+      type: System.Int32
+      description: ''
+    - id: totalRecords
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: data
+      type: System.Collections.Generic.List{{T}}
+      description: ''
+    content.vb: Public Sub New(page As Integer, pageSize As Integer, totalRecords As Integer?, data As List(Of T))
+  overload: BO.DTO.Responses.PageResponse`1.#ctor*
+  nameWithType.vb: PageResponse(Of T).PageResponse(Int32, Int32, Nullable(Of Int32), List(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).PageResponse(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Collections.Generic.List(Of T))
+  name.vb: PageResponse(Int32, Int32, Nullable(Of Int32), List(Of T))
+references:
+- uid: BO.DTO.Responses
+  commentId: N:BO.DTO.Responses
+  name: BO.DTO.Responses
+  nameWithType: BO.DTO.Responses
+  fullName: BO.DTO.Responses
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BO.DTO.Responses.PageResponse`1.Page*
+  commentId: Overload:BO.DTO.Responses.PageResponse`1.Page
+  name: Page
+  nameWithType: PageResponse<T>.Page
+  fullName: BO.DTO.Responses.PageResponse<T>.Page
+  nameWithType.vb: PageResponse(Of T).Page
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).Page
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: BO.DTO.Responses.PageResponse`1.PageSize*
+  commentId: Overload:BO.DTO.Responses.PageResponse`1.PageSize
+  name: PageSize
+  nameWithType: PageResponse<T>.PageSize
+  fullName: BO.DTO.Responses.PageResponse<T>.PageSize
+  nameWithType.vb: PageResponse(Of T).PageSize
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).PageSize
+- uid: BO.DTO.Responses.PageResponse`1.TotalRecords*
+  commentId: Overload:BO.DTO.Responses.PageResponse`1.TotalRecords
+  name: TotalRecords
+  nameWithType: PageResponse<T>.TotalRecords
+  fullName: BO.DTO.Responses.PageResponse<T>.TotalRecords
+  nameWithType.vb: PageResponse(Of T).TotalRecords
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).TotalRecords
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.DTO.Responses.PageResponse`1.TotalPages*
+  commentId: Overload:BO.DTO.Responses.PageResponse`1.TotalPages
+  name: TotalPages
+  nameWithType: PageResponse<T>.TotalPages
+  fullName: BO.DTO.Responses.PageResponse<T>.TotalPages
+  nameWithType.vb: PageResponse(Of T).TotalPages
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).TotalPages
+- uid: BO.DTO.Responses.PageResponse`1.Data*
+  commentId: Overload:BO.DTO.Responses.PageResponse`1.Data
+  name: Data
+  nameWithType: PageResponse<T>.Data
+  fullName: BO.DTO.Responses.PageResponse<T>.Data
+  nameWithType.vb: PageResponse(Of T).Data
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).Data
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: BO.DTO.Responses.PageResponse`1.#ctor*
+  commentId: Overload:BO.DTO.Responses.PageResponse`1.#ctor
+  name: PageResponse
+  nameWithType: PageResponse<T>.PageResponse
+  fullName: BO.DTO.Responses.PageResponse<T>.PageResponse
+  nameWithType.vb: PageResponse(Of T).PageResponse
+  fullName.vb: BO.DTO.Responses.PageResponse(Of T).PageResponse

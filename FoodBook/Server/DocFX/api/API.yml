@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: API
+  commentId: N:API
+  id: API
+  children:
+  - API.Program
+  - API.Startup
+  langs:
+  - csharp
+  - vb
+  name: API
+  nameWithType: API
+  fullName: API
+  type: Namespace
+  assemblies:
+  - API
+references:
+- uid: API.Program
+  commentId: T:API.Program
+  name: Program
+  nameWithType: Program
+  fullName: API.Program
+- uid: API.Startup
+  commentId: T:API.Startup
+  name: Startup
+  nameWithType: Startup
+  fullName: API.Startup

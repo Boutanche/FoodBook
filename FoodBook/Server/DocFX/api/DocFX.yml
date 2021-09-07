@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DocFX
+  commentId: N:DocFX
+  id: DocFX
+  children:
+  - DocFX.DocFxSettings
+  langs:
+  - csharp
+  - vb
+  name: DocFX
+  nameWithType: DocFX
+  fullName: DocFX
+  type: Namespace
+  assemblies:
+  - DocFX
+references:
+- uid: DocFX.DocFxSettings
+  commentId: T:DocFX.DocFxSettings
+  name: DocFxSettings
+  nameWithType: DocFxSettings
+  fullName: DocFX.DocFxSettings

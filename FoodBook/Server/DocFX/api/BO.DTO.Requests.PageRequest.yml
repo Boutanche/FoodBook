@@ -1,0 +1,641 @@
+### YamlMime:ManagedReference
+items:
+- uid: BO.DTO.Requests.PageRequest
+  commentId: T:BO.DTO.Requests.PageRequest
+  id: PageRequest
+  parent: BO.DTO.Requests
+  children:
+  - BO.DTO.Requests.PageRequest.#ctor
+  - BO.DTO.Requests.PageRequest.#ctor(System.Int32,System.Int32)
+  - BO.DTO.Requests.PageRequest.maxPerPage
+  - BO.DTO.Requests.PageRequest.page
+  - BO.DTO.Requests.PageRequest.pageSize
+  langs:
+  - csharp
+  - vb
+  name: PageRequest
+  nameWithType: PageRequest
+  fullName: BO.DTO.Requests.PageRequest
+  type: Class
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: PageRequest
+    path: E:/Fbook/FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+    startLine: 11
+  assemblies:
+  - BO
+  namespace: BO.DTO.Requests
+  summary: "\nCoucou II\n"
+  example: []
+  syntax:
+    content: public class PageRequest
+    content.vb: Public Class PageRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BO.DTO.Requests.PageRequest.page
+  commentId: P:BO.DTO.Requests.PageRequest.page
+  id: page
+  parent: BO.DTO.Requests.PageRequest
+  langs:
+  - csharp
+  - vb
+  name: page
+  nameWithType: PageRequest.page
+  fullName: BO.DTO.Requests.PageRequest.page
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: page
+    path: E:/Fbook/FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+    startLine: 17
+  assemblies:
+  - BO
+  namespace: BO.DTO.Requests
+  summary: "\nFuck\n"
+  example: []
+  syntax:
+    content: public int? page { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property page As Integer?
+  overload: BO.DTO.Requests.PageRequest.page*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BO.DTO.Requests.PageRequest.maxPerPage
+  commentId: P:BO.DTO.Requests.PageRequest.maxPerPage
+  id: maxPerPage
+  parent: BO.DTO.Requests.PageRequest
+  langs:
+  - csharp
+  - vb
+  name: maxPerPage
+  nameWithType: PageRequest.maxPerPage
+  fullName: BO.DTO.Requests.PageRequest.maxPerPage
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: maxPerPage
+    path: E:/Fbook/FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+    startLine: 21
+  assemblies:
+  - BO
+  namespace: BO.DTO.Requests
+  summary: "\nFuck Too\n"
+  example: []
+  syntax:
+    content: public int? maxPerPage { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property maxPerPage As Integer?
+  overload: BO.DTO.Requests.PageRequest.maxPerPage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BO.DTO.Requests.PageRequest.pageSize
+  commentId: P:BO.DTO.Requests.PageRequest.pageSize
+  id: pageSize
+  parent: BO.DTO.Requests.PageRequest
+  langs:
+  - csharp
+  - vb
+  name: pageSize
+  nameWithType: PageRequest.pageSize
+  fullName: BO.DTO.Requests.PageRequest.pageSize
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: pageSize
+    path: E:/Fbook/FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+    startLine: 25
+  assemblies:
+  - BO
+  namespace: BO.DTO.Requests
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public int? pageSize { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property pageSize As Integer?
+  overload: BO.DTO.Requests.PageRequest.pageSize*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BO.DTO.Requests.PageRequest.#ctor
+  commentId: M:BO.DTO.Requests.PageRequest.#ctor
+  id: '#ctor'
+  parent: BO.DTO.Requests.PageRequest
+  langs:
+  - csharp
+  - vb
+  name: PageRequest()
+  nameWithType: PageRequest.PageRequest()
+  fullName: BO.DTO.Requests.PageRequest.PageRequest()
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+    startLine: 31
+  assemblies:
+  - BO
+  namespace: BO.DTO.Requests
+  summary: "\nCoucou\n"
+  example: []
+  syntax:
+    content: public PageRequest()
+    content.vb: Public Sub New
+  overload: BO.DTO.Requests.PageRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BO.DTO.Requests.PageRequest.#ctor(System.Int32,System.Int32)
+  commentId: M:BO.DTO.Requests.PageRequest.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: BO.DTO.Requests.PageRequest
+  langs:
+  - csharp
+  - vb
+  name: PageRequest(Int32, Int32)
+  nameWithType: PageRequest.PageRequest(Int32, Int32)
+  fullName: BO.DTO.Requests.PageRequest.PageRequest(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/BO/DTO/Requests/PageRequestDTO.cs
+    startLine: 41
+  assemblies:
+  - BO
+  namespace: BO.DTO.Requests
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public PageRequest(int a_page, int a_pageSize)
+    parameters:
+    - id: a_page
+      type: System.Int32
+      description: ''
+    - id: a_pageSize
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(a_page As Integer, a_pageSize As Integer)
+  overload: BO.DTO.Requests.PageRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BO.DTO.Requests
+  commentId: N:BO.DTO.Requests
+  name: BO.DTO.Requests
+  nameWithType: BO.DTO.Requests
+  fullName: BO.DTO.Requests
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BO.DTO.Requests.PageRequest.page*
+  commentId: Overload:BO.DTO.Requests.PageRequest.page
+  name: page
+  nameWithType: PageRequest.page
+  fullName: BO.DTO.Requests.PageRequest.page
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.DTO.Requests.PageRequest.maxPerPage*
+  commentId: Overload:BO.DTO.Requests.PageRequest.maxPerPage
+  name: maxPerPage
+  nameWithType: PageRequest.maxPerPage
+  fullName: BO.DTO.Requests.PageRequest.maxPerPage
+- uid: BO.DTO.Requests.PageRequest.pageSize*
+  commentId: Overload:BO.DTO.Requests.PageRequest.pageSize
+  name: pageSize
+  nameWithType: PageRequest.pageSize
+  fullName: BO.DTO.Requests.PageRequest.pageSize
+- uid: BO.DTO.Requests.PageRequest.#ctor*
+  commentId: Overload:BO.DTO.Requests.PageRequest.#ctor
+  name: PageRequest
+  nameWithType: PageRequest.PageRequest
+  fullName: BO.DTO.Requests.PageRequest.PageRequest
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

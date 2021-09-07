@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientConsole
+  commentId: N:ClientConsole
+  id: ClientConsole
+  children:
+  - ClientConsole.Program
+  langs:
+  - csharp
+  - vb
+  name: ClientConsole
+  nameWithType: ClientConsole
+  fullName: ClientConsole
+  type: Namespace
+  assemblies:
+  - ClientConsole
+references:
+- uid: ClientConsole.Program
+  commentId: T:ClientConsole.Program
+  name: Program
+  nameWithType: Program
+  fullName: ClientConsole.Program

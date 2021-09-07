@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: BLL.Services.IOrderService
+  commentId: T:BLL.Services.IOrderService
+  id: IOrderService
+  parent: BLL.Services
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IOrderService
+  nameWithType: IOrderService
+  fullName: BLL.Services.IOrderService
+  type: Interface
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/IOrderService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: IOrderService
+    path: E:/Fbook/FoodBook/Server/BLL/Services/IOrderService.cs
+    startLine: 10
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\nInterface des services dédiés aux &quot;Commandes&quot;\n"
+  example: []
+  syntax:
+    content: public interface IOrderService
+    content.vb: Public Interface IOrderService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: BLL.Services
+  commentId: N:BLL.Services
+  name: BLL.Services
+  nameWithType: BLL.Services
+  fullName: BLL.Services

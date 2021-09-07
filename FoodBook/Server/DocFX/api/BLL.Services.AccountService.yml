@@ -1,0 +1,759 @@
+### YamlMime:ManagedReference
+items:
+- uid: BLL.Services.AccountService
+  commentId: T:BLL.Services.AccountService
+  id: AccountService
+  parent: BLL.Services
+  children:
+  - BLL.Services.AccountService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  - BLL.Services.AccountService._configuration
+  - BLL.Services.AccountService.GenerateJwtToken(System.String,System.Collections.Generic.List{System.String})
+  - BLL.Services.AccountService.Login(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AccountService
+  nameWithType: AccountService
+  fullName: BLL.Services.AccountService
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/AccountService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: AccountService
+    path: E:/Fbook/FoodBook/Server/BLL/Services/AccountService.cs
+    startLine: 13
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  syntax:
+    content: 'class AccountService : IAccountService'
+    content.vb: >-
+      Class AccountService
+          Implements IAccountService
+  inheritance:
+  - System.Object
+  implements:
+  - BLL.Services.IAccountService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - class
+  modifiers.vb:
+  - Class
+- uid: BLL.Services.AccountService._configuration
+  commentId: F:BLL.Services.AccountService._configuration
+  id: _configuration
+  parent: BLL.Services.AccountService
+  langs:
+  - csharp
+  - vb
+  name: _configuration
+  nameWithType: AccountService._configuration
+  fullName: BLL.Services.AccountService._configuration
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/AccountService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: _configuration
+    path: E:/Fbook/FoodBook/Server/BLL/Services/AccountService.cs
+    startLine: 15
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  syntax:
+    content: readonly IConfiguration _configuration
+    return:
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: ReadOnly _configuration As IConfiguration
+  modifiers.csharp:
+  - readonly
+  modifiers.vb:
+  - ReadOnly
+- uid: BLL.Services.AccountService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:BLL.Services.AccountService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration)'
+  parent: BLL.Services.AccountService
+  langs:
+  - csharp
+  - vb
+  name: AccountService(IConfiguration)
+  nameWithType: AccountService.AccountService(IConfiguration)
+  fullName: BLL.Services.AccountService.AccountService(Microsoft.Extensions.Configuration.IConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/AccountService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/Server/BLL/Services/AccountService.cs
+    startLine: 16
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  syntax:
+    content: public AccountService(IConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Public Sub New(configuration As IConfiguration)
+  overload: BLL.Services.AccountService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BLL.Services.AccountService.Login(System.String,System.String)
+  commentId: M:BLL.Services.AccountService.Login(System.String,System.String)
+  id: Login(System.String,System.String)
+  parent: BLL.Services.AccountService
+  langs:
+  - csharp
+  - vb
+  name: Login(String, String)
+  nameWithType: AccountService.Login(String, String)
+  fullName: BLL.Services.AccountService.Login(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/AccountService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Login
+    path: E:/Fbook/FoodBook/Server/BLL/Services/AccountService.cs
+    startLine: 20
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  syntax:
+    content: public Task<LoginResponse> Login(string username, string password)
+    parameters:
+    - id: username
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{BO.DTO.Responses.LoginResponse}
+    content.vb: Public Function Login(username As String, password As String) As Task(Of LoginResponse)
+  overload: BLL.Services.AccountService.Login*
+  implements:
+  - BLL.Services.IAccountService.Login(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BLL.Services.AccountService.GenerateJwtToken(System.String,System.Collections.Generic.List{System.String})
+  commentId: M:BLL.Services.AccountService.GenerateJwtToken(System.String,System.Collections.Generic.List{System.String})
+  id: GenerateJwtToken(System.String,System.Collections.Generic.List{System.String})
+  parent: BLL.Services.AccountService
+  langs:
+  - csharp
+  - vb
+  name: GenerateJwtToken(String, List<String>)
+  nameWithType: AccountService.GenerateJwtToken(String, List<String>)
+  fullName: BLL.Services.AccountService.GenerateJwtToken(System.String, System.Collections.Generic.List<System.String>)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/AccountService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GenerateJwtToken
+    path: E:/Fbook/FoodBook/Server/BLL/Services/AccountService.cs
+    startLine: 33
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  syntax:
+    content: string GenerateJwtToken(string username, List<string> roles)
+    parameters:
+    - id: username
+      type: System.String
+    - id: roles
+      type: System.Collections.Generic.List{System.String}
+    return:
+      type: System.String
+    content.vb: Function GenerateJwtToken(username As String, roles As List(Of String)) As String
+  overload: BLL.Services.AccountService.GenerateJwtToken*
+  nameWithType.vb: AccountService.GenerateJwtToken(String, List(Of String))
+  fullName.vb: BLL.Services.AccountService.GenerateJwtToken(System.String, System.Collections.Generic.List(Of System.String))
+  name.vb: GenerateJwtToken(String, List(Of String))
+references:
+- uid: BLL.Services
+  commentId: N:BLL.Services
+  name: BLL.Services
+  nameWithType: BLL.Services
+  fullName: BLL.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BLL.Services.IAccountService
+  commentId: T:BLL.Services.IAccountService
+  parent: BLL.Services
+  name: IAccountService
+  nameWithType: IAccountService
+  fullName: BLL.Services.IAccountService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: BLL.Services.AccountService.#ctor*
+  commentId: Overload:BLL.Services.AccountService.#ctor
+  name: AccountService
+  nameWithType: AccountService.AccountService
+  fullName: BLL.Services.AccountService.AccountService
+- uid: BLL.Services.AccountService.Login*
+  commentId: Overload:BLL.Services.AccountService.Login
+  name: Login
+  nameWithType: AccountService.Login
+  fullName: BLL.Services.AccountService.Login
+- uid: BLL.Services.IAccountService.Login(System.String,System.String)
+  commentId: M:BLL.Services.IAccountService.Login(System.String,System.String)
+  parent: BLL.Services.IAccountService
+  isExternal: true
+  name: Login(String, String)
+  nameWithType: IAccountService.Login(String, String)
+  fullName: BLL.Services.IAccountService.Login(System.String, System.String)
+  spec.csharp:
+  - uid: BLL.Services.IAccountService.Login(System.String,System.String)
+    name: Login
+    nameWithType: IAccountService.Login
+    fullName: BLL.Services.IAccountService.Login
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IAccountService.Login(System.String,System.String)
+    name: Login
+    nameWithType: IAccountService.Login
+    fullName: BLL.Services.IAccountService.Login
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{BO.DTO.Responses.LoginResponse}
+  commentId: T:System.Threading.Tasks.Task{BO.DTO.Responses.LoginResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<LoginResponse>
+  nameWithType: Task<LoginResponse>
+  fullName: System.Threading.Tasks.Task<BO.DTO.Responses.LoginResponse>
+  nameWithType.vb: Task(Of LoginResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.DTO.Responses.LoginResponse)
+  name.vb: Task(Of LoginResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.DTO.Responses.LoginResponse
+    name: LoginResponse
+    nameWithType: LoginResponse
+    fullName: BO.DTO.Responses.LoginResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.DTO.Responses.LoginResponse
+    name: LoginResponse
+    nameWithType: LoginResponse
+    fullName: BO.DTO.Responses.LoginResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: BLL.Services.AccountService.GenerateJwtToken*
+  commentId: Overload:BLL.Services.AccountService.GenerateJwtToken
+  name: GenerateJwtToken
+  nameWithType: AccountService.GenerateJwtToken
+  fullName: BLL.Services.AccountService.GenerateJwtToken
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

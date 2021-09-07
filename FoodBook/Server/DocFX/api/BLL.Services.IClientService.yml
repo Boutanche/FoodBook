@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: BLL.Services.IClientService
+  commentId: T:BLL.Services.IClientService
+  id: IClientService
+  parent: BLL.Services
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IClientService
+  nameWithType: IClientService
+  fullName: BLL.Services.IClientService
+  type: Interface
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/IClientService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: IClientService
+    path: E:/Fbook/FoodBook/Server/BLL/Services/IClientService.cs
+    startLine: 12
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\nInterface des Services dédiés &quot;CLient&quot;\n"
+  example: []
+  syntax:
+    content: public interface IClientService
+    content.vb: Public Interface IClientService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: BLL.Services
+  commentId: N:BLL.Services
+  name: BLL.Services
+  nameWithType: BLL.Services
+  fullName: BLL.Services

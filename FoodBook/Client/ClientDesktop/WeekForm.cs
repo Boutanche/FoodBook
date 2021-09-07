@@ -31,6 +31,7 @@ namespace ClientDesktop
             //Avoir une instance de Calendar associée avec CultureInfo en Fr.
             CultureInfo myCI = new CultureInfo("fr-Fr");
             Calendar myCal = myCI.Calendar;
+            
             //Règles sur le week-end :
             CalendarWeekRule myCWR = myCI.DateTimeFormat.CalendarWeekRule;
             DayOfWeek myFirstDOW = myCI.DateTimeFormat.FirstDayOfWeek;
@@ -204,7 +205,10 @@ namespace ClientDesktop
             DishForm dishForm = new();
             dishForm.Show();
         }
-        //
+        /// <summary>
+        /// Mise à jour du composant
+        /// </summary>
+        /// <param name="isMonday"></param>
         public void UpdateComponent(DateTime isMonday)
         {
             Trace.WriteLine("Mise à jour des Component Midday et Evening");

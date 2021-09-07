@@ -1,0 +1,584 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnitTest.IngredientControllerUnitTest
+  commentId: T:UnitTest.IngredientControllerUnitTest
+  id: IngredientControllerUnitTest
+  parent: UnitTest
+  children:
+  - UnitTest.IngredientControllerUnitTest.GetAll
+  - UnitTest.IngredientControllerUnitTest.TestCreateIngredient
+  - UnitTest.IngredientControllerUnitTest.TestGetIngredientById
+  - UnitTest.IngredientControllerUnitTest.TestModifyIngredient
+  - UnitTest.IngredientControllerUnitTest.TestRemoveIngredientById
+  langs:
+  - csharp
+  - vb
+  name: IngredientControllerUnitTest
+  nameWithType: IngredientControllerUnitTest
+  fullName: UnitTest.IngredientControllerUnitTest
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: IngredientControllerUnitTest
+    path: E:/Fbook/FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+    startLine: 15
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nMise en place des tests unitaires sur Ingredients \n"
+  example: []
+  syntax:
+    content: public class IngredientControllerUnitTest
+    content.vb: Public Class IngredientControllerUnitTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: UnitTest.IngredientControllerUnitTest.TestCreateIngredient
+  commentId: M:UnitTest.IngredientControllerUnitTest.TestCreateIngredient
+  id: TestCreateIngredient
+  parent: UnitTest.IngredientControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestCreateIngredient()
+  nameWithType: IngredientControllerUnitTest.TestCreateIngredient()
+  fullName: UnitTest.IngredientControllerUnitTest.TestCreateIngredient()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestCreateIngredient
+    path: E:/Fbook/FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+    startLine: 20
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nTest Unitaire sur Create un Ingredient\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestCreateIngredient()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestCreateIngredient
+  overload: UnitTest.IngredientControllerUnitTest.TestCreateIngredient*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.IngredientControllerUnitTest.TestModifyIngredient
+  commentId: M:UnitTest.IngredientControllerUnitTest.TestModifyIngredient
+  id: TestModifyIngredient
+  parent: UnitTest.IngredientControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestModifyIngredient()
+  nameWithType: IngredientControllerUnitTest.TestModifyIngredient()
+  fullName: UnitTest.IngredientControllerUnitTest.TestModifyIngredient()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestModifyIngredient
+    path: E:/Fbook/FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+    startLine: 39
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nTest unitaire sur Modifier un Ingrédient\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestModifyIngredient()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestModifyIngredient
+  overload: UnitTest.IngredientControllerUnitTest.TestModifyIngredient*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.IngredientControllerUnitTest.GetAll
+  commentId: M:UnitTest.IngredientControllerUnitTest.GetAll
+  id: GetAll
+  parent: UnitTest.IngredientControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: IngredientControllerUnitTest.GetAll()
+  fullName: UnitTest.IngredientControllerUnitTest.GetAll()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAll
+    path: E:/Fbook/FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+    startLine: 81
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nTest Unitaire sur Get All\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetAll()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetAll
+  overload: UnitTest.IngredientControllerUnitTest.GetAll*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.IngredientControllerUnitTest.TestGetIngredientById
+  commentId: M:UnitTest.IngredientControllerUnitTest.TestGetIngredientById
+  id: TestGetIngredientById
+  parent: UnitTest.IngredientControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestGetIngredientById()
+  nameWithType: IngredientControllerUnitTest.TestGetIngredientById()
+  fullName: UnitTest.IngredientControllerUnitTest.TestGetIngredientById()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestGetIngredientById
+    path: E:/Fbook/FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+    startLine: 99
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nTest Unitaire sur GetIngredientById\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestGetIngredientById()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestGetIngredientById
+  overload: UnitTest.IngredientControllerUnitTest.TestGetIngredientById*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.IngredientControllerUnitTest.TestRemoveIngredientById
+  commentId: M:UnitTest.IngredientControllerUnitTest.TestRemoveIngredientById
+  id: TestRemoveIngredientById
+  parent: UnitTest.IngredientControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestRemoveIngredientById()
+  nameWithType: IngredientControllerUnitTest.TestRemoveIngredientById()
+  fullName: UnitTest.IngredientControllerUnitTest.TestRemoveIngredientById()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestRemoveIngredientById
+    path: E:/Fbook/FoodBook/Server/UnitTest/IngredientControllerUnitTest.cs
+    startLine: 122
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nTest Suppression d&apos;ingrdédient par identifiant\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestRemoveIngredientById()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestRemoveIngredientById
+  overload: UnitTest.IngredientControllerUnitTest.TestRemoveIngredientById*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: UnitTest
+  commentId: N:UnitTest
+  name: UnitTest
+  nameWithType: UnitTest
+  fullName: UnitTest
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnitTest.IngredientControllerUnitTest.TestCreateIngredient*
+  commentId: Overload:UnitTest.IngredientControllerUnitTest.TestCreateIngredient
+  name: TestCreateIngredient
+  nameWithType: IngredientControllerUnitTest.TestCreateIngredient
+  fullName: UnitTest.IngredientControllerUnitTest.TestCreateIngredient
+- uid: UnitTest.IngredientControllerUnitTest.TestModifyIngredient*
+  commentId: Overload:UnitTest.IngredientControllerUnitTest.TestModifyIngredient
+  name: TestModifyIngredient
+  nameWithType: IngredientControllerUnitTest.TestModifyIngredient
+  fullName: UnitTest.IngredientControllerUnitTest.TestModifyIngredient
+- uid: UnitTest.IngredientControllerUnitTest.GetAll*
+  commentId: Overload:UnitTest.IngredientControllerUnitTest.GetAll
+  name: GetAll
+  nameWithType: IngredientControllerUnitTest.GetAll
+  fullName: UnitTest.IngredientControllerUnitTest.GetAll
+- uid: UnitTest.IngredientControllerUnitTest.TestGetIngredientById*
+  commentId: Overload:UnitTest.IngredientControllerUnitTest.TestGetIngredientById
+  name: TestGetIngredientById
+  nameWithType: IngredientControllerUnitTest.TestGetIngredientById
+  fullName: UnitTest.IngredientControllerUnitTest.TestGetIngredientById
+- uid: UnitTest.IngredientControllerUnitTest.TestRemoveIngredientById*
+  commentId: Overload:UnitTest.IngredientControllerUnitTest.TestRemoveIngredientById
+  name: TestRemoveIngredientById
+  nameWithType: IngredientControllerUnitTest.TestRemoveIngredientById
+  fullName: UnitTest.IngredientControllerUnitTest.TestRemoveIngredientById

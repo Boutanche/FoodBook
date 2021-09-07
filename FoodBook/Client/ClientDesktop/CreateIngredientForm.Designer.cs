@@ -1,6 +1,9 @@
 ﻿
 namespace ClientDesktop
 {
+    /// <summary>
+    /// Fenêtre pour la création des Ingrédients
+    /// </summary>
     partial class CreateIngredientForm
     {
         /// <summary>
@@ -138,6 +141,9 @@ namespace ClientDesktop
         private System.Windows.Forms.Label label_price;
         private System.Windows.Forms.TextBox textBox_ingredientName;
         private System.Windows.Forms.TextBox textBox_ingredientPrice;
+        /// <summary>
+        /// Coucou
+        /// </summary>
         private System.Windows.Forms.Button button_validate;
         private System.Windows.Forms.Button button_cancel;
     }

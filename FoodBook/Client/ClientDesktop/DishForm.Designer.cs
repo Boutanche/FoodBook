@@ -3,6 +3,9 @@ using System.Windows.Forms;
 
 namespace ClientDesktop
 {
+    /// <summary>
+    /// Fenêtre pour les ingrédients
+    /// </summary>
     partial class DishForm
     {
 

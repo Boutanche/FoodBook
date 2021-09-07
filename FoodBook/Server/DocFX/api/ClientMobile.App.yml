@@ -1,0 +1,1466 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientMobile.App
+  commentId: T:ClientMobile.App
+  id: App
+  parent: ClientMobile
+  children:
+  - ClientMobile.App.#ctor
+  - ClientMobile.App._contentLoaded
+  - ClientMobile.App.InitializeComponent
+  - ClientMobile.App.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  - ClientMobile.App.OnNavigationFailed(System.Object,Windows.UI.Xaml.Navigation.NavigationFailedEventArgs)
+  - ClientMobile.App.OnSuspending(System.Object,Windows.ApplicationModel.SuspendingEventArgs)
+  langs:
+  - csharp
+  - vb
+  name: App
+  nameWithType: App
+  fullName: ClientMobile.App
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Client/ClientMobile/obj/x86/Release/App.g.i.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: App
+    path: E:/Fbook/FoodBook/Client/ClientMobile/obj/x86/Release/App.g.i.cs
+    startLine: 28
+  assemblies:
+  - ClientMobile
+  namespace: ClientMobile
+  summary: "\nFournit un comportement spécifique à l&apos;application afin de compléter la classe Application par défaut.\n"
+  example: []
+  syntax:
+    content: 'sealed class App : Application, IApplication, IApplication2, IApplication3, IApplicationOverrides, IApplicationOverrides2'
+    content.vb: >-
+      NotInheritable Class App
+          Inherits Application
+          Implements IApplication, IApplication2, IApplication3, IApplicationOverrides, IApplicationOverrides2
+  inheritance:
+  - System.Object
+  - Windows.UI.Xaml.Application
+  implements:
+  - Windows.UI.Xaml.IApplication
+  - Windows.UI.Xaml.IApplication2
+  - Windows.UI.Xaml.IApplication3
+  - Windows.UI.Xaml.IApplicationOverrides
+  - Windows.UI.Xaml.IApplicationOverrides2
+  inheritedMembers:
+  - Windows.UI.Xaml.Application.Exit
+  - Windows.UI.Xaml.Application.OnActivated(Windows.ApplicationModel.Activation.IActivatedEventArgs)
+  - Windows.UI.Xaml.Application.OnFileActivated(Windows.ApplicationModel.Activation.FileActivatedEventArgs)
+  - Windows.UI.Xaml.Application.OnSearchActivated(Windows.ApplicationModel.Activation.SearchActivatedEventArgs)
+  - Windows.UI.Xaml.Application.OnShareTargetActivated(Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs)
+  - Windows.UI.Xaml.Application.OnFileOpenPickerActivated(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs)
+  - Windows.UI.Xaml.Application.OnFileSavePickerActivated(Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs)
+  - Windows.UI.Xaml.Application.OnCachedFileUpdaterActivated(Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs)
+  - Windows.UI.Xaml.Application.OnWindowCreated(Windows.UI.Xaml.WindowCreatedEventArgs)
+  - Windows.UI.Xaml.Application.OnBackgroundActivated(Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs)
+  - Windows.UI.Xaml.Application.Start(Windows.UI.Xaml.ApplicationInitializationCallback)
+  - Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+  - Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+  - Windows.UI.Xaml.Application.Resources
+  - Windows.UI.Xaml.Application.RequestedTheme
+  - Windows.UI.Xaml.Application.DebugSettings
+  - Windows.UI.Xaml.Application.RequiresPointerMode
+  - Windows.UI.Xaml.Application.FocusVisualKind
+  - Windows.UI.Xaml.Application.HighContrastAdjustment
+  - Windows.UI.Xaml.Application.Current
+  - Windows.UI.Xaml.Application.Resuming
+  - Windows.UI.Xaml.Application.Suspending
+  - Windows.UI.Xaml.Application.UnhandledException
+  - Windows.UI.Xaml.Application.EnteredBackground
+  - Windows.UI.Xaml.Application.LeavingBackground
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - sealed
+  - class
+  modifiers.vb:
+  - NotInheritable
+  - Class
+- uid: ClientMobile.App.#ctor
+  commentId: M:ClientMobile.App.#ctor
+  id: '#ctor'
+  parent: ClientMobile.App
+  langs:
+  - csharp
+  - vb
+  name: App()
+  nameWithType: App.App()
+  fullName: ClientMobile.App.App()
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/Client/ClientMobile/App.xaml.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/Client/ClientMobile/App.xaml.cs
+    startLine: 28
+  assemblies:
+  - ClientMobile
+  namespace: ClientMobile
+  summary: "\nInitialise l&apos;objet d&apos;application de singleton.  Il s&apos;agit de la première ligne du code créé\nà être exécutée. Elle correspond donc à l&apos;équivalent logique de main() ou WinMain().\n"
+  example: []
+  syntax:
+    content: public App()
+    content.vb: Public Sub New
+  overload: ClientMobile.App.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ClientMobile.App.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  commentId: M:ClientMobile.App.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  id: OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  parent: ClientMobile.App
+  langs:
+  - csharp
+  - vb
+  name: OnLaunched(LaunchActivatedEventArgs)
+  nameWithType: App.OnLaunched(LaunchActivatedEventArgs)
+  fullName: ClientMobile.App.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Client/ClientMobile/App.xaml.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: OnLaunched
+    path: E:/Fbook/FoodBook/Client/ClientMobile/App.xaml.cs
+    startLine: 39
+  assemblies:
+  - ClientMobile
+  namespace: ClientMobile
+  summary: "\nInvoqué lorsque l&apos;application est lancée normalement par l&apos;utilisateur final.  D&apos;autres points d&apos;entrée\nseront utilisés par exemple au moment du lancement de l&apos;application pour l&apos;ouverture d&apos;un fichier spécifique.\n"
+  example: []
+  syntax:
+    content: protected override void OnLaunched(LaunchActivatedEventArgs e)
+    parameters:
+    - id: e
+      type: Windows.ApplicationModel.Activation.LaunchActivatedEventArgs
+      description: Détails concernant la requête et le processus de lancement.
+    content.vb: Protected Overrides Sub OnLaunched(e As LaunchActivatedEventArgs)
+  overridden: Windows.UI.Xaml.Application.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  overload: ClientMobile.App.OnLaunched*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: ClientMobile.App.OnNavigationFailed(System.Object,Windows.UI.Xaml.Navigation.NavigationFailedEventArgs)
+  commentId: M:ClientMobile.App.OnNavigationFailed(System.Object,Windows.UI.Xaml.Navigation.NavigationFailedEventArgs)
+  id: OnNavigationFailed(System.Object,Windows.UI.Xaml.Navigation.NavigationFailedEventArgs)
+  parent: ClientMobile.App
+  langs:
+  - csharp
+  - vb
+  name: OnNavigationFailed(Object, NavigationFailedEventArgs)
+  nameWithType: App.OnNavigationFailed(Object, NavigationFailedEventArgs)
+  fullName: ClientMobile.App.OnNavigationFailed(System.Object, Windows.UI.Xaml.Navigation.NavigationFailedEventArgs)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Client/ClientMobile/App.xaml.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: OnNavigationFailed
+    path: E:/Fbook/FoodBook/Client/ClientMobile/App.xaml.cs
+    startLine: 80
+  assemblies:
+  - ClientMobile
+  namespace: ClientMobile
+  summary: "\nAppelé lorsque la navigation vers une page donnée échoue\n"
+  example: []
+  syntax:
+    content: void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Frame à l&apos;origine de l&apos;échec de navigation.
+    - id: e
+      type: Windows.UI.Xaml.Navigation.NavigationFailedEventArgs
+      description: Détails relatifs à l&apos;échec de navigation
+    content.vb: Sub OnNavigationFailed(sender As Object, e As NavigationFailedEventArgs)
+  overload: ClientMobile.App.OnNavigationFailed*
+- uid: ClientMobile.App.OnSuspending(System.Object,Windows.ApplicationModel.SuspendingEventArgs)
+  commentId: M:ClientMobile.App.OnSuspending(System.Object,Windows.ApplicationModel.SuspendingEventArgs)
+  id: OnSuspending(System.Object,Windows.ApplicationModel.SuspendingEventArgs)
+  parent: ClientMobile.App
+  langs:
+  - csharp
+  - vb
+  name: OnSuspending(Object, SuspendingEventArgs)
+  nameWithType: App.OnSuspending(Object, SuspendingEventArgs)
+  fullName: ClientMobile.App.OnSuspending(System.Object, Windows.ApplicationModel.SuspendingEventArgs)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Client/ClientMobile/App.xaml.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: OnSuspending
+    path: E:/Fbook/FoodBook/Client/ClientMobile/App.xaml.cs
+    startLine: 92
+  assemblies:
+  - ClientMobile
+  namespace: ClientMobile
+  summary: "\nAppelé lorsque l&apos;exécution de l&apos;application est suspendue.  L&apos;état de l&apos;application est enregistré\nsans savoir si l&apos;application pourra se fermer ou reprendre sans endommager\nle contenu de la mémoire.\n"
+  example: []
+  syntax:
+    content: void OnSuspending(object sender, SuspendingEventArgs e)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Source de la requête de suspension.
+    - id: e
+      type: Windows.ApplicationModel.SuspendingEventArgs
+      description: Détails de la requête de suspension.
+    content.vb: Sub OnSuspending(sender As Object, e As SuspendingEventArgs)
+  overload: ClientMobile.App.OnSuspending*
+- uid: ClientMobile.App._contentLoaded
+  commentId: F:ClientMobile.App._contentLoaded
+  id: _contentLoaded
+  parent: ClientMobile.App
+  langs:
+  - csharp
+  - vb
+  name: _contentLoaded
+  nameWithType: App._contentLoaded
+  fullName: ClientMobile.App._contentLoaded
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Client/ClientMobile/obj/x86/Release/App.g.i.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: _contentLoaded
+    path: E:/Fbook/FoodBook/Client/ClientMobile/obj/x86/Release/App.g.i.cs
+    startLine: 31
+  assemblies:
+  - ClientMobile
+  namespace: ClientMobile
+  syntax:
+    content: bool _contentLoaded
+    return:
+      type: System.Boolean
+    content.vb: _contentLoaded As Boolean
+- uid: ClientMobile.App.InitializeComponent
+  commentId: M:ClientMobile.App.InitializeComponent
+  id: InitializeComponent
+  parent: ClientMobile.App
+  langs:
+  - csharp
+  - vb
+  name: InitializeComponent()
+  nameWithType: App.InitializeComponent()
+  fullName: ClientMobile.App.InitializeComponent()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Client/ClientMobile/obj/x86/Release/App.g.i.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: InitializeComponent
+    path: E:/Fbook/FoodBook/Client/ClientMobile/obj/x86/Release/App.g.i.cs
+    startLine: 35
+  assemblies:
+  - ClientMobile
+  namespace: ClientMobile
+  summary: "\nInitializeComponent()\n"
+  example: []
+  syntax:
+    content: public void InitializeComponent()
+    content.vb: Public Sub InitializeComponent
+  overload: ClientMobile.App.InitializeComponent*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ClientMobile
+  commentId: N:ClientMobile
+  name: ClientMobile
+  nameWithType: ClientMobile
+  fullName: ClientMobile
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Windows.UI.Xaml.Application
+  commentId: T:Windows.UI.Xaml.Application
+  parent: Windows.UI.Xaml
+  isExternal: true
+  name: Application
+  nameWithType: Application
+  fullName: Windows.UI.Xaml.Application
+- uid: Windows.UI.Xaml.IApplication
+  commentId: T:Windows.UI.Xaml.IApplication
+  parent: Windows.UI.Xaml
+  isExternal: true
+  name: IApplication
+  nameWithType: IApplication
+  fullName: Windows.UI.Xaml.IApplication
+- uid: Windows.UI.Xaml.IApplication2
+  commentId: T:Windows.UI.Xaml.IApplication2
+  parent: Windows.UI.Xaml
+  isExternal: true
+  name: IApplication2
+  nameWithType: IApplication2
+  fullName: Windows.UI.Xaml.IApplication2
+- uid: Windows.UI.Xaml.IApplication3
+  commentId: T:Windows.UI.Xaml.IApplication3
+  parent: Windows.UI.Xaml
+  isExternal: true
+  name: IApplication3
+  nameWithType: IApplication3
+  fullName: Windows.UI.Xaml.IApplication3
+- uid: Windows.UI.Xaml.IApplicationOverrides
+  commentId: T:Windows.UI.Xaml.IApplicationOverrides
+  parent: Windows.UI.Xaml
+  isExternal: true
+  name: IApplicationOverrides
+  nameWithType: IApplicationOverrides
+  fullName: Windows.UI.Xaml.IApplicationOverrides
+- uid: Windows.UI.Xaml.IApplicationOverrides2
+  commentId: T:Windows.UI.Xaml.IApplicationOverrides2
+  parent: Windows.UI.Xaml
+  isExternal: true
+  name: IApplicationOverrides2
+  nameWithType: IApplicationOverrides2
+  fullName: Windows.UI.Xaml.IApplicationOverrides2
+- uid: Windows.UI.Xaml.Application.Exit
+  commentId: M:Windows.UI.Xaml.Application.Exit
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication.Exit()
+  nameWithType: Application.IApplication.Exit()
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication.Exit()
+  nameWithType.vb: Application.Exit()
+  fullName.vb: Windows.UI.Xaml.Application.Exit()
+  name.vb: Exit()
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.Exit
+    name: IApplication.Exit
+    nameWithType: Application.IApplication.Exit
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication.Exit
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.Exit
+    name: Exit
+    nameWithType: Application.Exit
+    fullName: Windows.UI.Xaml.Application.Exit
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnActivated(Windows.ApplicationModel.Activation.IActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnActivated(Windows.ApplicationModel.Activation.IActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnActivated(IActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnActivated(IActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnActivated(Windows.ApplicationModel.Activation.IActivatedEventArgs)
+  nameWithType.vb: Application.OnActivated(IActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnActivated(Windows.ApplicationModel.Activation.IActivatedEventArgs)
+  name.vb: OnActivated(IActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnActivated(Windows.ApplicationModel.Activation.IActivatedEventArgs)
+    name: IApplicationOverrides.OnActivated
+    nameWithType: Application.IApplicationOverrides.OnActivated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.IActivatedEventArgs
+    name: IActivatedEventArgs
+    nameWithType: IActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.IActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnActivated(Windows.ApplicationModel.Activation.IActivatedEventArgs)
+    name: OnActivated
+    nameWithType: Application.OnActivated
+    fullName: Windows.UI.Xaml.Application.OnActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.IActivatedEventArgs
+    name: IActivatedEventArgs
+    nameWithType: IActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.IActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnFileActivated(Windows.ApplicationModel.Activation.FileActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnFileActivated(Windows.ApplicationModel.Activation.FileActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnFileActivated(FileActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnFileActivated(FileActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnFileActivated(Windows.ApplicationModel.Activation.FileActivatedEventArgs)
+  nameWithType.vb: Application.OnFileActivated(FileActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnFileActivated(Windows.ApplicationModel.Activation.FileActivatedEventArgs)
+  name.vb: OnFileActivated(FileActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnFileActivated(Windows.ApplicationModel.Activation.FileActivatedEventArgs)
+    name: IApplicationOverrides.OnFileActivated
+    nameWithType: Application.IApplicationOverrides.OnFileActivated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnFileActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.FileActivatedEventArgs
+    name: FileActivatedEventArgs
+    nameWithType: FileActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.FileActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnFileActivated(Windows.ApplicationModel.Activation.FileActivatedEventArgs)
+    name: OnFileActivated
+    nameWithType: Application.OnFileActivated
+    fullName: Windows.UI.Xaml.Application.OnFileActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.FileActivatedEventArgs
+    name: FileActivatedEventArgs
+    nameWithType: FileActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.FileActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnSearchActivated(Windows.ApplicationModel.Activation.SearchActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnSearchActivated(Windows.ApplicationModel.Activation.SearchActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnSearchActivated(SearchActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnSearchActivated(SearchActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnSearchActivated(Windows.ApplicationModel.Activation.SearchActivatedEventArgs)
+  nameWithType.vb: Application.OnSearchActivated(SearchActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnSearchActivated(Windows.ApplicationModel.Activation.SearchActivatedEventArgs)
+  name.vb: OnSearchActivated(SearchActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnSearchActivated(Windows.ApplicationModel.Activation.SearchActivatedEventArgs)
+    name: IApplicationOverrides.OnSearchActivated
+    nameWithType: Application.IApplicationOverrides.OnSearchActivated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnSearchActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.SearchActivatedEventArgs
+    name: SearchActivatedEventArgs
+    nameWithType: SearchActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.SearchActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnSearchActivated(Windows.ApplicationModel.Activation.SearchActivatedEventArgs)
+    name: OnSearchActivated
+    nameWithType: Application.OnSearchActivated
+    fullName: Windows.UI.Xaml.Application.OnSearchActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.SearchActivatedEventArgs
+    name: SearchActivatedEventArgs
+    nameWithType: SearchActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.SearchActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnShareTargetActivated(Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnShareTargetActivated(Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnShareTargetActivated(ShareTargetActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnShareTargetActivated(ShareTargetActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnShareTargetActivated(Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs)
+  nameWithType.vb: Application.OnShareTargetActivated(ShareTargetActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnShareTargetActivated(Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs)
+  name.vb: OnShareTargetActivated(ShareTargetActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnShareTargetActivated(Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs)
+    name: IApplicationOverrides.OnShareTargetActivated
+    nameWithType: Application.IApplicationOverrides.OnShareTargetActivated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnShareTargetActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs
+    name: ShareTargetActivatedEventArgs
+    nameWithType: ShareTargetActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnShareTargetActivated(Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs)
+    name: OnShareTargetActivated
+    nameWithType: Application.OnShareTargetActivated
+    fullName: Windows.UI.Xaml.Application.OnShareTargetActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs
+    name: ShareTargetActivatedEventArgs
+    nameWithType: ShareTargetActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.ShareTargetActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnFileOpenPickerActivated(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnFileOpenPickerActivated(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnFileOpenPickerActivated(FileOpenPickerActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnFileOpenPickerActivated(FileOpenPickerActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnFileOpenPickerActivated(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs)
+  nameWithType.vb: Application.OnFileOpenPickerActivated(FileOpenPickerActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnFileOpenPickerActivated(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs)
+  name.vb: OnFileOpenPickerActivated(FileOpenPickerActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnFileOpenPickerActivated(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs)
+    name: IApplicationOverrides.OnFileOpenPickerActivated
+    nameWithType: Application.IApplicationOverrides.OnFileOpenPickerActivated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnFileOpenPickerActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs
+    name: FileOpenPickerActivatedEventArgs
+    nameWithType: FileOpenPickerActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnFileOpenPickerActivated(Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs)
+    name: OnFileOpenPickerActivated
+    nameWithType: Application.OnFileOpenPickerActivated
+    fullName: Windows.UI.Xaml.Application.OnFileOpenPickerActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs
+    name: FileOpenPickerActivatedEventArgs
+    nameWithType: FileOpenPickerActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.FileOpenPickerActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnFileSavePickerActivated(Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnFileSavePickerActivated(Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnFileSavePickerActivated(FileSavePickerActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnFileSavePickerActivated(FileSavePickerActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnFileSavePickerActivated(Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs)
+  nameWithType.vb: Application.OnFileSavePickerActivated(FileSavePickerActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnFileSavePickerActivated(Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs)
+  name.vb: OnFileSavePickerActivated(FileSavePickerActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnFileSavePickerActivated(Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs)
+    name: IApplicationOverrides.OnFileSavePickerActivated
+    nameWithType: Application.IApplicationOverrides.OnFileSavePickerActivated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnFileSavePickerActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs
+    name: FileSavePickerActivatedEventArgs
+    nameWithType: FileSavePickerActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnFileSavePickerActivated(Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs)
+    name: OnFileSavePickerActivated
+    nameWithType: Application.OnFileSavePickerActivated
+    fullName: Windows.UI.Xaml.Application.OnFileSavePickerActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs
+    name: FileSavePickerActivatedEventArgs
+    nameWithType: FileSavePickerActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.FileSavePickerActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnCachedFileUpdaterActivated(Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnCachedFileUpdaterActivated(Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnCachedFileUpdaterActivated(CachedFileUpdaterActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnCachedFileUpdaterActivated(CachedFileUpdaterActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnCachedFileUpdaterActivated(Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs)
+  nameWithType.vb: Application.OnCachedFileUpdaterActivated(CachedFileUpdaterActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnCachedFileUpdaterActivated(Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs)
+  name.vb: OnCachedFileUpdaterActivated(CachedFileUpdaterActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnCachedFileUpdaterActivated(Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs)
+    name: IApplicationOverrides.OnCachedFileUpdaterActivated
+    nameWithType: Application.IApplicationOverrides.OnCachedFileUpdaterActivated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnCachedFileUpdaterActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs
+    name: CachedFileUpdaterActivatedEventArgs
+    nameWithType: CachedFileUpdaterActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnCachedFileUpdaterActivated(Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs)
+    name: OnCachedFileUpdaterActivated
+    nameWithType: Application.OnCachedFileUpdaterActivated
+    fullName: Windows.UI.Xaml.Application.OnCachedFileUpdaterActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs
+    name: CachedFileUpdaterActivatedEventArgs
+    nameWithType: CachedFileUpdaterActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.CachedFileUpdaterActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnWindowCreated(Windows.UI.Xaml.WindowCreatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnWindowCreated(Windows.UI.Xaml.WindowCreatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnWindowCreated(WindowCreatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnWindowCreated(WindowCreatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnWindowCreated(Windows.UI.Xaml.WindowCreatedEventArgs)
+  nameWithType.vb: Application.OnWindowCreated(WindowCreatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnWindowCreated(Windows.UI.Xaml.WindowCreatedEventArgs)
+  name.vb: OnWindowCreated(WindowCreatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnWindowCreated(Windows.UI.Xaml.WindowCreatedEventArgs)
+    name: IApplicationOverrides.OnWindowCreated
+    nameWithType: Application.IApplicationOverrides.OnWindowCreated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnWindowCreated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.UI.Xaml.WindowCreatedEventArgs
+    name: WindowCreatedEventArgs
+    nameWithType: WindowCreatedEventArgs
+    fullName: Windows.UI.Xaml.WindowCreatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnWindowCreated(Windows.UI.Xaml.WindowCreatedEventArgs)
+    name: OnWindowCreated
+    nameWithType: Application.OnWindowCreated
+    fullName: Windows.UI.Xaml.Application.OnWindowCreated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.UI.Xaml.WindowCreatedEventArgs
+    name: WindowCreatedEventArgs
+    nameWithType: WindowCreatedEventArgs
+    fullName: Windows.UI.Xaml.WindowCreatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.OnBackgroundActivated(Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnBackgroundActivated(Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides2.OnBackgroundActivated(BackgroundActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides2.OnBackgroundActivated(BackgroundActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides2.OnBackgroundActivated(Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs)
+  nameWithType.vb: Application.OnBackgroundActivated(BackgroundActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnBackgroundActivated(Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs)
+  name.vb: OnBackgroundActivated(BackgroundActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnBackgroundActivated(Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs)
+    name: IApplicationOverrides2.OnBackgroundActivated
+    nameWithType: Application.IApplicationOverrides2.OnBackgroundActivated
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides2.OnBackgroundActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs
+    name: BackgroundActivatedEventArgs
+    nameWithType: BackgroundActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnBackgroundActivated(Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs)
+    name: OnBackgroundActivated
+    nameWithType: Application.OnBackgroundActivated
+    fullName: Windows.UI.Xaml.Application.OnBackgroundActivated
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs
+    name: BackgroundActivatedEventArgs
+    nameWithType: BackgroundActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.BackgroundActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.Start(Windows.UI.Xaml.ApplicationInitializationCallback)
+  commentId: M:Windows.UI.Xaml.Application.Start(Windows.UI.Xaml.ApplicationInitializationCallback)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: Start(ApplicationInitializationCallback)
+  nameWithType: Application.Start(ApplicationInitializationCallback)
+  fullName: Windows.UI.Xaml.Application.Start(Windows.UI.Xaml.ApplicationInitializationCallback)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.Start(Windows.UI.Xaml.ApplicationInitializationCallback)
+    name: Start
+    nameWithType: Application.Start
+    fullName: Windows.UI.Xaml.Application.Start
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.UI.Xaml.ApplicationInitializationCallback
+    name: ApplicationInitializationCallback
+    nameWithType: ApplicationInitializationCallback
+    fullName: Windows.UI.Xaml.ApplicationInitializationCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.Start(Windows.UI.Xaml.ApplicationInitializationCallback)
+    name: Start
+    nameWithType: Application.Start
+    fullName: Windows.UI.Xaml.Application.Start
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.UI.Xaml.ApplicationInitializationCallback
+    name: ApplicationInitializationCallback
+    nameWithType: ApplicationInitializationCallback
+    fullName: Windows.UI.Xaml.ApplicationInitializationCallback
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+  commentId: M:Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: LoadComponent(Object, Uri)
+  nameWithType: Application.LoadComponent(Object, Uri)
+  fullName: Windows.UI.Xaml.Application.LoadComponent(System.Object, System.Uri)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+    name: LoadComponent
+    nameWithType: Application.LoadComponent
+    fullName: Windows.UI.Xaml.Application.LoadComponent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri)
+    name: LoadComponent
+    nameWithType: Application.LoadComponent
+    fullName: Windows.UI.Xaml.Application.LoadComponent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+  commentId: M:Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: LoadComponent(Object, Uri, ComponentResourceLocation)
+  nameWithType: Application.LoadComponent(Object, Uri, ComponentResourceLocation)
+  fullName: Windows.UI.Xaml.Application.LoadComponent(System.Object, System.Uri, Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+    name: LoadComponent
+    nameWithType: Application.LoadComponent
+    fullName: Windows.UI.Xaml.Application.LoadComponent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+    name: ComponentResourceLocation
+    nameWithType: ComponentResourceLocation
+    fullName: Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.LoadComponent(System.Object,System.Uri,Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation)
+    name: LoadComponent
+    nameWithType: Application.LoadComponent
+    fullName: Windows.UI.Xaml.Application.LoadComponent
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: System.Uri
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+    name: ComponentResourceLocation
+    nameWithType: ComponentResourceLocation
+    fullName: Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Xaml.Application.Resources
+  commentId: P:Windows.UI.Xaml.Application.Resources
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication.Resources
+  nameWithType: Application.IApplication.Resources
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication.Resources
+  nameWithType.vb: Application.Resources
+  fullName.vb: Windows.UI.Xaml.Application.Resources
+  name.vb: Resources
+- uid: Windows.UI.Xaml.Application.RequestedTheme
+  commentId: P:Windows.UI.Xaml.Application.RequestedTheme
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication.RequestedTheme
+  nameWithType: Application.IApplication.RequestedTheme
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication.RequestedTheme
+  nameWithType.vb: Application.RequestedTheme
+  fullName.vb: Windows.UI.Xaml.Application.RequestedTheme
+  name.vb: RequestedTheme
+- uid: Windows.UI.Xaml.Application.DebugSettings
+  commentId: P:Windows.UI.Xaml.Application.DebugSettings
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication.DebugSettings
+  nameWithType: Application.IApplication.DebugSettings
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication.DebugSettings
+  nameWithType.vb: Application.DebugSettings
+  fullName.vb: Windows.UI.Xaml.Application.DebugSettings
+  name.vb: DebugSettings
+- uid: Windows.UI.Xaml.Application.RequiresPointerMode
+  commentId: P:Windows.UI.Xaml.Application.RequiresPointerMode
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication2.RequiresPointerMode
+  nameWithType: Application.IApplication2.RequiresPointerMode
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication2.RequiresPointerMode
+  nameWithType.vb: Application.RequiresPointerMode
+  fullName.vb: Windows.UI.Xaml.Application.RequiresPointerMode
+  name.vb: RequiresPointerMode
+- uid: Windows.UI.Xaml.Application.FocusVisualKind
+  commentId: P:Windows.UI.Xaml.Application.FocusVisualKind
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication2.FocusVisualKind
+  nameWithType: Application.IApplication2.FocusVisualKind
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication2.FocusVisualKind
+  nameWithType.vb: Application.FocusVisualKind
+  fullName.vb: Windows.UI.Xaml.Application.FocusVisualKind
+  name.vb: FocusVisualKind
+- uid: Windows.UI.Xaml.Application.HighContrastAdjustment
+  commentId: P:Windows.UI.Xaml.Application.HighContrastAdjustment
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication3.HighContrastAdjustment
+  nameWithType: Application.IApplication3.HighContrastAdjustment
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication3.HighContrastAdjustment
+  nameWithType.vb: Application.HighContrastAdjustment
+  fullName.vb: Windows.UI.Xaml.Application.HighContrastAdjustment
+  name.vb: HighContrastAdjustment
+- uid: Windows.UI.Xaml.Application.Current
+  commentId: P:Windows.UI.Xaml.Application.Current
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: Current
+  nameWithType: Application.Current
+  fullName: Windows.UI.Xaml.Application.Current
+- uid: Windows.UI.Xaml.Application.Resuming
+  commentId: E:Windows.UI.Xaml.Application.Resuming
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication.Resuming
+  nameWithType: Application.IApplication.Resuming
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication.Resuming
+  nameWithType.vb: Application.Resuming
+  fullName.vb: Windows.UI.Xaml.Application.Resuming
+  name.vb: Resuming
+- uid: Windows.UI.Xaml.Application.Suspending
+  commentId: E:Windows.UI.Xaml.Application.Suspending
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication.Suspending
+  nameWithType: Application.IApplication.Suspending
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication.Suspending
+  nameWithType.vb: Application.Suspending
+  fullName.vb: Windows.UI.Xaml.Application.Suspending
+  name.vb: Suspending
+- uid: Windows.UI.Xaml.Application.UnhandledException
+  commentId: E:Windows.UI.Xaml.Application.UnhandledException
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication.UnhandledException
+  nameWithType: Application.IApplication.UnhandledException
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication.UnhandledException
+  nameWithType.vb: Application.UnhandledException
+  fullName.vb: Windows.UI.Xaml.Application.UnhandledException
+  name.vb: UnhandledException
+- uid: Windows.UI.Xaml.Application.EnteredBackground
+  commentId: E:Windows.UI.Xaml.Application.EnteredBackground
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication2.EnteredBackground
+  nameWithType: Application.IApplication2.EnteredBackground
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication2.EnteredBackground
+  nameWithType.vb: Application.EnteredBackground
+  fullName.vb: Windows.UI.Xaml.Application.EnteredBackground
+  name.vb: EnteredBackground
+- uid: Windows.UI.Xaml.Application.LeavingBackground
+  commentId: E:Windows.UI.Xaml.Application.LeavingBackground
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplication2.LeavingBackground
+  nameWithType: Application.IApplication2.LeavingBackground
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplication2.LeavingBackground
+  nameWithType.vb: Application.LeavingBackground
+  fullName.vb: Windows.UI.Xaml.Application.LeavingBackground
+  name.vb: LeavingBackground
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Windows.UI.Xaml
+  commentId: N:Windows.UI.Xaml
+  isExternal: true
+  name: Windows.UI.Xaml
+  nameWithType: Windows.UI.Xaml
+  fullName: Windows.UI.Xaml
+- uid: ClientMobile.App.#ctor*
+  commentId: Overload:ClientMobile.App.#ctor
+  name: App
+  nameWithType: App.App
+  fullName: ClientMobile.App.App
+- uid: Windows.UI.Xaml.Application.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  commentId: M:Windows.UI.Xaml.Application.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  parent: Windows.UI.Xaml.Application
+  isExternal: true
+  name: IApplicationOverrides.OnLaunched(LaunchActivatedEventArgs)
+  nameWithType: Application.IApplicationOverrides.OnLaunched(LaunchActivatedEventArgs)
+  fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  nameWithType.vb: Application.OnLaunched(LaunchActivatedEventArgs)
+  fullName.vb: Windows.UI.Xaml.Application.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+  name.vb: OnLaunched(LaunchActivatedEventArgs)
+  spec.csharp:
+  - uid: Windows.UI.Xaml.Application.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+    name: IApplicationOverrides.OnLaunched
+    nameWithType: Application.IApplicationOverrides.OnLaunched
+    fullName: Windows.UI.Xaml.Application.Windows.UI.Xaml.IApplicationOverrides.OnLaunched
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.LaunchActivatedEventArgs
+    name: LaunchActivatedEventArgs
+    nameWithType: LaunchActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.LaunchActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Windows.UI.Xaml.Application.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
+    name: OnLaunched
+    nameWithType: Application.OnLaunched
+    fullName: Windows.UI.Xaml.Application.OnLaunched
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Windows.ApplicationModel.Activation.LaunchActivatedEventArgs
+    name: LaunchActivatedEventArgs
+    nameWithType: LaunchActivatedEventArgs
+    fullName: Windows.ApplicationModel.Activation.LaunchActivatedEventArgs
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ClientMobile.App.OnLaunched*
+  commentId: Overload:ClientMobile.App.OnLaunched
+  name: OnLaunched
+  nameWithType: App.OnLaunched
+  fullName: ClientMobile.App.OnLaunched
+- uid: Windows.ApplicationModel.Activation.LaunchActivatedEventArgs
+  commentId: T:Windows.ApplicationModel.Activation.LaunchActivatedEventArgs
+  parent: Windows.ApplicationModel.Activation
+  isExternal: true
+  name: LaunchActivatedEventArgs
+  nameWithType: LaunchActivatedEventArgs
+  fullName: Windows.ApplicationModel.Activation.LaunchActivatedEventArgs
+- uid: Windows.ApplicationModel.Activation
+  commentId: N:Windows.ApplicationModel.Activation
+  isExternal: true
+  name: Windows.ApplicationModel.Activation
+  nameWithType: Windows.ApplicationModel.Activation
+  fullName: Windows.ApplicationModel.Activation
+- uid: ClientMobile.App.OnNavigationFailed*
+  commentId: Overload:ClientMobile.App.OnNavigationFailed
+  name: OnNavigationFailed
+  nameWithType: App.OnNavigationFailed
+  fullName: ClientMobile.App.OnNavigationFailed
+- uid: Windows.UI.Xaml.Navigation.NavigationFailedEventArgs
+  commentId: T:Windows.UI.Xaml.Navigation.NavigationFailedEventArgs
+  parent: Windows.UI.Xaml.Navigation
+  isExternal: true
+  name: NavigationFailedEventArgs
+  nameWithType: NavigationFailedEventArgs
+  fullName: Windows.UI.Xaml.Navigation.NavigationFailedEventArgs
+- uid: Windows.UI.Xaml.Navigation
+  commentId: N:Windows.UI.Xaml.Navigation
+  isExternal: true
+  name: Windows.UI.Xaml.Navigation
+  nameWithType: Windows.UI.Xaml.Navigation
+  fullName: Windows.UI.Xaml.Navigation
+- uid: ClientMobile.App.OnSuspending*
+  commentId: Overload:ClientMobile.App.OnSuspending
+  name: OnSuspending
+  nameWithType: App.OnSuspending
+  fullName: ClientMobile.App.OnSuspending
+- uid: Windows.ApplicationModel.SuspendingEventArgs
+  commentId: T:Windows.ApplicationModel.SuspendingEventArgs
+  parent: Windows.ApplicationModel
+  isExternal: true
+  name: SuspendingEventArgs
+  nameWithType: SuspendingEventArgs
+  fullName: Windows.ApplicationModel.SuspendingEventArgs
+- uid: Windows.ApplicationModel
+  commentId: N:Windows.ApplicationModel
+  isExternal: true
+  name: Windows.ApplicationModel
+  nameWithType: Windows.ApplicationModel
+  fullName: Windows.ApplicationModel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ClientMobile.App.InitializeComponent*
+  commentId: Overload:ClientMobile.App.InitializeComponent
+  name: InitializeComponent
+  nameWithType: App.InitializeComponent
+  fullName: ClientMobile.App.InitializeComponent

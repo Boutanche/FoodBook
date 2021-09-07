@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAL.Repository.IBookRepository
+  commentId: T:DAL.Repository.IBookRepository
+  id: IBookRepository
+  parent: DAL.Repository
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: DAL.Repository.IBookRepository
+  type: Interface
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/IBookRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: IBookRepository
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/IBookRepository.cs
+    startLine: 9
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: 'public interface IBookRepository : IGenericRepository<Book>'
+    content.vb: >-
+      Public Interface IBookRepository
+          Inherits IGenericRepository(Of Book)
+  inheritedMembers:
+  - DAL.Repository.IGenericRepository{BO.Entity.Book}.GetAllAsync
+  - DAL.Repository.IGenericRepository{BO.Entity.Book}.GetAsync(System.Int32)
+  - DAL.Repository.IGenericRepository{BO.Entity.Book}.DeleteAsync(System.Int64)
+  - DAL.Repository.IGenericRepository{BO.Entity.Book}.UpdateAsync(BO.Entity.Book)
+  - DAL.Repository.IGenericRepository{BO.Entity.Book}.InsertAsync(BO.Entity.Book)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: DAL.Repository
+  commentId: N:DAL.Repository
+  name: DAL.Repository
+  nameWithType: DAL.Repository
+  fullName: DAL.Repository
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Book}.GetAllAsync
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Book}.GetAllAsync
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Book}
+  definition: DAL.Repository.IGenericRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IGenericRepository<Book>.GetAllAsync()
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.GetAllAsync()
+  nameWithType.vb: IGenericRepository(Of Book).GetAllAsync()
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Book).GetAllAsync()
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericRepository<Book>.GetAllAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericRepository(Of Book).GetAllAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Book).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Book}.GetAsync(System.Int32)
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Book}.GetAsync(System.Int32)
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Book}
+  definition: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+  name: GetAsync(Int32)
+  nameWithType: IGenericRepository<Book>.GetAsync(Int32)
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.GetAsync(System.Int32)
+  nameWithType.vb: IGenericRepository(Of Book).GetAsync(Int32)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Book).GetAsync(System.Int32)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+    name: GetAsync
+    nameWithType: IGenericRepository<Book>.GetAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+    name: GetAsync
+    nameWithType: IGenericRepository(Of Book).GetAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Book).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Book}.DeleteAsync(System.Int64)
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Book}.DeleteAsync(System.Int64)
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Book}
+  definition: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+  name: DeleteAsync(Int64)
+  nameWithType: IGenericRepository<Book>.DeleteAsync(Int64)
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.DeleteAsync(System.Int64)
+  nameWithType.vb: IGenericRepository(Of Book).DeleteAsync(Int64)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Book).DeleteAsync(System.Int64)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+    name: DeleteAsync
+    nameWithType: IGenericRepository<Book>.DeleteAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+    name: DeleteAsync
+    nameWithType: IGenericRepository(Of Book).DeleteAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Book).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Book}.UpdateAsync(BO.Entity.Book)
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Book}.UpdateAsync(BO.Entity.Book)
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Book}
+  definition: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(Book)
+  nameWithType: IGenericRepository<Book>.UpdateAsync(Book)
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.UpdateAsync(BO.Entity.Book)
+  nameWithType.vb: IGenericRepository(Of Book).UpdateAsync(Book)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Book).UpdateAsync(BO.Entity.Book)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IGenericRepository<Book>.UpdateAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IGenericRepository(Of Book).UpdateAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Book).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Book}.InsertAsync(BO.Entity.Book)
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Book}.InsertAsync(BO.Entity.Book)
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Book}
+  definition: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+  name: InsertAsync(Book)
+  nameWithType: IGenericRepository<Book>.InsertAsync(Book)
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.InsertAsync(BO.Entity.Book)
+  nameWithType.vb: IGenericRepository(Of Book).InsertAsync(Book)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Book).InsertAsync(BO.Entity.Book)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IGenericRepository<Book>.InsertAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IGenericRepository(Of Book).InsertAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Book).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+  commentId: M:DAL.Repository.IGenericRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IGenericRepository<TEntity>.GetAllAsync()
+  fullName: DAL.Repository.IGenericRepository<TEntity>.GetAllAsync()
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllAsync()
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).GetAllAsync()
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericRepository<TEntity>.GetAllAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericRepository(Of TEntity).GetAllAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Book}
+  commentId: T:DAL.Repository.IGenericRepository{BO.Entity.Book}
+  parent: DAL.Repository
+  definition: DAL.Repository.IGenericRepository`1
+  name: IGenericRepository<Book>
+  nameWithType: IGenericRepository<Book>
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Book>
+  nameWithType.vb: IGenericRepository(Of Book)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Book)
+  name.vb: IGenericRepository(Of Book)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+  commentId: M:DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+  isExternal: true
+  name: GetAsync(Int32)
+  nameWithType: IGenericRepository<TEntity>.GetAsync(Int32)
+  fullName: DAL.Repository.IGenericRepository<TEntity>.GetAsync(System.Int32)
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAsync(Int32)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).GetAsync(System.Int32)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+    name: GetAsync
+    nameWithType: IGenericRepository<TEntity>.GetAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+    name: GetAsync
+    nameWithType: IGenericRepository(Of TEntity).GetAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+  commentId: M:DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+  isExternal: true
+  name: DeleteAsync(Int64)
+  nameWithType: IGenericRepository<TEntity>.DeleteAsync(Int64)
+  fullName: DAL.Repository.IGenericRepository<TEntity>.DeleteAsync(System.Int64)
+  nameWithType.vb: IGenericRepository(Of TEntity).DeleteAsync(Int64)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).DeleteAsync(System.Int64)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+    name: DeleteAsync
+    nameWithType: IGenericRepository<TEntity>.DeleteAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+    name: DeleteAsync
+    nameWithType: IGenericRepository(Of TEntity).DeleteAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+  commentId: M:DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(TEntity)
+  nameWithType: IGenericRepository<TEntity>.UpdateAsync(TEntity)
+  fullName: DAL.Repository.IGenericRepository<TEntity>.UpdateAsync(TEntity)
+  nameWithType.vb: IGenericRepository(Of TEntity).UpdateAsync(TEntity)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).UpdateAsync(TEntity)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IGenericRepository<TEntity>.UpdateAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IGenericRepository(Of TEntity).UpdateAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+  commentId: M:DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+  name: InsertAsync(TEntity)
+  nameWithType: IGenericRepository<TEntity>.InsertAsync(TEntity)
+  fullName: DAL.Repository.IGenericRepository<TEntity>.InsertAsync(TEntity)
+  nameWithType.vb: IGenericRepository(Of TEntity).InsertAsync(TEntity)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).InsertAsync(TEntity)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IGenericRepository<TEntity>.InsertAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IGenericRepository(Of TEntity).InsertAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1
+  commentId: T:DAL.Repository.IGenericRepository`1
+  name: IGenericRepository<TEntity>
+  nameWithType: IGenericRepository<TEntity>
+  fullName: DAL.Repository.IGenericRepository<TEntity>
+  nameWithType.vb: IGenericRepository(Of TEntity)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity)
+  name.vb: IGenericRepository(Of TEntity)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )

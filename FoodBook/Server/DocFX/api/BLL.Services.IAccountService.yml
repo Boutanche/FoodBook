@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: BLL.Services.IAccountService
+  commentId: T:BLL.Services.IAccountService
+  id: IAccountService
+  parent: BLL.Services
+  children:
+  - BLL.Services.IAccountService.Login(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IAccountService
+  nameWithType: IAccountService
+  fullName: BLL.Services.IAccountService
+  type: Interface
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/IAccountService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: IAccountService
+    path: E:/Fbook/FoodBook/Server/BLL/Services/IAccountService.cs
+    startLine: 13
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public interface IAccountService
+    content.vb: Public Interface IAccountService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: BLL.Services.IAccountService.Login(System.String,System.String)
+  commentId: M:BLL.Services.IAccountService.Login(System.String,System.String)
+  id: Login(System.String,System.String)
+  parent: BLL.Services.IAccountService
+  langs:
+  - csharp
+  - vb
+  name: Login(String, String)
+  nameWithType: IAccountService.Login(String, String)
+  fullName: BLL.Services.IAccountService.Login(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/IAccountService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Login
+    path: E:/Fbook/FoodBook/Server/BLL/Services/IAccountService.cs
+    startLine: 21
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\nLogin\n"
+  example: []
+  syntax:
+    content: Task<LoginResponse> Login(string username, string password)
+    parameters:
+    - id: username
+      type: System.String
+      description: ''
+    - id: password
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.DTO.Responses.LoginResponse}
+      description: ''
+    content.vb: Function Login(username As String, password As String) As Task(Of LoginResponse)
+  overload: BLL.Services.IAccountService.Login*
+references:
+- uid: BLL.Services
+  commentId: N:BLL.Services
+  name: BLL.Services
+  nameWithType: BLL.Services
+  fullName: BLL.Services
+- uid: BLL.Services.IAccountService.Login*
+  commentId: Overload:BLL.Services.IAccountService.Login
+  name: Login
+  nameWithType: IAccountService.Login
+  fullName: BLL.Services.IAccountService.Login
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{BO.DTO.Responses.LoginResponse}
+  commentId: T:System.Threading.Tasks.Task{BO.DTO.Responses.LoginResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<LoginResponse>
+  nameWithType: Task<LoginResponse>
+  fullName: System.Threading.Tasks.Task<BO.DTO.Responses.LoginResponse>
+  nameWithType.vb: Task(Of LoginResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.DTO.Responses.LoginResponse)
+  name.vb: Task(Of LoginResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.DTO.Responses.LoginResponse
+    name: LoginResponse
+    nameWithType: LoginResponse
+    fullName: BO.DTO.Responses.LoginResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.DTO.Responses.LoginResponse
+    name: LoginResponse
+    nameWithType: LoginResponse
+    fullName: BO.DTO.Responses.LoginResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

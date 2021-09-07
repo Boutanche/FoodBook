@@ -1,0 +1,1079 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnitTest.Services.FakeLibrairiService
+  commentId: T:UnitTest.Services.FakeLibrairiService
+  id: FakeLibrairiService
+  parent: UnitTest.Services
+  children:
+  - UnitTest.Services.FakeLibrairiService.booksDB
+  - UnitTest.Services.FakeLibrairiService.CreateBook(BO.Entity.Book)
+  - UnitTest.Services.FakeLibrairiService.GetAllBooks
+  - UnitTest.Services.FakeLibrairiService.GetBookById(System.Int32)
+  - UnitTest.Services.FakeLibrairiService.ModifyBook(BO.Entity.Book)
+  - UnitTest.Services.FakeLibrairiService.RemoveBookById(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: FakeLibrairiService
+  nameWithType: FakeLibrairiService
+  fullName: UnitTest.Services.FakeLibrairiService
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: FakeLibrairiService
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+    startLine: 13
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nFaux service indépendant de la DAL.\n"
+  example: []
+  syntax:
+    content: 'class FakeLibrairiService : ILibrairiService'
+    content.vb: >-
+      Class FakeLibrairiService
+          Implements ILibrairiService
+  inheritance:
+  - System.Object
+  implements:
+  - BLL.Services.ILibrairiService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - class
+  modifiers.vb:
+  - Class
+- uid: UnitTest.Services.FakeLibrairiService.booksDB
+  commentId: F:UnitTest.Services.FakeLibrairiService.booksDB
+  id: booksDB
+  parent: UnitTest.Services.FakeLibrairiService
+  langs:
+  - csharp
+  - vb
+  name: booksDB
+  nameWithType: FakeLibrairiService.booksDB
+  fullName: UnitTest.Services.FakeLibrairiService.booksDB
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: booksDB
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+    startLine: 16
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public List<Book> booksDB
+    return:
+      type: System.Collections.Generic.List{BO.Entity.Book}
+    content.vb: Public booksDB As List(Of Book)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeLibrairiService.CreateBook(BO.Entity.Book)
+  commentId: M:UnitTest.Services.FakeLibrairiService.CreateBook(BO.Entity.Book)
+  id: CreateBook(BO.Entity.Book)
+  parent: UnitTest.Services.FakeLibrairiService
+  langs:
+  - csharp
+  - vb
+  name: CreateBook(Book)
+  nameWithType: FakeLibrairiService.CreateBook(Book)
+  fullName: UnitTest.Services.FakeLibrairiService.CreateBook(BO.Entity.Book)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: CreateBook
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+    startLine: 23
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Book> CreateBook(Book book)
+    parameters:
+    - id: book
+      type: BO.Entity.Book
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Book}
+    content.vb: Public Function CreateBook(book As Book) As Task(Of Book)
+  overload: UnitTest.Services.FakeLibrairiService.CreateBook*
+  implements:
+  - BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeLibrairiService.GetAllBooks
+  commentId: M:UnitTest.Services.FakeLibrairiService.GetAllBooks
+  id: GetAllBooks
+  parent: UnitTest.Services.FakeLibrairiService
+  langs:
+  - csharp
+  - vb
+  name: GetAllBooks()
+  nameWithType: FakeLibrairiService.GetAllBooks()
+  fullName: UnitTest.Services.FakeLibrairiService.GetAllBooks()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllBooks
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+    startLine: 28
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<List<Book>> GetAllBooks()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Book}}
+    content.vb: Public Function GetAllBooks As Task(Of List(Of Book))
+  overload: UnitTest.Services.FakeLibrairiService.GetAllBooks*
+  implements:
+  - BLL.Services.ILibrairiService.GetAllBooks
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeLibrairiService.GetBookById(System.Int32)
+  commentId: M:UnitTest.Services.FakeLibrairiService.GetBookById(System.Int32)
+  id: GetBookById(System.Int32)
+  parent: UnitTest.Services.FakeLibrairiService
+  langs:
+  - csharp
+  - vb
+  name: GetBookById(Int32)
+  nameWithType: FakeLibrairiService.GetBookById(Int32)
+  fullName: UnitTest.Services.FakeLibrairiService.GetBookById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetBookById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+    startLine: 34
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Book> GetBookById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Book}
+    content.vb: Public Function GetBookById(id As Integer) As Task(Of Book)
+  overload: UnitTest.Services.FakeLibrairiService.GetBookById*
+  implements:
+  - BLL.Services.ILibrairiService.GetBookById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeLibrairiService.ModifyBook(BO.Entity.Book)
+  commentId: M:UnitTest.Services.FakeLibrairiService.ModifyBook(BO.Entity.Book)
+  id: ModifyBook(BO.Entity.Book)
+  parent: UnitTest.Services.FakeLibrairiService
+  langs:
+  - csharp
+  - vb
+  name: ModifyBook(Book)
+  nameWithType: FakeLibrairiService.ModifyBook(Book)
+  fullName: UnitTest.Services.FakeLibrairiService.ModifyBook(BO.Entity.Book)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ModifyBook
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+    startLine: 41
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Book> ModifyBook(Book book)
+    parameters:
+    - id: book
+      type: BO.Entity.Book
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Book}
+    content.vb: Public Function ModifyBook(book As Book) As Task(Of Book)
+  overload: UnitTest.Services.FakeLibrairiService.ModifyBook*
+  implements:
+  - BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeLibrairiService.RemoveBookById(System.Int32)
+  commentId: M:UnitTest.Services.FakeLibrairiService.RemoveBookById(System.Int32)
+  id: RemoveBookById(System.Int32)
+  parent: UnitTest.Services.FakeLibrairiService
+  langs:
+  - csharp
+  - vb
+  name: RemoveBookById(Int32)
+  nameWithType: FakeLibrairiService.RemoveBookById(Int32)
+  fullName: UnitTest.Services.FakeLibrairiService.RemoveBookById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: RemoveBookById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeLibrairiService.cs
+    startLine: 55
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<bool> RemoveBookById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function RemoveBookById(id As Integer) As Task(Of Boolean)
+  overload: UnitTest.Services.FakeLibrairiService.RemoveBookById*
+  implements:
+  - BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: UnitTest.Services
+  commentId: N:UnitTest.Services
+  name: UnitTest.Services
+  nameWithType: UnitTest.Services
+  fullName: UnitTest.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BLL.Services.ILibrairiService
+  commentId: T:BLL.Services.ILibrairiService
+  parent: BLL.Services
+  name: ILibrairiService
+  nameWithType: ILibrairiService
+  fullName: BLL.Services.ILibrairiService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BLL.Services
+  commentId: N:BLL.Services
+  name: BLL.Services
+  nameWithType: BLL.Services
+  fullName: BLL.Services
+- uid: System.Collections.Generic.List{BO.Entity.Book}
+  commentId: T:System.Collections.Generic.List{BO.Entity.Book}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Book>
+  nameWithType: List<Book>
+  fullName: System.Collections.Generic.List<BO.Entity.Book>
+  nameWithType.vb: List(Of Book)
+  fullName.vb: System.Collections.Generic.List(Of BO.Entity.Book)
+  name.vb: List(Of Book)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: UnitTest.Services.FakeLibrairiService.CreateBook*
+  commentId: Overload:UnitTest.Services.FakeLibrairiService.CreateBook
+  name: CreateBook
+  nameWithType: FakeLibrairiService.CreateBook
+  fullName: UnitTest.Services.FakeLibrairiService.CreateBook
+- uid: BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+  commentId: M:BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+  parent: BLL.Services.ILibrairiService
+  name: CreateBook(Book)
+  nameWithType: ILibrairiService.CreateBook(Book)
+  fullName: BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+  spec.csharp:
+  - uid: BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+    name: CreateBook
+    nameWithType: ILibrairiService.CreateBook
+    fullName: BLL.Services.ILibrairiService.CreateBook
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+    name: CreateBook
+    nameWithType: ILibrairiService.CreateBook
+    fullName: BLL.Services.ILibrairiService.CreateBook
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.Book
+  commentId: T:BO.Entity.Book
+  parent: BO.Entity
+  name: Book
+  nameWithType: Book
+  fullName: BO.Entity.Book
+- uid: System.Threading.Tasks.Task{BO.Entity.Book}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.Book}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Book>
+  nameWithType: Task<Book>
+  fullName: System.Threading.Tasks.Task<BO.Entity.Book>
+  nameWithType.vb: Task(Of Book)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.Book)
+  name.vb: Task(Of Book)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity
+  commentId: N:BO.Entity
+  name: BO.Entity
+  nameWithType: BO.Entity
+  fullName: BO.Entity
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: UnitTest.Services.FakeLibrairiService.GetAllBooks*
+  commentId: Overload:UnitTest.Services.FakeLibrairiService.GetAllBooks
+  name: GetAllBooks
+  nameWithType: FakeLibrairiService.GetAllBooks
+  fullName: UnitTest.Services.FakeLibrairiService.GetAllBooks
+- uid: BLL.Services.ILibrairiService.GetAllBooks
+  commentId: M:BLL.Services.ILibrairiService.GetAllBooks
+  parent: BLL.Services.ILibrairiService
+  name: GetAllBooks()
+  nameWithType: ILibrairiService.GetAllBooks()
+  fullName: BLL.Services.ILibrairiService.GetAllBooks()
+  spec.csharp:
+  - uid: BLL.Services.ILibrairiService.GetAllBooks
+    name: GetAllBooks
+    nameWithType: ILibrairiService.GetAllBooks
+    fullName: BLL.Services.ILibrairiService.GetAllBooks
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.ILibrairiService.GetAllBooks
+    name: GetAllBooks
+    nameWithType: ILibrairiService.GetAllBooks
+    fullName: BLL.Services.ILibrairiService.GetAllBooks
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Book}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Book}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Book>>
+  nameWithType: Task<List<Book>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<BO.Entity.Book>>
+  nameWithType.vb: Task(Of List(Of Book))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of BO.Entity.Book))
+  name.vb: Task(Of List(Of Book))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeLibrairiService.GetBookById*
+  commentId: Overload:UnitTest.Services.FakeLibrairiService.GetBookById
+  name: GetBookById
+  nameWithType: FakeLibrairiService.GetBookById
+  fullName: UnitTest.Services.FakeLibrairiService.GetBookById
+- uid: BLL.Services.ILibrairiService.GetBookById(System.Int32)
+  commentId: M:BLL.Services.ILibrairiService.GetBookById(System.Int32)
+  parent: BLL.Services.ILibrairiService
+  isExternal: true
+  name: GetBookById(Int32)
+  nameWithType: ILibrairiService.GetBookById(Int32)
+  fullName: BLL.Services.ILibrairiService.GetBookById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.ILibrairiService.GetBookById(System.Int32)
+    name: GetBookById
+    nameWithType: ILibrairiService.GetBookById
+    fullName: BLL.Services.ILibrairiService.GetBookById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.ILibrairiService.GetBookById(System.Int32)
+    name: GetBookById
+    nameWithType: ILibrairiService.GetBookById
+    fullName: BLL.Services.ILibrairiService.GetBookById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnitTest.Services.FakeLibrairiService.ModifyBook*
+  commentId: Overload:UnitTest.Services.FakeLibrairiService.ModifyBook
+  name: ModifyBook
+  nameWithType: FakeLibrairiService.ModifyBook
+  fullName: UnitTest.Services.FakeLibrairiService.ModifyBook
+- uid: BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+  commentId: M:BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+  parent: BLL.Services.ILibrairiService
+  name: ModifyBook(Book)
+  nameWithType: ILibrairiService.ModifyBook(Book)
+  fullName: BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+  spec.csharp:
+  - uid: BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+    name: ModifyBook
+    nameWithType: ILibrairiService.ModifyBook
+    fullName: BLL.Services.ILibrairiService.ModifyBook
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+    name: ModifyBook
+    nameWithType: ILibrairiService.ModifyBook
+    fullName: BLL.Services.ILibrairiService.ModifyBook
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeLibrairiService.RemoveBookById*
+  commentId: Overload:UnitTest.Services.FakeLibrairiService.RemoveBookById
+  name: RemoveBookById
+  nameWithType: FakeLibrairiService.RemoveBookById
+  fullName: UnitTest.Services.FakeLibrairiService.RemoveBookById
+- uid: BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+  commentId: M:BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+  parent: BLL.Services.ILibrairiService
+  isExternal: true
+  name: RemoveBookById(Int32)
+  nameWithType: ILibrairiService.RemoveBookById(Int32)
+  fullName: BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+    name: RemoveBookById
+    nameWithType: ILibrairiService.RemoveBookById
+    fullName: BLL.Services.ILibrairiService.RemoveBookById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+    name: RemoveBookById
+    nameWithType: ILibrairiService.RemoveBookById
+    fullName: BLL.Services.ILibrairiService.RemoveBookById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

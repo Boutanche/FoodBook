@@ -299,8 +299,8 @@
             <summary>
             Get a Dish By an ID
             </summary>
-            <param name="id">Int</param>
-            <returns>Dish</returns>
+            <param name="id">Identifiant unique du plat</param>
+            <returns>Renvoi le plat si trouvé</returns>
         </member>
         <member name="M:BLL.Services.RestaurantService.CreateDish(BO.Entity.Dish)">
             <summary>

@@ -1,0 +1,4144 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnitTest.Services.FakeRestaurantService
+  commentId: T:UnitTest.Services.FakeRestaurantService
+  id: FakeRestaurantService
+  parent: UnitTest.Services
+  children:
+  - UnitTest.Services.FakeRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  - UnitTest.Services.FakeRestaurantService.CreateDish(BO.Entity.Dish)
+  - UnitTest.Services.FakeRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+  - UnitTest.Services.FakeRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  - UnitTest.Services.FakeRestaurantService.CreateMenu(BO.Entity.Menu)
+  - UnitTest.Services.FakeRestaurantService.CreateService(BO.Entity.Service)
+  - UnitTest.Services.FakeRestaurantService.dishFakeDB
+  - UnitTest.Services.FakeRestaurantService.GetAllDish
+  - UnitTest.Services.FakeRestaurantService.GetAllIngredients
+  - UnitTest.Services.FakeRestaurantService.GetAllListOfIngredient
+  - UnitTest.Services.FakeRestaurantService.GetAllMenu
+  - UnitTest.Services.FakeRestaurantService.GetAllService
+  - UnitTest.Services.FakeRestaurantService.GetAllTypeOfDish
+  - UnitTest.Services.FakeRestaurantService.GetDishById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.GetDishByName(System.String)
+  - UnitTest.Services.FakeRestaurantService.GetIdMenuByDate(System.DateTime)
+  - UnitTest.Services.FakeRestaurantService.GetIngredientById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.GetIngredientsOfDishById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.GetMenuById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.GetServiceById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.GetServicesByIdMenu(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.GetServicesOfMenuById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.GetTypeOfDishById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.ingredientsFakeDB
+  - UnitTest.Services.FakeRestaurantService.menuFakeDB
+  - UnitTest.Services.FakeRestaurantService.ModifyDish(BO.Entity.Dish)
+  - UnitTest.Services.FakeRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+  - UnitTest.Services.FakeRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  - UnitTest.Services.FakeRestaurantService.NextMenu(System.DateTime)
+  - UnitTest.Services.FakeRestaurantService.PreviousMenu(System.DateTime)
+  - UnitTest.Services.FakeRestaurantService.RemoveDishById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  - UnitTest.Services.FakeRestaurantService.RemoveIngredientById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.RemoveListOfIngredientById(System.Int32)
+  - UnitTest.Services.FakeRestaurantService.serviceFakeDB
+  langs:
+  - csharp
+  - vb
+  name: FakeRestaurantService
+  nameWithType: FakeRestaurantService
+  fullName: UnitTest.Services.FakeRestaurantService
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: FakeRestaurantService
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 10
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: 'class FakeRestaurantService : IRestaurantService'
+    content.vb: >-
+      Class FakeRestaurantService
+          Implements IRestaurantService
+  inheritance:
+  - System.Object
+  implements:
+  - BLL.Services.IRestaurantService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - class
+  modifiers.vb:
+  - Class
+- uid: UnitTest.Services.FakeRestaurantService.ingredientsFakeDB
+  commentId: F:UnitTest.Services.FakeRestaurantService.ingredientsFakeDB
+  id: ingredientsFakeDB
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: ingredientsFakeDB
+  nameWithType: FakeRestaurantService.ingredientsFakeDB
+  fullName: UnitTest.Services.FakeRestaurantService.ingredientsFakeDB
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ingredientsFakeDB
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 17
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nCreate Fake List Of Fake Ingredients\n"
+  example: []
+  syntax:
+    content: public List<Ingredients> ingredientsFakeDB
+    return:
+      type: System.Collections.Generic.List{BO.Entity.Ingredients}
+    content.vb: Public ingredientsFakeDB As List(Of Ingredients)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+  commentId: M:UnitTest.Services.FakeRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+  id: CreateIngredient(BO.Entity.Ingredients)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: CreateIngredient(Ingredients)
+  nameWithType: FakeRestaurantService.CreateIngredient(Ingredients)
+  fullName: UnitTest.Services.FakeRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: CreateIngredient
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 31
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nCreate a fake ingredient \n"
+  example: []
+  syntax:
+    content: public Task<Ingredients> CreateIngredient(Ingredients ingredient)
+    parameters:
+    - id: ingredient
+      type: BO.Entity.Ingredients
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Ingredients}
+      description: Ingredients
+    content.vb: Public Function CreateIngredient(ingredient As Ingredients) As Task(Of Ingredients)
+  overload: UnitTest.Services.FakeRestaurantService.CreateIngredient*
+  implements:
+  - BLL.Services.IRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetAllIngredients
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetAllIngredients
+  id: GetAllIngredients
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetAllIngredients()
+  nameWithType: FakeRestaurantService.GetAllIngredients()
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllIngredients()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllIngredients
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 40
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nGet all fake igredient\n"
+  example: []
+  syntax:
+    content: public Task<List<Ingredients>> GetAllIngredients()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Ingredients}}
+      description: ingredidentFakeDB
+    content.vb: Public Function GetAllIngredients As Task(Of List(Of Ingredients))
+  overload: UnitTest.Services.FakeRestaurantService.GetAllIngredients*
+  implements:
+  - BLL.Services.IRestaurantService.GetAllIngredients
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetIngredientById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetIngredientById(System.Int32)
+  id: GetIngredientById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetIngredientById(Int32)
+  nameWithType: FakeRestaurantService.GetIngredientById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetIngredientById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetIngredientById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 51
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nGet Ingredient By Id\n"
+  example: []
+  syntax:
+    content: public Task<Ingredients> GetIngredientById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Ingredients}
+      description: Ingredients
+    content.vb: Public Function GetIngredientById(id As Integer) As Task(Of Ingredients)
+  overload: UnitTest.Services.FakeRestaurantService.GetIngredientById*
+  implements:
+  - BLL.Services.IRestaurantService.GetIngredientById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+  commentId: M:UnitTest.Services.FakeRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+  id: ModifyIngredient(BO.Entity.Ingredients)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: ModifyIngredient(Ingredients)
+  nameWithType: FakeRestaurantService.ModifyIngredient(Ingredients)
+  fullName: UnitTest.Services.FakeRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ModifyIngredient
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 60
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nModify Ingredient\n"
+  example: []
+  syntax:
+    content: public Task<Ingredients> ModifyIngredient(Ingredients ingredient)
+    parameters:
+    - id: ingredient
+      type: BO.Entity.Ingredients
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Ingredients}
+      description: Ingredients
+    content.vb: Public Function ModifyIngredient(ingredient As Ingredients) As Task(Of Ingredients)
+  overload: UnitTest.Services.FakeRestaurantService.ModifyIngredient*
+  implements:
+  - BLL.Services.IRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.RemoveIngredientById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.RemoveIngredientById(System.Int32)
+  id: RemoveIngredientById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: RemoveIngredientById(Int32)
+  nameWithType: FakeRestaurantService.RemoveIngredientById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.RemoveIngredientById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: RemoveIngredientById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 82
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nRemove Ingredient by id\n"
+  example: []
+  syntax:
+    content: public Task<bool> RemoveIngredientById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: ''
+    content.vb: Public Function RemoveIngredientById(id As Integer) As Task(Of Boolean)
+  overload: UnitTest.Services.FakeRestaurantService.RemoveIngredientById*
+  implements:
+  - BLL.Services.IRestaurantService.RemoveIngredientById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetIngredientsOfDishById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetIngredientsOfDishById(System.Int32)
+  id: GetIngredientsOfDishById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetIngredientsOfDishById(Int32)
+  nameWithType: FakeRestaurantService.GetIngredientsOfDishById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetIngredientsOfDishById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetIngredientsOfDishById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 87
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Dish> GetIngredientsOfDishById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Dish}
+    content.vb: Public Function GetIngredientsOfDishById(id As Integer) As Task(Of Dish)
+  overload: UnitTest.Services.FakeRestaurantService.GetIngredientsOfDishById*
+  implements:
+  - BLL.Services.IRestaurantService.GetIngredientsOfDishById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.dishFakeDB
+  commentId: F:UnitTest.Services.FakeRestaurantService.dishFakeDB
+  id: dishFakeDB
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: dishFakeDB
+  nameWithType: FakeRestaurantService.dishFakeDB
+  fullName: UnitTest.Services.FakeRestaurantService.dishFakeDB
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: dishFakeDB
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 97
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nCreate Fake List Of Fake Dish\n"
+  example: []
+  syntax:
+    content: public List<Dish> dishFakeDB
+    return:
+      type: System.Collections.Generic.List{BO.Entity.Dish}
+    content.vb: Public dishFakeDB As List(Of Dish)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetAllDish
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetAllDish
+  id: GetAllDish
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetAllDish()
+  nameWithType: FakeRestaurantService.GetAllDish()
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllDish()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllDish
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 109
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nFake Get All Dish\n"
+  example: []
+  syntax:
+    content: public Task<List<Dish>> GetAllDish()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Dish}}
+      description: ''
+    content.vb: Public Function GetAllDish As Task(Of List(Of Dish))
+  overload: UnitTest.Services.FakeRestaurantService.GetAllDish*
+  implements:
+  - BLL.Services.IRestaurantService.GetAllDish
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.CreateDish(BO.Entity.Dish)
+  commentId: M:UnitTest.Services.FakeRestaurantService.CreateDish(BO.Entity.Dish)
+  id: CreateDish(BO.Entity.Dish)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: CreateDish(Dish)
+  nameWithType: FakeRestaurantService.CreateDish(Dish)
+  fullName: UnitTest.Services.FakeRestaurantService.CreateDish(BO.Entity.Dish)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: CreateDish
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 118
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nFake Create Dish\n"
+  example: []
+  syntax:
+    content: public Task<Dish> CreateDish(Dish dish)
+    parameters:
+    - id: dish
+      type: BO.Entity.Dish
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Dish}
+      description: ''
+    content.vb: Public Function CreateDish(dish As Dish) As Task(Of Dish)
+  overload: UnitTest.Services.FakeRestaurantService.CreateDish*
+  implements:
+  - BLL.Services.IRestaurantService.CreateDish(BO.Entity.Dish)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetDishById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetDishById(System.Int32)
+  id: GetDishById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetDishById(Int32)
+  nameWithType: FakeRestaurantService.GetDishById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetDishById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetDishById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 127
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nFake Get Dish By Id \n"
+  example: []
+  syntax:
+    content: public Task<Dish> GetDishById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Dish}
+      description: ''
+    content.vb: Public Function GetDishById(id As Integer) As Task(Of Dish)
+  overload: UnitTest.Services.FakeRestaurantService.GetDishById*
+  implements:
+  - BLL.Services.IRestaurantService.GetDishById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.ModifyDish(BO.Entity.Dish)
+  commentId: M:UnitTest.Services.FakeRestaurantService.ModifyDish(BO.Entity.Dish)
+  id: ModifyDish(BO.Entity.Dish)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: ModifyDish(Dish)
+  nameWithType: FakeRestaurantService.ModifyDish(Dish)
+  fullName: UnitTest.Services.FakeRestaurantService.ModifyDish(BO.Entity.Dish)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ModifyDish
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 131
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Dish> ModifyDish(Dish dish)
+    parameters:
+    - id: dish
+      type: BO.Entity.Dish
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Dish}
+    content.vb: Public Function ModifyDish(dish As Dish) As Task(Of Dish)
+  overload: UnitTest.Services.FakeRestaurantService.ModifyDish*
+  implements:
+  - BLL.Services.IRestaurantService.ModifyDish(BO.Entity.Dish)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.RemoveDishById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.RemoveDishById(System.Int32)
+  id: RemoveDishById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: RemoveDishById(Int32)
+  nameWithType: FakeRestaurantService.RemoveDishById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.RemoveDishById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: RemoveDishById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 148
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<bool> RemoveDishById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function RemoveDishById(id As Integer) As Task(Of Boolean)
+  overload: UnitTest.Services.FakeRestaurantService.RemoveDishById*
+  implements:
+  - BLL.Services.IRestaurantService.RemoveDishById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetDishByName(System.String)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetDishByName(System.String)
+  id: GetDishByName(System.String)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetDishByName(String)
+  nameWithType: FakeRestaurantService.GetDishByName(String)
+  fullName: UnitTest.Services.FakeRestaurantService.GetDishByName(System.String)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetDishByName
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 154
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Dish> GetDishByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Dish}
+    content.vb: Public Function GetDishByName(name As String) As Task(Of Dish)
+  overload: UnitTest.Services.FakeRestaurantService.GetDishByName*
+  implements:
+  - BLL.Services.IRestaurantService.GetDishByName(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetAllTypeOfDish
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetAllTypeOfDish
+  id: GetAllTypeOfDish
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetAllTypeOfDish()
+  nameWithType: FakeRestaurantService.GetAllTypeOfDish()
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllTypeOfDish()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllTypeOfDish
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 162
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<List<TypeOfDish>> GetAllTypeOfDish()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.TypeOfDish}}
+    content.vb: Public Function GetAllTypeOfDish As Task(Of List(Of TypeOfDish))
+  overload: UnitTest.Services.FakeRestaurantService.GetAllTypeOfDish*
+  implements:
+  - BLL.Services.IRestaurantService.GetAllTypeOfDish
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetTypeOfDishById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetTypeOfDishById(System.Int32)
+  id: GetTypeOfDishById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetTypeOfDishById(Int32)
+  nameWithType: FakeRestaurantService.GetTypeOfDishById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetTypeOfDishById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetTypeOfDishById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 167
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<TypeOfDish> GetTypeOfDishById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.TypeOfDish}
+    content.vb: Public Function GetTypeOfDishById(id As Integer) As Task(Of TypeOfDish)
+  overload: UnitTest.Services.FakeRestaurantService.GetTypeOfDishById*
+  implements:
+  - BLL.Services.IRestaurantService.GetTypeOfDishById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.serviceFakeDB
+  commentId: F:UnitTest.Services.FakeRestaurantService.serviceFakeDB
+  id: serviceFakeDB
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: serviceFakeDB
+  nameWithType: FakeRestaurantService.serviceFakeDB
+  fullName: UnitTest.Services.FakeRestaurantService.serviceFakeDB
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: serviceFakeDB
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 175
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public List<Service> serviceFakeDB
+    return:
+      type: System.Collections.Generic.List{BO.Entity.Service}
+    content.vb: Public serviceFakeDB As List(Of Service)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetAllService
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetAllService
+  id: GetAllService
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetAllService()
+  nameWithType: FakeRestaurantService.GetAllService()
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllService()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllService
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 184
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<List<Service>> GetAllService()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Service}}
+    content.vb: Public Function GetAllService As Task(Of List(Of Service))
+  overload: UnitTest.Services.FakeRestaurantService.GetAllService*
+  implements:
+  - BLL.Services.IRestaurantService.GetAllService
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetServiceById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetServiceById(System.Int32)
+  id: GetServiceById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceById(Int32)
+  nameWithType: FakeRestaurantService.GetServiceById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetServiceById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetServiceById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 189
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Service> GetServiceById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Service}
+    content.vb: Public Function GetServiceById(id As Integer) As Task(Of Service)
+  overload: UnitTest.Services.FakeRestaurantService.GetServiceById*
+  implements:
+  - BLL.Services.IRestaurantService.GetServiceById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetServicesByIdMenu(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetServicesByIdMenu(System.Int32)
+  id: GetServicesByIdMenu(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetServicesByIdMenu(Int32)
+  nameWithType: FakeRestaurantService.GetServicesByIdMenu(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetServicesByIdMenu(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetServicesByIdMenu
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 194
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<List<Service>> GetServicesByIdMenu(int idMenu)
+    parameters:
+    - id: idMenu
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Service}}
+    content.vb: Public Function GetServicesByIdMenu(idMenu As Integer) As Task(Of List(Of Service))
+  overload: UnitTest.Services.FakeRestaurantService.GetServicesByIdMenu*
+  implements:
+  - BLL.Services.IRestaurantService.GetServicesByIdMenu(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.CreateService(BO.Entity.Service)
+  commentId: M:UnitTest.Services.FakeRestaurantService.CreateService(BO.Entity.Service)
+  id: CreateService(BO.Entity.Service)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: CreateService(Service)
+  nameWithType: FakeRestaurantService.CreateService(Service)
+  fullName: UnitTest.Services.FakeRestaurantService.CreateService(BO.Entity.Service)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: CreateService
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 199
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Service> CreateService(Service service)
+    parameters:
+    - id: service
+      type: BO.Entity.Service
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Service}
+    content.vb: Public Function CreateService(service As Service) As Task(Of Service)
+  overload: UnitTest.Services.FakeRestaurantService.CreateService*
+  implements:
+  - BLL.Services.IRestaurantService.CreateService(BO.Entity.Service)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  commentId: M:UnitTest.Services.FakeRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  id: AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: AddDishForThisService(Dish, Service)
+  nameWithType: FakeRestaurantService.AddDishForThisService(Dish, Service)
+  fullName: UnitTest.Services.FakeRestaurantService.AddDishForThisService(BO.Entity.Dish, BO.Entity.Service)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: AddDishForThisService
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 204
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<bool> AddDishForThisService(Dish dish, Service service)
+    parameters:
+    - id: dish
+      type: BO.Entity.Dish
+    - id: service
+      type: BO.Entity.Service
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function AddDishForThisService(dish As Dish, service As Service) As Task(Of Boolean)
+  overload: UnitTest.Services.FakeRestaurantService.AddDishForThisService*
+  implements:
+  - BLL.Services.IRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  commentId: M:UnitTest.Services.FakeRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  id: RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: RemoveDishForThisService(Dish, Service)
+  nameWithType: FakeRestaurantService.RemoveDishForThisService(Dish, Service)
+  fullName: UnitTest.Services.FakeRestaurantService.RemoveDishForThisService(BO.Entity.Dish, BO.Entity.Service)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: RemoveDishForThisService
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 209
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<bool> RemoveDishForThisService(Dish dish, Service service)
+    parameters:
+    - id: dish
+      type: BO.Entity.Dish
+    - id: service
+      type: BO.Entity.Service
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function RemoveDishForThisService(dish As Dish, service As Service) As Task(Of Boolean)
+  overload: UnitTest.Services.FakeRestaurantService.RemoveDishForThisService*
+  implements:
+  - BLL.Services.IRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetAllListOfIngredient
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetAllListOfIngredient
+  id: GetAllListOfIngredient
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetAllListOfIngredient()
+  nameWithType: FakeRestaurantService.GetAllListOfIngredient()
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllListOfIngredient()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllListOfIngredient
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 216
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<List<ListOfIngredient>> GetAllListOfIngredient()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.ListOfIngredient}}
+    content.vb: Public Function GetAllListOfIngredient As Task(Of List(Of ListOfIngredient))
+  overload: UnitTest.Services.FakeRestaurantService.GetAllListOfIngredient*
+  implements:
+  - BLL.Services.IRestaurantService.GetAllListOfIngredient
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+  id: GetListOfIngredientByIdDish(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetListOfIngredientByIdDish(Int32)
+  nameWithType: FakeRestaurantService.GetListOfIngredientByIdDish(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetListOfIngredientByIdDish
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 221
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<List<ListOfIngredient>> GetListOfIngredientByIdDish(int idDish)
+    parameters:
+    - id: idDish
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.ListOfIngredient}}
+    content.vb: Public Function GetListOfIngredientByIdDish(idDish As Integer) As Task(Of List(Of ListOfIngredient))
+  overload: UnitTest.Services.FakeRestaurantService.GetListOfIngredientByIdDish*
+  implements:
+  - BLL.Services.IRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  commentId: M:UnitTest.Services.FakeRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  id: CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: CreateListOfIngredient(ListOfIngredient)
+  nameWithType: FakeRestaurantService.CreateListOfIngredient(ListOfIngredient)
+  fullName: UnitTest.Services.FakeRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: CreateListOfIngredient
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 226
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<ListOfIngredient> CreateListOfIngredient(ListOfIngredient listOfIngredient)
+    parameters:
+    - id: listOfIngredient
+      type: BO.Entity.ListOfIngredient
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.ListOfIngredient}
+    content.vb: Public Function CreateListOfIngredient(listOfIngredient As ListOfIngredient) As Task(Of ListOfIngredient)
+  overload: UnitTest.Services.FakeRestaurantService.CreateListOfIngredient*
+  implements:
+  - BLL.Services.IRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  commentId: M:UnitTest.Services.FakeRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  id: ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: ModifyListOfIngredient(ListOfIngredient)
+  nameWithType: FakeRestaurantService.ModifyListOfIngredient(ListOfIngredient)
+  fullName: UnitTest.Services.FakeRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ModifyListOfIngredient
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 231
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<ListOfIngredient> ModifyListOfIngredient(ListOfIngredient listOfIngredient)
+    parameters:
+    - id: listOfIngredient
+      type: BO.Entity.ListOfIngredient
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.ListOfIngredient}
+    content.vb: Public Function ModifyListOfIngredient(listOfIngredient As ListOfIngredient) As Task(Of ListOfIngredient)
+  overload: UnitTest.Services.FakeRestaurantService.ModifyListOfIngredient*
+  implements:
+  - BLL.Services.IRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.RemoveListOfIngredientById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.RemoveListOfIngredientById(System.Int32)
+  id: RemoveListOfIngredientById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: RemoveListOfIngredientById(Int32)
+  nameWithType: FakeRestaurantService.RemoveListOfIngredientById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.RemoveListOfIngredientById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: RemoveListOfIngredientById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 236
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<bool> RemoveListOfIngredientById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function RemoveListOfIngredientById(id As Integer) As Task(Of Boolean)
+  overload: UnitTest.Services.FakeRestaurantService.RemoveListOfIngredientById*
+  implements:
+  - BLL.Services.IRestaurantService.RemoveListOfIngredientById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.menuFakeDB
+  commentId: F:UnitTest.Services.FakeRestaurantService.menuFakeDB
+  id: menuFakeDB
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: menuFakeDB
+  nameWithType: FakeRestaurantService.menuFakeDB
+  fullName: UnitTest.Services.FakeRestaurantService.menuFakeDB
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: menuFakeDB
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 243
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public List<Menu> menuFakeDB
+    return:
+      type: System.Collections.Generic.List{BO.Entity.Menu}
+    content.vb: Public menuFakeDB As List(Of Menu)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetAllMenu
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetAllMenu
+  id: GetAllMenu
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetAllMenu()
+  nameWithType: FakeRestaurantService.GetAllMenu()
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllMenu()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllMenu
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 255
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  summary: "\nFake Get All Dish\n"
+  example: []
+  syntax:
+    content: public Task<List<Menu>> GetAllMenu()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Menu}}
+      description: ''
+    content.vb: Public Function GetAllMenu As Task(Of List(Of Menu))
+  overload: UnitTest.Services.FakeRestaurantService.GetAllMenu*
+  implements:
+  - BLL.Services.IRestaurantService.GetAllMenu
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetMenuById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetMenuById(System.Int32)
+  id: GetMenuById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetMenuById(Int32)
+  nameWithType: FakeRestaurantService.GetMenuById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetMenuById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetMenuById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 259
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Menu> GetMenuById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Menu}
+    content.vb: Public Function GetMenuById(id As Integer) As Task(Of Menu)
+  overload: UnitTest.Services.FakeRestaurantService.GetMenuById*
+  implements:
+  - BLL.Services.IRestaurantService.GetMenuById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.CreateMenu(BO.Entity.Menu)
+  commentId: M:UnitTest.Services.FakeRestaurantService.CreateMenu(BO.Entity.Menu)
+  id: CreateMenu(BO.Entity.Menu)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: CreateMenu(Menu)
+  nameWithType: FakeRestaurantService.CreateMenu(Menu)
+  fullName: UnitTest.Services.FakeRestaurantService.CreateMenu(BO.Entity.Menu)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: CreateMenu
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 264
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Menu> CreateMenu(Menu menu)
+    parameters:
+    - id: menu
+      type: BO.Entity.Menu
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Menu}
+    content.vb: Public Function CreateMenu(menu As Menu) As Task(Of Menu)
+  overload: UnitTest.Services.FakeRestaurantService.CreateMenu*
+  implements:
+  - BLL.Services.IRestaurantService.CreateMenu(BO.Entity.Menu)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.NextMenu(System.DateTime)
+  commentId: M:UnitTest.Services.FakeRestaurantService.NextMenu(System.DateTime)
+  id: NextMenu(System.DateTime)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: NextMenu(DateTime)
+  nameWithType: FakeRestaurantService.NextMenu(DateTime)
+  fullName: UnitTest.Services.FakeRestaurantService.NextMenu(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: NextMenu
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 270
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<DateTime> NextMenu(DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+    return:
+      type: System.Threading.Tasks.Task{System.DateTime}
+    content.vb: Public Function NextMenu(date As Date) As Task(Of Date)
+  overload: UnitTest.Services.FakeRestaurantService.NextMenu*
+  implements:
+  - BLL.Services.IRestaurantService.NextMenu(System.DateTime)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.PreviousMenu(System.DateTime)
+  commentId: M:UnitTest.Services.FakeRestaurantService.PreviousMenu(System.DateTime)
+  id: PreviousMenu(System.DateTime)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: PreviousMenu(DateTime)
+  nameWithType: FakeRestaurantService.PreviousMenu(DateTime)
+  fullName: UnitTest.Services.FakeRestaurantService.PreviousMenu(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: PreviousMenu
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 275
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<DateTime> PreviousMenu(DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+    return:
+      type: System.Threading.Tasks.Task{System.DateTime}
+    content.vb: Public Function PreviousMenu(date As Date) As Task(Of Date)
+  overload: UnitTest.Services.FakeRestaurantService.PreviousMenu*
+  implements:
+  - BLL.Services.IRestaurantService.PreviousMenu(System.DateTime)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetIdMenuByDate(System.DateTime)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetIdMenuByDate(System.DateTime)
+  id: GetIdMenuByDate(System.DateTime)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetIdMenuByDate(DateTime)
+  nameWithType: FakeRestaurantService.GetIdMenuByDate(DateTime)
+  fullName: UnitTest.Services.FakeRestaurantService.GetIdMenuByDate(System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetIdMenuByDate
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 280
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<int> GetIdMenuByDate(DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Public Function GetIdMenuByDate(date As Date) As Task(Of Integer)
+  overload: UnitTest.Services.FakeRestaurantService.GetIdMenuByDate*
+  implements:
+  - BLL.Services.IRestaurantService.GetIdMenuByDate(System.DateTime)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.Services.FakeRestaurantService.GetServicesOfMenuById(System.Int32)
+  commentId: M:UnitTest.Services.FakeRestaurantService.GetServicesOfMenuById(System.Int32)
+  id: GetServicesOfMenuById(System.Int32)
+  parent: UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: GetServicesOfMenuById(Int32)
+  nameWithType: FakeRestaurantService.GetServicesOfMenuById(Int32)
+  fullName: UnitTest.Services.FakeRestaurantService.GetServicesOfMenuById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetServicesOfMenuById
+    path: E:/Fbook/FoodBook/Server/UnitTest/Services/FakeRestaurantService.cs
+    startLine: 285
+  assemblies:
+  - UnitTest
+  namespace: UnitTest.Services
+  syntax:
+    content: public Task<Menu> GetServicesOfMenuById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Menu}
+    content.vb: Public Function GetServicesOfMenuById(id As Integer) As Task(Of Menu)
+  overload: UnitTest.Services.FakeRestaurantService.GetServicesOfMenuById*
+  implements:
+  - BLL.Services.IRestaurantService.GetServicesOfMenuById(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: UnitTest.Services
+  commentId: N:UnitTest.Services
+  name: UnitTest.Services
+  nameWithType: UnitTest.Services
+  fullName: UnitTest.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: BLL.Services.IRestaurantService
+  commentId: T:BLL.Services.IRestaurantService
+  parent: BLL.Services
+  name: IRestaurantService
+  nameWithType: IRestaurantService
+  fullName: BLL.Services.IRestaurantService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BLL.Services
+  commentId: N:BLL.Services
+  name: BLL.Services
+  nameWithType: BLL.Services
+  fullName: BLL.Services
+- uid: System.Collections.Generic.List{BO.Entity.Ingredients}
+  commentId: T:System.Collections.Generic.List{BO.Entity.Ingredients}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Ingredients>
+  nameWithType: List<Ingredients>
+  fullName: System.Collections.Generic.List<BO.Entity.Ingredients>
+  nameWithType.vb: List(Of Ingredients)
+  fullName.vb: System.Collections.Generic.List(Of BO.Entity.Ingredients)
+  name.vb: List(Of Ingredients)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: UnitTest.Services.FakeRestaurantService.CreateIngredient*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.CreateIngredient
+  name: CreateIngredient
+  nameWithType: FakeRestaurantService.CreateIngredient
+  fullName: UnitTest.Services.FakeRestaurantService.CreateIngredient
+- uid: BLL.Services.IRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+  commentId: M:BLL.Services.IRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+  parent: BLL.Services.IRestaurantService
+  name: CreateIngredient(Ingredients)
+  nameWithType: IRestaurantService.CreateIngredient(Ingredients)
+  fullName: BLL.Services.IRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+    name: CreateIngredient
+    nameWithType: IRestaurantService.CreateIngredient
+    fullName: BLL.Services.IRestaurantService.CreateIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.CreateIngredient(BO.Entity.Ingredients)
+    name: CreateIngredient
+    nameWithType: IRestaurantService.CreateIngredient
+    fullName: BLL.Services.IRestaurantService.CreateIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.Ingredients
+  commentId: T:BO.Entity.Ingredients
+  parent: BO.Entity
+  name: Ingredients
+  nameWithType: Ingredients
+  fullName: BO.Entity.Ingredients
+- uid: System.Threading.Tasks.Task{BO.Entity.Ingredients}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.Ingredients}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Ingredients>
+  nameWithType: Task<Ingredients>
+  fullName: System.Threading.Tasks.Task<BO.Entity.Ingredients>
+  nameWithType.vb: Task(Of Ingredients)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.Ingredients)
+  name.vb: Task(Of Ingredients)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity
+  commentId: N:BO.Entity
+  name: BO.Entity
+  nameWithType: BO.Entity
+  fullName: BO.Entity
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: UnitTest.Services.FakeRestaurantService.GetAllIngredients*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetAllIngredients
+  name: GetAllIngredients
+  nameWithType: FakeRestaurantService.GetAllIngredients
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllIngredients
+- uid: BLL.Services.IRestaurantService.GetAllIngredients
+  commentId: M:BLL.Services.IRestaurantService.GetAllIngredients
+  parent: BLL.Services.IRestaurantService
+  name: GetAllIngredients()
+  nameWithType: IRestaurantService.GetAllIngredients()
+  fullName: BLL.Services.IRestaurantService.GetAllIngredients()
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetAllIngredients
+    name: GetAllIngredients
+    nameWithType: IRestaurantService.GetAllIngredients
+    fullName: BLL.Services.IRestaurantService.GetAllIngredients
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetAllIngredients
+    name: GetAllIngredients
+    nameWithType: IRestaurantService.GetAllIngredients
+    fullName: BLL.Services.IRestaurantService.GetAllIngredients
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Ingredients}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Ingredients}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Ingredients>>
+  nameWithType: Task<List<Ingredients>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<BO.Entity.Ingredients>>
+  nameWithType.vb: Task(Of List(Of Ingredients))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of BO.Entity.Ingredients))
+  name.vb: Task(Of List(Of Ingredients))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetIngredientById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetIngredientById
+  name: GetIngredientById
+  nameWithType: FakeRestaurantService.GetIngredientById
+  fullName: UnitTest.Services.FakeRestaurantService.GetIngredientById
+- uid: BLL.Services.IRestaurantService.GetIngredientById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetIngredientById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetIngredientById(Int32)
+  nameWithType: IRestaurantService.GetIngredientById(Int32)
+  fullName: BLL.Services.IRestaurantService.GetIngredientById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetIngredientById(System.Int32)
+    name: GetIngredientById
+    nameWithType: IRestaurantService.GetIngredientById
+    fullName: BLL.Services.IRestaurantService.GetIngredientById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetIngredientById(System.Int32)
+    name: GetIngredientById
+    nameWithType: IRestaurantService.GetIngredientById
+    fullName: BLL.Services.IRestaurantService.GetIngredientById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnitTest.Services.FakeRestaurantService.ModifyIngredient*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.ModifyIngredient
+  name: ModifyIngredient
+  nameWithType: FakeRestaurantService.ModifyIngredient
+  fullName: UnitTest.Services.FakeRestaurantService.ModifyIngredient
+- uid: BLL.Services.IRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+  commentId: M:BLL.Services.IRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+  parent: BLL.Services.IRestaurantService
+  name: ModifyIngredient(Ingredients)
+  nameWithType: IRestaurantService.ModifyIngredient(Ingredients)
+  fullName: BLL.Services.IRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+    name: ModifyIngredient
+    nameWithType: IRestaurantService.ModifyIngredient
+    fullName: BLL.Services.IRestaurantService.ModifyIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.ModifyIngredient(BO.Entity.Ingredients)
+    name: ModifyIngredient
+    nameWithType: IRestaurantService.ModifyIngredient
+    fullName: BLL.Services.IRestaurantService.ModifyIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+    nameWithType: Ingredients
+    fullName: BO.Entity.Ingredients
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.RemoveIngredientById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.RemoveIngredientById
+  name: RemoveIngredientById
+  nameWithType: FakeRestaurantService.RemoveIngredientById
+  fullName: UnitTest.Services.FakeRestaurantService.RemoveIngredientById
+- uid: BLL.Services.IRestaurantService.RemoveIngredientById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.RemoveIngredientById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: RemoveIngredientById(Int32)
+  nameWithType: IRestaurantService.RemoveIngredientById(Int32)
+  fullName: BLL.Services.IRestaurantService.RemoveIngredientById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.RemoveIngredientById(System.Int32)
+    name: RemoveIngredientById
+    nameWithType: IRestaurantService.RemoveIngredientById
+    fullName: BLL.Services.IRestaurantService.RemoveIngredientById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.RemoveIngredientById(System.Int32)
+    name: RemoveIngredientById
+    nameWithType: IRestaurantService.RemoveIngredientById
+    fullName: BLL.Services.IRestaurantService.RemoveIngredientById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetIngredientsOfDishById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetIngredientsOfDishById
+  name: GetIngredientsOfDishById
+  nameWithType: FakeRestaurantService.GetIngredientsOfDishById
+  fullName: UnitTest.Services.FakeRestaurantService.GetIngredientsOfDishById
+- uid: BLL.Services.IRestaurantService.GetIngredientsOfDishById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetIngredientsOfDishById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetIngredientsOfDishById(Int32)
+  nameWithType: IRestaurantService.GetIngredientsOfDishById(Int32)
+  fullName: BLL.Services.IRestaurantService.GetIngredientsOfDishById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetIngredientsOfDishById(System.Int32)
+    name: GetIngredientsOfDishById
+    nameWithType: IRestaurantService.GetIngredientsOfDishById
+    fullName: BLL.Services.IRestaurantService.GetIngredientsOfDishById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetIngredientsOfDishById(System.Int32)
+    name: GetIngredientsOfDishById
+    nameWithType: IRestaurantService.GetIngredientsOfDishById
+    fullName: BLL.Services.IRestaurantService.GetIngredientsOfDishById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{BO.Entity.Dish}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.Dish}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Dish>
+  nameWithType: Task<Dish>
+  fullName: System.Threading.Tasks.Task<BO.Entity.Dish>
+  nameWithType.vb: Task(Of Dish)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.Dish)
+  name.vb: Task(Of Dish)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{BO.Entity.Dish}
+  commentId: T:System.Collections.Generic.List{BO.Entity.Dish}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Dish>
+  nameWithType: List<Dish>
+  fullName: System.Collections.Generic.List<BO.Entity.Dish>
+  nameWithType.vb: List(Of Dish)
+  fullName.vb: System.Collections.Generic.List(Of BO.Entity.Dish)
+  name.vb: List(Of Dish)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetAllDish*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetAllDish
+  name: GetAllDish
+  nameWithType: FakeRestaurantService.GetAllDish
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllDish
+- uid: BLL.Services.IRestaurantService.GetAllDish
+  commentId: M:BLL.Services.IRestaurantService.GetAllDish
+  parent: BLL.Services.IRestaurantService
+  name: GetAllDish()
+  nameWithType: IRestaurantService.GetAllDish()
+  fullName: BLL.Services.IRestaurantService.GetAllDish()
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetAllDish
+    name: GetAllDish
+    nameWithType: IRestaurantService.GetAllDish
+    fullName: BLL.Services.IRestaurantService.GetAllDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetAllDish
+    name: GetAllDish
+    nameWithType: IRestaurantService.GetAllDish
+    fullName: BLL.Services.IRestaurantService.GetAllDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Dish}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Dish}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Dish>>
+  nameWithType: Task<List<Dish>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<BO.Entity.Dish>>
+  nameWithType.vb: Task(Of List(Of Dish))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of BO.Entity.Dish))
+  name.vb: Task(Of List(Of Dish))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.CreateDish*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.CreateDish
+  name: CreateDish
+  nameWithType: FakeRestaurantService.CreateDish
+  fullName: UnitTest.Services.FakeRestaurantService.CreateDish
+- uid: BLL.Services.IRestaurantService.CreateDish(BO.Entity.Dish)
+  commentId: M:BLL.Services.IRestaurantService.CreateDish(BO.Entity.Dish)
+  parent: BLL.Services.IRestaurantService
+  name: CreateDish(Dish)
+  nameWithType: IRestaurantService.CreateDish(Dish)
+  fullName: BLL.Services.IRestaurantService.CreateDish(BO.Entity.Dish)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.CreateDish(BO.Entity.Dish)
+    name: CreateDish
+    nameWithType: IRestaurantService.CreateDish
+    fullName: BLL.Services.IRestaurantService.CreateDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.CreateDish(BO.Entity.Dish)
+    name: CreateDish
+    nameWithType: IRestaurantService.CreateDish
+    fullName: BLL.Services.IRestaurantService.CreateDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.Dish
+  commentId: T:BO.Entity.Dish
+  parent: BO.Entity
+  name: Dish
+  nameWithType: Dish
+  fullName: BO.Entity.Dish
+- uid: UnitTest.Services.FakeRestaurantService.GetDishById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetDishById
+  name: GetDishById
+  nameWithType: FakeRestaurantService.GetDishById
+  fullName: UnitTest.Services.FakeRestaurantService.GetDishById
+- uid: BLL.Services.IRestaurantService.GetDishById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetDishById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetDishById(Int32)
+  nameWithType: IRestaurantService.GetDishById(Int32)
+  fullName: BLL.Services.IRestaurantService.GetDishById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetDishById(System.Int32)
+    name: GetDishById
+    nameWithType: IRestaurantService.GetDishById
+    fullName: BLL.Services.IRestaurantService.GetDishById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetDishById(System.Int32)
+    name: GetDishById
+    nameWithType: IRestaurantService.GetDishById
+    fullName: BLL.Services.IRestaurantService.GetDishById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.ModifyDish*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.ModifyDish
+  name: ModifyDish
+  nameWithType: FakeRestaurantService.ModifyDish
+  fullName: UnitTest.Services.FakeRestaurantService.ModifyDish
+- uid: BLL.Services.IRestaurantService.ModifyDish(BO.Entity.Dish)
+  commentId: M:BLL.Services.IRestaurantService.ModifyDish(BO.Entity.Dish)
+  parent: BLL.Services.IRestaurantService
+  name: ModifyDish(Dish)
+  nameWithType: IRestaurantService.ModifyDish(Dish)
+  fullName: BLL.Services.IRestaurantService.ModifyDish(BO.Entity.Dish)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.ModifyDish(BO.Entity.Dish)
+    name: ModifyDish
+    nameWithType: IRestaurantService.ModifyDish
+    fullName: BLL.Services.IRestaurantService.ModifyDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.ModifyDish(BO.Entity.Dish)
+    name: ModifyDish
+    nameWithType: IRestaurantService.ModifyDish
+    fullName: BLL.Services.IRestaurantService.ModifyDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.RemoveDishById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.RemoveDishById
+  name: RemoveDishById
+  nameWithType: FakeRestaurantService.RemoveDishById
+  fullName: UnitTest.Services.FakeRestaurantService.RemoveDishById
+- uid: BLL.Services.IRestaurantService.RemoveDishById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.RemoveDishById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: RemoveDishById(Int32)
+  nameWithType: IRestaurantService.RemoveDishById(Int32)
+  fullName: BLL.Services.IRestaurantService.RemoveDishById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.RemoveDishById(System.Int32)
+    name: RemoveDishById
+    nameWithType: IRestaurantService.RemoveDishById
+    fullName: BLL.Services.IRestaurantService.RemoveDishById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.RemoveDishById(System.Int32)
+    name: RemoveDishById
+    nameWithType: IRestaurantService.RemoveDishById
+    fullName: BLL.Services.IRestaurantService.RemoveDishById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetDishByName*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetDishByName
+  name: GetDishByName
+  nameWithType: FakeRestaurantService.GetDishByName
+  fullName: UnitTest.Services.FakeRestaurantService.GetDishByName
+- uid: BLL.Services.IRestaurantService.GetDishByName(System.String)
+  commentId: M:BLL.Services.IRestaurantService.GetDishByName(System.String)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetDishByName(String)
+  nameWithType: IRestaurantService.GetDishByName(String)
+  fullName: BLL.Services.IRestaurantService.GetDishByName(System.String)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetDishByName(System.String)
+    name: GetDishByName
+    nameWithType: IRestaurantService.GetDishByName
+    fullName: BLL.Services.IRestaurantService.GetDishByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetDishByName(System.String)
+    name: GetDishByName
+    nameWithType: IRestaurantService.GetDishByName
+    fullName: BLL.Services.IRestaurantService.GetDishByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: UnitTest.Services.FakeRestaurantService.GetAllTypeOfDish*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetAllTypeOfDish
+  name: GetAllTypeOfDish
+  nameWithType: FakeRestaurantService.GetAllTypeOfDish
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllTypeOfDish
+- uid: BLL.Services.IRestaurantService.GetAllTypeOfDish
+  commentId: M:BLL.Services.IRestaurantService.GetAllTypeOfDish
+  parent: BLL.Services.IRestaurantService
+  name: GetAllTypeOfDish()
+  nameWithType: IRestaurantService.GetAllTypeOfDish()
+  fullName: BLL.Services.IRestaurantService.GetAllTypeOfDish()
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetAllTypeOfDish
+    name: GetAllTypeOfDish
+    nameWithType: IRestaurantService.GetAllTypeOfDish
+    fullName: BLL.Services.IRestaurantService.GetAllTypeOfDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetAllTypeOfDish
+    name: GetAllTypeOfDish
+    nameWithType: IRestaurantService.GetAllTypeOfDish
+    fullName: BLL.Services.IRestaurantService.GetAllTypeOfDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.TypeOfDish}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.TypeOfDish}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<TypeOfDish>>
+  nameWithType: Task<List<TypeOfDish>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<BO.Entity.TypeOfDish>>
+  nameWithType.vb: Task(Of List(Of TypeOfDish))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of BO.Entity.TypeOfDish))
+  name.vb: Task(Of List(Of TypeOfDish))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.TypeOfDish
+    name: TypeOfDish
+    nameWithType: TypeOfDish
+    fullName: BO.Entity.TypeOfDish
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.TypeOfDish
+    name: TypeOfDish
+    nameWithType: TypeOfDish
+    fullName: BO.Entity.TypeOfDish
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetTypeOfDishById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetTypeOfDishById
+  name: GetTypeOfDishById
+  nameWithType: FakeRestaurantService.GetTypeOfDishById
+  fullName: UnitTest.Services.FakeRestaurantService.GetTypeOfDishById
+- uid: BLL.Services.IRestaurantService.GetTypeOfDishById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetTypeOfDishById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetTypeOfDishById(Int32)
+  nameWithType: IRestaurantService.GetTypeOfDishById(Int32)
+  fullName: BLL.Services.IRestaurantService.GetTypeOfDishById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetTypeOfDishById(System.Int32)
+    name: GetTypeOfDishById
+    nameWithType: IRestaurantService.GetTypeOfDishById
+    fullName: BLL.Services.IRestaurantService.GetTypeOfDishById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetTypeOfDishById(System.Int32)
+    name: GetTypeOfDishById
+    nameWithType: IRestaurantService.GetTypeOfDishById
+    fullName: BLL.Services.IRestaurantService.GetTypeOfDishById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{BO.Entity.TypeOfDish}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.TypeOfDish}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TypeOfDish>
+  nameWithType: Task<TypeOfDish>
+  fullName: System.Threading.Tasks.Task<BO.Entity.TypeOfDish>
+  nameWithType.vb: Task(Of TypeOfDish)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.TypeOfDish)
+  name.vb: Task(Of TypeOfDish)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.TypeOfDish
+    name: TypeOfDish
+    nameWithType: TypeOfDish
+    fullName: BO.Entity.TypeOfDish
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.TypeOfDish
+    name: TypeOfDish
+    nameWithType: TypeOfDish
+    fullName: BO.Entity.TypeOfDish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{BO.Entity.Service}
+  commentId: T:System.Collections.Generic.List{BO.Entity.Service}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Service>
+  nameWithType: List<Service>
+  fullName: System.Collections.Generic.List<BO.Entity.Service>
+  nameWithType.vb: List(Of Service)
+  fullName.vb: System.Collections.Generic.List(Of BO.Entity.Service)
+  name.vb: List(Of Service)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetAllService*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetAllService
+  name: GetAllService
+  nameWithType: FakeRestaurantService.GetAllService
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllService
+- uid: BLL.Services.IRestaurantService.GetAllService
+  commentId: M:BLL.Services.IRestaurantService.GetAllService
+  parent: BLL.Services.IRestaurantService
+  name: GetAllService()
+  nameWithType: IRestaurantService.GetAllService()
+  fullName: BLL.Services.IRestaurantService.GetAllService()
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetAllService
+    name: GetAllService
+    nameWithType: IRestaurantService.GetAllService
+    fullName: BLL.Services.IRestaurantService.GetAllService
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetAllService
+    name: GetAllService
+    nameWithType: IRestaurantService.GetAllService
+    fullName: BLL.Services.IRestaurantService.GetAllService
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Service}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Service}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Service>>
+  nameWithType: Task<List<Service>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<BO.Entity.Service>>
+  nameWithType.vb: Task(Of List(Of Service))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of BO.Entity.Service))
+  name.vb: Task(Of List(Of Service))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetServiceById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetServiceById
+  name: GetServiceById
+  nameWithType: FakeRestaurantService.GetServiceById
+  fullName: UnitTest.Services.FakeRestaurantService.GetServiceById
+- uid: BLL.Services.IRestaurantService.GetServiceById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetServiceById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetServiceById(Int32)
+  nameWithType: IRestaurantService.GetServiceById(Int32)
+  fullName: BLL.Services.IRestaurantService.GetServiceById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetServiceById(System.Int32)
+    name: GetServiceById
+    nameWithType: IRestaurantService.GetServiceById
+    fullName: BLL.Services.IRestaurantService.GetServiceById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetServiceById(System.Int32)
+    name: GetServiceById
+    nameWithType: IRestaurantService.GetServiceById
+    fullName: BLL.Services.IRestaurantService.GetServiceById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{BO.Entity.Service}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.Service}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Service>
+  nameWithType: Task<Service>
+  fullName: System.Threading.Tasks.Task<BO.Entity.Service>
+  nameWithType.vb: Task(Of Service)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.Service)
+  name.vb: Task(Of Service)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetServicesByIdMenu*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetServicesByIdMenu
+  name: GetServicesByIdMenu
+  nameWithType: FakeRestaurantService.GetServicesByIdMenu
+  fullName: UnitTest.Services.FakeRestaurantService.GetServicesByIdMenu
+- uid: BLL.Services.IRestaurantService.GetServicesByIdMenu(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetServicesByIdMenu(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetServicesByIdMenu(Int32)
+  nameWithType: IRestaurantService.GetServicesByIdMenu(Int32)
+  fullName: BLL.Services.IRestaurantService.GetServicesByIdMenu(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetServicesByIdMenu(System.Int32)
+    name: GetServicesByIdMenu
+    nameWithType: IRestaurantService.GetServicesByIdMenu
+    fullName: BLL.Services.IRestaurantService.GetServicesByIdMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetServicesByIdMenu(System.Int32)
+    name: GetServicesByIdMenu
+    nameWithType: IRestaurantService.GetServicesByIdMenu
+    fullName: BLL.Services.IRestaurantService.GetServicesByIdMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.CreateService*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.CreateService
+  name: CreateService
+  nameWithType: FakeRestaurantService.CreateService
+  fullName: UnitTest.Services.FakeRestaurantService.CreateService
+- uid: BLL.Services.IRestaurantService.CreateService(BO.Entity.Service)
+  commentId: M:BLL.Services.IRestaurantService.CreateService(BO.Entity.Service)
+  parent: BLL.Services.IRestaurantService
+  name: CreateService(Service)
+  nameWithType: IRestaurantService.CreateService(Service)
+  fullName: BLL.Services.IRestaurantService.CreateService(BO.Entity.Service)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.CreateService(BO.Entity.Service)
+    name: CreateService
+    nameWithType: IRestaurantService.CreateService
+    fullName: BLL.Services.IRestaurantService.CreateService
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.CreateService(BO.Entity.Service)
+    name: CreateService
+    nameWithType: IRestaurantService.CreateService
+    fullName: BLL.Services.IRestaurantService.CreateService
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.Service
+  commentId: T:BO.Entity.Service
+  parent: BO.Entity
+  name: Service
+  nameWithType: Service
+  fullName: BO.Entity.Service
+- uid: UnitTest.Services.FakeRestaurantService.AddDishForThisService*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.AddDishForThisService
+  name: AddDishForThisService
+  nameWithType: FakeRestaurantService.AddDishForThisService
+  fullName: UnitTest.Services.FakeRestaurantService.AddDishForThisService
+- uid: BLL.Services.IRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  commentId: M:BLL.Services.IRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  parent: BLL.Services.IRestaurantService
+  name: AddDishForThisService(Dish, Service)
+  nameWithType: IRestaurantService.AddDishForThisService(Dish, Service)
+  fullName: BLL.Services.IRestaurantService.AddDishForThisService(BO.Entity.Dish, BO.Entity.Service)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+    name: AddDishForThisService
+    nameWithType: IRestaurantService.AddDishForThisService
+    fullName: BLL.Services.IRestaurantService.AddDishForThisService
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.AddDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+    name: AddDishForThisService
+    nameWithType: IRestaurantService.AddDishForThisService
+    fullName: BLL.Services.IRestaurantService.AddDishForThisService
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.RemoveDishForThisService*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.RemoveDishForThisService
+  name: RemoveDishForThisService
+  nameWithType: FakeRestaurantService.RemoveDishForThisService
+  fullName: UnitTest.Services.FakeRestaurantService.RemoveDishForThisService
+- uid: BLL.Services.IRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  commentId: M:BLL.Services.IRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+  parent: BLL.Services.IRestaurantService
+  name: RemoveDishForThisService(Dish, Service)
+  nameWithType: IRestaurantService.RemoveDishForThisService(Dish, Service)
+  fullName: BLL.Services.IRestaurantService.RemoveDishForThisService(BO.Entity.Dish, BO.Entity.Service)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+    name: RemoveDishForThisService
+    nameWithType: IRestaurantService.RemoveDishForThisService
+    fullName: BLL.Services.IRestaurantService.RemoveDishForThisService
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.RemoveDishForThisService(BO.Entity.Dish,BO.Entity.Service)
+    name: RemoveDishForThisService
+    nameWithType: IRestaurantService.RemoveDishForThisService
+    fullName: BLL.Services.IRestaurantService.RemoveDishForThisService
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: BO.Entity.Service
+    name: Service
+    nameWithType: Service
+    fullName: BO.Entity.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetAllListOfIngredient*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetAllListOfIngredient
+  name: GetAllListOfIngredient
+  nameWithType: FakeRestaurantService.GetAllListOfIngredient
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllListOfIngredient
+- uid: BLL.Services.IRestaurantService.GetAllListOfIngredient
+  commentId: M:BLL.Services.IRestaurantService.GetAllListOfIngredient
+  parent: BLL.Services.IRestaurantService
+  name: GetAllListOfIngredient()
+  nameWithType: IRestaurantService.GetAllListOfIngredient()
+  fullName: BLL.Services.IRestaurantService.GetAllListOfIngredient()
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetAllListOfIngredient
+    name: GetAllListOfIngredient
+    nameWithType: IRestaurantService.GetAllListOfIngredient
+    fullName: BLL.Services.IRestaurantService.GetAllListOfIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetAllListOfIngredient
+    name: GetAllListOfIngredient
+    nameWithType: IRestaurantService.GetAllListOfIngredient
+    fullName: BLL.Services.IRestaurantService.GetAllListOfIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.ListOfIngredient}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.ListOfIngredient}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<ListOfIngredient>>
+  nameWithType: Task<List<ListOfIngredient>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<BO.Entity.ListOfIngredient>>
+  nameWithType.vb: Task(Of List(Of ListOfIngredient))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of BO.Entity.ListOfIngredient))
+  name.vb: Task(Of List(Of ListOfIngredient))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+    nameWithType: ListOfIngredient
+    fullName: BO.Entity.ListOfIngredient
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+    nameWithType: ListOfIngredient
+    fullName: BO.Entity.ListOfIngredient
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetListOfIngredientByIdDish*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetListOfIngredientByIdDish
+  name: GetListOfIngredientByIdDish
+  nameWithType: FakeRestaurantService.GetListOfIngredientByIdDish
+  fullName: UnitTest.Services.FakeRestaurantService.GetListOfIngredientByIdDish
+- uid: BLL.Services.IRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetListOfIngredientByIdDish(Int32)
+  nameWithType: IRestaurantService.GetListOfIngredientByIdDish(Int32)
+  fullName: BLL.Services.IRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+    name: GetListOfIngredientByIdDish
+    nameWithType: IRestaurantService.GetListOfIngredientByIdDish
+    fullName: BLL.Services.IRestaurantService.GetListOfIngredientByIdDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetListOfIngredientByIdDish(System.Int32)
+    name: GetListOfIngredientByIdDish
+    nameWithType: IRestaurantService.GetListOfIngredientByIdDish
+    fullName: BLL.Services.IRestaurantService.GetListOfIngredientByIdDish
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.CreateListOfIngredient*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.CreateListOfIngredient
+  name: CreateListOfIngredient
+  nameWithType: FakeRestaurantService.CreateListOfIngredient
+  fullName: UnitTest.Services.FakeRestaurantService.CreateListOfIngredient
+- uid: BLL.Services.IRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  commentId: M:BLL.Services.IRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  parent: BLL.Services.IRestaurantService
+  name: CreateListOfIngredient(ListOfIngredient)
+  nameWithType: IRestaurantService.CreateListOfIngredient(ListOfIngredient)
+  fullName: BLL.Services.IRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+    name: CreateListOfIngredient
+    nameWithType: IRestaurantService.CreateListOfIngredient
+    fullName: BLL.Services.IRestaurantService.CreateListOfIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+    nameWithType: ListOfIngredient
+    fullName: BO.Entity.ListOfIngredient
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)
+    name: CreateListOfIngredient
+    nameWithType: IRestaurantService.CreateListOfIngredient
+    fullName: BLL.Services.IRestaurantService.CreateListOfIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+    nameWithType: ListOfIngredient
+    fullName: BO.Entity.ListOfIngredient
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.ListOfIngredient
+  commentId: T:BO.Entity.ListOfIngredient
+  parent: BO.Entity
+  name: ListOfIngredient
+  nameWithType: ListOfIngredient
+  fullName: BO.Entity.ListOfIngredient
+- uid: System.Threading.Tasks.Task{BO.Entity.ListOfIngredient}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.ListOfIngredient}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ListOfIngredient>
+  nameWithType: Task<ListOfIngredient>
+  fullName: System.Threading.Tasks.Task<BO.Entity.ListOfIngredient>
+  nameWithType.vb: Task(Of ListOfIngredient)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.ListOfIngredient)
+  name.vb: Task(Of ListOfIngredient)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+    nameWithType: ListOfIngredient
+    fullName: BO.Entity.ListOfIngredient
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+    nameWithType: ListOfIngredient
+    fullName: BO.Entity.ListOfIngredient
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.ModifyListOfIngredient*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.ModifyListOfIngredient
+  name: ModifyListOfIngredient
+  nameWithType: FakeRestaurantService.ModifyListOfIngredient
+  fullName: UnitTest.Services.FakeRestaurantService.ModifyListOfIngredient
+- uid: BLL.Services.IRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  commentId: M:BLL.Services.IRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  parent: BLL.Services.IRestaurantService
+  name: ModifyListOfIngredient(ListOfIngredient)
+  nameWithType: IRestaurantService.ModifyListOfIngredient(ListOfIngredient)
+  fullName: BLL.Services.IRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+    name: ModifyListOfIngredient
+    nameWithType: IRestaurantService.ModifyListOfIngredient
+    fullName: BLL.Services.IRestaurantService.ModifyListOfIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+    nameWithType: ListOfIngredient
+    fullName: BO.Entity.ListOfIngredient
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.ModifyListOfIngredient(BO.Entity.ListOfIngredient)
+    name: ModifyListOfIngredient
+    nameWithType: IRestaurantService.ModifyListOfIngredient
+    fullName: BLL.Services.IRestaurantService.ModifyListOfIngredient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+    nameWithType: ListOfIngredient
+    fullName: BO.Entity.ListOfIngredient
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.RemoveListOfIngredientById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.RemoveListOfIngredientById
+  name: RemoveListOfIngredientById
+  nameWithType: FakeRestaurantService.RemoveListOfIngredientById
+  fullName: UnitTest.Services.FakeRestaurantService.RemoveListOfIngredientById
+- uid: BLL.Services.IRestaurantService.RemoveListOfIngredientById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.RemoveListOfIngredientById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: RemoveListOfIngredientById(Int32)
+  nameWithType: IRestaurantService.RemoveListOfIngredientById(Int32)
+  fullName: BLL.Services.IRestaurantService.RemoveListOfIngredientById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.RemoveListOfIngredientById(System.Int32)
+    name: RemoveListOfIngredientById
+    nameWithType: IRestaurantService.RemoveListOfIngredientById
+    fullName: BLL.Services.IRestaurantService.RemoveListOfIngredientById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.RemoveListOfIngredientById(System.Int32)
+    name: RemoveListOfIngredientById
+    nameWithType: IRestaurantService.RemoveListOfIngredientById
+    fullName: BLL.Services.IRestaurantService.RemoveListOfIngredientById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{BO.Entity.Menu}
+  commentId: T:System.Collections.Generic.List{BO.Entity.Menu}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Menu>
+  nameWithType: List<Menu>
+  fullName: System.Collections.Generic.List<BO.Entity.Menu>
+  nameWithType.vb: List(Of Menu)
+  fullName.vb: System.Collections.Generic.List(Of BO.Entity.Menu)
+  name.vb: List(Of Menu)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Menu
+    name: Menu
+    nameWithType: Menu
+    fullName: BO.Entity.Menu
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Menu
+    name: Menu
+    nameWithType: Menu
+    fullName: BO.Entity.Menu
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetAllMenu*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetAllMenu
+  name: GetAllMenu
+  nameWithType: FakeRestaurantService.GetAllMenu
+  fullName: UnitTest.Services.FakeRestaurantService.GetAllMenu
+- uid: BLL.Services.IRestaurantService.GetAllMenu
+  commentId: M:BLL.Services.IRestaurantService.GetAllMenu
+  parent: BLL.Services.IRestaurantService
+  name: GetAllMenu()
+  nameWithType: IRestaurantService.GetAllMenu()
+  fullName: BLL.Services.IRestaurantService.GetAllMenu()
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetAllMenu
+    name: GetAllMenu
+    nameWithType: IRestaurantService.GetAllMenu
+    fullName: BLL.Services.IRestaurantService.GetAllMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetAllMenu
+    name: GetAllMenu
+    nameWithType: IRestaurantService.GetAllMenu
+    fullName: BLL.Services.IRestaurantService.GetAllMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Menu}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Menu}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Menu>>
+  nameWithType: Task<List<Menu>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<BO.Entity.Menu>>
+  nameWithType.vb: Task(Of List(Of Menu))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of BO.Entity.Menu))
+  name.vb: Task(Of List(Of Menu))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Menu
+    name: Menu
+    nameWithType: Menu
+    fullName: BO.Entity.Menu
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Menu
+    name: Menu
+    nameWithType: Menu
+    fullName: BO.Entity.Menu
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetMenuById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetMenuById
+  name: GetMenuById
+  nameWithType: FakeRestaurantService.GetMenuById
+  fullName: UnitTest.Services.FakeRestaurantService.GetMenuById
+- uid: BLL.Services.IRestaurantService.GetMenuById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetMenuById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetMenuById(Int32)
+  nameWithType: IRestaurantService.GetMenuById(Int32)
+  fullName: BLL.Services.IRestaurantService.GetMenuById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetMenuById(System.Int32)
+    name: GetMenuById
+    nameWithType: IRestaurantService.GetMenuById
+    fullName: BLL.Services.IRestaurantService.GetMenuById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetMenuById(System.Int32)
+    name: GetMenuById
+    nameWithType: IRestaurantService.GetMenuById
+    fullName: BLL.Services.IRestaurantService.GetMenuById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{BO.Entity.Menu}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.Menu}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Menu>
+  nameWithType: Task<Menu>
+  fullName: System.Threading.Tasks.Task<BO.Entity.Menu>
+  nameWithType.vb: Task(Of Menu)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.Menu)
+  name.vb: Task(Of Menu)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Menu
+    name: Menu
+    nameWithType: Menu
+    fullName: BO.Entity.Menu
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Menu
+    name: Menu
+    nameWithType: Menu
+    fullName: BO.Entity.Menu
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.CreateMenu*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.CreateMenu
+  name: CreateMenu
+  nameWithType: FakeRestaurantService.CreateMenu
+  fullName: UnitTest.Services.FakeRestaurantService.CreateMenu
+- uid: BLL.Services.IRestaurantService.CreateMenu(BO.Entity.Menu)
+  commentId: M:BLL.Services.IRestaurantService.CreateMenu(BO.Entity.Menu)
+  parent: BLL.Services.IRestaurantService
+  name: CreateMenu(Menu)
+  nameWithType: IRestaurantService.CreateMenu(Menu)
+  fullName: BLL.Services.IRestaurantService.CreateMenu(BO.Entity.Menu)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.CreateMenu(BO.Entity.Menu)
+    name: CreateMenu
+    nameWithType: IRestaurantService.CreateMenu
+    fullName: BLL.Services.IRestaurantService.CreateMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Menu
+    name: Menu
+    nameWithType: Menu
+    fullName: BO.Entity.Menu
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.CreateMenu(BO.Entity.Menu)
+    name: CreateMenu
+    nameWithType: IRestaurantService.CreateMenu
+    fullName: BLL.Services.IRestaurantService.CreateMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Menu
+    name: Menu
+    nameWithType: Menu
+    fullName: BO.Entity.Menu
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.Menu
+  commentId: T:BO.Entity.Menu
+  parent: BO.Entity
+  name: Menu
+  nameWithType: Menu
+  fullName: BO.Entity.Menu
+- uid: UnitTest.Services.FakeRestaurantService.NextMenu*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.NextMenu
+  name: NextMenu
+  nameWithType: FakeRestaurantService.NextMenu
+  fullName: UnitTest.Services.FakeRestaurantService.NextMenu
+- uid: BLL.Services.IRestaurantService.NextMenu(System.DateTime)
+  commentId: M:BLL.Services.IRestaurantService.NextMenu(System.DateTime)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: NextMenu(DateTime)
+  nameWithType: IRestaurantService.NextMenu(DateTime)
+  fullName: BLL.Services.IRestaurantService.NextMenu(System.DateTime)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.NextMenu(System.DateTime)
+    name: NextMenu
+    nameWithType: IRestaurantService.NextMenu
+    fullName: BLL.Services.IRestaurantService.NextMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.NextMenu(System.DateTime)
+    name: NextMenu
+    nameWithType: IRestaurantService.NextMenu
+    fullName: BLL.Services.IRestaurantService.NextMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: System.Threading.Tasks.Task{System.DateTime}
+  commentId: T:System.Threading.Tasks.Task{System.DateTime}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DateTime>
+  nameWithType: Task<DateTime>
+  fullName: System.Threading.Tasks.Task<System.DateTime>
+  nameWithType.vb: Task(Of DateTime)
+  fullName.vb: System.Threading.Tasks.Task(Of System.DateTime)
+  name.vb: Task(Of DateTime)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.PreviousMenu*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.PreviousMenu
+  name: PreviousMenu
+  nameWithType: FakeRestaurantService.PreviousMenu
+  fullName: UnitTest.Services.FakeRestaurantService.PreviousMenu
+- uid: BLL.Services.IRestaurantService.PreviousMenu(System.DateTime)
+  commentId: M:BLL.Services.IRestaurantService.PreviousMenu(System.DateTime)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: PreviousMenu(DateTime)
+  nameWithType: IRestaurantService.PreviousMenu(DateTime)
+  fullName: BLL.Services.IRestaurantService.PreviousMenu(System.DateTime)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.PreviousMenu(System.DateTime)
+    name: PreviousMenu
+    nameWithType: IRestaurantService.PreviousMenu
+    fullName: BLL.Services.IRestaurantService.PreviousMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.PreviousMenu(System.DateTime)
+    name: PreviousMenu
+    nameWithType: IRestaurantService.PreviousMenu
+    fullName: BLL.Services.IRestaurantService.PreviousMenu
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetIdMenuByDate*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetIdMenuByDate
+  name: GetIdMenuByDate
+  nameWithType: FakeRestaurantService.GetIdMenuByDate
+  fullName: UnitTest.Services.FakeRestaurantService.GetIdMenuByDate
+- uid: BLL.Services.IRestaurantService.GetIdMenuByDate(System.DateTime)
+  commentId: M:BLL.Services.IRestaurantService.GetIdMenuByDate(System.DateTime)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetIdMenuByDate(DateTime)
+  nameWithType: IRestaurantService.GetIdMenuByDate(DateTime)
+  fullName: BLL.Services.IRestaurantService.GetIdMenuByDate(System.DateTime)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetIdMenuByDate(System.DateTime)
+    name: GetIdMenuByDate
+    nameWithType: IRestaurantService.GetIdMenuByDate
+    fullName: BLL.Services.IRestaurantService.GetIdMenuByDate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetIdMenuByDate(System.DateTime)
+    name: GetIdMenuByDate
+    nameWithType: IRestaurantService.GetIdMenuByDate
+    fullName: BLL.Services.IRestaurantService.GetIdMenuByDate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitTest.Services.FakeRestaurantService.GetServicesOfMenuById*
+  commentId: Overload:UnitTest.Services.FakeRestaurantService.GetServicesOfMenuById
+  name: GetServicesOfMenuById
+  nameWithType: FakeRestaurantService.GetServicesOfMenuById
+  fullName: UnitTest.Services.FakeRestaurantService.GetServicesOfMenuById
+- uid: BLL.Services.IRestaurantService.GetServicesOfMenuById(System.Int32)
+  commentId: M:BLL.Services.IRestaurantService.GetServicesOfMenuById(System.Int32)
+  parent: BLL.Services.IRestaurantService
+  isExternal: true
+  name: GetServicesOfMenuById(Int32)
+  nameWithType: IRestaurantService.GetServicesOfMenuById(Int32)
+  fullName: BLL.Services.IRestaurantService.GetServicesOfMenuById(System.Int32)
+  spec.csharp:
+  - uid: BLL.Services.IRestaurantService.GetServicesOfMenuById(System.Int32)
+    name: GetServicesOfMenuById
+    nameWithType: IRestaurantService.GetServicesOfMenuById
+    fullName: BLL.Services.IRestaurantService.GetServicesOfMenuById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: BLL.Services.IRestaurantService.GetServicesOfMenuById(System.Int32)
+    name: GetServicesOfMenuById
+    nameWithType: IRestaurantService.GetServicesOfMenuById
+    fullName: BLL.Services.IRestaurantService.GetServicesOfMenuById
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,6 +1,9 @@
 ﻿
 namespace ClientDesktop
 {
+    /// <summary>
+    /// Fenêtre sélecteur de plats
+    /// </summary>
     partial class DishSelectorForm
     {
         /// <summary>

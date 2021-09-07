@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: BLL
+  commentId: N:BLL
+  id: BLL
+  children:
+  - BLL.BLLExtension
+  langs:
+  - csharp
+  - vb
+  name: BLL
+  nameWithType: BLL
+  fullName: BLL
+  type: Namespace
+  assemblies:
+  - BLL
+references:
+- uid: BLL.BLLExtension
+  commentId: T:BLL.BLLExtension
+  name: BLLExtension
+  nameWithType: BLLExtension
+  fullName: BLL.BLLExtension

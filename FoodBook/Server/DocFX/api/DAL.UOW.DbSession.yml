@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAL.UOW.DbSession
+  commentId: T:DAL.UOW.DbSession
+  id: DbSession
+  parent: DAL.UOW
+  children:
+  - DAL.UOW.DbSession.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  - DAL.UOW.DbSession.Connection
+  - DAL.UOW.DbSession.Dispose
+  - DAL.UOW.DbSession.Transaction
+  langs:
+  - csharp
+  - vb
+  name: DbSession
+  nameWithType: DbSession
+  fullName: DAL.UOW.DbSession
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/DbSession.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: DbSession
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/DbSession.cs
+    startLine: 11
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: 'sealed class DbSession : IDisposable'
+    content.vb: >-
+      NotInheritable Class DbSession
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - sealed
+  - class
+  modifiers.vb:
+  - NotInheritable
+  - Class
+- uid: DAL.UOW.DbSession.Connection
+  commentId: P:DAL.UOW.DbSession.Connection
+  id: Connection
+  parent: DAL.UOW.DbSession
+  langs:
+  - csharp
+  - vb
+  name: Connection
+  nameWithType: DbSession.Connection
+  fullName: DAL.UOW.DbSession.Connection
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/DbSession.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Connection
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/DbSession.cs
+    startLine: 13
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public IDbConnection Connection { get; }
+    parameters: []
+    return:
+      type: System.Data.IDbConnection
+    content.vb: Public ReadOnly Property Connection As IDbConnection
+  overload: DAL.UOW.DbSession.Connection*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DAL.UOW.DbSession.Transaction
+  commentId: P:DAL.UOW.DbSession.Transaction
+  id: Transaction
+  parent: DAL.UOW.DbSession
+  langs:
+  - csharp
+  - vb
+  name: Transaction
+  nameWithType: DbSession.Transaction
+  fullName: DAL.UOW.DbSession.Transaction
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/DbSession.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Transaction
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/DbSession.cs
+    startLine: 14
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public IDbTransaction Transaction { get; set; }
+    parameters: []
+    return:
+      type: System.Data.IDbTransaction
+    content.vb: Public Property Transaction As IDbTransaction
+  overload: DAL.UOW.DbSession.Transaction*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DAL.UOW.DbSession.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  commentId: M:DAL.UOW.DbSession.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.String)'
+  parent: DAL.UOW.DbSession
+  langs:
+  - csharp
+  - vb
+  name: DbSession(IConfiguration, String)
+  nameWithType: DbSession.DbSession(IConfiguration, String)
+  fullName: DAL.UOW.DbSession.DbSession(Microsoft.Extensions.Configuration.IConfiguration, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/DbSession.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/DbSession.cs
+    startLine: 16
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public DbSession(IConfiguration configuration, string connectionName)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    - id: connectionName
+      type: System.String
+    content.vb: Public Sub New(configuration As IConfiguration, connectionName As String)
+  overload: DAL.UOW.DbSession.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.UOW.DbSession.Dispose
+  commentId: M:DAL.UOW.DbSession.Dispose
+  id: Dispose
+  parent: DAL.UOW.DbSession
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DbSession.Dispose()
+  fullName: DAL.UOW.DbSession.Dispose()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/DbSession.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Dispose
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/DbSession.cs
+    startLine: 22
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: DAL.UOW.DbSession.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DAL.UOW
+  commentId: N:DAL.UOW
+  name: DAL.UOW
+  nameWithType: DAL.UOW
+  fullName: DAL.UOW
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAL.UOW.DbSession.Connection*
+  commentId: Overload:DAL.UOW.DbSession.Connection
+  name: Connection
+  nameWithType: DbSession.Connection
+  fullName: DAL.UOW.DbSession.Connection
+- uid: System.Data.IDbConnection
+  commentId: T:System.Data.IDbConnection
+  parent: System.Data
+  isExternal: true
+  name: IDbConnection
+  nameWithType: IDbConnection
+  fullName: System.Data.IDbConnection
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: DAL.UOW.DbSession.Transaction*
+  commentId: Overload:DAL.UOW.DbSession.Transaction
+  name: Transaction
+  nameWithType: DbSession.Transaction
+  fullName: DAL.UOW.DbSession.Transaction
+- uid: System.Data.IDbTransaction
+  commentId: T:System.Data.IDbTransaction
+  parent: System.Data
+  isExternal: true
+  name: IDbTransaction
+  nameWithType: IDbTransaction
+  fullName: System.Data.IDbTransaction
+- uid: DAL.UOW.DbSession.#ctor*
+  commentId: Overload:DAL.UOW.DbSession.#ctor
+  name: DbSession
+  nameWithType: DbSession.DbSession
+  fullName: DAL.UOW.DbSession.DbSession
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: DAL.UOW.DbSession.Dispose*
+  commentId: Overload:DAL.UOW.DbSession.Dispose
+  name: Dispose
+  nameWithType: DbSession.Dispose
+  fullName: DAL.UOW.DbSession.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

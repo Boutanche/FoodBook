@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAL.UOW.IUnitOfWork
+  commentId: T:DAL.UOW.IUnitOfWork
+  id: IUnitOfWork
+  parent: DAL.UOW
+  children:
+  - DAL.UOW.IUnitOfWork.BeginTransaction
+  - DAL.UOW.IUnitOfWork.Commit
+  - DAL.UOW.IUnitOfWork.GetRepository``1
+  - DAL.UOW.IUnitOfWork.Rollback
+  langs:
+  - csharp
+  - vb
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: DAL.UOW.IUnitOfWork
+  type: Interface
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: IUnitOfWork
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+    startLine: 4
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: 'public interface IUnitOfWork : IDisposable'
+    content.vb: >-
+      Public Interface IUnitOfWork
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: DAL.UOW.IUnitOfWork.BeginTransaction
+  commentId: M:DAL.UOW.IUnitOfWork.BeginTransaction
+  id: BeginTransaction
+  parent: DAL.UOW.IUnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: BeginTransaction()
+  nameWithType: IUnitOfWork.BeginTransaction()
+  fullName: DAL.UOW.IUnitOfWork.BeginTransaction()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: BeginTransaction
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+    startLine: 7
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: void BeginTransaction()
+    content.vb: Sub BeginTransaction
+  overload: DAL.UOW.IUnitOfWork.BeginTransaction*
+- uid: DAL.UOW.IUnitOfWork.Commit
+  commentId: M:DAL.UOW.IUnitOfWork.Commit
+  id: Commit
+  parent: DAL.UOW.IUnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Commit()
+  nameWithType: IUnitOfWork.Commit()
+  fullName: DAL.UOW.IUnitOfWork.Commit()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Commit
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+    startLine: 8
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: void Commit()
+    content.vb: Sub Commit
+  overload: DAL.UOW.IUnitOfWork.Commit*
+- uid: DAL.UOW.IUnitOfWork.Rollback
+  commentId: M:DAL.UOW.IUnitOfWork.Rollback
+  id: Rollback
+  parent: DAL.UOW.IUnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: Rollback()
+  nameWithType: IUnitOfWork.Rollback()
+  fullName: DAL.UOW.IUnitOfWork.Rollback()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Rollback
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+    startLine: 9
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: void Rollback()
+    content.vb: Sub Rollback
+  overload: DAL.UOW.IUnitOfWork.Rollback*
+- uid: DAL.UOW.IUnitOfWork.GetRepository``1
+  commentId: M:DAL.UOW.IUnitOfWork.GetRepository``1
+  id: GetRepository``1
+  parent: DAL.UOW.IUnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: GetRepository<T>()
+  nameWithType: IUnitOfWork.GetRepository<T>()
+  fullName: DAL.UOW.IUnitOfWork.GetRepository<T>()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetRepository
+    path: E:/Fbook/FoodBook/Server/DAL/UOW/IUnitOfWork.cs
+    startLine: 10
+  assemblies:
+  - DAL
+  namespace: DAL.UOW
+  syntax:
+    content: T GetRepository<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Function GetRepository(Of T) As T
+  overload: DAL.UOW.IUnitOfWork.GetRepository*
+  nameWithType.vb: IUnitOfWork.GetRepository(Of T)()
+  fullName.vb: DAL.UOW.IUnitOfWork.GetRepository(Of T)()
+  name.vb: GetRepository(Of T)()
+references:
+- uid: DAL.UOW
+  commentId: N:DAL.UOW
+  name: DAL.UOW
+  nameWithType: DAL.UOW
+  fullName: DAL.UOW
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAL.UOW.IUnitOfWork.BeginTransaction*
+  commentId: Overload:DAL.UOW.IUnitOfWork.BeginTransaction
+  name: BeginTransaction
+  nameWithType: IUnitOfWork.BeginTransaction
+  fullName: DAL.UOW.IUnitOfWork.BeginTransaction
+- uid: DAL.UOW.IUnitOfWork.Commit*
+  commentId: Overload:DAL.UOW.IUnitOfWork.Commit
+  name: Commit
+  nameWithType: IUnitOfWork.Commit
+  fullName: DAL.UOW.IUnitOfWork.Commit
+- uid: DAL.UOW.IUnitOfWork.Rollback*
+  commentId: Overload:DAL.UOW.IUnitOfWork.Rollback
+  name: Rollback
+  nameWithType: IUnitOfWork.Rollback
+  fullName: DAL.UOW.IUnitOfWork.Rollback
+- uid: DAL.UOW.IUnitOfWork.GetRepository*
+  commentId: Overload:DAL.UOW.IUnitOfWork.GetRepository
+  name: GetRepository
+  nameWithType: IUnitOfWork.GetRepository
+  fullName: DAL.UOW.IUnitOfWork.GetRepository
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

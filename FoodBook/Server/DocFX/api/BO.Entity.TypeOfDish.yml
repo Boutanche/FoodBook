@@ -1,0 +1,705 @@
+### YamlMime:ManagedReference
+items:
+- uid: BO.Entity.TypeOfDish
+  commentId: T:BO.Entity.TypeOfDish
+  id: TypeOfDish
+  parent: BO.Entity
+  children:
+  - BO.Entity.TypeOfDish.#ctor
+  - BO.Entity.TypeOfDish.#ctor(System.Nullable{System.Int32},System.String)
+  - BO.Entity.TypeOfDish.Equals(System.Object)
+  - BO.Entity.TypeOfDish.GetHashCode
+  - BO.Entity.TypeOfDish.Id
+  - BO.Entity.TypeOfDish.Wording
+  langs:
+  - csharp
+  - vb
+  name: TypeOfDish
+  nameWithType: TypeOfDish
+  fullName: BO.Entity.TypeOfDish
+  type: Class
+  source:
+    remote:
+      path: FoodBook/BO/Entity/TypeOfDish.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TypeOfDish
+    path: E:/Fbook/FoodBook/BO/Entity/TypeOfDish.cs
+    startLine: 7
+  assemblies:
+  - BO
+  namespace: BO.Entity
+  summary: "\nReprésente un objet Type Of Dish\n"
+  example: []
+  syntax:
+    content: public class TypeOfDish
+    content.vb: Public Class TypeOfDish
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BO.Entity.TypeOfDish.Id
+  commentId: P:BO.Entity.TypeOfDish.Id
+  id: Id
+  parent: BO.Entity.TypeOfDish
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: TypeOfDish.Id
+  fullName: BO.Entity.TypeOfDish.Id
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/Entity/TypeOfDish.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Id
+    path: E:/Fbook/FoodBook/BO/Entity/TypeOfDish.cs
+    startLine: 12
+  assemblies:
+  - BO
+  namespace: BO.Entity
+  summary: "\nIdentifiant unique du Type Of Dish\n"
+  example: []
+  syntax:
+    content: public int? Id { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Id As Integer?
+  overload: BO.Entity.TypeOfDish.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BO.Entity.TypeOfDish.Wording
+  commentId: P:BO.Entity.TypeOfDish.Wording
+  id: Wording
+  parent: BO.Entity.TypeOfDish
+  langs:
+  - csharp
+  - vb
+  name: Wording
+  nameWithType: TypeOfDish.Wording
+  fullName: BO.Entity.TypeOfDish.Wording
+  type: Property
+  source:
+    remote:
+      path: FoodBook/BO/Entity/TypeOfDish.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Wording
+    path: E:/Fbook/FoodBook/BO/Entity/TypeOfDish.cs
+    startLine: 16
+  assemblies:
+  - BO
+  namespace: BO.Entity
+  summary: "\nLabel du Type Of Dish\n"
+  example: []
+  syntax:
+    content: public string Wording { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Wording As String
+  overload: BO.Entity.TypeOfDish.Wording*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: BO.Entity.TypeOfDish.#ctor
+  commentId: M:BO.Entity.TypeOfDish.#ctor
+  id: '#ctor'
+  parent: BO.Entity.TypeOfDish
+  langs:
+  - csharp
+  - vb
+  name: TypeOfDish()
+  nameWithType: TypeOfDish.TypeOfDish()
+  fullName: BO.Entity.TypeOfDish.TypeOfDish()
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/BO/Entity/TypeOfDish.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/BO/Entity/TypeOfDish.cs
+    startLine: 20
+  assemblies:
+  - BO
+  namespace: BO.Entity
+  summary: "\nDefault Constructor for API serialisation\n"
+  example: []
+  syntax:
+    content: public TypeOfDish()
+    content.vb: Public Sub New
+  overload: BO.Entity.TypeOfDish.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: BO.Entity.TypeOfDish.#ctor(System.Nullable{System.Int32},System.String)
+  commentId: M:BO.Entity.TypeOfDish.#ctor(System.Nullable{System.Int32},System.String)
+  id: '#ctor(System.Nullable{System.Int32},System.String)'
+  parent: BO.Entity.TypeOfDish
+  langs:
+  - csharp
+  - vb
+  name: TypeOfDish(Nullable<Int32>, String)
+  nameWithType: TypeOfDish.TypeOfDish(Nullable<Int32>, String)
+  fullName: BO.Entity.TypeOfDish.TypeOfDish(System.Nullable<System.Int32>, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/BO/Entity/TypeOfDish.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/BO/Entity/TypeOfDish.cs
+    startLine: 26
+  assemblies:
+  - BO
+  namespace: BO.Entity
+  summary: "\nUtilitary constructor for properties\n"
+  example: []
+  syntax:
+    content: public TypeOfDish(int? id_typeOfDish, string wording)
+    parameters:
+    - id: id_typeOfDish
+      type: System.Nullable{System.Int32}
+      description: ''
+    - id: wording
+      type: System.String
+      description: ''
+    content.vb: Public Sub New(id_typeOfDish As Integer?, wording As String)
+  overload: BO.Entity.TypeOfDish.#ctor*
+  nameWithType.vb: TypeOfDish.TypeOfDish(Nullable(Of Int32), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: BO.Entity.TypeOfDish.TypeOfDish(System.Nullable(Of System.Int32), System.String)
+  name.vb: TypeOfDish(Nullable(Of Int32), String)
+- uid: BO.Entity.TypeOfDish.Equals(System.Object)
+  commentId: M:BO.Entity.TypeOfDish.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: BO.Entity.TypeOfDish
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: TypeOfDish.Equals(Object)
+  fullName: BO.Entity.TypeOfDish.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/BO/Entity/TypeOfDish.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Equals
+    path: E:/Fbook/FoodBook/BO/Entity/TypeOfDish.cs
+    startLine: 36
+  assemblies:
+  - BO
+  namespace: BO.Entity
+  summary: "\nGénérer automatiquement Equals()\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: ''
+    return:
+      type: System.Boolean
+      description: TypeOfDish
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: BO.Entity.TypeOfDish.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: BO.Entity.TypeOfDish.GetHashCode
+  commentId: M:BO.Entity.TypeOfDish.GetHashCode
+  id: GetHashCode
+  parent: BO.Entity.TypeOfDish
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: TypeOfDish.GetHashCode()
+  fullName: BO.Entity.TypeOfDish.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/BO/Entity/TypeOfDish.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetHashCode
+    path: E:/Fbook/FoodBook/BO/Entity/TypeOfDish.cs
+    startLine: 46
+  assemblies:
+  - BO
+  namespace: BO.Entity
+  summary: "\nGénérer automatiquement Get Hash Code\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: HashCode
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: BO.Entity.TypeOfDish.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: BO.Entity
+  commentId: N:BO.Entity
+  name: BO.Entity
+  nameWithType: BO.Entity
+  fullName: BO.Entity
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BO.Entity.TypeOfDish.Id*
+  commentId: Overload:BO.Entity.TypeOfDish.Id
+  name: Id
+  nameWithType: TypeOfDish.Id
+  fullName: BO.Entity.TypeOfDish.Id
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.TypeOfDish.Wording*
+  commentId: Overload:BO.Entity.TypeOfDish.Wording
+  name: Wording
+  nameWithType: TypeOfDish.Wording
+  fullName: BO.Entity.TypeOfDish.Wording
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BO.Entity.TypeOfDish.#ctor*
+  commentId: Overload:BO.Entity.TypeOfDish.#ctor
+  name: TypeOfDish
+  nameWithType: TypeOfDish.TypeOfDish
+  fullName: BO.Entity.TypeOfDish.TypeOfDish
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.TypeOfDish.Equals*
+  commentId: Overload:BO.Entity.TypeOfDish.Equals
+  name: Equals
+  nameWithType: TypeOfDish.Equals
+  fullName: BO.Entity.TypeOfDish.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.TypeOfDish.GetHashCode*
+  commentId: Overload:BO.Entity.TypeOfDish.GetHashCode
+  name: GetHashCode
+  nameWithType: TypeOfDish.GetHashCode
+  fullName: BO.Entity.TypeOfDish.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

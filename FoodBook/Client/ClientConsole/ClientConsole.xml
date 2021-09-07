@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClientConsole</name>
+    </assembly>
+    <members>
+        <member name="T:ClientConsole.Program">
+            <summary>
+            Application console : me permet de vérifier que tout fonctionne.
+            </summary>
+        </member>
+    </members>
+</doc>

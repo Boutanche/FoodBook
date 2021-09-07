@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BLLC</name>
+    </assembly>
+    <members>
+        <member name="T:BLLC.Services.AuthentificationService">
+            <summary>
+            L'Authentification est à mettre en place à la V2 de l'application.
+            </summary>
+        </member>
+        <member name="T:BLLC.Services.IRestaurantService">
+            <summary>
+            Interface des données : Contient toutes les méthodes qui me permettent de récupérer les données 
+            Ici : concernant l'aspect "Restaurant" de l'API        
+            </summary>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.GetAllIngredients">
+            <summary>
+            Répuréer la liste de tous les ingrédients
+            </summary>
+            <returns>Liste d'ingrédients</returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.CreateIngredients(BO.Entity.Ingredients)">
+            <summary>
+            Créer un ingrédient
+            </summary>
+            <param name="ingredients"></param>
+            <returns>Task : Créer un ingrédient</returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.CreateDish(BO.Entity.Dish)">
+            <summary>
+            Créer un plat
+            </summary>
+            <param name="newDish"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.GetDishByName(System.String)">
+            <summary>
+            Récupérer un plat par son nom
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.GetDishById(System.Nullable{System.Int32})">
+            <summary>
+            Récupérer un plat par son Id
+            </summary>
+            <param name="idDish"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.GetAllDish">
+            <summary>
+            Récupérer tous les plats
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)">
+            <summary>
+            Créer une liste d'ingrédients
+            </summary>
+            <param name="listOfIngredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.CreateBooking(BO.Entity.Booking)">
+            <summary>
+            Créer une réservation
+            </summary>
+            <param name="newBooking"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.CreateService(BO.Entity.Service)">
+            <summary>
+            Créer un service :
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.GetServiceByDate(System.DateTime)">
+            <summary>
+            Récupérer la liste des services par date :
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.AddDishToService(BO.Entity.Service)">
+            <summary>
+            Ajouter un plat au service :
+            </summary>
+            <param name="createdService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.CreateIsComposed(BO.Entity.IsComposed)">
+            <summary>
+            Créer un IsComposed
+            </summary>
+            <param name="newIsComposed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.IRestaurantService.GetIsComposedByIdService(System.Nullable{System.Int32})">
+            <summary>
+            Récupérer la liste des IsComposed par l'Id du Service 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BLLC.Services.RestaurantService">
+            <summary>
+            Implémentation de IRestaurantSerrvice
+            </summary>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.CreateDish(BO.Entity.Dish)">
+            <summary>
+            Créer un plat
+            </summary>
+            <param name="newDish"></param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.GetAllDish">
+            <summary>
+            Récupérer la liste des plats
+            </summary>
+            <returns>Task</returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.GetDishById(System.Nullable{System.Int32})">
+            <summary>
+            Récupérer le plat par son Id.
+            </summary>
+            <param name="idDish"></param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.GetDishByName(System.String)">
+            <summary>
+            Récupérer un plat par son nom
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.CreateIngredients(BO.Entity.Ingredients)">
+            <summary>
+            Créer un ingrédient
+            </summary>
+            <param name="ingredient"></param>
+            <returns>Task : Créer un ingrédient</returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.GetAllIngredients">
+            <summary>
+            Récupérer la liste de tous les ingrédients.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.CreateListOfIngredient(BO.Entity.ListOfIngredient)">
+            <summary>
+            Créer un élément de liaison entre un plat et un ingrédient
+            </summary>
+            <param name="listOfIngredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.CreateBooking(BO.Entity.Booking)">
+            <summary>
+            Créer une réservation :
+            </summary>
+            <param name="booking"></param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.CreateService(BO.Entity.Service)">
+            <summary>
+            Créer un service :
+            </summary>
+            <param name="service"></param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.GetServiceByDate(System.DateTime)">
+            <summary>
+            Récupérer la liste des services :
+            </summary>
+            <param name="dateTime"></param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.AddDishToService(BO.Entity.Service)">
+            <summary>
+            Ajouter un plat au service :
+            </summary>
+            <param name="createdService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.CreateIsComposed(BO.Entity.IsComposed)">
+            <summary>
+            Créer la table d'association "IsComposed" associant les services et les plats :
+            </summary>
+            <param name="isComposed"></param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.GetIsComposedByIdService(System.Nullable{System.Int32})">
+            <summary>
+            Récupérer les plats qui sont associés à l'Id Service :
+            </summary>
+            <param name="id"></param>
+            <returns>Task</returns>
+        </member>
+    </members>
+</doc>

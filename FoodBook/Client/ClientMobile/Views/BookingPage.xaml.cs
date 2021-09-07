@@ -28,11 +28,18 @@ namespace ClientMobile.Views
     /// </summary>
     public sealed partial class BookingPage : Page
     {
+        /// <summary>
+        /// Päge de réservation
+        /// </summary>
         public BookingPage()
         {
             this.InitializeComponent();
         }
-
+        /// <summary>
+        /// Au clieck sur le bouton réserver
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             BookingVM.Book();

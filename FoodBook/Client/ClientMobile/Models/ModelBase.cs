@@ -8,10 +8,20 @@ using System.Threading.Tasks;
 
 namespace App.Models
 {
+    /// <summary>
+    /// Base du Model
+    /// </summary>
     public class ModelBase : INotifyPropertyChanged
     {
+        /// <summary>
+        /// Property Changed
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// On property changed
+        /// </summary>
+        /// <param name="propertyName"></param>
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 

@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAL.UOW
+  commentId: N:DAL.UOW
+  id: DAL.UOW
+  children:
+  - DAL.UOW.DbSession
+  - DAL.UOW.IUnitOfWork
+  - DAL.UOW.UnitOfWork
+  langs:
+  - csharp
+  - vb
+  name: DAL.UOW
+  nameWithType: DAL.UOW
+  fullName: DAL.UOW
+  type: Namespace
+  assemblies:
+  - DAL
+references:
+- uid: DAL.UOW.DbSession
+  commentId: T:DAL.UOW.DbSession
+  parent: DAL.UOW
+  name: DbSession
+  nameWithType: DbSession
+  fullName: DAL.UOW.DbSession
+- uid: DAL.UOW.IUnitOfWork
+  commentId: T:DAL.UOW.IUnitOfWork
+  parent: DAL.UOW
+  name: IUnitOfWork
+  nameWithType: IUnitOfWork
+  fullName: DAL.UOW.IUnitOfWork
+- uid: DAL.UOW.UnitOfWork
+  commentId: T:DAL.UOW.UnitOfWork
+  name: UnitOfWork
+  nameWithType: UnitOfWork
+  fullName: DAL.UOW.UnitOfWork
+- uid: DAL.UOW
+  commentId: N:DAL.UOW
+  name: DAL.UOW
+  nameWithType: DAL.UOW
+  fullName: DAL.UOW

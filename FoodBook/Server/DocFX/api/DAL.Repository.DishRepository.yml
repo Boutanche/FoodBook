@@ -1,0 +1,1407 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAL.Repository.DishRepository
+  commentId: T:DAL.Repository.DishRepository
+  id: DishRepository
+  parent: DAL.Repository
+  children:
+  - DAL.Repository.DishRepository.#ctor(DAL.UOW.DbSession)
+  - DAL.Repository.DishRepository._session
+  - DAL.Repository.DishRepository.DeleteAsync(System.Int64)
+  - DAL.Repository.DishRepository.GetAllAsync
+  - DAL.Repository.DishRepository.GetAsync(System.Int32)
+  - DAL.Repository.DishRepository.GetAsyncByName(System.String)
+  - DAL.Repository.DishRepository.InsertAsync(BO.Entity.Dish)
+  - DAL.Repository.DishRepository.UpdateAsync(BO.Entity.Dish)
+  langs:
+  - csharp
+  - vb
+  name: DishRepository
+  nameWithType: DishRepository
+  fullName: DAL.Repository.DishRepository
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: DishRepository
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 11
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: 'class DishRepository : IDishRepository, IGenericRepository<Dish>'
+    content.vb: >-
+      Class DishRepository
+          Implements IDishRepository, IGenericRepository(Of Dish)
+  inheritance:
+  - System.Object
+  implements:
+  - DAL.Repository.IDishRepository
+  - DAL.Repository.IGenericRepository{BO.Entity.Dish}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - class
+  modifiers.vb:
+  - Class
+- uid: DAL.Repository.DishRepository._session
+  commentId: F:DAL.Repository.DishRepository._session
+  id: _session
+  parent: DAL.Repository.DishRepository
+  langs:
+  - csharp
+  - vb
+  name: _session
+  nameWithType: DishRepository._session
+  fullName: DAL.Repository.DishRepository._session
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: _session
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 13
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: readonly DbSession _session
+    return:
+      type: DAL.UOW.DbSession
+    content.vb: ReadOnly _session As DbSession
+  modifiers.csharp:
+  - readonly
+  modifiers.vb:
+  - ReadOnly
+- uid: DAL.Repository.DishRepository.#ctor(DAL.UOW.DbSession)
+  commentId: M:DAL.Repository.DishRepository.#ctor(DAL.UOW.DbSession)
+  id: '#ctor(DAL.UOW.DbSession)'
+  parent: DAL.Repository.DishRepository
+  langs:
+  - csharp
+  - vb
+  name: DishRepository(DbSession)
+  nameWithType: DishRepository.DishRepository(DbSession)
+  fullName: DAL.Repository.DishRepository.DishRepository(DAL.UOW.DbSession)
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 15
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: public DishRepository(DbSession dbSession)
+    parameters:
+    - id: dbSession
+      type: DAL.UOW.DbSession
+    content.vb: Public Sub New(dbSession As DbSession)
+  overload: DAL.Repository.DishRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.Repository.DishRepository.DeleteAsync(System.Int64)
+  commentId: M:DAL.Repository.DishRepository.DeleteAsync(System.Int64)
+  id: DeleteAsync(System.Int64)
+  parent: DAL.Repository.DishRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Int64)
+  nameWithType: DishRepository.DeleteAsync(Int64)
+  fullName: DAL.Repository.DishRepository.DeleteAsync(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: DeleteAsync
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 19
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: public Task<int> DeleteAsync(long id)
+    parameters:
+    - id: id
+      type: System.Int64
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Public Function DeleteAsync(id As Long) As Task(Of Integer)
+  overload: DAL.Repository.DishRepository.DeleteAsync*
+  implements:
+  - DAL.Repository.IGenericRepository{BO.Entity.Dish}.DeleteAsync(System.Int64)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.Repository.DishRepository.GetAllAsync
+  commentId: M:DAL.Repository.DishRepository.GetAllAsync
+  id: GetAllAsync
+  parent: DAL.Repository.DishRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: DishRepository.GetAllAsync()
+  fullName: DAL.Repository.DishRepository.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllAsync
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 25
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: public Task<IEnumerable<Dish>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entity.Dish}}
+    content.vb: Public Function GetAllAsync As Task(Of IEnumerable(Of Dish))
+  overload: DAL.Repository.DishRepository.GetAllAsync*
+  implements:
+  - DAL.Repository.IGenericRepository{BO.Entity.Dish}.GetAllAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.Repository.DishRepository.GetAsync(System.Int32)
+  commentId: M:DAL.Repository.DishRepository.GetAsync(System.Int32)
+  id: GetAsync(System.Int32)
+  parent: DAL.Repository.DishRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Int32)
+  nameWithType: DishRepository.GetAsync(Int32)
+  fullName: DAL.Repository.DishRepository.GetAsync(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAsync
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 31
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: public Task<Dish> GetAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Dish}
+    content.vb: Public Function GetAsync(id As Integer) As Task(Of Dish)
+  overload: DAL.Repository.DishRepository.GetAsync*
+  implements:
+  - DAL.Repository.IGenericRepository{BO.Entity.Dish}.GetAsync(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.Repository.DishRepository.GetAsyncByName(System.String)
+  commentId: M:DAL.Repository.DishRepository.GetAsyncByName(System.String)
+  id: GetAsyncByName(System.String)
+  parent: DAL.Repository.DishRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAsyncByName(String)
+  nameWithType: DishRepository.GetAsyncByName(String)
+  fullName: DAL.Repository.DishRepository.GetAsyncByName(System.String)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAsyncByName
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 38
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: public Task<Dish> GetAsyncByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Dish}
+    content.vb: Public Function GetAsyncByName(name As String) As Task(Of Dish)
+  overload: DAL.Repository.DishRepository.GetAsyncByName*
+  implements:
+  - DAL.Repository.IDishRepository.GetAsyncByName(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.Repository.DishRepository.InsertAsync(BO.Entity.Dish)
+  commentId: M:DAL.Repository.DishRepository.InsertAsync(BO.Entity.Dish)
+  id: InsertAsync(BO.Entity.Dish)
+  parent: DAL.Repository.DishRepository
+  langs:
+  - csharp
+  - vb
+  name: InsertAsync(Dish)
+  nameWithType: DishRepository.InsertAsync(Dish)
+  fullName: DAL.Repository.DishRepository.InsertAsync(BO.Entity.Dish)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: InsertAsync
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 46
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: public Task<Dish> InsertAsync(Dish entity)
+    parameters:
+    - id: entity
+      type: BO.Entity.Dish
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Dish}
+    content.vb: Public Function InsertAsync(entity As Dish) As Task(Of Dish)
+  overload: DAL.Repository.DishRepository.InsertAsync*
+  implements:
+  - DAL.Repository.IGenericRepository{BO.Entity.Dish}.InsertAsync(BO.Entity.Dish)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DAL.Repository.DishRepository.UpdateAsync(BO.Entity.Dish)
+  commentId: M:DAL.Repository.DishRepository.UpdateAsync(BO.Entity.Dish)
+  id: UpdateAsync(BO.Entity.Dish)
+  parent: DAL.Repository.DishRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(Dish)
+  nameWithType: DishRepository.UpdateAsync(Dish)
+  fullName: DAL.Repository.DishRepository.UpdateAsync(BO.Entity.Dish)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/DAL/Repository/DishRepository.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: UpdateAsync
+    path: E:/Fbook/FoodBook/Server/DAL/Repository/DishRepository.cs
+    startLine: 54
+  assemblies:
+  - DAL
+  namespace: DAL.Repository
+  syntax:
+    content: public Task UpdateAsync(Dish entity)
+    parameters:
+    - id: entity
+      type: BO.Entity.Dish
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UpdateAsync(entity As Dish) As Task
+  overload: DAL.Repository.DishRepository.UpdateAsync*
+  implements:
+  - DAL.Repository.IGenericRepository{BO.Entity.Dish}.UpdateAsync(BO.Entity.Dish)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DAL.Repository
+  commentId: N:DAL.Repository
+  name: DAL.Repository
+  nameWithType: DAL.Repository
+  fullName: DAL.Repository
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DAL.Repository.IDishRepository
+  commentId: T:DAL.Repository.IDishRepository
+  parent: DAL.Repository
+  name: IDishRepository
+  nameWithType: IDishRepository
+  fullName: DAL.Repository.IDishRepository
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Dish}
+  commentId: T:DAL.Repository.IGenericRepository{BO.Entity.Dish}
+  parent: DAL.Repository
+  definition: DAL.Repository.IGenericRepository`1
+  name: IGenericRepository<Dish>
+  nameWithType: IGenericRepository<Dish>
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>
+  nameWithType.vb: IGenericRepository(Of Dish)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Dish)
+  name.vb: IGenericRepository(Of Dish)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DAL.Repository.IGenericRepository`1
+  commentId: T:DAL.Repository.IGenericRepository`1
+  name: IGenericRepository<TEntity>
+  nameWithType: IGenericRepository<TEntity>
+  fullName: DAL.Repository.IGenericRepository<TEntity>
+  nameWithType.vb: IGenericRepository(Of TEntity)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity)
+  name.vb: IGenericRepository(Of TEntity)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.UOW.DbSession
+  commentId: T:DAL.UOW.DbSession
+  parent: DAL.UOW
+  name: DbSession
+  nameWithType: DbSession
+  fullName: DAL.UOW.DbSession
+- uid: DAL.UOW
+  commentId: N:DAL.UOW
+  name: DAL.UOW
+  nameWithType: DAL.UOW
+  fullName: DAL.UOW
+- uid: DAL.Repository.DishRepository.#ctor*
+  commentId: Overload:DAL.Repository.DishRepository.#ctor
+  name: DishRepository
+  nameWithType: DishRepository.DishRepository
+  fullName: DAL.Repository.DishRepository.DishRepository
+- uid: DAL.Repository.DishRepository.DeleteAsync*
+  commentId: Overload:DAL.Repository.DishRepository.DeleteAsync
+  name: DeleteAsync
+  nameWithType: DishRepository.DeleteAsync
+  fullName: DAL.Repository.DishRepository.DeleteAsync
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Dish}.DeleteAsync(System.Int64)
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Dish}.DeleteAsync(System.Int64)
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Dish}
+  definition: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+  name: DeleteAsync(Int64)
+  nameWithType: IGenericRepository<Dish>.DeleteAsync(Int64)
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.DeleteAsync(System.Int64)
+  nameWithType.vb: IGenericRepository(Of Dish).DeleteAsync(Int64)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).DeleteAsync(System.Int64)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+    name: DeleteAsync
+    nameWithType: IGenericRepository<Dish>.DeleteAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+    name: DeleteAsync
+    nameWithType: IGenericRepository(Of Dish).DeleteAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+  commentId: M:DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+  isExternal: true
+  name: DeleteAsync(Int64)
+  nameWithType: IGenericRepository<TEntity>.DeleteAsync(Int64)
+  fullName: DAL.Repository.IGenericRepository<TEntity>.DeleteAsync(System.Int64)
+  nameWithType.vb: IGenericRepository(Of TEntity).DeleteAsync(Int64)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).DeleteAsync(System.Int64)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+    name: DeleteAsync
+    nameWithType: IGenericRepository<TEntity>.DeleteAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.DeleteAsync(System.Int64)
+    name: DeleteAsync
+    nameWithType: IGenericRepository(Of TEntity).DeleteAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: DAL.Repository.DishRepository.GetAllAsync*
+  commentId: Overload:DAL.Repository.DishRepository.GetAllAsync
+  name: GetAllAsync
+  nameWithType: DishRepository.GetAllAsync
+  fullName: DAL.Repository.DishRepository.GetAllAsync
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Dish}.GetAllAsync
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Dish}.GetAllAsync
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Dish}
+  definition: DAL.Repository.IGenericRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IGenericRepository<Dish>.GetAllAsync()
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.GetAllAsync()
+  nameWithType.vb: IGenericRepository(Of Dish).GetAllAsync()
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).GetAllAsync()
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericRepository<Dish>.GetAllAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericRepository(Of Dish).GetAllAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entity.Dish}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{BO.Entity.Dish}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<Dish>>
+  nameWithType: Task<IEnumerable<Dish>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<BO.Entity.Dish>>
+  nameWithType.vb: Task(Of IEnumerable(Of Dish))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of BO.Entity.Dish))
+  name.vb: Task(Of IEnumerable(Of Dish))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+  commentId: M:DAL.Repository.IGenericRepository`1.GetAllAsync
+  name: GetAllAsync()
+  nameWithType: IGenericRepository<TEntity>.GetAllAsync()
+  fullName: DAL.Repository.IGenericRepository<TEntity>.GetAllAsync()
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAllAsync()
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).GetAllAsync()
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericRepository<TEntity>.GetAllAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.GetAllAsync
+    name: GetAllAsync
+    nameWithType: IGenericRepository(Of TEntity).GetAllAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).GetAllAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.DishRepository.GetAsync*
+  commentId: Overload:DAL.Repository.DishRepository.GetAsync
+  name: GetAsync
+  nameWithType: DishRepository.GetAsync
+  fullName: DAL.Repository.DishRepository.GetAsync
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Dish}.GetAsync(System.Int32)
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Dish}.GetAsync(System.Int32)
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Dish}
+  definition: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+  name: GetAsync(Int32)
+  nameWithType: IGenericRepository<Dish>.GetAsync(Int32)
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.GetAsync(System.Int32)
+  nameWithType.vb: IGenericRepository(Of Dish).GetAsync(Int32)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).GetAsync(System.Int32)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+    name: GetAsync
+    nameWithType: IGenericRepository<Dish>.GetAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+    name: GetAsync
+    nameWithType: IGenericRepository(Of Dish).GetAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Threading.Tasks.Task{BO.Entity.Dish}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.Dish}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Dish>
+  nameWithType: Task<Dish>
+  fullName: System.Threading.Tasks.Task<BO.Entity.Dish>
+  nameWithType.vb: Task(Of Dish)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.Dish)
+  name.vb: Task(Of Dish)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+  commentId: M:DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+  isExternal: true
+  name: GetAsync(Int32)
+  nameWithType: IGenericRepository<TEntity>.GetAsync(Int32)
+  fullName: DAL.Repository.IGenericRepository<TEntity>.GetAsync(System.Int32)
+  nameWithType.vb: IGenericRepository(Of TEntity).GetAsync(Int32)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).GetAsync(System.Int32)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+    name: GetAsync
+    nameWithType: IGenericRepository<TEntity>.GetAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.GetAsync(System.Int32)
+    name: GetAsync
+    nameWithType: IGenericRepository(Of TEntity).GetAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).GetAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.DishRepository.GetAsyncByName*
+  commentId: Overload:DAL.Repository.DishRepository.GetAsyncByName
+  name: GetAsyncByName
+  nameWithType: DishRepository.GetAsyncByName
+  fullName: DAL.Repository.DishRepository.GetAsyncByName
+- uid: DAL.Repository.IDishRepository.GetAsyncByName(System.String)
+  commentId: M:DAL.Repository.IDishRepository.GetAsyncByName(System.String)
+  parent: DAL.Repository.IDishRepository
+  isExternal: true
+  name: GetAsyncByName(String)
+  nameWithType: IDishRepository.GetAsyncByName(String)
+  fullName: DAL.Repository.IDishRepository.GetAsyncByName(System.String)
+  spec.csharp:
+  - uid: DAL.Repository.IDishRepository.GetAsyncByName(System.String)
+    name: GetAsyncByName
+    nameWithType: IDishRepository.GetAsyncByName
+    fullName: DAL.Repository.IDishRepository.GetAsyncByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IDishRepository.GetAsyncByName(System.String)
+    name: GetAsyncByName
+    nameWithType: IDishRepository.GetAsyncByName
+    fullName: DAL.Repository.IDishRepository.GetAsyncByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DAL.Repository.DishRepository.InsertAsync*
+  commentId: Overload:DAL.Repository.DishRepository.InsertAsync
+  name: InsertAsync
+  nameWithType: DishRepository.InsertAsync
+  fullName: DAL.Repository.DishRepository.InsertAsync
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Dish}.InsertAsync(BO.Entity.Dish)
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Dish}.InsertAsync(BO.Entity.Dish)
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Dish}
+  definition: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+  name: InsertAsync(Dish)
+  nameWithType: IGenericRepository<Dish>.InsertAsync(Dish)
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.InsertAsync(BO.Entity.Dish)
+  nameWithType.vb: IGenericRepository(Of Dish).InsertAsync(Dish)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).InsertAsync(BO.Entity.Dish)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IGenericRepository<Dish>.InsertAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IGenericRepository(Of Dish).InsertAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity.Dish
+  commentId: T:BO.Entity.Dish
+  parent: BO.Entity
+  name: Dish
+  nameWithType: Dish
+  fullName: BO.Entity.Dish
+- uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+  commentId: M:DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+  name: InsertAsync(TEntity)
+  nameWithType: IGenericRepository<TEntity>.InsertAsync(TEntity)
+  fullName: DAL.Repository.IGenericRepository<TEntity>.InsertAsync(TEntity)
+  nameWithType.vb: IGenericRepository(Of TEntity).InsertAsync(TEntity)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).InsertAsync(TEntity)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IGenericRepository<TEntity>.InsertAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.InsertAsync(`0)
+    name: InsertAsync
+    nameWithType: IGenericRepository(Of TEntity).InsertAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).InsertAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity
+  commentId: N:BO.Entity
+  name: BO.Entity
+  nameWithType: BO.Entity
+  fullName: BO.Entity
+- uid: DAL.Repository.DishRepository.UpdateAsync*
+  commentId: Overload:DAL.Repository.DishRepository.UpdateAsync
+  name: UpdateAsync
+  nameWithType: DishRepository.UpdateAsync
+  fullName: DAL.Repository.DishRepository.UpdateAsync
+- uid: DAL.Repository.IGenericRepository{BO.Entity.Dish}.UpdateAsync(BO.Entity.Dish)
+  commentId: M:DAL.Repository.IGenericRepository{BO.Entity.Dish}.UpdateAsync(BO.Entity.Dish)
+  parent: DAL.Repository.IGenericRepository{BO.Entity.Dish}
+  definition: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(Dish)
+  nameWithType: IGenericRepository<Dish>.UpdateAsync(Dish)
+  fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.UpdateAsync(BO.Entity.Dish)
+  nameWithType.vb: IGenericRepository(Of Dish).UpdateAsync(Dish)
+  fullName.vb: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).UpdateAsync(BO.Entity.Dish)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IGenericRepository<Dish>.UpdateAsync
+    fullName: DAL.Repository.IGenericRepository<BO.Entity.Dish>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IGenericRepository(Of Dish).UpdateAsync
+    fullName: DAL.Repository.IGenericRepository(Of BO.Entity.Dish).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: BO.Entity.Dish
+    name: Dish
+    nameWithType: Dish
+    fullName: BO.Entity.Dish
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+  commentId: M:DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+  name: UpdateAsync(TEntity)
+  nameWithType: IGenericRepository<TEntity>.UpdateAsync(TEntity)
+  fullName: DAL.Repository.IGenericRepository<TEntity>.UpdateAsync(TEntity)
+  nameWithType.vb: IGenericRepository(Of TEntity).UpdateAsync(TEntity)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity).UpdateAsync(TEntity)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IGenericRepository<TEntity>.UpdateAsync
+    fullName: DAL.Repository.IGenericRepository<TEntity>.UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: IGenericRepository(Of TEntity).UpdateAsync
+    fullName: DAL.Repository.IGenericRepository(Of TEntity).UpdateAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )

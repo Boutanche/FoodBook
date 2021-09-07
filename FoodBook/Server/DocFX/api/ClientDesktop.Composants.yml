@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientDesktop.Composants
+  commentId: N:ClientDesktop.Composants
+  id: ClientDesktop.Composants
+  children:
+  - ClientDesktop.Composants.DayServiceControlComponent
+  - ClientDesktop.Composants.DishServiceControlComponent
+  - ClientDesktop.Composants.ServiceControlComponent
+  langs:
+  - csharp
+  - vb
+  name: ClientDesktop.Composants
+  nameWithType: ClientDesktop.Composants
+  fullName: ClientDesktop.Composants
+  type: Namespace
+  assemblies:
+  - ClientDesktop
+references:
+- uid: ClientDesktop.Composants.DayServiceControlComponent
+  commentId: T:ClientDesktop.Composants.DayServiceControlComponent
+  name: DayServiceControlComponent
+  nameWithType: DayServiceControlComponent
+  fullName: ClientDesktop.Composants.DayServiceControlComponent
+- uid: ClientDesktop.Composants.DishServiceControlComponent
+  commentId: T:ClientDesktop.Composants.DishServiceControlComponent
+  name: DishServiceControlComponent
+  nameWithType: DishServiceControlComponent
+  fullName: ClientDesktop.Composants.DishServiceControlComponent
+- uid: ClientDesktop.Composants.ServiceControlComponent
+  commentId: T:ClientDesktop.Composants.ServiceControlComponent
+  parent: ClientDesktop.Composants
+  name: ServiceControlComponent
+  nameWithType: ServiceControlComponent
+  fullName: ClientDesktop.Composants.ServiceControlComponent
+- uid: ClientDesktop.Composants
+  commentId: N:ClientDesktop.Composants
+  name: ClientDesktop.Composants
+  nameWithType: ClientDesktop.Composants
+  fullName: ClientDesktop.Composants

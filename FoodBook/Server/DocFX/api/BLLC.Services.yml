@@ -1,0 +1,47 @@
+### YamlMime:ManagedReference
+items:
+- uid: BLLC.Services
+  commentId: N:BLLC.Services
+  id: BLLC.Services
+  children:
+  - BLLC.Services.AuthentificationService
+  - BLLC.Services.IRestaurantService
+  - BLLC.Services.LibrairiService
+  - BLLC.Services.RestaurantService
+  langs:
+  - csharp
+  - vb
+  name: BLLC.Services
+  nameWithType: BLLC.Services
+  fullName: BLLC.Services
+  type: Namespace
+  assemblies:
+  - BLLC
+references:
+- uid: BLLC.Services.AuthentificationService
+  commentId: T:BLLC.Services.AuthentificationService
+  parent: BLLC.Services
+  name: AuthentificationService
+  nameWithType: AuthentificationService
+  fullName: BLLC.Services.AuthentificationService
+- uid: BLLC.Services.IRestaurantService
+  commentId: T:BLLC.Services.IRestaurantService
+  parent: BLLC.Services
+  name: IRestaurantService
+  nameWithType: IRestaurantService
+  fullName: BLLC.Services.IRestaurantService
+- uid: BLLC.Services.LibrairiService
+  commentId: T:BLLC.Services.LibrairiService
+  name: LibrairiService
+  nameWithType: LibrairiService
+  fullName: BLLC.Services.LibrairiService
+- uid: BLLC.Services.RestaurantService
+  commentId: T:BLLC.Services.RestaurantService
+  name: RestaurantService
+  nameWithType: RestaurantService
+  fullName: BLLC.Services.RestaurantService
+- uid: BLLC.Services
+  commentId: N:BLLC.Services
+  name: BLLC.Services
+  nameWithType: BLLC.Services
+  fullName: BLLC.Services

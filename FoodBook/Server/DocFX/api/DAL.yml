@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAL
+  commentId: N:DAL
+  id: DAL
+  children:
+  - DAL.DALExtension
+  langs:
+  - csharp
+  - vb
+  name: DAL
+  nameWithType: DAL
+  fullName: DAL
+  type: Namespace
+  assemblies:
+  - DAL
+references:
+- uid: DAL.DALExtension
+  commentId: T:DAL.DALExtension
+  name: DALExtension
+  nameWithType: DALExtension
+  fullName: DAL.DALExtension

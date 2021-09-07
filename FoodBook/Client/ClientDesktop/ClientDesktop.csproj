@@ -7,6 +7,14 @@
     <LangVersion>default</LangVersion>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Fbook\FoodBook\Client\ClientDesktop\ClientDesktop.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\Fbook\FoodBook\Client\ClientDesktop\ClientDesktop.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\..\BO\BO.csproj" />
     <ProjectReference Include="..\BLLC\BLLC.csproj" />

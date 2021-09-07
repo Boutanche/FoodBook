@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientDesktop.Properties
+  commentId: N:ClientDesktop.Properties
+  id: ClientDesktop.Properties
+  children:
+  - ClientDesktop.Properties.Resources
+  langs:
+  - csharp
+  - vb
+  name: ClientDesktop.Properties
+  nameWithType: ClientDesktop.Properties
+  fullName: ClientDesktop.Properties
+  type: Namespace
+  assemblies:
+  - ClientDesktop
+references:
+- uid: ClientDesktop.Properties.Resources
+  commentId: T:ClientDesktop.Properties.Resources
+  name: Resources
+  nameWithType: Resources
+  fullName: ClientDesktop.Properties.Resources

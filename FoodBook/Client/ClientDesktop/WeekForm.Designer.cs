@@ -1,6 +1,9 @@
 ﻿
 namespace ClientDesktop
 {
+    /// <summary>
+    /// Fenêtre principale de lapplication : affichage des semaines et des plats
+    /// </summary>
     partial class WeekForm
     {
         /// <summary>

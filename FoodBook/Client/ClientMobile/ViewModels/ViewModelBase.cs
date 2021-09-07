@@ -8,9 +8,19 @@ using System.Threading.Tasks;
 
 namespace ClientMobile.ViewModels
 {
+    /// <summary>
+    /// Base du View Model
+    /// </summary>
     public abstract class ViewModelBase : INotifyPropertyChanged
     {
+        /// <summary>
+        /// Quand les propriété changent
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// On Property Changed
+        /// </summary>
+        /// <param name="propertyName"></param>
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 

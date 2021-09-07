@@ -1,0 +1,630 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnitTest.DishControllerUnitTest
+  commentId: T:UnitTest.DishControllerUnitTest
+  id: DishControllerUnitTest
+  parent: UnitTest
+  children:
+  - UnitTest.DishControllerUnitTest.TestCreateDish
+  - UnitTest.DishControllerUnitTest.TestGetAllDish
+  - UnitTest.DishControllerUnitTest.TestGetDishById
+  - UnitTest.DishControllerUnitTest.TestGetDishByName
+  - UnitTest.DishControllerUnitTest.TestModifyDish
+  - UnitTest.DishControllerUnitTest.TestRemoveDishById
+  langs:
+  - csharp
+  - vb
+  name: DishControllerUnitTest
+  nameWithType: DishControllerUnitTest
+  fullName: UnitTest.DishControllerUnitTest
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: DishControllerUnitTest
+    path: E:/Fbook/FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+    startLine: 15
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nUnit Test for Dish\n"
+  example: []
+  syntax:
+    content: public class DishControllerUnitTest
+    content.vb: Public Class DishControllerUnitTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: UnitTest.DishControllerUnitTest.TestGetAllDish
+  commentId: M:UnitTest.DishControllerUnitTest.TestGetAllDish
+  id: TestGetAllDish
+  parent: UnitTest.DishControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestGetAllDish()
+  nameWithType: DishControllerUnitTest.TestGetAllDish()
+  fullName: UnitTest.DishControllerUnitTest.TestGetAllDish()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestGetAllDish
+    path: E:/Fbook/FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+    startLine: 20
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nUnit Test on Fake Get All Dish\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestGetAllDish()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestGetAllDish
+  overload: UnitTest.DishControllerUnitTest.TestGetAllDish*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.DishControllerUnitTest.TestGetDishByName
+  commentId: M:UnitTest.DishControllerUnitTest.TestGetDishByName
+  id: TestGetDishByName
+  parent: UnitTest.DishControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestGetDishByName()
+  nameWithType: DishControllerUnitTest.TestGetDishByName()
+  fullName: UnitTest.DishControllerUnitTest.TestGetDishByName()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestGetDishByName
+    path: E:/Fbook/FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+    startLine: 35
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nRécupération d&apos;un plat par son nom\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestGetDishByName()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestGetDishByName
+  overload: UnitTest.DishControllerUnitTest.TestGetDishByName*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.DishControllerUnitTest.TestGetDishById
+  commentId: M:UnitTest.DishControllerUnitTest.TestGetDishById
+  id: TestGetDishById
+  parent: UnitTest.DishControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestGetDishById()
+  nameWithType: DishControllerUnitTest.TestGetDishById()
+  fullName: UnitTest.DishControllerUnitTest.TestGetDishById()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestGetDishById
+    path: E:/Fbook/FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+    startLine: 66
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nTest Unitaire sur GetDishById\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestGetDishById()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestGetDishById
+  overload: UnitTest.DishControllerUnitTest.TestGetDishById*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.DishControllerUnitTest.TestCreateDish
+  commentId: M:UnitTest.DishControllerUnitTest.TestCreateDish
+  id: TestCreateDish
+  parent: UnitTest.DishControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestCreateDish()
+  nameWithType: DishControllerUnitTest.TestCreateDish()
+  fullName: UnitTest.DishControllerUnitTest.TestCreateDish()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestCreateDish
+    path: E:/Fbook/FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+    startLine: 86
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestCreateDish()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestCreateDish
+  overload: UnitTest.DishControllerUnitTest.TestCreateDish*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.DishControllerUnitTest.TestRemoveDishById
+  commentId: M:UnitTest.DishControllerUnitTest.TestRemoveDishById
+  id: TestRemoveDishById
+  parent: UnitTest.DishControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestRemoveDishById()
+  nameWithType: DishControllerUnitTest.TestRemoveDishById()
+  fullName: UnitTest.DishControllerUnitTest.TestRemoveDishById()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestRemoveDishById
+    path: E:/Fbook/FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+    startLine: 105
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nSuppression d&apos;un plat\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestRemoveDishById()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestRemoveDishById
+  overload: UnitTest.DishControllerUnitTest.TestRemoveDishById*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: UnitTest.DishControllerUnitTest.TestModifyDish
+  commentId: M:UnitTest.DishControllerUnitTest.TestModifyDish
+  id: TestModifyDish
+  parent: UnitTest.DishControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: TestModifyDish()
+  nameWithType: DishControllerUnitTest.TestModifyDish()
+  fullName: UnitTest.DishControllerUnitTest.TestModifyDish()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: TestModifyDish
+    path: E:/Fbook/FoodBook/Server/UnitTest/DishControllerUnitTest.cs
+    startLine: 122
+  assemblies:
+  - UnitTest
+  namespace: UnitTest
+  summary: "\nTest unitaire sur Modifier un plat\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TestModifyDish()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TestModifyDish
+  overload: UnitTest.DishControllerUnitTest.TestModifyDish*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: UnitTest
+  commentId: N:UnitTest
+  name: UnitTest
+  nameWithType: UnitTest
+  fullName: UnitTest
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnitTest.DishControllerUnitTest.TestGetAllDish*
+  commentId: Overload:UnitTest.DishControllerUnitTest.TestGetAllDish
+  name: TestGetAllDish
+  nameWithType: DishControllerUnitTest.TestGetAllDish
+  fullName: UnitTest.DishControllerUnitTest.TestGetAllDish
+- uid: UnitTest.DishControllerUnitTest.TestGetDishByName*
+  commentId: Overload:UnitTest.DishControllerUnitTest.TestGetDishByName
+  name: TestGetDishByName
+  nameWithType: DishControllerUnitTest.TestGetDishByName
+  fullName: UnitTest.DishControllerUnitTest.TestGetDishByName
+- uid: UnitTest.DishControllerUnitTest.TestGetDishById*
+  commentId: Overload:UnitTest.DishControllerUnitTest.TestGetDishById
+  name: TestGetDishById
+  nameWithType: DishControllerUnitTest.TestGetDishById
+  fullName: UnitTest.DishControllerUnitTest.TestGetDishById
+- uid: UnitTest.DishControllerUnitTest.TestCreateDish*
+  commentId: Overload:UnitTest.DishControllerUnitTest.TestCreateDish
+  name: TestCreateDish
+  nameWithType: DishControllerUnitTest.TestCreateDish
+  fullName: UnitTest.DishControllerUnitTest.TestCreateDish
+- uid: UnitTest.DishControllerUnitTest.TestRemoveDishById*
+  commentId: Overload:UnitTest.DishControllerUnitTest.TestRemoveDishById
+  name: TestRemoveDishById
+  nameWithType: DishControllerUnitTest.TestRemoveDishById
+  fullName: UnitTest.DishControllerUnitTest.TestRemoveDishById
+- uid: UnitTest.DishControllerUnitTest.TestModifyDish*
+  commentId: Overload:UnitTest.DishControllerUnitTest.TestModifyDish
+  name: TestModifyDish
+  nameWithType: DishControllerUnitTest.TestModifyDish
+  fullName: UnitTest.DishControllerUnitTest.TestModifyDish

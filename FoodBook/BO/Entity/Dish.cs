@@ -9,19 +9,19 @@ namespace BO.Entity
     public class Dish
     {
         /// <summary>
-        /// int : Id Dish
+        /// Id Dish
         /// </summary>
         public int? Id { get; set; }
         /// <summary>
-        /// string : Name of a dish
+        /// Name of a dish
         /// </summary>
         public string Name { get; set; }
         /// <summary>
-        /// int : Popularity of a dish
+        /// Popularity of a dish
         /// </summary>
         public int Popularity { get; set; }
         /// <summary>
-        /// int : Foreign key of type of dish
+        /// Foreign key of type of dish
         /// </summary>
         public int IdType { get; set; }
 

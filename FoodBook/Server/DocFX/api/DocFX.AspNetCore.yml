@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DocFX.AspNetCore
+  commentId: N:DocFX.AspNetCore
+  id: DocFX.AspNetCore
+  children:
+  - DocFX.AspNetCore.DocFxExtension
+  langs:
+  - csharp
+  - vb
+  name: DocFX.AspNetCore
+  nameWithType: DocFX.AspNetCore
+  fullName: DocFX.AspNetCore
+  type: Namespace
+  assemblies:
+  - DocFX
+references:
+- uid: DocFX.AspNetCore.DocFxExtension
+  commentId: T:DocFX.AspNetCore.DocFxExtension
+  name: DocFxExtension
+  nameWithType: DocFxExtension
+  fullName: DocFX.AspNetCore.DocFxExtension

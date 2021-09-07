@@ -11,9 +11,21 @@ namespace ClientDesktop
     public partial class DishSelectorForm : Form
     {
         //Passage de paramètre entre deux fenètres.
+        /// <summary>
+        /// Récupération de la semaine courrante
+        /// </summary>
         public String localWeek;
+        /// <summary>
+        /// Récupération du jour
+        /// </summary>
         public int localDay;
+        /// <summary>
+        /// Récupération du service concerné
+        /// </summary>
         public int localService;
+        /// <summary>
+        /// Récupération du type de plat
+        /// </summary>
         public int localType;
         //Private
         private readonly Service LocalService;
@@ -23,6 +35,11 @@ namespace ClientDesktop
         private readonly IRestaurantService _restaurantService;
         //Connexion aux données 
         private readonly BindingSource bindingSourceDishes = new();
+        /// <summary>
+        /// Fenêtre sélecteur de plat
+        /// </summary>
+        /// <param name="service"> un service</param>
+        /// <param name="IntTypeOfDish"> représente le type de plat 1(entrée), 2(plat), 3(dessert)</param>
         public DishSelectorForm(Service service, int IntTypeOfDish)
         {
             //Mon service ici n'a pas encore id !!! C'est le service "Client" qui n'a pas été créé dans la bdd.

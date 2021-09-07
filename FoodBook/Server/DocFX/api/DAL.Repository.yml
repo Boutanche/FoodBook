@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: DAL.Repository
+  commentId: N:DAL.Repository
+  id: DAL.Repository
+  children:
+  - DAL.Repository.BookRepository
+  - DAL.Repository.ClientRepository
+  - DAL.Repository.DishRepository
+  - DAL.Repository.IBookRepository
+  - DAL.Repository.IClientRepository
+  - DAL.Repository.IDishRepository
+  - DAL.Repository.IGenericRepository`1
+  - DAL.Repository.IIngredientRepository
+  - DAL.Repository.IListOfIngredientRepository
+  - DAL.Repository.IMenuRepository
+  - DAL.Repository.IngredientRepository
+  - DAL.Repository.IServiceRepository
+  - DAL.Repository.ITypeOfDishRepository
+  - DAL.Repository.ListOfIngredientRepository
+  - DAL.Repository.MenuRepository
+  - DAL.Repository.ServiceRepository
+  - DAL.Repository.TypeOfDishRepository
+  langs:
+  - csharp
+  - vb
+  name: DAL.Repository
+  nameWithType: DAL.Repository
+  fullName: DAL.Repository
+  type: Namespace
+  assemblies:
+  - DAL
+references:
+- uid: DAL.Repository.BookRepository
+  commentId: T:DAL.Repository.BookRepository
+  name: BookRepository
+  nameWithType: BookRepository
+  fullName: DAL.Repository.BookRepository
+- uid: DAL.Repository.ClientRepository
+  commentId: T:DAL.Repository.ClientRepository
+  name: ClientRepository
+  nameWithType: ClientRepository
+  fullName: DAL.Repository.ClientRepository
+- uid: DAL.Repository.DishRepository
+  commentId: T:DAL.Repository.DishRepository
+  name: DishRepository
+  nameWithType: DishRepository
+  fullName: DAL.Repository.DishRepository
+- uid: DAL.Repository.IBookRepository
+  commentId: T:DAL.Repository.IBookRepository
+  parent: DAL.Repository
+  name: IBookRepository
+  nameWithType: IBookRepository
+  fullName: DAL.Repository.IBookRepository
+- uid: DAL.Repository.IClientRepository
+  commentId: T:DAL.Repository.IClientRepository
+  parent: DAL.Repository
+  name: IClientRepository
+  nameWithType: IClientRepository
+  fullName: DAL.Repository.IClientRepository
+- uid: DAL.Repository.IDishRepository
+  commentId: T:DAL.Repository.IDishRepository
+  parent: DAL.Repository
+  name: IDishRepository
+  nameWithType: IDishRepository
+  fullName: DAL.Repository.IDishRepository
+- uid: DAL.Repository.IGenericRepository`1
+  commentId: T:DAL.Repository.IGenericRepository`1
+  name: IGenericRepository<TEntity>
+  nameWithType: IGenericRepository<TEntity>
+  fullName: DAL.Repository.IGenericRepository<TEntity>
+  nameWithType.vb: IGenericRepository(Of TEntity)
+  fullName.vb: DAL.Repository.IGenericRepository(Of TEntity)
+  name.vb: IGenericRepository(Of TEntity)
+  spec.csharp:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository
+    nameWithType: IGenericRepository
+    fullName: DAL.Repository.IGenericRepository
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DAL.Repository.IIngredientRepository
+  commentId: T:DAL.Repository.IIngredientRepository
+  parent: DAL.Repository
+  name: IIngredientRepository
+  nameWithType: IIngredientRepository
+  fullName: DAL.Repository.IIngredientRepository
+- uid: DAL.Repository.IListOfIngredientRepository
+  commentId: T:DAL.Repository.IListOfIngredientRepository
+  parent: DAL.Repository
+  name: IListOfIngredientRepository
+  nameWithType: IListOfIngredientRepository
+  fullName: DAL.Repository.IListOfIngredientRepository
+- uid: DAL.Repository.IMenuRepository
+  commentId: T:DAL.Repository.IMenuRepository
+  parent: DAL.Repository
+  name: IMenuRepository
+  nameWithType: IMenuRepository
+  fullName: DAL.Repository.IMenuRepository
+- uid: DAL.Repository.IngredientRepository
+  commentId: T:DAL.Repository.IngredientRepository
+  name: IngredientRepository
+  nameWithType: IngredientRepository
+  fullName: DAL.Repository.IngredientRepository
+- uid: DAL.Repository.IServiceRepository
+  commentId: T:DAL.Repository.IServiceRepository
+  parent: DAL.Repository
+  name: IServiceRepository
+  nameWithType: IServiceRepository
+  fullName: DAL.Repository.IServiceRepository
+- uid: DAL.Repository.ITypeOfDishRepository
+  commentId: T:DAL.Repository.ITypeOfDishRepository
+  parent: DAL.Repository
+  name: ITypeOfDishRepository
+  nameWithType: ITypeOfDishRepository
+  fullName: DAL.Repository.ITypeOfDishRepository
+- uid: DAL.Repository.ListOfIngredientRepository
+  commentId: T:DAL.Repository.ListOfIngredientRepository
+  name: ListOfIngredientRepository
+  nameWithType: ListOfIngredientRepository
+  fullName: DAL.Repository.ListOfIngredientRepository
+- uid: DAL.Repository.MenuRepository
+  commentId: T:DAL.Repository.MenuRepository
+  name: MenuRepository
+  nameWithType: MenuRepository
+  fullName: DAL.Repository.MenuRepository
+- uid: DAL.Repository.ServiceRepository
+  commentId: T:DAL.Repository.ServiceRepository
+  name: ServiceRepository
+  nameWithType: ServiceRepository
+  fullName: DAL.Repository.ServiceRepository
+- uid: DAL.Repository.TypeOfDishRepository
+  commentId: T:DAL.Repository.TypeOfDishRepository
+  name: TypeOfDishRepository
+  nameWithType: TypeOfDishRepository
+  fullName: DAL.Repository.TypeOfDishRepository
+- uid: DAL.Repository
+  commentId: N:DAL.Repository
+  name: DAL.Repository
+  nameWithType: DAL.Repository
+  fullName: DAL.Repository

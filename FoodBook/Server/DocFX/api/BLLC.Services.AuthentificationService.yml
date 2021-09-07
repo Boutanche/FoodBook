@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: BLLC.Services.AuthentificationService
+  commentId: T:BLLC.Services.AuthentificationService
+  id: AuthentificationService
+  parent: BLLC.Services
+  children:
+  - BLLC.Services.AuthentificationService.#ctor
+  - BLLC.Services.AuthentificationService._instance
+  - BLLC.Services.AuthentificationService.GetInstance
+  - BLLC.Services.AuthentificationService.IsLogged
+  - BLLC.Services.AuthentificationService.locker
+  - BLLC.Services.AuthentificationService.SignIn(System.String,System.String)
+  - BLLC.Services.AuthentificationService.Token
+  langs:
+  - csharp
+  - vb
+  name: AuthentificationService
+  nameWithType: AuthentificationService
+  fullName: BLLC.Services.AuthentificationService
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Client/BLLC/Services/AuthentificationService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: AuthentificationService
+    path: E:/Fbook/FoodBook/Client/BLLC/Services/AuthentificationService.cs
+    startLine: 12
+  assemblies:
+  - BLLC
+  namespace: BLLC.Services
+  syntax:
+    content: public class AuthentificationService
+    content.vb: Public Class AuthentificationService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: BLLC.Services.AuthentificationService._instance
+  commentId: F:BLLC.Services.AuthentificationService._instance
+  id: _instance
+  parent: BLLC.Services.AuthentificationService
+  langs:
+  - csharp
+  - vb
+  name: _instance
+  nameWithType: AuthentificationService._instance
+  fullName: BLLC.Services.AuthentificationService._instance
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Client/BLLC/Services/AuthentificationService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: _instance
+    path: E:/Fbook/FoodBook/Client/BLLC/Services/AuthentificationService.cs
+    startLine: 16
+  assemblies:
+  - BLLC
+  namespace: BLLC.Services
+  syntax:
+    content: static AuthentificationService _instance
+    return:
+      type: BLLC.Services.AuthentificationService
+    content.vb: Shared _instance As AuthentificationService
+  modifiers.csharp:
+  - static
+  modifiers.vb:
+  - Shared
+- uid: BLLC.Services.AuthentificationService.locker
+  commentId: F:BLLC.Services.AuthentificationService.locker
+  id: locker
+  parent: BLLC.Services.AuthentificationService
+  langs:
+  - csharp
+  - vb
+  name: locker
+  nameWithType: AuthentificationService.locker
+  fullName: BLLC.Services.AuthentificationService.locker
+  type: Field
+  source:
+    remote:
+      path: FoodBook/Client/BLLC/Services/AuthentificationService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: locker
+    path: E:/Fbook/FoodBook/Client/BLLC/Services/AuthentificationService.cs
+    startLine: 17
+  assemblies:
+  - BLLC
+  namespace: BLLC.Services
+  syntax:
+    content: static readonly object locker
+    return:
+      type: System.Object
+    content.vb: Shared ReadOnly locker As Object
+  modifiers.csharp:
+  - static
+  - readonly
+  modifiers.vb:
+  - Shared
+  - ReadOnly
+- uid: BLLC.Services.AuthentificationService.IsLogged
+  commentId: P:BLLC.Services.AuthentificationService.IsLogged
+  id: IsLogged
+  parent: BLLC.Services.AuthentificationService
+  langs:
+  - csharp
+  - vb
+  name: IsLogged
+  nameWithType: AuthentificationService.IsLogged
+  fullName: BLLC.Services.AuthentificationService.IsLogged
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/BLLC/Services/AuthentificationService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: IsLogged
+    path: E:/Fbook/FoodBook/Client/BLLC/Services/AuthentificationService.cs
+    startLine: 20
+  assemblies:
+  - BLLC
+  namespace: BLLC.Services
+  syntax:
+    content: public bool IsLogged { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsLogged As Boolean
+  overload: BLLC.Services.AuthentificationService.IsLogged*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BLLC.Services.AuthentificationService.Token
+  commentId: P:BLLC.Services.AuthentificationService.Token
+  id: Token
+  parent: BLLC.Services.AuthentificationService
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: AuthentificationService.Token
+  fullName: BLLC.Services.AuthentificationService.Token
+  type: Property
+  source:
+    remote:
+      path: FoodBook/Client/BLLC/Services/AuthentificationService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: Token
+    path: E:/Fbook/FoodBook/Client/BLLC/Services/AuthentificationService.cs
+    startLine: 22
+  assemblies:
+  - BLLC
+  namespace: BLLC.Services
+  syntax:
+    content: public string Token { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Token As String
+  overload: BLLC.Services.AuthentificationService.Token*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: BLLC.Services.AuthentificationService.#ctor
+  commentId: M:BLLC.Services.AuthentificationService.#ctor
+  id: '#ctor'
+  parent: BLLC.Services.AuthentificationService
+  langs:
+  - csharp
+  - vb
+  name: AuthentificationService()
+  nameWithType: AuthentificationService.AuthentificationService()
+  fullName: BLLC.Services.AuthentificationService.AuthentificationService()
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/Client/BLLC/Services/AuthentificationService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/Client/BLLC/Services/AuthentificationService.cs
+    startLine: 28
+  assemblies:
+  - BLLC
+  namespace: BLLC.Services
+  syntax:
+    content: AuthentificationService()
+    content.vb: Sub New
+  overload: BLLC.Services.AuthentificationService.#ctor*
+- uid: BLLC.Services.AuthentificationService.GetInstance
+  commentId: M:BLLC.Services.AuthentificationService.GetInstance
+  id: GetInstance
+  parent: BLLC.Services.AuthentificationService
+  langs:
+  - csharp
+  - vb
+  name: GetInstance()
+  nameWithType: AuthentificationService.GetInstance()
+  fullName: BLLC.Services.AuthentificationService.GetInstance()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Client/BLLC/Services/AuthentificationService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetInstance
+    path: E:/Fbook/FoodBook/Client/BLLC/Services/AuthentificationService.cs
+    startLine: 34
+  assemblies:
+  - BLLC
+  namespace: BLLC.Services
+  syntax:
+    content: public static AuthentificationService GetInstance()
+    return:
+      type: BLLC.Services.AuthentificationService
+    content.vb: Public Shared Function GetInstance As AuthentificationService
+  overload: BLLC.Services.AuthentificationService.GetInstance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: BLLC.Services.AuthentificationService.SignIn(System.String,System.String)
+  commentId: M:BLLC.Services.AuthentificationService.SignIn(System.String,System.String)
+  id: SignIn(System.String,System.String)
+  parent: BLLC.Services.AuthentificationService
+  langs:
+  - csharp
+  - vb
+  name: SignIn(String, String)
+  nameWithType: AuthentificationService.SignIn(String, String)
+  fullName: BLLC.Services.AuthentificationService.SignIn(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Client/BLLC/Services/AuthentificationService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: SignIn
+    path: E:/Fbook/FoodBook/Client/BLLC/Services/AuthentificationService.cs
+    startLine: 55
+  assemblies:
+  - BLLC
+  namespace: BLLC.Services
+  syntax:
+    content: public Task<bool> SignIn(string username, string password)
+    parameters:
+    - id: username
+      type: System.String
+    - id: password
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function SignIn(username As String, password As String) As Task(Of Boolean)
+  overload: BLLC.Services.AuthentificationService.SignIn*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: BLLC.Services
+  commentId: N:BLLC.Services
+  name: BLLC.Services
+  nameWithType: BLLC.Services
+  fullName: BLLC.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BLLC.Services.AuthentificationService
+  commentId: T:BLLC.Services.AuthentificationService
+  parent: BLLC.Services
+  name: AuthentificationService
+  nameWithType: AuthentificationService
+  fullName: BLLC.Services.AuthentificationService
+- uid: BLLC.Services.AuthentificationService.IsLogged*
+  commentId: Overload:BLLC.Services.AuthentificationService.IsLogged
+  name: IsLogged
+  nameWithType: AuthentificationService.IsLogged
+  fullName: BLLC.Services.AuthentificationService.IsLogged
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: BLLC.Services.AuthentificationService.Token*
+  commentId: Overload:BLLC.Services.AuthentificationService.Token
+  name: Token
+  nameWithType: AuthentificationService.Token
+  fullName: BLLC.Services.AuthentificationService.Token
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: BLLC.Services.AuthentificationService.#ctor*
+  commentId: Overload:BLLC.Services.AuthentificationService.#ctor
+  name: AuthentificationService
+  nameWithType: AuthentificationService.AuthentificationService
+  fullName: BLLC.Services.AuthentificationService.AuthentificationService
+- uid: BLLC.Services.AuthentificationService.GetInstance*
+  commentId: Overload:BLLC.Services.AuthentificationService.GetInstance
+  name: GetInstance
+  nameWithType: AuthentificationService.GetInstance
+  fullName: BLLC.Services.AuthentificationService.GetInstance
+- uid: BLLC.Services.AuthentificationService.SignIn*
+  commentId: Overload:BLLC.Services.AuthentificationService.SignIn
+  name: SignIn
+  nameWithType: AuthentificationService.SignIn
+  fullName: BLLC.Services.AuthentificationService.SignIn
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnitTest.Services
+  commentId: N:UnitTest.Services
+  id: UnitTest.Services
+  children:
+  - UnitTest.Services.FakeClientService
+  - UnitTest.Services.FakeLibrairiService
+  - UnitTest.Services.FakeOrderService
+  - UnitTest.Services.FakeRestaurantService
+  langs:
+  - csharp
+  - vb
+  name: UnitTest.Services
+  nameWithType: UnitTest.Services
+  fullName: UnitTest.Services
+  type: Namespace
+  assemblies:
+  - UnitTest
+references:
+- uid: UnitTest.Services.FakeClientService
+  commentId: T:UnitTest.Services.FakeClientService
+  name: FakeClientService
+  nameWithType: FakeClientService
+  fullName: UnitTest.Services.FakeClientService
+- uid: UnitTest.Services.FakeLibrairiService
+  commentId: T:UnitTest.Services.FakeLibrairiService
+  name: FakeLibrairiService
+  nameWithType: FakeLibrairiService
+  fullName: UnitTest.Services.FakeLibrairiService
+- uid: UnitTest.Services.FakeOrderService
+  commentId: T:UnitTest.Services.FakeOrderService
+  name: FakeOrderService
+  nameWithType: FakeOrderService
+  fullName: UnitTest.Services.FakeOrderService
+- uid: UnitTest.Services.FakeRestaurantService
+  commentId: T:UnitTest.Services.FakeRestaurantService
+  name: FakeRestaurantService
+  nameWithType: FakeRestaurantService
+  fullName: UnitTest.Services.FakeRestaurantService

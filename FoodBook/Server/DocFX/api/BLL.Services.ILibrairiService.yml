@@ -1,0 +1,462 @@
+### YamlMime:ManagedReference
+items:
+- uid: BLL.Services.ILibrairiService
+  commentId: T:BLL.Services.ILibrairiService
+  id: ILibrairiService
+  parent: BLL.Services
+  children:
+  - BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+  - BLL.Services.ILibrairiService.GetAllBooks
+  - BLL.Services.ILibrairiService.GetBookById(System.Int32)
+  - BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+  - BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ILibrairiService
+  nameWithType: ILibrairiService
+  fullName: BLL.Services.ILibrairiService
+  type: Interface
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/ILibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ILibrairiService
+    path: E:/Fbook/FoodBook/Server/BLL/Services/ILibrairiService.cs
+    startLine: 9
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public interface ILibrairiService
+    content.vb: Public Interface ILibrairiService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+  commentId: M:BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+  id: CreateBook(BO.Entity.Book)
+  parent: BLL.Services.ILibrairiService
+  langs:
+  - csharp
+  - vb
+  name: CreateBook(Book)
+  nameWithType: ILibrairiService.CreateBook(Book)
+  fullName: BLL.Services.ILibrairiService.CreateBook(BO.Entity.Book)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/ILibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: CreateBook
+    path: E:/Fbook/FoodBook/Server/BLL/Services/ILibrairiService.cs
+    startLine: 16
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: Task<Book> CreateBook(Book book)
+    parameters:
+    - id: book
+      type: BO.Entity.Book
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Book}
+      description: ''
+    content.vb: Function CreateBook(book As Book) As Task(Of Book)
+  overload: BLL.Services.ILibrairiService.CreateBook*
+- uid: BLL.Services.ILibrairiService.GetAllBooks
+  commentId: M:BLL.Services.ILibrairiService.GetAllBooks
+  id: GetAllBooks
+  parent: BLL.Services.ILibrairiService
+  langs:
+  - csharp
+  - vb
+  name: GetAllBooks()
+  nameWithType: ILibrairiService.GetAllBooks()
+  fullName: BLL.Services.ILibrairiService.GetAllBooks()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/ILibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetAllBooks
+    path: E:/Fbook/FoodBook/Server/BLL/Services/ILibrairiService.cs
+    startLine: 21
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: Task<List<Book>> GetAllBooks()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Book}}
+      description: ''
+    content.vb: Function GetAllBooks As Task(Of List(Of Book))
+  overload: BLL.Services.ILibrairiService.GetAllBooks*
+- uid: BLL.Services.ILibrairiService.GetBookById(System.Int32)
+  commentId: M:BLL.Services.ILibrairiService.GetBookById(System.Int32)
+  id: GetBookById(System.Int32)
+  parent: BLL.Services.ILibrairiService
+  langs:
+  - csharp
+  - vb
+  name: GetBookById(Int32)
+  nameWithType: ILibrairiService.GetBookById(Int32)
+  fullName: BLL.Services.ILibrairiService.GetBookById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/ILibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetBookById
+    path: E:/Fbook/FoodBook/Server/BLL/Services/ILibrairiService.cs
+    startLine: 27
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: Task<Book> GetBookById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Book}
+      description: ''
+    content.vb: Function GetBookById(id As Integer) As Task(Of Book)
+  overload: BLL.Services.ILibrairiService.GetBookById*
+- uid: BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+  commentId: M:BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+  id: ModifyBook(BO.Entity.Book)
+  parent: BLL.Services.ILibrairiService
+  langs:
+  - csharp
+  - vb
+  name: ModifyBook(Book)
+  nameWithType: ILibrairiService.ModifyBook(Book)
+  fullName: BLL.Services.ILibrairiService.ModifyBook(BO.Entity.Book)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/ILibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: ModifyBook
+    path: E:/Fbook/FoodBook/Server/BLL/Services/ILibrairiService.cs
+    startLine: 33
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: Task<Book> ModifyBook(Book book)
+    parameters:
+    - id: book
+      type: BO.Entity.Book
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{BO.Entity.Book}
+      description: ''
+    content.vb: Function ModifyBook(book As Book) As Task(Of Book)
+  overload: BLL.Services.ILibrairiService.ModifyBook*
+- uid: BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+  commentId: M:BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+  id: RemoveBookById(System.Int32)
+  parent: BLL.Services.ILibrairiService
+  langs:
+  - csharp
+  - vb
+  name: RemoveBookById(Int32)
+  nameWithType: ILibrairiService.RemoveBookById(Int32)
+  fullName: BLL.Services.ILibrairiService.RemoveBookById(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/BLL/Services/ILibrairiService.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: RemoveBookById
+    path: E:/Fbook/FoodBook/Server/BLL/Services/ILibrairiService.cs
+    startLine: 39
+  assemblies:
+  - BLL
+  namespace: BLL.Services
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: Task<bool> RemoveBookById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: ''
+    content.vb: Function RemoveBookById(id As Integer) As Task(Of Boolean)
+  overload: BLL.Services.ILibrairiService.RemoveBookById*
+references:
+- uid: BLL.Services
+  commentId: N:BLL.Services
+  name: BLL.Services
+  nameWithType: BLL.Services
+  fullName: BLL.Services
+- uid: BLL.Services.ILibrairiService.CreateBook*
+  commentId: Overload:BLL.Services.ILibrairiService.CreateBook
+  name: CreateBook
+  nameWithType: ILibrairiService.CreateBook
+  fullName: BLL.Services.ILibrairiService.CreateBook
+- uid: BO.Entity.Book
+  commentId: T:BO.Entity.Book
+  parent: BO.Entity
+  name: Book
+  nameWithType: Book
+  fullName: BO.Entity.Book
+- uid: System.Threading.Tasks.Task{BO.Entity.Book}
+  commentId: T:System.Threading.Tasks.Task{BO.Entity.Book}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Book>
+  nameWithType: Task<Book>
+  fullName: System.Threading.Tasks.Task<BO.Entity.Book>
+  nameWithType.vb: Task(Of Book)
+  fullName.vb: System.Threading.Tasks.Task(Of BO.Entity.Book)
+  name.vb: Task(Of Book)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BO.Entity
+  commentId: N:BO.Entity
+  name: BO.Entity
+  nameWithType: BO.Entity
+  fullName: BO.Entity
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: BLL.Services.ILibrairiService.GetAllBooks*
+  commentId: Overload:BLL.Services.ILibrairiService.GetAllBooks
+  name: GetAllBooks
+  nameWithType: ILibrairiService.GetAllBooks
+  fullName: BLL.Services.ILibrairiService.GetAllBooks
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Book}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{BO.Entity.Book}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Book>>
+  nameWithType: Task<List<Book>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<BO.Entity.Book>>
+  nameWithType.vb: Task(Of List(Of Book))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of BO.Entity.Book))
+  name.vb: Task(Of List(Of Book))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: BO.Entity.Book
+    name: Book
+    nameWithType: Book
+    fullName: BO.Entity.Book
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: BLL.Services.ILibrairiService.GetBookById*
+  commentId: Overload:BLL.Services.ILibrairiService.GetBookById
+  name: GetBookById
+  nameWithType: ILibrairiService.GetBookById
+  fullName: BLL.Services.ILibrairiService.GetBookById
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BLL.Services.ILibrairiService.ModifyBook*
+  commentId: Overload:BLL.Services.ILibrairiService.ModifyBook
+  name: ModifyBook
+  nameWithType: ILibrairiService.ModifyBook
+  fullName: BLL.Services.ILibrairiService.ModifyBook
+- uid: BLL.Services.ILibrairiService.RemoveBookById*
+  commentId: Overload:BLL.Services.ILibrairiService.RemoveBookById
+  name: RemoveBookById
+  nameWithType: ILibrairiService.RemoveBookById
+  fullName: BLL.Services.ILibrairiService.RemoveBookById
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

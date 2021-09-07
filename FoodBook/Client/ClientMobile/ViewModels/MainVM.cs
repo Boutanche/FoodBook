@@ -8,10 +8,22 @@ using System.Threading.Tasks;
 
 namespace ClientMobile.ViewModels
 {
+    /// <summary>
+    /// TypePlat permet de récupérer l'ensemble des plats par types
+    /// </summary>
     public enum TypePlat
     {
+        /// <summary>
+        /// Entrée
+        /// </summary>
         ENTREE,
+        /// <summary>
+        /// Plat
+        /// </summary>
         PLAT,
+        /// <summary>
+        /// Dessert
+        /// </summary>
         DESSERT
 
     }

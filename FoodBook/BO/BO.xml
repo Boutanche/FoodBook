@@ -244,22 +244,22 @@
         </member>
         <member name="P:BO.Entity.Dish.Id">
             <summary>
-            int : Id Dish
+            Id Dish
             </summary>
         </member>
         <member name="P:BO.Entity.Dish.Name">
             <summary>
-            string : Name of a dish
+            Name of a dish
             </summary>
         </member>
         <member name="P:BO.Entity.Dish.Popularity">
             <summary>
-            int : Popularity of a dish
+            Popularity of a dish
             </summary>
         </member>
         <member name="P:BO.Entity.Dish.IdType">
             <summary>
-            int : Foreign key of type of dish
+            Foreign key of type of dish
             </summary>
         </member>
         <member name="P:BO.Entity.Dish.TypeofDish">

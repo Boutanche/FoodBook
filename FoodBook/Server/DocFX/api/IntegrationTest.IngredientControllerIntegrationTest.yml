@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: IntegrationTest.IngredientControllerIntegrationTest
+  commentId: T:IntegrationTest.IngredientControllerIntegrationTest
+  id: IngredientControllerIntegrationTest
+  parent: IntegrationTest
+  children:
+  - IntegrationTest.IngredientControllerIntegrationTest.#ctor(Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup})
+  - IntegrationTest.IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK
+  langs:
+  - csharp
+  - vb
+  name: IngredientControllerIntegrationTest
+  nameWithType: IngredientControllerIntegrationTest
+  fullName: IntegrationTest.IngredientControllerIntegrationTest
+  type: Class
+  source:
+    remote:
+      path: FoodBook/Server/IntegrationTest/IngredientControllerIntegrationTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: IngredientControllerIntegrationTest
+    path: E:/Fbook/FoodBook/Server/IntegrationTest/IngredientControllerIntegrationTest.cs
+    startLine: 14
+  assemblies:
+  - IntegrationTest
+  namespace: IntegrationTest
+  syntax:
+    content: 'public class IngredientControllerIntegrationTest : IntegrationTest, IClassFixture<WebApplicationFactory<Startup>>'
+    content.vb: >-
+      Public Class IngredientControllerIntegrationTest
+          Inherits IntegrationTest
+          Implements IClassFixture(Of WebApplicationFactory(Of Startup))
+  inheritance:
+  - System.Object
+  - IntegrationTest.IntegrationTest
+  implements:
+  - Xunit.IClassFixture{Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup}}
+  inheritedMembers:
+  - IntegrationTest.IntegrationTest._factory
+  - IntegrationTest.IntegrationTest._client
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: IntegrationTest.IngredientControllerIntegrationTest.#ctor(Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup})
+  commentId: M:IntegrationTest.IngredientControllerIntegrationTest.#ctor(Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup})
+  id: '#ctor(Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup})'
+  parent: IntegrationTest.IngredientControllerIntegrationTest
+  langs:
+  - csharp
+  - vb
+  name: IngredientControllerIntegrationTest(WebApplicationFactory<Startup>)
+  nameWithType: IngredientControllerIntegrationTest.IngredientControllerIntegrationTest(WebApplicationFactory<Startup>)
+  fullName: IntegrationTest.IngredientControllerIntegrationTest.IngredientControllerIntegrationTest(Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory<API.Startup>)
+  type: Constructor
+  source:
+    remote:
+      path: FoodBook/Server/IntegrationTest/IngredientControllerIntegrationTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: .ctor
+    path: E:/Fbook/FoodBook/Server/IntegrationTest/IngredientControllerIntegrationTest.cs
+    startLine: 16
+  assemblies:
+  - IntegrationTest
+  namespace: IntegrationTest
+  syntax:
+    content: public IngredientControllerIntegrationTest(WebApplicationFactory<Startup> factory)
+    parameters:
+    - id: factory
+      type: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup}
+    content.vb: Public Sub New(factory As WebApplicationFactory(Of Startup))
+  overload: IntegrationTest.IngredientControllerIntegrationTest.#ctor*
+  nameWithType.vb: IngredientControllerIntegrationTest.IngredientControllerIntegrationTest(WebApplicationFactory(Of Startup))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: IntegrationTest.IngredientControllerIntegrationTest.IngredientControllerIntegrationTest(Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory(Of API.Startup))
+  name.vb: IngredientControllerIntegrationTest(WebApplicationFactory(Of Startup))
+- uid: IntegrationTest.IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK
+  commentId: M:IntegrationTest.IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK
+  id: GetIngredientById_Should_Be_OK
+  parent: IntegrationTest.IngredientControllerIntegrationTest
+  langs:
+  - csharp
+  - vb
+  name: GetIngredientById_Should_Be_OK()
+  nameWithType: IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK()
+  fullName: IntegrationTest.IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK()
+  type: Method
+  source:
+    remote:
+      path: FoodBook/Server/IntegrationTest/IngredientControllerIntegrationTest.cs
+      branch: main
+      repo: https://github.com/Boutanche/FoodBook/
+    id: GetIngredientById_Should_Be_OK
+    path: E:/Fbook/FoodBook/Server/IntegrationTest/IngredientControllerIntegrationTest.cs
+    startLine: 17
+  assemblies:
+  - IntegrationTest
+  namespace: IntegrationTest
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetIngredientById_Should_Be_OK()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetIngredientById_Should_Be_OK
+  overload: IntegrationTest.IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: IntegrationTest
+  commentId: N:IntegrationTest
+  name: IntegrationTest
+  nameWithType: IntegrationTest
+  fullName: IntegrationTest
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IntegrationTest.IntegrationTest
+  commentId: T:IntegrationTest.IntegrationTest
+  parent: IntegrationTest
+  name: IntegrationTest
+  nameWithType: IntegrationTest
+  fullName: IntegrationTest.IntegrationTest
+- uid: Xunit.IClassFixture{Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup}}
+  commentId: T:Xunit.IClassFixture{Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup}}
+  parent: Xunit
+  definition: Xunit.IClassFixture`1
+  name: IClassFixture<WebApplicationFactory<Startup>>
+  nameWithType: IClassFixture<WebApplicationFactory<Startup>>
+  fullName: Xunit.IClassFixture<Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory<API.Startup>>
+  nameWithType.vb: IClassFixture(Of WebApplicationFactory(Of Startup))
+  fullName.vb: Xunit.IClassFixture(Of Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory(Of API.Startup))
+  name.vb: IClassFixture(Of WebApplicationFactory(Of Startup))
+  spec.csharp:
+  - uid: Xunit.IClassFixture`1
+    name: IClassFixture
+    nameWithType: IClassFixture
+    fullName: Xunit.IClassFixture
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+    name: WebApplicationFactory
+    nameWithType: WebApplicationFactory
+    fullName: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: API.Startup
+    name: Startup
+    nameWithType: Startup
+    fullName: API.Startup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Xunit.IClassFixture`1
+    name: IClassFixture
+    nameWithType: IClassFixture
+    fullName: Xunit.IClassFixture
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+    name: WebApplicationFactory
+    nameWithType: WebApplicationFactory
+    fullName: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: API.Startup
+    name: Startup
+    nameWithType: Startup
+    fullName: API.Startup
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IntegrationTest.IntegrationTest._factory
+  commentId: F:IntegrationTest.IntegrationTest._factory
+  parent: IntegrationTest.IntegrationTest
+  name: _factory
+  nameWithType: IntegrationTest._factory
+  fullName: IntegrationTest.IntegrationTest._factory
+- uid: IntegrationTest.IntegrationTest._client
+  commentId: F:IntegrationTest.IntegrationTest._client
+  parent: IntegrationTest.IntegrationTest
+  name: _client
+  nameWithType: IntegrationTest._client
+  fullName: IntegrationTest.IntegrationTest._client
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Xunit.IClassFixture`1
+  commentId: T:Xunit.IClassFixture`1
+  isExternal: true
+  name: IClassFixture<TFixture>
+  nameWithType: IClassFixture<TFixture>
+  fullName: Xunit.IClassFixture<TFixture>
+  nameWithType.vb: IClassFixture(Of TFixture)
+  fullName.vb: Xunit.IClassFixture(Of TFixture)
+  name.vb: IClassFixture(Of TFixture)
+  spec.csharp:
+  - uid: Xunit.IClassFixture`1
+    name: IClassFixture
+    nameWithType: IClassFixture
+    fullName: Xunit.IClassFixture
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TFixture
+    nameWithType: TFixture
+    fullName: TFixture
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Xunit.IClassFixture`1
+    name: IClassFixture
+    nameWithType: IClassFixture
+    fullName: Xunit.IClassFixture
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TFixture
+    nameWithType: TFixture
+    fullName: TFixture
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Xunit
+  commentId: N:Xunit
+  isExternal: true
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: IntegrationTest.IngredientControllerIntegrationTest.#ctor*
+  commentId: Overload:IntegrationTest.IngredientControllerIntegrationTest.#ctor
+  name: IngredientControllerIntegrationTest
+  nameWithType: IngredientControllerIntegrationTest.IngredientControllerIntegrationTest
+  fullName: IntegrationTest.IngredientControllerIntegrationTest.IngredientControllerIntegrationTest
+- uid: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup}
+  commentId: T:Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory{API.Startup}
+  parent: Microsoft.AspNetCore.Mvc.Testing
+  definition: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+  name: WebApplicationFactory<Startup>
+  nameWithType: WebApplicationFactory<Startup>
+  fullName: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory<API.Startup>
+  nameWithType.vb: WebApplicationFactory(Of Startup)
+  fullName.vb: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory(Of API.Startup)
+  name.vb: WebApplicationFactory(Of Startup)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+    name: WebApplicationFactory
+    nameWithType: WebApplicationFactory
+    fullName: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: API.Startup
+    name: Startup
+    nameWithType: Startup
+    fullName: API.Startup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+    name: WebApplicationFactory
+    nameWithType: WebApplicationFactory
+    fullName: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: API.Startup
+    name: Startup
+    nameWithType: Startup
+    fullName: API.Startup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+  commentId: T:Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+  isExternal: true
+  name: WebApplicationFactory<TEntryPoint>
+  nameWithType: WebApplicationFactory<TEntryPoint>
+  fullName: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory<TEntryPoint>
+  nameWithType.vb: WebApplicationFactory(Of TEntryPoint)
+  fullName.vb: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory(Of TEntryPoint)
+  name.vb: WebApplicationFactory(Of TEntryPoint)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+    name: WebApplicationFactory
+    nameWithType: WebApplicationFactory
+    fullName: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntryPoint
+    nameWithType: TEntryPoint
+    fullName: TEntryPoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory`1
+    name: WebApplicationFactory
+    nameWithType: WebApplicationFactory
+    fullName: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntryPoint
+    nameWithType: TEntryPoint
+    fullName: TEntryPoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.Testing
+  commentId: N:Microsoft.AspNetCore.Mvc.Testing
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc.Testing
+  nameWithType: Microsoft.AspNetCore.Mvc.Testing
+  fullName: Microsoft.AspNetCore.Mvc.Testing
+- uid: IntegrationTest.IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK*
+  commentId: Overload:IntegrationTest.IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK
+  name: GetIngredientById_Should_Be_OK
+  nameWithType: IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK
+  fullName: IntegrationTest.IngredientControllerIntegrationTest.GetIngredientById_Should_Be_OK

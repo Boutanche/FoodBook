@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: BO.DTO.Requests
+  commentId: N:BO.DTO.Requests
+  id: BO.DTO.Requests
+  children:
+  - BO.DTO.Requests.LoginRequest
+  - BO.DTO.Requests.PageRequest
+  langs:
+  - csharp
+  - vb
+  name: BO.DTO.Requests
+  nameWithType: BO.DTO.Requests
+  fullName: BO.DTO.Requests
+  type: Namespace
+  assemblies:
+  - BO
+references:
+- uid: BO.DTO.Requests.LoginRequest
+  commentId: T:BO.DTO.Requests.LoginRequest
+  parent: BO.DTO.Requests
+  name: LoginRequest
+  nameWithType: LoginRequest
+  fullName: BO.DTO.Requests.LoginRequest
+- uid: BO.DTO.Requests.PageRequest
+  commentId: T:BO.DTO.Requests.PageRequest
+  parent: BO.DTO.Requests
+  name: PageRequest
+  nameWithType: PageRequest
+  fullName: BO.DTO.Requests.PageRequest
+- uid: BO.DTO.Requests
+  commentId: N:BO.DTO.Requests
+  name: BO.DTO.Requests
+  nameWithType: BO.DTO.Requests
+  fullName: BO.DTO.Requests

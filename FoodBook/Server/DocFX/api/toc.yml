@@ -1,0 +1,246 @@
+### YamlMime:TableOfContent
+- uid: API
+  name: API
+  items:
+  - uid: API.Program
+    name: Program
+  - uid: API.Startup
+    name: Startup
+- uid: API.Controllers
+  name: API.Controllers
+  items:
+  - uid: API.Controllers.AccountController
+    name: AccountController
+  - uid: API.Controllers.BooksController
+    name: BooksController
+  - uid: API.Controllers.DishController
+    name: DishController
+  - uid: API.Controllers.IngredientsController
+    name: IngredientsController
+  - uid: API.Controllers.ListOfIngredientController
+    name: ListOfIngredientController
+  - uid: API.Controllers.MenuController
+    name: MenuController
+  - uid: API.Controllers.ServiceController
+    name: ServiceController
+  - uid: API.Controllers.TypeOfDishController
+    name: TypeOfDishController
+- uid: BLL
+  name: BLL
+  items:
+  - uid: BLL.BLLExtension
+    name: BLLExtension
+- uid: BLL.Services
+  name: BLL.Services
+  items:
+  - uid: BLL.Services.AccountService
+    name: AccountService
+  - uid: BLL.Services.ClientService
+    name: ClientService
+  - uid: BLL.Services.IAccountService
+    name: IAccountService
+  - uid: BLL.Services.IClientService
+    name: IClientService
+  - uid: BLL.Services.ILibrairiService
+    name: ILibrairiService
+  - uid: BLL.Services.IOrderService
+    name: IOrderService
+  - uid: BLL.Services.IRestaurantService
+    name: IRestaurantService
+  - uid: BLL.Services.LibrairiService
+    name: LibrairiService
+  - uid: BLL.Services.OrderService
+    name: OrderService
+  - uid: BLL.Services.RestaurantService
+    name: RestaurantService
+- uid: BLLC.Services
+  name: BLLC.Services
+  items:
+  - uid: BLLC.Services.AuthentificationService
+    name: AuthentificationService
+  - uid: BLLC.Services.IRestaurantService
+    name: IRestaurantService
+  - uid: BLLC.Services.LibrairiService
+    name: LibrairiService
+  - uid: BLLC.Services.RestaurantService
+    name: RestaurantService
+- uid: BO.DTO.Requests
+  name: BO.DTO.Requests
+  items:
+  - uid: BO.DTO.Requests.LoginRequest
+    name: LoginRequest
+  - uid: BO.DTO.Requests.PageRequest
+    name: PageRequest
+- uid: BO.DTO.Responses
+  name: BO.DTO.Responses
+  items:
+  - uid: BO.DTO.Responses.LoginResponse
+    name: LoginResponse
+  - uid: BO.DTO.Responses.PageResponse`1
+    name: PageResponse<T>
+    name.vb: PageResponse(Of T)
+- uid: BO.Entity
+  name: BO.Entity
+  items:
+  - uid: BO.Entity.Book
+    name: Book
+  - uid: BO.Entity.Client
+    name: Client
+  - uid: BO.Entity.Dish
+    name: Dish
+  - uid: BO.Entity.Ingredients
+    name: Ingredients
+  - uid: BO.Entity.IsComposed
+    name: IsComposed
+  - uid: BO.Entity.ListOfIngredient
+    name: ListOfIngredient
+  - uid: BO.Entity.Menu
+    name: Menu
+  - uid: BO.Entity.Service
+    name: Service
+  - uid: BO.Entity.TypeOfDish
+    name: TypeOfDish
+- uid: ClientConsole
+  name: ClientConsole
+  items:
+  - uid: ClientConsole.Program
+    name: Program
+- uid: ClientDesktop
+  name: ClientDesktop
+  items:
+  - uid: ClientDesktop.CreateIngredientForm
+    name: CreateIngredientForm
+  - uid: ClientDesktop.DishForm
+    name: DishForm
+  - uid: ClientDesktop.DishSelectorForm
+    name: DishSelectorForm
+  - uid: ClientDesktop.Program
+    name: Program
+  - uid: ClientDesktop.WeekForm
+    name: WeekForm
+- uid: ClientDesktop.Composants
+  name: ClientDesktop.Composants
+  items:
+  - uid: ClientDesktop.Composants.DayServiceControlComponent
+    name: DayServiceControlComponent
+  - uid: ClientDesktop.Composants.DishServiceControlComponent
+    name: DishServiceControlComponent
+  - uid: ClientDesktop.Composants.ServiceControlComponent
+    name: ServiceControlComponent
+- uid: ClientDesktop.Properties
+  name: ClientDesktop.Properties
+  items:
+  - uid: ClientDesktop.Properties.Resources
+    name: Resources
+- uid: ClientMobile
+  name: ClientMobile
+  items:
+  - uid: ClientMobile.App
+    name: App
+  - uid: ClientMobile.MainPage
+    name: MainPage
+  - uid: ClientMobile.Program
+    name: Program
+- uid: DAL
+  name: DAL
+  items:
+  - uid: DAL.DALExtension
+    name: DALExtension
+- uid: DAL.Repository
+  name: DAL.Repository
+  items:
+  - uid: DAL.Repository.BookRepository
+    name: BookRepository
+  - uid: DAL.Repository.ClientRepository
+    name: ClientRepository
+  - uid: DAL.Repository.DishRepository
+    name: DishRepository
+  - uid: DAL.Repository.IBookRepository
+    name: IBookRepository
+  - uid: DAL.Repository.IClientRepository
+    name: IClientRepository
+  - uid: DAL.Repository.IDishRepository
+    name: IDishRepository
+  - uid: DAL.Repository.IGenericRepository`1
+    name: IGenericRepository<TEntity>
+    name.vb: IGenericRepository(Of TEntity)
+  - uid: DAL.Repository.IIngredientRepository
+    name: IIngredientRepository
+  - uid: DAL.Repository.IListOfIngredientRepository
+    name: IListOfIngredientRepository
+  - uid: DAL.Repository.IMenuRepository
+    name: IMenuRepository
+  - uid: DAL.Repository.IngredientRepository
+    name: IngredientRepository
+  - uid: DAL.Repository.IServiceRepository
+    name: IServiceRepository
+  - uid: DAL.Repository.ITypeOfDishRepository
+    name: ITypeOfDishRepository
+  - uid: DAL.Repository.ListOfIngredientRepository
+    name: ListOfIngredientRepository
+  - uid: DAL.Repository.MenuRepository
+    name: MenuRepository
+  - uid: DAL.Repository.ServiceRepository
+    name: ServiceRepository
+  - uid: DAL.Repository.TypeOfDishRepository
+    name: TypeOfDishRepository
+- uid: DAL.UOW
+  name: DAL.UOW
+  items:
+  - uid: DAL.UOW.DbSession
+    name: DbSession
+  - uid: DAL.UOW.IUnitOfWork
+    name: IUnitOfWork
+  - uid: DAL.UOW.UnitOfWork
+    name: UnitOfWork
+- uid: DocFX
+  name: DocFX
+  items:
+  - uid: DocFX.DocFxSettings
+    name: DocFxSettings
+- uid: DocFX.AspNetCore
+  name: DocFX.AspNetCore
+  items:
+  - uid: DocFX.AspNetCore.DocFxExtension
+    name: DocFxExtension
+- uid: IntegrationTest
+  name: IntegrationTest
+  items:
+  - uid: IntegrationTest.DishControllerIntegrationTest
+    name: DishControllerIntegrationTest
+  - uid: IntegrationTest.IngredientControllerIntegrationTest
+    name: IngredientControllerIntegrationTest
+  - uid: IntegrationTest.IntegrationTest
+    name: IntegrationTest
+- uid: UnitTest
+  name: UnitTest
+  items:
+  - uid: UnitTest.BookControllerUnitTest
+    name: BookControllerUnitTest
+  - uid: UnitTest.BookingControllerUnitTest
+    name: BookingControllerUnitTest
+  - uid: UnitTest.ClientControllerUnitTest
+    name: ClientControllerUnitTest
+  - uid: UnitTest.DishControllerUnitTest
+    name: DishControllerUnitTest
+  - uid: UnitTest.IngredientControllerUnitTest
+    name: IngredientControllerUnitTest
+  - uid: UnitTest.ListOfDishControllerUnitTest
+    name: ListOfDishControllerUnitTest
+  - uid: UnitTest.MenuControllerUnitTest
+    name: MenuControllerUnitTest
+  - uid: UnitTest.OrderControllerUnitTest
+    name: OrderControllerUnitTest
+  - uid: UnitTest.ServiceControllerUnitTest
+    name: ServiceControllerUnitTest
+- uid: UnitTest.Services
+  name: UnitTest.Services
+  items:
+  - uid: UnitTest.Services.FakeClientService
+    name: FakeClientService
+  - uid: UnitTest.Services.FakeLibrairiService
+    name: FakeLibrairiService
+  - uid: UnitTest.Services.FakeOrderService
+    name: FakeOrderService
+  - uid: UnitTest.Services.FakeRestaurantService
+    name: FakeRestaurantService

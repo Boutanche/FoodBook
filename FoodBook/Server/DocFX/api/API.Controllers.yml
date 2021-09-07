@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.Controllers
+  commentId: N:API.Controllers
+  id: API.Controllers
+  children:
+  - API.Controllers.AccountController
+  - API.Controllers.BooksController
+  - API.Controllers.DishController
+  - API.Controllers.IngredientsController
+  - API.Controllers.ListOfIngredientController
+  - API.Controllers.MenuController
+  - API.Controllers.ServiceController
+  - API.Controllers.TypeOfDishController
+  langs:
+  - csharp
+  - vb
+  name: API.Controllers
+  nameWithType: API.Controllers
+  fullName: API.Controllers
+  type: Namespace
+  assemblies:
+  - API
+references:
+- uid: API.Controllers.AccountController
+  commentId: T:API.Controllers.AccountController
+  name: AccountController
+  nameWithType: AccountController
+  fullName: API.Controllers.AccountController
+- uid: API.Controllers.BooksController
+  commentId: T:API.Controllers.BooksController
+  name: BooksController
+  nameWithType: BooksController
+  fullName: API.Controllers.BooksController
+- uid: API.Controllers.DishController
+  commentId: T:API.Controllers.DishController
+  name: DishController
+  nameWithType: DishController
+  fullName: API.Controllers.DishController
+- uid: API.Controllers.IngredientsController
+  commentId: T:API.Controllers.IngredientsController
+  name: IngredientsController
+  nameWithType: IngredientsController
+  fullName: API.Controllers.IngredientsController
+- uid: API.Controllers.ListOfIngredientController
+  commentId: T:API.Controllers.ListOfIngredientController
+  name: ListOfIngredientController
+  nameWithType: ListOfIngredientController
+  fullName: API.Controllers.ListOfIngredientController
+- uid: API.Controllers.MenuController
+  commentId: T:API.Controllers.MenuController
+  name: MenuController
+  nameWithType: MenuController
+  fullName: API.Controllers.MenuController
+- uid: API.Controllers.ServiceController
+  commentId: T:API.Controllers.ServiceController
+  name: ServiceController
+  nameWithType: ServiceController
+  fullName: API.Controllers.ServiceController
+- uid: API.Controllers.TypeOfDishController
+  commentId: T:API.Controllers.TypeOfDishController
+  name: TypeOfDishController
+  nameWithType: TypeOfDishController
+  fullName: API.Controllers.TypeOfDishController

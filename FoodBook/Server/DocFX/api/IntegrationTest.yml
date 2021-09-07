@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: IntegrationTest
+  commentId: N:IntegrationTest
+  id: IntegrationTest
+  children:
+  - IntegrationTest.DishControllerIntegrationTest
+  - IntegrationTest.IngredientControllerIntegrationTest
+  - IntegrationTest.IntegrationTest
+  langs:
+  - csharp
+  - vb
+  name: IntegrationTest
+  nameWithType: IntegrationTest
+  fullName: IntegrationTest
+  type: Namespace
+  assemblies:
+  - IntegrationTest
+references:
+- uid: IntegrationTest.DishControllerIntegrationTest
+  commentId: T:IntegrationTest.DishControllerIntegrationTest
+  name: DishControllerIntegrationTest
+  nameWithType: DishControllerIntegrationTest
+  fullName: IntegrationTest.DishControllerIntegrationTest
+- uid: IntegrationTest.IntegrationTest
+  commentId: T:IntegrationTest.IntegrationTest
+  parent: IntegrationTest
+  name: IntegrationTest
+  nameWithType: IntegrationTest
+  fullName: IntegrationTest.IntegrationTest
+- uid: IntegrationTest.IngredientControllerIntegrationTest
+  commentId: T:IntegrationTest.IngredientControllerIntegrationTest
+  name: IngredientControllerIntegrationTest
+  nameWithType: IngredientControllerIntegrationTest
+  fullName: IntegrationTest.IngredientControllerIntegrationTest
+- uid: IntegrationTest
+  commentId: N:IntegrationTest
+  name: IntegrationTest
+  nameWithType: IntegrationTest
+  fullName: IntegrationTest

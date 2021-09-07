@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClientDesktop</name>
+    </assembly>
+    <members>
+        <member name="F:ClientDesktop.Composants.DayServiceControlComponent.components">
+            <summary> 
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.Composants.DayServiceControlComponent.Dispose(System.Boolean)">
+            <summary> 
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:ClientDesktop.Composants.DayServiceControlComponent.InitializeComponent">
+            <summary> 
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas 
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.Composants.DishServiceControlComponent.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="typeOdDishInInt"></param>
+        </member>
+        <member name="F:ClientDesktop.Composants.DishServiceControlComponent.components">
+            <summary> 
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.Composants.DishServiceControlComponent.Dispose(System.Boolean)">
+            <summary> 
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:ClientDesktop.Composants.DishServiceControlComponent.InitializeComponent">
+            <summary> 
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas 
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="F:ClientDesktop.Composants.ServiceControlComponent.components">
+            <summary> 
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.Composants.ServiceControlComponent.Dispose(System.Boolean)">
+            <summary> 
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:ClientDesktop.Composants.ServiceControlComponent.InitializeComponent">
+            <summary> 
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas 
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.CreateIngredientForm.#ctor">
+            <summary>
+            Appel sur la fenêtre Création d'ingrédients :
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.CreateIngredientForm.button_validate_Click(System.Object,System.EventArgs)">
+            <summary>
+            Valider la création d 'un ingrédient 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ClientDesktop.CreateIngredientForm.button_cancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            Annuler la création d'un ingrédient 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ClientDesktop.CreateIngredientForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.CreateIngredientForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ClientDesktop.CreateIngredientForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ClientDesktop.CreateIngredientForm.button_validate">
+            <summary>
+            Coucou
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.DishForm.#ctor">
+            <summary>
+            Constructeur de la Fenêtre "DishForm"
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.DishForm.LoadListOfIngredient(BO.Entity.ListOfIngredient)">
+            <summary>
+            Chargement de la liste des ingrédients qui composent le plat ! 
+            </summary>
+            <param name="listOfIngredient"></param>
+        </member>
+        <member name="M:ClientDesktop.DishForm.IsMyTypeOfDish">
+            <summary>
+            Trouver l'iD à partir de la comboBox TypeDish
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClientDesktop.DishForm.LoadIngredients">
+            <summary>
+            Récupérer l'ensemble des ingrédients de la base de données.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.DishForm.Button_createIngredient_Click(System.Object,System.EventArgs)">
+            <summary>
+            Afficher la fenêtre pour créer un ingrédient
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ClientDesktop.DishForm.DataGridView_ingredients_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Quand on clique sur un ingrédient de la datagridview l'ingrédient s'ajoute à la liste des ingrédients qui composent le plat
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ClientDesktop.DishForm.Button_ConfirmDish_ClickAsync(System.Object,System.EventArgs)">
+            <summary>
+            Ce boutton va créer un plat à partir des premières informations : IMPLEMENTATION : OK.
+            PUIS : ce bouton va compléter la table de liaison ListOfIngredient de la BDD.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ClientDesktop.DishForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.DishForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ClientDesktop.DishForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ClientDesktop.DishSelectorForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.DishSelectorForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ClientDesktop.DishSelectorForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:ClientDesktop.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:ClientDesktop.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:ClientDesktop.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:ClientDesktop.Properties.Resources.ezgif_2_6d0b072c3d3f">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ClientDesktop.Properties.Resources.gifLoad2">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ClientDesktop.Properties.Resources.gifLoad21">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ClientDesktop.Properties.Resources.gifLoad3">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ClientDesktop.Properties.Resources.logo">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.IsMonday(System.DateTime)">
+            <summary>
+            Trouver le premier jour du début de la semaine à partir de la date du jour
+            </summary>
+            <param name="isToday"> date du jour</param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.Initialize(System.DateTime)">
+            <summary>
+            Initialisation des Control Component sur chaque service
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.Button_next_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click sur Btn Next
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.Button_previous_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click sur Btn Previous
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.WeekForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            Lancement du Timer
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.Button_createDish_Click(System.Object,System.EventArgs)">
+            <summary>
+            Création d'un plat
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ClientDesktop.WeekForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

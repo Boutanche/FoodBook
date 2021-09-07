@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnitTest
+  commentId: N:UnitTest
+  id: UnitTest
+  children:
+  - UnitTest.BookControllerUnitTest
+  - UnitTest.BookingControllerUnitTest
+  - UnitTest.ClientControllerUnitTest
+  - UnitTest.DishControllerUnitTest
+  - UnitTest.IngredientControllerUnitTest
+  - UnitTest.ListOfDishControllerUnitTest
+  - UnitTest.MenuControllerUnitTest
+  - UnitTest.OrderControllerUnitTest
+  - UnitTest.ServiceControllerUnitTest
+  langs:
+  - csharp
+  - vb
+  name: UnitTest
+  nameWithType: UnitTest
+  fullName: UnitTest
+  type: Namespace
+  assemblies:
+  - UnitTest
+references:
+- uid: UnitTest.BookControllerUnitTest
+  commentId: T:UnitTest.BookControllerUnitTest
+  name: BookControllerUnitTest
+  nameWithType: BookControllerUnitTest
+  fullName: UnitTest.BookControllerUnitTest
+- uid: UnitTest.BookingControllerUnitTest
+  commentId: T:UnitTest.BookingControllerUnitTest
+  name: BookingControllerUnitTest
+  nameWithType: BookingControllerUnitTest
+  fullName: UnitTest.BookingControllerUnitTest
+- uid: UnitTest.ClientControllerUnitTest
+  commentId: T:UnitTest.ClientControllerUnitTest
+  name: ClientControllerUnitTest
+  nameWithType: ClientControllerUnitTest
+  fullName: UnitTest.ClientControllerUnitTest
+- uid: UnitTest.DishControllerUnitTest
+  commentId: T:UnitTest.DishControllerUnitTest
+  name: DishControllerUnitTest
+  nameWithType: DishControllerUnitTest
+  fullName: UnitTest.DishControllerUnitTest
+- uid: UnitTest.IngredientControllerUnitTest
+  commentId: T:UnitTest.IngredientControllerUnitTest
+  name: IngredientControllerUnitTest
+  nameWithType: IngredientControllerUnitTest
+  fullName: UnitTest.IngredientControllerUnitTest
+- uid: UnitTest.ListOfDishControllerUnitTest
+  commentId: T:UnitTest.ListOfDishControllerUnitTest
+  name: ListOfDishControllerUnitTest
+  nameWithType: ListOfDishControllerUnitTest
+  fullName: UnitTest.ListOfDishControllerUnitTest
+- uid: UnitTest.MenuControllerUnitTest
+  commentId: T:UnitTest.MenuControllerUnitTest
+  name: MenuControllerUnitTest
+  nameWithType: MenuControllerUnitTest
+  fullName: UnitTest.MenuControllerUnitTest
+- uid: UnitTest.OrderControllerUnitTest
+  commentId: T:UnitTest.OrderControllerUnitTest
+  name: OrderControllerUnitTest
+  nameWithType: OrderControllerUnitTest
+  fullName: UnitTest.OrderControllerUnitTest
+- uid: UnitTest.ServiceControllerUnitTest
+  commentId: T:UnitTest.ServiceControllerUnitTest
+  name: ServiceControllerUnitTest
+  nameWithType: ServiceControllerUnitTest
+  fullName: UnitTest.ServiceControllerUnitTest

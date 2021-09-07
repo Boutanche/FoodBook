@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: ClientMobile
+  commentId: N:ClientMobile
+  id: ClientMobile
+  children:
+  - ClientMobile.App
+  - ClientMobile.MainPage
+  - ClientMobile.Program
+  langs:
+  - csharp
+  - vb
+  name: ClientMobile
+  nameWithType: ClientMobile
+  fullName: ClientMobile
+  type: Namespace
+  assemblies:
+  - ClientMobile
+references:
+- uid: ClientMobile.App
+  commentId: T:ClientMobile.App
+  name: App
+  nameWithType: App
+  fullName: ClientMobile.App
+- uid: ClientMobile.MainPage
+  commentId: T:ClientMobile.MainPage
+  name: MainPage
+  nameWithType: MainPage
+  fullName: ClientMobile.MainPage
+- uid: ClientMobile.Program
+  commentId: T:ClientMobile.Program
+  name: Program
+  nameWithType: Program
+  fullName: ClientMobile.Program
