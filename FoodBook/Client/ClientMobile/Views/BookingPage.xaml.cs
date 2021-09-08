@@ -43,7 +43,8 @@ namespace ClientMobile.Views
         /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            BookingVM.Book();
+            
+            BookingVM.Booking();
 
             this.Frame.Navigate(typeof(MainPage));
         }

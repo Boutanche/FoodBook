@@ -37,7 +37,7 @@ namespace ClientMobile
         /// Permet de sélectionner un jour, et de passer à la page "Réservation"
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(BookingPage));

@@ -6,17 +6,25 @@ using System.Threading.Tasks;
 
 namespace ClientMobile.ViewModels
 {
+    /// <summary>
+    /// View Model de la page réservation 
+    /// </summary>
     public class BookingVM : ViewModelBase
     {
-        public static void Book() 
-        { 
-        
-        }
-        
+
+        /// <summary>
+        /// Ctor
+        /// </summary>
         public BookingVM()
         {
 
         }
-        
+        /// <summary>
+        /// 
+        /// </summary>
+        internal static void Booking()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
