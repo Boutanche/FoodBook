@@ -57,7 +57,7 @@
                               OffContent="MainPage_ToggleSwitch" OnContent="MainPage_ToggleSwitch" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
             </Grid>
             <Grid x:Name="SelectDate" VerticalAlignment="Center" Height="31">
-                <CalendarDatePicker Name="DatePicker" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,0,40,0" FocusVisualPrimaryBrush="#FFC3C1C1" FirstDayOfWeek="Monday" Foreground="White" FocusVisualSecondaryBrush="{x:Null}"/>
+                <CalendarDatePicker Date="{x:Bind VMMain.GetDate(), Mode=OneWay}" Name="DatePicker" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,0,40,0" FocusVisualPrimaryBrush="#FFC3C1C1" FirstDayOfWeek="Monday" Foreground="White" FocusVisualSecondaryBrush="{x:Null}"/>
             </Grid>
         </Grid>
         <ScrollViewer HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Row="2" FlowDirection="LeftToRight">

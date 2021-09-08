@@ -132,6 +132,7 @@ namespace ClientMobile.ViewModels
             }
             //Rafraichir sur une fonction... 
             OnPropertyChanged("GetDayOrDefault");
+            //OnPropertyChanged("GetDate");
         }
 
         /// <summary>
@@ -153,6 +154,12 @@ namespace ClientMobile.ViewModels
                 default:
                     return null;
             }
+        }
+
+        public DateTimeOffset GetDate()
+        {
+            DateTime date = DateTime.Now.Date;
+            return date;
         }
     }
 }
