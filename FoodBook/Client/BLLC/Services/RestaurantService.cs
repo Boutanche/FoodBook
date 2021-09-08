@@ -15,8 +15,13 @@ namespace BLLC.Services
     /// </summary>
     public class RestaurantService : IRestaurantService
     {
+        /// <summary>
+        /// Instance de HttpClient
+        /// </summary>
         private readonly HttpClient _httpClient;
-
+        /// <summary>
+        /// RestaurantService
+        /// </summary>
         public RestaurantService()
         {
             var handler = new HttpClientHandler();

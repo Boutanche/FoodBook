@@ -53,7 +53,7 @@
                 <ColumnDefinition Width="7*"/>
             </Grid.ColumnDefinitions>
             <Grid x:Name="SelectService" Grid.Column="1">
-                <ToggleSwitch x:Uid="MainPage_ToggleSwitch" IsOn="{x:Bind VM.MidiSoirToogle, Mode=TwoWay}" Header="MainPage_ToggleSwitch" Margin="0,0,0,0"  
+                <ToggleSwitch x:Uid="MainPage_ToggleSwitch" IsOn="{x:Bind VMMain.MidiSoirToogle, Mode=TwoWay}" Header="MainPage_ToggleSwitch" Margin="0,0,0,0"  
                               OffContent="MainPage_ToggleSwitch" OnContent="MainPage_ToggleSwitch" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
             </Grid>
             <Grid x:Name="SelectDate" VerticalAlignment="Center" Height="31">
@@ -134,9 +134,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="12" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(0, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(0, tp:TypePlat.PLAT ), Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(0, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="12" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(0, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(0, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(0, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuMardi" Grid.Column="2" Margin="0,10,0,10" Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -144,9 +144,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(1, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(1, tp:TypePlat.PLAT ), Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(1, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(1, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(1, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(1, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuMercredi" Grid.Column="2" Margin="0,11,0,9" Grid.Row="2">
                         <Grid.RowDefinitions>
@@ -154,9 +154,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(2, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(2, tp:TypePlat.PLAT ), Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(2, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(2, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(2, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(2, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuJeudi" Grid.Column="2" Margin="0,11,0,10" Grid.Row="3">
                         <Grid.RowDefinitions>
@@ -164,9 +164,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(3, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(3, tp:TypePlat.PLAT ), Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(3, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(3, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(3, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(3, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuVendredi" Grid.Column="2" Margin="0,10,0,10" Grid.Row="4">
                         <Grid.RowDefinitions>
@@ -174,9 +174,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(4, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(4, tp:TypePlat.PLAT ), Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(4, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(4, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(4, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(4, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuSamedi" Grid.Column="2" Margin="0,11,0,10" Grid.Row="5">
                         <Grid.RowDefinitions>
@@ -184,9 +184,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(5, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(5, tp:TypePlat.PLAT ), Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(5, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(5, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(5, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(5, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                     <Grid x:Name="MenuDimanche" Grid.Column="2" Margin="0,10,0,10" Grid.Row="6">
                         <Grid.RowDefinitions>
@@ -194,9 +194,9 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(6, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(6, tp:TypePlat.PLAT ), Mode=OneWay}"/>
-                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VM.GetDayOrDefault(6, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="0" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(6, tp:TypePlat.ENTREE ) , Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="1" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(6, tp:TypePlat.PLAT ), Mode=OneWay}"/>
+                        <TextBox IsReadOnly="True" Padding="10 5 0 5" Margin="0,2,0,2" Width="200" Grid.Row="2" FontSize="11" x:Uid="MainPage_TextBox" PlaceholderText="MainPage_TextBox" Text="{x:Bind VMMain.GetDayOrDefault(6, tp:TypePlat.DESSERT ), Mode=OneWay}"/>
                     </Grid>
                 </Grid>
             </StackPanel>

@@ -61,6 +61,11 @@
             le contenu de cette méthode avec l'éditeur de code.
             </summary>
         </member>
+        <member name="T:ClientDesktop.CreateIngredientForm">
+            <summary>
+            Fenêtre pour la création des Ingrédients
+            </summary>
+        </member>
         <member name="M:ClientDesktop.CreateIngredientForm.#ctor">
             <summary>
             Appel sur la fenêtre Création d'ingrédients :
@@ -100,6 +105,11 @@
         <member name="F:ClientDesktop.CreateIngredientForm.button_validate">
             <summary>
             Coucou
+            </summary>
+        </member>
+        <member name="T:ClientDesktop.DishForm">
+            <summary>
+            Fenêtre pour les ingrédients
             </summary>
         </member>
         <member name="M:ClientDesktop.DishForm.#ctor">
@@ -162,6 +172,38 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="T:ClientDesktop.DishSelectorForm">
+            <summary>
+            Fenêtre sélecteur de plats
+            </summary>
+        </member>
+        <member name="F:ClientDesktop.DishSelectorForm.localWeek">
+            <summary>
+            Récupération de la semaine courrante
+            </summary>
+        </member>
+        <member name="F:ClientDesktop.DishSelectorForm.localDay">
+            <summary>
+            Récupération du jour
+            </summary>
+        </member>
+        <member name="F:ClientDesktop.DishSelectorForm.localService">
+            <summary>
+            Récupération du service concerné
+            </summary>
+        </member>
+        <member name="F:ClientDesktop.DishSelectorForm.localType">
+            <summary>
+            Récupération du type de plat
+            </summary>
+        </member>
+        <member name="M:ClientDesktop.DishSelectorForm.#ctor(BO.Entity.Service,System.Int32)">
+            <summary>
+            Fenêtre sélecteur de plat
+            </summary>
+            <param name="service"> un service</param>
+            <param name="IntTypeOfDish"> représente le type de plat 1(entrée), 2(plat), 3(dessert)</param>
         </member>
         <member name="F:ClientDesktop.DishSelectorForm.components">
             <summary>
@@ -226,6 +268,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="T:ClientDesktop.WeekForm">
+            <summary>
+            Fenêtre principale de lapplication : affichage des semaines et des plats
+            </summary>
+        </member>
         <member name="M:ClientDesktop.WeekForm.#ctor">
             <summary>
             Ctor
@@ -270,6 +317,12 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="M:ClientDesktop.WeekForm.UpdateComponent(System.DateTime)">
+            <summary>
+            Mise à jour du composant
+            </summary>
+            <param name="isMonday"></param>
         </member>
         <member name="F:ClientDesktop.WeekForm.components">
             <summary>

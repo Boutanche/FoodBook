@@ -109,6 +109,16 @@
             Implémentation de IRestaurantSerrvice
             </summary>
         </member>
+        <member name="F:BLLC.Services.RestaurantService._httpClient">
+            <summary>
+            Instance de HttpClient
+            </summary>
+        </member>
+        <member name="M:BLLC.Services.RestaurantService.#ctor">
+            <summary>
+            RestaurantService
+            </summary>
+        </member>
         <member name="M:BLLC.Services.RestaurantService.CreateDish(BO.Entity.Dish)">
             <summary>
             Créer un plat

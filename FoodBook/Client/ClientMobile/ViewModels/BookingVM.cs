@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClientMobile.ViewModels
 {
-    class BookingVM : ViewModelBase
+    public class BookingVM : ViewModelBase
     {
         public static void Book() 
         { 
         
         }
         
-        BookingVM()
+        public BookingVM()
         {
 
         }

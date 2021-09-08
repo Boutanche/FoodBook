@@ -39,7 +39,7 @@
             </TextBlock>
             <Image x:Name="LogoBox" HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="43" FocusVisualPrimaryBrush="Black" Source="/Assets/logo.png" Stretch="Uniform" RenderTransformOrigin="-1.102,0.505" Margin="167,0,0,0"/>
 
-
+            <!-- Utilisation des FontIcon -->
             <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xE77B;" Margin="63,-2,76,2" Grid.Column="1" Foreground="#FFFF8600"/>
             <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xE721;" Margin="129,0,10,0" Grid.Column="1" Foreground="#FFFF8600"/>
 
@@ -69,15 +69,20 @@
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
+            <!-- Ligne 1 -->
+            <!-- {x:Bind VMMain.GetDayOrDefault(), Mode=OneWay}-->
             <CheckBox x:Name="cbStarter" Content="Formule" Grid.Column="2" RequestedTheme="Dark" Margin="12,0,0,0" Grid.ColumnSpan="2"/>
-            <TextBox Grid.Column="1" HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="124"/>
+            <TextBox Grid.Column="1" HorizontalAlignment="Center" Text="x" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="124"/>
             <TextBlock HorizontalAlignment="Center" Text="Entrée" TextWrapping="Wrap" VerticalAlignment="Center" RequestedTheme="Dark"/>
+            <!-- Ligne 2 -->
             <CheckBox x:Name="cdMain" Content="Formule" Grid.Column="2" RequestedTheme="Dark" Margin="12,0,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
-            <TextBox Grid.Column="1" HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="124" Grid.Row="1"/>
+            <TextBox Grid.Column="1" HorizontalAlignment="Center" Text="TextBox" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="124" Grid.Row="1"/>
             <TextBlock HorizontalAlignment="Center" Text="Plat" TextWrapping="Wrap" VerticalAlignment="Center" RequestedTheme="Dark" Grid.Row="1"/>
+            <!-- Ligne 3 -->
             <CheckBox x:Name="cdDessert" Content="Formule" Grid.Column="2" RequestedTheme="Dark" Margin="12,0,0,0" Grid.Row="2" Grid.ColumnSpan="2"/>
-            <TextBox Grid.Column="1" HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="124" Grid.Row="2"/>
+            <TextBox Grid.Column="1" HorizontalAlignment="Center" Text="TextBox" TextAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="124" Grid.Row="2"/>
             <TextBlock HorizontalAlignment="Center" Text="Dessert" TextWrapping="Wrap" VerticalAlignment="Center" RequestedTheme="Dark" Grid.Row="2"/>
+            <!-- Dernière ligne -->
             <Button Content="Réserver" Grid.Column="1" Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" RequestedTheme="Dark" Click="Button_Click"/>
         </Grid>
 

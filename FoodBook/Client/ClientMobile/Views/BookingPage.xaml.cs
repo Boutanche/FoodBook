@@ -28,6 +28,7 @@ namespace ClientMobile.Views
     /// </summary>
     public sealed partial class BookingPage : Page
     {
+        private readonly BookingVM VMBooking = new BookingVM();
         /// <summary>
         /// Päge de réservation
         /// </summary>
