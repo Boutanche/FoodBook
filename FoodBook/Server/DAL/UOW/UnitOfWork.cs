@@ -8,6 +8,9 @@ using System.Diagnostics;
 
 namespace DAL.UOW
 {
+    /// <summary>
+    /// Orchestrateur des transactions :
+    /// </summary>
     sealed class UnitOfWork : IUnitOfWork
     {
         private readonly DbSession _session;
@@ -18,27 +21,39 @@ namespace DAL.UOW
             _session = session;
             _serviceProvider = serviceProvider;
         }
-
+        /// <summary>
+        /// Commencer une transaction
+        /// </summary>
         public void BeginTransaction()
         {
             _session.Transaction = _session.Connection.BeginTransaction();
         }
-
+        /// <summary>
+        /// Commiter 
+        /// </summary>
         public void Commit()
         {
             _session.Transaction.Commit();
             Dispose();
         }
-
+        /// <summary>
+        /// Effectuer un RollBack
+        /// </summary>
         public void Rollback()
         {
             _session.Transaction.Rollback();
             Dispose();
         }
-
+        /// <summary>
+        /// Disposer
+        /// </summary>
         public void Dispose() => _session.Transaction?.Dispose();
 
-
+        /// <summary>
+        /// Récupérer une repository
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public T GetRepository<T>()
         {
            return _serviceProvider.GetRequiredService<T>();

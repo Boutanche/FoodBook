@@ -18,10 +18,11 @@ namespace DAL
         /// <returns></returns>
         public static IServiceCollection AddDAL(this IServiceCollection services)
         {
-            //Notions pédagogique à revoir ici   : Injecteur de dépendance et Inversion de controle
+            //Notions pédagogique : Injecteur de dépendance et Inversion de controle
 
             // Ses propres services
             services.AddScoped<DbSession>((services) => new DbSession(services.GetRequiredService<IConfiguration>(), "DefaultConnection"));
+            //Unit of Work qui va jouer le rôle de chef d'orchestre sur les repository
             services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             //Repositories
@@ -33,8 +34,6 @@ namespace DAL
             services.AddTransient<IServiceRepository, ServiceRepository>();
             services.AddTransient<IIsComposedRepository, IsComposedRepository>();
             
-
-
             return services;
         }
     }

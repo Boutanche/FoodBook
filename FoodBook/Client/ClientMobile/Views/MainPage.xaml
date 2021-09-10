@@ -27,7 +27,6 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <!--No Traduction here because FoddBook is a Name of the Application -->
             <TextBlock HorizontalAlignment="Left" Height="50" Text="FoodBook" TextWrapping="Wrap" VerticalAlignment="Center" Width="168" FontFamily="Ebrima" FontWeight="Normal" FontSize="36">
                 <TextBlock.Foreground>
                     <SolidColorBrush Color="{StaticResource SystemRevealListMediumColor}"/>

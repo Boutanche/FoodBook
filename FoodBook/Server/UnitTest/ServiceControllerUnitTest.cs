@@ -10,6 +10,9 @@ using Xunit;
 
 namespace UnitTest
 {
+    /// <summary>
+    /// Test Unitaire sur les services
+    /// </summary>
     public class ServiceControllerUnitTest
     {
         //WIP : Travailler sur les services.
@@ -28,6 +31,9 @@ namespace UnitTest
             //Assert
             Assert.NotNull(ServiceActionResult);
         }
+        /// <summary>
+        /// Unit Test Création de service
+        /// </summary>
         [Fact]
         public async void TestCreateService()
         {
