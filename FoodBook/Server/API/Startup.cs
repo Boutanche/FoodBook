@@ -22,6 +22,9 @@ using System.Diagnostics;
 
 namespace API
 {
+    /// <summary>
+    /// Le StartUp
+    /// </summary>
     public class Startup
     {
         /// <summary>

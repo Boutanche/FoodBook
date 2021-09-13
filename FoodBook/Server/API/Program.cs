@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace API
 {
+    /// <summary>
+    /// Point d'entrée de l'API
+    /// </summary>
     public class Program
     {
         /// <summary>

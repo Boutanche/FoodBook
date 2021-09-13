@@ -14,6 +14,9 @@ using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
 {
+    /// <summary>
+    /// Controleur sur les comptes : Non Implémenté V.2 
+    /// </summary>
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{Version:apiVersion}/account")]
